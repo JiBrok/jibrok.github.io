@@ -2,7 +2,6 @@
 layout: post
 title: Plugins for Atlassian products - Message field
 ---
-
 #### The project has migrated! Check the link for more information. The field is super required! Fill in the field strictly according to instructions!
 ### [Message field](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=server&tab=overview)
 
