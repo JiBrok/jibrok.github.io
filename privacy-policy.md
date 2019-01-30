@@ -4,7 +4,6 @@ title: Privacy policy
 permalink: /privacy-policy/
 ---
 
-## Privacy Policy
 This privacy policy covers which personal data we have access to and how we handle this personal data.
 ### On-Premise Add-ons/Apps
 None of our on-premise add-ons (apps) collect any analytics or personal information. Your data does not leave your own servers under any circumstances.
