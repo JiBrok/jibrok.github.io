@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Plugins for Atlassian products - One-time link
+title: Plugins for Atlassian products - Cross-Filters Matrix
 ---
 #### Filters (JQL) are specified in columns and rows. The cells contain the number of tasks satisfying filters (xJQL) and (yJQL) at the same time.
-### [One-time link](https://marketplace.atlassian.com/apps/1219776/one-time-link?hosting=server&tab=overview)
+### [Cross-Filters Matrix](https://marketplace.atlassian.com/manage/apps/1220719)
 
 For visual representation of the result, each column and row in the matrix can be assigned any name.
 
@@ -18,9 +18,9 @@ Administrators can create matrices. Administrators can provide access to all use
 
 
 
-[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219776/one-time-link?hosting=server&tab=overview)
+[View on Atlassian Marketplace](https://marketplace.atlassian.com/manage/apps/1220719)
 
-[Documentation](https://bitbucket.org/jibrok/one-time-link/wiki/Home)
+[Documentation](https://bitbucket.org/jibrok/cross-filters-matrix/wiki/Home)
 
-[Report a problem](https://bitbucket.org/jibrok/one-time-link/issues?status=new&status=open)
+[Report a problem](https://bitbucket.org/jibrok/cross-filters-matrix/issues?status=new&status=open)
 
