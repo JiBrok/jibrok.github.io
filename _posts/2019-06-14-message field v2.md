@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plugins for Atlassian products - Message field
+title: Update - Message field v2
 ---
 #### Message field can show message only in selected statuses! ####
 
