@@ -3,7 +3,7 @@ layout: post
 title: Plugins for Atlassian products - One-time link
 ---
 #### You send your secret (text, password ...) and in response, you will receive a link for one-time access to the sent secret
-### [One-time link](https://marketplace.atlassian.com/apps/1219776/one-time-link?hosting=server&tab=overview)
+### [One-time link](https://marketplace.atlassian.com/apps/1220718/one-time-link?hosting=server&tab=overview)
 
 Sometimes, one would like to transfer a secret text, a password or a key such that this information does not appear anywhere.
 Email, messengers and public services are places where there could be information leakages and data breaches. But these services are vital for communication. One-time links (among other things) are used to transfer private information through such services. 
@@ -27,7 +27,7 @@ You set a password, create a one-time link and send it to the client via a conve
 This solution is of course not a panacea. However, it is still incomparably better than open information transfer. In addition, it does not require you to install additional programs and services on the server. Everything works on Jira. 
 
 
-[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219776/one-time-link?hosting=server&tab=overview)
+[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1220718/one-time-link?hosting=server&tab=overview)
 
 [Documentation](https://bitbucket.org/jibrok/one-time-link/wiki/Home)
 
