@@ -3,6 +3,8 @@ layout: post
 title: Plugins for Atlassian products - Cross-Filters Matrix
 ---
 #### Filters (JQL) are specified in columns and rows. The cells contain the number of tasks satisfying filters (xJQL) and (yJQL) at the same time.
+
+<img src="/images/cross-filters matrix/filter-matrix-144px.png" alt="cross-filters matrix icon" width="100"/>
 ### [Cross-Filters Matrix](https://marketplace.atlassian.com/manage/apps/1220719)
 
 For visual representation of the result, each column and row in the matrix can be assigned any name.

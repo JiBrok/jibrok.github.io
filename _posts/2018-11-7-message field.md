@@ -3,8 +3,11 @@ layout: post
 title: Plugins for Atlassian products - Message field
 ---
 #### The project has migrated! Check the link for more information. The field is super required! Fill in the field strictly according to instructions!
+
+<img src="/images/message-field/messge-144px.png" alt="Message field icon" width="100"/>
 ### [Message field](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=server&tab=overview)
 
+ 
 
 There are cases where such messages need to be placed in the task and shown to the user. This is often required when creating or viewing a problem. And to solve it, what could be simpler than just taking and adding the necessary message? Create a special message field. This field can only display a message from the settings.
 Specify the message in the settings. Add a field to the screen. You're all set! 

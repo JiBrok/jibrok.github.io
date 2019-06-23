@@ -3,6 +3,8 @@ layout: post
 title: Plugins for Atlassian products - One-time link
 ---
 #### You send your secret (text, password ...) and in response, you will receive a link for one-time access to the sent secret
+
+<img src="/images/one-time-link/one-time-link-144px.png" alt="One-time Link icon" width="100"/>
 ### [One-time link](https://marketplace.atlassian.com/apps/1220718/one-time-link?hosting=server&tab=overview)
 
 Sometimes, one would like to transfer a secret text, a password or a key such that this information does not appear anywhere.
