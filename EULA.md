@@ -9,6 +9,9 @@ Last updated: May 23, 2019
 This EULA is for the following apps, listed on the Atlassian Marketplace:
 
 * [Message field](https://marketplace.atlassian.com/apps/1219615/message-field)
+* [One-time Link](https://marketplace.atlassian.com/apps/1220718/one-time-link)
+* [Simple notifications for Jira](https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira)
+* [Search by worfklows](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
 
 
 For every of these apps the following EULA belongs to.
