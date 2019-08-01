@@ -12,6 +12,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [One-time Link](https://marketplace.atlassian.com/apps/1220718/one-time-link)
 * [Simple notifications for Jira](https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira)
 * [Search by worfklows](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
+* [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
 
 
 For every of these apps the following EULA belongs to.
