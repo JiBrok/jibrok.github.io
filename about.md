@@ -43,3 +43,9 @@ permalink: /about/
 * [Issue tracker](https://bitbucket.org/jibrok/delegating-group-management/issues)
 * [Documentation](https://bitbucket.org/jibrok/delegating-group-management/wiki)
 
+## Switch to User + Delegating SU (Jira) <img src="/images/su/su-144px.png" alt="Switch to User + Delegating SU (Jira) icon" width="25"/>
+
+* [Download](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
+* [Issue tracker](https://bitbucket.org/jibrok/su/issues)
+* [Documentation](https://bitbucket.org/jibrok/su/wiki)
+

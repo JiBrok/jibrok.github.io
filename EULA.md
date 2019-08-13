@@ -13,6 +13,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Simple notifications for Jira](https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira)
 * [Search by worfklows](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
 * [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
+* [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
 
 
 For every of these apps the following EULA belongs to.
