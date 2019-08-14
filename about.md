@@ -49,3 +49,10 @@ permalink: /about/
 * [Issue tracker](https://bitbucket.org/jibrok/su/issues)
 * [Documentation](https://bitbucket.org/jibrok/su/wiki)
 
+## Customizable Announcements for Jira <img src="/images/banner/banner-144px.png" alt="Customizable Announcements for Jira icon" width="25"/>
+
+* [Download](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
+* [Issue tracker](https://bitbucket.org/jibrok/banner/issues)
+* [Documentation](https://bitbucket.org/jibrok/banner/wiki)
+
+

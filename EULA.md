@@ -14,6 +14,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Search by worfklows](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
 * [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
 * [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
+* [Customizable Announcements for Jira](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
 
 
 For every of these apps the following EULA belongs to.
