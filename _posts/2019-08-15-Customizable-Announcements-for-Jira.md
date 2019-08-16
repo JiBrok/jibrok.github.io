@@ -5,9 +5,11 @@ title: Customizable Announcements for Jira
 #### The ability to create an Announcement Banner is good! The ability to customize to whom and when to show it is wonderful! ####
 
 We expand the standard functionality.
-Now announcement Banner can choose a color. Make a rainbow out of them!
 
-![Customizable Announcements for Jira](/images/banner/banner-setting-1.1.png)
+![Customizable Announcements for Jira - example](/images/banner/banner-example.png)
+
+
+Now announcement Banner can choose a color. Make a rainbow out of them!
 
 Announcements can only be shown to specific users or groups.
 
@@ -22,6 +24,7 @@ Banners have rest api. And you can automate the inclusion of banners in certain 
 
 All changes are recorded in the audit log.
 
+![Customizable Announcements for Jira - settings](/images/banner/banner-setting-1.1.png)
 
 [View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
 
