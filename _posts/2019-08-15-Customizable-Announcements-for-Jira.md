@@ -6,10 +6,9 @@ title: Customizable Announcements for Jira
 
 We expand the standard functionality.
 
-![Customizable Announcements for Jira - example](/images/banner/banner-example.png)
-
-
 Now announcement Banner can choose a color. Make a rainbow out of them!
+
+![Customizable Announcements for Jira - example](/images/banner/banner-example.png)
 
 Announcements can only be shown to specific users or groups.
 
