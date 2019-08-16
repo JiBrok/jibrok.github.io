@@ -1,8 +1,14 @@
 ---
 layout: page
-title: Just contact me
+title: Hello!
 permalink: /about/
 ---
+
+JiBrok is developing plugins for Atlassian products.
+Public plugins are available at the Atlassian Marketplace.
+
+For any questions, please contact us.
+
 ## E-mail
 
 [support@jibrok.com](mailto:support@jibrok.com)
