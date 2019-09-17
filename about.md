@@ -61,6 +61,13 @@ For any questions, please contact us.
 * [Issue tracker](https://bitbucket.org/jibrok/banner/issues)
 * [Documentation](https://bitbucket.org/jibrok/banner/wiki)
 
+## Time in status field <img src="/images/time-in-status-field/time-in-status-field-144px.png" alt="Calculated custom fields icon" width="25"/>
+
+* [Download](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
+* [Issue tracker](https://bitbucket.org/jibrok/time-in-status-field/issues)
+* [Documentation](https://bitbucket.org/jibrok/time-in-status-field/wiki)
+
+
 ## Calculated custom fields <img src="/images/calculated-custom-fields/calculated-fields-144px.png" alt="Calculated custom fields icon" width="25"/>
 
 * [Download](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
