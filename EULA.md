@@ -15,6 +15,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
 * [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
 * [Customizable Announcements for Jira](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
+* [Calculated custom fields](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
 
 
 For every of these apps the following EULA belongs to.

@@ -61,4 +61,9 @@ For any questions, please contact us.
 * [Issue tracker](https://bitbucket.org/jibrok/banner/issues)
 * [Documentation](https://bitbucket.org/jibrok/banner/wiki)
 
+## Calculated custom fields <img src="/images/calculated-custom-fields/calculated-fields-144px.png" alt="Calculated custom fields icon" width="25"/>
+
+* [Download](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
+* [Issue tracker](https://bitbucket.org/jibrok/calculated-custom-fields/issues)
+* [Documentation](https://bitbucket.org/jibrok/calculated-custom-fields/wiki)
 
