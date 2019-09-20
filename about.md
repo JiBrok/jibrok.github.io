@@ -11,7 +11,7 @@ For any questions, please contact us.
 
 ## Support
 
-* E-mail [support@jibrok.com](mailto:support@jibrok.com)
+* [support@jibrok.com](mailto:support@jibrok.com)
 * [Service Desk](https://jibrok.atlassian.net/servicedesk/customer/portal/9)
 
 ## Message field <img src="/images/message-field/messge-144px.png" alt="Message field icon" width="25"/>
