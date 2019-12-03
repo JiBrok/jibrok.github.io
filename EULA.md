@@ -31,7 +31,15 @@ If you do not agree to the terms of this Agreement, do not download or use the a
 
 ### License
 
-The Vendor grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the app solely for your personal, non-commercial purposes strictly in accordance with the terms of this Agreement.
+The Vendor grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Applications strictly in accordance with the terms of this Agreement.
+
+### Restrictions
+
+You agree not to, and you will not permit others to:
+
+* modify, make derivative works of, disassemble, decrypt, reverse compile or reverse engineer any part of the Applications.
+
+* remove, alter or obscure any proprietary notice (including any notice of copyright or trademark).
 
 ### Term and Termination
 
@@ -45,11 +53,22 @@ Upon termination of this Agreement, you shall cease all use of the Application a
 
 Termination of this Agreement will not limit any of the Vendor's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement.
 
+
 ### Amendments to this Agreement
 
-The Vendor reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-
+The Vendor reserves the right, at its sole discretion, to modify or replace this Agreement at any time.
 By continuing to access or use our app after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Application.
+
+### Limited Warranty and Disclaimer of Warranty
+
+THIS SOFTWARE AND THE ACCOMPANYING FILES ARE PROVIDED "AS IS" AND WITHOUT
+WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER
+EXPRESSED OR IMPLIED, OR NONINFRINGEMENT. In no event shall the supplier be
+liable for any consequential, incidental or indirect damages whatsoever
+(including, without limitation, damages for loss of business profits, business
+interruption, loss of business information, or any other pecuniary loss)
+resulting of the use of or inability to use this software. The entire risk
+resulting of use or performance of the Software remains with the Licensee.
 
 ### Contact Information
 
