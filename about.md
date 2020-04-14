@@ -67,7 +67,7 @@ For any questions, please contact us.
 * [Download](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
 * [Issue tracker](https://bitbucket.org/jibrok/time-in-status-field/issues)
 * [Documentation](https://bitbucket.org/jibrok/time-in-status-field/wiki)
-* [REST API](https://jibrok.com/plugin/time-in-status/doc/rest/index.html)
+* [REST API](https://jibrok.com/jira/plugins/time-in-status/doc/rest)
 
 
 ## Calculated custom fields <img src="/images/calculated-custom-fields/calculated-fields-144px.png" alt="Calculated custom fields icon" width="25"/>
