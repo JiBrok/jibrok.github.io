@@ -14,11 +14,20 @@ For any questions, please contact us.
 * [support@jibrok.com](mailto:support@jibrok.com)
 * [Service Desk](https://jibrok.atlassian.net/servicedesk/customer/portals)
 
+## Time in status field <img src="/images/time-in-status-field/time-in-status-field-144px.png" alt="Calculated custom fields icon" width="25"/>
+
+* [Download](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
+* [Issue tracker](https://bitbucket.org/jibrok/time-in-status-field/issues)
+* [Documentation](https://bitbucket.org/jibrok/time-in-status-field/wiki)
+* [Java API](https://jibrok.com/jira/plugins/time-in-status/doc/java)
+* [REST API](https://jibrok.com/jira/plugins/time-in-status/doc/rest)
+
 ## Message field <img src="/images/message-field/messge-144px.png" alt="Message field icon" width="25"/>
 
 * [Download](https://marketplace.atlassian.com/apps/1219615/message-field)
 * [Issue tracker](https://bitbucket.org/jibrok/message-field/issues)
 * [Documentation](https://bitbucket.org/jibrok/message-field/wiki/Home)
+* [JavaScript examples](https://gist.github.com/JiBrok)
 
 ## One-time Link <img src="/images/one-time-link/one-time-link-144px.png" alt="One-time Link icon" width="25"/>
 
@@ -61,14 +70,6 @@ For any questions, please contact us.
 * [Download](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
 * [Issue tracker](https://bitbucket.org/jibrok/banner/issues)
 * [Documentation](https://bitbucket.org/jibrok/banner/wiki)
-
-## Time in status field <img src="/images/time-in-status-field/time-in-status-field-144px.png" alt="Calculated custom fields icon" width="25"/>
-
-* [Download](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
-* [Issue tracker](https://bitbucket.org/jibrok/time-in-status-field/issues)
-* [Documentation](https://bitbucket.org/jibrok/time-in-status-field/wiki)
-* [Java API](https://jibrok.com/jira/plugins/time-in-status/doc/java)
-* [REST API](https://jibrok.com/jira/plugins/time-in-status/doc/rest)
 
 
 ## Calculated custom fields <img src="/images/calculated-custom-fields/calculated-fields-144px.png" alt="Calculated custom fields icon" width="25"/>
