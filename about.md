@@ -67,6 +67,7 @@ For any questions, please contact us.
 * [Download](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
 * [Issue tracker](https://bitbucket.org/jibrok/time-in-status-field/issues)
 * [Documentation](https://bitbucket.org/jibrok/time-in-status-field/wiki)
+* [Java API](https://jibrok.com/jira/plugins/time-in-status/doc/java)
 * [REST API](https://jibrok.com/jira/plugins/time-in-status/doc/rest)
 
 
