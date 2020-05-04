@@ -1,0 +1,25 @@
+I"á<h4 id="you-can-log-in-to-jira-with-a-different-user">You can log in to Jira with a different user</h4>
+<p><img src="/images/su/su-144px.png" alt="Switch to User icon" width="100" /></p>
+
+<h4 id="new-plugin-for-switching-to-another-user">New plugin for switching to another user.</h4>
+
+<p><img src="/images/su/su-set-user.png" alt="switch user jibrok-set user" /></p>
+
+<p>The extension allows you to log in as another user.
+This is useful for settings, problem solving, or quick help to the user.</p>
+
+<p>In some cases, you can even transfer these rights to non-Jira administrators. For example, technical support staff or team leader.</p>
+
+<p>Both problems are solved by this plugin.</p>
+
+<p>And in case of incidents, information is recorded in the log who logged into the system under which user.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RROVJSyhJZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p><a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira">View on Atlassian Marketplace</a></p>
+
+<p><a href="https://bitbucket.org/jibrok/su/wiki">Documentation</a></p>
+
+<p><a href="https://bitbucket.org/jibrok/su/issues">Report a problem</a></p>
+
+:ET

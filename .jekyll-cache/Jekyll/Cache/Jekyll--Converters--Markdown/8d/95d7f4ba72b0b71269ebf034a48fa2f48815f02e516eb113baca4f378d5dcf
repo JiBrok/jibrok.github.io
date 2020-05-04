@@ -1,0 +1,33 @@
+I"�<h4 id="you-send-your-secret-text-password--and-in-response-you-will-receive-a-link-for-one-time-access-to-the-sent-secret">You send your secret (text, password …) and in response, you will receive a link for one-time access to the sent secret</h4>
+
+<p><img src="/images/one-time-link/one-time-link-144px.png" alt="One-time Link icon" width="100" /></p>
+<h3 id="one-time-link"><a href="https://marketplace.atlassian.com/apps/1220718/one-time-link?hosting=server&amp;tab=overview">One-time link</a></h3>
+
+<p>Sometimes, one would like to transfer a secret text, a password or a key such that this information does not appear anywhere.
+Email, messengers and public services are places where there could be information leakages and data breaches. But these services are vital for communication. One-time links (among other things) are used to transfer private information through such services. 
+These links generate a special service that issues information accessible via the link only once. You send your secret (text, password …) to such service, and in response, you will receive a link for one-time access to the sent secret.
+After clicking through the link to read the information, the service deletes the stored secret. So the service protects your secret and confirms that it has not been compromised.</p>
+
+<p><img src="/images/one-time-link/create-one-time-link.png" alt="Message field example" /></p>
+
+<p>The plugin works according to the following scheme.
+From the custom menu in Jira, you can quickly create a one-time link. The transmitted information will be stored on the Jira server. 
+Access to the information via a link is determined by the following 1) Jira access settings. 2) settings specified when creating the link - Jira users (default) or anonymous access. The transmitted information is deleted after it was been read.</p>
+
+<p><img src="/images/one-time-link/get-one-time-link.png" alt="Message field example" /></p>
+
+<p>Such links can be sent by email or instant messenger without it being intercepted by third-parties.</p>
+
+<p>Example of a scenario when this is convenient. 
+Service X access requests are processed through Jira. But service X cannot send password reset email notifications. 
+You set a password, create a one-time link and send it to the client via a convenient communication channel. Unread information is automatically deleted a week after creation.</p>
+
+<p>This solution is of course not a panacea. However, it is still incomparably better than open information transfer. In addition, it does not require you to install additional programs and services on the server. Everything works on Jira.</p>
+
+<p><a href="https://marketplace.atlassian.com/apps/1220718/one-time-link?hosting=server&amp;tab=overview">View on Atlassian Marketplace</a></p>
+
+<p><a href="https://bitbucket.org/jibrok/one-time-link/wiki/Home">Documentation</a></p>
+
+<p><a href="https://bitbucket.org/jibrok/one-time-link/issues?status=new&amp;status=open">Report a problem</a></p>
+
+:ET
