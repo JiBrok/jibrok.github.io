@@ -1,0 +1,97 @@
+I"á<p>JiBrok is developing plugins for Atlassian products.
+Public plugins are available at the Atlassian Marketplace.</p>
+
+<p>For any questions, please contact us.</p>
+
+<h2 id="support">Support</h2>
+
+<ul>
+  <li><a href="mailto:support@jibrok.com">support@jibrok.com</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki">Wiki</a></li>
+</ul>
+
+<h2 id="time-in-status-fieldtimerstopwatchsla-">Time in status field/Timer/Stopwatch/SLA <img src="/images/time-in-status-field/time-in-status-field-144px.png" alt="Calculated custom fields icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-field">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/time-in-status-field/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441810/Plugin+Time+in+status+field+Timer+Stopwatch+SLA">Documentation</a></li>
+  <li><a href="https://jibrok.com/jira/plugins/time-in-status/doc/java">Java API</a></li>
+  <li><a href="https://jibrok.com/jira/plugins/time-in-status/doc/rest">REST API</a></li>
+</ul>
+
+<h2 id="message-field-">Message field <img src="/images/message-field/messge-144px.png" alt="Message field icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1219615/message-field">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/message-field/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/546668726/Plugin+Message+field">Documentation</a></li>
+  <li><a href="https://gist.github.com/JiBrok">JavaScript examples</a></li>
+</ul>
+
+<h2 id="simple-notifications-for-jira-">Simple notifications for Jira <img src="/images/simple-notifications-for-jira/simple-notifications-for-Jira144px.png" alt="Simple notifications for Jira icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/simple-notifications-for-jira/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542932995/Plugin+Simple+notifications+for+Jira">Documentation</a></li>
+</ul>
+
+<h2 id="delegating-group-management-">Delegating group management <img src="/images/delegating-group-management/delegating-144px.png" alt="Delegating group management icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220878/delegating-group-management">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/delegating-group-management/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/546668689/Plugin+Delegating+group+management">Documentation</a></li>
+</ul>
+
+<h2 id="switch-to-user--delegating-su-jira-">Switch to User + Delegating SU (Jira) <img src="/images/su/su-144px.png" alt="Switch to User + Delegating SU (Jira) icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/su/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/546668878/Plugin+Switch+to+User+Delegating+SU+Jira">Documentation</a></li>
+</ul>
+
+<h2 id="customizable-announcements-for-jira-">Customizable Announcements for Jira <img src="/images/banner/banner-144px.png" alt="Customizable Announcements for Jira icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/banner/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/543096967/Plugin+Customizable+Announcements+for+Jira">Documentation</a></li>
+</ul>
+
+<h2 id="calculated-custom-fields-">Calculated custom fields <img src="/images/calculated-custom-fields/calculated-fields-144px.png" alt="Calculated custom fields icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields">Download</a></li>
+  <li><a href="https://bitbucket.org/jibrok/calculated-custom-fields/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields">Documentation</a></li>
+</ul>
+
+<h2 id="one-time-link-">One-time Link <img src="/images/one-time-link/one-time-link-144px.png" alt="One-time Link icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220718/one-time-link">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/one-time-link">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834994/Plugin+One-time+Link">Documentation</a></li>
+</ul>
+
+<h2 id="search-by-worfklows-">Search by worfklows <img src="/images/search-by-workflow/global-admin-search-144px.png" alt="Search by worfklows icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220773/search-by-workflows">Download</a></li>
+  <li><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Service Desk</a> or <a href="https://bitbucket.org/jibrok/search-by-workflows/issues">Issue tracker</a></li>
+  <li><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/543097184/Plugin+Search+by+workflows">Documentation</a></li>
+</ul>
+
+<h2 id="cross-filters-matrix-archive-">Cross-Filters Matrix (Archive) <img src="/images/cross-filters matrix/filter-matrix-144px.png" alt="cross-filters matrix icon" width="25" /></h2>
+
+<ul>
+  <li><a href="https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix">Download</a></li>
+  <li><a href="https://bitbucket.org/jibrok/cross-filters-matrix/issues">Issue tracker</a></li>
+  <li><a href="https://bitbucket.org/jibrok/cross-filters-matrix/wiki/Home">Documentation</a></li>
+</ul>
+
+:ET
