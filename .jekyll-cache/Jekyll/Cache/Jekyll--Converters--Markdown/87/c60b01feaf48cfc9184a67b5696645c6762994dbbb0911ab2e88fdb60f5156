@@ -1,0 +1,114 @@
+I"�<p>The issue (task, work) in the process of solving goes through various stages. It is necessary to take into account and control the time spent at each stage.</p>
+
+<p><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441810/Plugin+Time+in+status+field+Timer+Stopwatch+SLA">Documentation and Knowledge Base</a></p>
+
+<p>Functions take the following parameters.</p>
+
+<ul>
+  <li><strong>condition</strong> - one of the characters &lt;, &lt;=, =&gt; =,&gt;. For example: “&gt;”.</li>
+  <li><strong>time</strong> - time string corresponding to one of the patterns.
+    <ul>
+      <li>“5h35m12s” - 5 hours 35 minutes 12 seconds</li>
+      <li>“5h12s” - 5 hours 12 seconds</li>
+      <li>3000m - 3000 minutes</li>
+      <li>“0”, “0s” … - time is zero.</li>
+    </ul>
+  </li>
+  <li><strong>calendar</strong> - the name or id of the calendar. For example: “Support” or “1”. How to view calendars?</li>
+  <li><strong>timer config id</strong> and <strong>timer scheme id</strong> - number. Jira admin can view it.</li>
+</ul>
+
+<h3 id="search-works-through-the-field-therefore-all-jqls-begin-with-the-field-name">Search works through the field. Therefore, all JQLs begin with the field name.</h3>
+
+<p><img src="/images/time-in-status-field/timer-jql-functions.png" alt="Plugin &quot;Time in status field/Timer/Stopwatch/SLA&quot; time-in-status field demo" /></p>
+
+<ul>
+  <li>The functions works with indexes</li>
+  <li>
+    <p>More info about timer states: <a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441891">⭐️Timers and Stopwatches - General information</a></p>
+  </li>
+  <li><strong>“Timer field“ in active()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is running</li>
+      <li>If the timer uses a calendar, the field may indicate that it is not working hours. This does not affect the search if timer is running.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field“ in inactive()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is pause, failed or completed.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field“ in isCompleted()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is completed. Those the timer is stopped and the time has not yet ended.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field“ in isFailed()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is failed. Those the timer is stopped and the time has ended.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field“ in isPaused()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is paused. Breaks in the work calendar are not considered a pause. But can be displayed in the field as a pause.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field“ in isRunning()</strong>
+    <ul>
+      <li>Returns tasks that have a timer is running. A break in the working calendar does not affect the search. The timer may be in state running, but at the same time the field will be displayed as a pause state.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in timeSpent(“condition”, “time”)</strong>
+    <ul>
+      <li>Returns tasks for which the timer has already counted the specified time. Those. The timer was active(in state Running) for the specified time.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in realTimeSpent(“condition”, “time”)</strong>
+    <ul>
+      <li>Returns tasks for which the timer has already counted the specified time. Those. The timer was active(in state Running) for the specified time.</li>
+      <li>The function works in real time.</li>
+      <li>It has a limit on the size of the issue.</li>
+      <li>The function is suitable for sampling active counters. Real-time reporting, work queues of tasks with reference to reaction time, execution …</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in timeLeft(“condition”, “time”)</strong>
+    <ul>
+      <li>Returns tasks for which the remaining timer time matches the condition.</li>
+      <li>The function works in real time.</li>
+      <li>It hasn’t a limit on the size of the issue.</li>
+      <li>The function is suitable for sampling active counters. Real-time reporting, work queues of tasks with reference to reaction time, execution …</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in searchByCalendar(“calendarId”)</strong>
+    <ul>
+      <li>Returns tasks whose timer uses the specified attribute.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in searchByGoal(“goalId”)</strong>
+    <ul>
+      <li>Returns tasks whose timer uses the specified attribute.</li>
+      <li>Id can be found with Jira admin.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in searchByTimerConfig(“timerConfigId”)</strong>
+    <ul>
+      <li>Returns tasks whose timer uses the specified attribute.</li>
+      <li>Id can be found with Jira admin.</li>
+    </ul>
+  </li>
+  <li><strong>“Timer field” in searchByTimerScheme(“timerSchemeId”)</strong>
+    <ul>
+      <li>Returns tasks whose timer uses the specified attribute.</li>
+      <li>Id can be found with Jira admin.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="-more-information">📜 More information</h3>
+
+<p><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-field?hosting=server&amp;tab=overview">View on Atlassian Marketplace</a></p>
+
+<p><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441810/Plugin+Time+in+status+field+Timer+Stopwatch+SLA">Documentation and Knowledge Base</a></p>
+
+<p><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Report a problem</a></p>
+:ET

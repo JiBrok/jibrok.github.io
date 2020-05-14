@@ -4,8 +4,6 @@ title: Plugin "Time in status field/Timer/Stopwatch/SLA"
 ---
 
 The issue (task, work) in the process of solving goes through various stages. It is necessary to take into account and control the time spent at each stage.
-
-
 [![Plugin "Time in status field/Timer/Stopwatch/SLA" Marketplace](/images/time-in-status-field/time-in-status-plugin-image.png)](https://marketplace.atlassian.com/apps/1220908/time-in-status-field?hosting=server&tab=overview)
 
 ### 📃 Overview ###
