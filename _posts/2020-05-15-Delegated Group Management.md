@@ -32,8 +32,8 @@ Let's, for example, assume there is a development team with its permission schem
 
 ### 📜 More information ###
 
-[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1220908/time-in-status-field?hosting=server&tab=overview)
+[View on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1220878/delegating-group-management?hosting=server&tab=overview)
 
-[Documentation and Knowledge Base](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441810/Plugin+Time+in+status+field+Timer+Stopwatch+SLA)
+[Documentation and Knowledge Base](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/546668689)
 
 [Report a problem or ask a question](https://jibrok.atlassian.net/servicedesk/customer/portals)

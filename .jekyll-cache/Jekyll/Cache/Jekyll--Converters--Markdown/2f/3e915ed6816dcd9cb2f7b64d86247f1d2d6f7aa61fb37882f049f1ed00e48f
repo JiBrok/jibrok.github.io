@@ -1,0 +1,32 @@
+I"*	<p>Delegated Group Management in Jira. ​The administrator can grant any users or groups the right to manage any groups. Delegate management of selected groups to a non-admin user.
+<a href="https://marketplace.atlassian.com/apps/1220878/delegating-group-management?hosting=server&amp;tab=overview"><img src="/images/delegating-group-management/delegated-group-manager-icon.png" alt="Plugin &quot;Delegating group management&quot; Marketplace" /></a></p>
+
+<h3 id="administrator-can-grant-the-right-to-manage-groups">Administrator can grant the right to manage groups</h3>
+<p>The administrator can grant any users or groups the right to manage any groups.</p>
+
+<h3 id="access-granted-list">Access granted list</h3>
+<p>Admins - users with the right to edit group members(delegating).</p>
+
+<h3 id="user-panel-for-managing-groups">User panel for managing groups</h3>
+<p>Users with groups control rights can manage groups in a standard interface.</p>
+
+<h3 id="save-time-by-delegating-group-management">Save time by delegating group management</h3>
+
+<p>Granting users the right to edit group members.</p>
+
+<p><img src="/images/delegating-group-management/interface.png" alt="Plugin &quot;Delegating group management&quot; Marketplace" /></p>
+
+<p>The administrator can grant any user the right to manage any group.</p>
+
+<p>Before, only the administrator could grant access rights. But now, users managing groups can also give access to a project, space or transition to workflow.</p>
+
+<p>Let’s, for example, assume there is a development team with its permission schemes in Jira, Confluence and Bitbucket systems. Make the team leader responsible for team-A-users, team-A-reviewers and team-A-testers groups. Now, this team leader can grant access to the services and processes used by the team. He no longer needs to contact the administrator for this.</p>
+
+<h3 id="-more-information">📜 More information</h3>
+
+<p><a href="https://marketplace.atlassian.com/apps/1220878/delegating-group-management?hosting=server&amp;tab=overview">View on Atlassian Marketplace</a></p>
+
+<p><a href="https://jibrok.atlassian.net/wiki/spaces/JBS/pages/513441810/Plugin+Time+in+status+field+Timer+Stopwatch+SLA">Documentation and Knowledge Base</a></p>
+
+<p><a href="https://jibrok.atlassian.net/servicedesk/customer/portals">Report a problem or ask a question</a></p>
+:ET
