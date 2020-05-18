@@ -9,9 +9,12 @@ Public plugins are available at the Atlassian Marketplace.
 
 For any questions, please contact us.
 
-## Support
+## Contacts
 
 * [support@jibrok.com](mailto:support@jibrok.com)
+	
+## Support
+
 * [Service Desk](https://jibrok.atlassian.net/servicedesk/customer/portals)
 * [Wiki](https://jibrok.atlassian.net/wiki)
 

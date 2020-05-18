@@ -12,4 +12,5 @@ Our add-ons/apps are sold on Atlassian Marketplace. If you generate an evaluatio
 ### Support Request
 To create a support request in our issue tracker you need to provide an email address and name. Our issue tracker allows public access and if you create an issue your name will be associated with the issue and it will be visible to others (your email is only visible to us, not others). If you prefer, you can contact us and ask that your request shall be private between you and us. We will process this request within 1 business day. At anytime you may request your account to be removed from our issue tracker and will comply with your request within 1 business day. If you prefer, you can completely skip our issue tracker and contact us directly for support requests. In that case your support request will be handled privately.
 
-[support@jibrok.com](mailto:support@jibrok.com)
+* [Service Desk (Help Center)](https://jibrok.atlassian.net/servicedesk/customer/portals)
+* [support@jibrok.com](mailto:support@jibrok.com)
