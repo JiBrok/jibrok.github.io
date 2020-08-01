@@ -3,45 +3,7 @@ layout: post
 title: Custom fields from plugins from JiBrok
 ---
 
-# List of available custom fields for Jira #
-
-* Time in status
-* Stopwatch
-* Timer
-* Transition counter
-* Is status
-* Message
-* Mentions users from comments
-* Age
-* Age by resolution
-* Count of attachment
-* Attachment links
-* Count of comment
-* Last comment
-* Previous assignee
-* Resolver
-* Not resolves sub-tasks
-* Resolves sub-tasks
-* Parent status
-* Sort by parent ASK
-* Sort by parent DESC
-* Sort by epic
-* Sort by epic rank
-* Date of the first comment
-* Date of the last comment
-* Author of last comment
-* Component leads
-* Project lead
-* Issue assignee, reporter and all comments
-* Issue assignee, reporter and last comment
-* Inward issues
-* Outward issues
-* Inward issues group by link type
-* Outward issues group by link type
-* Inward issues(include subtasks) group by link type
-* Outward issues(include subtasks) group by link type
-* All linked issues(include subtasks) group by link type
-
+## List of available custom fields for Jira ##
 
 ## Plugin "Time in status field/Timer/Stopwatch/SLA" ##
 ![message-field-banner](/images/time-in-status-field/time-in-status-plugin-image.png)
@@ -121,6 +83,63 @@ The javascript api allows you to change or hide the message depending on the dat
 
 * [Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields?hosting=server&tab=overview)
 * [Documentation](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields)
+
+### Shared component picker ###
+* The list of projects is set in the field settings. In this field you can select components from the specified projects
+* Value: Components
+* Search: The field stores the value in the index.
+
+### Status picker ### 
+* The list of statuses(issue status) is set in the field settings. One of these statuses is selected as the field value. 
+* Value: Status
+* Search: The field stores the value in the index.
+
+### Role picker ###
+* The list of Project Roles is set in the field settings. One of these roles is selected as the field value.
+* Project role
+* Search: The field stores the value in the index.
+
+### Group picker ###
+* The list of groups is set in the field settings. One of these groups is selected as the field value. 
+* Value: Group
+* Search: The field stores the value in the index
+* Can use in permission and notification schemes
+
+### Versions ###
+* This field allows you to calculate intersections, merges, and differences between two fields containing versions.
+* Value: Versions
+* Search: versions searcher
+
+You can use any fields for the calculation. The main thing is that the field returns the version or a list of versions. Checkboxes help you filter out unnecessary field types.
+You select two fields with versions. And Specify what relationship between them the field should calculate.
+Calculate mode for versions: 
+intersection 
+Union
+Subtract
+Symmetric difference
+ 
+Example of use: different between Affected versions and Fix versions
+
+### Formula fields ###
+This field runs a formula(script) on the server to calculate the value. Now the field supports JavaScript Syntax in the future there will be support for other programming languages and templates.
+The calculated field. The value of this field is the result of the formula. The value can be further processed before display.
+Formula fields differ in value type.
+Currently available types are: number, string, date.
+For each type of field, you can connect a search engine to work with the field through JQL.
+For numerical formulas, an additional time search engine is available.
+
+[Documentation](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694026241/Formula+field+-+script+field)
+
+### Time between dates ###
+This field calculates the time between two dates. You can specify a system field or a custom field as the date. The main thing is that the field returns values of the java.util. Date type.
+
+[Documentation](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694255617/Time+between+dates)
+
+### Issue Link counter ###
+This field shows the number of links to queries. The field settings specify which links to count. Takes into account the link's orientation(inward, outward, any) and type. It can count the number of linked issues, as well as the number of linked issues in the specified statuses.
+
+[Documentation](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/725680146/Issue+link+counter)
+
 
 ### Mentions users from comments ###
 * Show all users from comments. By mentions(this field) you can search(JQL)

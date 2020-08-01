@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plugin "Time in status field/Timer/Stopwatch/SLA" 
+title: Plugin for Jira - "Time in status field/Timer/Stopwatch/SLA" 
 ---
 
 The issue (task, work) in the process of solving goes through various stages. It is necessary to take into account and control the time spent at each stage.

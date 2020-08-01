@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plugin "Delegating group management"
+title: Plugin for Jira - Delegating group management
 ---
 
 Delegated Group Management in Jira. ​The administrator can grant any users or groups the right to manage any groups. Delegate management of selected groups to a non-admin user.

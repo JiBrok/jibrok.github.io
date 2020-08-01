@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizable Announcements for Jira 
+title: Plugin for Jira - Customizable Announcements for Jira 
 ---
 #### The ability to create an Announcement Banner is good! The ability to customize to whom and when to show it is wonderful! ####
 

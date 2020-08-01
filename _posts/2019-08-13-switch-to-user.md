@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plugins for Atlassian products - Switch to User + Delegating SU (Jira) 
+title: Plugin for Jira - Switch to User + Delegating SU (Jira) 
 ---
 #### You can log in to Jira with a different user ####
 <img src="/images/su/su-144px.png" alt="Switch to User icon" width="100"/>

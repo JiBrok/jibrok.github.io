@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timer field - JQL functions 
+title: Documentation - JQL functions for timer field
 ---
 
 The following JQL functions will help organize dashboards, filters, and reports with Plugin "Time in status field/Timer/Stopwatch/SLA"

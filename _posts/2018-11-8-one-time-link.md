@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Plugins for Atlassian products - One-time link
+title: Plugin for Jira - One-time link
 ---
 #### You send your secret (text, password ...) and in response, you will receive a link for one-time access to the sent secret
 
