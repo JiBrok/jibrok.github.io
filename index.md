@@ -4,7 +4,7 @@ width: expand
 hero:
     title: How can we help you?
     subtitle: 
-    image: atlassian/Atlassian-Partner-blue-rgb.svg
+    image: atlassian/atlassian-partner-blue-rgb.svg
     search: true
 ---
 
