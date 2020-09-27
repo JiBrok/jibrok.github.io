@@ -10,13 +10,13 @@ description:        Atlassian Partner
 lang:               en
 
 # Site subpath, e.g. /blog
-baseurl:            ""
+baseurl:            "https://jibrok.com"
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                ""
+url:                "https://jibrok.com"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo: vendor/vendor-logo-with-white-background-1000px.png
