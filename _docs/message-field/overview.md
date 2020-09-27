@@ -10,6 +10,8 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12196
 
 An application for displaying messages on issue screens.
 
+<iframe width="600" height="315" src="https://www.youtube-nocookie.com/embed/PogUyk9eD7U?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 You can use it to customize the message for any situation and in any style.
 * Large number of built-in settings and display conditions.
 * Unlimited customization options via templates and scripts.
