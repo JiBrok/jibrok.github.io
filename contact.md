@@ -16,4 +16,4 @@ permalink: /contact/
     
 * You can also contact us in social networks:
     * <a href="https://twitter.com/JiBrok_apps" class="uk-icon-link uk-icon" target="_blank"><img src="/uploads/social/twitter.svg" alt="rss" style="width: 20px; height: 20px;"></a>
-    * <a href="https://www.facebook.com/ji.brok.apps" class="uk-icon-link uk-icon" target="_blank"><img src="/uploads/social/facebook.svg" alt="rss" style="width: 20px; height: 20px;"></a>
+    
