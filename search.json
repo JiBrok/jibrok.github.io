@@ -1,14 +1,123 @@
----
-layout: null
----
 [
-  {% for doc in site.docs %}
+  
     {
-      "title"    : "{{ doc.title | escape }}",
-      "category" : "{{ doc.category }}",
-      "tags"     : "{{ doc.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ doc.url }}",
-      "date"     : "{{ doc.date }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "Advanced settings",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/advanced-settings/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Base settings",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/base-settings/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Create field and configuring",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/create-field/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Dynamic templates - Examples",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/dynamic-templates-examples/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "🔥Dynamic templates",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/dynamic-templates/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "HTML - Examples",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/html-examples/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Install",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/install/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "JavaScript - Examples",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/java-script-examples/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Open message settings",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/open-configure/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Overview",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/overview/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Refined for Jira | Sites &amp; Themes",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/refined-for-jira/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Rest API",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/rest/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Script Runner Behaviours - Settings",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/script-runner-behaviours/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "Script Runner Behaviours - Examples",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/script-runner-examples/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } ,
+  
+    {
+      "title"    : "All Message fields settings",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/docs/message-field/settings-for-all-fields/",
+      "date"     : "2020-09-27 20:48:15 +0300"
+    } 
+  
 ]
