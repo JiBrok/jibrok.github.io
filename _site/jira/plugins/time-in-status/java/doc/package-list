@@ -1,0 +1,11 @@
+com.jibrok.jira.plugins.timeinstatus.api
+com.jibrok.jira.plugins.timeinstatus.calendar
+com.jibrok.jira.plugins.timeinstatus.calendar.dto
+com.jibrok.jira.plugins.timeinstatus.calendar.manager
+com.jibrok.jira.plugins.timeinstatus.field
+com.jibrok.jira.plugins.timeinstatus.stopwatch.dto
+com.jibrok.jira.plugins.timeinstatus.stopwatch.field
+com.jibrok.jira.plugins.timeinstatus.stopwatch.model
+com.jibrok.jira.plugins.timeinstatus.timer.dto
+com.jibrok.jira.plugins.timeinstatus.timer.field
+com.jibrok.jira.plugins.timeinstatus.timer.model

@@ -10,7 +10,7 @@ To fix it you need to disable a couple of resources and enable global ones inste
 * Click the **Administration** icon on the top right-hand corner of the screen.
 * Go to **Manage apps**.
 
-    <a href="/uploads/message-field/install/manage apps.png"><img src="/uploads/message-field/install/manage apps.png" alt="open manage apps" width="500"/></a>
+    <a href="/uploads/message-field/install/manage-apps.png"><img src="/uploads/message-field/install/manage-apps.png" alt="open manage apps" width="500"/></a>
 * Find **Message field** in the plugins list. Click on its section. Then click on the button **17 of 19 modules enabled**(the number of modules may change over time) displaying plug-in modules(it is located in the right column).
   
     <a href="/uploads/message-field/plugin-modules.png"><img src="/uploads/message-field/plugin-modules.png" alt="plugin modules" width="500"/></a>

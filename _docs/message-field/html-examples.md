@@ -5,7 +5,7 @@ title: HTML - Examples
 
 You can display any HTML as a message. To do this select the **Message type** **'Custom'** in the field settings.
 
-<a href="/uploads/message-field/show as is.png"><img src="/uploads/message-field/show as is.png" width="600"/></a>
+<a href="/uploads/message-field/show-as-is.png"><img src="/uploads/message-field/show-as-is.png" width="600"/></a>
 
 ```html
 <text style="background: black; color: white"> The white message on the black backgroud</text>

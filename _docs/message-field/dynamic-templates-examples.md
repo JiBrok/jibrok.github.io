@@ -110,7 +110,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
   
 #### Show message for "description" and "assignee" depending on the priority. ####
 
-<a href="/uploads/message-field/dynamic template demo1.gif"><img src="/uploads/message-field/dynamic template demo1.gif" alt="dynamic template demo.gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="400"/></a>
       
     #if($formIssue.priority.name == "Blocker")
     	$fieldDisplayConfig.setMessageType("error")

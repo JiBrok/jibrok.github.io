@@ -38,15 +38,15 @@ title: Install
 5. Click the **Administration** icon on the top right-hand corner of the screen.
 6. Go to **Manage apps**.
 
-    <a href="/uploads/message-field/install/manage apps.png"><img src="/uploads/message-field/install/manage apps.png" alt="open manage apps" width="500"/></a>
+    <a href="/uploads/message-field/install/manage-apps.png"><img src="/uploads/message-field/install/manage-apps.png" alt="open manage apps" width="500"/></a>
 
 7. Click **Upload app**.
 
-    <a href="/uploads/message-field/install/upload app.png"><img src="/uploads/message-field/install/upload app.png" alt="click upload app" width="500"/></a>
+    <a href="/uploads/message-field/install/upload-app.png"><img src="/uploads/message-field/install/upload-app.png" alt="click upload app" width="500"/></a>
 
 8. Click **Choose file** and select downloading file.
  
-    <a href="/uploads/message-field/install/select downloading app.png"><img src="/uploads/message-field/install/select downloading app.png" alt="select downloading app" width="300"/></a>
+    <a href="/uploads/message-field/install/select-downloading-app.png"><img src="/uploads/message-field/install/select-downloading-app.png" alt="select downloading app" width="300"/></a>
 
 9. Click **Upload**.
 

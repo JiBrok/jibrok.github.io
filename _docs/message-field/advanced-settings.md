@@ -6,7 +6,7 @@ In the field **Show Settings** select the **Advanced** option.
 
 **Advance** settings include: 
 
-<a href="/uploads/message-field/advance settings.jpg"><img src="/uploads/message-field/advance settings.jpg" style="width:300px"/></a>
+<a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:300px"/></a>
 
 ## Message content
 
@@ -22,7 +22,7 @@ General view of the message and text
 
 * **Message Type** - One of the predefined types responsible for the color and style of the message.
     * **Info**, **Warning**, **Error**, **Success**, **Change** <br>
-    <a href="/uploads/message-field/message types.png"><img src="/uploads/message-field/message types.png" style="width:600px"/></a>
+    <a href="/uploads/message-field/message-types.png"><img src="/uploads/message-field/message-types.png" style="width:600px"/></a>
     * **Custom** -  In the case when this color palette is not enough or the messages do not look good in corporate style, you can configure **Body** & **Title** style(separately) using HTML.
     
 * **Show as flag**
@@ -30,7 +30,7 @@ General view of the message and text
         * The position of the message is determined by the position of the field on the screen. 
     * **Yes** - shows message in a small pop-up on the right side of the screen.
     
-    <a href="/uploads/message-field/show as flag.png"><img src="/uploads/message-field/show as flag.png" style="width:600px"/></a>
+    <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:600px"/></a>
 
 * **Size of displayed message**
     * **Standard**
@@ -47,7 +47,7 @@ General view of the message and text
 
 ## Conditions for displaying message
 
-<a href="/uploads/message-field/conditions for display a message.png"><img src="/uploads/message-field/conditions for display a message.png" style="width:600px"/></a>
+<a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:600px"/></a>
 
 * **Screens** 
     * For example if you use one screen for all issue actions(creating, viewing, editing a issue) with this setting you can specify on which screen you want to display the message. Although technically the field will be added to all issue screens, the display of the message (and the field) can be specified in this setting.
@@ -74,7 +74,7 @@ The message will be displayed only if all **three(Screens, Statuses, Links)** co
    
 In this section you can configure users for whom a message will be displayed (and if other conditions are met).
 
-<a href="/uploads/message-field/show message for next users.png"><img src="/uploads/message-field/show message for next users.png" style="width:600px"/></a>
+<a href="/uploads/message-field/show-message-for-next-users.png"><img src="/uploads/message-field/show-message-for-next-users.png" style="width:600px"/></a>
 
 * **Show for** 
     * **All users (logged in users and anonymous)**
