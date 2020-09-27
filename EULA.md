@@ -4,7 +4,7 @@ title: EULA
 permalink: /EULA/
 ---
 
-Last updated: August, 2020
+Last updated: September, 2020
 
 This EULA is for the following apps, listed on the Atlassian Marketplace:
 
@@ -19,6 +19,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Calculated custom fields](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
 * [Project help info](https://marketplace.atlassian.com/apps/1222760/project-help-info)
+* [Linked issues](https://marketplace.atlassian.com/apps/1223203/linked-issues)
 
 For every of these apps the following EULA belongs to.
 
