@@ -42,12 +42,12 @@ Special variables will be available in the template for work with data. Links le
 * $context - Can have one of the following values:
     * "CREATE" - Issue create screen
     * "EDIT" - Issue edit screen
-    * "TRANSITION" - Issue transition screens. Additional variables are accessed in this context:
-        * $transitionId - number
-        * $transitionName - string
     * "VIEW_ISSUE" - Issue view screen
     * "CREATE_SD" - Service desk create screen
     * "VIEW_SD" - Service desk view screen
+    * "TRANSITION" - Issue transition screens. Additional variables are accessed in this context:
+            * $transitionId - number
+            * $transitionName - string
 * [$currentUser](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/user/ApplicationUser.html)
     * The user who is viewing the message.
 * [$cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html)
