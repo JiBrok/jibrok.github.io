@@ -99,6 +99,13 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
         $fieldDisplayConfig.setHidden(true)##hide
     #end
 
+#### How to use $context, $transitionId and $transitionName? ####
+
+    #if($context == "TRANSITION")
+    	is transitionId 31 ? #if($transitionId == 31) Yes #else No #end <br>
+    	is transitionName "In Progress" ? #if($transitionName == "In Progress") Yes #else No #end<br>
+    #end
+
 #### How to use and check linked issues? [see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html) ####
    
     #set ($blockedIssues = $links.getOutwardIssues("blocked"))
