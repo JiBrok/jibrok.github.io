@@ -145,6 +145,15 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 #### How to use JQL in message? How to use $jqlService? [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html) ####
    
     $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
+   
+
+You can use current issue in jql for conditions:    
+
+    #if($jqlService.getIssueCountByJQL("key = $issue.key and updated < startOfDay(-2)"))
+        The problem has not been updated for more than two days.
+    #end
+
+          
     
 #### How to show fields for issues by JQL in message? How to use $issueFieldRender? [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html) ####
    
