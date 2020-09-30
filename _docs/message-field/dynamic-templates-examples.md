@@ -149,7 +149,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 
 You can use current issue in jql for conditions:    
 
-    #if($jqlService.getIssueCountByJQL("key = $issue.key and updated < startOfDay(-2)"))
+    #if($jqlService.getIssueCountByJQL("key = $issue.key and updated < startOfDay(-2)") > 0)
         The problem has not been updated for more than two days.
     #end
 
