@@ -42,7 +42,9 @@ Special variables will be available in the template for work with data. Links le
 * $context - Can have one of the following values:
     * "CREATE" - Issue create screen
     * "EDIT" - Issue edit screen
-    * "TRANSITION" - Issue transition screens
+    * "TRANSITION" - Issue transition screens. Additional variables are accessed in this context:
+        * $transitionId - number
+        * $transitionName - string
     * "VIEW_ISSUE" - Issue view screen
     * "CREATE_SD" - Service desk create screen
     * "VIEW_SD" - Service desk view screen
