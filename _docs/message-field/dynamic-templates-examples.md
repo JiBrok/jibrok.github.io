@@ -2,6 +2,7 @@
 title: Dynamic templates - Examples
 
 ---
+Examples of using variables that are available for use in dynamic templates.
 
 [Java doc for Message field](/jira/plugins/message-field/java/doc/).
 
