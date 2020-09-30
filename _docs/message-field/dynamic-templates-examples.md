@@ -83,7 +83,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $fieldDisplayConfig.setTitle("New title") 
     $fieldDisplayConfig.setShowForFieldId("summary") ## "customfield_10100"
     $fieldDisplayConfig.setInsert("before") ## "append", "prepend", "before", "after" 
-    fieldDisplayConfig.setHidden(true)
+    $fieldDisplayConfig.setHidden(true)
     
 #### How to hide a message? ####
     
