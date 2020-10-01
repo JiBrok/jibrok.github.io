@@ -4,6 +4,10 @@ title: Dynamic templates - Examples
 ---
 Examples of using variables that are available for use in dynamic templates.
 
+{:.no_toc}
+* TOC
+{:toc}
+
 [Java doc for Message field](/jira/plugins/message-field/java/doc/).
 
 You can see the official user guide for velocity [here](http://velocity.apache.org/engine/1.7/user-guide.html).
@@ -52,7 +56,8 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $form.summary <br>
     $form.customfield_10400
     
-####  How to use $formIssue? Get valid data from the issue screen. [see Java doc $formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) ####
+####  How to use $formIssue? Get valid data from the issue screen. ####
+[see Java doc $formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) 
     
     $formIssue.summary <br>
     $formIssue.priority.name <br>
@@ -62,7 +67,8 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
         Unassigned<br>
     #end
 
-#### How to use $cfValues? How to get the value of a custom field for an $issue? [see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) ####
+#### How to use $cfValues? How to get the value of a custom field for an $issue? ####
+[see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) 
     
     $cfValues.get(10100)<br>
     $cfValues.get("customfield_10100")<br>
@@ -87,7 +93,8 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $cfValues.getFromFormOrDefault("customfield_10100", 123)<br>
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
 
-#### How to use $fieldDisplayConfig? How to change the display of a message? [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) ####
+#### How to use $fieldDisplayConfig? How to change the display of a message? ####
+[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) 
 
     $fieldDisplayConfig.setAsFlag(true) ## true, false
     $fieldDisplayConfig.setMessageType("info") ## "info", "error", "success", "warning", "change", "SIMPLE_VIEW"
@@ -117,7 +124,8 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     	is transitionName "In Progress" ? #if($transitionName == "In Progress") Yes #else No #end<br>
     #end
 
-#### How to use and check linked issues? [see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html) ####
+#### How to use and check linked issues? ####
+[see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
    
     #set ($blockedIssues = $links.getOutwardIssues("blocked"))
     #if($blockedIssues.size() > 0)
@@ -153,7 +161,8 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     	$fieldDisplayConfig.setHidden(true)
     #end
 
-#### How to use JQL in message? How to use $jqlService? [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html) ####
+#### How to use JQL in message? How to use $jqlService? ####
+[see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
    
     $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
    
@@ -166,7 +175,8 @@ You can use current issue in jql for conditions:
 
           
     
-#### How to show fields for issues by JQL in message? How to use $issueFieldRender? [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html) ####
+#### How to show fields for issues by JQL in message? How to use $issueFieldRender? ####
+[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
    
     $issueFieldRender.getAsTableHtml( 
     	$jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 5), 

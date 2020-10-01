@@ -6,6 +6,10 @@ In the field **Show Settings** select the **Advanced** option.
 
 **Advance** settings include: 
 
+{:.no_toc}
+* TOC
+{:toc}
+
 <a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:300px"/></a>
 
 ## Message content

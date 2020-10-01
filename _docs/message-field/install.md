@@ -2,6 +2,9 @@
 title: Install
 
 ---
+{:.no_toc}
+* TOC
+{:toc}
 
 ## Install from Atlassian Marketplace
 
@@ -59,5 +62,5 @@ title: Install
 11. Click **Apply License**.
 
 
-### Atlassian Guide: Update license
+## Atlassian Guide: Update license
 * [Update license for a 3rd party app in Jira server](https://confluence.atlassian.com/jirakb/update-license-for-a-3rd-party-app-in-jira-server-429916493.html)

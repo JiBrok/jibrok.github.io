@@ -5,6 +5,10 @@ title: JavaScript - Examples
 
 JavaScript examples for  the **Message Field** application are available at [GitHub](https://gist.github.com/JiBrok/public)
 
+{:.no_toc}
+* TOC
+{:toc}
+
 ### Update message on create
 <script src="https://gist.github.com/JiBrok/bb8f6775509b8155c3b77cfcc69e931a.js"></script>
 
