@@ -33,7 +33,17 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     #foreach( $product in $allProducts )
         <li>$product</li>
     #end
-    </ul> 
+    </ul>
+    
+#### [Comments](http://velocity.apache.org/engine/1.7/user-guide.html#comments) ####
+
+    ## This is a single line comment.  
+    
+    #*
+      Thus begins a multi-line comment. Online visitors won't
+      see this text because the Velocity Templating Engine will
+      ignore it.
+    *#   
 
 ### Getting data from the screens ###
 
