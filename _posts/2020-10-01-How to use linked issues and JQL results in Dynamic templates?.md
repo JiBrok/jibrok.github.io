@@ -28,7 +28,7 @@ Accessing parent issue through $formIsuue is recommended as it works in every is
 
 ## How to get subtask? ##
 
-You can get subtask access also through the $issue:
+You can get subtask access also through the [$issue](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/issue/Issue.html):
 ```velocity
 #set($subTasks = $issue.subTaskObjects)
 $subTasks
@@ -44,7 +44,7 @@ $subTasks in this example is issue list. You can find examples of getting data f
 
 ## How to get all linked issues? ##
 
-Variable $links is used for work with issue links.
+Variable [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html) is used for work with issue links.
 Each issue link has its orientation. Use $links.getOutwardIssues() and $links.getInwardIssues() methods to get linked issues and incoming links.
 
 ```velocity
@@ -60,6 +60,8 @@ This methods will also return issues with parent links.
 Both methods return issue lists. See [How to get system fields values for issue list?](#how-to-get-system-fields-values-for-issue-list) below.
 
 ## How to get issues with certain type of links? ##
+
+[$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
 
 getOutwardIssues and getInwardIssues methods can accept 1 parameter: link type(numeric Id) or link name(string).
 If parameter is set, then method will return only issues with certain type of link. This methods return already created links.
@@ -93,7 +95,7 @@ All methods return issue lists. See [How to get system fields values for issue l
 
 
 ## How to get issues by jql query?  ##
-$jqlService is used for work with JQL.
+[$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html) is used for work with JQL.
 $jqlService can execute jql queries, return issue lists or number of issues that satisfy the query.
 
 Use $jqlService.getIssuesByJQL(JQL, COUNT) to get issue list by JQL.
@@ -119,6 +121,8 @@ But $jqlService can search only for stored data.
  ```
 
 ## How to get system fields values for issue list? ##
+[$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
+
 You can display on screen and use in conditions any available data. 
 
 ```velocity
@@ -169,7 +173,7 @@ Also you can use $issueFieldRender variable for rendering field values in beauti
 
 
 ## How to get custom field values from issue list? ## 
-$cfValues is used to get custom field values.
+[$cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) is used to get custom field values.
 $cfValues can return field values stored in the database and values that the user specifies on the screen.
 
 Example of getting data from the database for current issue.
@@ -225,7 +229,9 @@ Also you can use $issueFieldRender for rendering field values in Jira Style.
 
 ## How to display issue list and specified fields in tabular form? ##
 
-$issueFieldRender variable has method for displaying issue list and specified fields in tabular form.
+[$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
+
+[$issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html) variable has method for displaying issue list and specified fields in tabular form.
 
 $issueFieldRender.getAsTableHtml(issues, fields)
 issues - issue list
