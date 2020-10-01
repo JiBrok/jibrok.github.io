@@ -9,10 +9,10 @@ title: How to use linked issues and JQL results in Dynamic templates?
 
 Dynamic templates allow you to use various variables in your message.
 Some variables change their values in real time while user changes data on the screen, for example $form and $formIssue link.
-This post shows the examples of using utility variables for linked issues access: $link $jqlService
+This post shows the examples of using utility variables for linked issues access: [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html) and [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html).
 
 ## How to get parent issue? ##
-You can get parent issue access directly through the $issue:
+You can get parent issue access directly through the [$issue](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/issue/Issue.html):
 
 ```velocity
 #set($parent = $issue.parentObject)
@@ -24,7 +24,7 @@ Or through the $formIssue:
 #set($parent = $formIssue.parentObject)
 $parent
 ```
-Accessing parent issue through $formIsuue is recommended as it works in every issue screens including creating subtask screen. $issue contains only saved data(from database). 
+Accessing parent issue through $formIssue is recommended as it works in every issue screens including creating subtask screen. $issue contains only saved data(from database). 
 
 ## How to get subtask? ##
 
