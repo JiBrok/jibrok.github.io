@@ -104,6 +104,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $fieldDisplayConfig.setHidden(true)
     
 #### How to hide a message? ####
+[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
     
     #set ($optionCustomFieldValue = $cfValues.getFromForm("Option custom field name"))
     #if($optionCustomFieldValue.value == "option 1" )
@@ -116,6 +117,30 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     #else
         $fieldDisplayConfig.setHidden(true)##hide
     #end
+
+
+#### How to change message colour? ####
+[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
+
+<a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="600"/></a>
+
+
+    $fieldDisplayConfig.setMessageType("custom") ##require for custom colors
+    #set($r = $mathTool.random(0,255))
+    #set($g = $mathTool.random(0,255))
+    #set($b = $mathTool.random(0,255))
+    $fieldDisplayConfig.setBackgroundColor("rgb($r,$g,$b)") ## color as hex "#FFFFFF", "rgb(255,255,255)", "rgba(255,255,255, 1)"
+    #set($r = $mathTool.random(0,255))
+    #set($g = $mathTool.random(0,255))
+    #set($b = $mathTool.random(0,255))
+    $fieldDisplayConfig.setTextColor("rgb($r,$g,$b)")
+    #set($r = $mathTool.random(0,255))
+    #set($g = $mathTool.random(0,255))
+    #set($b = $mathTool.random(0,255))
+    $fieldDisplayConfig.setIconColor("rgb($r,$g,$b)")
+    
+    
+    $issue.key: $issue.summary
 
 #### How to use $context, $transitionId and $transitionName? ####
 

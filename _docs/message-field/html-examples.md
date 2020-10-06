@@ -1,11 +1,28 @@
 ---
-title: HTML - Examples
+title: Custom colors and HTML
 
 ---
 
+You can configure your own message style, if predefined styles are not enough.
+
+To do this you can use detailed settings of the message colour and add HTML with structure and style description in the message body
+
+## How to set colours in the message? ## 
+
+1. Choose **Message type** **'Custom'**. 
+2. Additional fields **Background color**, **Text color**, **Icon**, **Icon color** should appear.
+3. Choose predefined [colours Atlassian](https://www.atlassian.design/foundations/color).
+4. If you can't find the right colour, press **Select a custom color** for manual colour selection.
+
+<a href="/uploads/message-field/message-type-custom.png"><img src="/uploads/message-field/message-type-custom.png" width="600"/></a>
+
+<a href="/uploads/message-field/message-type-custom-as-flag.png"><img src="/uploads/message-field/message-type-custom-as-flag.png" width="300"/></a>
+
+Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
+
+## Short example for HTML ##
 You can display any HTML as a message. To do this select the **Message type** **'Custom'** in the field settings.
 
-<a href="/uploads/message-field/show-as-is.png"><img src="/uploads/message-field/show-as-is.png" width="600"/></a>
 
 ```html
 <text style="background: black; color: white"> The white message on the black backgroud</text>
