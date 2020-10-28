@@ -39,10 +39,13 @@ General view of the message and text
 * **Size of displayed message**
     * **Standard**
         * Custom field name is hidden on the Create/Edit/Transition issue screens.
-        * Custom field name is displayed on the View issue screen.
+        * Custom field name is displayed on the View issue screen (and export Printable).
         * For the option **Show as flag** **'Yes'** size of the flag is default(small pop-up).
+    * **Standard and hide field name**
+        * The custom field name is hidden on all issue screens (and export Printable).
+        * For the option Show as flag "Yes" size of the flag is default(small pop-up).
     * **Big**
-        * The custom field name is hidden on all issue screens.
+        * The custom field name is hidden on all issue screens (and export Printable).
         * For the option **Show as flag** **'Yes'** the pop-up window is bigger and more noticeable. 
         The message(big pop-up) appears on top of all page content. The pop-up window should be closed for further work on the page. You can close it by clicking the **Close** button or gray background around the popup.
        
