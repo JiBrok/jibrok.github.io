@@ -4,9 +4,11 @@ title: How to use linked issues and JQL results in Dynamic templates?
 ---
 
 Dynamic templates allow you to use various variables in your message.
-Some variables change their values in real time while user changes data on the screen, for example $form and $formIssue link.
+Some variables change their values in real time while user changes data on the screen, for example $form and [$formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html).
 This post shows the examples of using utility variables for linked issues access: [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html) and [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html).
 
+* [Dynamic templates](/docs/message-field/dynamic-templates)
+* [Dynamic templates - Examples](/docs/message-field/dynamic-templates-examples)
 {:.no_toc}
 * TOC
 {:toc}
