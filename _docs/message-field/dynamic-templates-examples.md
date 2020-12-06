@@ -207,6 +207,78 @@ You can use current issue in jql for conditions:
     	$jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 5), 
     	"issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
     	)
-    
 
 
+#### Check priority ####
+
+<a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="400"/></a>
+
+      #if($formIssue.priority.name == "Blocker")
+      $fieldDisplayConfig.setMessageType("error")
+      
+          State the reason for the Blocker priority. ##Message text
+      #elseif($formIssue.priority.name == "High")
+          $fieldDisplayConfig.setMessageType("warning")
+        
+          State the reason for the High priority. ##Message text
+      #end
+
+#### Check components ####
+
+      #foreach($component in $formIssue.components)
+         #if($component.name == "Test component")
+
+            You have selected a test component ##Message text
+         #end
+      #end
+
+
+#### Validate summary ####
+
+<a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="400"/></a>
+
+
+      #if($formIssue.summary.contains("PROJECTKEY"))
+         message contains PROJECTKEY<br> ##Message text
+      #end
+
+      #if($formIssue.summary.matches("(.*)PROJECTKEY(.*)"))
+         message contains PROJECTKEY (cheked by regex)<br> ##Message text
+      #end
+
+      #if($formIssue.summary.length() < 10)
+         Short summary<br> ##Message text
+      #end
+
+#### Check description and User Picker (single user) ####
+
+<a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="400"/></a>
+
+      #if(!$form.description || $form.description.trim() == "" || !$cfValues.getFromForm("User Picker (single user)"))
+         You need to set data in the system description field and specify the user in the custom field "User Picker (single user)" ##Message text
+      #end
+
+
+#### Check number custom field ####
+
+<a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="400"/></a>
+
+      #if($cfValues.getFromForm("Number") > 10)
+         number > 10 ##Message text
+      #end
+
+#### Check option from custom select field(checkbox or radio)  ####
+
+<a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="400"/></a>
+
+      #if($cfValues.getFromForm("Radio").optionId == 10102)
+         Selected option with Id 10102<br> ##Message text
+      #end
+
+      #if($cfValues.getFromForm("Single select field").name == "yes")
+          Selected option with name  "yes"<br> ##Message text
+      #end
+
+      #if($form.customfield_10202.indexOf("10301") > -1)
+         "Select List (multiple choices)" contains otpion with id 10301(option2) ##Message text
+      #end
