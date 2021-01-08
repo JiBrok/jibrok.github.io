@@ -60,10 +60,17 @@ General view of the message and text
     * For example if you use one screen for all issue actions(creating, viewing, editing a issue) with this setting you can specify on which screen you want to display the message. Although technically the field will be added to all issue screens, the display of the message (and the field) can be specified in this setting.
     * If the value is empty, the message is displayed on all screens where the field is added. 
     
-* **Statuses** 
+* **Show in statuses**
     * The message will be displayed only for issues in one of the specified statuses. 
     * If the value is empty the message will be displayed for issues in any statuses.
+    * This condition will be ignored on the issue create screen or if issue in one of the specified statuses of section "Don't show in statuses".
+
+* **Don't show in statuses**
+    * The message will not be displayed for issues in one of the specified statuses.
+    * If the value is empty or issues not in one of the specified statuses - see "Show in statuses".
     * This condition will be ignored on the issue create screen.
+        * If there is status in "Show in statuses" and "Don't show in statuses" fields then message will not displayed (for issue in this status). 
+
 
 * **Links**
     * The message will be displayed if there are specified links to other issues.
@@ -91,6 +98,10 @@ In this section you can configure users for whom a message will be displayed (an
 
 * **Show for users in groups** - List of user groups to show the message. If the user is in one of these groups, then the message will be displayed. If the value is empty, then the condition is ignored.
 * **Show for users in roles** - List of project roles to show the message. If the user has at least one of the specified roles in the issue project, then a message will be displayed. If the value is empty, then the condition is ignored.
+* **Don't show for users in groups** - List of user groups to don't show the message. If the user is in one of these groups, then the message will not displayed. If the value is empty, then the condition is ignored.
+* **Don't show for users in roles** - List of project roles to don't show the message. If the user has at least one of the specified roles in the issue project, then a message will not displayed. If the value is empty, then the condition is ignored.
+    * If there is group or role in "Show for users" and "Don't show for users" fields then message will not displayed (for users from group or role).
+    * If there is **user** in "Show for users" and "Don't show for users" fields (groups or roles) then message will not displayed.
 
 1. Condition **Show for** must always be met.
 1. If condition **Show for users in groups** is not empty then the user should be in one of these groups.
