@@ -103,6 +103,7 @@
     - time-in-status/autotrack
 #    - что это такое как это применять
     - time-in-status/detail-history
+    - time-in-status/manual-action-by-jql
 #    - что это такое как это применять
 
 - title: Issue panels
