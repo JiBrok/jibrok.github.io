@@ -1,9 +1,14 @@
 # Boxes include navigation
 
 - title: Message field
-  desc: Get started fast with installation and theme setup instructions
+  desc: This field shows message banner on any issue screens. HTML, Display settings, Conditions, Dynamic messages, JavaScript and others
   icon: messagefield
   doc: message-field/overview
+
+- title: Time in status | SLA | Timer | Stopwatch
+#todo  desc: Time in status
+  icon: time-in-status
+  doc: time-in-status/overview
 
 - title: Other apps
   desc: More plugins will be added soon

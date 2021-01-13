@@ -1,6 +1,6 @@
 ---
 title: Dynamic templates - Examples
-
+key: message-field
 ---
 Examples of using variables that are available for use in dynamic templates.
 

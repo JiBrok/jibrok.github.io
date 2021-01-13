@@ -1,5 +1,6 @@
 ---
 title: Advanced settings
+key: message-field
 
 ---
 In the field **Show Settings** select the **Advanced** option.

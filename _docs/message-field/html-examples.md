@@ -1,6 +1,6 @@
 ---
 title: Custom colors and HTML
-
+key: message-field
 ---
 
 You can configure your own message style, if predefined styles are not enough.

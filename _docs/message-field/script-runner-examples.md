@@ -1,6 +1,6 @@
 ---
 title: Script Runner Behaviours - Examples
-
+key: message-field
 ---
 
 Examples for working with the **Message Field** application using the **ScriptRunner Behaviours** are available at [GitHub](https://gist.github.com/JiBrok/public)

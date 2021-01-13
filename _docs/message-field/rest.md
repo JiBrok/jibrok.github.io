@@ -1,6 +1,6 @@
 ---
 title: Rest API
-
+key: message-field
 ---
 
 You can use the rest service to update the field settings and global plugin settings.

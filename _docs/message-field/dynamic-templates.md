@@ -1,6 +1,6 @@
 ---
 title: 🔥Dynamic templates
-
+key: message-field
 ---
 
 The dynamic templates allow to render the message using data from the issue and issue screens(creation,editing, etc) that can be changed in real time.

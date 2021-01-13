@@ -35,10 +35,12 @@
                         {% endif %}
                         {% if item.icon %}
                         {% if item.icon == 'messagefield' %}
-                        <img src="/uploads/message-field/messge-144px.png" alt="JiBrok"
+                        <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field"
                              style="width:100px;height:100px">
                         {% elsif item.icon == 'confluence' %}
-                        <img src="/uploads/atlassian/mark-gradient-blue-confluence.svg" alt="JiBrok" style="width:100px;height:100px">
+                        <img src="/uploads/atlassian/mark-gradient-blue-confluence.svg" alt="JiBrok confluence" style="width:100px;height:100px">
+                        {% elsif item.icon == 'time-in-status' %}
+                        <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok Time in status | SLA | Timer | Stopwatch" style="width:100px;height:100px">
                         {% else %}
                         <span data-uk-icon="icon: {{ item.icon }}; ratio: 3.4" class=""></span>
                         {% endif %}

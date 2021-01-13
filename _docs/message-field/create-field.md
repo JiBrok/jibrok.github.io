@@ -1,6 +1,6 @@
 ---
 title: Create field and configuring
-
+key: message-field
 ---
 After installing the app, create the "Message field". Then set contexts and screens.
 

@@ -1,6 +1,6 @@
 ---
 title: Base settings
-
+key: message-field
 ---
 
 While setting up a field you can choose which settings to show: basic or advanced.

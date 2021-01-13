@@ -1,6 +1,6 @@
 ---
 title: Overview
-
+key: message-field
 ---
 <a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=server&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:600px;"/></a>
 

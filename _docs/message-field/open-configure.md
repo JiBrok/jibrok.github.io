@@ -1,6 +1,6 @@
 ---
 title: Open message settings
-
+key: message-field
 ---
 After you create a Message field you can customize its message to display.
 

@@ -1,6 +1,6 @@
 ---
 title: Install
-
+key: message-field
 ---
 {:.no_toc}
 * TOC

@@ -1,6 +1,6 @@
 ---
 title: JavaScript - Examples
-
+key: message-field
 ---
 
 JavaScript examples for  the **Message Field** application are available at [GitHub](https://gist.github.com/JiBrok/public)

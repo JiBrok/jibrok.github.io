@@ -1,4 +1,5 @@
-- title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok" style="width:24px;height:24px"> Message field
+- title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
+  key: message-field
   docs:
   - message-field/overview
   - message-field/install
@@ -15,6 +16,138 @@
   - message-field/script-runner-behaviours
   - message-field/script-runner-examples
   - message-field/refined-for-jira
+
+- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
+  key: time-in-status
+  docs:
+    - time-in-status/overview
+#    - общее о плагине
+    - time-in-status/user-help-info
+
+- title: Settings
+  key: time-in-status
+  docs:
+    - time-in-status/common-settings
+    - time-in-status/performance-config-jql
+    - time-in-status/performance-config-multithreading
+    -
+- title: WORK CALENDARS
+  key: time-in-status
+  docs:
+#    - в плагине есть встроенная справка как ее открыть
+    - time-in-status/work-calendar
+#    - есть все календари,где используются
+    - time-in-status/work-calendar-settings
+
+- title: Time in status
+  key: time-in-status
+  docs:
+# детально про натсройки календаря
+    - time-in-status/time-in-status-jql
+#    - функции которые доступны из коробки
+    - time-in-status/time-in-status-field
+    - time-in-status/time-in-status-field-settings
+#    - информация о поле
+    - time-in-status/time-in-status-field-all
+#    - страница всех полей
+    - time-in-status/time-in-status-field-jql
+
+- title: Stopwatch
+  key: time-in-status
+  docs:
+#    - jql этого поля
+    - time-in-status/stopwatch-field
+    #    - информация о поле
+    - time-in-status/stopwatch-field-settings
+    - time-in-status/stopwatch-configs
+#    - что такое конфиг и как настраивается
+    - time-in-status/stopwatch-schemes
+#    - что такое схема и куда ее втыкать
+    - time-in-status/stopwatch-field-all
+#    - страница всех полей
+    - time-in-status/stopwatch-field-jql
+
+- title: Timer
+  key: time-in-status
+  docs:
+  #    - jql этого поля
+    - time-in-status/timer-field-settings
+    - time-in-status/timer-field
+#    - о поле и го натсройках
+    - time-in-status/timer-configs
+#    - что такое конфиг и как его натсраивать
+    - time-in-status/timer-schemes
+#    - что такое схма и как ее настраивать
+    - time-in-status/timer-field-all
+#    - страница всех полей
+    - time-in-status/timer-field-jql
+#    - jql этого поля
+
+- title: Additional functions
+  key: time-in-status
+  docs:
+    - time-in-status/templates-for-field-value
+#    - что такое шаблоны как их применять ссылки на примеры
+    - time-in-status/worklog-settings
+#    - что это такое как это применять
+    - time-in-status/autotrack
+#    - что это такое как это применять
+    - time-in-status/detail-history
+#    - что это такое как это применять
+
+- title: Issue panels
+  key: time-in-status
+  docs:
+    - time-in-status/bottom-panel-configs
+#что это за панели и как их настроить
+    - time-in-status/field-panel-configs
+#    - если нужно поменять расположение полей
+
+- title: Reports
+  key: time-in-status
+  docs:
+    - time-in-status/export-to-eazybi
+    - time-in-status/reports-permissions
+    - time-in-status/reports-all
+    - time-in-status/report-create
+    - time-in-status/report-table
+    - time-in-status/report-status-assignee
+    - time-in-status/report-assignee-status
+
+- title: Field Helpers
+  key: time-in-status
+  docs:
+    - time-in-status/time-in-status-helper-number
+    - time-in-status/time-in-status-helper-additional-information
+    - time-in-status/stopwatch-helper-number
+    - time-in-status/stopwatch-helper-date
+    - time-in-status/stopwatch-helper-additional-information
+    - time-in-status/timer-helper-number
+    - time-in-status/timer-helper-date
+    - time-in-status/timer-helper-additional-information
+
+
+- title: Other fields
+  key: time-in-status
+  docs:
+    - time-in-status/jql-function-field
+    - time-in-status/jql-function-field-all
+    - time-in-status/transition-counter-field
+    - time-in-status/is-status-field
+
+- title: API
+  key: time-in-status
+  docs:
+    - time-in-status/rest-api
+    - time-in-status/java-api
+
+- title: Reference information
+  key: time-in-status
+  docs:
+    - time-in-status/time-formats
+
+
+
 
 
 

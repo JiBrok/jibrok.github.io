@@ -1,6 +1,6 @@
 ---
 title: All Message fields settings
-
+key: message-field
 ---
 
 When there are a lot of messages in the system it can be difficult to administer them with standard tools. To simplify the work with messages there is an interface where you can display the settings for all (or selected) fields of the "Message field".
