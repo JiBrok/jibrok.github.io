@@ -21,16 +21,26 @@
   key: time-in-status
   docs:
     - time-in-status/overview
+    - time-in-status/install
+    - time-in-status/quick-start
 #    - общее о плагине
     - time-in-status/user-help-info
 
+- title: Tutorials
+  key: time-in-status
+  docs:
+    - time-in-status/about-fields
+    - time-in-status/step-by-step-time-in-status
+    - time-in-status/step-by-step-stopwatch
+    - time-in-status/step-by-step-timer
+    -
 - title: Settings
   key: time-in-status
   docs:
-    - time-in-status/common-settings
     - time-in-status/performance-config-jql
     - time-in-status/performance-config-multithreading
-    -
+    - time-in-status/common-settings
+
 - title: WORK CALENDARS
   key: time-in-status
   docs:
