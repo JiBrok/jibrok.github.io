@@ -1,4 +1,5 @@
 ---
-title: stopwatch configs 
+title: stopwatch  
 key: time-in-status
 ---
+ common

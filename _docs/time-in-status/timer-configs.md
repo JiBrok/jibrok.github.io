@@ -1,4 +1,23 @@
 ---
-title: tiemr config
+title: Create or edit Timer config
 key: time-in-status
 ---
+TODO tutorials
+
+* Name - for navigation
+* Calculate type - after the timer stops, in the event of a restart. The timer will not start. It will restart and delete the previous value. It will be restarted and leave the previous values in the archive.
+    * First start - The timer will be started only 1 time. It will not restart. After the timer stops, its value is completely fixed.
+    The timer ignores restart events.
+    * Last start - The timer after restarting deletes its previous value. The timer always has 1 value that indicates the time of the last start.
+    * Calculate all start and create archive - The timer after each restart saves the current timer to the archive and starts a new countdown. If the timer is restarted several times, all values and resolutions of the timers are saved.
+* Allow change goal after start - When the timer starts for the first time, it sets a target that is current at the current time. When subsequent events are triggered, the target will specify, which can lead to a re-calculation of time.
+* Update goal with issue update - The timer will respond to all changes in the task and will refine the goal.
+* Events - issue events to which the timer responds with a specific command. General information
+* Throwable events - When a issue changes its state, the timer can generate a separate event.
+
+
+
+<div class="uk-alert-note" data-uk-alert="">
+When you fire an event, it can be caught by the Simple notification plugin. See more filters
+</div>
+ 

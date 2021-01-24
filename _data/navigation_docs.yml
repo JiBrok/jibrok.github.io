@@ -62,6 +62,13 @@
 #    - страница всех полей
     - time-in-status/time-in-status-field-jql
 
+- title: Timers and Stopwatches
+  key: time-in-status
+  docs:
+    - time-in-status/timers-and-stopwatches-general-information
+    - time-in-status/timers-and-stopwatches-schemes-and-configurations
+
+
 - title: Stopwatch
   key: time-in-status
   docs:
@@ -117,6 +124,7 @@
 - title: Reports
   key: time-in-status
   docs:
+    - time-in-status/export-fields
     - time-in-status/export-to-eazybi
     - time-in-status/reports-permissions
     - time-in-status/reports-all
@@ -158,6 +166,7 @@
   key: time-in-status
   docs:
     - time-in-status/time-formats
+    - time-in-status/available-events
 
 
 

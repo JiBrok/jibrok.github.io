@@ -117,7 +117,7 @@ $alert-danger-color:                             $global-danger-background !defa
 
 .uk-alert-warning {
     background: $alert-warning-background;
-    color: $alert-warning-color;
+    /*color: $alert-warning-color;*/
     @if(mixin-exists(hook-alert-warning)) {@include hook-alert-warning();}
 }
 
