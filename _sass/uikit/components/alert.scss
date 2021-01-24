@@ -122,6 +122,16 @@ $alert-danger-color:                             $global-danger-background !defa
 }
 
 /*
+ * Note
+ */
+
+.uk-alert-note {
+    background: #EAE6FF;
+    /*color: $alert-warning-color;*/
+    @if(mixin-exists(hook-alert-warning)) {@include hook-alert-warning();}
+}
+
+/*
  * Danger
  */
 

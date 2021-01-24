@@ -130,9 +130,11 @@
   docs:
     - time-in-status/time-in-status-helper-number
     - time-in-status/time-in-status-helper-additional-information
+
     - time-in-status/stopwatch-helper-number
     - time-in-status/stopwatch-helper-date
     - time-in-status/stopwatch-helper-additional-information
+    -
     - time-in-status/timer-helper-number
     - time-in-status/timer-helper-date
     - time-in-status/timer-helper-additional-information
