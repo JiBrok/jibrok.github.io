@@ -37,3 +37,14 @@ A window will open for you to configure the field.
 * Create change log for timer  - Changing the timer state (Running -> Paused) will be recorded in the issue history.
 * Add timer time in issue history - only affects new entries in history.
 * Sub-tasks - Child tasks can display parent timers. And don't start your timers.
+
+
+<a href="/uploads/time-in-status/timer-field-settings/timer-field.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-config.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-config2.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config2.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-manual.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-manual.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-panel.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-panel.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-settings.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-settings.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png" style="width:600px"/></a>

@@ -34,3 +34,13 @@ A window will open for you to configure the field.
 * Create change log for stopwatch  - Changing the stopwatch state (Running -> Paused) will be recorded in the issue history.
 * Add timer stopwatch in issue history - only affects new entries in history.
 * Sub-tasks - Child tasks can display parent stopwatches. And don't start your stopwatches.  
+
+
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-config.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-config.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-config2.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-config2.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-settings.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild-settings.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-feild.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png" style="width:600px"/></a>

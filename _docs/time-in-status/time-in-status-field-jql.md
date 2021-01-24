@@ -66,3 +66,6 @@ By the field “Time in status” it is possible to sort. Sorting takes place ac
 * "Time in status" in time (">", "1h")
 * "Time in status" in realTime ("<", "1h")
 * "Time in status" in realTimeBetween ("1h", "2h")
+
+<a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:600px"/></a>

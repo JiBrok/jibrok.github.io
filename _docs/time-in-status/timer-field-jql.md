@@ -95,3 +95,6 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 * Returns tasks whose timer uses the specified attribute.
 
 * Id can be found with Jira admin.
+
+<a href="/uploads/time-in-status/timer-field-jql/timer-field-jqls.png"><img src="/uploads/time-in-status/timer-field-jql/timer-field-jqls.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-field-jql/timer-field-searcher.png"><img src="/uploads/time-in-status/timer-field-jql/timer-field-searcher.png" style="width:600px"/></a>

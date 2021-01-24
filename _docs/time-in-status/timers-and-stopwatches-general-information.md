@@ -55,3 +55,5 @@ Stopwatch may be in the following states:
 If two triggers fire simultaneously, then only the first one is executed in accordance with the order of the commands: Start > Pause > Stop  
 </div>
 
+<a href="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png" style="width:600px"/></a>

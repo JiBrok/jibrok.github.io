@@ -60,3 +60,6 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 ### "Stopwatch field" in searchByStopwatchScheme(“stopwatchSchemeId”) ###
 * Returns tasks whose stopwatch uses the specified attribute.
 * Id can be found with Jira admin.
+
+<a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png" style="width:600px"/></a>

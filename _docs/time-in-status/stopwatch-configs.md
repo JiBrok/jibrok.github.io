@@ -27,3 +27,6 @@ When you fire an event, it can be caught by the Simple notification plugin. See 
 
 
 * JQL - if no jql is specified, then the timer will start when start is triggered. Otherwise, it will only start if it matches at least one jql.
+
+<a href="/uploads/time-in-status/stopwatch-configs/all-configs.png"><img src="/uploads/time-in-status/stopwatch-configs/all-configs.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png"><img src="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png" style="width:600px"/></a>

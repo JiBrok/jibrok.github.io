@@ -66,3 +66,10 @@ Calculate time in statuses
 Calculate time after last move
 Calculate after last transition
 Work calendar
+
+
+<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-settings1.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-settings1.png" style="width:600px"/></a>

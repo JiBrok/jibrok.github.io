@@ -15,3 +15,7 @@ You can also remove unnecessary statuses from the report. For example, the final
 You can quickly export a report in one of the formats (JSON, CSV) from the issue view page. Default settings - sets the administrator globally or separately for the project.
 
 TODO REPORTS JQLS
+
+<a href="/uploads/time-in-status/bottom-panel-configs/all-settings.png"><img src="/uploads/time-in-status/bottom-panel-configs/all-settings.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/bottom-panel-configs/time-in-status-report.png"><img src="/uploads/time-in-status/bottom-panel-configs/time-in-status-report.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/bottom-panel-configs/time-in-status-report-export.png"><img src="/uploads/time-in-status/bottom-panel-configs/time-in-status-report-export.png" style="width:600px"/></a>

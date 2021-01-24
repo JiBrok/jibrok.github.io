@@ -69,6 +69,13 @@ After setting up field initialization, import the data again so that the system 
 
 ## Now you can use data from the Time in status fields in reports. ## 
 
+
+<a href="/uploads/time-in-status/export-to-eazybi/create-fields.png"><img src="/uploads/time-in-status/export-to-eazybi/create-fields.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/export-to-eazybi/field-export-settings.png"><img src="/uploads/time-in-status/export-to-eazybi/field-export-settings.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/export-to-eazybi/import.png"><img src="/uploads/time-in-status/export-to-eazybi/import.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/export-to-eazybi/import-created-fields.png"><img src="/uploads/time-in-status/export-to-eazybi/import-created-fields.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/export-to-eazybi/import-js-example.png"><img src="/uploads/time-in-status/export-to-eazybi/import-js-example.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/export-to-eazybi/report-example.png"><img src="/uploads/time-in-status/export-to-eazybi/report-example.png" style="width:600px"/></a>
     
     
     

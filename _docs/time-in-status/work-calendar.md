@@ -28,3 +28,15 @@ In the window that opens, select a calendar for detailed viewing
 
 6. Work time settings - are user for new time formats from D13 to D42
 Default - The working day is equal to the calendar day
+
+
+<a href="/uploads/time-in-status/work-calendar/admin-search.png"><img src="/uploads/time-in-status/work-calendar/admin-search.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/all.png"><img src="/uploads/time-in-status/work-calendar/all.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/break-time.png"><img src="/uploads/time-in-status/work-calendar/break-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/break-time2.png"><img src="/uploads/time-in-status/work-calendar/break-time2.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/create.png"><img src="/uploads/time-in-status/work-calendar/create.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/set-time.png"><img src="/uploads/time-in-status/work-calendar/set-time.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/set-time2.png"><img src="/uploads/time-in-status/work-calendar/set-time2.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/time-settings.png"><img src="/uploads/time-in-status/work-calendar/time-settings.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/validation.png"><img src="/uploads/time-in-status/work-calendar/validation.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/work-calendar/view.png"><img src="/uploads/time-in-status/work-calendar/view.png" style="width:600px"/></a>

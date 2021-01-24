@@ -19,3 +19,5 @@ Here it is set by what configuration the specified project and issue type will w
 Within one project and one issue type, only 1 configuration corresponds.
 
 
+<a href="/uploads/time-in-status/timer-schemes/timer-schemes-all.png"><img src="/uploads/time-in-status/timer-schemes/timer-schemes-all.png" style="width:600px"/></a>
+<a href="/uploads/time-in-status/timer-schemes/timer-scheme-create.png"><img src="/uploads/time-in-status/timer-schemes/timer-scheme-create.png" style="width:600px"/></a>

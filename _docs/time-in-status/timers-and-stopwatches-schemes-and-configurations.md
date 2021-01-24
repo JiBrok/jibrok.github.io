@@ -12,3 +12,5 @@ Schemas start working only after they are connected to the fields.
 The scheme partially duplicates the functionality of custom field config, but at the same time allows for more flexible configuration and reuse of settings. For example, you can connect different different configurations to different issue types to the same field within the same project.
 
 The overall picture is as follows:
+
+<a href="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png"><img src="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png" style="width:600px"/></a>

@@ -46,8 +46,6 @@
   docs:
 #    - в плагине есть встроенная справка как ее открыть
     - time-in-status/work-calendar
-#    - есть все календари,где используются
-    - time-in-status/work-calendar-settings
 
 - title: Time in status
   key: time-in-status
