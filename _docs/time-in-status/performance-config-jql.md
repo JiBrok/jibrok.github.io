@@ -28,7 +28,7 @@ TODO
 
 The flag connects caching to the field and panel. It will not affect the display speed of the field. But it significantly accelerates the work with the field via the JQL, in the case of repeated request for data within one minute. When this option is enabled, the time is displayed accurate to the minute.
 
-### Count limit (optimally in the region of 10-30 thousand.) ###
+### Count limit (optimally in the region of 10-30 thousand. for 1 thread) ###
 
 Max count jql functions (global and field queries) For real-time functions, sets a limit. The maximum number of tasks that are calculated according to the condition specified in the function.
 
