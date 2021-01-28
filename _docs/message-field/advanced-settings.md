@@ -48,9 +48,9 @@ General view of the message and text
         * View: hide field name and left aligned. Other: show field name.
         * View: hide field name and left aligned. Other: hide field name.
         * View: hide field name and left aligned. Other: hide field name and left aligned.
-        * View: hide field name. Other screens: show field name.
-        * View: hide field name. Other screens: hide field name.
-        * View: hide field name. Other screens: hide field name and left aligned.
+        * View: hide field name. Other: show field name.
+        * View: hide field name. Other: hide field name.
+        * View: hide field name. Other: hide field name and left aligned.
     * **Flag**
         * Small pop-up in the upper right corner.
         * Big pop-up: 
