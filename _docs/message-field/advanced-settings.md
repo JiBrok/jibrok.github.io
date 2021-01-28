@@ -51,7 +51,7 @@ General view of the message and text
         * View screen: hide field name. Other screens: show field name.
         * View screen: hide field name. Other screens: hide field name.
         * View screen: hide field name. Other screens: hide field name and left aligned.
-      * **Flag**
+    * **Flag**
         * Small pop-up in the upper right corner.
         * Big pop-up: 
           
