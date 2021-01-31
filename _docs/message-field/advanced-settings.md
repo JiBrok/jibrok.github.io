@@ -37,21 +37,31 @@ General view of the message and text
     
     <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:600px"/></a>
 
-* **Size of displayed message**
-    * **Standard**
-        * Custom field name is hidden on the Create/Edit/Transition issue screens.
-        * Custom field name is displayed on the View issue screen (and export Printable).
-        * For the option **Show as flag** **'Yes'** size of the flag is default(small pop-up).
-    * **Standard and hide field name**
-        * The custom field name is hidden on all issue screens (and export Printable).
-        * For the option Show as flag "Yes" size of the flag is default(small pop-up).
-    * **Big**
-        * The custom field name is hidden on all issue screens (and export Printable).
-        * For the option **Show as flag** **'Yes'** the pop-up window is bigger and more noticeable. 
-        The message(big pop-up) appears on top of all page content. The pop-up window should be closed for further work on the page. You can close it by clicking the **Close** button or gray background around the popup.
-       
-        <a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:300px"/></a>    
+    * Regardless of this setting, messages can be exported to print.
 
+
+
+* **Display settings**
+    * **Message**
+        * View: show field name. Other: show field name.
+        * View: show field name. Other: hide field name.
+        * View: show field name. Other: hide field name and left aligned.
+        * View: hide field name and left aligned. Other: show field name.
+        * View: hide field name and left aligned. Other: hide field name.
+        * View: hide field name and left aligned. Other: hide field name and left aligned.
+        * View: hide field name. Other: show field name.
+        * View: hide field name. Other: hide field name.
+        * View: hide field name. Other: hide field name and left aligned.
+    * **Flag**
+        * Small pop-up in the upper right corner.
+        * Big pop-up: 
+          
+<a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:300px"/></a> 
+    
+    * View - View issue screen.
+    * Other - Create, Edit, Transition issue screens.
+    * Left aligned - Message is left aligned with the other custom fields.
+    * Service desk: all options displayed as "hide field name"
 
 ## Conditions for displaying message
 
