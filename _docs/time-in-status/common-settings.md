@@ -6,7 +6,7 @@ key: time-in-status
 В этом меню собраны общие настройки плагина которые влияют на большое количество функционала.
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/common-settings/common-settings.png"><img src="/uploads/time-in-status/common-settings/common-settings.png" alt="" width="300"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/common-settings/common-settings.png"><img src="/uploads/time-in-status/common-settings/common-settings.png" alt="" width="50%"/></a></p>
 ### System user ###
 
 Некоторые функции в плагине выполняются в фоновом режиме. 

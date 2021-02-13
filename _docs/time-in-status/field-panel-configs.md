@@ -9,10 +9,10 @@ key: time-in-status
 <tr>
 <td>
 Timer panel config 1:<br>
-<a href="/uploads/time-in-status/field-panel-configs/time-tracking-style.png"><img src="/uploads/time-in-status/field-panel-configs/time-tracking-style.png" style="width:300px"/></a>
+<a href="/uploads/time-in-status/field-panel-configs/time-tracking-style.png"><img src="/uploads/time-in-status/field-panel-configs/time-tracking-style.png" style="width:50%"/></a>
 </td>
 <td>Timer panel config 2(Example at the bottom of the screenshot):<br>
-<a href="/uploads/time-in-status/field-panel-configs/panels-reordering.png"><img src="/uploads/time-in-status/field-panel-configs/panels-reordering.png" style="width:300px"/></a>
+<a href="/uploads/time-in-status/field-panel-configs/panels-reordering.png"><img src="/uploads/time-in-status/field-panel-configs/panels-reordering.png" style="width:50%"/></a>
 </td>
 </tr>
 </table>
@@ -24,7 +24,7 @@ gg(admin search) + "Field Panels config"
 * And you can set higher or lower should be located panel relative to others.
 * You can set arbitrary text as the title bar.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/field-panel-configs/field-panels-settings.png"><img src="/uploads/time-in-status/field-panel-configs/field-panels-settings.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/field-panel-configs/field-panels-settings.png"><img src="/uploads/time-in-status/field-panel-configs/field-panels-settings.png" style="width:100%;"/></a></p>
 
 
 ## Time in status ## 
@@ -36,8 +36,8 @@ The "Time in status" fields with the  "Show as panel" setting enabled in the sid
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png" style="width:300px"/></a></td>
-<td><a href="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png"><img src="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png" style="width:300px"/></a></td>
-<td><a href="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png" style="width:300px"/></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png" style="width:50%"/></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png"><img src="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png" style="width:50%"/></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png" style="width:50%"/></a></td>
 </tr>
 </table>

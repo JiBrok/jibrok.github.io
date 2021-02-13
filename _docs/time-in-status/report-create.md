@@ -7,7 +7,7 @@ key: time-in-status
 
 Если у пользователя есть права на создание новых отчетов, то в меню с отчетами у него будет доступна соответствующая кнопка в правой части экрана - "Create report".
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;"/></a></p>
 
 При нажатии пользователю откроется интерфейс дл создания отчетов.
 
@@ -25,18 +25,18 @@ key: time-in-status
 * Для каждого отчета отдельно задаются права доступа и расписание для обновления данных.
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;"/></a></p>
 
 ## Детальнее ##
 
 * Name - указывается для поиска отчета и навигации между ними.
 * Type - Тип отчета, от него зависят прочие настройки отчета.
     * Table - табличный отчет позволяющий указывать любые поля, формулы и группировку в отчете.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/1.png"><img src="/uploads/time-in-status/report-create/1.png" style="width:300px;"/></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/1.png"><img src="/uploads/time-in-status/report-create/1.png" style="width:50%;"/></a></p>
     * Time in status - отчет показывающий время проведенное задачами в статусе с разбивкой по исполнителям.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/2.png"><img src="/uploads/time-in-status/report-create/2.png" style="width:300px;"/></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/2.png"><img src="/uploads/time-in-status/report-create/2.png" style="width:50%;"/></a></p>
     * Time in status by assignee - показывает время проведенное задачами на различных исполнителях с разбивкой по статусам.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/3.png"><img src="/uploads/time-in-status/report-create/3.png" style="width:300px;"/></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/3.png"><img src="/uploads/time-in-status/report-create/3.png" style="width:50%;"/></a></p>
 * JQL - задачи для которых нужно построить отчет.
 * Schedule expression - отчеты генерируются и сохраняют свои данные до следующей генерации. Вы можете обновлять(генерировать) отчеты вручную или указать расписание для автоматического обновления данных.
     * укажите число N в минутах - каждые N минут отчет будет обновляться.
@@ -51,12 +51,12 @@ key: time-in-status
 * JQLs - issues are counted only in the first matching jql. Задача попадет только в 1 группу. 
 * JQLs - issues are counted in all jqls. Задача попадет во все подходящие группы.
   * Вы можете менять порядок JQL условий перетаскиванием.
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/4.png"><img src="/uploads/time-in-status/report-create/4.png" style="width:300px;"/></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/4.png"><img src="/uploads/time-in-status/report-create/4.png" style="width:50%;"/></a></p>
 
 
   
 **Columns**
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/5.png"><img src="/uploads/time-in-status/report-create/5.png" style="width:300px;"/></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/5.png"><img src="/uploads/time-in-status/report-create/5.png" style="width:50%;"/></a></p>
 * Column title - заголовок будет отображен в таблице.
 * Field - какие данные показать в колонке. В зависимости от выбранного поля будет предложен список дополнительных функций для расчета значения.
   * Значение рассчитывается для всей группы. 
@@ -67,10 +67,10 @@ key: time-in-status
 * Вы можете менять порядок колонок перетаскиванием.
 
 * **Custom calculated field (html)** 
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/6.png"><img src="/uploads/time-in-status/report-create/6.png" style="width:300px;"/></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/6.png"><img src="/uploads/time-in-status/report-create/6.png" style="width:50%;"/></a></p>
 
 Особый тип поля. Используя <a href="https://velocity.apache.org/engine/1.7/user-guide.html">velocity</a> можно не только настроить отображение значения (HTML) но и произвести дополнительные расчеты. Это поле позволяет обратиться к любым ячейкам отчета и произвести вычисления на их основе(аля excel).
-<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.png"><img src="/uploads/time-in-status/report-create/7.png" style="width:300px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.png"><img src="/uploads/time-in-status/report-create/7.png" style="width:50%;"/></a></p>
 
         $report[0][1] + $report[0][2] 
 

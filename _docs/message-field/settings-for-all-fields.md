@@ -9,7 +9,7 @@ When there are a lot of messages in the system it can be difficult to administer
 
 * In the left menu, find the section **Message field** and click **All Message fields settings**.
 
-<a href="/uploads/message-field/settings-for-all-message-fields.jpg"><img src="/uploads/message-field/settings-for-all-message-fields.jpg" style="width:600px"/></a>
+<a href="/uploads/message-field/settings-for-all-message-fields.jpg"><img src="/uploads/message-field/settings-for-all-message-fields.jpg" style="width:100%;"/></a>
 
 Click **Show settings** and select the settings you want to view. This selection will be saved for you and the next time you open this interface these fields will already be selected.
 

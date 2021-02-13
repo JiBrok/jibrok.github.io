@@ -27,7 +27,7 @@ key: time-in-status
 * Настройка прав доступ
 * Возможность работать со временем как с простым числом - упрощает интеграцию со сторонними решениями.
 
-[comment]: <> (TODO <a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:600px;"></a>)
+[comment]: <> (TODO <a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"></a>)
 
 * Отслеживание новых запросов.
 * Анализ и сбор данных о времени в статусе прошлых задач.

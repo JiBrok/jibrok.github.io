@@ -28,7 +28,7 @@ key: time-in-status
 Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:100%"/></a></p>
 
 
 ### "Time in status" in active () ###
@@ -74,4 +74,4 @@ By the field “Time in status” it is possible to sort. Sorting takes place ac
 JQL Функции могут быть недоступны, если их названия конфликтуют с функциями из других плагинов. На этот случай у каждой функции есть запасная с постфиксом "_jb".
 
 В случае конфликта нужно выключить модуль с основной функцией и включить запасную:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:100%"/></a></p>

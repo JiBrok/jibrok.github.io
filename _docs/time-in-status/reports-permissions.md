@@ -10,5 +10,5 @@ key: time-in-status
 
 Администратор может сам создавать и контролировать отчеты и права на их просмотр. Или как вариант делигировать это на определенную роль в проекте.  
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-permissions/1.png"><img src="/uploads/time-in-status/reports-permissions/1.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-permissions/1.png"><img src="/uploads/time-in-status/reports-permissions/1.png" style="width:100%;"/></a></p>
 

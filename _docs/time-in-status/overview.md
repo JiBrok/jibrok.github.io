@@ -3,7 +3,7 @@ title: Overview
 key: time-in-status
 ---
 
-<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview"><img src="/uploads/time-in-status/overview/marketplace.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview"><img src="/uploads/time-in-status/overview/marketplace.png" style="width:100%;"/></a></p>
 
 <p style="text-align: center;">View app on <a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview">Atlassian Marketplace</a></p>
 ## Welcome to Time in status | SLA | Timer | Stopwatch!
@@ -30,8 +30,8 @@ To calculate time in different scenarios, the plugin provides a set of fields, f
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:600px;"/></a></td>
-<td><a href="/uploads/time-in-status/overview/fields-example-1.png"><img src="/uploads/time-in-status/overview/fields-example-1.png" style="width:600px;"/></a></td>
+<td><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"/></a></td>
+<td><a href="/uploads/time-in-status/overview/fields-example-1.png"><img src="/uploads/time-in-status/overview/fields-example-1.png" style="width:100%;"/></a></td>
 </tr>
 </table>
 
@@ -39,19 +39,19 @@ To calculate time in different scenarios, the plugin provides a set of fields, f
 
 The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
 Вы можете создавать неограниченное количество календарей и использовать в любых контекстах и проектах. 
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.png"><img src="/uploads/time-in-status/overview/calendar-example.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.png"><img src="/uploads/time-in-status/overview/calendar-example.png" style="width:100%;"/></a></p>
 
 ### Отчеты: ###
 В каждой задаче доступны детальные отчеты о времени, переходах между статусами и исполнителях. Их можно скачивать прямо из интерфейса задачи. 
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.png"><img src="/uploads/time-in-status/overview/issue-report.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.png"><img src="/uploads/time-in-status/overview/issue-report.png" style="width:100%;"/></a></p>
 
 Создавайте отчеты по jql с группировкой по любым полям или jql запросам. В отчетах доступы различные функции для расчета значений(среднее, перцентили...).
 Отчеты будут доступны для просмотра по ссылке.
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/overview/reports-example-2.png"><img src="/uploads/time-in-status/overview/reports-example-2.png" style="width:600px;"/></a></td>
-<td><a href="/uploads/time-in-status/overview/reports-example-1.png"><img src="/uploads/time-in-status/overview/reports-example-1.png" style="width:600px;"/></a></td>
+<td><a href="/uploads/time-in-status/overview/reports-example-2.png"><img src="/uploads/time-in-status/overview/reports-example-2.png" style="width:100%;"/></a></td>
+<td><a href="/uploads/time-in-status/overview/reports-example-1.png"><img src="/uploads/time-in-status/overview/reports-example-1.png" style="width:100%;"/></a></td>
 </tr>
 </table>
 

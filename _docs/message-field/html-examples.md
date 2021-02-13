@@ -14,9 +14,9 @@ To do this you can use detailed settings of the message colour and add HTML with
 3. Choose predefined [colours Atlassian](https://www.atlassian.design/foundations/color).
 4. If you can't find the right colour, press **Select a custom color** for manual colour selection.
 
-<a href="/uploads/message-field/message-type-custom.png"><img src="/uploads/message-field/message-type-custom.png" width="600"/></a>
+<a href="/uploads/message-field/message-type-custom.png"><img src="/uploads/message-field/message-type-custom.png" width="100%"/></a>
 
-<a href="/uploads/message-field/message-type-custom-as-flag.png"><img src="/uploads/message-field/message-type-custom-as-flag.png" width="300"/></a>
+<a href="/uploads/message-field/message-type-custom-as-flag.png"><img src="/uploads/message-field/message-type-custom-as-flag.png" width="50%"/></a>
 
 Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
 
@@ -34,7 +34,7 @@ Or hex colors
 <text style="background: #000000; color: #FFFFFF"> The white message on the black backgroud</text>
 ```
 
-<a href="/uploads/message-field/html-example-1.png"><img src="/uploads/message-field/html-example-1.png" width="600"/></a>
+<a href="/uploads/message-field/html-example-1.png"><img src="/uploads/message-field/html-example-1.png" width="100%"/></a>
 
 
 Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>

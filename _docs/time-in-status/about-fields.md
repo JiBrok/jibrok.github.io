@@ -26,8 +26,8 @@ key: time-in-status
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" alt="time in status config" width="300"/></a></td>
-<td><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:600px;"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" alt="time in status config" width="50%"/></a></td>
+<td><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"/></a></td>
 </tr>
 </table>
 
@@ -48,8 +48,8 @@ key: time-in-status
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.png" alt="stopwatch field config" width="300"/></a></td>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-config.png" alt="stopwatch config" width="300"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.png" alt="stopwatch field config" width="50%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-config.png" alt="stopwatch config" width="50%"/></a></td>
 </tr>
 </table>
 
@@ -72,8 +72,8 @@ key: time-in-status
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/timer-field-config.png"><img src="/uploads/time-in-status/about-fields/timer-field-config.png" alt="timer field config" width="300"/></a></td>
-<td><a href="/uploads/time-in-status/about-fields/timer-config.png"><img src="/uploads/time-in-status/about-fields/timer-config.png" alt="timer config" width="300"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-field-config.png"><img src="/uploads/time-in-status/about-fields/timer-field-config.png" alt="timer field config" width="50%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-config.png"><img src="/uploads/time-in-status/about-fields/timer-config.png" alt="timer config" width="50%"/></a></td>
 </tr>
 </table>
 

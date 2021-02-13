@@ -11,7 +11,7 @@ In the field **Show Settings** select the **Advanced** option.
 * TOC
 {:toc}
 
-<a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:300px"/></a>
+<a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:50%"/></a>
 
 ## Message content
 
@@ -27,7 +27,7 @@ General view of the message and text
 
 * **Message Type** - One of the predefined types responsible for the color and style of the message.
     * **Info**, **Warning**, **Error**, **Success**, **Change** <br>
-    <a href="/uploads/message-field/message-types.png"><img src="/uploads/message-field/message-types.png" style="width:600px"/></a>
+    <a href="/uploads/message-field/message-types.png"><img src="/uploads/message-field/message-types.png" style="width:100%;"/></a>
     * **Custom** -  In the case when this color palette is not enough or the messages do not look good in corporate style, you can configure **Body** & **Title** style(separately) using HTML.
     
 * **Show as flag**
@@ -35,7 +35,7 @@ General view of the message and text
         * The position of the message is determined by the position of the field on the screen. 
     * **Yes** - shows message in a small pop-up on the right side of the screen.
     
-    <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:600px"/></a>
+    <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:100%;"/></a>
 
     * Regardless of this setting, messages can be exported to print.
 
@@ -56,7 +56,7 @@ General view of the message and text
         * Small pop-up in the upper right corner.
         * Big pop-up: 
           
-<a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:300px"/></a> 
+<a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:50%"/></a> 
     
     * View - View issue screen.
     * Other - Create, Edit, Transition issue screens.
@@ -65,7 +65,7 @@ General view of the message and text
 
 ## Conditions for displaying message
 
-<a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:600px"/></a>
+<a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:100%;"/></a>
 
 * **Screens** 
     * For example if you use one screen for all issue actions(creating, viewing, editing a issue) with this setting you can specify on which screen you want to display the message. Although technically the field will be added to all issue screens, the display of the message (and the field) can be specified in this setting.
@@ -99,7 +99,7 @@ The message will be displayed only if all **three(Screens, Statuses, Links)** co
    
 In this section you can configure users for whom a message will be displayed (and if other conditions are met).
 
-<a href="/uploads/message-field/show-message-for-next-users.png"><img src="/uploads/message-field/show-message-for-next-users.png" style="width:600px"/></a>
+<a href="/uploads/message-field/show-message-for-next-users.png"><img src="/uploads/message-field/show-message-for-next-users.png" style="width:100%;"/></a>
 
 * **Show for** 
     * **All users (logged in users and anonymous)**
@@ -125,7 +125,7 @@ In this section, you can add arbitrary code that will be executed along with dis
 
 Basicaly most of the problems which have usually been solved by using JavaScript now(version 4.0.0) can be solved by [dynamic templates](/docs/message-field/dynamic-templates/).
 
-<a href="/uploads/message-field/javascript.png"><img src="/uploads/message-field/javascript.png" style="width:600px"/></a>
+<a href="/uploads/message-field/javascript.png"><img src="/uploads/message-field/javascript.png" style="width:100%;"/></a>
 
 * **JavaScript code** - The code has a predefined variable **JIBROK_MESSAGE_FIELD_CONTEXT** that contains information about the screen(context) on which the code is executed (and the message is displayed).
 * **JavaScript contexts** - This option specifies the contexts on which Javascript will executed. If the value is empty, then the code will always execute when displaying a message.
@@ -141,7 +141,7 @@ Basicaly most of the problems which have usually been solved by using JavaScript
 
 You can click **Show Demo** to test the display of a message.
 
-<a href="/uploads/message-field/advanced-demo.png"><img src="/uploads/message-field/advanced-demo.png" style="width:600px"/></a>
+<a href="/uploads/message-field/advanced-demo.png"><img src="/uploads/message-field/advanced-demo.png" style="width:100%;"/></a>
 
 You can see how your message will look like for the specified issue and execution context.
 

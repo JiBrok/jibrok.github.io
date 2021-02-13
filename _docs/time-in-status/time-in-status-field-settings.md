@@ -4,15 +4,15 @@ key: time-in-status
 ---
 
 1. Create new custom field with type 'Time in status field' and set issue screens.<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png" style="width:300px"/></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png" style="width:50%"/></a></p>
 
 2. After create open field config.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png" style="width:300px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png" style="width:50%"/></a></p>
 3. Select field context and click 'Edit Time in status field'<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png" style="width:300px"/></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png" style="width:50%"/></a></p>
    
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" style="width:600px;"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" style="width:100%;"></a></p>
 
 ### General settings ### 
 

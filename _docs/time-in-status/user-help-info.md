@@ -6,11 +6,11 @@ key: time-in-status
 Доступные JQL функции для работы со временем и примеры их использования.
 
 1. Данная справка доступа из jira из меню помощи:
-<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/help-link.png"><img src="/uploads/time-in-status/user-help-info/help-link.png" alt="work calendars" width="150"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/help-link.png"><img src="/uploads/time-in-status/user-help-info/help-link.png" alt="work calendars" width="50%"/></a></p>
    
 2. Возможно вам понадобится рабочий календарь. Их список в системе можно посмотреть по ссылке из меню помощи или по ссылке *{baseUrl}*/secure/jibrokAllCalendars!default.jspa:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.png"><img src="/uploads/time-in-status/user-help-info/work-calendars.png" alt="work calendars" width="150"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.png"><img src="/uploads/time-in-status/user-help-info/work-calendars.png" alt="work calendars" width="50%"/></a></p>
 
 <hr>
 

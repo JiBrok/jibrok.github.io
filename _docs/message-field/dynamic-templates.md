@@ -11,7 +11,7 @@ This functionality works in Jira Core/Software/Service Desk.
 
 In previous versions of the application you could change message dynamically only using JavaScript. Many cases now can be done by using the dynamic templates([velocity](https://velocity.apache.org/engine/1.7/user-guide.html) templates (HTML + Java API) + real time render).
 
-<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="600"/></a>
+<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="100%"/></a>
 
 [How to do this?](/docs/message-field/dynamic-templates-examples/#show-message-for-description-and-assignee-depending-on-the-priority)
 
@@ -69,7 +69,7 @@ Special variables will be available in the template for work with data. Links le
 
 You can click **Show Demo** to test the display of a message.
 
-<a href="/uploads/message-field/dynamic-templates-demo.png"><img src="/uploads/message-field/dynamic-templates-demo.png" alt="dynamic templates demo" width="600"/></a>
+<a href="/uploads/message-field/dynamic-templates-demo.png"><img src="/uploads/message-field/dynamic-templates-demo.png" alt="dynamic templates demo" width="100%"/></a>
 
 You can see how your message will look like for the specified issue and execution context.
 
@@ -84,7 +84,7 @@ You can see how your message will look like for the specified issue and executio
       * Execute the following code([Running JavaScript](https://developers.google.com/web/tools/chrome-devtools/console#javascript)): `JSON.stringify(MESSAGE_FIELD_OBJECT.getDataFromDefaultForm (), undefined, 4)`
       * Paste its result in the box above. Except for the first and last quotes.
       
-      <a href="/uploads/message-field/dynamic-templates-demo-collect-data.png"><img src="/uploads/message-field/dynamic-templates-demo-collect-data.png" alt="dynamic templates demo collect data.png" width="600"/></a>
+      <a href="/uploads/message-field/dynamic-templates-demo-collect-data.png"><img src="/uploads/message-field/dynamic-templates-demo-collect-data.png" alt="dynamic templates demo collect data.png" width="100%"/></a>
 
 * **Context** - The message will be generated for this issue context. 
     * **"CREATE"** - Issue create screen

@@ -9,11 +9,11 @@ key: time-in-status
 Далее нужно будет подключить эту настройку в конфигурации таймера или секундомера.<br>
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/1.png"><img src="/uploads/time-in-status/worklog-settings/1.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/1.png"><img src="/uploads/time-in-status/worklog-settings/1.png" style="width:100%"/></a></p>
 <br>
 
 Auto worklog settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/2.png"><img src="/uploads/time-in-status/worklog-settings/2.png" style="width:600px"/></a><br></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/2.png"><img src="/uploads/time-in-status/worklog-settings/2.png" style="width:100%"/></a><br></p>
 
 Работает это следующим образом.<br>
 Когда таймер или секундомер останавливаются(STOP or PAUSE) рассчитывается время с последнего запуска счетчика и это время записывается в worklog.

@@ -17,6 +17,6 @@ key: time-in-status
 
 В задачах из JQL для этих полей будет выполнено указанное действие.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/manual-action-by-jql/1.png"><img src="/uploads/time-in-status/manual-action-by-jql/1.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/manual-action-by-jql/1.png"><img src="/uploads/time-in-status/manual-action-by-jql/1.png" style="width:100%;"/></a></p>
 
 

@@ -5,7 +5,7 @@ key: time-in-status
 
 Администратор Jira может настроить автоматическую остановку и запуск таймеров или секундомеров при входе или выходе пользователя из системы.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/1.png"><img src="/uploads/time-in-status/autotrack/1.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/1.png"><img src="/uploads/time-in-status/autotrack/1.png" style="width:100%;"/></a></p>
 
 Работает это следующим образом.
 
@@ -17,7 +17,7 @@ key: time-in-status
 * и другие настройки.
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/2.png"><img src="/uploads/time-in-status/autotrack/2.png" style="width:300px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/2.png"><img src="/uploads/time-in-status/autotrack/2.png" style="width:50%"/></a></p>
 
 Далее:
 * Когда пользователь входит в Jira выполняется поиск задач по JQL. Берется **первая задача(сортировка важна)** и в ней от имени пользователя запускаются указанные таймеры и секундомеры.

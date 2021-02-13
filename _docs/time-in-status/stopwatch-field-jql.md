@@ -24,13 +24,13 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 
 Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png" style="width:100%"/></a></p>
 
 
 ## JQL Functions ##
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png" style="width:300px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png" style="width:50%"/></a></p>
 
 
 ### “Stopwatch field“ in active() ###

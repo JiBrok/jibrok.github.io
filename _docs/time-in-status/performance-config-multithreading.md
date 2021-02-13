@@ -17,7 +17,7 @@ key: time-in-status
 </p>
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.png"><img src="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.png" alt="" width="300"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.png"><img src="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.png" alt="" width="50%"/></a></p>
 
 
 ### Listeners ###
@@ -69,7 +69,7 @@ see [Performance settings - JQL: Count limit](/docs/time-in-status/performance-c
 
 Ниже представлена таблица с экспериментальными данными. Таблица построена на реальных данных, но служит исключительно для демонстрации динамики изменения времени выполнения запроса в зависимости от настроек.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.png"><img src="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.png"><img src="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.png" style="width:100%"/></a></p>
 
 Механизм еще не исчерпал всех возможностей оптимизации. Он будет улучшаться в новых версиях приложения.
 

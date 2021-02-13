@@ -10,11 +10,11 @@ key: time-in-status
 
 Настройка по умолчанию выключена и включается на усмотрение администратора. Она может быть включена и на постоянной основе. 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/1.png"><img src="/uploads/time-in-status/detail-history/1.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/1.png"><img src="/uploads/time-in-status/detail-history/1.png" style="width:100%;"/></a></p>
 
 При включенной опции в задаче появляется две дополнительных панели с подробным логом. Эти панели доступны только администраторам.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/2.png"><img src="/uploads/time-in-status/detail-history/2.png" style="width:600px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/2.png"><img src="/uploads/time-in-status/detail-history/2.png" style="width:100%;"/></a></p>
 
 
 

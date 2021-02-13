@@ -3,7 +3,7 @@ title: Field - Periodic calculation of the value of the function by jql
 key: time-in-status
 ---
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.png"><img src="/uploads/time-in-status/jql-function-field/1.png" style="width:300px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.png"><img src="/uploads/time-in-status/jql-function-field/1.png" style="width:50%;"/></a></p>
 
 Как работает это поле со сложным названием?
 В настройках поля указывается:
@@ -20,7 +20,7 @@ key: time-in-status
 
 Значение поля едино для всех задач использующих данный контекст поля.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/2.png"><img src="/uploads/time-in-status/jql-function-field/2.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/2.png"><img src="/uploads/time-in-status/jql-function-field/2.png" style="width:100%;"/></a></p>
 
 
 Примеры использования.

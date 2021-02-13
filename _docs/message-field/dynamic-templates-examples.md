@@ -122,7 +122,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 #### How to change message colour? ####
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
 
-<a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="600"/></a>
+<a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%"/></a>
 
 
     $fieldDisplayConfig.setMessageType("custom") ##require for custom colors
@@ -161,7 +161,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
   
 #### Show message for "description" and "assignee" depending on the priority. ####
 
-<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%"/></a>
       
     #if($formIssue.priority.name == "Blocker")
     	$fieldDisplayConfig.setMessageType("error")
@@ -211,7 +211,7 @@ You can use current issue in jql for conditions:
 
 #### Check priority ####
 
-<a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%"/></a>
 
       #if($formIssue.priority.name == "Blocker")
       $fieldDisplayConfig.setMessageType("error")
@@ -235,7 +235,7 @@ You can use current issue in jql for conditions:
 
 #### Validate summary ####
 
-<a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%"/></a>
 
 
       #if($formIssue.summary.contains("PROJECTKEY"))
@@ -252,7 +252,7 @@ You can use current issue in jql for conditions:
 
 #### Check description and User Picker (single user) ####
 
-<a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="50%"/></a>
 
       #if(!$form.description || $form.description.trim() == "" || !$cfValues.getFromForm("User Picker (single user)"))
          You need to set data in the system description field and specify the user in the custom field "User Picker (single user)" ##Message text
@@ -261,7 +261,7 @@ You can use current issue in jql for conditions:
 
 #### Check number custom field ####
 
-<a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="50%"/></a>
 
       #if($cfValues.getFromForm("Number") > 10)
          number > 10 ##Message text
@@ -269,7 +269,7 @@ You can use current issue in jql for conditions:
 
 #### Check option from custom select field(checkbox or radio)  ####
 
-<a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="400"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="50%"/></a>
 
       #if($cfValues.getFromForm("Radio").optionId == 10102)
          Selected option with Id 10102<br> ##Message text

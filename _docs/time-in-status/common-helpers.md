@@ -5,7 +5,7 @@ key: time-in-status
 
 Поля хелперы облегчают интеграцию со сторонними решениями и приложениями.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/1.png"><img src="/uploads/time-in-status/common-helpers/1.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/1.png"><img src="/uploads/time-in-status/common-helpers/1.png" style="width:100%;"/></a></p>
 
 Поля "Time in status", "Timer" и "Stopwatch" содержат в себе "сложное" значение поля. Оно включает в себя, пройденное время, время перерывов, статус счетчика, даты запуска и прочую информацию. Но когда речь заходит о экспорте, интеграциях, то как правило нужна какая-то конкретная величина - например пройденное время. Для облегчения получения этих конкретных величин и нужны поля хелперы.
 
@@ -19,10 +19,10 @@ key: time-in-status
     * Основное поле. Оно будет служить источником информации. Хелпер будет обращаться к нему для получения значения и обрабатывать полученное значение.
     * Данные которые нужно получить и вывести из значения основного поля.
     
-<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/2.png"><img src="/uploads/time-in-status/common-helpers/2.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/2.png"><img src="/uploads/time-in-status/common-helpers/2.png" style="width:100%;"/></a></p>
 
 Так например вы можете создать основное поле секундомер. К нему создать хелпер который будет выводить время секундомера в часах. Подключить хелпер в стороннем плагине который умеет обрабатывать числовые значения. 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/3.png"><img src="/uploads/time-in-status/common-helpers/3.png" style="width:300px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/3.png"><img src="/uploads/time-in-status/common-helpers/3.png" style="width:50%;"/></a></p>
 
 

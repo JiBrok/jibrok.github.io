@@ -47,9 +47,9 @@ key: time-in-status
 
 
 ### 2. После создания поля перейдите в его настройки: ###
-1. <a href="/uploads/time-in-status/step-by-step-time-in-status/fields.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/fields.png" alt="time in status fields" width="300"/></a>
-2. <a href="/uploads/time-in-status/step-by-step-time-in-status/field-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/field-config.png" alt="time in status field config" width="300"/></a>
-3. <a href="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png" alt="time in status field config" width="300"/></a>
+1. <a href="/uploads/time-in-status/step-by-step-time-in-status/fields.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/fields.png" alt="time in status fields" width="50%"/></a>
+2. <a href="/uploads/time-in-status/step-by-step-time-in-status/field-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/field-config.png" alt="time in status field config" width="50%"/></a>
+3. <a href="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png" alt="time in status field config" width="50%"/></a>
 
 
 Укажите статусы в которых вы хотите посчитать время и сохраните настройки. Для работы поиска нужно так же запустить реиндкс для jira или для проекта. 

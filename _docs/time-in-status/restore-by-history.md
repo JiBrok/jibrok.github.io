@@ -10,7 +10,7 @@ key: time-in-status
 И на основе этого анализа выдает актуальное значение счетчика на основе истории запроса. Далее этот счетчик будет работать как и прежде - обрабатывать тригеры в реальном времени.
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/restore-by-history/1.png"><img src="/uploads/time-in-status/restore-by-history/1.png" alt="" width="600"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/restore-by-history/1.png"><img src="/uploads/time-in-status/restore-by-history/1.png" alt="" width="100%"/></a></p>
 
 Администратор указывает JQL и поля для проверки. Далее выполняется одно из трех действий:
 * Найти задачи у которых данные не совпадают с историей. Причины различий могут быть самыми разными: ошибки, проблемы с сервером, некорректная конфигурация и т.д В результате будут показаны запросы с "неправильным" значениями и будет указанно в чем заключается ошибка.

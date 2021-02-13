@@ -20,14 +20,14 @@ key: time-in-status
 [Подробнее в разделе о создании отчета.](/docs/time-in-status/report-create/)
     
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;"/></a></p>
 
 
 ## All reports ##
 
 Пользователям доступно меню для просмотра всех доступных им отчетов. Меню с отчетами располагается в верхней части экрана "Reports". 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/1.png"><img src="/uploads/time-in-status/reports-all/1.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/1.png"><img src="/uploads/time-in-status/reports-all/1.png" style="width:100%;"/></a></p>
 
 
 
@@ -36,7 +36,7 @@ key: time-in-status
 
 Если у пользователя есть права на создание новых отчетов у него будет доступна соответствующая кнопка в правой части экрана - "Create report". 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;"/></a></p>
 
 Отчеты генерируются на определенный момент. После этого готовый отчет сохраняется и он доступен к просмотру. В настройках отчета можно указать расписание для обновления данных. Или обновлять данные вручную по мере необходимости.
 
@@ -50,7 +50,7 @@ key: time-in-status
 
 <div class="uk-alert-note" data-uk-alert="">
 Администратор Jira может отключить это меню через модуль "jibrok-all-reports-user-link"
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.png"><img src="/uploads/time-in-status/reports-all/3.png" style="width:600px;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.png"><img src="/uploads/time-in-status/reports-all/3.png" style="width:100%;"/></a></p>
 </div>
 
 

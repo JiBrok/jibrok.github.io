@@ -10,4 +10,4 @@ Rest API documentation is available as a [collection in Postman](https://documen
 
 #### How to get field config id?
 
-<a href="/uploads/message-field/get-field-config-id.png"><img src="/uploads/message-field/get-field-config-id.png" alt="plugin modules" width="600"/></a>
+<a href="/uploads/message-field/get-field-config-id.png"><img src="/uploads/message-field/get-field-config-id.png" alt="plugin modules" width="100%"/></a>
