@@ -21,12 +21,6 @@ Timers and stopwatch are controlled by the following commands:
 Commands can be sent automatically (for example, when changing status), from api or manually.
 
 <div class="uk-alert-warning" data-uk-alert="">
-If two triggers fire simultaneously, then only the first one is executed in accordance with the order of the commands: Start > Restart > Pause > Stop
-
-For example: When changing status to InProgress, there is a Stop command. And on the set of the assignee is the Start command. If the transition to InProgress is performed with the installation of the assignee, the Start command will be executed.
-</div>
-
-<div class="uk-alert-warning" data-uk-alert="">
 When a condition is triggered for a command that does not actually change the state (PAUSE to PAUSE), all other triggers will be ignored.
 
 For example: trigger START when “change status from STATUS1" and  trigger PAUSE when “change status to STATUS1". When the transition from STATUS1 to STATUS1(the same) then the state will remain the same (PAUSE).
@@ -45,6 +39,15 @@ Timer may be in the following states:
 * FAILED - the countdown is stopped and the counted time has exceeded the originally set.
 * COMPLETED - the countdown is stopped and the timer has not reached zero.
 
+<div class="uk-alert-warning" data-uk-alert="">
+If two triggers fire simultaneously, then only the first one is executed in accordance with the order of the commands: Start > Restart > Pause > Stop
+
+For example: When changing status to InProgress, there is a Stop command. And on the set of the assignee is the Start command. If the transition to InProgress is performed with the installation of the assignee, the Start command will be executed.
+</div>
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png" style="width:600px"/></a></p>
+
+
 ## Stopwatch ## 
 Stopwatch may be in the following states:
 * RUNNING - is running and there is a countdown.
@@ -55,5 +58,4 @@ Stopwatch may be in the following states:
 If two triggers fire simultaneously, then only the first one is executed in accordance with the order of the commands: Start > Pause > Stop  
 </div>
 
-<a href="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png" style="width:600px"/></a>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png" style="width:600px"/></a></p>

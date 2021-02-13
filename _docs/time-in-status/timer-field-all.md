@@ -1,11 +1,15 @@
 ---
-title: timer field all
+title: Timer - fields settings
 key: time-in-status
 ---
 
-In this interface you can view the settings of all timer fields
-gg + Settings for all 'Timer' fields
-{baseUrl}/secure/jibrokSettingsForAllTimerFields!default.jspa
+On this page you can see all the "Timer" fields and their settings. This should simplify the administration and configuration of fields.
 
+${baseUrl}/secure/jibrokSettingsForAllTimerFields!default.jspa
 
-<a href="/uploads/time-in-status/timer-field-all/timer-field-all.png"><img src="/uploads/time-in-status/timer-field-all/timer-field-all.png" style="width:600px"/></a>
+Admin Search (gg) + Timer fields settings<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-all/1.png"><img src="/uploads/time-in-status/timer-field-all/1.png" style="width:300px"/></a></p>
+
+On the page you can display certain settings and fields. The set of settings selected for display is saved.
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-all/2.png"><img src="/uploads/time-in-status/timer-field-all/2.png" style="width:600px"/></a></p>

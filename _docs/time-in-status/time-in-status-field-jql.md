@@ -1,5 +1,5 @@
 ---
-title: tis field jql
+title: Time in status - JQL (field)
 key: time-in-status
 ---
 
@@ -12,6 +12,7 @@ key: time-in-status
 * jql - a string with a valid search query. For example: "Project = TEST and created < startOfWeek()"
 * statuses - the name or id of the statuses, separated by commas. For example: "Open" or "Open, 10000, 10001".
 * condition - one of the characters <, <=, => =,>. For example: ">".
+* calendar - the name or id of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/user-help-info/)
 * time - time string corresponding to one of the patterns.
 
 <div class="uk-alert-note" data-uk-alert="">
@@ -21,12 +22,13 @@ key: time-in-status
 "0", "0s" ... - time is zero.
 </div>
 
-* calendar - the name or id of the calendar. For example: "Support" or "1". How to view calendars? TODO
-
 
 ## Search functions in the "Time in status" field. ##
 
-Work when search engine is connected (Search template) TODO https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html
+Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
+
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:600px"/></a></p>
 
 
 ### "Time in status" in active () ###
@@ -59,7 +61,7 @@ Work when search engine is connected (Search template) TODO https://confluence.a
 ## Sorting ##
 By the field “Time in status” it is possible to sort. Sorting takes place according to data calculated in real time. Therefore, in large volumes, the request can be processed for a sufficiently long time. If sorting does not occur, you may not have the appropriate rights.
 
-* TODO JQL config
+* [JQL config](/docs/time-in-status/performance-config-jql/)
 * Access to value and sort by "Time in status" field
 
 ## Examples ## 
@@ -67,5 +69,9 @@ By the field “Time in status” it is possible to sort. Sorting takes place ac
 * "Time in status" in realTime ("<", "1h")
 * "Time in status" in realTimeBetween ("1h", "2h")
 
-<a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:600px"/></a>
+
+## Reserve ##
+JQL Функции могут быть недоступны, если их названия конфликтуют с функциями из других плагинов. На этот случай у каждой функции есть запасная с постфиксом "_jb".
+
+В случае конфликта нужно выключить модуль с основной функцией и включить запасную:<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:600px"/></a></p>

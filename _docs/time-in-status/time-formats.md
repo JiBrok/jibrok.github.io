@@ -1,5 +1,5 @@
 ---
-title: time-formats
+title: Time formats
 key: time-in-status
 ---
 

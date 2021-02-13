@@ -1,35 +1,40 @@
 ---
-title: tis field settings
+title: Time in status - field configuration
 key: time-in-status
 ---
 
-1. Create new custom field with type 'Time in status field' and set issue screens
+1. Create new custom field with type 'Time in status field' and set issue screens.<br>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png" style="width:300px"/></a></p>
 
-2. After create open field config and click "Edit JBCF:Time in status field"
+2. After create open field config.<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png" style="width:300px"/></a></p>
+3. Select field context and click 'Edit Time in status field'<br>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png" style="width:300px"/></a></p>
    
-3. Select field context and click 'Edit Time in status field'
+All settings:<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" style="width:600px;"></a></p>
 
 ### General settings ### 
 
-1. Calculate time in current status - if set "Yes" field will show time in current status of issue.
-After change status field will show time in new status.
+1. Calculate mode - Поле может считать "Time in specified statuses", "Time in current status" or "Time in status categories".
 2. Calculate time in statuses - if the task was or is in the indicated status, then the field will calculate the time spent in this status.
-3. Calculate average time - Total time divided by the number of transitions to the specified statuses.
-If the "total time in statuses", it divides the total time by the total number of transitions. Else the average is considered separately for each status.
-4. Calculate time after last move - if the task was transferred from another project, then the time will be counted from this moment.
-5. Calculate first transition - it will only count the time the first transition to the specified status.
-6. Calculate after last transition - it will only count the time after the last transition to the specified status.
-7. Show in field - total time or status table. Does not affect the actual value returned by the field.
-8. Field time format - format for outputting time in a field. If you need a new format, please write in support.
-9. Show as panel - Enables the display of the "Time in status" field in the sidebar. The remaining fields with the selected setting will be selected in it. The field can be omitted from the issue viewing screen. The panel can be configured separately from the field.
-
-10. Show as panel on Agile boards - Show field as panel on scrum or kanban boards in "Issue Detail View" section (The right panel that appears when you click on a task).
-11. Show in panel - total time or status table.
-12. Panel time format - format for outputting time in a field. If you need a new format, please write in support.
-13. Show empty value - When set to "No" does not display zero time.
-14. Sorting of statuses by - Sorts the statuses in the tabular display of the field and sidebar.
+3. Calculate time after last move - if the task was transferred from another project, then the time will be counted from this moment.
+4. Calculate first transition - it will only count the time the first transition to the specified status.
+5. Calculate after last transition - it will only count the time after the last transition to the specified status.
+6. Calculate average time - Total time divided by the number of transitions to the specified statuses.
+       If the "total time in statuses", it divides the total time by the total number of transitions. Else the average is considered separately for each status.
+7. Work calendar - If you need to calculate only working hours, you can connect a working calendar.
+8. Show in field - total time or status table. Does not affect the actual value returned by the field.
+9. Field time format - format for outputting time in a field. If you need a new format, please write in support.
+10. Show as panel - Enables the display of the "Time in status" field in the sidebar. The remaining fields with the selected setting will be selected in it. The field can be omitted from the issue viewing screen. The panel can be configured separately from the field.<br>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png" style="width:200px"/></a></p>
+11. Show as panel on Agile boards - Show field as panel on scrum or kanban boards in "Issue Detail View" section (The right panel that appears when you click on a task).
+12. Show in panel - total time or status table.
+13. Panel time format - format for outputting time in a field. If you need a new format, please write in support.
+14. Show empty value - When set to "No" does not display zero time.
+15. Sorting of statuses by - Sorts the statuses in the tabular display of the field and sidebar.
 The bottom panel has a similar setting.
-15. Work calendar - If you need to calculate only working hours, you can connect a working calendar.
+
 
 ### Show field value for next users ###
 This section allows you to configure the users who will see the field. Users without permissions will not see the value of the field.Only work when anonymous access is "No".
@@ -61,15 +66,3 @@ Anoniumous - If yes, access to value will be shared to everyone. The above restr
 
 ### Reindex ### 
 If you have changed the following fields, then for the search to work correctly, you need to run the reindex.
-
-Calculate time in statuses
-Calculate time after last move
-Calculate after last transition
-Work calendar
-
-
-<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-settings1.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-settings1.png" style="width:600px"/></a>

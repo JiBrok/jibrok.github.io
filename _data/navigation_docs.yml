@@ -22,18 +22,18 @@
   docs:
     - time-in-status/overview
     - time-in-status/install
-    - time-in-status/quick-start
+    - time-in-status/get-started
 #    - общее о плагине
-    - time-in-status/user-help-info
 
 - title: Tutorials
   key: time-in-status
   docs:
     - time-in-status/about-fields
+    - time-in-status/user-help-info
     - time-in-status/step-by-step-time-in-status
-    - time-in-status/step-by-step-stopwatch
+#    - time-in-status/step-by-step-stopwatch
     - time-in-status/step-by-step-timer
-    -
+
 - title: Settings
   key: time-in-status
   docs:
@@ -41,7 +41,7 @@
     - time-in-status/performance-config-multithreading
     - time-in-status/common-settings
 
-- title: WORK CALENDARS
+- title: Work calendars
   key: time-in-status
   docs:
 #    - в плагине есть встроенная справка как ее открыть
@@ -53,7 +53,7 @@
 # детально про натсройки календаря
     - time-in-status/time-in-status-jql
 #    - функции которые доступны из коробки
-    - time-in-status/time-in-status-field
+#    - time-in-status/time-in-status-field
     - time-in-status/time-in-status-field-settings
 #    - информация о поле
     - time-in-status/time-in-status-field-all
@@ -71,7 +71,7 @@
   key: time-in-status
   docs:
 #    - jql этого поля
-    - time-in-status/stopwatch-field
+#    - time-in-status/stopwatch-field
     #    - информация о поле
     - time-in-status/stopwatch-field-settings
     - time-in-status/stopwatch-configs
@@ -87,7 +87,7 @@
   docs:
   #    - jql этого поля
     - time-in-status/timer-field-settings
-    - time-in-status/timer-field
+#    - time-in-status/timer-field
 #    - о поле и го натсройках
     - time-in-status/timer-configs
 #    - что такое конфиг и как его натсраивать
@@ -109,6 +109,7 @@
 #    - что это такое как это применять
     - time-in-status/detail-history
     - time-in-status/manual-action-by-jql
+    - time-in-status/restore-by-history
 #    - что это такое как это применять
 
 - title: Issue panels
@@ -127,23 +128,24 @@
     - time-in-status/reports-permissions
     - time-in-status/reports-all
     - time-in-status/report-create
-    - time-in-status/report-table
-    - time-in-status/report-status-assignee
-    - time-in-status/report-assignee-status
+#    - time-in-status/report-table
+#    - time-in-status/report-status-assignee
+#    - time-in-status/report-assignee-status
 
 - title: Field Helpers
   key: time-in-status
   docs:
-    - time-in-status/time-in-status-helper-number
-    - time-in-status/time-in-status-helper-additional-information
+    - time-in-status/common-helpers
+#    - time-in-status/time-in-status-helper-number
+#    - time-in-status/time-in-status-helper-additional-information
 
-    - time-in-status/stopwatch-helper-number
-    - time-in-status/stopwatch-helper-date
-    - time-in-status/stopwatch-helper-additional-information
-    -
-    - time-in-status/timer-helper-number
-    - time-in-status/timer-helper-date
-    - time-in-status/timer-helper-additional-information
+#    - time-in-status/stopwatch-helper-number
+#    - time-in-status/stopwatch-helper-date
+#    - time-in-status/stopwatch-helper-additional-information
+#    -
+#    - time-in-status/timer-helper-number
+#    - time-in-status/timer-helper-date
+#    - time-in-status/timer-helper-additional-information
 
 
 - title: Other fields

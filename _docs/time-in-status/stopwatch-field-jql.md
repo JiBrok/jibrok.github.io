@@ -1,14 +1,13 @@
 ---
-title: stopwatch field jql
+title: Stopwatch - JQL
 key: time-in-status
 ---
-
-📌 Work when search engine is connected (Search template)
-https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html
 
 ## Functions take the following parameters. ##
 
 * condition - one of the characters <, <=, => =,>. For example: ">".
+* calendar - the name or id of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/work-calendar/)
+* stopwatch config id and stopwatch scheme id - number. Jira admin can view it.
 * time - time string corresponding to one of the patterns.
 
 <div class="uk-alert-note" data-uk-alert="">
@@ -18,11 +17,20 @@ https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-9388
 "0", "0s" ... - time is zero.
 </div>
 
-* calendar - the name or id of the calendar. For example: "Support" or "1". How to view calendars?
-* timer config id and timer scheme id - number. Jira admin can view it.
-
 
 Search works through the field. Therefore, all JQLs begin with the field name.
+
+## Search functions in the "Stopwatch" field. ##
+
+Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png" style="width:600px"/></a></p>
+
+
+## JQL Functions ##
+
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png" style="width:300px"/></a></p>
 
 
 ### “Stopwatch field“ in active() ###
@@ -50,6 +58,53 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 * It has a limit on the size of the issue. JQL config
 * The function is suitable for sampling active counters. Real-time reporting, work queues of tasks with reference to reaction time, execution ...
 
+### "Stopwatch field" in pauseTime("condition", "time") ###
+* Returns tasks for which the stopwatch has already counted the specified time. 
+
+### "Stopwatch field" in realPauseTime("condition", "time") ###
+* Returns tasks for which the stopwatch has already counted the specified time. 
+* The function works in real time.
+* It has a limit on the size of the issue. JQL config
+* The function is suitable for sampling active counters. Real-time reporting, work queues of tasks with reference to reaction time, execution ...
+
+
+### Search by date ###
+* **"field name" in startInDay("number")** - Search for issues by the day when the stopwatch was first started.
+* **"field name" in startInWeek("number")** - Search for issues by the week when the stopwatch was first started.
+* **"field name" in startInMonth("number")** - Search for issues by the month when the stopwatch was first started.
+
+* **"field name" in stopInDay("number")** - Search for issues by the day when the stopwatch was stopped.
+* **"field name" in stopInWeek("number")** - Search for issues by the week when the stopwatch was stopped.
+* **"field name" in stopInMonth("number")** - Search for issues by the month when the stopwatch was stopped.
+
+* **"field name" in pauseInDay("number")** - Search for issues by the day when the stopwatch was paused.
+* **"field name" in pauseInWeek("number")** - Search for issues by the week when the stopwatch was paused.
+* **"field name" in pauseInMonth("number")** - Search for issues by the month when the stopwatch was paused.
+
+* **Examples:**
+    * "First response" in startInDay() - найти задачи у которых сегодня запустился секундомер.
+    * "First response" in startInDay("-1") - найти задачи у которых вчера(1 день назад) запустился секундомер.
+    * "First response" in startInDay("-7") - найти задачи у которых неделю назад(7 день назад) запустился секундомер.
+
+
+* **"field name" in searchByStartDate("condition", "date")** - Search for issues by the date when the stopwatch was first started.
+* **"field name" in searchByPausedDate("condition", "date")** - Search for issues by the date when the stopwatch was last paused.
+* **"field name" in searchByStopDate("condition", "date")** - Search for issues by the date when the stopwatch was stopped.
+
+
+* date - строка с датой в формате 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
+* **Examples:**
+    * "First response" in searchByStartDate(">", "2021-01-01") - задачи у которых stopwatch запустился после "2021-01-01"
+
+* **"field name" in startInDateRange("date","date")** - Search for issues by the date when the stopwatch was started (duration).
+* **"field name" in stopInDateRange("date","date")** - Search for issues by the date when the stopwatch was stopped (duration).
+
+
+* **Examples:**
+    * "First response" in stopInDateRange("2020-01-01", "2021-01-01") - задачи у которых stopwatch остановился в течении 2020-го года.
+
+
+
 ### "Stopwatch field" in searchByCalendar(“calendarId”) ###
 * Returns tasks whose stopwatch uses the specified attribute.
 
@@ -61,5 +116,4 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 * Returns tasks whose stopwatch uses the specified attribute.
 * Id can be found with Jira admin.
 
-<a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-jql-functions.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png"><img src="/uploads/time-in-status/stopwatch-field-jql/stopwatch-searcher.png" style="width:600px"/></a>
+

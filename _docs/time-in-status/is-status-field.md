@@ -1,5 +1,5 @@
 ---
-title: is-status-field
+title: Is status field
 key: time-in-status
 ---
 

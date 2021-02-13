@@ -66,6 +66,11 @@ layout: default
                         duration: 400,
                         offset: 120
                     });
+                    try{
+                        document.getElementsByClassName('sidebar-docs')[0].scrollTo(0, document.getElementsByClassName('uk-active')[0].offsetTop - 300)
+                    } catch (e){
+                        //ignore
+                    }
                 </script>
 
             </div>

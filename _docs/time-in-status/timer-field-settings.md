@@ -1,25 +1,40 @@
 ---
-title: timer field settigs
+title: Timer - field configuration
 key: time-in-status
 ---
 
+<div class="uk-alert-note" data-uk-alert="">
+Поле служит для вывода информации о таймере. Правила работы таймера задаются в конфиграции таймера. Схемы таймеров ассоицируют проекты и issue types с конфигурациями таймеров. Поле отображает результат работы ассоциированной конфигцрации.
+</div>
+
+
 For the field to work, you need to configure the configurations and schemes by which timers will work. Then you need to connect the scheme to a new or existing field.
-1. Create timer configurations
-2. Create timer scheme and associate projects, issues types and timer configs
+
+<div class="uk-alert-warning" data-uk-alert="">
+Схемы и конфигурации работают только если они подключены к полю. 
+</div>
+
+1. [Create timer configurations](/docs/time-in-status/timer-configs/)
+2. [Create timer scheme and associate projects, issues types and timer configs](/docs/time-in-status/timer-schemes/)
 3. Create timer field
 4. Set timer scheme in timer field settings
 
 ## Step 3 - Create timer field ##
-Adding a custom field 
+Adding a custom field<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field.png" style="width:400px"/></a></p>
 
-After create open field settings and click "Edit Timer field"
+After create open field settings and click "Edit Timer field":<br>
+* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config.png" style="width:300px"/></a>
+* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config2.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config2.png" style="width:300px"/></a>
 
-A window will open for you to configure the field.
 
+A window will open for you to configure the field.<br>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-settings.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-settings.png" style="width:600px"/></a></p>
 
 * Timer field scheme - Set the scheme according to which the field will work(created in step 2). The field is used to display the timer. But a scheme without a field will not work.
-* Field time format - responsible for the format of the display of time in the fields.
-* Show as panel - Displays the field value in the issue panel.
+* Field time format - responsible for the format of the display of time in the fields.<br>
+* Show as panel - Displays the field value in the issue panel.<br>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-panel.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-panel.png" style="width:300px"/></a></p>
 * Show as panel on agile board - Displays the field value in the issue panel on Agile board.
 * Panel time format - The timer value can be displayed in different ways in the field and in the panel.
 * Sequence - If a issue has several timers displayed in the panel, they will be sorted in ascending order of this parameter.
@@ -27,24 +42,19 @@ A window will open for you to configure the field.
     * Time - just shows the time in accordance with the format.
       If the calendar is not working hours, then a pause icon and the date of the next working day will be indicated.
     * Time and icon - Same thing as time. An icon is added which indicates the current state of the timer. 
-    * Time tracking -
+    * Time tracking: <br>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png" style="width:300px"/></a></p>
     
 * Manual control - You can grant rights to users to manually manage timers.
   The timer will continue to work according to the scheme, but there will be the possibility of manual control.
-  The menu for manual control is available only in the panel on the task viewing screen.
+  The menu for manual control is available only in the panel on the task viewing screen.<br>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-manual.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-manual.png" style="width:200px"/></a></p>
 
 * Show field value for next users - You can restrict access to the field value. The restrictions apply to fields and panels.
 * Create change log for timer  - Changing the timer state (Running -> Paused) will be recorded in the issue history.
 * Add timer time in issue history - only affects new entries in history.
+  * Yes<br>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png" style="width:300px"/></a></p>
+  * No <br>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png" style="width:300px"/></a></p>
 * Sub-tasks - Child tasks can display parent timers. And don't start your timers.
-
-
-<a href="/uploads/time-in-status/timer-field-settings/timer-field.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-config.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-config2.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config2.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-manual.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-manual.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-panel.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-panel.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-settings.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-settings.png" style="width:600px"/></a>
-<a href="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png" style="width:600px"/></a>

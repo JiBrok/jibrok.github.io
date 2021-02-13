@@ -13,4 +13,4 @@ The scheme partially duplicates the functionality of custom field config, but at
 
 The overall picture is as follows:
 
-<a href="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png"><img src="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png" style="width:600px"/></a>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png"><img src="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png" style="width:600px"/></a></p>

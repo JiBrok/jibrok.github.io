@@ -1,5 +1,5 @@
 ---
-title: tis jql
+title: Time in status - JQL (common)
 key: time-in-status
 ---
 
@@ -17,7 +17,7 @@ key: time-in-status
 "0", "0s" ... - time is zero.
 </div>
 
-* calendar - the name or id of the calendar. For example: "Support" or "1". How to view calendars? TODO
+* calendar - the name or id of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/user-help-info/)
 
 ## Common functions. ## 
 
