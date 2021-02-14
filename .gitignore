@@ -2,3 +2,4 @@
 _site
 .idea
 .sass-cahge
+/.sass-cache/
