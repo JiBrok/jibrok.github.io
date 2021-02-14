@@ -9,7 +9,7 @@ All settings:<br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/common-settings/common-settings.png"><img src="/uploads/time-in-status/common-settings/common-settings.png" alt="" width="50%"/></a></p>
 ### System user ###
 
-НSome functions in the plugin run in the background.
+Some functions in the plugin run in the background.
 By default, these actions are performed anonymously.
 Here you can optionally set a user who will appear as the author of actions.
 

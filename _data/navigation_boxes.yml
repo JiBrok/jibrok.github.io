@@ -6,7 +6,7 @@
   doc: message-field/overview
 
 - title: Time in status | SLA | Timer | Stopwatch
-#todo  desc: Time in status
+  desc: To calculate time in different scenarios, the plugin provides a set of fields, functions for searching, reports, access to api and other tools.
   icon: time-in-status
   doc: time-in-status/overview
 
