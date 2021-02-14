@@ -26,11 +26,11 @@ These settings include restrictions for functions that are calculated in real ti
 Allows specified users access to functions. If you leave the fields empty, then all users will have access. The function does not disappear from the selection, but when executed returns an IMG warning
 
 
-* **issue in timeInStatus("statuses", "condition", "time")** - Найти задачи которые провели в статусах указанное время.
-* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Найти задачи из jql запроса которые провели в статусах указанное время.
-* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Найти задачи из jql запроса которые провели в статусах указанное рабочее время. Рабочее время будет рассчитанно по указанному календарю.
+* **issue in timeInStatus("statuses", "condition", "time")** - Find issues that have spent the specified time in statuses.
+* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Find issues from a jql request that have spent the specified time in statuses.
+* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Find issues from a jql request that spent the specified working time in statuses. Working hours will be calculated according to the specified calendar.
 
-Эти функции представлены в [пользовательской справке](/docs/time-in-status/user-help-info/).
+These functions are presented in [user help](/docs/time-in-status/user-help-info/).
 
 ### Cache ###
 
@@ -39,7 +39,7 @@ The flag connects caching to the field and panel. It will not affect the display
 ### Count limit - optimally in the region of 10-30 thousand (for 1 thread) ###
 
 Max count jql functions (global and field queries) For real-time functions, sets a limit. The maximum number of tasks that are calculated according to the condition specified in the function.<br>
-Эта настройка тесно связана с [настройками многопоточности](/docs/time-in-status/performance-config-multithreading/).
+This setting is closely related to [multithreading settings](/docs/time-in-status/performance-config-multithreading/).
 
 ### Ignore count limit ###
 

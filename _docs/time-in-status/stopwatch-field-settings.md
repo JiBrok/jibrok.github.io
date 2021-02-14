@@ -4,13 +4,13 @@ key: time-in-status
 ---
 
 <div class="uk-alert-note" data-uk-alert="">
-Поле служит для вывода информации о секундомерах. Правила работы секундомера задаются в конфиграции секундомера. Схемы секундомеров ассоицируют проекты и issue types с конфигурациями секундомеров. Поле отображает результат работы ассоциированной конфигцрации.
+This field is used to display information about stopwatches. Stopwatch operating rules are set in the stopwatch configuration. Stopwatch circuits associate projects and issue types with stopwatch configurations. The field displays the result of the associated configuration.
 </div>
 
 For the field to work, you need to configure the configurations and schemes by which stopwatches will work. Then you need to connect the scheme to a new or existing field.
 
 <div class="uk-alert-warning" data-uk-alert="">
-Схемы и конфигурации работают только если они подключены к полю. 
+Schemes and configs only work if they are connected to the field. 
 </div>
 
 1. [Create stopwatch configurations](/docs/time-in-status/stopwatch-configs/)

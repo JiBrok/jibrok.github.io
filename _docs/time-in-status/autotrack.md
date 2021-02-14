@@ -3,26 +3,25 @@ title: Autotrack settings
 key: time-in-status
 ---
 
-Администратор Jira может настроить автоматическую остановку и запуск таймеров или секундомеров при входе или выходе пользователя из системы.
+As a Jira administrator, you can configure to automatically stop and start timers or stopwatches when a user logs in or out.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/1.png"><img src="/uploads/time-in-status/autotrack/1.png" style="width:100%;"/></a></p>
 
-Работает это следующим образом.
+It works as follows.
 
-В настройках указываются:
-* Пользователи.
-* JQL(с учетом сортировки!).
-* Поля которые нужно будет останавливать или запускать.
-* Время бездействия в минутах.
-* и другие настройки.
+The settings indicate:
+* Users
+* JQL (including sorting!).
+* Fields(Timers and Stopwatches) to be stopped or started.
+* Idle time in minutes.
+* and other settings.
 
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/2.png"><img src="/uploads/time-in-status/autotrack/2.png" style="width:50%"/></a></p>
 
-Далее:
-* Когда пользователь входит в Jira выполняется поиск задач по JQL. Берется **первая задача(сортировка важна)** и в ней от имени пользователя запускаются указанные таймеры и секундомеры.
-* Когда пользователь неактивен в Jira более указанного времени или выходит из системы, снова выполняется  поиск задач по JQL. Берется не более 20 первых задач из результата и указанные таймеры и секундомеры ставятся на паузу.
-
+Further:
+* When a user logs into Jira, a JQL issue search is performed. The **first task is taken (sorting is important)** in it timers and stopwatches are started on behalf of the user.
+* When a user has been inactive in Jira for more than a time or logged out, JQL Issues are searched again. No more than 20 first tasks are taken from the result and timers and stopwatches are paused.
 
 
 

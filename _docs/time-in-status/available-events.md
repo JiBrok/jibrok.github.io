@@ -11,6 +11,8 @@ key: time-in-status
 
 * All Jira system events
 
+* Change Issue type
+* Change Project
 * Change status
 * Change status from STATUS - indicated during setup
 * Change status to STATUS - indicated during setup

@@ -3,10 +3,10 @@ title: Work calendar
 key: time-in-status
 ---
 
-Поля "Time in status", "Timer" и "Stopwatch", а так же [JQL функции](/docs/time-in-status/user-help-info/) умеют считать время по рабочим календарям. 
-Календари учитывают рабочее время и [временную зону пользователей](https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html). Что позволяет согласовывать время между пользователями из разных регионов.
+The fields "Time in status", "Timer" and "Stopwatch", as well as [JQL functions](/docs/time-in-status/user-help-info/) are able to count the time according to working calendars.
+Calendars take into account working hours and [user time zone](https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html). That allows you to coordinate the time between users from different regions.
 
-Например в таймерах и секундомерах будет отображены даты продолжения работы с учетом рабочего календаря и таймзоны пользователя.<br>
+For example, the timers and stopwatches will display the dates of the continuation of work, taking into account the user's working calendar and timezone. <br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/timer-example.png"><img src="/uploads/time-in-status/work-calendar/timer-example.png" style="width:50%"/></a></p>
 
 

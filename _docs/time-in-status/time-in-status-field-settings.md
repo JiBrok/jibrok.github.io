@@ -16,7 +16,7 @@ All settings:<br>
 
 ### General settings ### 
 
-1. Calculate mode - Поле может считать "Time in specified statuses", "Time in current status" or "Time in status categories".
+1. Calculate mode - field can calculate "Time in specified statuses", "Time in current status" or "Time in status categories".
 2. Calculate time in statuses - if the task was or is in the indicated status, then the field will calculate the time spent in this status.
 3. Calculate time after last move - if the task was transferred from another project, then the time will be counted from this moment.
 4. Calculate first transition - it will only count the time the first transition to the specified status.

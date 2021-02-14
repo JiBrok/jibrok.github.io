@@ -3,7 +3,7 @@ title: Stopwatch schemes
 key: time-in-status
 ---
 
-Схема устанавливает связи между project, issue type и конфигруацией секундомера.   
+The diagram establishes the links between project, issue type and stopwatch configuration.   
 [⭐️Timers and Stopwatches - Schemes and configurations](/docs/time-in-status/timers-and-stopwatches-schemes-and-configurations/)
 
 

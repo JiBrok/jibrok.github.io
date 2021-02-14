@@ -3,12 +3,12 @@ title: Create report permissions
 key: time-in-status
 ---
 
-Плагин предоставляет возможность создавать отчеты. Доступ к этой функции по умолчанию есть только у администратора Jira. Администратор может выдать доступы к созданию отчетов всем пользователям или отдельным пользователям, группам и ролям.
-Эти права ограничивают только создание новых отчетов. В любом отчете отдельно указываются пользователи которые имеют права на просмотр и редактирование.
-Отчеты потенциально могут потреблять большое количество ресурсов. Помимо [настроек производительности](/docs/time-in-status/performance-config-multithreading/) администратор может контролировать распределение ресурсов между пользователями.
+The plugin provides the ability to create reports. Only the Jira admin has access to this feature by default. The administrator can grant access to creating reports to all users or to individual users, groups and roles.
+These rights only restrict the creation of new reports. In any report, users who have the rights to view and edit are separately indicated.
+Reports can potentially consume a lot of resources. In addition to [performance settings](/docs/time-in-status/performance-config-multithreading/), the administrator can control the distribution of resources between users.
 
 
-Администратор может сам создавать и контролировать отчеты и права на их просмотр. Или как вариант делигировать это на определенную роль в проекте.  
+The administrator can create and control reports and the rights to view them himself. Or as an option to delegate it to a specific role in the project.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-permissions/1.png"><img src="/uploads/time-in-status/reports-permissions/1.png" style="width:100%;"/></a></p>
 

@@ -6,18 +6,18 @@ key: time-in-status
 
 ## Common ##
 <div class="uk-alert-note" data-uk-alert="">
-В плагине пока доступны только табличные отчеты. Функционал отчетов будет улучшаться и расширяться в новых версиях.<br>
-Отчеты могут работать с любыми полям. Как с системными так и с полями из сторонних приложений. Корректность работы в отчете зависит от конкретного типа поля. В случае вопросов или проблем пожалуйста обращайтесь в <a href="https://jibrok.atlassian.net/servicedesk/customer/portals">поддержку</a>.
+So far, only tabular reports are available in the plugin. The functionality of reports will be improved and expanded in new versions. <br>
+Reports can work with any fields. Both with system fields and with fields from third-party applications. The correctness of the work in the report depends on the specific type of field. For questions or concerns, please contact <a href="https://jibrok.atlassian.net/servicedesk/customer/portals"> support </a>.
 </div>
 
-* Отчеты умеют группировать данные по одному признаку. Это может быть любое поле или набор jql условий для включения запроса в группу.
-* Отчеты умеют отображать любые поля. В зависимости от типа данных в поле будут доступны дополнительные функции для вычисления значений. 
-    * Для полей из этого приложения("Time in status", "Timer", "Stopwatch") доступны различные функции - медианное время и перцинтили, среднее время в паузе, количество рестартов и т.д.
-    * Для числовых полей доступы математические функции - расчет перцинтилей, суммы, средних, максимальных и других значений.
-* Так же можно выводить ячейки с настраивамыми формулой и отображением, такие ячейки также имеют доступ к данным из других ячеек(аля excel).
-* Для каждого отчета отдельно задаются права доступа и расписание для обновления данных.
+* Reports can group data by one attribute. It can be any field or a set of jql conditions to include a query in a group.
+* Reports can display any fields. Additional functions for calculating values will be available depending on the type of data in the field.
+  * For the fields from this application ("Time in status", "Timer", "Stopwatch"), various functions are available - median time and percintiles, average pause time, number of restarts, etc.
+  * For numeric fields, mathematical functions are available - calculation of percintiles, sum, average, maximum and other values.
+* You can also display cells with a custom formula and display, such cells also have access to data from other cells (like excel).
+* For each report, access rights and a schedule for updating data are set separately.
 
-[Подробнее в разделе о создании отчета.](/docs/time-in-status/report-create/)
+[Read more in the section on creating a report.](/docs/time-in-status/report-create/)
     
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;"/></a></p>
@@ -25,31 +25,29 @@ key: time-in-status
 
 ## All reports ##
 
-Пользователям доступно меню для просмотра всех доступных им отчетов. Меню с отчетами располагается в верхней части экрана "Reports". 
+Users have access to a menu to view all reports available to them. The reports menu is located at the top of the "Reports" screen.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/1.png"><img src="/uploads/time-in-status/reports-all/1.png" style="width:100%;"/></a></p>
 
 
 
-В этом интерфейсе будут представлены все отчеты к которым пользователь имеет доступ. 
-К отчету у пользователя могут быть права только на чтение или на чтение и редактирование. В зависимости от права пользователя будут доступны разные действия с отчетом.
+This interface will present all reports to which the user has access.
+The user can have read-only or read and edit rights to the report. Depending on the user's right, different actions with the report will be available.
 
-Если у пользователя есть права на создание новых отчетов у него будет доступна соответствующая кнопка в правой части экрана - "Create report". 
+If the user has rights to create new reports, the corresponding button on the right side of the screen will be available - "Create report".
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;"/></a></p>
 
-Отчеты генерируются на определенный момент. После этого готовый отчет сохраняется и он доступен к просмотру. В настройках отчета можно указать расписание для обновления данных. Или обновлять данные вручную по мере необходимости.
+Reports are generated at a specific point in time. After that, the finished report is saved and available for viewing. In the report settings, you can specify a schedule for data refresh. Or update the data manually as needed.
 
-* View - Открывает сгенерированный отчет на просмотр. У отчета постоянная ссылка и вы можете ее сохранить для быстрого перехода.
-* Edit - Открывает отчет на редактирование. Кнопка доступна только при наличии прав на редактирование.
-* Delete - Удаляет отчет. Кнопка доступна только при наличии прав на редактирование.
-* Generate - Запускает обновление данных в отчете. Отчеты умеют самостоятельно обновляться по расписанию. Но вы можете запустить его обновление вручную.
-
-
+* View - Opens the generated report for viewing. The report has a permalink and you can save it for quick navigation.
+* Edit - Opens the report for editing. The button is available only if you have edit rights.
+* Delete - Deletes the report. The button is available only if you have edit rights.
+* Generate - Starts updating the data in the report. Reports are able to independently update on a schedule. But you can start updating it manually.
 
 
 <div class="uk-alert-note" data-uk-alert="">
-Администратор Jira может отключить это меню через модуль "jibrok-all-reports-user-link"
+Jira admin can disable this menu via module "jibrok-all-reports-user-link"
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.png"><img src="/uploads/time-in-status/reports-all/3.png" style="width:100%;"/></a></p>
 </div>
 

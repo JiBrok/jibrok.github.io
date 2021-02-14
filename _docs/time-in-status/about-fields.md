@@ -3,84 +3,80 @@ title: About fields
 key: time-in-status
 ---
 
-Функционал расчета времени строится на основе трех типов полей: Time in status, Stopwatch and Timer.
+Time calculation functionality is based on three field types: Time in status, Stopwatch and Timer.
 
-Все эти поля обладают следующими функциями: 
-* Работа с данными в реальном времени - поиск, сортировка.
-* Выполнять расчеты используя рабочий календарь и временные зоны пользователей.
-* Подходят для организации очередей, мониторинга, рабочих столов.
-* Они могут использоваться в отчетах, выгрузках, интеграциях и по ним можно выполнять дополнительные вычисления(например среднее время по проекту).
-* У всех полей есть настройки внешнего вида и прав доступа.
-* Можно создавать неограниченное число полей и контекстов.
-* Умеют рассчитывать свои значения на основе истории запроса. И могут быть использованы как для новых задач и будущих задач, так и для старых. 
-* Так же для полей доступы дополнительные функции через вспомогательные поля и сравнение полей.
+All these fields have the following functions: 
+* Working with data in real time - searching, sorting.
+* Perform calculations using the work calendar and time zones of users.
+* Suitable for queuing, monitoring, dashboards.
+* They can be used in reports, exports, integration, and can be used to perform additional calculations (e.g., average project time).
+* All fields have appearance and permissions settings.
+* An unlimited number of fields and contexts can be created .
+* They can calculate their values based on the request history. Can be used for both new/future and old tasks. 
+* Also for fields additional functions are available through auxiliary fields and field comparison.
 
-Теперь об отличиях между полями.
+Now about fields differences.
 
 ### Time in status ###
-<p>Считает время проведенное в указанном статусе, статусах или категории статусов. 
-Служит для решения типовых задач подсчета времени проведенном в статусе.</p>
+<p>Calculate the time spent in the specified status, statuses or status category. 
+Serves for solving standard tasks of counting the time spent in the status .</p>
 
-<p>У него простая настройка. Чтобы поле начало работать достаточно после создания указать статусы и календарь для расчета. При этом настроек хвататет с запасом и для реализации более сложных требований.<br> 
+<p>It has simple configuration. For the field to start working, it is enough to specify the statuses and calendar for calculation after creation. However, the settings are sufficient to meet more complex requirements.<br> 
 </p>
 
-<table>
-<tr>
-<td><a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" alt="time in status config" width="50%"/></a></td>
-<td><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"/></a></td>
-</tr>
-</table>
+* <a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:50%;"/></a>
+* <a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" alt="" width="50%"/></a>
 
 
-* Подходит для простых условий подсчета времени: только время проведённого в статусе или статусах.
-* Не позволяет, останавливать или запускать отчёт времени по событиям(комментирование, указание значения в поле...). Только если задача будет менять статус при этих событиях.
+* Suitable for simple conditions of counting time: time spent in status or statuses.
+* Does not allow to stop or start time counting by events (comment, value in field...). Only if the task changes status at these events.
 
 
 ### Stopwatch ### 
-<p>Считает время между событиями(действиями) произошедших с задачей. 
-Очень гибкая настройка и позволяет рассчитать практически любые интервалы времени в жизни задачи. Поля так же можно комбинировать в расчетах для крайне сложных кейсов.
+<p>Calculate the time between events (actions) that occurred with the task . 
+Very flexible settings allow you to calculate almost any time intervals in the life of the task. Fields can also be combined in calculations for extremely complex cases.
 </p>
 
 
 <p>
-Настройка сложнее, чем у time in status. Но за счет гибкости и обилию настроек позволяет просчитать огромное количество сценариев.
+The settings are more complicated than for "time in status" field, but due to the flexibility and variety of settings, it allows you to calculate a huge number of scenarios.
 </p>
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.png" alt="stopwatch field config" width="50%"/></a></td>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-config.png" alt="stopwatch config" width="50%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.png" alt="stopwatch field config" width="100%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-config.png" alt="stopwatch config" width="100%"/></a></td>
 </tr>
 </table>
 
-* Считает время между событиями(создание задачи, комментирование, установка значения в поля, переход в статус...)
-  * Например начать отчёт при создании задачи и остановить при создании комментария для автора или переходе в статус в работе.
-* Подходит для любых замеров времени. Большое количество готовых триггеров доступных в настройках. Возможность запускать и останавливать секундомеры вручную или через api.
-* Может быть настроено для запуска по JQL условию. Запускается автоматически когда задача соответствует JQL запросу.
-* Может отправлять уведомления при смене состояния (при запуске, остановке на паузу...).
-* Позволяет работать не только с отсчитанным временем но и со временем в состоянии паузы.
+* Calculates the time between events (issue creation, commenting, setting a value in fields, transition to a status ...)
+  * For example, start the report when creating an issue and stop when creating a comment for the author or transition to a status 'in progress"
+* Suitable for any time measurement. Large number of ready-to-use triggers available in the settings. Ability to start and stop stopwatches manually or via api.
+* Can be configured to run with JQL condition. Runs automatically when a task matches a JQL request.
+* Can send notifications on state change (on start, pause, ...).
+* Allows you to work not only with the calculated time but also with time in a pause state.
 
 
 ### Timer ### 
-<p>Поле реализовано на базе **секундомера** и дополнено функцией обратного отсчета.
-Ограничений устанавливаются на основе данных в полях задачи и опционально(в зависимости от настроек) может меняться со временем.
-В качестве значения рассчитывает разницу(оставшееся время) между целевым временем(ограничением) и временем между событиями(как секундомер).
-</p>
+The field is implemented on the basis of the **stopwatch** and supplemented with a countdown function.<br>
+Limits are set on the basis of data in the task fields.
+* You can specify that for an issue with a critical priority, the timer (for example, the reaction timer) should be set to 20 minutes. And for issues with a lower priority for 1 hour.<br>
 
-Например: 
-* Можно указать что для задачи с критическим приоритетом таймер(например таймер реакции) нужно устанавливать на 20 минут. А для задач с более низким приоритетом на 1 час. 
+Calculates the difference (time remaining) between the goal time (limit) and the time between events (like a stopwatch).
+* The issue must be commented within 30 minutes after creation. The timer when creating an issue will be set for 30 minutes and at the same moment will start counting down. The timer will stop the countdown at the moment of creating a comment and fix the value. If more than 30 minutes pass, the timer will show a negative value.  
+ 
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/timer-field-config.png"><img src="/uploads/time-in-status/about-fields/timer-field-config.png" alt="timer field config" width="50%"/></a></td>
-<td><a href="/uploads/time-in-status/about-fields/timer-config.png"><img src="/uploads/time-in-status/about-fields/timer-config.png" alt="timer config" width="50%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-field-config.png"><img src="/uploads/time-in-status/about-fields/timer-field-config.png" alt="timer field config" width="100%"/></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-config.png"><img src="/uploads/time-in-status/about-fields/timer-config.png" alt="timer config" width="100%"/></a></td>
 </tr>
 </table>
 
 
-* Считает время между событиями и показывает сколько осталось от первоначального времени (Goal time - time between events)
-* Ограничения по времени(целевое время) настраиваются с помощью jql условий.
-* Позволяет работать не только с отсчитанным временем но и со временем в состоянии паузы, оставшимся времением и врменем потраченным сверх ограничений.
+* Calculates time between events and shows how much time is left of the initial time(Goal time - time between events)
+* Time limits (target time) are set by jql conditions.
+* Allows to work not only with calculated time but also with the time in a pause state, remaining time and the time spent beyond the limits.
 
 
 

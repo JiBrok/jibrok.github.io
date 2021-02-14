@@ -3,21 +3,21 @@ title: User JQL help
 key: time-in-status
 ---
 
-Доступные JQL функции для работы со временем и примеры их использования.
+Available JQL functions for working with time and examples of their use.
 
-1. Данная справка доступа из jira из меню помощи:
+1. This help is available from jira’s help menu:
 <p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/help-link.png"><img src="/uploads/time-in-status/user-help-info/help-link.png" alt="work calendars" width="50%"/></a></p>
    
-2. Возможно вам понадобится рабочий календарь. Их список в системе можно посмотреть по ссылке из меню помощи или по ссылке *{baseUrl}*/secure/jibrokAllCalendars!default.jspa:
+2. You might need a work calendar. You can see their list in the system by following the link from the help menu or this link *{baseUrl}*/secure/jibrokAllCalendars!default.jspa:
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.png"><img src="/uploads/time-in-status/user-help-info/work-calendars.png" alt="work calendars" width="50%"/></a></p>
 
 <hr>
 
-## Аргументы используемые в функциях. ## 
+## Arguments used in functions. ## 
 
 <div class="uk-alert-note" data-uk-alert="">
-<b>Time</b> - строка указывающая время, в случае неверного формата будет выведено сообщение с подсказками.<br>
+<b>Time</b> - a string indicating the time, if the format is wrong, a message with help will be displayed.<br>
 <br>
 "5h35m12s" - 5 hours 35 minutes 12 seconds<br>
 "5h12s" - 5 hours 12 seconds<br>
@@ -27,7 +27,7 @@ key: time-in-status
 
 
 <div class="uk-alert-note" data-uk-alert="">
-<b>Condition</b> - условие для сравнения величин. <br>
+<b>Condition</b> - condition for comparison of values. <br>
 "<=", "<", "=", ">", ">=" 
 
 </div>
@@ -37,17 +37,17 @@ key: time-in-status
 ## *Common* ##
 
 ### Time in status ###
-Функции для поиска задач по времени проведенном в статусах.
-Эти функции, как правило, доступны всегда. Если нет, пожалуйста, обратитесь в администратору Jira. 
+Functions for searching issues by time spent in statuses.
+These functions are available by default. If not, please contact your Jira admin. 
 
-* **issue in timeInStatus("statuses", "condition", "time")** - Найти задачи которые провели в статусах указанное время.
+* **issue in timeInStatus("statuses", "condition", "time")** - Find issues that spent the specified time in statuses.
     * Params:
     * statuses - name or id, Comma separated
-* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Найти задачи из jql запроса которые провели в статусах указанное время.
+* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Find issues from a jql request that spent the specified time in statuses.
     * Params: 
     * jql - query for filter tasks
     * statuses - name or id, Comma separated
-* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Найти задачи из jql запроса которые провели в статусах указанное рабочее время. Рабочее время будет рассчитанно по указанному календарю.
+* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Find issues from a jql request that spent the specified working time in statuses. Working hours will be calculated according to the specified calendar.
     * Params:
     * jql - query for filter tasks
     * statuses - name or id, Comma separated
@@ -58,16 +58,16 @@ key: time-in-status
     * issue in timeInStatus("Done, In Progress", ">", "8h")
     * issue in timeInStatusByJqlAndWorkCalendar("project = TEST", "Done", ">", "3h", "General calendar")
 
-* Если указывается несколько статусов, то поиск происходит по сумме времени проведенном в указанных статусах.
-* Название статусов чувствительно к регистру. В случае не соответствия названия функция подскажет правильные варианты написания статуса.
-* Для поиска по разным статусам используйте условия "OR" и "AND": issue in timeInStatus("status A", ">", "time") or issue in timeInStatus("status B", ">", "time")
-* По возможности используйте функции с jql. Они сужают поиск и быстрее выполняются. 
+* If several statuses are specified, the search is based on the sum of the time spent in the specified statues.
+* Status names are case sensitive. If the name does not match, the function will prompt the correct spelling options for the status.
+* Use "OR" and "AND" to search different statues: issue in timeInStatus("status A", ">", "time") or issue in timeInStatus("status B", ">", "time")
+* If possible use functions with jql. They narrow the search and execute faster. 
 
 
 
 ### Compare fields ###
-Функции позволяющие сравнивать разные поля между собой. Функция работает с "числовыми", "строковыми" и "временными" полями.
-Возвращает задачи поля которых удовлетворяют условию.
+Functions that allow you to compare different fields with each other. The functions work with "number", "string" and "time" fields.
+Returns issues whose fields satisfy the condition.
 
 * **issue in compareFields("field 1", "condition", "field 2")** - Field comparison function. Finds tasks in which fields match a condition.
     * Params: 
@@ -82,22 +82,22 @@ key: time-in-status
     * issue in compareFields("Number field", ">", "Another number field")
     * issue in compareFields("Project = TEST", "String field", ">", "Another number field")
     
-* По возможности используйте функции с jql. Они сужают поиск и быстрее выполняются.
-* В случае строковых полей функция попытается привести строку к числу для корректного сравнения.
+* If possible use functions with jql. They narrow the search and execute faster.
+* In the case of string fields, the function will try to convert the string to a number for correct comparison.
 
 
 ### Autotrack ###
 
-Работает если для вас подключена функция автоматического трекинга времени.  
+Works if the automatic time tracking function is enabled.  
 
-* **issue in myAutoTrackTickets()** -  Возвращает задачи пользователя с настроенным автоматическим запуском таймеров или секундомеров.
+* **issue in myAutoTrackTickets()** -  Returns user issues with configured automatic timers or stopwatches.
 
 <hr>
 
 ## *Time in status (field)* ## 
 
-Если есть настроенное поле "Time in status", то для него доступны следующие поисковые функции.<br>
-Тип поля вы можете уточнить у администратора <br>
+If there is a configured field "Time in status", the following search functions are available for it.<br>
+You can check the field type with the administrator <br>
 
 #### Search by state ####
 * **"field name" in active()** - Search by active time in status fields(issue in selected statuses)
@@ -116,8 +116,8 @@ key: time-in-status
 
 
 ## *Stopwatch* ##
-Если есть настроенное поле "Stopwatch", то для него доступны следующие поисковые функции.<br>
-Тип поля вы можете уточнить у администратора <br>
+If there is a configured "Stopwatch" field, the following search functions are available for it.<br>
+You can check the field type with the administrator <br>
 
 #### Search by state ####
 * **"field name" in isRunning()** - Search issues by running stopwatch.
@@ -144,9 +144,9 @@ key: time-in-status
 * **"field name" in pauseInMonth("number")** - Search for issues by the month when the stopwatch was paused.
 
 * **Examples:**
-    * "First response" in startInDay() - найти задачи у которых сегодня запустился секундомер.
-    * "First response" in startInDay("-1") - найти задачи у которых вчера(1 день назад) запустился секундомер.
-    * "First response" in startInDay("-7") - найти задачи у которых неделю назад(7 день назад) запустился секундомер.
+    * "First response" in startInDay() - find the issues whose stopwatch has started today.
+    * "First response" in startInDay("-1") - find the issues whose stopwatch started yesterday(1 day ago).
+    * "First response" in startInDay("-7") - find the issues whose stopwatch started a week ago(7 days ago).
 
 
 * **"field name" in searchByStartDate("condition", "date")** - Search for issues by the date when the stopwatch was first started.
@@ -154,16 +154,16 @@ key: time-in-status
 * **"field name" in searchByStopDate("condition", "date")** - Search for issues by the date when the stopwatch was stopped.
 
 
-* date - строка с датой в формате 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
+* date - date in 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm' format
 * **Examples:**
-    * "First response" in searchByStartDate(">", "2021-01-01") - задачи у которых stopwatch запустился после "2021-01-01"
+    * "First response" in searchByStartDate(">", "2021-01-01") - issues for which stopwatch started after "2021-01-01"
 
 * **"field name" in startInDateRange("date","date")** - Search for issues by the date when the stopwatch was started (duration).
 * **"field name" in stopInDateRange("date","date")** - Search for issues by the date when the stopwatch was stopped (duration).
 
 
 * **Examples:**
-    * "First response" in stopInDateRange("2020-01-01", "2021-01-01") - задачи у которых stopwatch остановился в течении 2020-го года.
+    * "First response" in stopInDateRange("2020-01-01", "2021-01-01") - issues for which stopwatch stopped during 2020.
 
 
 #### Search by time ####
@@ -187,8 +187,8 @@ key: time-in-status
 
 
 ## *Timer* ##
-Если есть настроенное поле "Timer", то для него доступны следующие поисковые функции.<br>
-Тип поля вы можете уточнить у администратора <br>
+If there is a configured "Timer" field, the following search functions are available for it.<br>
+You can check the field type with the administrator <br>
 
 #### Search by state ####
 * **"field name" in isRunning()** - Search issues by running timer.
@@ -218,10 +218,10 @@ key: time-in-status
 * **"field name" in pauseInMonth("number")** - Search for issues by the month when the timer was paused.
 
 * **Examples:**
-    * "First response" in failInDay() - найти задачи у которых вышло или выйдет время по таймеру "First response" сегодня
-    * "First response" in failInDay("-1") - найти задачи у которых вышло время по таймеру "First response" вчера(1 день назад)
-    * "First response" in failInDay("-7") - найти задачи у которых вышло время по таймеру "First response" неделю назад(7 день назад)
-    * "First response" in failInDay("7") - найти задачи у которых вышло или выйдет время по таймеру "First response" через неделю(через 7 дней)
+    * "First response" in failInDay() - find issues which time in "First response" timer run out or will run out today
+    * "First response" in failInDay("-1") - find issues which time in "First response" timer run out yesterday (1 day ago)
+    * "First response" in failInDay("-7") - find issues which time in "First response" timer run out a week ago(7 days ago)
+    * "First response" in failInDay("7") - find issues which time in "First response" timer will run out in a week(in 7 days) 
     
 
 * **"field name" in searchByStartDate("condition", "date")** - Search for issues by the date when the timer was first started.
@@ -229,16 +229,16 @@ key: time-in-status
 * **"field name" in searchByStopDate("condition", "date")** - Search for issues by the date when the timer was stopped.
 * **"field name" in searchByFailDate("condition", "date")** - Search for issues by the date when the timer was failed.
 
-* date - строка с датой в формате 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
+* date - date in 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm' format
 * **Examples:**
-    * "First response" in searchByStartDate(">", "2021-01-01") - задачи у которых таймер запустился после "2021-01-01"
+    * "First response" in searchByStartDate(">", "2021-01-01") - issues for which timer started after "2021-01-01"
 
 * **"field name" in startInDateRange("date","date")** - Search for issues by the date when the timer was started (duration).
 * **"field name" in stopInDateRange("date","date")** - Search for issues by the date when the timer was stopped (duration).
 * **"field name" in failInDateRange("date","date")** - Search for issues by the date when the timer was failed (duration).
 
 * **Examples:**
-    * "First response" in failInDateRange("2020-01-01", "2021-01-01") - задачи у которых таймер превысил свое время в течении 2020-го года.
+    * "First response" in failInDateRange("2020-01-01", "2021-01-01") - issues for which the timer has exceeded its time during 2020.
 
 
 #### Search by time ####

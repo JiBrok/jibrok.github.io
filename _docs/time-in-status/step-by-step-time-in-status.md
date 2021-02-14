@@ -3,59 +3,59 @@ title: 📖 Step by step - Time in status
 key: time-in-status
 ---
 
-Функционал времени в статусе делится на две части.
+The time functionality in the status is divided into two parts.
 
-Первая это общие поисковые функции для работы которых не требуется дополнительной настройки.
-Они работают сразу после установки плагина.
+The first is general search functions for which no additional configuration is required.
+They work right after installing the plugin.
 
 #### Common #### 
-* **issue in timeInStatus("statuses", "condition", "time")** - Найти задачи которые провели в статусах указанное время.
+* **issue in timeInStatus("statuses", "condition", "time")** - Find tasks that have spent the specified time in statuses.
   * Params:
   * statuses - name or id, Comma separated
-* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Найти задачи из jql запроса которые провели в статусах указанное время.
+* **issue in timeInStatusByJql("jql", "statuses", "condition", "time")** - Find tasks from a jql request that have spent the specified time in statuses.
   * Params:
   * jql - query for filter tasks
   * statuses - name or id, Comma separated
-* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Найти задачи из jql запроса которые провели в статусах указанное рабочее время. Рабочее время будет рассчитанно по указанному календарю.
+* **issue in timeInStatusByJqlAndWorkCalendar("jql", "statuses", "condition", "time", "calendar")** - Find tasks from a jql request that spent the specified working time in statuses. Working hours will be calculated according to the specified calendar.
   * Params:
   * jql - query for filter tasks
   * statuses - name or id, Comma separated
   * calendar - work calendar name or id for calculate work time
 
-Эти функции представлены в [пользовательской справке](/docs/time-in-status/user-help-info/).
+These functions are presented in [user help](/docs/time-in-status/user-help-info/).
 
-Администратор Jira может настроить работу этих функций: настроить производительность и количество обрабатываемых значений в реальном времени. Так же можно настроить ограниченный доступ к этим поисковым функциям.
+The Jira administrator can customize how these functions work: adjust performance and the number of processed values in real time. You can also configure limited access to these search functions.
 [Performance config JQL](/docs/time-in-status/performance-config-jql/)
 
-Вторая часть это работа со временем через настроенные поля "Time in status". 
+The second part is working with time through the configured "Time in status" fields.
 
 <p>
-Каждое поле может считать сколько времени задача провела в указанных статусе или статусах. Статусы указываются в настройках поля.
-Поля хранят промежуточные значения в индексах и быстрее обрабатываются при поиске в реальном времени.
-В поле можно указать контексты выполнения, указать дополнительные опции для расчета времени, настроить отображение и доступ к значению.
-По полям "Время в статусе" так же можно сортировать задачи, строить отчеты и экспортировать их.
+Each field can count how much time the task spent in the specified status or statuses. The statuses are specified in the field settings.
+Fields store intermediate values in indexes and are faster processed in real-time searches.
+In the field, you can specify execution contexts, specify additional options for timing, customize the display and access to the value.
+By the "Time in status" fields, you can also sort tasks, build reports and export them.
 </p>
 
 * [About fields](/docs/time-in-status/about-fields/)
 * [More about Time in status field](/docs/time-in-status/time-in-status-field/)
 
 
-### 1. Создайте новое поле "Time in status", Then set contexts and screens. ###
+### 1. Create a new field "Time in status", Then set contexts and screens. ###
 
 * [Atlassian Guide: Adding a custom field](https://confluence.atlassian.com/adminjiraserver/adding-a-custom-field-938847222.html)
 * [Atlassian Guide: Configuring a custom field](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
 
-### 2. После создания поля перейдите в его настройки: ###
+### 2. After creating the field, go to its settings: ###
 1. <a href="/uploads/time-in-status/step-by-step-time-in-status/fields.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/fields.png" alt="time in status fields" width="50%"/></a>
 2. <a href="/uploads/time-in-status/step-by-step-time-in-status/field-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/field-config.png" alt="time in status field config" width="50%"/></a>
 3. <a href="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png" alt="time in status field config" width="50%"/></a>
 
 
-Укажите статусы в которых вы хотите посчитать время и сохраните настройки. Для работы поиска нужно так же запустить реиндкс для jira или для проекта. 
+Specify the statuses in which you want to count the time and save the settings. For the search to work, you also need to run the reindx for jira or for the project.
 [Search indexing](https://confluence.atlassian.com/adminjiraserver/search-indexing-938847710.html)
 
-После реиндекса будут доступны функции поиска для полей
+After re-indexing, search functions for fields will be available
 
 #### Search by state ####
 * **"field name" in active()** - Search by active time in status fields(issue in selected statuses)
@@ -70,4 +70,4 @@ key: time-in-status
     * "Time in new" in realTime(">", "20m") AND "First reaction" in realTime("<", "1h")
     * "Time in new" in realTimeBetween("1h", "2h")
 
-Эти функции представлены в [пользовательской справке](/docs/time-in-status/user-help-info/). 
+These functions are presented in [user help](/docs/time-in-status/user-help-info/). 

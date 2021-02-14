@@ -3,73 +3,73 @@ title: Create report
 key: time-in-status
 ---
 
-Права на создание отчетов управляются администратором системы. [Подробнее](/docs/time-in-status/reports-permissions/) 
+The reporting rights are controlled by the system administrator. [More](/docs/time-in-status/reports-permissions/) 
 
-Если у пользователя есть права на создание новых отчетов, то в меню с отчетами у него будет доступна соответствующая кнопка в правой части экрана - "Create report".
+If the user has rights to create new reports, then in the menu with reports he will have the corresponding button on the right side of the screen - "Create report".
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;"/></a></p>
 
-При нажатии пользователю откроется интерфейс дл создания отчетов.
+When clicked, the user opens an interface for creating reports.
 
 ## Common ##
 <div class="uk-alert-note" data-uk-alert="">
-В плагине пока доступны только табличные отчеты. Функционал отчетов будет улучшаться и расширяться в новых версиях.<br>
-Отчеты могут работать с любыми полям. Как с системными так и с полями из сторонних приложений. Корректность работы в отчете зависит от конкретного типа поля. В случае вопросов или проблем пожалуйста обращайтесь в <a href="https://jibrok.atlassian.net/servicedesk/customer/portals">поддержку</a>.
+So far, only tabular reports are available in the plugin. The functionality of reports will be improved and expanded in new versions. <br>
+Reports can work with any fields. Both with system fields and with fields from third-party applications. The correctness of the work in the report depends on the specific type of field. For questions or concerns, please contact <a href="https://jibrok.atlassian.net/servicedesk/customer/portals"> support </a>.
 </div>
 
-* Отчеты умеют группировать данные по одному признаку. Это может быть любое поле или набор jql условий для включения запроса в группу.
-* Отчеты умеют отображать любые поля. В зависимости от типа данных в поле будут доступны дополнительные функции для вычисления значений.
-    * Для полей из этого приложения("Time in status", "Timer", "Stopwatch") доступны различные функции - медианное время и перцинтили, среднее время в паузе, количество рестартов и т.д.
-    * Для числовых полей доступы математические функции - расчет перцинтилей, суммы, средних, максимальных и других значений.
-* Так же можно выводить ячейки с настраивамыми формулой и отображением, такие ячейки также имеют доступ к данным из других ячеек(аля excel).
-* Для каждого отчета отдельно задаются права доступа и расписание для обновления данных.
-
+* Reports can group data by one attribute. It can be any field or a set of jql conditions to include a query in a group.
+* Reports can display any fields. Additional functions for calculating values will be available depending on the type of data in the field.
+    * For the fields from this application ("Time in status", "Timer", "Stopwatch"), various functions are available - median time and percintiles, average pause time, number of restarts, etc.
+    * For numeric fields, mathematical functions are available - calculation of percintiles, sum, average, maximum and other values.
+* You can also display cells with a custom formula and display, such cells also have access to data from other cells (like excel).
+* For each report, access rights and a schedule for updating data are set separately.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;"/></a></p>
 
-## Детальнее ##
+## More details ##
 
-* Name - указывается для поиска отчета и навигации между ними.
-* Type - Тип отчета, от него зависят прочие настройки отчета.
-    * Table - табличный отчет позволяющий указывать любые поля, формулы и группировку в отчете.
+* Name - Specified to search for a report and navigate between them.
+* Type - Report type, other report settings depend on it.
+    * Table - Table report that allows you to specify any fields, formulas and grouping in the report.
       <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/1.png"><img src="/uploads/time-in-status/report-create/1.png" style="width:50%;"/></a></p>
-    * Time in status - отчет показывающий время проведенное задачами в статусе с разбивкой по исполнителям.
+    * Time in status - a report showing the time spent by tasks in status with a breakdown by executor.
       <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/2.png"><img src="/uploads/time-in-status/report-create/2.png" style="width:50%;"/></a></p>
-    * Time in status by assignee - показывает время проведенное задачами на различных исполнителях с разбивкой по статусам.
+    * Time in status by assignee - shows the time spent by tasks on different executors, broken down by status.
       <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/3.png"><img src="/uploads/time-in-status/report-create/3.png" style="width:50%;"/></a></p>
-* JQL - задачи для которых нужно построить отчет.
-* Schedule expression - отчеты генерируются и сохраняют свои данные до следующей генерации. Вы можете обновлять(генерировать) отчеты вручную или указать расписание для автоматического обновления данных.
-    * укажите число N в минутах - каждые N минут отчет будет обновляться.
-    * Укажите cron выражение. Простой сервис для генерации cron выражений http://www.cronmaker.com/
-* Permissions - доступ к отчету могут иметь все пользователи или только указанные(отдельные пользователи или группы)*
-    * view - пользователям разрешается только просматривать отчет
-    * edit - пользователям разрешается просматривать отчет и редактировать. 
+* JQL - tasks for which you need to build a report.
+* Schedule expression - reports are generated and save their data until the next generation. You can update (generate) reports manually or specify a schedule for automatic data updates.
+    * specify the number N in minutes - every N minutes the report will be updated.
+    * Specify a cron expression. Simple service for generating cron expressions http://www.cronmaker.com/
+* Permissions - all users or only specified ones (individual users or groups) can have access to the report *
+    * view - users are only allowed to view the report
+    * edit - users are allowed to view the report and edit.
 #### Table ####
-**Group** - по данному условию будут группироваться задачи из JQL. Вы можете выбрать системное поле или любое другое. Также возможно группировка по JQL условиям.
+**Group** - according to this condition, tasks from JQL will be grouped. You can choose a system field or any other. It is also possible to group by JQL conditions.
 * System field:
-  * Версии и компоненты группируются для каждого значения по отдельности. Если у issue указанно две версии она попадет в группы для обоих версий.
-* JQLs - issues are counted only in the first matching jql. Задача попадет только в 1 группу. 
-* JQLs - issues are counted in all jqls. Задача попадет во все подходящие группы.
-  * Вы можете менять порядок JQL условий перетаскиванием.
+  * Versions and components are grouped for each value separately. If the issue has two versions specified, it will fall into the groups for both versions.
+* JQLs - issues are counted only in the first matching jql. The issue will fall into only 1 group.
+* JQLs - issues are counted in all jqls. The issue will fall into all matching groups.
+  * You can drag and drop the order of JQL conditions.
   <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/4.png"><img src="/uploads/time-in-status/report-create/4.png" style="width:50%;"/></a></p>
 
 
   
 **Columns**
   <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/5.png"><img src="/uploads/time-in-status/report-create/5.png" style="width:50%;"/></a></p>
-* Column title - заголовок будет отображен в таблице.
-* Field - какие данные показать в колонке. В зависимости от выбранного поля будет предложен список дополнительных функций для расчета значения.
-  * Значение рассчитывается для всей группы. 
-    * Если группировка по issue key. То в колонке будет отображено значение выбранного поля. 
-    * Если группировка по project. То в колонке будет отображено значение рассчитанное для всех задача из JQL попадающих в project. 
-* Function - функция вычисляющая значение поля для группы. Зависит от выбранного поля.
-* Velocity - Редактор позволяющий настроить отображение значение в ячейке (HTML). <a href="https://velocity.apache.org/engine/1.7/user-guide.html">velocity</a>
-* Вы можете менять порядок колонок перетаскиванием.
+* Column title - the title will be displayed in the table.
+* Field - what data to show in the column. Depending on the selected field, a list of additional functions for calculating the value will be offered.
+  * The value is calculated for the entire group.
+    * If grouping by issue key. Then the column will display the value of the selected field.
+    * If grouping by project. Then the column will display the value calculated for all tasks from JQL included in project.
+* Function - a function that calculates the value of a field for a group. Depends on the selected field.
+* Velocity - An editor that allows you to customize the display of a value in a cell (HTML). <a href="https://velocity.apache.org/engine/1.7/user-guide.html"> velocity </a>
+* You can change the order of columns by dragging and dropping.
 
 * **Custom calculated field (html)** 
   <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/6.png"><img src="/uploads/time-in-status/report-create/6.png" style="width:50%;"/></a></p>
 
-Особый тип поля. Используя <a href="https://velocity.apache.org/engine/1.7/user-guide.html">velocity</a> можно не только настроить отображение значения (HTML) но и произвести дополнительные расчеты. Это поле позволяет обратиться к любым ячейкам отчета и произвести вычисления на их основе(аля excel).
+A special type of field. Using <a href="https://velocity.apache.org/engine/1.7/user-guide.html"> velocity </a> you can not only customize the display of the value (HTML) but also perform additional calculations. This field allows you to refer to any cells in the report and perform calculations based on them (like excel).
+
 <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.png"><img src="/uploads/time-in-status/report-create/7.png" style="width:50%;"/></a></p>
 
         $report[0][1] + $report[0][2] 
@@ -77,8 +77,8 @@ key: time-in-status
 
 ## Save ##
 
-* **Demo** - В процессе настройки отчета вы можете нажать **Demo** для просмотра промежуточного результата отчета. Будет сгенерирован и показан отчет на основе первых 50 задач из JQL.
+* **Demo** - While customizing the report, you can click ** Demo ** to view the interim result of the report. A report will be generated and displayed based on the first 50 tasks from JQL.
 
-* **Save и generate** - отчеты генерируются по расписанию. Если вы хотите запустить генерацию сразу поле сохранения отчета нажмите эту кнопку. После сохранения отчет будет отправлен в очередь не генерацию. Дальнейшее обновление отчета будет происходить по расписанию.
+* **Save and generate** - reports are generated on schedule. If you want to start generating immediately after saving the report, click this button. After saving, the report will be sent to the non-generation queue. Further update of the report will take place on schedule.
 
-* **Save** - сохраняет отчет. Отчет будет доступен на просмотр после генерации которая произойдет по расписанию.
+* **Save** - saves the report. The report will be available for viewing after generation, which will happen on schedule.

@@ -3,19 +3,18 @@ title: Restore timer and stopwatch by issue history
 key: time-in-status
 ---
 
-Вы можете восстановить или пересчитать значение таймеров и секундомеров на основе истории запросов.
-Таймеры и секундомеры обрабатывают события(тригеры) в реальном времени и фиксируют изменения.
+You can restore or recalculate the value of timers and stopwatches based on the query history.
+Timers and stopwatches process events (triggers) in real time and record changes.
 
-Эта утилита анализирует историю запросов и находит соответствие между записью в стории и тригером из конфигурации таймера или секундомера.
-И на основе этого анализа выдает актуальное значение счетчика на основе истории запроса. Далее этот счетчик будет работать как и прежде - обрабатывать тригеры в реальном времени.
-
+This utility analyzes the history of requests and finds a match between the entry in the history and the trigger from the timer or stopwatch configuration.
+And based on this analysis, it gives the current value of the counter based on the history of the request. Further, this counter will work as before - process triggers in real time.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/restore-by-history/1.png"><img src="/uploads/time-in-status/restore-by-history/1.png" alt="" width="100%"/></a></p>
 
-Администратор указывает JQL и поля для проверки. Далее выполняется одно из трех действий:
-* Найти задачи у которых данные не совпадают с историей. Причины различий могут быть самыми разными: ошибки, проблемы с сервером, некорректная конфигурация и т.д В результате будут показаны запросы с "неправильным" значениями и будет указанно в чем заключается ошибка.
-* Найти задачи с ошибка в данных и сразу заменить текущие значения на новые.
-* Или без анализа просто посчитать и установить новое значение. Например, если значения в задаче никогда не было. 
+The administrator specifies the JQL and fields for validation. Then one of three actions is performed:
+* Find tasks whose data does not match the history. The reasons for the differences can be very different: errors, problems with the server, incorrect configuration, etc. As a result, requests with "incorrect" values will be shown and the error will be indicated.
+* Find tasks with an error in the data and immediately replace the current values with new ones.
+* Or, without analysis, simply calculate and set a new value. For example, if there was never a value in the task.
 
 
 

@@ -3,30 +3,30 @@ title: Time in status field
 key: time-in-status
 ---
 
-Поле для расчета времени проведенного задачей в одном или нескольких статусах.
-Быстрая и простая настройка типовых или простых сценариев. Огромный запас функционала для самых разных сценариев.  
+Field for calculating the time spent by a task in one or several statuses.
+Quick and easy setup of typical or simple scenarios. A huge stock of functionality for a variety of scenarios.
 
 
-Основные фичи:
-* считает время для новых и старых задач.
-* считает время по рабочему календарю.
-* позволяет искать и сортировать задачи по данным в реальном времени.
-* [простая настройка](/docs/time-in-status/time-in-status-field-settings/).
-* [гибкие и мощные поисковые запросы](/docs/time-in-status/time-in-status-field-jql/).   
-* подходит для мониторинга запросов, организации очередей и отслеживания sla построенных на времени в статусах.
-* Экспортируемое в разных форматах. 
-* Доступно для статистики и составлении отчетов.
-* Доступно для работы расчета с контрольных величин и сравнении с ними. (например среднее время в статусе по проекту)
-* Настройка отображения
-* Настройка прав доступ
-* Возможность работать со временем как с простым числом - упрощает интеграцию со сторонними решениями. 
+Main features:
+* counts time for new and old tasks.
+* counts the time according to the working calendar.
+* allows you to search and sort tasks based on real-time data.
+* [simple setup](/docs/time-in-status/time-in-status-field-settings/).
+* [flexible and powerful search queries](/docs/time-in-status/time-in-status-field-jql/).
+* suitable for request monitoring, queuing and sla tracking based on time in statuses.
+* Exported in different formats.
+* Available for statistics and reporting.
+* Available for work calculation with reference values and comparison with them. (e.g. average time in project status)
+* Display setting
+* Setting access rights
+* Ability to work with time as a prime number - simplifies integration with third-party solutions.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"></a></p>
 
-* Отслеживание новых запросов. 
-* Анализ и сбор данных о времени в статусе прошлых задач.
-* Очереди запросов отсортированных по времени реакции или работы в реальном времени.
-* Отслеживание времени разных этапов выполнения запроса.
-* Наглядное состояние работы над запросом.
-* Составление отчетов о проделанной работе.
-...
+* Tracking new requests.
+* Analysis and collection of time data in the status of past tasks.
+* Queues of requests sorted by reaction time or work in real time.
+* Tracking the time of different stages of the request.
+* Visual status of work on the request.
+* Drawing up reports on the work done.
+  ...

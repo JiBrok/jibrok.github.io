@@ -71,7 +71,7 @@ By the field “Time in status” it is possible to sort. Sorting takes place ac
 
 
 ## Reserve ##
-JQL Функции могут быть недоступны, если их названия конфликтуют с функциями из других плагинов. На этот случай у каждой функции есть запасная с постфиксом "_jb".
+JQL Functions may not be available if their names conflict with functions from other plugins. For this case, each function has a spare with the "_jb" postfix.
 
-В случае конфликта нужно выключить модуль с основной функцией и включить запасную:<br>
+In case of conflict, you need to turn off the module with the main function and turn on the spare: <br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:100%"/></a></p>

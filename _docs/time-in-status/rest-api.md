@@ -3,4 +3,4 @@ title: Rest API
 key: time-in-status
 ---
 
-[Rest api доступно по ссылке](/jira/plugins/time-in-status/doc/rest/)
+[Rest api available here](/jira/plugins/time-in-status/doc/rest/)

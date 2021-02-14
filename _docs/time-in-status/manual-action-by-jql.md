@@ -3,20 +3,19 @@ title: Manual control for Timers and Stopwatches
 key: time-in-status
 ---
 
-В разных ситуациях появляется необходимость ручного контроля данных. Если запросов мало или они возникают переодически, то можно выдать права пользователям дял ручного управления счетчиками(таймерами и сеундомерами). Это задается в конфигурации полей и дает пользователям в ручную запускать и останавливать счетчики.
+In different situations, there is a need for manual data control. If there are few requests or they occur periodically, then you can issue the rights to users for manual control of counters (timers and stopwatches). This is set in the field configuration and allows users to manually start and stop counters.
 
 
-В иной ситуации счетчиков может быть очень много для точечного управления. В таком случае администратор может массово применить действие к счетчикам. [Подробнее о действиях](/docs/time-in-status/timers-and-stopwatches-general-information/)
-<br>Например с его помощью можно массово останавливать таймеры.
+In a different situation, there can be a lot of counters for point control. In this case, the administrator can massively apply the action to the counters. [Action details](/docs/time-in-status/timers-and-stopwatches-general-information/)
+<br> For example, it can be used to massively stop timers.
 
-Администратором указывается:
+The administrator specifies:
 * JQL
-* Поля
-* Действие
-* Дополнительные настройки
+* Fields
+* Action
+* Additional settings
 
-В задачах из JQL для этих полей будет выполнено указанное действие.
-
+In tasks from JQL, the specified action will be performed for these fields.
 <p style="text-align: center;"><a href="/uploads/time-in-status/manual-action-by-jql/1.png"><img src="/uploads/time-in-status/manual-action-by-jql/1.png" style="width:100%;"/></a></p>
 
 

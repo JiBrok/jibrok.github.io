@@ -3,25 +3,25 @@ title: Common helpers
 key: time-in-status
 ---
 
-Поля хелперы облегчают интеграцию со сторонними решениями и приложениями.
+Helper fields make it easy to integrate third-party solutions and applications.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/1.png"><img src="/uploads/time-in-status/common-helpers/1.png" style="width:100%;"/></a></p>
 
-Поля "Time in status", "Timer" и "Stopwatch" содержат в себе "сложное" значение поля. Оно включает в себя, пройденное время, время перерывов, статус счетчика, даты запуска и прочую информацию. Но когда речь заходит о экспорте, интеграциях, то как правило нужна какая-то конкретная величина - например пройденное время. Для облегчения получения этих конкретных величин и нужны поля хелперы.
+The fields "Time in status", "Timer" and "Stopwatch" contain the "complex" value of the field. It includes time spent, break times, counter status, start date and other information. But when it comes to exports or integrations then you need some specific value - for example, the time spent. To facilitate obtaining these specific values, help fields are needed.
 
-Поля хелперы работаю следующим образом.<br>
-* Создается основное поле ("Time in status", "Timer" или "Stopwatch").
-* Создается поле хелпер нужного типа к основному полю. Сейчас доступны типы: number, date и statistic.
-    * number - работает как обычное number поле.
-    * date - работает как обычное date field.
-    * statistic - особым образом обрабатывается в гаджетах статистики.
-* В настройках поля хелпера указывается:
-    * Основное поле. Оно будет служить источником информации. Хелпер будет обращаться к нему для получения значения и обрабатывать полученное значение.
-    * Данные которые нужно получить и вывести из значения основного поля.
+Helper fields work as follows. <br>
+* The main field is created ("Time in status", "Timer" or "Stopwatch").
+* A helper field of the required type to the main field is created. The types currently available are number, date, and statistic.
+    * number - works like a normal number field.
+    * date - works like a normal date field.
+    * statistic - statistics are processed in a special way in gadgets.
+* The helper field settings indicate:
+    * Main field. It will serve as a source of information. The helper will refer to it to get the value and process the resulting value.
+    * Data that needs to be received and displayed from the value of the main field.
     
 <p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/2.png"><img src="/uploads/time-in-status/common-helpers/2.png" style="width:100%;"/></a></p>
 
-Так например вы можете создать основное поле секундомер. К нему создать хелпер который будет выводить время секундомера в часах. Подключить хелпер в стороннем плагине который умеет обрабатывать числовые значения. 
+So for example you can create a basic stopwatch field. Create a helper for it that will display the stopwatch time in hours. Connect a helper in a third-party plugin that can handle numeric values. 
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/common-helpers/3.png"><img src="/uploads/time-in-status/common-helpers/3.png" style="width:50%;"/></a></p>
 

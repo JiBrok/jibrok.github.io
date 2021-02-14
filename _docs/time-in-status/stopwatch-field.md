@@ -4,35 +4,35 @@ key: time-in-status
 ---
 
 
-Поле для расчета времени между событиями происходящими с задачей.
-Считает время между практически любыми действиями c задачей(issue events).
-Например: создание задачи, написания комментария, смена в статусе, назначение, установка резолюции или любого другого custom field.
-[Полный список событий](/docs/time-in-status/available-events/)
+The field for calculating the time between events occurring with the task.
+Counts the time between virtually any issue events.
+For example: creating a task, writing a comment, changing status, assigning, setting a resolution or any other custom field.
+[Complete list of events] (/docs/time-in-status/available-events/)
 
 
 
-Основные фичи:
-* считает время для новых и [старых задач](/docs/time-in-status/restore-by-history/).
-* считает время по рабочему календарю.
-* Запуск при определенных условиях. 
-* Уведмоления о действиях.  
-* позволяет искать и сортировать задачи по данным в реальном времени.
-* [Гибкая настройка поля](/docs/time-in-status/stopwatch-field-settings/) и [конфиграции](/docs/time-in-status/stopwatch-configs/).
-* [гибкие и мощные поисковые запросы](/docs/time-in-status/stopwatch-field-jql/).
-* подходит для мониторинга запросов, организации очередей.
-* Экспортируемое в разных форматах.
-* Доступно для статистики и составлении отчетов.
-* Доступно для работы расчета с контрольных величин и сравнении с ними. (например среднее время в статусе по проекту)
-* Настройка отображения
-* Настройка прав доступ
-* Возможность работать со временем как с простым числом - упрощает интеграцию со сторонними решениями.
+Main features:
+* counts time for new and [old tasks](/docs/time-in-status/restore-by-history/).
+* counts the time according to the working calendar.
+* Run under certain conditions.
+* Notice of action.
+* allows you to search and sort tasks based on real-time data.
+* [Flexible field setting](/docs/time-in-status/stopwatch-field-settings/) and [config](/docs/time-in-status/stopwatch-configs/).
+* [flexible and powerful search queries](/docs/time-in-status/stopwatch-field-jql/).
+* suitable for monitoring requests, queuing.
+* Exported in different formats.
+* Available for statistics and reporting.
+* Available for work calculation with reference values and comparison with them. (e.g. average time in project status)
+* Display setting
+* Setting access rights
+* Ability to work with time as a prime number - simplifies integration with third-party solutions.
 
 [comment]: <> (TODO <a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:100%;"></a>)
 
-* Отслеживание новых запросов.
-* Анализ и сбор данных о времени в статусе прошлых задач.
-* Очереди запросов отсортированных по времени реакции или работы в реальном времени.
-* Отслеживание времени разных этапов выполнения запроса.
-* Наглядное состояние работы над запросом.
-* Составление отчетов о проделанной работе.
+* Tracking new requests.
+* Analysis and collection of time data in the status of past tasks.
+* Queues of requests sorted by response time or work in real time.
+* Tracking the time of different stages of the request.
+* Visual status of work on the request.
+* Drawing up reports on the work done.
   ...

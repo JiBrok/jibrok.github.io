@@ -96,10 +96,10 @@ Work when search engine is connected [Search Templates](https://confluence.atlas
 * **"field name" in pauseInMonth("number")** - Search for issues by the month when the timer was paused.
 
 * **Examples:**
-    * "First response" in failInDay() - найти задачи у которых вышло или выйдет время по таймеру "First response" сегодня
-    * "First response" in failInDay("-1") - найти задачи у которых вышло время по таймеру "First response" вчера(1 день назад)
-    * "First response" in failInDay("-7") - найти задачи у которых вышло время по таймеру "First response" неделю назад(7 день назад)
-    * "First response" in failInDay("7") - найти задачи у которых вышло или выйдет время по таймеру "First response" через неделю(через 7 дней)
+  * "First response" in failInDay () - find tasks that have expired or will expire on the "First response" timer today
+    * "First response" in failInDay ("-1") - find tasks that have run out of time by the "First response" timer yesterday (1 day ago)
+    * "First response" in failInDay ("-7") - find tasks for which the "First response" timer has expired a week ago (7 days ago)
+    * "First response" in failInDay ("7") - find tasks that have expired or will expire on the "First response" timer in a week (after 7 days)
 
 
 * **"field name" in searchByStartDate("condition", "date")** - Search for issues by the date when the timer was first started.
@@ -107,16 +107,16 @@ Work when search engine is connected [Search Templates](https://confluence.atlas
 * **"field name" in searchByStopDate("condition", "date")** - Search for issues by the date when the timer was stopped.
 * **"field name" in searchByFailDate("condition", "date")** - Search for issues by the date when the timer was failed.
 
-* date - строка с датой в формате 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
+* date is a string with a date in the format 'yyyy-MM-dd' or 'yyyy-MM-dd HH: mm'
 * **Examples:**
-    * "First response" in searchByStartDate(">", "2021-01-01") - задачи у которых таймер запустился после "2021-01-01"
+  * "First response" in searchByStartDate (">", "2021-01-01") - tasks for which the timer started after "2021-01-01"
 
-* **"field name" in startInDateRange("date","date")** - Search for issues by the date when the timer was started (duration).
-* **"field name" in stopInDateRange("date","date")** - Search for issues by the date when the timer was stopped (duration).
-* **"field name" in failInDateRange("date","date")** - Search for issues by the date when the timer was failed (duration).
+* **"field name" in startInDateRange ("date", "date")** - Search for issues by the date when the timer was started (duration).
+* **"field name" in stopInDateRange ("date", "date")** - Search for issues by the date when the timer was stopped (duration).
+* **"field name" in failInDateRange ("date", "date")** - Search for issues by the date when the timer was failed (duration).
 
 * **Examples:**
-    * "First response" in failInDateRange("2020-01-01", "2021-01-01") - задачи у которых таймер превысил свое время в течении 2020-го года.
+  * "First response" in failInDateRange ("2020-01-01", "2021-01-01") - tasks whose timer has exceeded its time during 2020.
 
 
 ### "Timer field" in searchByCalendar(“calendarId”) ###

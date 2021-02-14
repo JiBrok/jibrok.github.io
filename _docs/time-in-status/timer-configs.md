@@ -28,7 +28,7 @@ The configuration is responsible for the stopwatch operation algorithm When shou
 * Update goal with issue update - The timer will respond to all changes in the task and will refine the goal.
 * Events - issue events to which the timer responds with a specific command. General information
 * Throwable events - When a issue changes its state, the timer can generate a separate event.
-* Notifications - таймер отправит уведомление когда пройдет X% времени или останется X минут до окончания.
+* Notifications - the timer will send a notification when X% of the time has passed or X minutes left until the end.
 
 [comment]: <> (TODO <div class="uk-alert-note" data-uk-alert="">)
 [comment]: <> (When you fire an event, it can be caught by the Simple notification plugin. See more filters)

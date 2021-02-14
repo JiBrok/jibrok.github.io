@@ -3,16 +3,16 @@ title: Detail history for timer and stopwatch
 key: time-in-status
 ---
 
-В сложных системах, в которых много интеграций, плагинов, скриптов и прочего иногда очень сложно понять чтоже пошло не так.
-Для упрощения процедуры тестирвоания и отладки настроек сделана дополнительная детальная история для таймеров и секундомеров.
-В нее записывается источник вызвавший тригер на который отрегировал счетчик и изменение которые произошли с данными.
+In complex systems with a lot of integrations, plugins, scripts and other things, it is sometimes very difficult to understand what went wrong.
+To simplify the testing procedure and debug settings, an additional detailed history has been made for timers and stopwatches.
+It records the source that caused the trigger to which the counter and the change that occurred to the data were registered.
 
 
-Настройка по умолчанию выключена и включается на усмотрение администратора. Она может быть включена и на постоянной основе. 
+The default setting is disabled and enabled at the discretion of the administrator. It can also be enabled on an ongoing basis.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/1.png"><img src="/uploads/time-in-status/detail-history/1.png" style="width:100%;"/></a></p>
 
-При включенной опции в задаче появляется две дополнительных панели с подробным логом. Эти панели доступны только администраторам.
+When this option is enabled, two additional panels with detailed logs appear in the task. These panels are available only to administrators.
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/detail-history/2.png"><img src="/uploads/time-in-status/detail-history/2.png" style="width:100%;"/></a></p>
 

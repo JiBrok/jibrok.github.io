@@ -82,9 +82,9 @@ Work when search engine is connected [Search Templates](https://confluence.atlas
 * **"field name" in pauseInMonth("number")** - Search for issues by the month when the stopwatch was paused.
 
 * **Examples:**
-    * "First response" in startInDay() - найти задачи у которых сегодня запустился секундомер.
-    * "First response" in startInDay("-1") - найти задачи у которых вчера(1 день назад) запустился секундомер.
-    * "First response" in startInDay("-7") - найти задачи у которых неделю назад(7 день назад) запустился секундомер.
+    * "First response" in startInDay() - find tasks for which the stopwatch has started today.
+    * "First response" in startInDay("-1") - find tasks for which the stopwatch started yesterday (1 day ago).
+    * "First response" in startInDay("-7") - find tasks for which a stopwatch started a week ago (7 days ago).
 
 
 * **"field name" in searchByStartDate("condition", "date")** - Search for issues by the date when the stopwatch was first started.
@@ -92,16 +92,16 @@ Work when search engine is connected [Search Templates](https://confluence.atlas
 * **"field name" in searchByStopDate("condition", "date")** - Search for issues by the date when the stopwatch was stopped.
 
 
-* date - строка с датой в формате 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
+* date - date string in the format 'yyyy-MM-dd' or 'yyyy-MM-dd HH:mm'
 * **Examples:**
-    * "First response" in searchByStartDate(">", "2021-01-01") - задачи у которых stopwatch запустился после "2021-01-01"
+    * "First response" in searchByStartDate(">", "2021-01-01") - issues for which stopwatch started after "2021-01-01"
 
 * **"field name" in startInDateRange("date","date")** - Search for issues by the date when the stopwatch was started (duration).
 * **"field name" in stopInDateRange("date","date")** - Search for issues by the date when the stopwatch was stopped (duration).
 
 
 * **Examples:**
-    * "First response" in stopInDateRange("2020-01-01", "2021-01-01") - задачи у которых stopwatch остановился в течении 2020-го года.
+    * "First response" in stopInDateRange("2020-01-01", "2021-01-01") - issues for which stopwatch stopped during 2020 year.
 
 
 
