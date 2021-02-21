@@ -101,7 +101,7 @@ A special type of field. Using <a href="https://velocity.apache.org/engine/1.7/u
 
 ## Save ##
 
-* **Demo** - While customizing the report, you can click ** Demo ** to view the interim result of the report. A report will be generated and displayed based on the first 50 tasks from JQL.
+* **Demo** - While customizing the report, you can click **Demo** to view the interim result of the report. A report will be generated and displayed based on the first 50 tasks from JQL.
 
 * **Save and generate** - reports are generated on schedule. If you want to start generating immediately after saving the report, click this button. After saving, the report will be sent to the non-generation queue. Further update of the report will take place on schedule.
 
