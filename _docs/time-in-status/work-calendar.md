@@ -43,8 +43,10 @@ In the window that opens, select a calendar for detailed viewing.<br>
       <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/break-time2.png"><img src="/uploads/time-in-status/work-calendar/break-time2.png" style="width:50%"/></a></p>
    
 
-7. Work time settings - are user for new time formats from D13 to D42
-Default - The working day is equal to the calendar day.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/time-settings.png"><img src="/uploads/time-in-status/work-calendar/time-settings.png" style="width:50%"/></a></p>
-   
+7. Start date time - All calculations will be carried out from this date. The time before this date is considered non-working. For example: project start date.
+   <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/start-date-time.png"><img src="/uploads/time-in-status/work-calendar/start-date-time.png" style="width:50%"/></a></p>
 
+
+8.  Work time settings - are user for new time formats from D13 to D42
+   Default - The working day is equal to the calendar day.<br>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/time-settings.png"><img src="/uploads/time-in-status/work-calendar/time-settings.png" style="width:50%"/></a></p>

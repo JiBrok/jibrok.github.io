@@ -72,7 +72,31 @@ A special type of field. Using <a href="https://velocity.apache.org/engine/1.7/u
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.png"><img src="/uploads/time-in-status/report-create/7.png" style="width:50%;"/></a></p>
 
-        $report[0][1] + $report[0][2] 
+**Example**:
+
+<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/8.png"><img src="/uploads/time-in-status/report-create/8.png" style="width:50%;"/></a></p>
+
+
+1 field: 
+
+        #set($value = $row + $column)
+        $value
+
+2 field:
+
+        #set($value = $row + $column)
+        $value
+
+3 field:
+
+        #set($value = $report.rows.get($row).get(1).rawValue + $report.rows.get($row).get(2).rawValue)
+        $value
+
+4 field: 
+
+        #set($value = $report.rows.get($row).get(3).rawValue * 2)
+        $value
+
 
 
 ## Save ##

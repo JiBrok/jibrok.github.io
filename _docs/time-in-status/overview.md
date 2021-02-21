@@ -47,7 +47,7 @@ In each task detailed reports are available on time, transitions between statues
 <p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.png"><img src="/uploads/time-in-status/overview/issue-report.png" style="width:100%;"/></a></p>
 
 Create jql reports grouped by any fields or jql conditions. Various functions are available in reports for calculating values (average, percentiles ...).
-The reports will be available for viewing via the link.
+The reports will be available for viewing and export via the link.
 
 <table>
 <tr>

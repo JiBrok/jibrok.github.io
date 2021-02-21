@@ -24,15 +24,16 @@ All settings:<br>
 6. Calculate average time - Total time divided by the number of transitions to the specified statuses.
        If the "total time in statuses", it divides the total time by the total number of transitions. Else the average is considered separately for each status.
 7. Work calendar - If you need to calculate only working hours, you can connect a working calendar.
-8. Show in field - total time or status table. Does not affect the actual value returned by the field.
-9. Field time format - format for outputting time in a field. If you need a new format, please write in support.
-10. Show as panel - Enables the display of the "Time in status" field in the sidebar. The remaining fields with the selected setting will be selected in it. The field can be omitted from the issue viewing screen. The panel can be configured separately from the field.<br>
+8. Start date time - All calculations will be carried out from this date. The time before this date is considered non-working. You can also specify this date in the calendar (see [calendar settings](/docs/time-in-status/work-calendar/)).
+9. Show in field - total time or status table. Does not affect the actual value returned by the field.
+10. Field time format - format for outputting time in a field. If you need a new format, please write in support.
+11. Show as panel - Enables the display of the "Time in status" field in the sidebar. The remaining fields with the selected setting will be selected in it. The field can be omitted from the issue viewing screen. The panel can be configured separately from the field.<br>
     <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.png" style="width:200px"/></a></p>
-11. Show as panel on Agile boards - Show field as panel on scrum or kanban boards in "Issue Detail View" section (The right panel that appears when you click on a task).
-12. Show in panel - total time or status table.
-13. Panel time format - format for outputting time in a field. If you need a new format, please write in support.
-14. Show empty value - When set to "No" does not display zero time.
-15. Sorting of statuses by - Sorts the statuses in the tabular display of the field and sidebar.
+12. Show as panel on Agile boards - Show field as panel on scrum or kanban boards in "Issue Detail View" section (The right panel that appears when you click on a task).
+13. Show in panel - total time or status table.
+14. Panel time format - format for outputting time in a field. If you need a new format, please write in support.
+15. Show empty value - When set to "No" does not display zero time.
+16. Sorting of statuses by - Sorts the statuses in the tabular display of the field and sidebar.
 The bottom panel has a similar setting.
 
 

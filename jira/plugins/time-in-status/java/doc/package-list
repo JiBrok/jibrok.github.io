@@ -3,6 +3,7 @@ com.jibrok.jira.plugins.timeinstatus.api
 com.jibrok.jira.plugins.timeinstatus.calendar
 com.jibrok.jira.plugins.timeinstatus.calendar.dto
 com.jibrok.jira.plugins.timeinstatus.calendar.manager
+com.jibrok.jira.plugins.timeinstatus.config.dto
 com.jibrok.jira.plugins.timeinstatus.customfieldtemplates.model
 com.jibrok.jira.plugins.timeinstatus.customfieldtemplates.service
 com.jibrok.jira.plugins.timeinstatus.field

@@ -16,6 +16,7 @@ Reports can work with any fields. Both with system fields and with fields from t
   * For numeric fields, mathematical functions are available - calculation of percintiles, sum, average, maximum and other values.
 * You can also display cells with a custom formula and display, such cells also have access to data from other cells (like excel).
 * For each report, access rights and a schedule for updating data are set separately.
+* Reports can be exported to csv and available via direct link.
 
 [Read more in the section on creating a report.](/docs/time-in-status/report-create/)
     
