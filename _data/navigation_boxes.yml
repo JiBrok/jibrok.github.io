@@ -1,14 +1,19 @@
 # Boxes include navigation
 
-- title: Message field
+- title: Message field (Data Center/Server)
   desc: This field shows message banner on any issue screens. HTML, Display settings, Conditions, Dynamic messages, JavaScript and others
   icon: messagefield
   doc: message-field/overview
 
-- title: Time in status | SLA | Timer | Stopwatch
+- title: Time in status | SLA | Timer | Stopwatch (Data Center/Server)
   desc: To calculate time in different scenarios, the plugin provides a set of fields, functions for searching, reports, access to api and other tools.
   icon: time-in-status
   doc: time-in-status/overview
+
+- title: Time in status (Cloud)
+  desc: Calculation and search by time spent in statuses. Working calendars, reports, JQL filters and more.
+  icon: time-in-status
+  doc: tis-cloud/overview
 
 - title: Other apps
   desc: More plugins will be added soon

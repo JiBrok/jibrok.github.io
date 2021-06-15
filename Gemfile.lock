@@ -30,6 +30,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-json-feed (1.0.1)
+      jekyll (>= 3.3, < 5.0)
     jekyll-livereload (0.2.2)
       em-websocket (~> 0.5)
       jekyll (~> 3.0)
@@ -77,6 +79,7 @@ DEPENDENCIES
   jekyll-avatar
   jekyll-feed (~> 0.6)
   jekyll-gist
+  jekyll-json-feed
   jekyll-livereload
   jekyll-paginate (~> 1.1)
   jekyll-seo-tag
@@ -87,4 +90,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.1.4
+   2.2.19

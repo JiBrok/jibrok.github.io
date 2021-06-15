@@ -147,7 +147,46 @@
 
 
 
+- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status (Cloud)
+  key: tis-cloud
+  docs:
+    - tis-cloud/overview
+    - tis-cloud/install
+    - tis-cloud/get-started
+    - tis-cloud/migrationDocumentation
+    - tis-cloud/featureDifferenceDocumentation
+
+- title: Work calendars
+  key: tis-cloud
+  docs:
+    - tis-cloud/work-calendar
+
+- title: Time in status fields
+  key: tis-cloud
+  docs:
+    #    - time-in-status/time-in-status-field
+    - tis-cloud/time-in-status-field-settings
+    - tis-cloud/time-in-status-jql
+
+- title: Issue panels
+  key: tis-cloud
+  docs:
+    - tis-cloud/web-panel
+
+- title: Reports
+  key: tis-cloud
+  docs:
+    - tis-cloud/export-fields
+
+- title: Service tools
+  key: tis-cloud
+  docs:
+    - tis-cloud/service-info
+    - tis-cloud/limits
+    - tis-cloud/status-page
 
 
-
-
+- title: Reference information
+  key: tis-cloud
+  docs:
+    - tis-cloud/time-formats

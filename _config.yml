@@ -73,8 +73,8 @@ social:
     twitter: https://twitter.com/JiBrok_apps
     vimeo:
     youtube: https://www.youtube.com/channel/UCtqfbNU2XWiftZ9ev_AaJCg
-    rss: feed.xml
-    slack: https://join.slack.com/t/jibrok/shared_invite/zt-h94es09e-oaNGiM5ZAS~b3ieOGIgUkA
+    rss: https://jibrok.com/feed.xml
+    #slack: https://join.slack.com/t/jibrok/shared_invite/zt-h94es09e-oaNGiM5ZAS~b3ieOGIgUkA
 
 # Share button
 share:
@@ -113,6 +113,7 @@ gems:
   - jekyll-gist
   - jekyll-avatar
   - jekyll-sitemap
+  - jekyll-json-feed
 exclude:
   - Gemfile
   - Gemfile.lock
