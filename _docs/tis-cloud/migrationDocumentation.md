@@ -16,3 +16,4 @@ A small checklist for transferring settings.
 4. If you transfer user filters, then you need to take into account: the id of field in the cloud will differ from the server ones, not all JQL functions from the server are available in the cloud.
 
 
+For any questions please contact support.
