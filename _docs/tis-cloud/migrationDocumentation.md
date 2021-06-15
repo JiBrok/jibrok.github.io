@@ -7,7 +7,7 @@ Automatic migration of settings during development.
 
 Now the application requires manual transfer of settings.
 You don't need to migrate data from issues. <b> You only need to transfer the settings for calendars, fields, panels </b>.
-Some [things are missing](/tis-cloud/featureDifferenceDocumentation) in the cloud version of the app.
+Some [things are missing](/docs/tis-cloud/featureDifferenceDocumentation/) in the cloud version of the app.
 
 A small checklist for transferring settings.
 1. Transfer work calendars. They have the same interfaces and you need to create copies.
