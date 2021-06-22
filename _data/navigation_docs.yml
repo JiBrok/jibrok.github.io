@@ -190,3 +190,16 @@
   key: tis-cloud
   docs:
     - tis-cloud/time-formats
+
+
+- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF)
+  key: calculated-custom-fields
+  docs:
+    - calculated-custom-fields/overview
+
+- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Cloud
+  key: jbcf-cloud
+  docs:
+    - jbcf-cloud/overview
+    - jbcf-cloud/migrationDocumentation
+    - jbcf-cloud/featureDifferenceDocumentation

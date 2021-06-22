@@ -1,0 +1,22 @@
+# Boxes include navigation
+
+- title: Time in status (Cloud)
+  desc: Calculation and search by time spent in statuses. Working calendars, reports, JQL filters and more.
+  icon: time-in-status
+  doc: tis-cloud/overview
+
+- title: Calculated custom fields (JBCF)
+  desc: Pack of fields for Jira Cloud
+  icon: jbcf
+  doc: jbcf-cloud/overview
+
+- title: Other apps
+  desc: More plugins will be added soon
+  icon: bolt
+  href: https://marketplace.atlassian.com/vendors/1216083/jibrok
+
+
+- title: Documentation for other apps
+  desc:
+  icon: confluence
+  href: https://jibrok.atlassian.net/wiki/spaces/JBS/overview
