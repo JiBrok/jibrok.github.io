@@ -208,6 +208,29 @@ You can use current issue in jql for conditions:
     	"issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
     	)
 
+#### How to show fields from linked issues(also on Service Desk Portal)? How to use $issueFieldRender? ####
+[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+
+This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=server&tab=overview)
+1) Create and configure field "Linked issues":
+
+<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png" alt="linked-issues-config.png" width="50%"/></a>
+
+2) After creating the "linked issues" field, you can display it in the message body:
+
+
+    $issueFieldRender.getFieldValueHtml($issue,"customfield_10101")
+
+3) Result:
+   
+   <table><tr>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png" alt="render-another-field-1.png" width="100%"/></a></td>
+   </tr>
+   <tr>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png" alt="render-another-field-2.png" width="100%"/></a></td>
+   </tr></table>
+   
+   
 
 #### Check priority ####
 
