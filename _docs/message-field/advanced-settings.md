@@ -70,7 +70,13 @@ General view of the message and text
 * **Screens** 
     * For example if you use one screen for all issue actions(creating, viewing, editing a issue) with this setting you can specify on which screen you want to display the message. Although technically the field will be added to all issue screens, the display of the message (and the field) can be specified in this setting.
     * If the value is empty, the message is displayed on all screens where the field is added. 
-    
+
+* **Show only on create screens**
+    * Additional customization for creation screens.
+    * Technically prohibits displaying messages outside of compose screens(Issue create screen, Service desc create screen).
+    * After creating a issue, some versions of Jira or third-party applications may ask for the default value of the field if there is no data in the issue. This option prevents the field from being returned after a request has been created.
+    * The setting works at a low level. Tech messages still show up in frontends, third party plugins or email - please write to support.
+
 * **Show in statuses**
     * The message will be displayed only for issues in one of the specified statuses. 
     * If the value is empty the message will be displayed for issues in any statuses.
