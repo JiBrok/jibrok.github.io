@@ -27,7 +27,7 @@ Thank you for your recommendation! 😉
 
 Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
 
-## Short example for HTML ##
+## How do I change the color of the text and background in a message? ##
 You can display any HTML as a message. To do this select the **Message type** **'Custom'** in the field settings.
 
 
@@ -47,6 +47,41 @@ Or hex colors
 Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>
 
 Attlassian Design System: <a href="https://www.atlassian.design/foundations/color">atlassian.design/foundations/color</a>
+
+## How to add a scroll to a long message? ##
+
+
+
+ <table>
+    <tr>
+        <td>
+            <a href="/uploads/message-field/html-example-scroll.png"><img src="/uploads/message-field/html-example-scroll.png" width="100%"/></a>
+        </td>
+        <td>
+            <a href="/uploads/message-field/html-example-scroll-2.png"><img src="/uploads/message-field/html-example-scroll-2.png" width="100%"/></a>
+        </td>
+    </tr>
+</table>
+
+
+```html
+<div style="height: 200px; overflow-y: scroll;">
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+    Long Message<br/>
+</div>
+```
+
 
 
 
