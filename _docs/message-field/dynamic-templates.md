@@ -50,6 +50,22 @@ Special variables will be available in the template for work with data. Links le
     * "VIEW_SD" - Service desk view screen
 * [$currentUser](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/user/ApplicationUser.html)
     * The user who is viewing the message.
+* [$currentDateTime](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
+    * The current date time.
+* [$dateOfLastTransition](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
+    * The date of the last transition.
+* [$secAfterLastTransition](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)
+    * How many seconds have passed since the last transition.
+* [$previousStatusId](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)
+    * Number ID of previous status.
+* [$previousStatusName](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+    * Name of previous status.
+* [$transitionId](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)
+    * Number of current transition.
+    * Only available on transition screens.
+* [$transitionName](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+    * Name of current transition.
+    * Only available on transition screens.
 * [$cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html)
     * Utility object for getting custom field value from $issue and $formIssue.
 * [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)

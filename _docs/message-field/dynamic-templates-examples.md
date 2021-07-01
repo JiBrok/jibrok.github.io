@@ -305,3 +305,20 @@ This example uses a different our plugin: [Display linked issues](https://market
       #if($form.customfield_10202.indexOf("10301") > -1)
          "Select List (multiple choices)" contains otpion with id 10301(option2) ##Message text
       #end
+
+
+#### Check how long ago the transition was made. Show message after transition. (How to use $secAfterLastTransition) ####
+
+
+      $fieldDisplayConfig.setHidden(true)##hide message by default (Including cases when there were no transitions yet.)
+
+      #if($secAfterLastTransition && $secAfterLastTransition < 1*60)##We check that less than 1 minute has passed since the last transition (the time is indicated as a number of seconds)
+		$fieldDisplayConfig.setHidden(false)## Show a message if the transition was not long ago. (< 1 min ago)
+		
+		##message edit here
+		data:<br>
+		$secAfterLastTransition<br>
+		$previousStatusId <br>
+		$previousStatusName <br>
+
+      #end
