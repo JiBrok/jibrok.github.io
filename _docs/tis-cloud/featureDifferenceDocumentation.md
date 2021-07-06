@@ -48,8 +48,8 @@ The application is being actively developed and updated daily.
 <table>
 <tr><th>Features</th><th>Server/Data Center</th><th>Cloud</th></tr>
 <tbody>
-<tr><td>Timer field</td><td>✅</td><td>❌🛠 June 2020</td></tr>
-<tr><td>Stopwatch field</td><td>✅</td><td>❌🛠 June 2020</td></tr>
+<tr><td>Timer field</td><td>✅</td><td>❌🛠 June-Jul 2020</td></tr>
+<tr><td>Stopwatch field</td><td>✅</td><td>❌🛠 June-Jul 2020</td></tr>
 </tbody>
 </table>
 
