@@ -93,6 +93,24 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $cfValues.getFromFormOrDefault("customfield_10100", 123)<br>
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
 
+
+####  How to use issue status? ####
+
+    #if($issue.status.name == 'To Do')
+         message for 'To Do' status
+    #elseif($issue.status.name == 'In progress')
+         message for 'In progress' status
+    #end
+    
+or 
+
+    #if($issue.status.id == 10000)
+         message for 'To Do' status
+    #elseif($issue.status.id == 10001)
+         message for 'In progress' status
+    #end
+
+
 #### How to use $fieldDisplayConfig? How to change the display of a message? ####
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) 
 
