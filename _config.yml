@@ -113,7 +113,7 @@ gems:
   - jekyll-gist
   - jekyll-avatar
   - jekyll-sitemap
-  - jekyll-json-feed
+#  - jekyll-json-feed
 exclude:
   - Gemfile
   - Gemfile.lock
