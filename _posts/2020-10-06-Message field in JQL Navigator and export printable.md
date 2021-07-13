@@ -1,6 +1,6 @@
 ---
 title: Message field in JQL Navigator and export printable.
-
+tags: message-field
 ---
 
 

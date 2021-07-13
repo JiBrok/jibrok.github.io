@@ -1,6 +1,6 @@
 ---
-title: How to copy message settings from other field? 
-
+title: How to copy message settings from other field?
+tags: message-field
 ---
 
 
