@@ -1,6 +1,6 @@
 ---
 title: How to use linked issues and JQL results in Dynamic templates?
-tags: message-field test
+tags: message-field
 ---
 
 Dynamic templates allow you to use various variables in your message.
