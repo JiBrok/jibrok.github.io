@@ -5,6 +5,16 @@
   icon: time-in-status
   doc: tis-cloud/overview
 
+- title: Stopwatch (Cloud)
+  desc: Counts the time between issue events. Working calendars, JQL filters and more.
+  icon: stopwatch
+  doc: stopwatch-cloud/overview
+
+- title: Timer (Cloud)
+  desc: Counts the remaining time. The initial time (according to JQL) and the conditions for starting and stopping the timer are provided. Working calendars, JQL filters and more.
+  icon: timer
+  doc: timer-cloud/overview
+
 - title: Calculated custom fields (JBCF)
   desc: Pack of fields for Jira Cloud
   icon: jbcf

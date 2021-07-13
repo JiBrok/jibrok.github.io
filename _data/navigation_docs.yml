@@ -203,3 +203,14 @@
     - jbcf-cloud/overview
     - jbcf-cloud/migrationDocumentation
     - jbcf-cloud/featureDifferenceDocumentation
+
+
+- title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer for Cloud
+  key: timer-cloud
+  docs:
+    - timer-cloud/overview
+
+- title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Cloud
+  key: stopwatch-cloud
+  docs:
+    - stopwatch-cloud/overview
