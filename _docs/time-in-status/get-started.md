@@ -13,7 +13,7 @@ Here are the key points that will help you navigate the application settings.
     1. [Step by step Time in status](/docs/time-in-status/step-by-step-time-in-status/)
     1. [Step by step Timer](/docs/time-in-status/step-by-step-timer/)
 6. Plugin settings.
-    1. By default, the plugin tries to minimize the use of server resources. You can change the resource limits on the pages [Performance config - JQL](/docs/time-in-status/performance-config-jql/) и [Performance config - multithreading](/docs/time-in-status/performance-config-multithreading/).  Allocating additional threads can increase the computation speed by hundreds of percent.
+    1. By default, the plugin tries to minimize the use of server resources. You can change the resource limits on the pages [Performance config - JQL](/docs/time-in-status/performance-config-jql/) and [Performance config - multithreading](/docs/time-in-status/performance-config-multithreading/).  Allocating additional threads can increase the computation speed by hundreds of percent.
     1. Some reports are available directly from the issue. This slightly complicates the interface, in cases where this functionality is not needed. You can fine-tune reports and their display in the issue: [Bottom panel configs](/docs/time-in-status/bottom-panel-configs/)
     1. Time counters can be displayed as side panels, the location of which can be changed :  [Field panel configs](/docs/time-in-status/field-panel-configs/)
 7. By default, only Jira admins can create reports. Administrators can grant reporting permissions to users, groups or roles. [reports-permissions](/docs/time-in-status/reports-permissions/)

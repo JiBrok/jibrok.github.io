@@ -204,6 +204,17 @@
     - jbcf-cloud/migrationDocumentation
     - jbcf-cloud/featureDifferenceDocumentation
 
+- title: JBCF fields
+  key: jbcf-cloud
+  docs:
+    - jbcf-cloud/jbcf-create-field
+
+- title: Service tools
+  key: jbcf-cloud
+  docs:
+    - jbcf-cloud/service-info
+    - jbcf-cloud/status-page
+
 
 - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer for Cloud
   key: timer-cloud

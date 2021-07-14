@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Overview (Server/DC)
 key: time-in-status
 ---
 
@@ -22,7 +22,7 @@ To calculate time in different scenarios, the plugin provides a set of fields, f
     * Tracks the time between events. Events can be as simple as creating a task, commenting. So are more complex ones - increasing priority, changing status to a specific, first appointment. The field is very flexible in the settings and allows to know the time between practically any actions with the task. 
 * Timer field
     * Based on stopwatch and complemented by countdown functions. 
-    * During startup, it is set for a certain time (5 minutes, 4 hours) and then shows the remaining time. Reacts to events (TODO). Depending on the settings, it starts the timer or stops. The initial time is determined by the jql condition.
+    * During startup, it is set for a certain time (5 minutes, 4 hours) and then shows the remaining time. Reacts to issue events (create issue, create comment...). Depending on the settings, it starts the timer or stops. The initial time is determined by the jql condition.
     * You can send a notification in advance or when the time expires.
 
 All fields have a large number of functions for finding information using jql in real time.

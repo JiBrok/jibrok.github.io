@@ -15,10 +15,15 @@
   icon: timer
   doc: timer-cloud/overview
 
-- title: Calculated custom fields (JBCF)
+- title: Calculated custom fields (JBCF Cloud)
   desc: Pack of fields for Jira Cloud
   icon: jbcf
   doc: jbcf-cloud/overview
+
+#- title: Discount genegator
+#  desc: 🤑🤑🤑🤑🤑🤑🤑
+#  icon:
+#  doc: discount/generator
 
 - title: Other apps
   desc: More plugins will be added soon
