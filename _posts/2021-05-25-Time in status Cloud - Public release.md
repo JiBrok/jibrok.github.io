@@ -3,7 +3,7 @@ title: ⭐️ Time in status for Cloud - Public release ⭐️
 tags: tis-cloud cloud
 ---
 
-We have published our cloud application Time in status!! 🥳
+We have published our cloud application Time in status! 🥳
 
 Server functionality of the [Time in status | SLA | Timer | Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview) application turned out to be very large.
 It allows you to count time for a wide variety of situations, export data, generate reports, send notifications, and much more. This all works for any Jira project.
@@ -94,7 +94,8 @@ We publish server work that may affect users on the [Status page](https://timein
 
 * Are you migrating from a server or data center to the cloud?
 * Do you have several of our apps?
-* Are you interested in product development and reporting issues you find?
+
+[comment]: <> (* Are you interested in product development and reporting issues you find?)
 
 We will be happy to provide you with a discount. Please contact [support](https://jibrok.atlassian.net/servicedesk/customer/portals).
 

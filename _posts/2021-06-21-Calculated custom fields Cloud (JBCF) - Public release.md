@@ -3,7 +3,7 @@ title: ⭐️ Calculated custom fields for Cloud (JBCF) - Public release ⭐️
 tags: jbcf-cloud cloud
 ---
 
-We have published our cloud application Calculated custom fields(JBCF)!! 🥳
+We have published our cloud application Calculated custom fields(JBCF)! 🥳
 
 Server functionality of the [Calculated and other custom fields(JBCF)](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=server&tab=overview) application turned out to be very large.
 * ToDo list
@@ -113,7 +113,8 @@ We publish server work that may affect users on the [Status page](https://jbcf.s
 
 * Are you migrating from a server or data center to the cloud?
 * Do you have several of our apps?
-* Are you interested in product development and reporting issues you find?
+
+[comment]: <> (* Are you interested in product development and reporting issues you find?)
 
 We will be happy to provide you with a discount. Please contact [support](https://jibrok.atlassian.net/servicedesk/customer/portals).
 
