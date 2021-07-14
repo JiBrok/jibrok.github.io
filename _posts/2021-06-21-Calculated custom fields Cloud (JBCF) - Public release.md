@@ -1,5 +1,5 @@
 ---
-title: ⭐️ Time in status Cloud - Public release ⭐️
+title: ⭐️ Calculated custom fields for Cloud (JBCF) - Public release ⭐️
 tags: jbcf-cloud cloud
 ---
 

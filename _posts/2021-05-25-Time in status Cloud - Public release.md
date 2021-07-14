@@ -1,5 +1,5 @@
 ---
-title: ⭐️ Time in status Cloud - Public release ⭐️
+title: ⭐️ Time in status for Cloud - Public release ⭐️
 tags: tis-cloud cloud
 ---
 
