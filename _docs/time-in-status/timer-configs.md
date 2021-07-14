@@ -15,7 +15,7 @@ The configuration is responsible for the stopwatch operation algorithm When shou
 * All timer configs are available in this interface. From here you can create, edit and delete config.<br>
   <p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/1.png"><img src="/uploads/time-in-status/timer-configs/1.png" style="width:100%"/></a></p>
 
-*Click on button "Add timer configuration"<br>
+* Click on button "Add timer configuration"<br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/2.png"><img src="/uploads/time-in-status/timer-configs/2.png" style="width:100%"/></a></p>
 
 * Name - for navigation

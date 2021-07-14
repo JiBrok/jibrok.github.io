@@ -13,7 +13,7 @@ Or<br>
 * All stopwatch configs are available in this interface. From here you can create, edit and delete config.<br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/all-configs.png"><img src="/uploads/time-in-status/stopwatch-configs/all-configs.png" style="width:100%"/></a></p>
 
-*Click on button "Add stopwatch configuration"<br>
+* Click on button "Add stopwatch configuration"<br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png"><img src="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png" style="width:100%"/></a></p>
 
 * Calculate type - after the timer stops, in the event of a restart. The timer will not start. It will restart and delete the previous value. It will be restarted and leave the previous values in the archive.
