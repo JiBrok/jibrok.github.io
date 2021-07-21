@@ -8,7 +8,7 @@ key: tis-cloud
 <p>You can search and sort tasks by the "time in the status" fields. This allows to create queue/filters according to the time metrics.</p>
 <p>Fields are also available for export in different formats, which allows you to use your favourite reporting tools: excel, rest api, dashboards, etc.</p>
 <p>Where to begin?
-    <ul>
+    <ol>
         <li>Create a work calendar. To do this, go to the adjacent tab: Calendars.</li>
         <li>Create fields to track the time in the status. To do this, go to the adjacent tab: "Time in status" fields.</li>
         <li>Configure JQL Queries.
@@ -29,13 +29,16 @@ key: tis-cloud
                         </li>
                     </ul>
                 </li>
-                <li>'For sorting, you can use any of these fields with the obligatory indication of <b>'ASC</b> or <b>DESC</b></li>
-                <li><b>... ORDER BY "time in hours: ...field name" ASC</b></li>
+                <li>'For sorting, you can use any of these fields with the obligatory indication of <b>'ASC</b> or <b>DESC</b>
+                    <ul>
+                        <li><b>... ORDER BY "time in hours: ...field name" ASC</b></li>
+                    </ul>
+                </li>
             </ul>
         </li>
         <li>Create web panels for additional information about time in status. To do this, go to the adjacent tab: "Web panels"</li>
-        <li>Contact support in case of difficulties.</li>
-    </ul>
+        <li><b>Contact support in case of difficulties.</b></li>
+    </ol>
 </p>
 <p>The application is now being fine-tuned and improved. Later on, there will be more detailed information about functionality and limitations.</p>
 

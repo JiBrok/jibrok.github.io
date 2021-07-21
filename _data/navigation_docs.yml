@@ -164,7 +164,7 @@
 - title: Time in status fields
   key: tis-cloud
   docs:
-    #    - time-in-status/time-in-status-field
+    - tis-cloud/time-in-status-field-create
     - tis-cloud/time-in-status-field-settings
     - tis-cloud/time-in-status-jql
 
@@ -225,3 +225,25 @@
   key: stopwatch-cloud
   docs:
     - stopwatch-cloud/overview
+    - stopwatch-cloud/install
+    - stopwatch-cloud/get-started
+    - stopwatch-cloud/migrationDocumentation
+    - stopwatch-cloud/featureDifferenceDocumentation
+
+- title: Work calendars
+  key: stopwatch-cloud
+  docs:
+    - stopwatch-cloud/work-calendar
+
+- title: Time in status fields
+  key: stopwatch-cloud
+  docs:
+    - stopwatch-cloud/stopwatch-field-create
+    - stopwatch-cloud/stopwatch-field-settings
+    - stopwatch-cloud/stopwatch-jql
+
+- title: Service tools
+  key: stopwatch-cloud
+  docs:
+    - stopwatch-cloud/service-info
+    - stopwatch-cloud/status-page
