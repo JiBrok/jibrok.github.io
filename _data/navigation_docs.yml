@@ -220,6 +220,30 @@
   key: timer-cloud
   docs:
     - timer-cloud/overview
+    - timer-cloud/install
+    - timer-cloud/get-started
+    - timer-cloud/migrationDocumentation
+    - timer-cloud/featureDifferenceDocumentation
+
+- title: Work calendars
+  key: timer-cloud
+  docs:
+    - timer-cloud/work-calendar
+
+- title: Timer fields
+  key: timer-cloud
+  docs:
+    - timer-cloud/timer-field-create
+    - timer-cloud/timer-field-settings
+    - timer-cloud/timer-jql
+
+- title: Service tools
+  key: timer-cloud
+  docs:
+    - timer-cloud/service-info
+    - timer-cloud/status-page
+
+
 
 - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Cloud
   key: stopwatch-cloud
@@ -235,7 +259,7 @@
   docs:
     - stopwatch-cloud/work-calendar
 
-- title: Time in status fields
+- title: Stopwatch fields
   key: stopwatch-cloud
   docs:
     - stopwatch-cloud/stopwatch-field-create
