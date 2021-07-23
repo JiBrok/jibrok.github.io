@@ -22,7 +22,13 @@ key: stopwatch-cloud
         </ul>
     </li>
     <li><b>"hours TIME: ...field name" > 1.5</b> - to search by time in hours. You can enter a fractional number. Minutes will be converted to hours in decimal notation.</li>
-    <li><b>"minutes TIME: ...field name" > 90</b> - to search by time in minutes. Hours will be converted to minutes.</li>
+    <li><b>"minutes TIME: ...field name" > 90</b> - to search by time in minutes. Hours will be converted to minutes.
+        <ul>Available <b>TIME</b> values:
+            <li>TimeSpent</li>
+            <li>PauseTime</li>
+            <li>For example: <b>"time in hours TimeSpent: ...field name" > 2 AND "time in minutes TimeSpent: ...field name" > 45</b>  - will search for issues that time spent more than 2 hours and 45 minutes.</li>
+        </ul>
+    </li>
     <li>Combined conditions:
         <ul>
             <li>
@@ -34,13 +40,6 @@ key: stopwatch-cloud
             <li>
                 For example: <b>"time in hours TIME: ...field name" > 2 AND "time in minutes TIME: ...field name" > 45</b> will search for issues that time more than 2 hours and 45 minutes.
             </li>
-        </ul>
-    </li>
-    <li>
-        <ul>Available <b>TIME</b> values:
-            <li>TimeSpent</li>
-            <li>PauseTime</li>
-            <li>For example: <b>"time in hours TimeSpent: ...field name" > 2 AND "time in minutes TimeSpent: ...field name" > 45</b>  - will search for issues that time spent more than 2 hours and 45 minutes.</li>
         </ul>
     </li>
     <li>'For sorting, you can use any of these fields with the obligatory indication of <b>'ASC</b> or <b>DESC</b>
