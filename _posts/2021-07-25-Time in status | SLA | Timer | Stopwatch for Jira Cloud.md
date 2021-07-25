@@ -1,5 +1,5 @@
 ---
-title: ⭐ Time in status ⏰ | SLA | Timer ⏲ | Stopwatch ⏱ Public versions for Jira Cloud ⭐
+title: Time in status ⏰ | SLA | Timer ⏲ | Stopwatch ⏱ Public release for Jira Cloud
 tags: cloud
 ---
 
