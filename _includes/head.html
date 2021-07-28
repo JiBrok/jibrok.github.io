@@ -7,14 +7,119 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+
+  <style>
+    .privacy-button {
+      background: #2684FF;
+    }
+    .cookie-notice-dismissed-yes{
+      background: #0747A6;
+    }
+    .cookie-notice-dismissed-no{
+      background: #8993A4;
+    }
+  </style>
+
+
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   {% if page.hero.search or site.navbar.search %}
     {% include search-js.html %}
   {% endif %}
   {% include hook-head.html %}
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
 
-  <script data-jsd-embedded data-key="ba16f814-3b1d-4a84-8ea5-77ef8bf8a1ed" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script>
+    function createCookie(name,value,days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+    }
+    function eraseCookie(name) {
+      createCookie(name,"",-1);
+    }
+
+    function deleteAllCookies() {
+      var cookies = document.cookie.split(";");
+
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        eraseCookie(name)
+      }
+    }
+
+    function deleteAllWithOutNoticeCookies() {
+      var cookies = document.cookie.split(";");
+
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        if(name == 'cookie-notice-dismissed'){
+          continue
+        }
+        eraseCookie(name)
+      }
+    }
+
+    function includeJSD() {
+      var js = document.createElement("script");
+
+      js.setAttribute("data-jsd-embedded", "")
+      js.setAttribute("data-key", "ba16f814-3b1d-4a84-8ea5-77ef8bf8a1ed")
+      js.setAttribute("data-base-url", "https://jsd-widget.atlassian.com")
+      js.src = "https://jsd-widget.atlassian.com/assets/embed.js";
+
+      document.head.appendChild(js);
+    }
+
+    var cookieInterval = setInterval(function(){
+      if(readCookie('cookie-notice-dismissed') != "true"){
+        deleteAllWithOutNoticeCookies()
+      } else {
+        includeJSD();
+        setTimeout(function(){
+          var jsdInterval = setInterval(function(){
+            if(document.getElementById("jsd-widget") == null){
+              document.dispatchEvent(new Event('DOMContentLoaded'));
+            } else {
+              clearInterval(jsdInterval)
+            }
+          }, 500)
+        }, 500)
+        clearInterval(cookieInterval);
+      }
+    }, 500)
+  </script>
+
+
+<!--  <script id="jsd-script" data-jsd-embedded data-key="ba16f814-3b1d-4a84-8ea5-77ef8bf8a1ed" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>-->
+
+
+
+  {% include google-analytics.html %}
+
+<!--  {% if jekyll.environment == 'production' and site.google_analytics %}-->
+
+
+<!--  {% endif %}-->
+
+
 </head>
