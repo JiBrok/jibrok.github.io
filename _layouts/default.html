@@ -48,7 +48,7 @@
             })
                 .then((value) => {
                     if(value == "confirm" || value == "true" || value == true){
-                        createCookie('cookie-notice-dismissed',"true",30)
+                        createCookie('cookie-notice-dismissed',"true",365)
                     } else if(value == "open"){
                         window.location.href = "https://jibrok.com/privacy-policy"//todo
                     } else {
