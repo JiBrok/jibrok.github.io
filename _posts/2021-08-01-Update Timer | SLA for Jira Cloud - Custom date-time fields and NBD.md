@@ -5,7 +5,8 @@ tags: tis-cloud timer-cloud stopwatch-cloud
 
 We have updated the functionality in the Timer cloud application.
 Now you can specify as a target for a timer not only time but also date time fields and additional options.
-<a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud" target="_blank"><img src="/uploads/timer-cloud/timer-cloud-marketplace.png" width="100%"/></a>
+<a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud" target="_blank"><img src="/uploads/timer-cloud/timer-cloud-marketplace.png" width="50%"/></a>
+
 
 
 For each goal, the time is adjusted individually.
@@ -28,8 +29,8 @@ For each goal, the time is adjusted individually.
 
 We will also publish similar options for the [Server/DataCenter version](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?tab=overview&hosting=datacenter) soon.
 
-
-
+* [Marketplace](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
+* [Documentation](/docs/timer-cloud/overview/)
 
 
 
