@@ -256,3 +256,8 @@ $issueFieldRender.getAsTableHtml(
     	"issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
     	)
 ```
+
+
+### Linked info: ###
+* [Dynamic templates](/docs/message-field/dynamic-templates)
+* [Dynamic templates - Examples](/docs/message-field/dynamic-templates-examples)

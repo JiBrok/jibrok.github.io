@@ -205,12 +205,13 @@ or
     #end
 
 #### How to use JQL in message? How to use $jqlService? ####
-[see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
-linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+* [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
+* linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
-   
-    $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
-   
+
+```velocity 
+$jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
+``` 
 
 You can use current issue in jql for conditions:    
 
@@ -221,15 +222,16 @@ You can use current issue in jql for conditions:
           
     
 #### How to show fields for issues by JQL in message? How to use $issueFieldRender? ####
-[see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
-linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+* [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
+* linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
-   
-    $issueFieldRender.getAsTableHtml( 
-        $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 5), 
-        "issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
-        )
 
+```velocity 
+$issueFieldRender.getAsTableHtml( 
+  $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 5), 
+  "issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
+  )
+``` 
 
 #### How to show fields from linked issues(also on Service Desk Portal)? How to use $issueFieldRender? ####
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
