@@ -11,7 +11,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Message field](https://marketplace.atlassian.com/apps/1219615/message-field)
 * [One-time Link](https://marketplace.atlassian.com/apps/1220718/one-time-link)
 * [Simple notifications for Jira](https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira)
-* [Search by worfklows](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
+* [Search by workflow](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
 * [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
 * [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
 * [Customizable Announcements for Jira](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
