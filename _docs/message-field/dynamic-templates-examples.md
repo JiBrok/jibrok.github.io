@@ -207,6 +207,7 @@ or
 #### How to use JQL in message? How to use $jqlService? ####
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+
    
     $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
    
@@ -222,6 +223,7 @@ You can use current issue in jql for conditions:
 #### How to show fields for issues by JQL in message? How to use $issueFieldRender? ####
 * [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+
    
     $issueFieldRender.getAsTableHtml( 
         $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 5), 
