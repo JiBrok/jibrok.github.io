@@ -71,7 +71,8 @@ Special variables will be available in the template for work with data. Links le
 * [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
     * Utility object for getting issue links or linked issues.
 * [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
-    * Utility object for getting JQL results.
+    * Utility object for getting JQL results. 
+    * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 * [$issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
     * Utility object for rendering issue fields values as HTML.
 * [$JSON](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JSON.html)
