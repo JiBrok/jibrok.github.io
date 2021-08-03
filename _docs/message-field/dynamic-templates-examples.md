@@ -230,6 +230,7 @@ You can use current issue in jql for conditions:
         "issue key", "Priority", "Assignee", "customfield_10110", "Product categorization", "10110"
         )
 
+
 #### How to show fields from linked issues(also on Service Desk Portal)? How to use $issueFieldRender? ####
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
