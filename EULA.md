@@ -16,7 +16,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
 * [Customizable Announcements for Jira](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
 * [Time in status / SLA / Timer / Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
-* [Timer field Stopwatch](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
+* [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
 * [Stopwatch field](https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud)
 * [Calculated custom fields](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
