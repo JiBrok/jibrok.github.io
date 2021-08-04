@@ -15,6 +15,12 @@
 - title: Blog
   url: /blog/
 
+- title: Status Page
+  url: https://jibrok.statuspage.io/
+
+- title: Support
+  url: https://jibrok.atlassian.net/servicedesk/customer/portals
+
 - title: Contact
   url: /contact/
   button: success
