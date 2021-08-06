@@ -147,7 +147,7 @@
 
 
 
-- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status (Cloud)
+- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
   key: tis-cloud
   docs:
     - tis-cloud/overview
@@ -197,7 +197,7 @@
   docs:
     - calculated-custom-fields/overview
 
-- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Cloud
+- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
   key: jbcf-cloud
   docs:
     - jbcf-cloud/overview
@@ -216,7 +216,7 @@
     - jbcf-cloud/status-page
 
 
-- title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer for Cloud
+- title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
   key: timer-cloud
   docs:
     - timer-cloud/overview
@@ -246,7 +246,7 @@
 
 
 
-- title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Cloud
+- title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
   key: stopwatch-cloud
   docs:
     - stopwatch-cloud/overview
@@ -272,3 +272,8 @@
   docs:
     - stopwatch-cloud/service-info
     - stopwatch-cloud/status-page
+
+- title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
+  key: time-between-dates-cloud
+  docs:
+    - time-between-dates-cloud/overview

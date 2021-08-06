@@ -15,6 +15,11 @@
   icon: timer
   doc: timer-cloud/overview
 
+- title: Time between dates (Cloud)
+  desc: Tracks the time between two dates from the issue fields. These can be as system fields - the date of creation, updates, and the solution of the request. So are any datetime custom fields.
+  icon: time-between-dates
+  doc: time-between-dates-cloud/overview
+
 - title: Calculated custom fields (JBCF Cloud)
   desc: Pack of fields for Jira Cloud
   icon: jbcf
