@@ -8,7 +8,7 @@ key: timer-cloud
       <li>Open from “Manage your app“:
       <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.png"><img src="/uploads/tis-cloud/open-admin-from-app-manage.png" style="width:100%"/></a></p>
       </li>
-      <li>Or from “Apps“ menu::
+      <li>Or from “Apps“ menu:
       <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-apps-menu.png"><img src="/uploads/tis-cloud/open-admin-from-apps-menu.png" style="width:100%"/></a></p>
       </li>
    </ul>
