@@ -207,7 +207,7 @@
 - title: JBCF fields
   key: jbcf-cloud
   docs:
-    - jbcf-cloud/jbcf-create-field
+    - jbcf-cloud/jbcf-field-create
 
 - title: Service tools
   key: jbcf-cloud
@@ -273,7 +273,14 @@
     - stopwatch-cloud/service-info
     - stopwatch-cloud/status-page
 
+
+
 - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
   key: time-between-dates-cloud
   docs:
     - time-between-dates-cloud/overview
+
+- title: Time between dates fields
+  key: time-between-dates-cloud
+  docs:
+    - time-between-dates-cloud/time-between-dates-field-create
