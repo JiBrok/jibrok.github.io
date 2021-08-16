@@ -22,7 +22,7 @@ key: time-between-dates-cloud
 <ol>
     <li>Create a work calendar. To do this, go to the adjacent tab: Calendars.</li>
     <li>Create fields to track the time between issue dates. To do this, go to the adjacent tab: "Time between dates fields".</li>
-    <li>Configure JQL Queries. You can display new fields in the JQL navigator and dashboards. {this.state.isDownloaded?"(📌 examples are clickable)":"(📌 Clickable examples will be here after creating the field)"}
+    <li>Configure JQL Queries. You can display new fields in the JQL navigator and dashboards. (📌 Clickable examples will be here after creating the field)
         <ul>
             <li><b>"DATE:FIELD_NAME" = startOfDay()</b>
                 <ul>Available <b>DATE</b> values:
