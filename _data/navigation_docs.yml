@@ -146,6 +146,13 @@
     - time-in-status/available-events
 
 
+- title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" style="width:24px;height:24px"> Switch to User + Delegating SU (Jira)
+  key: su
+  docs:
+    - su/overview
+    - su/delegating
+    - su/shortcuts
+
 
 - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
   key: tis-cloud

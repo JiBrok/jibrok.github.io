@@ -15,6 +15,11 @@
   icon: jbcf
   doc: calculated-custom-fields/overview
 
+- title: Switch to User + Delegating SU (Jira)
+  desc: You can log in to Jira with a different user - Jira sudo. Admin can delegate this feature to other users.
+  icon: su
+  doc: su/overview
+
 - title: More apps on the marketplace
   desc:
   icon: marketplace
