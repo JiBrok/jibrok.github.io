@@ -11,7 +11,11 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12209
 
 Take a look at Jira from another user.
 
-In a couple of clicks, the administrator can go under another user and study the problem with his own eyes. This is extremely useful when providing support to users and development. Shortcats are available for quick switching. And any use of SU is logged and you can always restore from the audit logs who, when and under what user logged into Jira. There is also an advanced functionality that allows you to give selected users the opportunity to log in under other users. You can delegate these rights personally or directly to the group.
+In a couple of clicks, the administrator can go under another user and study the problem with his own eyes. 
+* This is extremely useful when providing support to users and development. 
+* Shortcuts are available for quick switching. 
+* And any use of SU is logged and you can always restore from the audit logs who, when and under what user logged into Jira.
+* There is also an advanced functionality that allows you to give selected users the opportunity to log in under other users. You can delegate these rights personally or to the groups.
 
 
 ### Switch to User (USER and ADMIN) ###
