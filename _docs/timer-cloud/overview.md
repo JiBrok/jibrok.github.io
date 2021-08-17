@@ -31,7 +31,7 @@ You can create an unlimited number of calendars and use it in any contexts and p
 
 ### Reports: ### 
 
-The "Stopwatch" fields can be used like regular fields in the JQL navigator and exported, for example, to excel.
+The "Timer" fields can be used like regular fields in the JQL navigator and exported, for example, to excel.
 
 <table>
 <tr>

@@ -242,7 +242,7 @@
   key: timer-cloud
   docs:
     - timer-cloud/timer-field-create
-#    - timer-cloud/timer-field-settings
+    - timer-cloud/timer-field-settings
     - timer-cloud/timer-jql
 
 - title: Service tools
