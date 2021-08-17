@@ -14,6 +14,6 @@ key: timer-cloud
    </ul>
 2. Open "Timer" fields and click "Create":<br>
 
-   <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.png"><img src="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.png" alt="" width="100%"/></a></a></p>
+   <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.png"><img src="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.png" alt="" width="100%"/></a></p>
 
 3. [Customize the field](/docs/timer-cloud/timer-field-settings/)
