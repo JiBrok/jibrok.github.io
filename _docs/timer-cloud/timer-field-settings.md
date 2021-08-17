@@ -42,7 +42,7 @@ As a trigger, you can select release system events, change of status, change of 
     * Time - You can specify the time manually. After the start, the timer will be set to the specified time.
     * Date time field - The timer will count down the time from the start to the date in the specified issue field.
     * Preset options:
-      * NBD next business day. The timer will count down the time from the moment of the start to the end of the next working day.
+      * NBD (Next business day) - The timer will count down the time from the moment of the start to the end of the next working day.
     * An example of a combination of different conditions:
        <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.png"><img src="/uploads/timer-cloud/step-by-step/timer-config-example.png" alt="" width="100%"/></a></p>
 
