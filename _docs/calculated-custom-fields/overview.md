@@ -17,9 +17,22 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 
 <p style="text-align: center;"><a href="/uploads/jbcf/all-fields.png"><img src="/uploads/jbcf/all-fields.png" style="width:100%"/></a></p>
 
-* [ToDo list](/docs/calculated-custom-fields/todolist)
-* [Shared components](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+and+other+custom+fields#Shared-component-picker)
-* Status picker]
+* **[ToDo list](/docs/calculated-custom-fields/todolist)**
+  * Field for maintaining lists with the ability to mark completed items.
+* **Shared components**
+  * Description: The list of projects is set in the field settings. In this field you can select components from the specified projects
+    * The field allows you to select **components in a issue from any projects**
+  * Value: Components
+  * Search: The field stores the value in the index.
+  <table>
+    <tr>
+    <td><a href="/uploads/jbcf/shared-components.png"><img src="/uploads/jbcf/shared-components.png" /></a></td>
+    <td><a href="/uploads/jbcf/shared-components2.png"><img src="/uploads/jbcf/shared-components2.png" /></a></td>
+    <td><a href="/uploads/jbcf/shared-components3.png"><img src="/uploads/jbcf/shared-components3.png" /></a></td>
+    </tr>
+    </table>
+  
+* Status picker
 * Role, Group, 
 * [Versions](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/725614593/Versions) - This field allows you to calculate intersections, merges, and differences between two fields containing versions.
 * [Time between dates](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694255617/Time+between+dates) - Calculates the time between two dates from fields - system fields or custom. jql to search for "time between dates" in time (">", "2h")
