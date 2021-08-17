@@ -37,17 +37,18 @@ key: timer-cloud
 
 ### Create Timer/SLA for "Time to resolution"
 
-0. Click to "Create" for create new Timer.
+1. Click to "Create" for create new Timer.
    <br><a href="/uploads/timer-cloud/step-by-step/timer-name-and-contexts.png"><img src="/uploads/timer-cloud/step-by-step/timer-name-and-contexts.png" alt="" width="100%"/></a>
-1. General information
+2. General information
    1. Provide a name for the timer. A field will be created with the specified name. This name will also be used in JQL queries.
    2. Set this field to active. Otherwise it will not work, it will only save the settings.
-2. Contexts
-   1. Provide contexts for this field. The following settings will only apply to issues from the specified projects and specified issue types.
-      <br><a href="/uploads/timer-cloud/step-by-step/set-contexts.png"><img src="/uploads/timer-cloud/step-by-step/set-contexts.png" alt="" width="100%"/></a>
-3. Set Calculate type - "First start".
+3. Contexts
+   * Provide contexts for this field. The following settings will only apply to issues from the specified projects and specified issue types.
+         <br><a href="/uploads/timer-cloud/step-by-step/set-contexts.png"><img src="/uploads/timer-cloud/step-by-step/set-contexts.png" alt="" width="100%"/></a>
+   * You can refine the goals below with JQL conditions.
+4. Set Calculate type - "First start".
    <br><a href="/uploads/timer-cloud/step-by-step/timer-config-time-to-resolution.png"><img src="/uploads/timer-cloud/step-by-step/timer-config-time-to-resolution.png" alt="" width="100%"/></a>
-4. Events
+5. Events
    * Start events:
      * The timer will start when the task transition to "In progress". add "Change status to: In progress".
      * (see Pause events) When a task returns from Hold status, then a timer must be started. add "Change status from: Hold".
@@ -59,24 +60,36 @@ key: timer-cloud
      * The team can send the task to hold the status. While the task in this status the timer needs to be stopped. add "Change status to: Hold".
    * Stop events:
      * We fix the timer time when the task closes or a solution is established for it. .add "Change status to: Closed". add "Set resolution".
-5. Display settings 
+6. Display settings 
    * Configure the settings for displaying data in the field. It will not affect the actual value or sorting by field.
      <br><a href="/uploads/timer-cloud/step-by-step/timer-display-settings.png"><img src="/uploads/timer-cloud/step-by-step/timer-display-settings.png" alt="" width="100%"/></a>
-6. Time settings
+7. Time settings
    * Default calendar - You can set a working calendar by which the timer will be considered. If left blank, the time will be considered 24/7
    * Default time (Default goal) - Time for which the timer is set if it is not possible to select the goal.
-       * The timer time depends on the priority and all tasks have priority. set "0".
+       * The timer time depends on the priority. If the issue does not have a priority or it does not match any of the conditions, then the default target 0 will be selected. **A zero target does not start the timer**.
    * The target time will be determined by the priority of the task. For each condition (priority) you need to add a goal.
    * Create goals by priorities: see screenshots
-   
-7. Click "Save"
+     * JQL - Condition for the application of this Goal. If none of the conditions match the issue then the default goal will be applied.
+     * Time option:
+       * Time - You can specify the time manually. After the start, the timer will be set to the specified time.
+       * Date time field - The timer will count down the time from the start to the date in the specified issue field.
+       * Preset options: 
+         * NBD next business day. The timer will count down the time from the moment of the start to the end of the next working day.
+     * An example of a combination of different conditions: 
+     <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.png"><img src="/uploads/timer-cloud/step-by-step/timer-config-example.png" alt="" width="20%"/></a></p>
+
+   Goals and conditions for "track the time to resolution"
+   <p><a href="/uploads/timer-cloud/step-by-step/timer-goal-config.png"><img src="/uploads/timer-cloud/step-by-step/timer-goal-config.png" alt="" width="100%"/></a></p>
+    
+
+8. Click "Save"
    <br><a href="/uploads/timer-cloud/step-by-step/timer-after-save.png"><img src="/uploads/timer-cloud/step-by-step/timer-after-save.png" alt="" width="100%"/></a>
-8. After a successful save, the data synchronization process will start. It includes calculating historical values and starting tracking of active timers. Depending on the number of requests, the first synchronization may take some time. You can follow the synchronization status in the "Service info" tab.
+9. After a successful save, the data synchronization process will start. It includes calculating historical values and starting tracking of active timers. Depending on the number of requests, the first synchronization may take some time. You can follow the synchronization status in the "Service info" tab.
    <br><a href="/uploads/timer-cloud/step-by-step/service-info.png"><img src="/uploads/timer-cloud/step-by-step/service-info.png" alt="" width="100%"/></a>
-9. After you create the field, you can go to the "Start Page" tab. The examples will be updated on it and there will be links to demo JQL queries.
-10. You can also work with this field as with any other. You can display it on screens, in reports, search and sort data by it.
+10. After you create the field, you can go to the "Start Page" tab. The examples will be updated on it and there will be links to demo JQL queries.
+11. You can also work with this field as with any other. You can display it on screens, in reports, search and sort data by it.
     <br><a href="/uploads/timer-cloud/step-by-step/timer-fields-in-navigator.png"><img src="/uploads/timer-cloud/step-by-step/timer-fields-in-navigator.png" alt="" width="100%"/></a>
-11. The data in the field will be updated periodically and whenever the task is updated. The frequency of automatic updates is now automatically detected. The less time is left, the more frequent updates will be.
+12. The data in the field will be updated periodically and whenever the task is updated. The frequency of automatic updates is now automatically detected. The less time is left, the more frequent updates will be.
     * Current intervals of time updates:
       * 1-5min: every 1 min
       * 5min-2h: every 5 min
