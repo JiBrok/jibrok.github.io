@@ -76,7 +76,7 @@ key: timer-cloud
        * Preset options: 
          * NBD next business day. The timer will count down the time from the moment of the start to the end of the next working day.
      * An example of a combination of different conditions: 
-     <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.png"><img src="/uploads/timer-cloud/step-by-step/timer-config-example.png" alt="" width="20%"/></a></p>
+     <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.png"><img src="/uploads/timer-cloud/step-by-step/timer-config-example.png" alt="" width="100%"/></a></p>
 
    Goals and conditions for "track the time to resolution"
    <p><a href="/uploads/timer-cloud/step-by-step/timer-goal-config.png"><img src="/uploads/timer-cloud/step-by-step/timer-goal-config.png" alt="" width="100%"/></a></p>
