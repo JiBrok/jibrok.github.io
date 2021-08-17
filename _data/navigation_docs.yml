@@ -203,6 +203,8 @@
   key: calculated-custom-fields
   docs:
     - calculated-custom-fields/overview
+    - calculated-custom-fields/todolist
+
 
 - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
   key: jbcf-cloud
