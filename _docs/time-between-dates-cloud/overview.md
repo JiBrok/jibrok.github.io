@@ -103,5 +103,5 @@ You can create an unlimited number of calendars and use it in any contexts and p
         </ul>
     </li>
     <li>Information about scheduled work on the servers or a failure will be displayed on this page(Start page). Additional notifications are available on the page: <a href="https://jibrok.statuspage.io/">Status page</a> </li>
-    <li>Please contact support in case of difficulties.</li>
+    <li>Please <a href="https://jibrok.atlassian.net/servicedesk/customer/portals" target="_blank">contact support</a> in case of difficulties.</li>
 </ol>
