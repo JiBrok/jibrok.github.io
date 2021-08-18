@@ -102,6 +102,6 @@ You can create an unlimited number of calendars and use it in any contexts and p
             </li>
         </ul>
     </li>
-    <li>Information about scheduled work on the servers or a failure will be displayed on this page(Start page). Additional notifications are available on the page: <a href={"https://jibrok.statuspage.io/"}>Status page</a> </li>
+    <li>Information about scheduled work on the servers or a failure will be displayed on this page(Start page). Additional notifications are available on the page: <a href="https://jibrok.statuspage.io/">Status page</a> </li>
     <li>Please contact support in case of difficulties.</li>
 </ol>
