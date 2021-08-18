@@ -9,7 +9,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/1226143)
 
 ## Welcome to Time between date for Jira Cloud! 
 
-<p>This application calculates the time between two dates from the issue fields. These can be either system fields - created, updated ... or any custom fields of the date time type.</p>
+<p>This application calculates the time between two dates from the issue fields. These can be either system fields - created, updated ... or any custom fields of the date time type. For example: Time to resolution - time between created and resolution date</p>
 <p>The countdown is specified in the field settings (Start field). Each field dynamically changes its value with a certain frequency. Update rate depends on the time: the longer the time, the less frequently the value will be updated.</p>
 
 <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:100%"/></a></p>
