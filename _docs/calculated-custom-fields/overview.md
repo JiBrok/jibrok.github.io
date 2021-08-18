@@ -17,7 +17,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 
 <p style="text-align: center;"><a href="/uploads/jbcf/all-fields.png"><img src="/uploads/jbcf/all-fields.png" style="width:100%"/></a></p>
 
-* **[ToDo list](/docs/calculated-custom-fields/todolist)**
+* **[To Do list](/docs/calculated-custom-fields/todolist)**
   * Field for maintaining lists with the ability to mark completed items.
 * **Shared components**
   * Description: The list of projects is set in the field settings. In this field you can select components from the specified projects

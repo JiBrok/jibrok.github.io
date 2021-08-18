@@ -1,5 +1,5 @@
 ---
-title: ToDo list
+title: To Do list
 key: calculated-custom-fields
 ---
 ### Field for maintaining lists with the ability to mark completed items. ###
