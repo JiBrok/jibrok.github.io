@@ -3,9 +3,19 @@ title: Get started
 key: time-between-dates-cloud
 ---
 
+<p style="text-align: center;"><a href="https://marketplace.atlassian.com/1226143"><img src="/uploads/time-between-dates-cloud/marketplace.png" style="width:100%"/></a></p>
+
+View app on [Atlassian Marketplace](https://marketplace.atlassian.com/1226143)
+
+## Welcome to Time between date for Jira Cloud! 
 
 <p>This application calculates the time between two dates from the issue fields. These can be either system fields - created, updated ... or any custom fields of the date time type.</p>
 <p>The countdown is specified in the field settings (Start field). Each field dynamically changes its value with a certain frequency. Update rate depends on the time: the longer the time, the less frequently the value will be updated.</p>
+
+<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:100%"/></a></p>
+
+### More calculated info ###
+
 <p>The field will calculate several values at the same time.
     <ul>
         <li>Time between dates (start and end) - goal time</li>
@@ -15,7 +25,16 @@ key: time-between-dates-cloud
     Left time and time spent - These values are calculated after the start date.
 </p>
 
-<p> Calculations can be made according to the working calendar(taking into account weekends, holidays and lunch breaks).</p>
+
+### Business calendar: ###
+
+The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
+You can create an unlimited number of calendars and use it in any contexts and projects.
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.png"><img src="/uploads/time-in-status/overview/calendar-example.png" style="width:100%;"/></a></p>
+
+
+### JQL for time between dates  ###
+
 <p>You can search and sort tasks by the "Time between dates" fields. This allows to create queue/filters according to the time metrics.</p>
 <p>Fields are also available for export in different formats, which allows you to use your favourite reporting tools: excel, rest api, dashboards, etc.</p>
 <h3>Where to begin?</h3>
