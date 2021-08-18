@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: Overview
 key: time-between-dates-cloud
 ---
 
@@ -13,6 +13,14 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/1226143)
 <p>The countdown is specified in the field settings (Start field). Each field dynamically changes its value with a certain frequency. Update rate depends on the time: the longer the time, the less frequently the value will be updated.</p>
 
 <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:100%"/></a></p>
+
+### Simple configuration ###
+
+Specify a working calendar and a couple of Issue fields such as date time. The application will automatically calculate the time between the specified dates and update additional information for searching and sorting.
+
+<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/date-fields-settings.png"><img src="/uploads/time-between-dates-cloud/date-fields-settings.png" style="width:100%"/></a></p>
+
+
 
 ### More calculated info ###
 
@@ -37,7 +45,6 @@ You can create an unlimited number of calendars and use it in any contexts and p
 
 <p>You can search and sort tasks by the "Time between dates" fields. This allows to create queue/filters according to the time metrics.</p>
 <p>Fields are also available for export in different formats, which allows you to use your favourite reporting tools: excel, rest api, dashboards, etc.</p>
-<h3>Where to begin?</h3>
 <ol>
     <li>Create a work calendar. To do this, go to the adjacent tab: Calendars.</li>
     <li>Create fields to track the time between issue dates. To do this, go to the adjacent tab: "Time between dates fields".</li>
