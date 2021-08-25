@@ -1,26 +1,26 @@
 # Tags
-added:
-  text: Added
+cloud:
+  text: Cloud
   color: "#3778ff"
 
-changed:
-  text: Changed
+tis-cloud:
+  text: Time in status for Jira Cloud
   color: "#3aaa55"
 
-deprecated:
-  text: Deprecated
+timer-cloud:
+  text: Timer field | SLA for Jira Cloud
   color: "#333333"
 
-removed:
-  text: Removed
+stopwatch-cloud:
+  text: Stopwatch field for Jira Cloud
   color: "#17caf0"
 
-fixed:
-  text: Fixed
+jbcf-cloud:
+  text: Calculated custom fields (JBCF) for Jira Cloud
   color: "#ff4772"
 
-security:
-  text: Security
+time-between-dates-cloud:
+  text: Time between dates for Jira Cloud
   color: "#fb3434"
 
 unreleased:
