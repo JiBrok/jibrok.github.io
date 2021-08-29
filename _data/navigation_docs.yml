@@ -247,6 +247,11 @@
     - timer-cloud/timer-field-settings
     - timer-cloud/timer-jql
 
+- title: Issue panels
+  key: timer-cloud
+  docs:
+    - timer-cloud/web-panel
+
 - title: Service tools
   key: timer-cloud
   docs:
@@ -275,6 +280,11 @@
     - stopwatch-cloud/stopwatch-field-create
     - stopwatch-cloud/stopwatch-field-settings
     - stopwatch-cloud/stopwatch-jql
+
+- title: Issue panels
+  key: timer-cloud
+  docs:
+    - stopwatch-cloud/web-panel
 
 - title: Service tools
   key: stopwatch-cloud
