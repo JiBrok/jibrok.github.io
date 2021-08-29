@@ -17,7 +17,7 @@ In the new version of the applications, you can set a new display for timers and
 When configuring panels, you specify which fields should be displayed in it.
 This is a good way to show detailed information about the current progress on the task, while not overloading the fields with the displayed information.
 
-In addition, each user can fill in the fields if the administrator has added them on the issue view screen.
+In addition, each user can pin the fields if the administrator has added them on the issue view screen.
 [Pin a field to the top of an issue](https://support.atlassian.com/jira-software-cloud/docs/pin-a-field-to-the-top-of-an-issue/)
 
 <a href="/uploads/timer-cloud/pinned-field.png"><img src="/uploads/timer-cloud/pinned-field.png" /></a>
