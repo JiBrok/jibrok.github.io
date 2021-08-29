@@ -12,7 +12,17 @@ Enables the display of the "Timer" fields in the sidebar.
 </tr>
 </table>
 
-   
+
+1. Open application "Timer field":<br>
+   <ul>
+      <li>Open from “Manage your app“:
+      <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.png"><img src="/uploads/tis-cloud/open-admin-from-app-manage.png" style="width:100%"/></a></p>
+      </li>
+      <li>Or from “Apps“ menu:
+       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.png"><img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.png" alt="" width="100%"/></a></p>
+      </li>
+   </ul>
+2. Open "Web panels" tab and click "Create"
 
 You can create many panels with different settings.
 <p style="text-align: center;"><a href="/uploads/timer-cloud/web-panel-create.png"><img src="/uploads/timer-cloud/web-panel-create.png" /></a></p>
