@@ -12,6 +12,8 @@ In the new version of the applications, you can set a new display for timers and
 </tr>
 </table>
 
+[Documentation](/docs/timer-cloud/web-panel/)
+
 When configuring panels, you specify which fields should be displayed in it.
 This is a good way to show detailed information about the current progress on the task, while not overloading the fields with the displayed information.
 
