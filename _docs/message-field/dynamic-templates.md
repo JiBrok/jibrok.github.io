@@ -49,9 +49,19 @@ Special variables will be available in the template for work with data. Links le
     * "CREATE_SD" - Service desk create screen
     * "VIEW_SD" - Service desk view screen
 * [$currentUser](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/user/ApplicationUser.html)
-    * The user who is viewing the message.
+  * The user who is viewing the message.
+* [$locale](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html)
+    * A Locale object represents a specific geographical, political, or cultural region of **currentUser**
+* [$language](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+    * Returns the country/region code of **currentUser**. (String)
+* [$country](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+    * Returns the country code of **currentUser**. (String)
+* [$timeZone](https://docs.oracle.com/javase/7/docs/api/java/util/TimeZone.html)
+    * Returns the timeZone of **currentUser**.
 * [$currentDateTime](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
-    * The current date time.
+    * The current date time (server time zone).
+* [$nowInUserTimeZone](https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html)
+    * The current date time (user time zone).
 * [$dateOfLastTransition](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)
     * The date of the last transition.
 * [$secAfterLastTransition](https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html)
