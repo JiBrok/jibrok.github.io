@@ -350,10 +350,13 @@ This example uses a different our plugin: [Display linked issues](https://market
 
 #### Display messages in the user's language. (Multi-language messages. How to use $language?) ####
 
-      #if($language == "en")
-          message in english<br>
-          row 2
-      #elseif($language == "es")
+      #if($language == "es")
           mensaje en español<br>
           línea 2
+      #elseif($language == "fr")
+          message en français<br>
+          ligne 2
+      #else
+          message in english<br>
+          line 2<br>
       #end
