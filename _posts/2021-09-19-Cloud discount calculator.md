@@ -3,6 +3,7 @@ title: Cloud discount calculator
 tags: cloud
 ---
 
+🤑 More apps - more discount. Discount on timing apps. 🤑
 
 <html>
 <head>
