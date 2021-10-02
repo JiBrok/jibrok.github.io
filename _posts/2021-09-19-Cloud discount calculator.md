@@ -3,7 +3,7 @@ title: Cloud discount calculator
 tags: cloud
 ---
 
-🤑 More apps - more discount. Discount on timing apps. 🤑
+⭐️ More apps - more discount. Discount on timing apps. ⭐️
 
 <html>
 <head>
@@ -77,17 +77,39 @@ tags: cloud
         }
 
         $('.apps').on('change', function () {
-            calculate()
+            calculate();
+            setParams();
         });
         $('.cycle').on('change', function () {
-            calculate()
+            calculate();
+            setParams();
         });
         $('.users').on('change', function () {
-            calculate()
+            calculate();
+            setParams();
         });
 
-        calculate()
+        calculate();
     });
+
+    function setParams(){
+        let params = [];
+        if($('.apps').val() != null){
+           params.push("apps=" +  $('.apps').val().join(","));
+        }
+        if($('.cycle').val() != null){
+          params.push("cycle=" +  $('.cycle').val());
+        }
+        if($('.users').val() != null){
+         params.push("users=" +  $('.users').val());
+        }
+        if(params.length > 0){
+            let pageUrl = window.location.href.replace(window.location.origin,"").replace(document.location.search,"");
+            pageUrl += "?" + params.join("&");
+            window.history.pushState('Cloud discount calculator', 'Cloud discount calculator', pageUrl);
+             
+        }
+    }
 
     appNames = {
         jbcf: "Calculated and other custom fields(JBCF) for Jira DC/Cloud",
