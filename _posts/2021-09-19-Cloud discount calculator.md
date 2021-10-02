@@ -5,6 +5,8 @@ tags: cloud
 
 ⭐️ More apps - more discount. Discount on timing apps. ⭐️
 
+* [Full set of timing apps 50%](/Cloud-discount-calculator/?apps=stopwatch,time-between-dates,tis,timer&cycle=monthly&users=100)
+
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
