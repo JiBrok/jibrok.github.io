@@ -50,9 +50,32 @@ tags: cloud
 
 <script>
 
+    
+    $.urlParameters = function(params) {
+      var results = new RegExp("[?&]" + params + "=([^&#]*)").exec(
+        window.location.href
+      );
+      return results ? decodeURI(results[1]) : null;
+    };
+
     $(document).ready(function () {
+        let paramsApps = $.urlParameters("apps");
+        if(paramsApps != null){
+            $('.apps').val(paramsApps.split(","))
+        }
         $('.apps').select2();
+
+        let paramsCycle = $.urlParameters("cycle");
+        if(paramsCycle != null){
+            $('.cycle').val(paramsCycle)
+        }
         $('.cycle').select2();
+
+        let paramsUsers = $.urlParameters("users");
+        if(paramsUsers != null){
+            $('.users').val(paramsUsers)
+        }
+
         $('.apps').on('change', function () {
             calculate()
         });
