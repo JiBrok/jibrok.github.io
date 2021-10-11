@@ -30,7 +30,7 @@ The first thing you need to do is create a panel. To do this, open the tab with 
 
 <p style="text-align: center;"><a href="/uploads/jsm-fields-panel-cloud/create-fields-panel.png"><img src="/uploads/jsm-fields-panel-cloud/create-fields-panel.png" style="width:100%"/></a></p>
 
-* Click the "create" button.
+* Click the **create** button.
 
 <p style="text-align: center;"><a href="/uploads/jsm-fields-panel-cloud/settings-of-fields-panel.png"><img src="/uploads/jsm-fields-panel-cloud/settings-of-fields-panel.png" style="width:100%"/></a></p>
 
