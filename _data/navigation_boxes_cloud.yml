@@ -25,6 +25,11 @@
   icon: jbcf
   doc: jbcf-cloud/overview
 
+- title: Fields panel for Jira Service Management (JSM) (Cloud)
+  desc: The application allows you to display any issue fields(system and custom fields) on the customer portal in Jira Service Management
+  icon: jsm-fields-panel-cloud
+  doc: jsm-fields-panel-cloud/overview
+
 - title: 📌 Cloud discount calculator
   desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.
   icon:
