@@ -303,3 +303,8 @@
   key: time-between-dates-cloud
   docs:
     - time-between-dates-cloud/time-between-dates-field-create
+
+- title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
+  key: jsm-fields-panel-cloud
+  docs:
+    - jsm-fields-panel-cloud/overview
