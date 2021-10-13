@@ -5,7 +5,7 @@ tags: cloud
 
 ⭐️ More apps - more discount. Discount on timing apps. ⭐️
 
-* [Full set of timing apps 50%](/Cloud-discount-calculator/?apps=stopwatch,time-between-dates,tis,timer&cycle=monthly&users=100)
+* [Full set of timing apps 50%](/Cloud-discount-calculator/?apps=stopwatch,time-between-dates,tis,timer,jsm-fields-panel-cloud&cycle=monthly&users=100)
 
 <html>
 <head>
@@ -32,6 +32,7 @@ tags: cloud
         <option value="time-between-dates">Time between dates for Jira Cloud</option>
         <option value="tis" selected="selected">Time in status | SLA | Timer | Stopwatch for Jira DC/Cloud</option>
         <option value="timer" selected="selected">Timer field | SLA for Jira Cloud</option>
+        <option value="jsm-fields-panel-cloud">Fields panel for Jira Service Management (JSM)</option>
     </select>
 </div>
 
@@ -113,15 +114,68 @@ tags: cloud
         }
     }
 
-    appNames = {
-        jbcf: "Calculated and other custom fields(JBCF) for Jira DC/Cloud",
-        stopwatch: "Stopwatch field for Jira Cloud",
-        "time-between-dates": "Time between dates for Jira Cloud",
-        tis: "Time in status | SLA | Timer | Stopwatch for Jira DC/Cloud",
-        timer: "Timer field | SLA for Jira Cloud"
+    appInfo = {
+        jbcf: {
+            name: "Calculated and other custom fields(JBCF) for Jira DC/Cloud",
+            url:"https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf-for-jira-dc-cloud?hosting=cloud&tab=overview"
+            },
+        stopwatch:{
+            name: "Stopwatch field for Jira Cloud",
+            url:"https://marketplace.atlassian.com/apps/1225685/stopwatch-field-for-jira-cloud?hosting=cloud&tab=overview",
+            },
+        "time-between-dates": {
+            name: "Time between dates for Jira Cloud",
+            url:"https://marketplace.atlassian.com/apps/1226143/time-between-dates-for-jira-cloud?hosting=cloud&tab=overview",
+            },
+        tis: {
+            name: "Time in status | SLA | Timer | Stopwatch for Jira DC/Cloud",
+            url:"https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch-for-jira-dc-cloud?hosting=cloud&tab=overview",
+            },
+        timer: {
+            name:"Timer field | SLA for Jira Cloud",
+            url:"https://marketplace.atlassian.com/apps/1225684/timer-field-sla-for-jira-cloud?hosting=cloud&tab=overview",
+            },
+        "jsm-fields-panel-cloud": {
+            name:"Fields panel for Jira Service Management (JSM)",
+            url:"https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm?tab=overview&hosting=cloud",
+            },
     }
 
     basePrices = {
+     "jsm-fields-panel-cloud": [
+            {
+                tier: 10,
+                userPrice: 3,
+                isStartedLicense: true
+            }, {
+                tier: 100,
+                userPrice: 0.3
+            }, {
+                tier: 250,
+                userPrice: 0.25
+            }, {
+                tier: 1000,
+                userPrice: 0.15
+            }, {
+                tier: 2500,
+                userPrice: 0.10
+            }, {
+                tier: 5000,
+                userPrice: 0.10
+            }, {
+                tier: 7500,
+                userPrice: 0.05
+            }, {
+                tier: 10000,
+                userPrice: 0.05
+            }, {
+                tier: 15000,
+                userPrice: 0.05
+            }, {
+                tier: 20000,
+                userPrice: 0.05
+            }
+        ],
         jbcf: [
             {
                 tier: 10,
@@ -300,6 +354,12 @@ tags: cloud
             apps: ["stopwatch", "time-between-dates", "tis", "timer"],
             // basePrice: [1, 1.5, 1.75, 2]
             basePrice: [1, 0.5, 0.25, 0.25]
+        },
+        {
+            name: "Time in status full pack",
+            apps: ["stopwatch", "time-between-dates", "tis", "timer", "jsm-fields-panel-cloud"],
+            // basePrice: [1, 1.5, 1.75, 2]
+            basePrice: [1, 0.5, 0.25, 0.25, 0]
         }
     ]
 
@@ -369,7 +429,7 @@ tags: cloud
             '<tbody>';
 
         for (let i = 0; i < data.apps.length; i++) {
-            html += '<tr><td>' + appNames[data.apps[i].app] + '</td><td>' +
+            html += '<tr><td>' + '<a href="' + appInfo[data.apps[i].app].url + '" target="_blank">' + appInfo[data.apps[i].app].name + '</a></td><td>' +
                 showPrices(data.apps[i].basePrice, data.users, data.cycle, false) +
 
                 '</td><td>' +
