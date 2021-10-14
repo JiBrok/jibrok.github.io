@@ -184,6 +184,7 @@
   key: tis-cloud
   docs:
     - tis-cloud/export-fields
+    - tis-cloud/dashboard-statistic-gadget
 
 - title: Service tools
   key: tis-cloud
@@ -191,6 +192,7 @@
     - tis-cloud/service-info
     - tis-cloud/limits
     - tis-cloud/status-page
+    - tis-cloud/gadget-news
 
 
 - title: Reference information
