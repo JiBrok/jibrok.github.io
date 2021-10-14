@@ -47,7 +47,7 @@ tags: cloud
 </table>
 
 <div>
-    <b>To get a promo code for a discount, <a target="_blank" href="https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/138">please contact support</a>.</b>
+    <b>To get a promo code for a discount, <a target="_blank" id="contact-to-discount" href="https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/138">please contact support</a>.</b>
 </div>
 
 
@@ -82,23 +82,28 @@ tags: cloud
         $('.apps').on('change', function () {
             calculate();
             setParams();
+            setSupportUrl();
         });
         $('.cycle').on('change', function () {
             calculate();
             setParams();
+            setSupportUrl();
         });
         $('.users').on('change', function () {
             calculate();
             setParams();
+            setSupportUrl();
         });
 
         calculate();
+        setSupportUrl();
     });
 
     function setParams(){
         let params = [];
-        if($('.apps').val() != null){
-           params.push("apps=" +  $('.apps').val().join(","));
+        let selectedApps = $('.apps').val();
+        if(selectedApps != null){
+           params.push("apps=" +  selectedApps.join(","));
         }
         if($('.cycle').val() != null){
           params.push("cycle=" +  $('.cycle').val());
@@ -112,6 +117,18 @@ tags: cloud
             window.history.pushState('Cloud discount calculator', 'Cloud discount calculator', pageUrl);
              
         }
+    }
+
+    function setSupportUrl(){
+            let selectedApps = $('.apps').val();
+            if(selectedApps != null && selectedApps.length > 0){
+                let paramsForRequest = "Selected apps: %0A" + selectedApps.map(it=>{
+                    return appInfo[it].name
+                }).join(", %0A") + ".%0A%0A" + "Cycle: " + $('.cycle').val();
+                $('#contact-to-discount').attr('href', 'https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/138?description=' + paramsForRequest)
+            } else {
+                $('#contact-to-discount').attr('href', 'https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/138')
+            }
     }
 
     appInfo = {
