@@ -24,13 +24,13 @@ We tried to keep the general functionality and improve it whenever possible. The
 The main differences between fields are described in [this post](https://jibrok.com/docs/time-in-status/about-fields/). If you have any questions, please contact support. We will be happy to tell you and improve our documentation. 
 
 We are also working on reports and additional functionality for the Jira Cloud.
-The immediate plans to improve these applications (August-September 2021):
-1. Synchronization of data between applications - so that you do not have to manually sync calendars and some other settings.
+The immediate plans to improve these applications (2021):
+1. Synchronization of data between applications - so that you do not have to manually sync calendars and some other settings. ✅
 2. Same interfaces for setting up contexts.✅
-3. Same settings for visualizing values in fields.
-4. Display of status in the fields and new visualization options.
+3. Same settings for visualizing values in fields. ✅
+4. Display of status in the fields and new visualization options. ✅
 5. Configurable data refresh intervals.
-6. Display of fields in the form of panels with detailed information.
+6. Display of fields in the form of panels with detailed information. ✅
 7. Setting limits
 8. Options for setting the end date of the timer.✅
 9. Other improvements.
