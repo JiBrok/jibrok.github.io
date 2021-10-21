@@ -89,7 +89,10 @@ Special variables will be available in the template for work with data. Links le
     * Utility object for parse string to JSONObject.
 * [$ComponentAccessor](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/component/ComponentAccessor.html)
     * Provides static methods for accessing JIRA's managed components.
-
+* [$permissionHelper](https://jibrok.com/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/PermissionHelperForMessageField.html)
+    * Tool for check permission.
+    * Example: $permissionHelper.hasPermission("BROWSE_PROJECTS", $issue.reporter) - checking that the reporter of the issue has access to the project of the current issue.
+    * Permissions: ADD_COMMENTS, ADMINISTER_PROJECTS, ARCHIVE_ISSUES, ASSIGNABLE_USER, ASSIGN_ISSUES, BROWSE_ARCHIVE, BROWSE_PROJECTS, CLOSE_ISSUES, CREATE_ATTACHMENTS, CREATE_ISSUES, DELETE_ALL_ATTACHMENTS, DELETE_ALL_COMMENTS, DELETE_ALL_WORKLOGS, DELETE_ISSUES, DELETE_OWN_ATTACHMENTS, DELETE_OWN_COMMENTS, DELETE_OWN_WORKLOGS, EDIT_ALL_COMMENTS, EDIT_ALL_WORKLOGS, EDIT_ISSUES, EDIT_OWN_COMMENTS, EDIT_OWN_WORKLOGS, EDIT_SPRINT_NAME_AND_GOAL_PERMISSION, LINK_ISSUES, MANAGE_SPRINTS_PERMISSION, MANAGE_WATCHERS, MODIFY_REPORTER, MOVE_ISSUES, RESOLVE_ISSUES, RESTORE_ISSUES, SCHEDULE_ISSUES, SET_ISSUE_SECURITY, START_STOP_SPRINTS_PERMISSION, TRANSITION_ISSUES, VIEW_DEV_TOOLS, VIEW_READONLY_WORKFLOW, VIEW_VOTERS_AND_WATCHERS, WORK_ON_ISSUES
 
 
 ## Parameters for demonstration

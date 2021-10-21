@@ -67,6 +67,11 @@ General view of the message and text
 
 <a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:100%;"/></a>
 
+* **JQL Condition**
+  * The condition checks the issue for compliance with the specified JQL request. The final search query for verification will look like: (JQL Condition) and (key = issue.key). Sorting is ignored.
+  * Ignored on issue creation screens.
+  * If the jql string is empty, then the condition check is skipped.
+
 * **Screens** 
     * For example if you use one screen for all issue actions(creating, viewing, editing a issue) with this setting you can specify on which screen you want to display the message. Although technically the field will be added to all issue screens, the display of the message (and the field) can be specified in this setting.
     * If the value is empty, the message is displayed on all screens where the field is added. 
