@@ -24,7 +24,7 @@ In addition, each user can pin the fields if the administrator has added them on
 
 Panels and pinning fields cannot be reconfigured automatically for all users. Each user independently specifies for himself which fields are important for him and which panels should be deployed.
 During September, we will publish several more improvements related to data display.
-* Setting up panels with detailed information that will be displayed in an expanded form for all users.
-* Configuring the display of fields in the JSM portal
+* Setting up panels with detailed information that will be displayed in an expanded form for all users. (🤔 so far it has not been possible to do due to cloud restrictions)
+* Configuring the display of fields in the JSM portal ✅
 
 
