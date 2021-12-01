@@ -1,6 +1,6 @@
 ---
 title: Overview
-key: su
+key: switch-user
 ---
 
 <a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira?tab=overview&hosting=datacenter"><img src="/uploads/su/su-marketplace.png" style="width:100%;;"/></a>

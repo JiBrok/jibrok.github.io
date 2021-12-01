@@ -1,6 +1,6 @@
 ---
 title: Shortcuts
-key: su
+key: switch-user
 ---
 
 If you have rights to switch to other users, shortcuts are available to you - 'xx' and 'su'

@@ -1,6 +1,6 @@
 ---
 title: How create SU permission settings? How delegated switch to user? (Admin)
-key: su
+key: switch-user
 ---
 
 Open url in you Jira **'/secure/jibrokSuPermissionAll!default.jspa'** or Go to from admin search (hot key gg) 'SU permission settings'

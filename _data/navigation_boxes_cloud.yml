@@ -30,6 +30,11 @@
   icon: jsm-fields-panel-cloud
   doc: jsm-fields-panel-cloud/overview
 
+- title: Display Linked Issues (Cloud)
+  desc: Displays issues linked by a specific type of links or by JQL. You can configure which fields to display and their order.
+  icon: linked-issues-cloud
+  doc: linked-issues-cloud/overview
+
 - title: 📌 Cloud discount calculator
   desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.
   icon:

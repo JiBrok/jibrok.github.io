@@ -147,7 +147,7 @@
 
 
 - title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" style="width:24px;height:24px"> Switch to User + Delegating SU (Jira)
-  key: su
+  key: switch-user
   docs:
     - su/overview
     - su/delegating
@@ -310,3 +310,8 @@
   key: jsm-fields-panel-cloud
   docs:
     - jsm-fields-panel-cloud/overview
+
+- title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
+  key: linked-issues-cloud
+  docs:
+    - linked-issues-cloud/overview
