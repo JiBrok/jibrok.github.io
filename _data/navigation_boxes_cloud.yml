@@ -35,6 +35,11 @@
   icon: linked-issues-cloud
   doc: linked-issues-cloud/overview
 
+- title: User helper for JiBrok cloud apps
+  desc: The app adds pages with interactive user documentation for JiBrok apps.
+  icon: user-helper-cloud
+  doc: user-helper-cloud/overview
+
 - title: 📌 Cloud discount calculator
   desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.
   icon:

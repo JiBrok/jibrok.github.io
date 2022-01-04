@@ -315,3 +315,8 @@
   key: linked-issues-cloud
   docs:
     - linked-issues-cloud/overview
+
+- title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
+  key: user-helper-cloud
+  docs:
+    - user-helper-cloud/overview
