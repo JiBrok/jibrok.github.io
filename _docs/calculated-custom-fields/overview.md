@@ -59,6 +59,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 * Date of first or last comment
 * Issue comment
 * Regex
+* Field Change Counter
 * ...
   
 [Full list of fields](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields)
