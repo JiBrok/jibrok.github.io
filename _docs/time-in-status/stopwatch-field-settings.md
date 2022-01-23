@@ -13,6 +13,7 @@ For the field to work, you need to configure the configurations and schemes by w
 Schemes and configs only work if they are connected to the field. 
 </div>
 
+0. Common info: [⭐️Timers and Stopwatches - Schemes and configurations](docs/time-in-status/timers-and-stopwatches-schemes-and-configurations/)
 1. [Create stopwatch configurations](/docs/time-in-status/stopwatch-configs/)
 2. [Create stopwatch scheme and associate projects, issues types and stopwatch configs](/docs/time-in-status/stopwatch-schemes/)
 3. Create stopwatch field
