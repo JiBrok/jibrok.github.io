@@ -195,6 +195,8 @@ You can check the field type with the administrator <br>
 * **"field name" in isPaused()** - Search issues by paused timer.
 * **"field name" in isCompleted()** - Search issues by completed timer.
 * **"field name" in isFailed()** - Search issues by failed timer.
+* **"field name" in isFailedRealTime()** - Search issues by failed timer.
+  * It takes into account not only the state of the timer after stopping(FAILED/COMPLETED), but also active timers that have run out of time but state is RUNNING.
 
 * **Examples:**
     * "First response" in isFailed()
@@ -209,6 +211,7 @@ You can check the field type with the administrator <br>
 * **"field name" in stopInWeek("number")** - Search for issues by the week when the timer was stopped.
 * **"field name" in stopInMonth("number")** - Search for issues by the month when the timer was stopped.
 
+* failInDay/week/month -  function shows even running timers, taking into account the estimated completion date. It also shows timers that have "failed" date +-N from the current day.
 * **"field name" in failInDay("number")** - Search for issues by the day when the timer was failed.
 * **"field name" in failInWeek("number")** - Search for issues by the week when the timer was failed.
 * **"field name" in failInMonth("number")** - Search for issues by the month when the timer was failed.
