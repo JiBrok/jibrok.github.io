@@ -10,6 +10,6 @@ The application will contain dynamic help available to your users about our clou
 <br/>
 Now the application contains examples of using JQL functions for our applications. In the future, support for new applications, usage examples and use cases.
 <br/>
-<a href="/docs/user-helper-cloud/overview/">More info</a>
+<a href="https://jibrok.com/docs/user-helper-cloud/overview/">More info</a>
 </div>
 
