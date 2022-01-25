@@ -21,6 +21,16 @@
     }
   </style>
 
+  <script type="text/javascript">
+    if (window.parent.frames.length > 0) {
+      window.stop();
+    }
+  </script>
+<!--  <script type="text/javascript">-->
+<!--    if(self != top) {-->
+<!--      top.location=document.location;-->
+<!--    }-->
+<!--  </script>-->
 
   <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   {% if page.hero.search or site.navbar.search %}
