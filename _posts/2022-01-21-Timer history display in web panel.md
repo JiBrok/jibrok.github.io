@@ -1,5 +1,5 @@
 ---
-title: New time formats and calendar settings (Cloud)
+title: Timer history display in web panel (Cloud)
 tags: timer-cloud
 ---
 
