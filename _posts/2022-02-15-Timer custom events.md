@@ -1,9 +1,9 @@
 ---
-title: Timer custom events (Cloud)
-tags: timer-cloud
+title: Timer and Stopwatch custom events (Cloud)
+tags: timer-cloud stopwatch-cloud
 ---
 
-Custom events became available for cloud timers.
+Custom events became available for cloud timers and stopwatches.
 Now with their help you can set up triggers for the timer (start, pause, restart, stop) that will work to a specific change in the field.
 <p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-events-menu.png"><img src="/uploads/timer-cloud/customevents/custom-events-menu.png" style="width:100%"/></a></p>
 
