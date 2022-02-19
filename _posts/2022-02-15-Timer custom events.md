@@ -1,9 +1,9 @@
 ---
-title: Timer and Stopwatch custom events (Cloud)
+title: Timer and Stopwatch custom events
 tags: timer-cloud stopwatch-cloud
 ---
 
-Custom events became available for cloud timers and stopwatches.
+Custom events became available for timers and stopwatches.
 Now with their help you can set up triggers for the timer (start, pause, restart, stop) that will work to a specific change in the field.
 <p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-events-menu.png"><img src="/uploads/timer-cloud/customevents/custom-events-menu.png" style="width:100%"/></a></p>
 
@@ -28,7 +28,8 @@ The first parameter (from/to) contains technical information about the value of 
 
 The second parameter (fromString/toString) usually contains readable information about the value of the field. For example, the name of an option from the select list.
 
-The parameter values used are best taken from [Jira Cloud Rest API - Get changelogs](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-changelog-get).
+The parameter values used are best taken from [Jira Cloud Rest API - Get changelogs](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-changelog-get) or [Jira Rest API - get issue - changelog](https://docs.atlassian.com/software/jira/docs/api/REST/latest//#issue-getIssue)
+
 
 Example from [Postman](https://www.postman.com/):
 <p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/rest-changelogs-example.png"><img src="/uploads/timer-cloud/customevents/rest-changelogs-example.png" style="width:100%"/></a></p>
