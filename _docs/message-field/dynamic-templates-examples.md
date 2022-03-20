@@ -98,7 +98,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 
     #if($issue.issueType.name == 'Task')
          message for 'Task'
-    #elseif($issue.status.name == 'Bug')
+    #elseif($issue.issueType.name == 'Bug')
          message for 'Bug'
     #end
 
