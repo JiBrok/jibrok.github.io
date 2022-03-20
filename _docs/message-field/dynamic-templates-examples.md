@@ -94,6 +94,22 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
 
 
+####  How to use issue type? ####
+
+    #if($issue.issueType.name == 'Task')
+         message for 'Task'
+    #elseif($issue.status.name == 'Bug')
+         message for 'Bug'
+    #end
+
+or
+
+    #if($issue.issueType.id == 10000)
+         message for 'Task'
+    #elseif($issue.issueType.id == 10001)
+         message for 'Bug'
+    #end
+
 ####  How to use issue status? ####
 
     #if($issue.status.name == 'To Do')
