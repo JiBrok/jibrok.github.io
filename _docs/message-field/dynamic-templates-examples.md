@@ -96,19 +96,30 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 
 ####  How to use issue type? ####
 
+    #if($formIssue.issueType.name == 'Task')
+         message for 'Task'
+    #elseif($formIssue.issueType.name == 'Bug')
+         message for 'Bug'
+    #end
+
+or
+
+    #if($formIssue.issueType.id == 10000)
+         message for 'Task'
+    #elseif($formIssue.issueType.id == 10001)
+         message for 'Bug'
+    #end
+
+or
+
     #if($issue.issueType.name == 'Task')
          message for 'Task'
     #elseif($issue.issueType.name == 'Bug')
          message for 'Bug'
     #end
 
-or
-
-    #if($issue.issueType.id == 10000)
-         message for 'Task'
-    #elseif($issue.issueType.id == 10001)
-         message for 'Bug'
-    #end
+($issue - this variable is not defined on the creation screen)
+   
 
 ####  How to use issue status? ####
 
