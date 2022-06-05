@@ -46,7 +46,7 @@ The application is being actively developed and updated daily.
 <tr><td>Sort by parent DESC</td><td>✅</td><td>✅</td></tr>
 <tr><td>Sort by epic ASK</td><td>✅</td><td>✅</td></tr>
 <tr><td>Sort by epic DESK</td><td>✅</td><td>✅</td></tr>
-<tr><td>Sort by epic rank</td><td>✅</td><td>❌🛠</td></tr>
+<tr><td>Sort by epic rank</td><td>✅</td><td>✅</td></tr>
 <tr><td>Date of the first comment</td><td>✅</td><td>✅</td></tr>
 <tr><td>Date of the last comment</td><td>✅</td><td>✅</td></tr>
 <tr><td>Date of the last transition to the status</td><td>✅</td><td>❌🛠</td></tr>

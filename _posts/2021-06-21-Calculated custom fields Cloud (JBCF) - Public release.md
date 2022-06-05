@@ -67,6 +67,7 @@ Sort:
 * Sort by parent DESK
 * Sort by epic ASK
 * Sort by epic DESK
+* Sort by epic rank
 
 Leads:
 * Component leads

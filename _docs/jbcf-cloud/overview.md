@@ -11,31 +11,61 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 
 ### Pack of calculated custom fields:
 
-
-* Number of comments in the issue
-* The text of the last comment
-* List of users who have commented on the issue
-* Last comment author
+* Number of comments
+  * Number of comments in the issue.
+* Last comment
+  * The text of the last comment.
+* Commented users
+  * List of users(names) who have commented on the issue.
+* User last commented
+  * Last comment author(name).
 * Date of last comment
-* Is the last comment in the task from the assignee?
-* Is the last comment in the task from the reporter?
-* The text of the first comment
-* First comment author
-* Date of first comment
-* Is the first comment in the task from the assignee?
-* Is the first comment in the task from the reporter?
-* Previous status 
-* List of users who was the assignee
-* User who last updated the issue status
-* Number of links in the issue
-* Number of subtasks in the issue
-* The number of incoming links in the issue
-* The number of outgoing links in the issue
-* Fields for sorting issues by parent issue key
-* Fields for sorting issues by epic key
-* The last User to set the resolution in the issue 
-* List of users who are leaders of the components specified in the issue
-* List of users who were the assignee of the request
-* Project leader
-
-
+  * Date of last comment.
+* Is author of last comment assignee
+  * Is the last comment in the task from the assignee? Values: 'true'/'false'.
+* Is author of last comment reporter
+  * Is the last comment in the task from the reporter? Values: 'true'/'false'.
+* First comment
+  * The text of the first comment.
+* First comment Author
+  * First comment author(name).
+* First comment Date
+  * Date of first comment.
+* Is author of first comment assignee
+  * The first comment in the task from the assignee? Values: 'true'/'false'.
+* Is author of first comment reporter
+  * The first comment in the task from the reporter? Values: 'true'/'false.
+* Previous status
+  * Previous status name.
+* Previous assignee
+  * Previous assignee(name).
+* Last change status Author
+  * User(name) who last updated the issue status.
+* Number of links
+  * Number of links in the issue.
+* Number of subtasks
+  * Number of subtasks in the issue.
+* Number of inward links
+  * The number of incoming links in the issue.
+* Number of outward links
+  * The number of outgoing links in the issue.
+* Sort by parent ASK
+  * Field for sorting issues by parent issue key. Subtasks will be sorted in key ASK order.  
+* Sort by parent DESK
+  * Field for sorting issues by parent issue key. Subtasks will be sorted in key DESK order.
+* Sort by epic ASK
+  * Field for sorting issues by epic key. Issues under epic will be sorted in key ASK order.
+* Sort by epic DESK
+  * Field for sorting issues by epic key. Issues under epic will be sorted in key DESK order.
+* Sort by epic rank
+  * Field for sorting issues by epic rank. Issues under epic will be sorted in rank ASK order.
+* User resolver
+  * The last User(name) to set the resolution in the issue.
+* User last updater
+  * The last User(name) updated the issue.
+* Component leads
+  * List of users(names) who are leaders of the components specified in the issue.
+* Who was assignee
+  * List of users(name) who was the assignee.
+* User project lead
+  * Project leader(name).
