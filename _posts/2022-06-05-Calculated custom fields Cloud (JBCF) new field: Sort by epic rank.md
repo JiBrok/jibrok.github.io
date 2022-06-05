@@ -1,5 +1,5 @@
 ---
-title: Calculated custom fields Cloud (JBCF). New field: Sort by epic rank.
+title: Calculated custom fields Cloud (JBCF). New Field - Sort by epic rank.
 tags: jbcf-cloud
 ---
 
