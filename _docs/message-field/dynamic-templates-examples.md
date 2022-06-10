@@ -281,8 +281,18 @@ This example uses a different our plugin: [Display linked issues](https://market
    <tr>
    <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png" alt="render-another-field-2.png" width="100%"/></a></td>
    </tr></table>
-   
-   
+
+
+#### Get parent issue ####
+
+ 
+    $formIssue.parentObject.key
+    $issue.parentObject.key
+
+    #if($formIssue.parentObject)
+      $cfValues.get($formIssue.parentObject, "Impact").value ## impact - custom select field
+    #end
+
 
 #### Check priority ####
 
