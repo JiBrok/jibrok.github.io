@@ -38,7 +38,7 @@ The first thing you need to do is create a panel. To do this, open the tab with 
 * Description - can be left blank, filled with technical information or some kind of message for the user. You can specify the HTML that will be displayed on the portal.
   * Preview description as HTML - will show how the description will look on the portal.
 * Specify the fields that you want to display in this panel. *If the field is displayed incorrectly on the portal, please write to support, we will quickly add it. This applies primarily to fields from third-party applications.*
-* Specify whether to display the name and description on the portal.
+* Specify whether to display the name and description on the portal. Specify other display settings.
 * Click the **save** button.
 
 Go to the first tab **Mapping request types and field panels**.
