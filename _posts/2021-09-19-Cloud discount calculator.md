@@ -39,7 +39,7 @@ tags: cloud
 
 <div id="users" style="width: 100%; margin-bottom: 20px">
     <label>How many users do you have?</label>
-    <input class="users" value="100" type="number" min="0" max="20000" style="width: 100%; margin-bottom: 20px"/>
+    <input class="users" value="100" type="number" min="0" max="35000" style="width: 100%; margin-bottom: 20px"/>
 </div>
 
 <table id="table">
@@ -172,10 +172,10 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 2500,
-                userPrice: 0.10
+                userPrice: 0.15
             }, {
                 tier: 5000,
                 userPrice: 0.10
@@ -184,13 +184,22 @@ tags: cloud
                 userPrice: 0.05
             }, {
                 tier: 10000,
-                userPrice: 0.05
+                userPrice: 0.03
             }, {
                 tier: 15000,
-                userPrice: 0.05
+                userPrice: 0.02
             }, {
                 tier: 20000,
-                userPrice: 0.05
+                userPrice: 0.01
+            }, {
+                tier: 25000,
+                userPrice: 0.01
+            }, {
+                tier: 30000,
+                userPrice: 0.01
+            }, {
+                tier: 35000,
+                userPrice: 0.01
             }
         ],
         jbcf: [
@@ -206,10 +215,10 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 2500,
-                userPrice: 0.10
+                userPrice: 0.15
             }, {
                 tier: 5000,
                 userPrice: 0.10
@@ -218,13 +227,22 @@ tags: cloud
                 userPrice: 0.05
             }, {
                 tier: 10000,
-                userPrice: 0.05
+                userPrice: 0.03
             }, {
                 tier: 15000,
-                userPrice: 0.05
+                userPrice: 0.02
             }, {
                 tier: 20000,
-                userPrice: 0.05
+                userPrice: 0.01
+            }, {
+                tier: 25000,
+                userPrice: 0.01
+            }, {
+                tier: 30000,
+                userPrice: 0.01
+            }, {
+                tier: 35000,
+                userPrice: 0.01
             }
         ],
         stopwatch: [
@@ -240,25 +258,34 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.20
+                userPrice: 0.25
             }, {
                 tier: 2500,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 5000,
                 userPrice: 0.15
             }, {
                 tier: 7500,
-                userPrice: 0.15
+                userPrice: 0.10
             }, {
                 tier: 10000,
-                userPrice: 0.10
+                userPrice: 0.05
             }, {
                 tier: 15000,
-                userPrice: 0.10
+                userPrice: 0.03
             }, {
                 tier: 20000,
-                userPrice: 0.10
+                userPrice: 0.01
+            }, {
+                tier: 25000,
+                userPrice: 0.01
+            }, {
+                tier: 30000,
+                userPrice: 0.01
+            }, {
+                tier: 35000,
+                userPrice: 0.01
             }
         ],
         "time-between-dates": [
@@ -274,10 +301,10 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.20
+                userPrice: 0.25
             }, {
                 tier: 2500,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 5000,
                 userPrice: 0.15
@@ -289,10 +316,19 @@ tags: cloud
                 userPrice: 0.10
             }, {
                 tier: 15000,
-                userPrice: 0.10
+                userPrice: 0.05
             }, {
                 tier: 20000,
-                userPrice: 0.10
+                userPrice: 0.05
+            }, {
+                tier: 25000,
+                userPrice: 0.05
+            }, {
+                tier: 30000,
+                userPrice: 0.05
+            }, {
+                tier: 35000,
+                userPrice: 0.05
             }
         ],
         tis: [
@@ -308,25 +344,34 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.20
+                userPrice: 0.25
             }, {
                 tier: 2500,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 5000,
                 userPrice: 0.15
             }, {
                 tier: 7500,
-                userPrice: 0.15
+                userPrice: 0.10
             }, {
                 tier: 10000,
-                userPrice: 0.10
+                userPrice: 0.05
             }, {
                 tier: 15000,
-                userPrice: 0.10
+                userPrice: 0.03
             }, {
                 tier: 20000,
-                userPrice: 0.10
+                userPrice: 0.01
+            }, {
+                tier: 25000,
+                userPrice: 0.01
+            }, {
+                tier: 30000,
+                userPrice: 0.01
+            }, {
+                tier: 35000,
+                userPrice: 0.01
             }
         ],
         timer: [
@@ -342,25 +387,34 @@ tags: cloud
                 userPrice: 0.25
             }, {
                 tier: 1000,
-                userPrice: 0.20
+                userPrice: 0.25
             }, {
                 tier: 2500,
-                userPrice: 0.15
+                userPrice: 0.20
             }, {
                 tier: 5000,
                 userPrice: 0.15
             }, {
                 tier: 7500,
-                userPrice: 0.15
+                userPrice: 0.10
             }, {
                 tier: 10000,
-                userPrice: 0.10
+                userPrice: 0.05
             }, {
                 tier: 15000,
-                userPrice: 0.10
+                userPrice: 0.03
             }, {
                 tier: 20000,
-                userPrice: 0.10
+                userPrice: 0.01
+            }, {
+                tier: 25000,
+                userPrice: 0.01
+            }, {
+                tier: 30000,
+                userPrice: 0.01
+            }, {
+                tier: 35000,
+                userPrice: 0.01
             }
         ],
     }
