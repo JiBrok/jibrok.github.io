@@ -22,8 +22,8 @@ In the calendar field settings you can set:
 
 ##### Time in status field #####
 
-1. Calendar from the specified field. The field for choosing a calendar is specified in the settings of the "Time in status" field.
-2. The calendar specified in the settings of the "Time in status" field.
+1. Calendar from the specified field. The field for choosing a calendar is specified in the settings of the "time in status" field.
+2. The calendar specified in the settings of the "time in status" field.
 
 ##### Timer field/Stopwatch field #####
 
