@@ -7,7 +7,7 @@ A field that allows you to select one of the working calendars. This field can b
 * For the "time in status" field - set in the field configuration
 * For timers - set in the timer configuration
 * For stopwatches - set in stopwatch configuration
-* For reports - set in the settings of the lower reports
+* For reports - set in the settings of the bottom reports
 
 In the calendar field settings you can set:
 * Which working calendars from the general list will be available for selection. You can select all calendars or just the ones you need.
