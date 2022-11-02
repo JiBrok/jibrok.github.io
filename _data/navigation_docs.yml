@@ -44,6 +44,7 @@
   key: time-in-status
   docs:
     - time-in-status/work-calendar
+    - time-in-status/calendar-field
 
 - title: Time in status
   key: time-in-status
