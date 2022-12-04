@@ -444,6 +444,7 @@ This example uses a different our plugin: [Display linked issues](https://market
 <a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png" alt="Cascade select - edit - view" width="50%"/></a>   
 
 <b>Conditions</b>:
+
       #if($cfValues.getFromForm(10101) == "parent1")
          message<br>
       #end
