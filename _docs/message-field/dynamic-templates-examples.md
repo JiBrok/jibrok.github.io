@@ -397,3 +397,60 @@ This example uses a different our plugin: [Display linked issues](https://market
           message in english<br>
           line 2<br>
       #end
+
+
+#### How to work with cascade select field? ####
+
+      1 - $cfValues.getFromForm(10101)<br>
+      2 - $cfValues.getFromForm("customfield_10101")<br>
+      3 - $cfValues.getFromForm("customfield_10101").getOptionId()<br>
+      4 - $cfValues.getFromForm("customfield_10101").getValue()<br>
+      5 - $cfValues.getFromForm("customfield_10101:1")<br>
+      6 - $cfValues.getFromForm("customfield_10101:1").getOptionId()<br>
+      7 - $cfValues.getFromForm("customfield_10101:1").getValue()<br>
+      8 - $cfValues.getFromForm("cascade test")<br>
+      9 - $cfValues.getFromForm("cascade test:1")<br>
+      <br>
+      10 - $cfValues.getFromFormOrDefault("customfield_10101", "defaultOption")<br>
+      11 - $cfValues.getFromFormOrDefault("customfield_10101:1", "defaultOption")<br>
+      12 - $cfValues.getFromFormOrDefault("cascade test", "defaultOption")<br>
+      13 - $cfValues.getFromFormOrDefault("cascade test:1", "defaultOption")<br>
+      14 - $cfValues.getFromFormOrDefault("cascade test1:1", "defaultOption")<br>
+      15 - $cfValues.getFromFormOrDefault("cascade test1:12", "defaultOption")<br>
+      <br>
+      16 - $cfValues.get(10101)<br>
+      17 - $cfValues.get(10101).get(null)<br>
+      18 - $cfValues.get(10101).get("1")<br>
+      19 - $cfValues.get("customfield_10101")<br>
+      20 - $cfValues.get("customfield_10101").get(null).getValue()<br>
+      21 - $cfValues.get("customfield_10101").get("1").getValue()<br>
+      22 - $cfValues.get("customfield_10101").get(null).getOptionId()<br>
+      23 - $cfValues.get("customfield_10101").get("1").getOptionId()<br>
+      <br>
+      24 - $cfValues.getOrDefault("customfield_10101", "defaultValue")<br>
+      25 - $cfValues.getOrDefault("customfield_10101", 10000).get(null).getOptionId()<br>
+      26 - $cfValues.getOrDefault("customfield_10101", 10000).get("1").getOptionId()<br>
+      27 - $cfValues.getOrDefault("cascade test", "defaultOption")<br>
+      28 - $cfValues.getOrDefault("cascade test", "defaultOption").get(null).getValue()<br>
+      29 - $cfValues.getOrDefault("cascade test", "defaultOption").get("1").getValue()<br>
+      30 - $cfValues.getOrDefault("cascade test123123", "defaultOption")<br>
+      31 - $cfValues.getOrDefault("cascade test1:12", 10000)<br>
+
+
+<b>Issue create screen</b>: 
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png" alt="Cascade select - Create" width="50%"/></a>   
+
+<b>Other issue screens</b>:
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png" alt="Cascade select - edit - view" width="50%"/></a>   
+
+<b>Conditions</b>:
+      #if($cfValues.getFromForm(10101) == "parent1")
+         message<br>
+      #end
+      #if($cfValues.getOrDefault("cascade test", "defaultOption").get("1").getValue() == "child1")
+         message2<br>
+      #end
+      #if($cfValues.getFromForm("customfield_10101").getOptionId() == 10000)
+         message3<br>
+      #end
+
