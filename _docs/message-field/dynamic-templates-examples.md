@@ -474,7 +474,7 @@ This example uses a different our plugin: [Display linked issues](https://market
       $insightService.getIQLAsTableHtml("objectId = 1", 1, "Key", "Created", "Name", "Updated") ## search by objectId and display attributes by names
       <br>
       Work with insight object custom field:<br>
-      #if($cfValues.getFromForm(10200))#insight custom field. If value isn't empty it will use id from insight object(value).
+      #if($cfValues.getFromForm(10200))#insight custom field. If value isn't empty IQL will use id from insight object(value).
 	     $insightService.getIQLAsTableHtml("objectId = $cfValues.getFromForm(10200).id", 1, "Key", "Created", "Name", "Updated") ## search by objectId and display attributes by names
       #end
 
