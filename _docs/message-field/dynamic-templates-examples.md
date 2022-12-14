@@ -456,3 +456,26 @@ This example uses a different our plugin: [Display linked issues](https://market
          message3<br>
       #end
 
+#### How use $insightService? ####
+
+[see Java doc $insightService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/InsightService.html)
+
+      $insightService.findObjects("key = TEST-1", 1) ##find (1) object by IQL
+      <br>
+      $insightService.findObjects("key = TEST-1", 1).get(0).getObjectAttributeBeans() ##get all attribute's ids from first object
+      <br>
+      $insightService.getIQLAsTableHtml("key = TEST-1", 1, "Key", "Created", "Name", "Updated") ## use attribute's names
+      <br>
+      $insightService.getIQLAsTableHtml("key = TEST-1", 1, 3, 2, 1, 4) ## use attribute's ids
+      <br>
+      $insightService.getIQLAsTableHtml("key = TEST-1", 1, 3, 2, 1, 4) ## use attribute's ids
+      <br>
+      search by objectId:<br>
+      $insightService.getIQLAsTableHtml("objectId = 1", 1, "Key", "Created", "Name", "Updated") ## search by objectId and display attributes by names
+      <br>
+      Work with insight object custom field:<br>
+      #if($cfValues.getFromForm(10200))#insight custom field. If value isn't empty it will use id from insight object(value).
+	     $insightService.getIQLAsTableHtml("objectId = $cfValues.getFromForm(10200).id", 1, "Key", "Created", "Name", "Updated") ## search by objectId and display attributes by names
+      #end
+
+
