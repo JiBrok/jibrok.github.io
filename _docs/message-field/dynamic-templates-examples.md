@@ -283,6 +283,50 @@ This example uses a different our plugin: [Display linked issues](https://market
    </tr></table>
 
 
+#### How to display the date in the correct format with $issueFieldRender?  ####
+[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+
+```velocity 
+$issueFieldRender.dateFormat($formIssue.created, "dd-MMM-yyy HH:mm")
+<br/>
+$issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
+``` 
+
+Result:
+<a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%"/></a>
+
+#### How to show the multiline value of a text field with $issueFieldRender?  ####
+[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+
+```velocity 
+<b>original value of issueForm field "description":</b><br/>
+$formIssue.description
+<br/>
+<b>After formating for better look:</b><br/>
+$issueFieldRender.replaceNewlineCharactersForHtml($formIssue.description)
+<br/
+<br/>
+<b>Original value of issueForm custom field "Text Field (multi-line)":</b><br/> ## customfield_10102
+$cfValues.getFromForm("customfield_10102")
+<br/>
+<br/>
+<b>After formating for better look:</b><br/>
+$issueFieldRender.replaceNewlineCharactersForHtml($cfValues.getFromForm("Text Field (multi-line)"))
+
+<hr/>
+
+<b>HTML render available for any field of issue:</b><br/>
+<b>Description:</b><br/>
+$issueFieldRender.getFieldValueHtml($issue, "description")
+<br/>
+<b>Text Field (multi-line):</b><br/>
+$issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
+
+``` 
+
+Result:
+<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%"/></a>
+
 #### Get parent issue ####
 
  
