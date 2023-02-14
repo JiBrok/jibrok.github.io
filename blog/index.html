@@ -33,10 +33,12 @@ title: Blog
                   
                     <div class="uk-width-expand">
                         <h3 class="uk-card-title uk-margin-remove-bottom">{{ post.title }}</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date | date_to_xmlschema }}">
-                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                            {{ post.date | date: date_format }}
-                        </time></p>
+<!--                        <p class="uk-text-meta uk-margin-remove-top">-->
+<!--                            <time datetime="{{ post.date | date_to_xmlschema }}">-->
+<!--                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}-->
+<!--                            {{ post.date | date: date_format }}-->
+<!--                        </time>-->
+<!--                        </p>-->
                     </div>
                 </div>
             </div>
