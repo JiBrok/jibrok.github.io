@@ -22,6 +22,7 @@ This EULA is for the following apps, listed on the Atlassian Marketplace:
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
 * [Project help info](https://marketplace.atlassian.com/apps/1222760/project-help-info)
 * [Linked issues](https://marketplace.atlassian.com/apps/1223203/linked-issues)
+* [Fields panel for Jira Service Management (JSM)](https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm)
 
 For every of these apps the following EULA belongs to.
 
