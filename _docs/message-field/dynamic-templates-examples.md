@@ -500,7 +500,7 @@ Result:
          message3<br>
       #end
 
-#### How use $insightService? ####
+#### How to use $insightService? ####
 
 [see Java doc $insightService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/InsightService.html)
 
@@ -523,7 +523,7 @@ Result:
       #end
 
 
-#### How use $cast ####
+#### How to use $cast? ####
 
 [see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
 
