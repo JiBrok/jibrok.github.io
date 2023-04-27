@@ -523,3 +523,29 @@ Result:
       #end
 
 
+#### How use $cast ####
+
+[see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
+
+
+      #set ($messages = {
+          "Story" : {
+              10000: "Message for story with option id 10000",
+              10001: "Message for story with option id 10001"
+          } ,
+           "Task" : {
+              10000: "Message for task with option id 10000",
+              10001: "Message for task with option id 10001"
+           }
+      })
+      
+      
+      #set($message = $messages.get($formIssue.issueType.name).get(
+      $cast.toInteger($cfValues.getFromForm("customfield_10200").optionId)
+      ))
+      
+      #if($message)
+         $message
+      #else
+         $fieldDisplayConfig.setHidden(true)##hide
+      #end
