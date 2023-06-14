@@ -85,6 +85,26 @@ Returns issues whose fields satisfy the condition.
 * If possible use functions with jql. They narrow the search and execute faster.
 * In the case of string fields, the function will try to convert the string to a number for correct comparison.
 
+### Compare date from field and date by work calendar ###
+
+The *comparisonDateFromFieldAndDateByWorkCalendar* function is used to compare a date from a specified field with a computed date based on a given relative time and a specified work calendar. The behavior of the function is as follows:
+
+
+* **comparisonDateFromFieldAndDateByWorkCalendar("field", "condition", "time", "calendar")**
+  * Params:
+  * "field" - The name of the field to be searched and compared. It can be the name or ID of a system field or a custom field.
+  * "condition" - The condition for comparing the date from the first field with the computed date. Possible values are <, <=, =, >=, >.
+  * "time" - A string representing the time relative to the current time, entered in the format "-1h 30m", for example. This value is used to calculate the date based on the specified work calendar.
+  * "calendar" - The name or ID of the work calendar. The computed date is calculated based on this calendar and the specified relative time.
+
+Behavior:
+
+* The function retrieves the value from the specified "field".
+* The current date is computed based on the specified "work calendar" and the relative "time" relative to the current time. For example, if the current time is 9:00 AM and relativeTime is "-1h 30m" (one and a half working hours ago), the computed date will represent 7:30 AM of the current working day according to the specified calendar.
+* The computed date is compared with the date from the specified "field" using the specified comparison operator ("condition"). For example, if "condition" is >, it checks if the date from the "field" is more than the computed date .
+
+* **Examples**
+    * issue in comparisonDateFromFieldAndDateByWorkCalendar("updated", ">", "-1h", "Calendar Name") - find all issues that have been updated for the last working hour(-1h) on the working calendar. Like: "updated > -1h", but -1h by work calendar.
 
 ### Autotrack ###
 
