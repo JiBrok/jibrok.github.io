@@ -52,6 +52,7 @@
     - time-in-status/time-in-status-jql
 #    - time-in-status/time-in-status-field
     - time-in-status/time-in-status-field-settings
+    - time-in-status/time-in-status-field-settings-old
     - time-in-status/time-in-status-field-all
     - time-in-status/time-in-status-field-jql
 
