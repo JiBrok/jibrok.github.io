@@ -6,9 +6,7 @@ permalink: /privacy-policy/
 
 This privacy policy covers which personal data we have access to and how we handle this personal data.
 ### On-Premise Add-ons/Apps
-While our on-premise add-ons (apps) do not collect any analytics, we do gather certain functional data to ensure optimal app performance. Specifically, we collect the user key, which is crucial for the internal workings of the app. This collection is strictly for operational purposes and is not used for any form of analytics or marketing.
-
-It's paramount to underline that even though we collect the user key, this data does not leave your servers under any circumstances. We deeply respect and prioritize user privacy and data security. Your data remains strictly confined to your own infrastructure and is never transmitted or shared with any third parties.
+None of our on-premise add-ons (apps) collect any analytics or personal information. Your data does not leave your own servers under any circumstances.
 
 ### Atlassian Marketplace
 Our add-ons/apps are sold on Atlassian Marketplace. If you generate an evaluation license or purchase a license for any of our add-ons, Atlassian Marketplace provides us contact information of the licensee. We don’t store this information in our own servers and we only access this through Atlassian Marketplace user interface when required. We don’t have any newsletter and we don’t send bulk emails but we may use this contact email address to notify you about our add-ons, for example expired license, security issues. You can opt-out anytime you want to and we will not send you any e-mail again.
