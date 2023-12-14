@@ -162,14 +162,14 @@ tags: cloud
      "jsm-fields-panel-cloud": [
             {
                 tier: 10,
-                userPrice: 3,
+                userPrice: 4,
                 isStartedLicense: true
             }, {
                 tier: 100,
-                userPrice: 0.3
+                userPrice: 0.4
             }, {
                 tier: 250,
-                userPrice: 0.25
+                userPrice: 0.3
             }, {
                 tier: 1000,
                 userPrice: 0.20
@@ -178,22 +178,22 @@ tags: cloud
                 userPrice: 0.15
             }, {
                 tier: 5000,
-                userPrice: 0.10
+                userPrice: 0.12
             }, {
                 tier: 7500,
-                userPrice: 0.05
+                userPrice: 0.12
             }, {
                 tier: 10000,
-                userPrice: 0.03
+                userPrice: 0.07
             }, {
                 tier: 15000,
-                userPrice: 0.02
+                userPrice: 0.05
             }, {
                 tier: 20000,
-                userPrice: 0.01
+                userPrice: 0.02
             }, {
                 tier: 25000,
-                userPrice: 0.01
+                userPrice: 0.02
             }, {
                 tier: 30000,
                 userPrice: 0.01
@@ -205,35 +205,35 @@ tags: cloud
         jbcf: [
             {
                 tier: 10,
-                userPrice: 3,
+                userPrice: 4,
                 isStartedLicense: true
             }, {
                 tier: 100,
-                userPrice: 0.3
+                userPrice: 0.4
             }, {
                 tier: 250,
-                userPrice: 0.25
+                userPrice: 0.35
             }, {
                 tier: 1000,
-                userPrice: 0.20
+                userPrice: 0.25
             }, {
                 tier: 2500,
                 userPrice: 0.15
             }, {
                 tier: 5000,
-                userPrice: 0.10
+                userPrice: 0.09
             }, {
                 tier: 7500,
-                userPrice: 0.05
+                userPrice: 0.09
             }, {
                 tier: 10000,
-                userPrice: 0.03
+                userPrice: 0.05
             }, {
                 tier: 15000,
                 userPrice: 0.02
             }, {
                 tier: 20000,
-                userPrice: 0.01
+                userPrice: 0.02
             }, {
                 tier: 25000,
                 userPrice: 0.01
@@ -334,44 +334,44 @@ tags: cloud
         tis: [
             {
                 tier: 10,
-                userPrice: 3,
+                userPrice: 6,
                 isStartedLicense: true
             }, {
                 tier: 100,
-                userPrice: 0.35
+                userPrice: 0.60
             }, {
                 tier: 250,
-                userPrice: 0.25
+                userPrice: 0.40
             }, {
                 tier: 1000,
-                userPrice: 0.25
+                userPrice: 0.24
             }, {
                 tier: 2500,
-                userPrice: 0.20
+                userPrice: 0.10
             }, {
                 tier: 5000,
-                userPrice: 0.15
+                userPrice: 0.09
             }, {
                 tier: 7500,
-                userPrice: 0.10
+                userPrice: 0.09
             }, {
                 tier: 10000,
                 userPrice: 0.05
             }, {
                 tier: 15000,
-                userPrice: 0.03
+                userPrice: 0.04
             }, {
                 tier: 20000,
-                userPrice: 0.01
+                userPrice: 0.03
             }, {
                 tier: 25000,
-                userPrice: 0.01
+                userPrice: 0.03
             }, {
                 tier: 30000,
-                userPrice: 0.01
+                userPrice: 0.03
             }, {
                 tier: 35000,
-                userPrice: 0.01
+                userPrice: 0.02
             }
         ],
         timer: [
