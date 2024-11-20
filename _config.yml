@@ -3,7 +3,7 @@
 # This config file is meant for settings that affect your whole blog.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
+cache: true
 # Site title and description
 title:              JiBrok
 description:        Atlassian Marketplace Partner. Apps for your Jira
@@ -92,7 +92,7 @@ disqus:
     shortname:      # 1234
 
 # Google analytics code, get your code here https://www.google.com/analytics/
-google_analytics: UA-127075774-9
+google_analytics:
 
 # Number of posts displayed on blog page
 paginate:           10
