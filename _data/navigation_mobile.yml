@@ -15,6 +15,9 @@
 - title: Blog
   url: /blog/
 
+- title: Security and SOC Reports
+  url: /security/
+
 - title: Status Page
   url: https://jibrok.statuspage.io/
 

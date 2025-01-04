@@ -16,6 +16,9 @@ left:
   - title: EULA
     url: /EULA/
 
+  - title: Security and SOC Reports
+    url: /security/
+
 
 # Navbar right menu navigation links
 
