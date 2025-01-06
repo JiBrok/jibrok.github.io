@@ -26,6 +26,9 @@ By achieving and maintaining SOC 2, JiBrok demonstrates a strong commitment to p
 
 We provide access to our detailed SOC 2 Type 2 Report upon request through our Trust Center, as well as by reaching out to our support team or via email. This report offers valuable insights into JiBrok’s security posture and the effectiveness of our controls during the audit period.
 
-* [Trust Center](https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3)
 * [Help Center](https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/176)
 * [support@jibrok.com](mailto:support@jibrok.com)
+
+* [Trust Center](https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3)
+* [CAIQ Lite](https://jibrok.com/uploads/security-reports/JiBrokCAIQ-Lite%20public.pdf)
+
