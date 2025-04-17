@@ -49,7 +49,7 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
       ignore it.
     *#   
 
-### Getting data from the screens ###
+### Getting data from the screen/issue ###
 
 ####  How to use $form? Get raw data from issue screen. ####
 
