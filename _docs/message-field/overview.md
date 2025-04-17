@@ -2,9 +2,9 @@
 title: Overview
 key: message-field
 ---
-<a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=server&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:100%;;"/></a>
+<a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:100%;;"/></a>
 
-View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=server&tab=overview)
+View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview)
 ## Welcome to Message field! 
 
 
@@ -50,11 +50,11 @@ You can use it to customize the message for any situation and in any style.
 
 ## Features
 
-* Available for Jira Service Desk(Customer Portal) & portals created by <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=server&tab=overview">Refined for Jira</a>.
+* Available for Jira Service Desk(Customer Portal) & portals created by <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=datacenter&tab=overview">Refined for Jira</a>.
 * You can use any data from the issue or Jira in the message.
 * The ability to display messages in Jira style or in custom style using HTML.
 * Built-in conditions for displaying messages: issue screens, user groups, statuses, linked issues etc.
-* Add dynamic behavior to your messages using [Dynamic Templates](/docs/message-field/dynamic-templates/), JavaScript and <a href="https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=server&tab=overview">ScriptRunner</a>.
+* Add dynamic behavior to your messages using [Dynamic Templates](/docs/message-field/dynamic-templates/), JavaScript and <a href="https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=datacenter&tab=overview">ScriptRunner</a>.
 
 
 <img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;"/> 

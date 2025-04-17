@@ -13,7 +13,7 @@ Now you can:
 * Generate reports, desktops, queues focused on time metrics.
 
 
-Server application "[Time in status | SLA | Timer | Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=server&tab=overview)" implemented in the cloud by several applications:
+Server application "[Time in status | SLA | Timer | Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview)" implemented in the cloud by several applications:
 * [Time in status](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=cloud&tab=overview)
 * [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
 * [Stopwatch field](https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud)

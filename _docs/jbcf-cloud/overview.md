@@ -3,7 +3,7 @@ title: Overview
 key: jbcf-cloud
 ---
 
-<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=server&tab=overview"><img src="/uploads/jbcf/marketplace.png" style="width:100%;;"/></a>
+<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview"><img src="/uploads/jbcf/marketplace.png" style="width:100%;;"/></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview)
 ## Welcome to JiBrok Calculated fields (JBCF)!

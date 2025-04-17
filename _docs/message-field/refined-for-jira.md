@@ -3,7 +3,7 @@ title: Refined for Jira | Sites & Themes
 key: message-field
 ---
 
-**Message field** by default may not be displayed with Jira Service Desk portal created by <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=server&tab=overview" target="_blank">Refined for Jira | Sites & Themes</a>.
+**Message field** by default may not be displayed with Jira Service Desk portal created by <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=datacenter&tab=overview" target="_blank">Refined for Jira | Sites & Themes</a>.
 
 To fix it you need to disable a couple of resources and enable global ones instead of them.
 

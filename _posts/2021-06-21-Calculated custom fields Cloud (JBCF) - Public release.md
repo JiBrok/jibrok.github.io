@@ -5,7 +5,7 @@ tags: jbcf-cloud cloud
 
 We have published our cloud application Calculated custom fields(JBCF)! 🥳
 
-Server functionality of the [Calculated and other custom fields(JBCF)](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=server&tab=overview) application turned out to be very large.
+Server functionality of the [Calculated and other custom fields(JBCF)](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview) application turned out to be very large.
 * ToDo list
 * Shared components
 * Role, Group, Status pickers
