@@ -549,3 +549,158 @@ Result:
       #else
          $fieldDisplayConfig.setHidden(true)##hide
       #end
+
+
+#### Scenario: Project managers want a warning message on the form if the issue priority is High. ####
+
+      #if($issue.getPriorityObject().name == "High")
+      <b style="color:red;">Warning: the issue priority is High!</b>
+      #else
+      <p>Normal priority. Work as usual.</p>
+      #end
+
+
+#### Scenario: We need information about the current assignee, including their Slack profile link stored in the user properties (key slackLink). ####
+
+
+      #if($issue.assignee)
+        <p>Assignee: $issue.assignee.displayName</p>
+        <p>Email: $issue.assignee.emailAddress</p>
+      
+         #set($slackLink = $issue.assignee.getPropertyValue("slackLink"))
+         #if($slackLink)
+            <p>Slack: <a href="$slackLink" target="_blank">$slackLink</a></p>
+         #else
+            <p>No Slack link specified.</p>
+         #end
+      #else
+        <p><i>No assignee</i></p>
+      #end
+
+
+#### Scenario: Different issue types (Bug, Task, etc.) require different message formats. ####
+
+      #set($typeName = $issue.issueTypeObject.name)
+      
+      #if($typeName == "Bug")
+      <p>Important for bugs: ensure reproducible steps are provided.</p>
+      #elseif($typeName == "Task")
+      <p>Task: verify deadlines and resources.</p>
+      #else
+      <p>Issue type: $typeName. No extra instructions required.</p>
+      #end
+
+
+#### Scenario: Suppose the issue can have components like “UI/UX”, “Backend”, “Mobile”. Depending on the chosen component, show which team is responsible. ####
+
+      #set($components = $issue.getComponents())
+      #if($components && $components.size() > 0)
+        <p>Selected components:</p>
+        <ul>
+          #foreach($comp in $components)
+            <li>
+              $comp.name
+              #if($comp.name == "UI/UX")
+                - The design team is responsible for mockup review
+              #elseif($comp.name == "Backend")
+                - The backend team handles microservices
+              #elseif($comp.name == "Mobile")
+                - The mobile team checks compatibility with iOS/Android
+              #end
+            </li>
+          #end
+        </ul>
+      #else
+        <p style="color:orange;">No components selected. Please specify at least one!</p>
+      #end
+
+
+#### Scenario: If the Due Date has passed, show a red warning. #### 
+
+      #set($dueDate = $issue.getDueDate())
+      #if($dueDate && $dueDate.before($actionDate))
+      <p>The issue is overdue! Date: $dueDate</p>
+      #else
+      <p>The issue is on schedule or no due date is set.</p>
+      #end
+
+#### Scenario: If no Fix Version is set, show a warning. #### 
+
+      #set($fixVersions = $issue.getFixVersions())
+      #if($fixVersions && $fixVersions.size() > 0)
+      <p>Planned for versions:
+        #foreach($ver in $fixVersions)
+          <strong>$ver.name</strong><br/>
+        #end
+      </p>
+      #else
+      <p>No version selected. Please specify the release.</p>
+      #end
+
+
+#### Scenario: If the issue type is “Bug”, display a note about reproducible steps; if it’s “Story”, mention acceptance criteria, etc. ####
+
+      #set($type = $issue.issueTypeObject.name)
+      #if($type == "Bug")
+      <p>Please provide reproducible steps.</p>
+      #elseif($type == "Story")
+      <p>Please describe the expected result and acceptance criteria.</p>
+      #else
+      <p>No special requirements for type: $type</p>
+      #end
+
+
+#### Scenario: If the value > 100000, show an alert. ####
+
+      #set($budgetField = $issue.getCustomFieldValue($issue.getCustomFieldObject(10800)))
+      #if($budgetField && $budgetField > 100000)
+      <p style="color:red;">Warning! Budget exceeded 100,000. Additional check required.</p>
+      #else
+      <p>Budget is within acceptable limits.</p>
+      #end
+
+
+#### Scenario: If the user selects the “UI/UX” component, show a design reminder; if “Backend”, show a microservices reminder. ####
+
+      #set($componentList = $issue.getComponents())
+      #set($hasUIUX = false)
+      #set($hasBackend = false)
+      
+      #foreach($comp in $componentList)
+         #if($comp.name == "UI/UX")
+            #set($hasUIUX = true)
+         #elseif($comp.name == "Backend")
+            #set($hasBackend = true)
+         #end
+      #end
+      
+      #if($hasUIUX)
+      <p style="color:purple;">Please coordinate mockups with the design team.</p>
+      #end
+      #if($hasBackend)
+      <p style="color:green;">Check compatibility with the microservices architecture.</p>
+      #end
+      #if(!$hasUIUX && !$hasBackend)
+      <p>No specific components selected, proceeding under standard workflow.</p>
+      #end
+
+
+#### Scenario: An issue might have attachments such as Excel or PDF files. You need to highlight these file types and provide links to them. #### 
+
+
+      #set($attachments = $issue.getAttachments())
+      #if($attachments && $attachments.size() > 0)
+         Attachments in this issue:
+         #foreach($attachment in $attachments)
+            #if($attachment.filename.endsWith(".xlsx"))
+            - Excel File: <a href="$attachment.url" target="_blank">$attachment.filename</a>
+            #elseif($attachment.filename.endsWith(".pdf"))
+            - PDF Document: <a href="$attachment.url" target="_blank">$attachment.filename</a>
+            #else
+            - File: <a href="$attachment.url" target="_blank">$attachment.filename</a>
+            #end
+         #end
+      #else
+         No attachments found.
+      #end
+
