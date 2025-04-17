@@ -552,7 +552,7 @@ Result:
 
 ### Example scenarios ###
 
-#### Scenario: Project managers want a warning message on the form if the issue priority is High. ####
+#### Project managers want a warning message on the form if the issue priority is High. ####
 
       #if($issue.getPriorityObject().name == "High")
       <b style="color:red;">Warning: the issue priority is High!</b>
@@ -561,7 +561,7 @@ Result:
       #end
 
 
-#### Scenario: We need information about the current assignee, including their Slack profile link stored in the user properties (key slackLink). ####
+#### We need information about the current assignee, including their Slack profile link stored in the user properties (key slackLink). ####
 
 
       #if($issue.assignee)
@@ -579,7 +579,7 @@ Result:
       #end
 
 
-#### Scenario: Different issue types (Bug, Task, etc.) require different message formats. ####
+#### Different issue types (Bug, Task, etc.) require different message formats. ####
 
       #set($typeName = $issue.issueTypeObject.name)
       
@@ -592,7 +592,7 @@ Result:
       #end
 
 
-#### Scenario: Suppose the issue can have components like “UI/UX”, “Backend”, “Mobile”. Depending on the chosen component, show which team is responsible. ####
+#### Suppose the issue can have components like “UI/UX”, “Backend”, “Mobile”. Depending on the chosen component, show which team is responsible. ####
 
       #set($components = $issue.getComponents())
       #if($components && $components.size() > 0)
@@ -616,7 +616,7 @@ Result:
       #end
 
 
-#### Scenario: If the Due Date has passed, show a red warning. #### 
+#### If the Due Date has passed, show a red warning. #### 
 
       #set($dueDate = $issue.getDueDate())
       #if($dueDate && $dueDate.before($actionDate))
@@ -625,7 +625,7 @@ Result:
       <p>The issue is on schedule or no due date is set.</p>
       #end
 
-#### Scenario: If no Fix Version is set, show a warning. #### 
+#### If no Fix Version is set, show a warning. #### 
 
       #set($fixVersions = $issue.getFixVersions())
       #if($fixVersions && $fixVersions.size() > 0)
@@ -639,7 +639,7 @@ Result:
       #end
 
 
-#### Scenario: If the issue type is “Bug”, display a note about reproducible steps; if it’s “Story”, mention acceptance criteria, etc. ####
+#### If the issue type is “Bug”, display a note about reproducible steps; if it’s “Story”, mention acceptance criteria, etc. ####
 
       #set($type = $issue.issueTypeObject.name)
       #if($type == "Bug")
@@ -651,7 +651,7 @@ Result:
       #end
 
 
-#### Scenario: If the value > 100000, show an alert. ####
+#### If the value > 100000, show an alert. ####
 
       #set($budgetField = $issue.getCustomFieldValue($issue.getCustomFieldObject(10800)))
       #if($budgetField && $budgetField > 100000)
@@ -661,7 +661,7 @@ Result:
       #end
 
 
-#### Scenario: If the user selects the “UI/UX” component, show a design reminder; if “Backend”, show a microservices reminder. ####
+#### If the user selects the “UI/UX” component, show a design reminder; if “Backend”, show a microservices reminder. ####
 
       #set($componentList = $issue.getComponents())
       #set($hasUIUX = false)
@@ -686,7 +686,7 @@ Result:
       #end
 
 
-#### Scenario: An issue might have attachments such as Excel or PDF files. You need to highlight these file types and provide links to them. #### 
+#### An issue might have attachments such as Excel or PDF files. You need to highlight these file types and provide links to them. #### 
 
 
       #set($attachments = $issue.getAttachments())
