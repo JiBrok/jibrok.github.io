@@ -41,20 +41,35 @@ An application for displaying messages on issue screens.
 
 [comment]: <> (<p style="text-align: center;"><iframe width="600" height="315" src="https://www.youtube-nocookie.com/embed/PogUyk9eD7U?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>)
 
-You can use it to customize the message for any situation and in any style.
-* Large number of built-in settings and display conditions.
-* Unlimited customization options via templates and scripts.
-* Support that will help you to implement the most unusual scenarios.
+
+📌 Message Field places contextual banners and notices on any Jira or JSM issue screen—no coding required.
+
+🎯 Deliver onboarding hints, SLA warnings, release notes, or branded announcements with just a few clicks.
+
+🎨 Easily customize style, location, and color, then precisely target messages by project, request type, JQL, status, group, linked issues and more.
+
+🔄 Keep content up to date by referencing fields, users, and system values in real time, automatically reflecting any changes.
+
+🛠️ Use Jira’s native look or your own HTML/CSS for complete design freedom, and tap into dynamic templates or JavaScript for advanced customizations.
+
+🔗 Integrations with external apps open endless possibilities, from highlighting priorities to preventing missing attachments.
+
+🚀 Empower your team to reduce ticket ping‑pong, guide reporters effectively, and speed up resolutions—exactly where it matters.
+
+🌟 Experience streamlined communication and a personalized portal that keeps everyone in sync.
+
 
 <a href="/uploads/message-field/field-demo-create.png"><img src="/uploads/message-field/field-demo-create.png" style="width:100%;"/></a> 
 
-## Features
+## Key features
 
-* Available for Jira Service Desk(Customer Portal) & portals created by <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=datacenter&tab=overview">Refined for Jira</a>.
-* You can use any data from the issue or Jira in the message.
-* The ability to display messages in Jira style or in custom style using HTML.
-* Built-in conditions for displaying messages: issue screens, user groups, statuses, linked issues etc.
-* Add dynamic behavior to your messages using [Dynamic Templates](/docs/message-field/dynamic-templates/), JavaScript and <a href="https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=datacenter&tab=overview">ScriptRunner</a>.
+* Works on Jira Service Management portals (including those built with Refined).
+* Add dynamic behaviour through [Dynamic Templates](/docs/message-field/dynamic-templates/), client‑side JavaScript or ScriptRunner Behaviours.
+* Pull data from the current issue or Jira API directly into the message on any screen.
+* Choose banner mode or compact flag mode, both printable.
+* A large number of settings, styles and display conditions.
+* Delegate message settings to project roles so that they can manage banners themselves.
+
 
 
 <img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;"/> 
