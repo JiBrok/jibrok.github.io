@@ -550,6 +550,7 @@ Result:
          $fieldDisplayConfig.setHidden(true)##hide
       #end
 
+### Example scenarios ###
 
 #### Scenario: Project managers want a warning message on the form if the issue priority is High. ####
 
