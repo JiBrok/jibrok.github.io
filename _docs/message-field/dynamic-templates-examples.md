@@ -8,7 +8,7 @@ Examples of using variables that are available for use in dynamic templates.
 * TOC
 {:toc}
 
-[Java doc for Message field](/jira/plugins/message-field/java/doc/).
+📑[Java doc for Message field](/jira/plugins/message-field/java/doc/).
 
 You can see the official user guide for velocity [here](http://velocity.apache.org/engine/1.7/user-guide.html).
 
