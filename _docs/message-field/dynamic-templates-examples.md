@@ -653,7 +653,7 @@ Result:
 
 #### If the value > 100000, show an alert. ####
 
-      #set($budgetField = $issue.getCustomFieldValue($issue.getCustomFieldObject(10800)))
+      #set($budgetField = $cfValues.getFromForm("Budget")))
       #if($budgetField && $budgetField > 100000)
       <p style="color:red;">Warning! Budget exceeded 100,000. Additional check required.</p>
       #else
