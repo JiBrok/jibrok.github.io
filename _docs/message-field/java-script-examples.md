@@ -9,6 +9,10 @@ JavaScript examples for  the **Message Field** application are available at [Git
 * TOC
 {:toc}
 
+
+### MessageField v5 - JavaScript API Description and Usage Guide
+<script src="https://gist.github.com/JiBrok/f838959156710786c66129eb77c25670.js"></script>
+
 ### Update message on create
 <script src="https://gist.github.com/JiBrok/bb8f6775509b8155c3b77cfcc69e931a.js"></script>
 

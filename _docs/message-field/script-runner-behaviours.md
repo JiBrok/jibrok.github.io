@@ -3,6 +3,10 @@ title: Script Runner Behaviours - Settings
 key: message-field
 ---
 
+# Message field version 5
+As soon as Scriptrunner Behaviours changes the value of a field, the message will be automatically updated.  
+
+# # Message field under version 5 
 You can change the message using the [ScriptRunner for Jira](https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=datacenter&tab=overview) application and its [Behaviours](https://scriptrunner.adaptavist.com/6.9.0/jira/behaviours-overview.html) function.
 
 You may need to change the default settings - depending on the complexity of the script in ScriptRunner Behaviours.
