@@ -3,8 +3,6 @@ title: All Message fields settings
 key: message-field
 ---
 
-# All Message Fields Settings
-
 The **All Message Fields Settings** page provides a comprehensive overview and management interface for all Message Field configurations across your Jira instance. This powerful tool allows administrators to view, filter, and manage multiple Message Field configurations from a single interface.
 
 ## Accessing All Message Fields Settings
