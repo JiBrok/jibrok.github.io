@@ -101,11 +101,6 @@ For each JQL condition, view:
 2. **Project Coverage**: Expand Message Field usage to uncovered projects
 3. **Screen Optimization**: Ensure fields are on appropriate screen types
 
-### Best Practices
-- Regularly review statistics to maintain optimal performance
-- Use the refresh button to get current data
-- Address fields without screens to improve user experience
-- Optimize or simplify complex JQL conditions
 
 ## Technical Details
 
