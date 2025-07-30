@@ -40,10 +40,10 @@
   icon: user-helper-cloud
   doc: user-helper-cloud/overview
 
-- title: 📌 Cloud discount calculator
-  desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.
-  icon:
-  href: /Cloud-discount-calculator/
+#- title: 📌 Cloud discount calculator
+#  desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.
+#  icon:
+#  href: /Cloud-discount-calculator/
 
 - title: Other apps
   desc: More plugins will be added soon
