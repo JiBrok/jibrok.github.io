@@ -20,6 +20,11 @@
   icon: su
   doc: su/overview
 
+- title: Display Linked Issues
+  desc: Displays issues linked by a specific type of links or by JQL. You can configure which fields to display and their order.
+  icon: linked-issues-cloud
+  href: https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview
+
 - title: More apps on the marketplace
   desc:
   icon: marketplace
