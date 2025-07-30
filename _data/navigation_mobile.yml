@@ -12,8 +12,8 @@
 - title: EULA
   url: /EULA/
 
-- title: Blog
-  url: /blog/
+#- title: Blog
+#  url: /blog/
 
 - title: Security and SOC Reports
   url: /security/
