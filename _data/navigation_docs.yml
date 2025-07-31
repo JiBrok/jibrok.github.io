@@ -8,11 +8,11 @@
   - message-field/base-settings
   - message-field/advanced-settings
   - message-field/dynamic-templates
+  - message-field/dynamic-templates-examples
   - message-field/settings-for-all-fields
   - message-field/statistics
   - message-field/delegation
   - message-field/rest
-  - message-field/dynamic-templates-examples
   - message-field/html-examples
   - message-field/java-script-examples
   - message-field/script-runner-behaviours
