@@ -14,6 +14,46 @@ You can see the official user guide for velocity [here](http://velocity.apache.o
 
 ### Common ###
 
+#### Default Values for Variables ####
+
+When working with variables that might be null or undefined, you can use these approaches to provide default values:
+
+**Silent Reference Notation**
+```velocity
+$!variable
+```
+This displays an empty string if the variable is null, instead of showing the literal `$variable`.
+
+**Conditional Statement with Default Value**
+```velocity
+#if($variable)$variable#else Default value #end
+```
+This checks if the variable exists and has a value, otherwise displays the default.
+
+**Macro for Reusable Default Values**
+```velocity
+#macro(default $value $defaultValue)#if($value)$value#else$defaultValue#end#end
+```
+Add this macro at the beginning of your template, then use it like:
+```velocity
+#default($issue.assignee "Not assigned")
+#default($cfValues.getFromForm("Custom Field") "No value set")
+```
+
+**Examples:**
+```velocity
+## Silent reference - shows empty string if assignee is null
+Assignee: $!issue.assignee.displayName
+
+## Conditional with default text
+Assignee: #if($issue.assignee)$issue.assignee.displayName#else Not assigned #end
+
+## Using macro (add macro definition at top of template)
+#macro(default $value $defaultValue)#if($value)$value#else$defaultValue#end#end
+Assignee: #default($issue.assignee.displayName "Not assigned")
+Priority: #default($formIssue.priority.name "No priority set")
+```
+
 #### [How to set the value of variable?](http://velocity.apache.org/engine/1.7/user-guide.html#hello-velocity-world) ####
 
     
