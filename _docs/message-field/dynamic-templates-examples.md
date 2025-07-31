@@ -12,9 +12,9 @@ Examples of using variables that are available for use in dynamic templates.
 
 You can see the official user guide for velocity [here](http://velocity.apache.org/engine/1.7/user-guide.html).
 
-### Common ###
+## Velocity Template Basics
 
-#### Default Values for Variables ####
+### Default Values for Variables
 
 When working with variables that might be null or undefined, you can use these approaches to provide default values:
 
@@ -54,14 +54,16 @@ Assignee: #default($issue.assignee.displayName "Not assigned")
 Priority: #default($formIssue.priority.name "No priority set")
 ```
 
-#### [How to set the value of variable?](http://velocity.apache.org/engine/1.7/user-guide.html#hello-velocity-world) ####
+### Core Velocity Syntax
+
+#### [How to set the value of variable?](http://velocity.apache.org/engine/1.7/user-guide.html#hello-velocity-world)
 
     
     #set( $foo = "Velocity" )
     Hello $foo World!
     
     
-#### [Conditionals](http://velocity.apache.org/engine/1.7/user-guide.html#conditionals) ####
+#### [Conditionals](http://velocity.apache.org/engine/1.7/user-guide.html#conditionals)
 
     #set( $foo = "Velocity" )
     
@@ -71,7 +73,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     #end
     World!
     
-#### [Loops](http://velocity.apache.org/engine/1.7/user-guide.html#loops) ####
+#### [Loops](http://velocity.apache.org/engine/1.7/user-guide.html#loops)
 
     <ul>
     #foreach( $product in $allProducts )
@@ -79,7 +81,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     #end
     </ul>
     
-#### [Comments](http://velocity.apache.org/engine/1.7/user-guide.html#comments) ####
+#### [Comments](http://velocity.apache.org/engine/1.7/user-guide.html#comments)
 
     ## This is a single line comment.  
     
@@ -89,14 +91,16 @@ Priority: #default($formIssue.priority.name "No priority set")
       ignore it.
     *#   
 
-### Getting data from the screen/issue ###
+## Data Access Methods
 
-####  How to use $form? Get raw data from issue screen. ####
+### Form Data Access
+
+#### How to use $form? Get raw data from issue screen
 
     $form.summary <br>
     $form.customfield_10400
     
-####  How to use $formIssue? Get valid data from the issue screen. ####
+#### How to use $formIssue? Get valid data from the issue screen
 [see Java doc $formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) 
     
     $formIssue.summary <br>
@@ -107,7 +111,9 @@ Priority: #default($formIssue.priority.name "No priority set")
         Unassigned<br>
     #end
 
-#### How to use $cfValues? How to get the value of a custom field for an $issue? ####
+### Custom Field Values ($cfValues)
+
+#### How to get the value of a custom field for an $issue
 [see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) 
     
     $cfValues.get(10100)<br>
@@ -123,7 +129,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     $cfValues.getOrDefault($linkedIssue, "customfield_10100", "Default value")<br>
     $cfValues.getOrDefault($linkedIssue, "Custom field name", 123)<br>
     
-#### How to get the value of a custom field for an $formIssue? ####
+#### How to get the value of a custom field for an $formIssue
     
     $cfValues.getFromForm(10100)<br>
     $cfValues.getFromForm("customfield_10100")<br>
@@ -134,7 +140,9 @@ Priority: #default($formIssue.priority.name "No priority set")
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
 
 
-####  How to use issue type? ####
+### Issue Field Access
+
+#### How to use issue type
 
     #if($formIssue.issueType.name == 'Task')
          message for 'Task'
@@ -161,7 +169,7 @@ or
 ($issue - this variable is not defined on the creation screen)
    
 
-####  How to use issue status? ####
+#### How to use issue status
 
     #if($issue.status.name == 'To Do')
          message for 'To Do' status
@@ -177,8 +185,20 @@ or
          message for 'In progress' status
     #end
 
+#### Get parent issue
 
-#### How to use $fieldDisplayConfig? How to change the display of a message? ####
+ 
+    $formIssue.parentObject.key
+    $issue.parentObject.key
+
+    #if($formIssue.parentObject)
+      $cfValues.get($formIssue.parentObject, "Impact").value ## impact - custom select field
+    #end
+
+
+## Message Display Configuration
+
+### How to use $fieldDisplayConfig? How to change the display of a message?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) 
 
     $fieldDisplayConfig.setAsFlag(true) ## true, false
@@ -188,7 +208,7 @@ or
     $fieldDisplayConfig.setInsert("before") ## "append", "prepend", "before", "after" 
     $fieldDisplayConfig.setHidden(true)
     
-#### How to hide a message? ####
+### How to hide a message?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
     
     #set ($optionCustomFieldValue = $cfValues.getFromForm("Option custom field name"))
@@ -204,7 +224,7 @@ or
     #end
 
 
-#### How to change message colour? ####
+### How to change message colour?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
 
 <a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%"/></a>
@@ -227,14 +247,31 @@ or
     
     $issue.key: $issue.summary
 
-#### How to use $context, $transitionId and $transitionName? ####
+## Context and State Variables
+
+### How to use $context, $transitionId and $transitionName?
 
     #if($context == "TRANSITION")
     	is transitionId 31 ? #if($transitionId == 31) Yes #else No #end <br>
     	is transitionName "In Progress" ? #if($transitionName == "In Progress") Yes #else No #end<br>
     #end
 
-#### How to use and check linked issues? ####
+### How to check how long ago the transition was made? (How to use $secAfterLastTransition)
+
+      $fieldDisplayConfig.setHidden(true)##hide message by default (Including cases when there were no transitions yet.)
+
+      #if($secAfterLastTransition && $secAfterLastTransition < 1*60)##We check that less than 1 minute has passed since the last transition (the time is indicated as a number of seconds)
+		$fieldDisplayConfig.setHidden(false)## Show a message if the transition was not long ago. (< 1 min ago)
+		
+		##message edit here
+		data:<br>
+		$secAfterLastTransition<br>
+		$previousStatusId <br>
+		$previousStatusName <br>
+
+      #end
+
+### How to use and check linked issues?
 [see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
    
     #set ($blockedIssues = $links.getOutwardIssues("blocked"))
@@ -243,38 +280,13 @@ or
             $blockedIssue.status.name $cfValues.getOrDefault($blockedIssue, "developer custom field", "hasn't developer")<br>
         #end
     #end
-  
-#### Show message for "description" and "assignee" depending on the priority. ####
+## Utility Services
 
-<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%"/></a>
-      
-    #if($formIssue.priority.name == "Blocker")
-    	$fieldDisplayConfig.setMessageType("error")
-    	#if(!$formIssue.description || $formIssue.description.isEmpty())
-    		$fieldDisplayConfig.setShowForFieldId("description")
-    		State the reason for the Blocker priority.
-    	#elseif(!$formIssue.assignee)
-    		$fieldDisplayConfig.setShowForFieldId("assignee")
-    		Indicate the responsible employee
-    	#else
-    	  $fieldDisplayConfig.setHidden(true)
-    	#end
-    #elseif($formIssue.priority.name == "High")
-    	$fieldDisplayConfig.setMessageType("warning")
-    	#if($formIssue.description.isEmpty())
-    		$fieldDisplayConfig.setShowForFieldId("description")
-    		State the reason for the High priority.
-    	#else
-    	  	  $fieldDisplayConfig.setHidden(true)
-    	#end
-    #elseif($formIssue.priority.name == "Medium" || $formIssue.priority.name == "Low")
-    	$fieldDisplayConfig.setHidden(true)
-    #end
-
-#### How to use JQL in message? How to use $jqlService? ####
+### JQL Service ($jqlService)
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
+#### How to use JQL in message?
 
 ```velocity 
 $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
@@ -286,9 +298,7 @@ You can use current issue in jql for conditions:
         The problem has not been updated for more than two days.
     #end
 
-          
-    
-#### How to show fields for issues by JQL in message? How to use $issueFieldRender? ####
+#### How to show fields for issues by JQL in message?
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
@@ -300,7 +310,9 @@ $issueFieldRender.getAsTableHtml(
   )
 ``` 
 
-#### How to show fields from linked issues(also on Service Desk Portal)? How to use $issueFieldRender? ####
+### Issue Field Renderer ($issueFieldRender)
+
+#### How to show fields from linked issues (also on Service Desk Portal)?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
@@ -323,7 +335,7 @@ This example uses a different our plugin: [Display linked issues](https://market
    </tr></table>
 
 
-#### How to display the date in the correct format with $issueFieldRender?  ####
+#### How to display the date in the correct format?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
 ```velocity 
@@ -335,7 +347,7 @@ $issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
 Result:
 <a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%"/></a>
 
-#### How to show the multiline value of a text field with $issueFieldRender?  ####
+#### How to show the multiline value of a text field?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
 ```velocity 
@@ -367,18 +379,10 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 Result:
 <a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%"/></a>
 
-#### Get parent issue ####
 
- 
-    $formIssue.parentObject.key
-    $issue.parentObject.key
+## Field Validation Examples
 
-    #if($formIssue.parentObject)
-      $cfValues.get($formIssue.parentObject, "Impact").value ## impact - custom select field
-    #end
-
-
-#### Check priority ####
+### Priority Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%"/></a>
 
@@ -392,7 +396,7 @@ Result:
           State the reason for the High priority. ##Message text
       #end
 
-#### Check components ####
+### Component Validation
 
       #foreach($component in $formIssue.components)
          #if($component.name == "Test component")
@@ -401,11 +405,9 @@ Result:
          #end
       #end
 
-
-#### Validate summary ####
+### Summary Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%"/></a>
-
 
       #if($formIssue.summary.contains("PROJECTKEY"))
          message contains PROJECTKEY<br> ##Message text
@@ -419,7 +421,7 @@ Result:
          Short summary<br> ##Message text
       #end
 
-#### Check description and User Picker (single user) ####
+### Description and User Picker Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="50%"/></a>
 
@@ -427,8 +429,7 @@ Result:
          You need to set data in the system description field and specify the user in the custom field "User Picker (single user)" ##Message text
       #end
 
-
-#### Check number custom field ####
+### Number Field Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="50%"/></a>
 
@@ -436,7 +437,7 @@ Result:
          number > 10 ##Message text
       #end
 
-#### Check option from custom select field(checkbox or radio)  ####
+### Select Field Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="50%"/></a>
 
@@ -452,24 +453,9 @@ Result:
          "Select List (multiple choices)" contains otpion with id 10301(option2) ##Message text
       #end
 
+## Advanced Features
 
-#### Check how long ago the transition was made. Show message after transition. (How to use $secAfterLastTransition) ####
-
-
-      $fieldDisplayConfig.setHidden(true)##hide message by default (Including cases when there were no transitions yet.)
-
-      #if($secAfterLastTransition && $secAfterLastTransition < 1*60)##We check that less than 1 minute has passed since the last transition (the time is indicated as a number of seconds)
-		$fieldDisplayConfig.setHidden(false)## Show a message if the transition was not long ago. (< 1 min ago)
-		
-		##message edit here
-		data:<br>
-		$secAfterLastTransition<br>
-		$previousStatusId <br>
-		$previousStatusName <br>
-
-      #end
-
-#### Display messages in the user's language. (Multi-language messages. How to use $language?) ####
+### Multi-language Messages
 
       #if($language == "es")
           mensaje en español<br>
@@ -483,7 +469,7 @@ Result:
       #end
 
 
-#### How to work with cascade select field? ####
+### Cascade Select Field
 
       1 - $cfValues.getFromForm(10101)<br>
       2 - $cfValues.getFromForm("customfield_10101")<br>
@@ -540,7 +526,7 @@ Result:
          message3<br>
       #end
 
-#### How to use $insightService? ####
+### Insight Service ($insightService)
 
 [see Java doc $insightService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/InsightService.html)
 
@@ -563,7 +549,7 @@ Result:
       #end
 
 
-#### How to use $userGroupService? ####
+### User Group Service ($userGroupService)
 
 [see Java doc $userGroupService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/UserGroupService.html)
 
@@ -727,7 +713,7 @@ Current user is not a developer
 <p>No support team members are currently available.</p>
 </div>
 
-#### How to use $cast? ####
+### Cast Utility ($cast)
 
 [see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
 
@@ -754,9 +740,9 @@ Current user is not a developer
          $fieldDisplayConfig.setHidden(true)##hide
       #end
 
-### Example scenarios ###
+## Real-World Example Scenarios
 
-#### Project managers want a warning message on the form if the issue priority is High. ####
+### Priority-Based Warning Messages
 
       #if($issue.getPriorityObject().name == "High")
       <b style="color:red;">Warning: the issue priority is High!</b>
@@ -764,9 +750,34 @@ Current user is not a developer
       <p>Normal priority. Work as usual.</p>
       #end
 
+### Priority-Dependent Validation
 
-#### We need information about the current assignee, including their Slack profile link stored in the user properties (key slackLink). ####
+<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%"/></a>
+      
+    #if($formIssue.priority.name == "Blocker")
+    	$fieldDisplayConfig.setMessageType("error")
+    	#if(!$formIssue.description || $formIssue.description.isEmpty())
+    		$fieldDisplayConfig.setShowForFieldId("description")
+    		State the reason for the Blocker priority.
+    	#elseif(!$formIssue.assignee)
+    		$fieldDisplayConfig.setShowForFieldId("assignee")
+    		Indicate the responsible employee
+    	#else
+    	  $fieldDisplayConfig.setHidden(true)
+    	#end
+    #elseif($formIssue.priority.name == "High")
+    	$fieldDisplayConfig.setMessageType("warning")
+    	#if($formIssue.description.isEmpty())
+    		$fieldDisplayConfig.setShowForFieldId("description")
+    		State the reason for the High priority.
+    	#else
+    	  	  $fieldDisplayConfig.setHidden(true)
+    	#end
+    #elseif($formIssue.priority.name == "Medium" || $formIssue.priority.name == "Low")
+    	$fieldDisplayConfig.setHidden(true)
+    #end
 
+### Assignee Information with External Links
 
       #if($issue.assignee)
         <p>Assignee: $issue.assignee.displayName</p>
@@ -782,8 +793,7 @@ Current user is not a developer
         <p><i>No assignee</i></p>
       #end
 
-
-#### Different issue types (Bug, Task, etc.) require different message formats. ####
+### Issue Type-Specific Messages
 
       #set($typeName = $issue.issueTypeObject.name)
       
@@ -795,8 +805,7 @@ Current user is not a developer
       <p>Issue type: $typeName. No extra instructions required.</p>
       #end
 
-
-#### Suppose the issue can have components like “UI/UX”, “Backend”, “Mobile”. Depending on the chosen component, show which team is responsible. ####
+### Component-Based Team Assignments
 
       #set($components = $issue.getComponents())
       #if($components && $components.size() > 0)
@@ -819,8 +828,7 @@ Current user is not a developer
         <p style="color:orange;">No components selected. Please specify at least one!</p>
       #end
 
-
-#### If the Due Date has passed, show a red warning. #### 
+### Due Date Warnings
 
       #set($dueDate = $issue.getDueDate())
       #if($dueDate && $dueDate.before($actionDate))
@@ -829,7 +837,7 @@ Current user is not a developer
       <p>The issue is on schedule or no due date is set.</p>
       #end
 
-#### If no Fix Version is set, show a warning. #### 
+### Fix Version Validation
 
       #set($fixVersions = $issue.getFixVersions())
       #if($fixVersions && $fixVersions.size() > 0)
@@ -842,8 +850,7 @@ Current user is not a developer
       <p>No version selected. Please specify the release.</p>
       #end
 
-
-#### If the issue type is “Bug”, display a note about reproducible steps; if it’s “Story”, mention acceptance criteria, etc. ####
+### Issue Type Requirements
 
       #set($type = $issue.issueTypeObject.name)
       #if($type == "Bug")
@@ -854,8 +861,7 @@ Current user is not a developer
       <p>No special requirements for type: $type</p>
       #end
 
-
-#### If the value > 100000, show an alert. ####
+### Budget Threshold Alerts
 
       #set($budgetField = $cfValues.getFromForm("Budget")))
       #if($budgetField && $budgetField > 100000)
@@ -864,8 +870,7 @@ Current user is not a developer
       <p>Budget is within acceptable limits.</p>
       #end
 
-
-#### If the user selects the “UI/UX” component, show a design reminder; if “Backend”, show a microservices reminder. ####
+### Component-Specific Reminders
 
       #set($componentList = $issue.getComponents())
       #set($hasUIUX = false)
@@ -889,9 +894,7 @@ Current user is not a developer
       <p>No specific components selected, proceeding under standard workflow.</p>
       #end
 
-
-#### An issue might have attachments such as Excel or PDF files. You need to highlight these file types and provide links to them. #### 
-
+### Attachment Type Detection
 
       #set($attachments = $issue.getAttachments())
       #if($attachments && $attachments.size() > 0)
