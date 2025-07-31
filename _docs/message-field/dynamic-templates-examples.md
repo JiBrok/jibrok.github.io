@@ -563,6 +563,95 @@ Result:
       #end
 
 
+#### How to use $userGroupService? ####
+
+[see Java doc $userGroupService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/UserGroupService.html)
+
+**Get user by username:**
+```velocity
+#set($user = $userGroupService.getUserByName("john.doe"))
+#if($user)
+    User found: $user.displayName ($user.emailAddress)
+#else
+    User not found
+#end
+```
+
+**Check if user is in group:**
+```velocity
+## Check if specific user is in administrators group
+#if($userGroupService.isUserInGroup("john.doe", "jira-administrators"))
+    User john.doe is an administrator
+#else
+    User john.doe is not an administrator
+#end
+
+## Check if current user is in specific group
+#if($userGroupService.isUserInGroup($currentUser, "developers"))
+    Current user is a developer
+#else
+    Current user is not a developer
+#end
+```
+
+**Show different messages based on user group membership:**
+```velocity
+#if($userGroupService.isUserInGroup($currentUser, "jira-administrators"))
+    $fieldDisplayConfig.setMessageType("info")
+    <strong>Administrator Access:</strong> You have full system privileges.
+#elseif($userGroupService.isUserInGroup($currentUser, "project-managers"))
+    $fieldDisplayConfig.setMessageType("success")
+    <strong>Project Manager:</strong> You can manage project settings and user assignments.
+#elseif($userGroupService.isUserInGroup($currentUser, "developers"))
+    $fieldDisplayConfig.setMessageType("warning")
+    <strong>Developer Access:</strong> Please follow coding standards and review guidelines.
+#else
+    $fieldDisplayConfig.setMessageType("error")
+    <strong>Limited Access:</strong> Contact your administrator for additional permissions.
+#end
+```
+
+**Validate assignee group membership:**
+```velocity
+#if($formIssue.assignee)
+    #if($userGroupService.isUserInGroup($formIssue.assignee, "developers"))
+        ✓ Assignee is a developer - ready for development
+    #elseif($userGroupService.isUserInGroup($formIssue.assignee, "qa-team"))
+        ✓ Assignee is a QA team member - ready for testing
+    #else
+        ⚠️ Warning: Assignee is not in development or QA team
+    #end
+#else
+    ❌ No assignee selected
+#end
+```
+
+**Dynamic user mentions based on group:**
+```velocity
+#set($supportUsers = ["admin", "support.manager", "help.desk"])
+#set($supportTeamMembers = [])
+
+#foreach($username in $supportUsers)
+    #if($userGroupService.isUserInGroup($username, "jira-servicedesk-users"))
+        #set($user = $userGroupService.getUserByName($username))
+        #if($user)
+            $supportTeamMembers.add($user)
+        #end
+    #end
+#end
+
+#if($supportTeamMembers.size() > 0)
+    <p>Available support team members:</p>
+    <ul>
+    #foreach($member in $supportTeamMembers)
+        <li>$member.displayName - $member.emailAddress</li>
+    #end
+    </ul>
+#else
+    <p>No support team members are currently available.</p>
+#end
+```
+
 #### How to use $cast? ####
 
 [see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
@@ -743,5 +832,120 @@ Result:
          #end
       #else
          No attachments found.
+      #end
+
+#### Show different approval workflows based on user group membership. ####
+
+      #if($userGroupService.isUserInGroup($currentUser, "executives"))
+        <div style="border: 2px solid gold; padding: 10px; background: #fff8dc;">
+          <h4>🏆 Executive Approval Process</h4>
+          <p>As an executive, you can approve high-priority requests immediately.</p>
+          <p>Your approval supersedes all other requirements.</p>
+        </div>
+      #elseif($userGroupService.isUserInGroup($currentUser, "managers"))
+        <div style="border: 2px solid blue; padding: 10px; background: #e6f3ff;">
+          <h4>👔 Manager Approval Required</h4>
+          <p>As a manager, you can approve requests up to $10,000.</p>
+          <p>For amounts above $10,000, executive approval is required.</p>
+        </div>
+      #elseif($userGroupService.isUserInGroup($currentUser, "team-leads"))
+        <div style="border: 2px solid green; padding: 10px; background: #e6ffe6;">
+          <h4>🎯 Team Lead Review</h4>
+          <p>As a team lead, you can approve team resource requests.</p>
+          <p>Budget requests require manager approval.</p>
+        </div>
+      #else
+        <div style="border: 2px solid orange; padding: 10px; background: #fff4e6;">
+          <h4>📋 Standard Process</h4>
+          <p>Your request will go through the standard approval workflow:</p>
+          <p>Team Lead → Manager → Executive (if required)</p>
+        </div>
+      #end
+
+#### Restrict issue creation based on user group and show appropriate guidance. ####
+
+      #if($context == "CREATE")
+        #if($userGroupService.isUserInGroup($currentUser, "restricted-users"))
+          $fieldDisplayConfig.setMessageType("error")
+          <h4>❌ Access Restricted</h4>
+          <p>Your account has limited permissions for creating issues in this project.</p>
+          <p>Please contact your project administrator to request access.</p>
+          <p>Administrator: <strong>admin@company.com</strong></p>
+        #elseif($userGroupService.isUserInGroup($currentUser, "external-contractors"))
+          $fieldDisplayConfig.setMessageType("warning")
+          <h4>⚠️ External Contractor Guidelines</h4>
+          <p>As an external contractor, please ensure:</p>
+          <ul>
+            <li>All issues are clearly described with acceptance criteria</li>
+            <li>Estimated hours are provided in the "Story Points" field</li>
+            <li>Contact person is specified in the description</li>
+          </ul>
+        #elseif($userGroupService.isUserInGroup($currentUser, "new-employees"))
+          $fieldDisplayConfig.setMessageType("info")
+          <h4>👋 Welcome New Team Member!</h4>
+          <p>As a new employee, here are some tips for issue creation:</p>
+          <ul>
+            <li>Use clear, descriptive summaries</li>
+            <li>Select appropriate issue types (Bug, Task, Story)</li>
+            <li>Set priority based on business impact</li>
+            <li>Ask your mentor if you're unsure about any field</li>
+          </ul>
+        #end
+      #end
+
+#### Display team-specific notifications based on assignee's group membership. ####
+
+      #if($formIssue.assignee)
+        #set($assignee = $formIssue.assignee)
+        
+        #if($userGroupService.isUserInGroup($assignee, "mobile-team"))
+          <div style="background: #e8f5e8; border-left: 4px solid #4caf50; padding: 10px;">
+            <h4>📱 Mobile Team Assignment</h4>
+            <p><strong>Assigned to:</strong> $assignee.displayName (Mobile Team)</p>
+            <p><strong>Important:</strong> Please test on both iOS and Android platforms</p>
+            <p><strong>Review Checklist:</strong></p>
+            <ul>
+              <li>Cross-platform compatibility</li>
+              <li>Performance on low-end devices</li>
+              <li>App store compliance</li>
+            </ul>
+          </div>
+        #elseif($userGroupService.isUserInGroup($assignee, "backend-team"))
+          <div style="background: #e8f4fd; border-left: 4px solid #2196f3; padding: 10px;">
+            <h4>⚙️ Backend Team Assignment</h4>
+            <p><strong>Assigned to:</strong> $assignee.displayName (Backend Team)</p>
+            <p><strong>Important:</strong> Consider microservices architecture</p>
+            <p><strong>Review Checklist:</strong></p>
+            <ul>
+              <li>API documentation</li>
+              <li>Database migration scripts</li>
+              <li>Performance and scalability</li>
+              <li>Security considerations</li>
+            </ul>
+          </div>
+        #elseif($userGroupService.isUserInGroup($assignee, "qa-team"))
+          <div style="background: #fef7e8; border-left: 4px solid #ff9800; padding: 10px;">
+            <h4>🧪 QA Team Assignment</h4>
+            <p><strong>Assigned to:</strong> $assignee.displayName (QA Team)</p>
+            <p><strong>Testing Focus:</strong></p>
+            <ul>
+              <li>Functional testing based on acceptance criteria</li>
+              <li>Regression testing for related features</li>
+              <li>Cross-browser/device compatibility</li>
+              <li>Performance testing if applicable</li>
+            </ul>
+          </div>
+        #else
+          <div style="background: #f5f5f5; border-left: 4px solid #9e9e9e; padding: 10px;">
+            <h4>👤 General Assignment</h4>
+            <p><strong>Assigned to:</strong> $assignee.displayName</p>
+            <p>Please follow standard development practices and contact your team lead if you need guidance.</p>
+          </div>
+        #end
+      #else
+        <div style="background: #ffebee; border-left: 4px solid #f44336; padding: 10px;">
+          <h4>⚠️ No Assignee</h4>
+          <p>This issue needs to be assigned to a team member before work can begin.</p>
+        </div>
       #end
 

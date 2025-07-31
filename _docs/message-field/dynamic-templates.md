@@ -22,7 +22,11 @@ To enable templates you need to set **Velocity render** **'On'** in the field co
 
 Special variables will be available in the template for work with data. Links lead to <a href="/jira/plugins/message-field/java/doc/"> Java doc </a> with descriptions of available methods.
 
-* [$issue](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/issue/Issue.html)
+**Note:** Some variables marked with ⚠️ are available only for **non-delegated settings**.
+
+* $baseUrl
+    * This variable contains the base URL of the Jira instance.
+* [$issue](https://docs.atlassian.com/software/jira/docs/api/latest/com/atlassian/jira/issue/Issue.html)
     * This variable contains the issue data stored in the database.
     * This variable is not defined on the creation screen($context == "CREATE").
 * $form
@@ -34,7 +38,7 @@ Special variables will be available in the template for work with data. Links le
 * [$formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) - 🔥Recommended for use.
     * The variable combines data from $issue and $form.
     * Data from the screen($form) are in priority.
-    * The data from the screen($form) undergoes additional validation and processing. Invalid values ​​return null.
+    * The data from the screen($form) undergoes additional validation and processing. Invalid values return null.
     * The data in the variable is updated in real time. 
 * [$fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
     * The variable contains information about the display of the message (message type, location, etc.).
@@ -48,12 +52,12 @@ Special variables will be available in the template for work with data. Links le
     * "VIEW_ISSUE" - Issue view screen
     * "CREATE_SD" - Service desk create screen
     * "VIEW_SD" - Service desk view screen
-* [$currentUser](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/user/ApplicationUser.html)
+* [$currentUser](https://docs.atlassian.com/software/jira/docs/api/latest/com/atlassian/jira/user/ApplicationUser.html)
   * The user who is viewing the message.
 * [$locale](https://docs.oracle.com/javase/8/docs/api/java/util/Locale.html)
     * A Locale object represents a specific geographical, political, or cultural region of **currentUser**
 * [$language](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
-    * Returns the country/region code of **currentUser**. (String)
+    * Returns the language code of **currentUser**. (String)
 * [$country](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
     * Returns the country code of **currentUser**. (String)
 * [$timeZone](https://docs.oracle.com/javase/7/docs/api/java/util/TimeZone.html)
@@ -78,21 +82,42 @@ Special variables will be available in the template for work with data. Links le
     * Only available on transition screens.
 * [$cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html)
     * Utility object for getting custom field value from $issue and $formIssue.
-* [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
+* ⚠️ [$links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
     * Utility object for getting issue links or linked issues.
-* [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
+    * **Only for non-delegated settings.**
+* [$linksWithCheckPermissions](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/LinksWithCheckPermissions.html)
+    * Utility object for getting issue links or linked issues with permission checks.
+* ⚠️ [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
     * Utility object for getting JQL results. 
+    * **Only for non-delegated settings.**
     * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
-* [$issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+* [$jqlServiceWithCheckPermissions](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlServiceWithCheckPermissions.html)
+    * Utility object for getting JQL results with permission checks.
+* ⚠️ [$issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
     * Utility object for rendering issue fields values as HTML.
+    * **Only for non-delegated settings.**
+* [$issueFieldRenderWithCheckPermissions](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRenderWithCheckPermissions.html)
+    * Utility object for rendering issue fields values as HTML with permission checks.
 * [$JSON](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JSON.html)
     * Utility object for parse string to JSONObject.
-* [$ComponentAccessor](https://docs.atlassian.com/software/jira/docs/api/8.12.1/com/atlassian/jira/component/ComponentAccessor.html)
+* ⚠️ [$ComponentAccessor](https://docs.atlassian.com/software/jira/docs/api/latest/com/atlassian/jira/component/ComponentAccessor.html)
     * Provides static methods for accessing JIRA's managed components.
-* [$permissionHelper](https://jibrok.com/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/PermissionHelperForMessageField.html)
+    * **Only for non-delegated settings.**
+* [$mathTool](https://velocity.apache.org/tools/1.4/javadoc/org/apache/velocity/tools/generic/MathTool.html)
+    * Mathematical operations tool for Velocity templates.
+* ⚠️ [$permissionHelper](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/PermissionHelperForMessageField.html)
     * Tool for check permission.
+    * **Only for non-delegated settings.**
     * Example: $permissionHelper.hasPermission("BROWSE_PROJECTS", $issue.reporter) - checking that the reporter of the issue has access to the project of the current issue.
     * Permissions: ADD_COMMENTS, ADMINISTER_PROJECTS, ARCHIVE_ISSUES, ASSIGNABLE_USER, ASSIGN_ISSUES, BROWSE_ARCHIVE, BROWSE_PROJECTS, CLOSE_ISSUES, CREATE_ATTACHMENTS, CREATE_ISSUES, DELETE_ALL_ATTACHMENTS, DELETE_ALL_COMMENTS, DELETE_ALL_WORKLOGS, DELETE_ISSUES, DELETE_OWN_ATTACHMENTS, DELETE_OWN_COMMENTS, DELETE_OWN_WORKLOGS, EDIT_ALL_COMMENTS, EDIT_ALL_WORKLOGS, EDIT_ISSUES, EDIT_OWN_COMMENTS, EDIT_OWN_WORKLOGS, EDIT_SPRINT_NAME_AND_GOAL_PERMISSION, LINK_ISSUES, MANAGE_SPRINTS_PERMISSION, MANAGE_WATCHERS, MODIFY_REPORTER, MOVE_ISSUES, RESOLVE_ISSUES, RESTORE_ISSUES, SCHEDULE_ISSUES, SET_ISSUE_SECURITY, START_STOP_SPRINTS_PERMISSION, TRANSITION_ISSUES, VIEW_DEV_TOOLS, VIEW_READONLY_WORKFLOW, VIEW_VOTERS_AND_WATCHERS, WORK_ON_ISSUES
+* ⚠️ [$cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
+    * Utility for converting Integer, Long, String types into each other.
+    * **Only for non-delegated settings.**
+    * Examples: $cast.toLong("1"), $cast.toInteger($cfValues.getFromForm("customfield_10200").optionId), $cast.toString(1)
+* ⚠️ [$userGroupService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/UserGroupService.html)
+    * Service for retrieving users by username and checking group membership.
+    * **Only for non-delegated settings.**
+    * Examples: $userGroupService.getUserByName("john.doe"), $userGroupService.isUserInGroup("john.doe", "jira-administrators"), $userGroupService.isUserInGroup($currentUser, "developers")
 
 
 ## Parameters for demonstration
