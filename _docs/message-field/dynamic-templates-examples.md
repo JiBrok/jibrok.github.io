@@ -577,6 +577,14 @@ Result:
 #end
 ```
 
+**Result (if user exists):**
+
+User found: John Doe (john.doe@company.com)
+
+**Result (if user doesn't exist):**
+
+User not found
+
 **Check if user is in group:**
 ```velocity
 ## Check if specific user is in administrators group
@@ -593,6 +601,16 @@ Result:
     Current user is not a developer
 #end
 ```
+
+**Result (if john.doe is admin and current user is developer):**
+
+User john.doe is an administrator<br>
+Current user is a developer
+
+**Result (if john.doe is not admin and current user is not developer):**
+
+User john.doe is not an administrator<br>
+Current user is not a developer
 
 **Show different messages based on user group membership:**
 ```velocity
@@ -611,6 +629,30 @@ Result:
 #end
 ```
 
+**Result (for administrator):**
+
+<div class="aui-message aui-message-info" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #d4edda;">
+    <strong>Administrator Access:</strong> You have full system privileges.
+</div>
+
+**Result (for project manager):**
+
+<div class="aui-message aui-message-success" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #d1ecf1;">
+    <strong>Project Manager:</strong> You can manage project settings and user assignments.
+</div>
+
+**Result (for developer):**
+
+<div class="aui-message aui-message-warning" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #fff3cd;">
+    <strong>Developer Access:</strong> Please follow coding standards and review guidelines.
+</div>
+
+**Result (for regular user):**
+
+<div class="aui-message aui-message-error" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #f8d7da;">
+    <strong>Limited Access:</strong> Contact your administrator for additional permissions.
+</div>
+
 **Validate assignee group membership:**
 ```velocity
 #if($formIssue.assignee)
@@ -625,6 +667,22 @@ Result:
     ❌ No assignee selected
 #end
 ```
+
+**Result (assignee is developer):**
+
+✓ Assignee is a developer - ready for development
+
+**Result (assignee is QA team member):**
+
+✓ Assignee is a QA team member - ready for testing
+
+**Result (assignee is in other group):**
+
+⚠️ Warning: Assignee is not in development or QA team
+
+**Result (no assignee):**
+
+❌ No assignee selected
 
 **Dynamic user mentions based on group:**
 ```velocity
@@ -651,6 +709,23 @@ Result:
     <p>No support team members are currently available.</p>
 #end
 ```
+
+**Result (when support members are found):**
+
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background: #f9f9f9;">
+<p>Available support team members:</p>
+<ul>
+    <li>System Administrator - admin@company.com</li>
+    <li>Support Manager - support.manager@company.com</li>
+    <li>Help Desk - help.desk@company.com</li>
+</ul>
+</div>
+
+**Result (when no support members are found):**
+
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background: #f9f9f9;">
+<p>No support team members are currently available.</p>
+</div>
 
 #### How to use $cast? ####
 
@@ -862,6 +937,38 @@ Result:
         </div>
       #end
 
+**Result (for executive user):**
+
+<div style="border: 2px solid gold; padding: 10px; background: #fff8dc; margin: 10px 0;">
+  <h4>🏆 Executive Approval Process</h4>
+  <p>As an executive, you can approve high-priority requests immediately.</p>
+  <p>Your approval supersedes all other requirements.</p>
+</div>
+
+**Result (for manager user):**
+
+<div style="border: 2px solid blue; padding: 10px; background: #e6f3ff; margin: 10px 0;">
+  <h4>👔 Manager Approval Required</h4>
+  <p>As a manager, you can approve requests up to $10,000.</p>
+  <p>For amounts above $10,000, executive approval is required.</p>
+</div>
+
+**Result (for team lead user):**
+
+<div style="border: 2px solid green; padding: 10px; background: #e6ffe6; margin: 10px 0;">
+  <h4>🎯 Team Lead Review</h4>
+  <p>As a team lead, you can approve team resource requests.</p>
+  <p>Budget requests require manager approval.</p>
+</div>
+
+**Result (for regular user):**
+
+<div style="border: 2px solid orange; padding: 10px; background: #fff4e6; margin: 10px 0;">
+  <h4>📋 Standard Process</h4>
+  <p>Your request will go through the standard approval workflow:</p>
+  <p>Team Lead → Manager → Executive (if required)</p>
+</div>
+
 #### Restrict issue creation based on user group and show appropriate guidance. ####
 
       #if($context == "CREATE")
@@ -892,6 +999,40 @@ Result:
           </ul>
         #end
       #end
+
+**Result (for restricted user on create screen):**
+
+<div class="aui-message aui-message-error" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #f8d7da;">
+  <h4>❌ Access Restricted</h4>
+  <p>Your account has limited permissions for creating issues in this project.</p>
+  <p>Please contact your project administrator to request access.</p>
+  <p>Administrator: <strong>admin@company.com</strong></p>
+</div>
+
+**Result (for external contractor on create screen):**
+
+<div class="aui-message aui-message-warning" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #fff3cd;">
+  <h4>⚠️ External Contractor Guidelines</h4>
+  <p>As an external contractor, please ensure:</p>
+  <ul>
+    <li>All issues are clearly described with acceptance criteria</li>
+    <li>Estimated hours are provided in the "Story Points" field</li>
+    <li>Contact person is specified in the description</li>
+  </ul>
+</div>
+
+**Result (for new employee on create screen):**
+
+<div class="aui-message aui-message-info" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #d4edda;">
+  <h4>👋 Welcome New Team Member!</h4>
+  <p>As a new employee, here are some tips for issue creation:</p>
+  <ul>
+    <li>Use clear, descriptive summaries</li>
+    <li>Select appropriate issue types (Bug, Task, Story)</li>
+    <li>Set priority based on business impact</li>
+    <li>Ask your mentor if you're unsure about any field</li>
+  </ul>
+</div>
 
 #### Display team-specific notifications based on assignee's group membership. ####
 
@@ -948,4 +1089,62 @@ Result:
           <p>This issue needs to be assigned to a team member before work can begin.</p>
         </div>
       #end
+
+**Result (assignee is mobile team member - John Smith):**
+
+<div style="background: #e8f5e8; border-left: 4px solid #4caf50; padding: 10px; margin: 10px 0;">
+  <h4>📱 Mobile Team Assignment</h4>
+  <p><strong>Assigned to:</strong> John Smith (Mobile Team)</p>
+  <p><strong>Important:</strong> Please test on both iOS and Android platforms</p>
+  <p><strong>Review Checklist:</strong></p>
+  <ul>
+    <li>Cross-platform compatibility</li>
+    <li>Performance on low-end devices</li>
+    <li>App store compliance</li>
+  </ul>
+</div>
+
+**Result (assignee is backend team member - Sarah Johnson):**
+
+<div style="background: #e8f4fd; border-left: 4px solid #2196f3; padding: 10px; margin: 10px 0;">
+  <h4>⚙️ Backend Team Assignment</h4>
+  <p><strong>Assigned to:</strong> Sarah Johnson (Backend Team)</p>
+  <p><strong>Important:</strong> Consider microservices architecture</p>
+  <p><strong>Review Checklist:</strong></p>
+  <ul>
+    <li>API documentation</li>
+    <li>Database migration scripts</li>
+    <li>Performance and scalability</li>
+    <li>Security considerations</li>
+  </ul>
+</div>
+
+**Result (assignee is QA team member - Mike Wilson):**
+
+<div style="background: #fef7e8; border-left: 4px solid #ff9800; padding: 10px; margin: 10px 0;">
+  <h4>🧪 QA Team Assignment</h4>
+  <p><strong>Assigned to:</strong> Mike Wilson (QA Team)</p>
+  <p><strong>Testing Focus:</strong></p>
+  <ul>
+    <li>Functional testing based on acceptance criteria</li>
+    <li>Regression testing for related features</li>
+    <li>Cross-browser/device compatibility</li>
+    <li>Performance testing if applicable</li>
+  </ul>
+</div>
+
+**Result (assignee is general user - Jane Doe):**
+
+<div style="background: #f5f5f5; border-left: 4px solid #9e9e9e; padding: 10px; margin: 10px 0;">
+  <h4>👤 General Assignment</h4>
+  <p><strong>Assigned to:</strong> Jane Doe</p>
+  <p>Please follow standard development practices and contact your team lead if you need guidance.</p>
+</div>
+
+**Result (no assignee):**
+
+<div style="background: #ffebee; border-left: 4px solid #f44336; padding: 10px; margin: 10px 0;">
+  <h4>⚠️ No Assignee</h4>
+  <p>This issue needs to be assigned to a team member before work can begin.</p>
+</div>
 
