@@ -17,7 +17,7 @@ Queue size statistics available by url: {baseUrl}/rest/jibrok/timeinstatus/1.0/p
 </p>
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.webp"><img src="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.webp" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.webp" target="_blank"><img src="/uploads/time-in-status/performance-config-multithreading/settings-multithreading.webp" alt="" width="50%" loading="lazy"></a></p>
 
 
 ### Listeners ###
@@ -68,7 +68,7 @@ see [Performance settings - JQL: Count limit](/docs/time-in-status/performance-c
 
 Below is a table with experimental data. The table is based on real data, but serves solely to demonstrate the dynamics of changes in the query execution time depending on the settings.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.webp"><img src="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.webp" target="_blank"><img src="/uploads/time-in-status/performance-config-multithreading/local-test-issue-in-timeinstatus.webp" style="width:100%" loading="lazy"></a></p>
 
 The engine has not yet exhausted all the optimization possibilities. It will get better in newer versions of the app.
 

@@ -10,11 +10,11 @@ or from admin search
 
 gg + jql config
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-jql/performance-config-jql.webp"><img src="/uploads/time-in-status/performance-config-jql/performance-config-jql.webp" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-jql/performance-config-jql.webp" target="_blank"><img src="/uploads/time-in-status/performance-config-jql/performance-config-jql.webp" alt="" width="50%" loading="lazy"></a></p>
 
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-jql/performance-config-jql-2.webp"><img src="/uploads/time-in-status/performance-config-jql/performance-config-jql-2.webp" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/performance-config-jql/performance-config-jql-2.webp" target="_blank"><img src="/uploads/time-in-status/performance-config-jql/performance-config-jql-2.webp" alt="" width="50%" loading="lazy"></a></p>
 
 
 ### The search uses two mechanisms for working with counter values. ###

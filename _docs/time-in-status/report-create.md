@@ -8,7 +8,7 @@ The reporting rights are controlled by the system administrator. [More](/docs/ti
 
 If the user has rights to create new reports, then in the menu with reports he will have the corresponding button on the right side of the screen - "Create report".
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.webp"><img src="/uploads/time-in-status/reports-all/2.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.webp" target="_blank"><img src="/uploads/time-in-status/reports-all/2.webp" style="width:100%;" loading="lazy"></a></p>
 
 When clicked, the user opens an interface for creating reports.
 
@@ -25,18 +25,18 @@ Reports can work with any fields. Both with system fields and with fields from t
 * You can also display cells with a custom formula and display, such cells also have access to data from other cells (like excel).
 * For each report, access rights and a schedule for updating data are set separately.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.webp"><img src="/uploads/time-in-status/reports-all/4.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.webp" target="_blank"><img src="/uploads/time-in-status/reports-all/4.webp" style="width:100%;" loading="lazy"></a></p>
 
 ## More details ##
 
 * Name - Specified to search for a report and navigate between them.
 * Type - Report type, other report settings depend on it.
     * Table - Table report that allows you to specify any fields, formulas and grouping in the report.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/1.webp"><img src="/uploads/time-in-status/report-create/1.webp" style="width:50%;" loading="lazy"></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/1.webp" target="_blank"><img src="/uploads/time-in-status/report-create/1.webp" style="width:50%;" loading="lazy"></a></p>
     * Time in status - a report showing the time spent by tasks in status with a breakdown by executor.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/2.webp"><img src="/uploads/time-in-status/report-create/2.webp" style="width:50%;" loading="lazy"></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/2.webp" target="_blank"><img src="/uploads/time-in-status/report-create/2.webp" style="width:50%;" loading="lazy"></a></p>
     * Time in status by assignee - shows the time spent by tasks on different executors, broken down by status.
-      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/3.webp"><img src="/uploads/time-in-status/report-create/3.webp" style="width:50%;" loading="lazy"></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/3.webp" target="_blank"><img src="/uploads/time-in-status/report-create/3.webp" style="width:50%;" loading="lazy"></a></p>
 * JQL - tasks for which you need to build a report.
 * Schedule expression - reports are generated and save their data until the next generation. You can update (generate) reports manually or specify a schedule for automatic data updates.
     * specify the number N in minutes - every N minutes the report will be updated.
@@ -51,12 +51,12 @@ Reports can work with any fields. Both with system fields and with fields from t
 * JQLs - issues are counted only in the first matching jql. The issue will fall into only 1 group.
 * JQLs - issues are counted in all jqls. The issue will fall into all matching groups.
   * You can drag and drop the order of JQL conditions.
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/4.webp"><img src="/uploads/time-in-status/report-create/4.webp" style="width:50%;" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/4.webp" target="_blank"><img src="/uploads/time-in-status/report-create/4.webp" style="width:50%;" loading="lazy"></a></p>
 
 
   
 **Columns**
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/5.webp"><img src="/uploads/time-in-status/report-create/5.webp" style="width:50%;" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/5.webp" target="_blank"><img src="/uploads/time-in-status/report-create/5.webp" style="width:50%;" loading="lazy"></a></p>
 * Column title - the title will be displayed in the table.
 * Field - what data to show in the column. Depending on the selected field, a list of additional functions for calculating the value will be offered.
   * The value is calculated for the entire group.
@@ -67,15 +67,15 @@ Reports can work with any fields. Both with system fields and with fields from t
 * You can change the order of columns by dragging and dropping.
 
 * **Custom calculated field (html)** 
-  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/6.webp"><img src="/uploads/time-in-status/report-create/6.webp" style="width:50%;" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/report-create/6.webp" target="_blank"><img src="/uploads/time-in-status/report-create/6.webp" style="width:50%;" loading="lazy"></a></p>
 
 A special type of field. Using <a href="https://velocity.apache.org/engine/1.7/user-guide.html"> velocity </a> you can not only customize the display of the value (HTML) but also perform additional calculations. This field allows you to refer to any cells in the report and perform calculations based on them (like excel).
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.webp"><img src="/uploads/time-in-status/report-create/7.webp" style="width:50%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/7.webp" target="_blank"><img src="/uploads/time-in-status/report-create/7.webp" style="width:50%;" loading="lazy"></a></p>
 
 **Example**:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/8.webp"><img src="/uploads/time-in-status/report-create/8.webp" style="width:50%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/report-create/8.webp" target="_blank"><img src="/uploads/time-in-status/report-create/8.webp" style="width:50%;" loading="lazy"></a></p>
 
 
 1 field: 

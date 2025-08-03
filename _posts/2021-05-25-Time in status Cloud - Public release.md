@@ -20,7 +20,7 @@ This application counts the time spent by the issue in the specified statuses. Y
 Time in status can be displayed in the field or in the panel.
 
 
-<p><a href="/uploads/tis-cloud/web-panel-1.webp"><img src="/uploads/tis-cloud/web-panel-1.webp" style="width:100%;" loading="lazy"></a></p>
+<p><a href="/uploads/tis-cloud/web-panel-1.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-1.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 ### Custom field ###
@@ -42,14 +42,14 @@ After installing the application, the administration page is available to you. Y
 
 <table>
 <tr>
-<td><a href="/uploads/tis-cloud/manage-your-apss-tis.webp"><img src="/uploads/tis-cloud/manage-your-apss-tis.webp" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/manage-your-apss.webp"><img src="/uploads/tis-cloud/manage-your-apss.webp" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/tis-cloud-configured.webp"><img src="/uploads/tis-cloud/tis-cloud-configured.webp" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/tis-cloud-configured-2.webp"><img src="/uploads/tis-cloud/tis-cloud-configured-2.webp" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/manage-your-apss-tis.webp" target="_blank"><img src="/uploads/tis-cloud/manage-your-apss-tis.webp" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/manage-your-apss.webp" target="_blank"><img src="/uploads/tis-cloud/manage-your-apss.webp" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/tis-cloud-configured.webp" target="_blank"><img src="/uploads/tis-cloud/tis-cloud-configured.webp" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/tis-cloud-configured-2.webp" target="_blank"><img src="/uploads/tis-cloud/tis-cloud-configured-2.webp" loading="lazy"></a></td>
 </tr>
 </table>
 
-<p><a href="/uploads/tis-cloud/create-field-2.webp"><img src="/uploads/tis-cloud/create-field-2.webp" style="width:100%;" loading="lazy"></a></p>
+<p><a href="/uploads/tis-cloud/create-field-2.webp" target="_blank"><img src="/uploads/tis-cloud/create-field-2.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 Unfortunately, we had to abandon the standard interface for creating fields in the Jira Cloud. And the Time in status fields are created and configured through the application interface.

@@ -7,8 +7,8 @@ The other day we published improvements that allow you to work with the first la
 Today we have added a display of the previous timer values in the web panel.
 <table>
 <tr>
-<td><p style="text-align: center;"><a href="/uploads/timer-cloud/timerhistory-1.webp"><img src="/uploads/timer-cloud/timerhistory-1.webp" style="width:100%" loading="lazy"></a></p></td>
-<td><p style="text-align: center;"><a href="/uploads/timer-cloud/timerhistory-2.webp"><img src="/uploads/timer-cloud/timerhistory-2.webp" style="width:100%" loading="lazy"></a></p></td>
+<td><p style="text-align: center;"><a href="/uploads/timer-cloud/timerhistory-1.webp" target="_blank"><img src="/uploads/timer-cloud/timerhistory-1.webp" style="width:100%" loading="lazy"></a></p></td>
+<td><p style="text-align: center;"><a href="/uploads/timer-cloud/timerhistory-2.webp" target="_blank"><img src="/uploads/timer-cloud/timerhistory-2.webp" style="width:100%" loading="lazy"></a></p></td>
 </tr>
 </table>
 

@@ -10,10 +10,10 @@ After you create a Message field you can customize its message to display.
 * Select: **Fields** > **Custom Fields**.
 
 * Find your field and click **Actions** > **Configure**.
-<a href="/uploads/message-field/open-config.webp"><img src="/uploads/message-field/open-config.webp" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/message-field/open-config.webp" target="_blank"><img src="/uploads/message-field/open-config.webp" style="width:100%;" loading="lazy"></a>
 
 * Click **Edit JBCF:Message field** in field context.
-<a href="/uploads/message-field/edit-config.webp"><img src="/uploads/message-field/edit-config.webp" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/message-field/edit-config.webp" target="_blank"><img src="/uploads/message-field/edit-config.webp" style="width:100%;" loading="lazy"></a>
 
 In the opened window you can customize the text and display of the message for the selected context.
 One field can have several contexts, and for each of them you can set your own message.

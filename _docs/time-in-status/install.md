@@ -14,10 +14,10 @@ excerpt: "Install Time in Status plugin for Jira from Atlassian Marketplace or m
 2. Click the profile icon on the top right-hand corner of the screen.
 3. Go to **Atlassian Marketplace**.
 
-   <p style="text-align: center;"><a href="/uploads/message-field/install/atlassian-marketplace-menu.webp"><img src="/uploads/message-field/install/atlassian-marketplace-menu.webp" alt="open atlassian marketplace menu" width="50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/message-field/install/atlassian-marketplace-menu.webp" target="_blank"><img src="/uploads/message-field/install/atlassian-marketplace-menu.webp" alt="open atlassian marketplace menu" width="50%" loading="lazy"></a></p>
 
 4. Click **Find New Apps** on the menu on the left-hand side.
-   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install.webp"><img src="/uploads/time-in-status/install/install.webp" alt="find new apps: message field" width="100%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install.webp" target="_blank"><img src="/uploads/time-in-status/install/install.webp" alt="find new apps: message field" width="100%" loading="lazy"></a></p>
 
 5. Find **<text>Time in status | SLA | Timer | Stopwatch</text>** via search.
 6. Click **Buy Now** to purchase a licence for <text>"Time in status | SLA | Timer | Stopwatch"</text> or **Free Trial** if you want to start a trial.
@@ -33,25 +33,25 @@ excerpt: "Install Time in Status plugin for Jira from Atlassian Marketplace or m
 1. Open plugin page on Atlassian Marketplace: <a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch">Time in status | SLA | Timer | Stopwatch</a>
 2. Select hosting: Server or Data Center.
 
-   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install2.webp"><img src="/uploads/time-in-status/install/install2.webp" alt="select hosting" width="100%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install2.webp" target="_blank"><img src="/uploads/time-in-status/install/install2.webp" alt="select hosting" width="100%" loading="lazy"></a></p>
 
 3. Click **Download** at the bottom of the page.
 
-   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install3.webp"><img src="/uploads/time-in-status/install/install3.webp" alt="click download" width="100%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install3.webp" target="_blank"><img src="/uploads/time-in-status/install/install3.webp" alt="click download" width="100%" loading="lazy"></a></p>
 
 4. Login to your Jira instance as an admin.
 5. Click the **Administration** icon on the top right-hand corner of the screen.
 6. Go to **Manage apps**.
 
-   <p style="text-align: center;"><a href="/uploads/message-field/install/manage-apps.webp"><img src="/uploads/message-field/install/manage-apps.webp" alt="open manage apps" width="100%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/message-field/install/manage-apps.webp" target="_blank"><img src="/uploads/message-field/install/manage-apps.webp" alt="open manage apps" width="100%" loading="lazy"></a></p>
 
 7. Click **Upload app**.
 
-   <p style="text-align: center;"><a href="/uploads/message-field/install/upload-app.webp"><img src="/uploads/message-field/install/upload-app.webp" alt="click upload app" width="100%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/message-field/install/upload-app.webp" target="_blank"><img src="/uploads/message-field/install/upload-app.webp" alt="click upload app" width="100%" loading="lazy"></a></p>
 
 8. Click **Choose file** and select downloading file.
 
-   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install4.webp"><img src="/uploads/time-in-status/install/install4.webp" alt="select downloading app" width="50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/install/install4.webp" target="_blank"><img src="/uploads/time-in-status/install/install4.webp" alt="select downloading app" width="50%" loading="lazy"></a></p>
 
 9. Click **Upload**.
 

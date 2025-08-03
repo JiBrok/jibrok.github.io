@@ -14,10 +14,10 @@ The configuration is responsible for the stopwatch operation algorithm When shou
 [comment]: <> (TODO tutorials)
 
 * All timer configs are available in this interface. From here you can create, edit and delete config.<br>
-  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/1.webp"><img src="/uploads/time-in-status/timer-configs/1.webp" style="width:100%" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/1.webp" target="_blank"><img src="/uploads/time-in-status/timer-configs/1.webp" style="width:100%" loading="lazy"></a></p>
 
 * Click on button "Add timer configuration"<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/2.webp"><img src="/uploads/time-in-status/timer-configs/2.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/2.webp" target="_blank"><img src="/uploads/time-in-status/timer-configs/2.webp" style="width:100%" loading="lazy"></a></p>
 
 * Name - for navigation
 * Calculate type - after the timer stops, in the event of a restart. The timer will not start. It will restart and delete the previous value. It will be restarted and leave the previous values in the archive.

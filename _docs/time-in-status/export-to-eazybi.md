@@ -11,7 +11,7 @@ The example will use the standard settings.
 * **Field export format: JSON**
 * **Export empty value: No**
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/field-export-settings.webp"><img src="/uploads/time-in-status/export-to-eazybi/field-export-settings.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/field-export-settings.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/field-export-settings.webp" style="width:100%;" loading="lazy"></a></p>
 
 The time and state of the counter are simultaneously uploaded in JSON format. Other formats are easier to configure.
 
@@ -20,7 +20,7 @@ The time and state of the counter are simultaneously uploaded in JSON format. Ot
 The eazyBI app doesn't always see fields from third-party plugins. To solve this problem, they have special tools that allow you to manually configure additional fields.<br>
 As an administrator go to Settings (1) and open the Advanced settings(2) section.<br>
 Here you can specify the configuration of new fields.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/create-fields.webp"><img src="/uploads/time-in-status/export-to-eazybi/create-fields.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/create-fields.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/create-fields.webp" style="width:100%;" loading="lazy"></a></p>
 
 The example creates two fields. One for the time and the second for the counter state.
 1. In square brackets, replace the field ID(10107) in the id code of your Time in status field.
@@ -49,10 +49,10 @@ The example creates two fields. One for the time and the second for the counter 
 
 Now you can select new Fields in the Custom Fields tab.
 Once selected, click import. eazyBI imports data with new fields. (the fields are still empty)<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import-created-fields.webp"><img src="/uploads/time-in-status/export-to-eazybi/import-created-fields.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import-created-fields.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/import-created-fields.webp" style="width:100%;" loading="lazy"></a></p>
 
 The import must be successful. This means that the fields are configured correctly.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import.webp"><img src="/uploads/time-in-status/export-to-eazybi/import.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/import.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 Now open the report settings again and go to the Additional options tab.
@@ -71,14 +71,14 @@ Replace the 3rd line with the next one, then the time will be imported in minute
     issue.fields.customfield_10107_field_time = jsonValueFromTimeInStatus.time / 60
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import-js-example.webp"><img src="/uploads/time-in-status/export-to-eazybi/import-js-example.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/import-js-example.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/import-js-example.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 After setting up field initialization, **import the data again** so that the system loads the data into the new fields.
 
 ## Now you can use data from the Time in status fields in reports. ## 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/report-example.webp"><img src="/uploads/time-in-status/export-to-eazybi/report-example.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/export-to-eazybi/report-example.webp" target="_blank"><img src="/uploads/time-in-status/export-to-eazybi/report-example.webp" style="width:100%;" loading="lazy"></a></p>
     
     
     

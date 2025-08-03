@@ -9,8 +9,8 @@ On this page you can see all the "Time in status" fields and their settings. Thi
 ${baseUrl}/secure/jibrokSettingsForAllFields!default.jspa
 
 Admin Search (gg) + Time in status fields settings<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all-2.webp"><img src="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all-2.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all-2.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all-2.webp" style="width:50%" loading="lazy"></a></p>
 
 On the page you can display certain settings and fields. The set of settings selected for display is saved.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all.webp"><img src="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-all/time-in-status-field-all.webp" style="width:100%;" loading="lazy"></a></p>

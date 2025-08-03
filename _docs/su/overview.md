@@ -4,7 +4,7 @@ key: switch-user
 excerpt: Switch to User + Delegating SU allows Jira administrators to log in as other users for support and troubleshooting, with full audit logging and delegated permissions.
 ---
 
-<a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira?tab=overview&hosting=datacenter"><img src="/uploads/su/su-marketplace.webp" style="width:100%;;" loading="lazy"></a>
+<a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira?tab=overview&hosting=datacenter" target="_blank"><img src="/uploads/su/su-marketplace.webp" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira?tab=overview&hosting=datacenter)
 
@@ -23,21 +23,21 @@ In a couple of clicks, the administrator can go under another user and study the
 
 Switching to another user is available from the user menu or by url in you Jira **'/secure/jibrokSuSetUser.jspa'** or Go to from admin search (hot key gg) 'SU Login as another user'
 
-<p style="text-align: center;"><a href="/uploads/su/su-user-link.webp"><img src="/uploads/su/su-user-link.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/su/su-user-link.webp" target="_blank"><img src="/uploads/su/su-user-link.webp" style="width:100%" loading="lazy"></a></p>
 
 On the page that opens, you will have access to select users under which you can enter. Jira administrators are responsible for the accessible list.
 
-<p style="text-align: center;"><a href="/uploads/su/su-set-user-1.webp"><img src="/uploads/su/su-set-user-1.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/su/su-set-user-1.webp" target="_blank"><img src="/uploads/su/su-set-user-1.webp" style="width:100%" loading="lazy"></a></p>
 
 Click **Run as selected user**
 
-<p style="text-align: center;"><a href="/uploads/su/su-set-user-2.webp"><img src="/uploads/su/su-set-user-2.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/su/su-set-user-2.webp" target="_blank"><img src="/uploads/su/su-set-user-2.webp" style="width:100%" loading="lazy"></a></p>
 
 Everything! You are logged in under the selected user. At the end of the work, you need to exit Jira through the user menu.
 
 ### All actions with SU Permissions and logins are recorded in the standard Jira audit log. ###
 
-<p style="text-align: center;"><a href="/uploads/su/audit-log.webp"><img src="/uploads/su/audit-log.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/su/audit-log.webp" target="_blank"><img src="/uploads/su/audit-log.webp" style="width:100%" loading="lazy"></a></p>
 
 ---
 

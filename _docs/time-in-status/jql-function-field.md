@@ -4,7 +4,7 @@ key: time-in-status
 excerpt: "Create fields with periodic JQL function calculations for dynamic value updates based on issue queries and conditions."
 ---
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.webp"><img src="/uploads/time-in-status/jql-function-field/1.webp" style="width:50%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.webp" target="_blank"><img src="/uploads/time-in-status/jql-function-field/1.webp" style="width:50%;" loading="lazy"></a></p>
 
 How does this complex-named field work?
 The field settings indicate:
@@ -21,7 +21,7 @@ The field value is formed as follows.
 
 The field value is the same for all tasks using this field context.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/2.webp"><img src="/uploads/time-in-status/jql-function-field/2.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/2.webp" target="_blank"><img src="/uploads/time-in-status/jql-function-field/2.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 Examples of using.

@@ -28,12 +28,12 @@ Search works through the field. Therefore, all JQLs begin with the field name.
 
 Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp"><img src="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp" target="_blank"><img src="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp" style="width:100%" loading="lazy"></a></p>
 
 ## JQL Functions ##
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-jql/timer-field-jqls.webp"><img src="/uploads/time-in-status/timer-field-jql/timer-field-jqls.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-jql/timer-field-jqls.webp" target="_blank"><img src="/uploads/time-in-status/timer-field-jql/timer-field-jqls.webp" style="width:50%" loading="lazy"></a></p>
 
 ### “Timer field“ in active() ###
 

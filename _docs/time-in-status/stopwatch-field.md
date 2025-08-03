@@ -28,7 +28,7 @@ Main features:
 * Setting access rights
 * Ability to work with time as a prime number - simplifies integration with third-party solutions.
 
-[comment]: <> (TODO <a href="/uploads/time-in-status/overview/fields-example-2.webp"><img src="/uploads/time-in-status/overview/fields-example-2.webp" style="width:100%;" loading="lazy"></a>)
+[comment]: <> (TODO <a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank"><img src="/uploads/time-in-status/overview/fields-example-2.webp" style="width:100%;" loading="lazy"></a>)
 
 * Tracking new requests.
 * Analysis and collection of time data in the status of past tasks.

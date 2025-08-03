@@ -4,7 +4,7 @@ key: timer-cloud
 excerpt: "Timer field for Jira Cloud with countdown functionality, goal time limits, SLA tracking, and comprehensive time management features."
 ---
 
-<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud"><img src="/uploads/time-in-status/overview/marketplace.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud" target="_blank"><img src="/uploads/time-in-status/overview/marketplace.webp" style="width:100%;" loading="lazy"></a></p>
 
 <p style="text-align: center;">View app on <a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud">Atlassian Marketplace</a></p>
 ## Welcome to Timer for Jira Cloud!
@@ -28,7 +28,7 @@ Fields have a large number of time format for display.
 
 The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
 You can create an unlimited number of calendars and use it in any contexts and projects.
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp"><img src="/uploads/time-in-status/overview/calendar-example.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp" target="_blank"><img src="/uploads/time-in-status/overview/calendar-example.webp" style="width:100%;" loading="lazy"></a></p>
 
 ### Reports: ### 
 
@@ -36,8 +36,8 @@ The "Timer" fields can be used like regular fields in the JQL navigator and expo
 
 <table>
 <tr>
-<td><a href="/uploads/tis-cloud/time-in-status-navigator.webp"><img src="/uploads/tis-cloud/time-in-status-navigator.webp" style="width:100%;" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/time-in-status-excel.webp"><img src="/uploads/tis-cloud/time-in-status-excel.webp" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/time-in-status-navigator.webp" target="_blank"><img src="/uploads/tis-cloud/time-in-status-navigator.webp" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/time-in-status-excel.webp" target="_blank"><img src="/uploads/tis-cloud/time-in-status-excel.webp" style="width:100%;" loading="lazy"></a></td>
 </tr>
 </table>
 

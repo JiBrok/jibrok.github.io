@@ -4,7 +4,7 @@ key: calculated-custom-fields
 excerpt: JiBrok Calculated fields (JBCF) is a comprehensive pack of calculated custom fields for Jira, including To Do lists, shared components, formula fields, time calculations, and many more field types to enhance your Jira workflows.
 ---
 
-<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview"><img src="/uploads/jbcf/marketplace.webp" style="width:100%;;" loading="lazy"></a>
+<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview" target="_blank"><img src="/uploads/jbcf/marketplace.webp" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview)
 ## Welcome to JiBrok Calculated fields (JBCF)! 
@@ -16,7 +16,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 
 ## You can find all new fields by: JBCF ##
 
-<p style="text-align: center;"><a href="/uploads/jbcf/all-fields.webp"><img src="/uploads/jbcf/all-fields.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/jbcf/all-fields.webp" target="_blank"><img src="/uploads/jbcf/all-fields.webp" style="width:100%" loading="lazy"></a></p>
 
 * **[To Do list](/docs/calculated-custom-fields/todolist)**
   * Field for maintaining lists with the ability to mark completed items.
@@ -27,9 +27,9 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
   * Search: The field stores the value in the index.
   <table>
     <tr>
-    <td><a href="/uploads/jbcf/shared-components.webp"><img src="/uploads/jbcf/shared-components.webp" loading="lazy"></a></td>
-    <td><a href="/uploads/jbcf/shared-components2.webp"><img src="/uploads/jbcf/shared-components2.webp" loading="lazy"></a></td>
-    <td><a href="/uploads/jbcf/shared-components3.webp"><img src="/uploads/jbcf/shared-components3.webp" loading="lazy"></a></td>
+    <td><a href="/uploads/jbcf/shared-components.webp" target="_blank"><img src="/uploads/jbcf/shared-components.webp" loading="lazy"></a></td>
+    <td><a href="/uploads/jbcf/shared-components2.webp" target="_blank"><img src="/uploads/jbcf/shared-components2.webp" loading="lazy"></a></td>
+    <td><a href="/uploads/jbcf/shared-components3.webp" target="_blank"><img src="/uploads/jbcf/shared-components3.webp" loading="lazy"></a></td>
     </tr>
     </table>
   

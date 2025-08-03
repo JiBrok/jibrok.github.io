@@ -14,7 +14,7 @@ To access the All Message Fields Settings page:
 2. In the left menu, find the **Message Field** section 
 3. Click **All Message fields settings**
 
-<a href="/uploads/message-field/settings-for-all-message-fields.webp"><img src="/uploads/message-field/settings-for-all-message-fields.webp" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/message-field/settings-for-all-message-fields.webp" target="_blank"><img src="/uploads/message-field/settings-for-all-message-fields.webp" style="width:100%;" loading="lazy"></a>
 
 ## Main Features
 

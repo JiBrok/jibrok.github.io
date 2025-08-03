@@ -6,7 +6,7 @@ excerpt: "Configure automatic timer and stopwatch start/stop based on user login
 
 As a Jira administrator, you can configure to automatically stop and start timers or stopwatches when a user logs in or out.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/1.webp"><img src="/uploads/time-in-status/autotrack/1.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/1.webp" target="_blank"><img src="/uploads/time-in-status/autotrack/1.webp" style="width:100%;" loading="lazy"></a></p>
 
 It works as follows.
 
@@ -18,7 +18,7 @@ The settings indicate:
 * and other settings.
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/2.webp"><img src="/uploads/time-in-status/autotrack/2.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/autotrack/2.webp" target="_blank"><img src="/uploads/time-in-status/autotrack/2.webp" style="width:50%" loading="lazy"></a></p>
 
 Further:
 * When a user logs into Jira, a JQL issue search is performed. The **first task is taken (sorting is important)** in it timers and stopwatches are started on behalf of the user.

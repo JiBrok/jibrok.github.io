@@ -11,4 +11,4 @@ Rest API documentation is available as a [collection in Postman](https://documen
 
 #### How to get field config id?
 
-<a href="/uploads/message-field/get-field-config-id.webp"><img src="/uploads/message-field/get-field-config-id.webp" alt="plugin modules" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/get-field-config-id.webp" target="_blank"><img src="/uploads/message-field/get-field-config-id.webp" alt="plugin modules" width="100%" loading="lazy"></a>

@@ -16,7 +16,7 @@ You may need to change the default settings - depending on the complexity of the
 
 * In the left menu, find the section **Message field** and click **Message field settings for ScriptRunner Behaviours**
 
-<a href="/uploads/message-field/settings-for-scriptrunner.webp"><img src="/uploads/message-field/settings-for-scriptrunner.webp" style="width:100%;" loading="lazy"></a> 
+<a href="/uploads/message-field/settings-for-scriptrunner.webp" target="_blank"><img src="/uploads/message-field/settings-for-scriptrunner.webp" style="width:100%;" loading="lazy"></a> 
 
 
 * **Timeout** - Indicated in milliseconds. The code in the ScriptRunner that changes the message can take quite a long time, a few seconds. For example, when he needs to get information from another system and display it in a message. In this case, you should increase the waiting time for the ScriptRunner result. If ScriptRunner returns a result **within the specified time**, the message will be displayed according to its result. Otherwise, the ScriptRunner result will be ignored.
@@ -25,7 +25,7 @@ You may need to change the default settings - depending on the complexity of the
     * **Yes** - The message which is previously set in the field settings will be displayed until the ScriptRunner result is received. As soon as the result is received, the message will change according to the new data.
         * For example, you can set the message "Loading..." in the field settings. It will be displayed during "behavior" is running and until the new message will be set from the script.
           
-          <a href="/uploads/message-field/message-field-loadig.webp"><img src="/uploads/message-field/message-field-loadig.webp" style="width:50%" loading="lazy"></a>
+          <a href="/uploads/message-field/message-field-loadig.webp" target="_blank"><img src="/uploads/message-field/message-field-loadig.webp" style="width:50%" loading="lazy"></a>
     
 * **When the JavaScript from Message field settings should be run?**
     * **After displaying the default message** - The javascript will be executed after displaying the message from the field settings, i.e. immediately after opening the screen or after a timeout.

@@ -5,7 +5,7 @@ excerpt: "Configure Stopwatch field settings including events, display modes, ti
 ---
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/stopwatch-cloud/stopwatch-create-field.webp"><img src="/uploads/stopwatch-cloud/stopwatch-create-field.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/stopwatch-cloud/stopwatch-create-field.webp" target="_blank"><img src="/uploads/stopwatch-cloud/stopwatch-create-field.webp" style="width:100%;" loading="lazy"></a></p>
 
 ### General settings ### 
 

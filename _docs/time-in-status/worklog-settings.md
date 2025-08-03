@@ -10,11 +10,11 @@ Optionally, a notification about an entry in the worklog is indicated. <br>
 Next, you will need to enable this setting in the timer or stopwatch configuration. <br>
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/1.webp"><img src="/uploads/time-in-status/worklog-settings/1.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/1.webp" target="_blank"><img src="/uploads/time-in-status/worklog-settings/1.webp" style="width:100%" loading="lazy"></a></p>
 <br>
 
 Auto worklog settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/2.webp"><img src="/uploads/time-in-status/worklog-settings/2.webp" style="width:100%" loading="lazy"></a><br></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/worklog-settings/2.webp" target="_blank"><img src="/uploads/time-in-status/worklog-settings/2.webp" style="width:100%" loading="lazy"></a><br></p>
 
 It works like this. <br>
 When the timer or stopwatch stops (STOP or PAUSE), the time since the last start of the counter is calculated and this time is recorded in the worklog.

@@ -8,10 +8,10 @@ Gadget for the dashboards. It allows you to calculate any statistics by time in 
 This is a small report in which two columns are configured. The first is the heading, the second is the value calculated in accordance with the settings.
 
 Example:
-<p style="text-align: center;"><a href="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-example.webp"><img src="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-example.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-example.webp" target="_blank"><img src="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-example.webp" style="width:100%;" loading="lazy"></a></p>
 
 Settings:
-<p style="text-align: center;"><a href="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-add-and-settings.webp"><img src="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-add-and-settings.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-add-and-settings.webp" target="_blank"><img src="/uploads/tis-cloud/dashboard-gadget-calculate-statistic-add-and-settings.webp" style="width:100%;" loading="lazy"></a></p>
 
 * You can add an unlimited number of lines.
 * For each line, queries are indicated on the basis of which it is necessary to calculate the value of the function and the function itself. You can specify arbitrary statuses and JQL, or select one of the contexts of existing "time in status" fields.
