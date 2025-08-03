@@ -2,6 +2,8 @@
 title: Time in status - field configuration
 key: time-in-status
 excerpt: Comprehensive guide to configuring Time in Status fields including status tracking, calendars, display formats, visibility controls, and performance settings.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 1. Create new custom field with type 'Time in status field' and set issue screens.<br>

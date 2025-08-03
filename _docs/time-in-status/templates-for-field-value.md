@@ -2,6 +2,8 @@
 title: Templates for field values
 key: time-in-status
 excerpt: "Customize field value display with templates including time formats, conditional logic, and dynamic content rendering options."
+category: display-customization
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 

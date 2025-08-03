@@ -2,6 +2,8 @@
 title: Time in status - fields settings
 key: time-in-status
 excerpt: Centralized administration page to view and manage all Time in Status field settings for simplified field configuration and maintenance.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 On this page you can see all the "Time in status" fields and their settings. This should simplify the administration and configuration of fields.

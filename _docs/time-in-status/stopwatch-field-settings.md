@@ -2,6 +2,8 @@
 title: Stopwatch - field configuration
 key: time-in-status
 excerpt: Configure stopwatch fields with schemes, display formats, panel views, manual controls, access permissions, and sub-task inheritance options.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 <div class="uk-alert-note" data-uk-alert="">

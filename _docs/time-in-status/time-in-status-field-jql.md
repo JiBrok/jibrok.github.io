@@ -2,6 +2,8 @@
 title: Time in status - JQL (field)
 key: time-in-status
 excerpt: JQL search functions for Time in Status fields including indexed and real-time queries, active/inactive status searches, and sorting capabilities.
+category: search-jql
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 ## The search uses two mechanisms for working with counter values. ##
