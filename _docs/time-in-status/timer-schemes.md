@@ -1,6 +1,7 @@
 ---
 title: Timer schemes
 key: time-in-status
+excerpt: Create and manage timer schemes that establish connections between projects, issue types, and timer configurations for organized time tracking implementation.
 ---
 
 The diagram establishes the links between project, issue type and stopwatch configuration.   

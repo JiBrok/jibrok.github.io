@@ -1,6 +1,7 @@
 ---
 title: Stopwatch - JQL
 key: time-in-status
+excerpt: Complete JQL function reference for stopwatch fields including time searches, state queries, date range filters, and real-time data access.
 ---
 
 ## Functions take the following parameters. ##

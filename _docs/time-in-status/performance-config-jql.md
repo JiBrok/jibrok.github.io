@@ -1,6 +1,7 @@
 ---
 title: Performance settings - JQL
 key: time-in-status
+excerpt: Configure JQL performance settings including function access controls, cache settings, and count limits to optimize Time in Status plugin queries.
 ---
 
 **{baseUrl}/secure/jibrokJqlConfig!default.jspa**

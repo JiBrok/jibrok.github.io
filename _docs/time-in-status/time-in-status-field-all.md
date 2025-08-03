@@ -1,6 +1,7 @@
 ---
 title: Time in status - fields settings
 key: time-in-status
+excerpt: Centralized administration page to view and manage all Time in Status field settings for simplified field configuration and maintenance.
 ---
 
 On this page you can see all the "Time in status" fields and their settings. This should simplify the administration and configuration of fields.

@@ -1,6 +1,7 @@
 ---
 title: Feature Difference (Server/Data Center and Cloud)
 key: timer-cloud
+excerpt: Compare Timer Cloud features with Server/Data Center versions, including field configuration, work calendar settings, display options, and functionality differences.
 ---
 
 

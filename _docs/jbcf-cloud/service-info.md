@@ -1,6 +1,7 @@
 ---
 title: Service info
 key: jbcf-cloud
+excerpt: Monitor JBCF Cloud application activity and track running tasks with real-time counters showing system status and pending updates.
 ---
 
 On this tab, you can track the activity of the application.

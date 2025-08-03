@@ -1,6 +1,7 @@
 ---
 title: Timer - field configuration
 key: time-in-status
+excerpt: Configure timer fields with schemes, display formats, panel views, manual controls, access permissions, and history logging for comprehensive timer management.
 ---
 
 <div class="uk-alert-note" data-uk-alert="">

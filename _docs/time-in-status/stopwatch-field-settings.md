@@ -1,6 +1,7 @@
 ---
 title: Stopwatch - field configuration
 key: time-in-status
+excerpt: Configure stopwatch fields with schemes, display formats, panel views, manual controls, access permissions, and sub-task inheritance options.
 ---
 
 <div class="uk-alert-note" data-uk-alert="">

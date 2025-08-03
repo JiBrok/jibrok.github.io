@@ -1,6 +1,7 @@
 ---
 title: Transition counter field
 key: time-in-status
+excerpt: Count and track the number of status transitions between selected statuses with configurable from/to status pairs for workflow analysis.
 ---
 
 

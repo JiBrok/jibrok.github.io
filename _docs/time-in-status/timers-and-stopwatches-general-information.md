@@ -1,6 +1,7 @@
 ---
 title: ⭐️Timers and Stopwatches - General information
 key: time-in-status
+excerpt: Comprehensive guide to understanding timer and stopwatch functionality including states, commands, behaviors, and automation triggers for time tracking.
 ---
 
 

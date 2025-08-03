@@ -1,6 +1,7 @@
 ---
 title: Time in status - JQL (field)
 key: time-in-status
+excerpt: JQL search functions for Time in Status fields including indexed and real-time queries, active/inactive status searches, and sorting capabilities.
 ---
 
 ## The search uses two mechanisms for working with counter values. ##

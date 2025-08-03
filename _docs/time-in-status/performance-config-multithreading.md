@@ -1,6 +1,7 @@
 ---
 title: Performance settings - multithreading
 key: time-in-status
+excerpt: Optimize Time in Status plugin performance with multithreading configuration for JQL functions, listeners, timers, stopwatches, and report processing.
 ---
 <p>
 Depending on the capabilities of your server, you can allocate additional resources that the plugin can use.

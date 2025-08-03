@@ -1,6 +1,7 @@
 ---
 title: Time in status field
 key: time-in-status
+excerpt: Track time spent by issues in specific statuses with support for working calendars, real-time searches, flexible configurations, and comprehensive reporting features.
 ---
 
 Field for calculating the time spent by a task in one or several statuses.

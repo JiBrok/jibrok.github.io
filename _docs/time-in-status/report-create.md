@@ -1,6 +1,7 @@
 ---
 title: Create report
 key: time-in-status
+excerpt: Learn how to create custom reports in Time in Status plugin with options for table reports, grouping, custom formulas, and scheduling.
 ---
 
 The reporting rights are controlled by the system administrator. [More](/docs/time-in-status/reports-permissions/) 

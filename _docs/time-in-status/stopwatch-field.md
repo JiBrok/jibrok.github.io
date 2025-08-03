@@ -1,6 +1,7 @@
 ---
 title: Stopwatch field
 key: time-in-status
+excerpt: Track time between any issue events with stopwatch fields that support working calendars, real-time searches, flexible configurations, and comprehensive reporting capabilities.
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 title: Timer - fields settings
 key: time-in-status
+excerpt: Centralized administration interface to view and manage all timer field settings for streamlined field configuration and maintenance across your Jira instance.
 ---
 
 On this page you can see all the "Timer" fields and their settings. This should simplify the administration and configuration of fields.

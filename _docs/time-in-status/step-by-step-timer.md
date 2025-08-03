@@ -1,6 +1,7 @@
 ---
 title: 📖 How to create Timer and configure it step-by-step 
 key: time-in-status
+excerpt: Comprehensive tutorial for creating and configuring timer fields with examples for first response time and resolution time tracking using working calendars and priority-based goals.
 ---
 
 ## In this guide we will create two timers that will track the time of the first response and time to resolution. ##

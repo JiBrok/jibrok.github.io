@@ -1,6 +1,7 @@
 ---
 title: Web panel
 key: tis-cloud
+excerpt: Configure and customize Time in Status web panels in Jira sidebar with status filtering, project settings, statistics, and flexible display options.
 ---
 
 Enables the display of the "Time in status" in the sidebar.

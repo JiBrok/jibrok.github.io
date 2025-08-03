@@ -1,6 +1,7 @@
 ---
 title: Restore timer and stopwatch by issue history
 key: time-in-status
+excerpt: Restore or recalculate timer and stopwatch values by analyzing issue history to match events with configured triggers and correct data inconsistencies.
 ---
 
 You can restore or recalculate the value of timers and stopwatches based on the issue history.

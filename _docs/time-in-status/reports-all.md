@@ -1,6 +1,7 @@
 ---
 title: Reports
 key: time-in-status
+excerpt: Access and manage all Time in Status reports with options to view, edit, delete, and generate custom tabular reports with advanced grouping and calculations.
 ---
 
 

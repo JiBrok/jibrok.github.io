@@ -1,6 +1,7 @@
 ---
 title: Time formats
 key: time-in-status
+excerpt: Comprehensive list of available time display formats including standard, calendar-based, and localized options for customizing time field presentations.
 ---
 
 * D0, D12 and other formats after D12 - zero values are not displayed.

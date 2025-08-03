@@ -1,6 +1,7 @@
 ---
 title: 📖 How to set up one timer with different goal time for different issue types?
 key: time-in-status
+excerpt: Learn how to configure timers with different goal times for various issue types using common configurations or separate configs for flexible time tracking.
 ---
 
 Overview
