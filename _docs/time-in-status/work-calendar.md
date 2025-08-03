@@ -27,7 +27,7 @@ In the window that opens, select a calendar for detailed viewing.<br>
 1. Open {baseUrl}/secure/jibrokAllCalendars!default.jspa or from admin search by "Work calendars":<br>
    <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/admin-search.webp" target="_blank">
 <img src="/uploads/time-in-status/work-calendar/admin-search.webp" alt="admin-search screenshot" style="width:100%" loading="lazy"></a></p>
-2. Click "Сreate".<br>
+2. Click "Create".<br>
    <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/all.webp" target="_blank">
 <img src="/uploads/time-in-status/work-calendar/all.webp" alt="all screenshot" style="width:100%" loading="lazy"></a></p>
 3. Enter the data in the calendar settings fields.<br>
