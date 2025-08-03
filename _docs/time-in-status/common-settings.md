@@ -2,6 +2,8 @@
 title: Common settings
 key: time-in-status
 excerpt: "Configure global plugin settings including system user authentication, notification mechanisms, and event handling for Time in Status."
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 This menu contains general plugin settings that affect a large number of functionality.

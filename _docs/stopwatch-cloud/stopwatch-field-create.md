@@ -2,6 +2,8 @@
 title: Stopwatch - How to create field?
 key: stopwatch-cloud
 excerpt: "Step-by-step guide to create Stopwatch fields in Jira Cloud through app management or Apps menu with customization options."
+category: field-configuration
+tags: [doc, cloud, time-tracking, stopwatch, field-creation, setup, configuration]
 ---
 
 1. Open application "Stopwatch field":<br>

@@ -2,6 +2,8 @@
 title: Overview
 key: user-helper-cloud
 excerpt: User helper for JiBrok cloud apps provides help pages, JQL examples, and dashboard gadgets to help users master JiBrok applications like Time in Status, Timer, and Stopwatch.
+category: user-guides
+tags: [doc, cloud, user-helper, jql-examples, help-pages, dashboard-gadgets, user-guidance, documentation, news-updates]
 ---
 
 

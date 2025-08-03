@@ -2,6 +2,8 @@
 title: Dynamic templates - Examples
 key: message-field
 excerpt: "Practical examples of dynamic template variables and implementation for creating context-aware messages with real-time data."
+category: templates-customization
+tags: [doc, server, datacenter, messaging, dynamic-templates, velocity, examples, variables, real-time-data, customization]
 ---
 Examples of using variables that are available for use in dynamic templates.
 

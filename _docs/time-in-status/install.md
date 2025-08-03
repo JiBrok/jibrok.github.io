@@ -2,6 +2,8 @@
 title: Install
 key: time-in-status
 excerpt: "Install Time in Status plugin for Jira from Atlassian Marketplace or manually with step-by-step licensing and activation instructions."
+category: getting-started
+tags: [doc, server, datacenter, time-tracking, installation, marketplace, licensing]
 ---
 
 {:.no_toc}

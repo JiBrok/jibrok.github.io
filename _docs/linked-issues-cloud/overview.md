@@ -2,6 +2,8 @@
 title: Overview
 key: linked-issues-cloud
 excerpt: "Display linked issues in Jira Cloud with enhanced visualization, custom filtering, and improved issue relationship management."
+category: getting-started
+tags: [doc, cloud, linked-issues, issue-relationships, jql-integration, web-panels, field-display, configuration-management]
 ---
 
 <a href="https://marketplace.atlassian.com/apps/1223203" target="_blank">

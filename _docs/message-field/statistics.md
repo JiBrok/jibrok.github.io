@@ -2,6 +2,8 @@
 title: Statistics
 key: message-field
 excerpt: "View Message field usage statistics, performance metrics, and analytics for monitoring field effectiveness and user engagement."
+category: analytics-monitoring
+tags: [doc, server, datacenter, messaging, statistics, analytics, performance-monitoring, jql-performance, usage-metrics]
 ---
 
 The **Statistics** page provides comprehensive insights into your Message Field usage across your Jira instance. This powerful analytics tool helps administrators monitor, optimize, and troubleshoot their Message Field configurations.

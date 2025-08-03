@@ -2,6 +2,8 @@
 title: Calendar field
 key: time-in-status
 excerpt: Configure working calendar fields for time tracking in Jira, with options to select calendars for status fields, timers, stopwatches, and reports.
+category: time-management
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 A field that allows you to select one of the working calendars. This field can be set as the work calendar source for various application functions:

@@ -2,6 +2,8 @@
 title: Reports
 key: time-in-status
 excerpt: Access and manage all Time in Status reports with options to view, edit, delete, and generate custom tabular reports with advanced grouping and calculations.
+category: reports-analytics
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 

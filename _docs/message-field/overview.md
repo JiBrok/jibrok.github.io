@@ -2,6 +2,8 @@
 title: Overview
 key: message-field
 excerpt: "Display contextual messages and banners on Jira issue screens with Message field. Features dynamic templates, custom styling, JQL targeting, and real-time field references."
+category: getting-started
+tags: [doc, server, datacenter, messaging, banners, notifications, dynamic-templates, velocity, javascript, html-css, jql-targeting, permissions, delegation, jsm-integration, scriptrunner, rest-api, statistics, refined-integration]
 ---
 <a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview" target="_blank">
 <img src="/uploads/message-field/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;;" loading="lazy"></a>

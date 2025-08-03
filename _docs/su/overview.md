@@ -2,6 +2,8 @@
 title: Overview
 key: switch-user
 excerpt: Switch to User + Delegating SU allows Jira administrators to log in as other users for support and troubleshooting, with full audit logging and delegated permissions.
+category: getting-started
+tags: [doc, server, datacenter, user-switching, administration, permissions, delegation, audit-logging, shortcuts, troubleshooting, support-tools]
 ---
 
 <a href="https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira?tab=overview&hosting=datacenter" target="_blank">

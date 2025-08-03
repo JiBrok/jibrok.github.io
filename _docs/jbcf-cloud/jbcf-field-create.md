@@ -1,6 +1,8 @@
 ---
 title: Calculated custom fields(JBCF) - How to create field?
 key: jbcf-cloud
+category: field-configuration
+tags: [doc, cloud, calculated-fields, custom-fields, field-creation]
 excerpt: "Step-by-step guide to create calculated custom fields in Jira Cloud using JBCF app with access through app management or Apps menu."
 ---
 

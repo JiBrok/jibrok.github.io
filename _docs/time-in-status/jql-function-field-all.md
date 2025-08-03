@@ -2,6 +2,8 @@
 title: Periodic calculation of the function by JQL - fields settings
 key: time-in-status
 excerpt: "Configure periodic JQL function calculations for automated field value updates with customizable schedules and query conditions."
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 

@@ -2,6 +2,8 @@
 title: Performance settings - JQL
 key: time-in-status
 excerpt: Configure JQL performance settings including function access controls, cache settings, and count limits to optimize Time in Status plugin queries.
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 **{baseUrl}/secure/jibrokJqlConfig!default.jspa**

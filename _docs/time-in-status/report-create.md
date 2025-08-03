@@ -2,6 +2,8 @@
 title: Create report
 key: time-in-status
 excerpt: Learn how to create custom reports in Time in Status plugin with options for table reports, grouping, custom formulas, and scheduling.
+category: reports-analytics
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 The reporting rights are controlled by the system administrator. [More](/docs/time-in-status/reports-permissions/) 

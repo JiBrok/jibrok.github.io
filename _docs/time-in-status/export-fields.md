@@ -2,6 +2,8 @@
 title: JQL Reports and export
 key: time-in-status
 excerpt: "Export Time in Status fields from JQL searches to Excel, XML, or Confluence with customizable column formats and display options."
+category: integration-export
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 <div class="uk-alert-note" data-uk-alert="">

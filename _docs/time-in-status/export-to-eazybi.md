@@ -2,6 +2,8 @@
 title: How to export Time in status field(Timer and Stopwatch) data to eazyBI?
 key: time-in-status
 excerpt: "Configure Time in Status field export format to JSON for seamless integration with eazyBI reporting and analytics platform."
+category: integration-export
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 

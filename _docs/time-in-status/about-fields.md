@@ -2,6 +2,8 @@
 title: About fields
 key: time-in-status
 excerpt: "Overview of Time in Status, Stopwatch, and Timer fields with real-time calculation, work calendars, and comprehensive tracking capabilities."
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 Time calculation functionality is based on three field types: Time in status, Stopwatch and Timer.

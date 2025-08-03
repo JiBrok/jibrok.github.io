@@ -1,6 +1,8 @@
 ---
 title: Status page
 key: jbcf-cloud
+category: system-information
+tags: [doc, cloud, calculated-fields, service-status, monitoring]
 excerpt: Stay informed about JBCF Cloud server maintenance and system status through the dedicated status page with real-time updates and notifications.
 ---
 

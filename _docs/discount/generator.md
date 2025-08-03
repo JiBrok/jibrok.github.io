@@ -1,6 +1,8 @@
 ---
 title: generator
 key: generator
+category: utilities
+tags: [doc, promo-codes, discounts, server, datacenter, cloud, generator, utility, licensing]
 excerpt: "Generate promo codes and discounts for Jira apps across Server, Data Center, and Cloud hosting environments with interactive selection tools."
 ---
 

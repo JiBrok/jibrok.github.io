@@ -2,6 +2,8 @@
 title: Create field and configuring
 key: message-field
 excerpt: "Create and configure Message fields in Jira with context setup, screen assignment, and initial field configuration options."
+category: field-configuration
+tags: [doc, server, datacenter, messaging, field-creation, custom-fields, screen-configuration, contexts]
 ---
 After installing the app, create the "Message field". Then set contexts and screens.
 

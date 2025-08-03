@@ -2,6 +2,8 @@
 title: Stopwatch - JQL
 key: stopwatch-cloud
 excerpt: "Advanced JQL functions for Stopwatch fields including time-based searches, state queries, and combined conditions for complex filtering."
+category: search-jql
+tags: [doc, cloud, time-tracking, stopwatch, jql-functions, search, filtering, time-queries]
 ---
 
 <ul>Configure JQL Queries.

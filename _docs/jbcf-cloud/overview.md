@@ -1,6 +1,8 @@
 ---
 title: Overview
 key: jbcf-cloud
+category: getting-started
+tags: [doc, cloud, calculated-fields, custom-fields, overview]
 excerpt: JiBrok Calculated fields (JBCF) Cloud provides essential calculated custom fields for Jira Cloud including comment tracking, user information, status history, link counts, and sorting capabilities.
 ---
 

@@ -2,6 +2,8 @@
 title: Performance settings - multithreading
 key: time-in-status
 excerpt: Optimize Time in Status plugin performance with multithreading configuration for JQL functions, listeners, timers, stopwatches, and report processing.
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 <p>
 Depending on the capabilities of your server, you can allocate additional resources that the plugin can use.

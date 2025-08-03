@@ -2,6 +2,8 @@
 title: Common helpers
 key: time-in-status
 excerpt: "Create helper fields to extract specific values from Time in Status, Timer, and Stopwatch fields for integrations and third-party applications."
+category: field-types-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 Helper fields make it easy to integrate third-party solutions and applications.

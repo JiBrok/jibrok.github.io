@@ -2,6 +2,8 @@
 title: Migration from Server/Data Center
 key: stopwatch-cloud
 excerpt: "Guide for migrating Stopwatch field from Jira Server/Data Center to Cloud with manual settings transfer and configuration checklist."
+category: migration
+tags: [doc, cloud, time-tracking, stopwatch, migration, server-to-cloud, settings-transfer, data-center]
 ---
 
 Automatic migration of settings during development.

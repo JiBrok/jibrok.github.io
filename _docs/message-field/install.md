@@ -2,6 +2,8 @@
 title: Install
 key: message-field
 excerpt: "Install Message field app for Jira from Atlassian Marketplace or manually upload with step-by-step licensing and activation instructions."
+category: getting-started
+tags: [doc, server, datacenter, messaging, installation, marketplace, licensing]
 ---
 {:.no_toc}
 * TOC

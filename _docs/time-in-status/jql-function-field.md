@@ -2,6 +2,8 @@
 title: Field - Periodic calculation of the value of the function by jql
 key: time-in-status
 excerpt: "Create fields with periodic JQL function calculations for dynamic value updates based on issue queries and conditions."
+category: search-jql
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.webp" target="_blank">

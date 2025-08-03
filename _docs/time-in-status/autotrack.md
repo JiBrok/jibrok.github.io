@@ -2,6 +2,8 @@
 title: Autotrack settings
 key: time-in-status
 excerpt: "Configure automatic timer and stopwatch start/stop based on user login status, idle time, and JQL conditions for seamless time tracking."
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 As a Jira administrator, you can configure to automatically stop and start timers or stopwatches when a user logs in or out.

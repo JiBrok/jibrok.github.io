@@ -2,6 +2,8 @@
 title: Advanced settings
 key: message-field
 excerpt: "Configure advanced Message field options including conditional display, user permissions, JQL targeting, and complex message logic."
+category: field-configuration
+tags: [doc, server, datacenter, messaging, advanced-settings, jql-targeting, permissions, conditions, javascript, customization]
 ---
 The Message Field configuration page provides comprehensive settings organized into tabs for easy navigation.
 

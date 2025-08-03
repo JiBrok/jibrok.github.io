@@ -2,6 +2,8 @@
 title: Delegation
 key: message-field
 excerpt: "Delegate Message field management to project roles and team members with granular permissions and administrative controls."
+category: field-configuration
+tags: [doc, server, datacenter, messaging, delegation, permissions, project-roles, user-management, administration]
 ---
 
 **Delegation** allows Jira administrators to grant specific users, groups, or project roles the ability to modify Message Field configurations without requiring full Jira administration privileges. This feature enables distributed management of message content while maintaining security and control.

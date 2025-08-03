@@ -2,6 +2,8 @@
 title: Field panels config
 key: time-in-status
 excerpt: "Customize Time in Status field panel layouts in Jira interface with global configuration settings for optimal display."
+category: display-customization
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 ### You can change the layout of the panels in the Jira interface. Settings are set globally for all projects.

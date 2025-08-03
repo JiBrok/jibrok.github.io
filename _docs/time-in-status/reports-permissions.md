@@ -2,6 +2,8 @@
 title: Create report permissions
 key: time-in-status
 excerpt: Configure user permissions for creating and managing Time in Status reports, with admin controls for resource distribution and delegation options.
+category: reports-analytics
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 The plugin provides the ability to create reports. Only the Jira admin has access to this feature by default. The administrator can grant access to creating reports to all users or to individual users, groups and roles.

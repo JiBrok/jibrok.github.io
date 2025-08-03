@@ -2,6 +2,8 @@
 title: Overview (Server/DC)
 key: time-in-status
 excerpt: "Complete Time in Status overview for Jira Server/Data Center with field types, features, and comprehensive time tracking capabilities."
+category: getting-started
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 <p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview" target="_blank">

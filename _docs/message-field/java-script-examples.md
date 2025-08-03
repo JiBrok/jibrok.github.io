@@ -2,6 +2,8 @@
 title: JavaScript - Examples
 key: message-field
 excerpt: "JavaScript examples for Message field customization including client-side logic, dynamic behavior, and interactive message functionality."
+category: templates-customization
+tags: [doc, server, datacenter, messaging, javascript, client-side, dynamic-behavior, interactive, customization, examples]
 ---
 
 JavaScript examples for  the **Message Field** application are available at [GitHub](https://gist.github.com/JiBrok/public)

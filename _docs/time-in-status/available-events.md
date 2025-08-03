@@ -2,6 +2,8 @@
 title: Available events (triggers) for working with timers and stopwatch
 key: time-in-status
 excerpt: "Complete list of Jira events and triggers for timer and stopwatch automation including status changes, comments, and field updates."
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 * Public comment - comment without restrictions

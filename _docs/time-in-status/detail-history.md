@@ -2,6 +2,8 @@
 title: Detail history for timer and stopwatch
 key: time-in-status
 excerpt: "Debug timer and stopwatch operations with detailed history logging for administrators to track triggers, sources, and data changes."
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 In complex systems with a lot of integrations, plugins, scripts and other things, it is sometimes very difficult to understand what went wrong.

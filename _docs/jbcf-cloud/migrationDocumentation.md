@@ -1,6 +1,8 @@
 ---
 title: Migration from Server/Data Center
 key: jbcf-cloud
+category: migration
+tags: [doc, cloud, calculated-fields, migration, server, datacenter]
 excerpt: "Guide for migrating calculated custom fields from Jira Server/Data Center to Cloud, including manual configuration requirements and limitations."
 ---
 

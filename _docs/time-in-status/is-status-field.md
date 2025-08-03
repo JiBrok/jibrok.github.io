@@ -2,6 +2,8 @@
 title: Is status field
 key: time-in-status
 excerpt: "Boolean field type that returns true/false for issue status validation with JQL search capabilities for workflow tracking."
+category: field-types-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 Returns yes or no - whether the issue is in the specified status.

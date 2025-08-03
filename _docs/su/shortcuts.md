@@ -2,6 +2,8 @@
 title: Shortcuts
 key: switch-user
 excerpt: Use quick keyboard shortcuts 'xx' and 'su' to open the user switching window when you have the necessary permissions.
+category: user-guides
+tags: [doc, server, datacenter, user-switching, shortcuts, hotkeys, quick-access, keyboard-shortcuts]
 ---
 
 If you have rights to switch to other users, shortcuts are available to you - 'xx' and 'su'
