@@ -91,7 +91,7 @@ console.log('Full form data:', fullFormData);
 The script will check the custom fields on the view issue screen. If all fields are empty the message banner will be hidden.
 
 
-<a href="/uploads/message-field/message_field_video_dynamical.gif" target="_blank"><img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/message-field/message_field_video_dynamical.gif" target="_blank"><img src="/uploads/message-field/message_field_video_dynamical.gif" alt="Message Field dynamic template demonstration video" style="width:100%;" loading="lazy"></a>
 
 <script src="https://gist.github.com/JiBrok/1d308d9e393c739790462d35b5cdb305.js"></script>
 
@@ -99,7 +99,7 @@ The script will check the custom fields on the view issue screen. If all fields 
 ### Update message with bundled select(SD-create)
 
 
-<a href="/uploads/message-field/example-extensions-for-jira.gif" target="_blank"><img src="/uploads/message-field/example-extensions-for-jira.gif" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/example-extensions-for-jira.gif" target="_blank"><img src="/uploads/message-field/example-extensions-for-jira.gif" alt="Message Field extensions for Jira demo" width="100%" loading="lazy"></a>
 
 <script src="https://gist.github.com/JiBrok/28232b1fee05ef8c45490ea91444a5ef.js"></script>
 

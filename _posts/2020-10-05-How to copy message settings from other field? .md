@@ -5,7 +5,8 @@ tags: message-field
 
 
 [Open message settings.]() You can copy settings from other field or context.
-<a href="/uploads/message-field/copy-message-field-settings.webp" target="_blank"><img src="/uploads/message-field/copy-message-field-settings.webp" width="600" loading="lazy"></a>
+<a href="/uploads/message-field/copy-message-field-settings.webp" target="_blank">
+<img src="/uploads/message-field/copy-message-field-settings.webp" alt="copy-message-field-settings screenshot" width="600" loading="lazy"></a>
 
 Names are formed by template "Custom field name":"Context name".
 

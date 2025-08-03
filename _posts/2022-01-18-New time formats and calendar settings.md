@@ -59,4 +59,5 @@ D13 and higher formats use *Work time settings* calendar settings.
 These settings specify the length of the working day/week/month/year in seconds for your work schedule.
 Soon we will add an automatic calculation of the average duration of these values, depending on the specified schedule.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/time-settings.webp" target="_blank"><img src="/uploads/time-in-status/work-calendar/time-settings.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/time-settings.webp" target="_blank">
+<img src="/uploads/time-in-status/work-calendar/time-settings.webp" alt="time-settings screenshot" style="width:50%" loading="lazy"></a></p>

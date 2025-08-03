@@ -4,7 +4,8 @@ key: jbcf-cloud
 excerpt: JiBrok Calculated fields (JBCF) Cloud provides essential calculated custom fields for Jira Cloud including comment tracking, user information, status history, link counts, and sorting capabilities.
 ---
 
-<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview" target="_blank"><img src="/uploads/jbcf/marketplace.webp" style="width:100%;;" loading="lazy"></a>
+<a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview" target="_blank">
+<img src="/uploads/jbcf/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview)
 ## Welcome to JiBrok Calculated fields (JBCF)!

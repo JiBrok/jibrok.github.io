@@ -8,8 +8,10 @@ Enables the display of the "Time in status" in the sidebar.
 
 <table>
 <tr>
-<td><a href="/uploads/tis-cloud/web-panel-1.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-1.webp" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/web-panel-2.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-2.webp" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/web-panel-1.webp" target="_blank">
+<img src="/uploads/tis-cloud/web-panel-1.webp" alt="web-panel-1 screenshot" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/web-panel-2.webp" target="_blank">
+<img src="/uploads/tis-cloud/web-panel-2.webp" alt="web-panel-2 screenshot" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -18,7 +20,8 @@ Enables the display of the "Time in status" in the sidebar.
 
 
 You can create many panels with different settings.
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-create.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-create.webp" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-create.webp" target="_blank">
+<img src="/uploads/tis-cloud/web-panel-create.webp" alt="web-panel-create screenshot" loading="lazy"></a></p>
 
 ### General settings ### 
 
@@ -34,7 +37,8 @@ You can create many panels with different settings.
 
 ### Statistic settings ###
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-settings.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-statistic-settings.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-settings.webp" target="_blank">
+<img src="/uploads/tis-cloud/web-panel-statistic-settings.webp" alt="Web panel statistics configuration interface" style="width:100%;" loading="lazy"></a></p>
 
 If you have selected in "Display mode" the display of the values of one of the functions (Average time for example), then in this section you can customize the data for calculating the value of this function in more detail.
 The function value will be displayed in a separate column. Each panel calculates and uses values independently for each of the selected status.
@@ -51,7 +55,8 @@ The data will be recalculated at least once a day. (Beta) Updates will occur mor
   * Issues from context are used to calculate values. You can limit the selection of issues by the date the request was resolved. Only issues solved in the last N days will be used. If 0 is specified then this filter is ignored.
 
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.webp" target="_blank"><img src="/uploads/tis-cloud/web-panel-statistic-demo.webp" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.webp" target="_blank">
+<img src="/uploads/tis-cloud/web-panel-statistic-demo.webp" alt="web-panel-statistic-demo screenshot" loading="lazy"></a></p>
 
 [More about time statistic](/Time-statistic(Time-in-status-Cloud)/)  
 

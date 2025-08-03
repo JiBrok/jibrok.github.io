@@ -9,7 +9,8 @@ Now, when creating or editing a field, you can choose which modules you need.
 
 [More about limits](https://jibrok.com/docs/tis-cloud/limits/)
 
-<p><a href="/uploads/tis-cloud/modules.webp" target="_blank"><img src="/uploads/tis-cloud/modules.webp" style="width:100%;" loading="lazy"></a></p>
+<p><a href="/uploads/tis-cloud/modules.webp" target="_blank">
+<img src="/uploads/tis-cloud/modules.webp" alt="modules screenshot" style="width:100%;" loading="lazy"></a></p>
 
 * Issue Property
     * The main module.

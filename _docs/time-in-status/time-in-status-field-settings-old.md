@@ -5,15 +5,19 @@ excerpt: Legacy field configuration guide for Time in Status plugin versions pri
 ---
 
 1. Create new custom field with type 'Time in status field' and set issue screens.<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" style="width:50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" alt="time-in-status-field screenshot" style="width:50%" loading="lazy"></a></p>
 
 2. After create open field config.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" alt="time-in-status-field-config screenshot" style="width:50%" loading="lazy"></a></p>
 3. Select field context and click 'Edit Time in status field'<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" style="width:50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" alt="time-in-status-field-config2 screenshot" style="width:50%" loading="lazy"></a></p>
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.webp" target="_blank"><img src="/uploads/time-in-status/about-fields/time-in-status-config.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.webp" target="_blank">
+<img src="/uploads/time-in-status/about-fields/time-in-status-config.webp" alt="time-in-status-config screenshot" style="width:100%;" loading="lazy"></a></p>
 
 ### General settings ### 
 
@@ -29,7 +33,8 @@ All settings:<br>
 9. Show in field - total time or status table. Does not affect the actual value returned by the field.
 10. Field time format - format for outputting time in a field. If you need a new format, please write in support.
 11. Show as panel - Enables the display of the "Time in status" field in the sidebar. The remaining fields with the selected setting will be selected in it. The field can be omitted from the issue viewing screen. The panel can be configured separately from the field.<br>
-    <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" style="width:200px" loading="lazy"></a></p>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" alt="time-in-status-field-panel-demo screenshot" style="width:200px" loading="lazy"></a></p>
 12. Show as panel on Agile boards - Show field as panel on scrum or kanban boards in "Issue Detail View" section (The right panel that appears when you click on a task).
 13. Show in panel - total time or status table.
 14. Panel time format - format for outputting time in a field. If you need a new format, please write in support.

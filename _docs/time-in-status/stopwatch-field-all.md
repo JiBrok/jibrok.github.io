@@ -9,7 +9,9 @@ On this page you can see all the "Stopwatch" fields and their settings. This sho
 ${baseUrl}/secure/jibrokSettingsForAllStopwatchFields!default.jspa
 
 Admin Search (gg) + Stopwatch fields settings<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopawatch-field-all/1.webp" target="_blank"><img src="/uploads/time-in-status/stopawatch-field-all/1.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopawatch-field-all/1.webp" target="_blank">
+<img src="/uploads/time-in-status/stopawatch-field-all/1.webp" alt="1 screenshot" style="width:50%" loading="lazy"></a></p>
 On the page you can display certain settings and fields. The set of settings selected for display is saved.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopawatch-field-all/2.webp" target="_blank"><img src="/uploads/time-in-status/stopawatch-field-all/2.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopawatch-field-all/2.webp" target="_blank">
+<img src="/uploads/time-in-status/stopawatch-field-all/2.webp" alt="2 screenshot" style="width:100%" loading="lazy"></a></p>

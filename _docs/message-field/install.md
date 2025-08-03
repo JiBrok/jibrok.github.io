@@ -13,10 +13,12 @@ excerpt: "Install Message field app for Jira from Atlassian Marketplace or manua
 2. Click the profile icon on the top right-hand corner of the screen.
 3. Go to **Atlassian Marketplace**.
 
-    <a href="/uploads/message-field/install/atlassian-marketplace-menu.webp" target="_blank"><img src="/uploads/message-field/install/atlassian-marketplace-menu.webp" alt="open atlassian marketplace menu" width="50%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/atlassian-marketplace-menu.webp" target="_blank">
+<img src="/uploads/message-field/install/atlassian-marketplace-menu.webp" alt="screenshot" width="50%" loading="lazy"></a>
 
 4. Click **Find New Apps** on the menu on the left-hand side.
-<a href="/uploads/message-field/install/find-new-apps-message-field.webp" target="_blank"><img src="/uploads/message-field/install/find-new-apps-message-field.webp" alt="find new apps: message field" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/install/find-new-apps-message-field.webp" target="_blank">
+<img src="/uploads/message-field/install/find-new-apps-message-field.webp" alt="screenshot" width="100%" loading="lazy"></a>
 
 5. Find **Message field** via search.
 6. Click **Buy Now** to purchase a licence for "Message field" or **Free Trial** if you want to start a trial.
@@ -32,25 +34,30 @@ excerpt: "Install Message field app for Jira from Atlassian Marketplace or manua
 1. Open plugin page on Atlassian Marketplace: <a href="https://marketplace.atlassian.com/apps/1219615/message-field">Message field</a>
 2. Select hosting: Server or Data Center.
 
-    <a href="/uploads/message-field/install/hosting.webp" target="_blank"><img src="/uploads/message-field/install/hosting.webp" alt="select hosting" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/hosting.webp" target="_blank">
+<img src="/uploads/message-field/install/hosting.webp" alt="screenshot" width="100%" loading="lazy"></a>
 
 3. Click **Download** at the bottom of the page.
 
-    <a href="/uploads/message-field/install/download.webp" target="_blank"><img src="/uploads/message-field/install/download.webp" alt="click download" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/download.webp" target="_blank">
+<img src="/uploads/message-field/install/download.webp" alt="screenshot" width="100%" loading="lazy"></a>
 
 4. Login to your Jira instance as an admin.
 5. Click the **Administration** icon on the top right-hand corner of the screen.
 6. Go to **Manage apps**.
 
-    <a href="/uploads/message-field/install/manage-apps.webp" target="_blank"><img src="/uploads/message-field/install/manage-apps.webp" alt="open manage apps" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/manage-apps.webp" target="_blank">
+<img src="/uploads/message-field/install/manage-apps.webp" alt="screenshot" width="100%" loading="lazy"></a>
 
 7. Click **Upload app**.
 
-    <a href="/uploads/message-field/install/upload-app.webp" target="_blank"><img src="/uploads/message-field/install/upload-app.webp" alt="click upload app" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/upload-app.webp" target="_blank">
+<img src="/uploads/message-field/install/upload-app.webp" alt="screenshot" width="100%" loading="lazy"></a>
 
 8. Click **Choose file** and select downloading file.
  
-    <a href="/uploads/message-field/install/select-downloading-app.webp" target="_blank"><img src="/uploads/message-field/install/select-downloading-app.webp" alt="select downloading app" width="50%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/select-downloading-app.webp" target="_blank">
+<img src="/uploads/message-field/install/select-downloading-app.webp" alt="screenshot" width="50%" loading="lazy"></a>
 
 9. Click **Upload**.
 

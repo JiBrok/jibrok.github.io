@@ -5,7 +5,8 @@ excerpt: "Configure Timer field settings including goal time limits, events, dis
 ---
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/timer-cloud/timer-create-field.webp" target="_blank"><img src="/uploads/timer-cloud/timer-create-field.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/timer-create-field.webp" target="_blank">
+<img src="/uploads/timer-cloud/timer-create-field.webp" alt="timer-create-field screenshot" style="width:100%;" loading="lazy"></a></p>
 
 ### General settings ### 
 
@@ -45,7 +46,8 @@ As a trigger, you can select release system events, change of status, change of 
     * Preset options:
       * NBD (Next business day) - The timer will count down the time from the moment of the start to the end of the next working day.
     * An example of a combination of different conditions:
-       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.webp" target="_blank"><img src="/uploads/timer-cloud/step-by-step/timer-config-example.webp" alt="" width="100%" loading="lazy"></a></p>
+       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/timer-config-example.webp" target="_blank">
+<img src="/uploads/timer-cloud/step-by-step/timer-config-example.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
 
 14. After saving, all timers will be updated with the new settings. Timers work both for new issues and for already created ones. Data for calculations is drilled from the issue history. 
   

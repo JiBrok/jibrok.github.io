@@ -66,6 +66,11 @@
   <!-- Auto-generate anchor links for headings -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Skip anchor links on the main page
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        return;
+      }
+      
       // Find all headings h1-h6
       var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       

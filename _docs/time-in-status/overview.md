@@ -4,7 +4,8 @@ key: time-in-status
 excerpt: "Complete Time in Status overview for Jira Server/Data Center with field types, features, and comprehensive time tracking capabilities."
 ---
 
-<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview" target="_blank"><img src="/uploads/time-in-status/overview/marketplace.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview" target="_blank">
+<img src="/uploads/time-in-status/overview/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;" loading="lazy"></a></p>
 
 <p style="text-align: center;">View app on <a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview">Atlassian Marketplace</a></p>
 ## Welcome to Time in status | SLA | Timer | Stopwatch!
@@ -32,8 +33,10 @@ All fields have a large number of settings for display and access rights.
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank"><img src="/uploads/time-in-status/overview/fields-example-2.webp" style="width:100%;" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/overview/fields-example-1.webp" target="_blank"><img src="/uploads/time-in-status/overview/fields-example-1.webp" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/fields-example-2.webp" alt="fields-example-2 screenshot" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/overview/fields-example-1.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/fields-example-1.webp" alt="fields-example-1 screenshot" style="width:100%;" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -41,19 +44,23 @@ All fields have a large number of settings for display and access rights.
 
 The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
 You can create an unlimited number of calendars and use it in any contexts and projects. 
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp" target="_blank"><img src="/uploads/time-in-status/overview/calendar-example.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/calendar-example.webp" alt="calendar-example screenshot" style="width:100%;" loading="lazy"></a></p>
 
 ### Reports: ###
 In each task detailed reports are available on time, transitions between statues and performers. They can be downloaded directly from the task interface. 
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.webp" target="_blank"><img src="/uploads/time-in-status/overview/issue-report.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/issue-report.webp" alt="issue-report screenshot" style="width:100%;" loading="lazy"></a></p>
 
 Create jql reports grouped by any fields or jql conditions. Various functions are available in reports for calculating values (average, percentiles ...).
 The reports will be available for viewing and export via the link.
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/overview/reports-example-2.webp" target="_blank"><img src="/uploads/time-in-status/overview/reports-example-2.webp" style="width:100%;" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/overview/reports-example-1.webp" target="_blank"><img src="/uploads/time-in-status/overview/reports-example-1.webp" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/overview/reports-example-2.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/reports-example-2.webp" alt="reports-example-2 screenshot" style="width:100%;" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/overview/reports-example-1.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/reports-example-1.webp" alt="reports-example-1 screenshot" style="width:100%;" loading="lazy"></a></td>
 </tr>
 </table>
 

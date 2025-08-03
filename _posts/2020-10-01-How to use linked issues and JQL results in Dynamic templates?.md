@@ -232,7 +232,8 @@ Also you can use $issueFieldRender for rendering field values in Jira Style.
 
 ## How to display issue list and specified fields in tabular form? ##
 
-<a href="/uploads/message-field/jql-message-example1.webp" target="_blank"><img src="/uploads/message-field/jql-message-example1.webp" alt="jql table in message" width="600" loading="lazy"></a>
+<a href="/uploads/message-field/jql-message-example1.webp" target="_blank">
+<img src="/uploads/message-field/jql-message-example1.webp" alt="screenshot" width="600" loading="lazy"></a>
 
 [$jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)
 

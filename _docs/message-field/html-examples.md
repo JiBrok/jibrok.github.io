@@ -22,9 +22,11 @@ Thank you for your recommendation! 😉
 3. Choose predefined [colours Atlassian](https://www.atlassian.design/foundations/color).
 4. If you can't find the right colour, press **Select a custom color** for manual colour selection.
 
-<a href="/uploads/message-field/message-type-custom.webp" target="_blank"><img src="/uploads/message-field/message-type-custom.webp" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/message-type-custom.webp" target="_blank">
+<img src="/uploads/message-field/message-type-custom.webp" alt="Custom message type configuration with background, text, and icon color pickers shown" width="100%" loading="lazy"></a>
 
-<a href="/uploads/message-field/message-type-custom-as-flag.webp" target="_blank"><img src="/uploads/message-field/message-type-custom-as-flag.webp" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/message-type-custom-as-flag.webp" target="_blank">
+<img src="/uploads/message-field/message-type-custom-as-flag.webp" alt="Custom message configuration set as flag with purple text color and custom banner preview" width="50%" loading="lazy"></a>
 
 Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
 
@@ -42,7 +44,8 @@ Or hex colors
 <text style="background: #000000; color: #FFFFFF"> The white message on the black backgroud</text>
 ```
 
-<a href="/uploads/message-field/html-example-1.webp" target="_blank"><img src="/uploads/message-field/html-example-1.webp" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/html-example-1.webp" target="_blank">
+<img src="/uploads/message-field/html-example-1.webp" alt="HTML editor showing custom text styling code with black background banner preview below" width="100%" loading="lazy"></a>
 
 
 Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>
@@ -56,10 +59,12 @@ Attlassian Design System: <a href="https://www.atlassian.design/foundations/colo
  <table>
     <tr>
         <td>
-            <a href="/uploads/message-field/html-example-scroll.webp" target="_blank"><img src="/uploads/message-field/html-example-scroll.webp" width="100%" loading="lazy"></a>
+            <a href="/uploads/message-field/html-example-scroll.webp" target="_blank">
+<img src="/uploads/message-field/html-example-scroll.webp" alt="Blue info banner with scrollable content showing repeated 'Long Message' text with scroll bar" width="100%" loading="lazy"></a>
         </td>
         <td>
-            <a href="/uploads/message-field/html-example-scroll-2.webp" target="_blank"><img src="/uploads/message-field/html-example-scroll-2.webp" width="100%" loading="lazy"></a>
+            <a href="/uploads/message-field/html-example-scroll-2.webp" target="_blank">
+<img src="/uploads/message-field/html-example-scroll-2.webp" alt="Popup flag version of scrollable message with close button and vertical scroll bar" width="100%" loading="lazy"></a>
         </td>
     </tr>
 </table>

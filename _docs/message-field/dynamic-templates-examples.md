@@ -263,7 +263,7 @@ or
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
 
 
-<a href="/uploads/message-field/message-field-random-colors.gif" target="_blank"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/message-field-random-colors.gif" target="_blank"><img src="/uploads/message-field/message-field-random-colors.gif" alt="Jira search results showing Message Field banners with dynamically changing random colors" width="100%" loading="lazy"></a>
 
 
     $fieldDisplayConfig.setMessageType("custom") ##require for custom colors
@@ -502,7 +502,8 @@ The Issue Field Renderer provides methods for rendering issue fields and formatt
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
 1) Create and configure field "Linked issues":
 
-<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp" alt="linked-issues-config.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp" alt="Linked issues field configuration with link types, fields selection, and issue key input" width="50%" loading="lazy"></a>
 
 2) After creating the "linked issues" field, you can display it in the message body:
 
@@ -512,10 +513,12 @@ This example uses a different our plugin: [Display linked issues](https://market
 3) Result:
    
    <table><tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp" alt="render-another-field-1.png" width="100%" loading="lazy"></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp" alt="screenshot" width="100%" loading="lazy"></a></td>
    </tr>
    <tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp" alt="render-another-field-2.png" width="100%" loading="lazy"></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp" alt="screenshot" width="100%" loading="lazy"></a></td>
    </tr></table>
 
 
@@ -529,7 +532,8 @@ $issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/dateformat.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.webp" alt="dateformat.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/dateformat.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/dateformat.webp" alt="Message field banner showing formatted dates: 12-Jan-2023 00:10 and 12-01-2023" width="50%" loading="lazy"></a>
 
 #### How to show the multiline value of a text field?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
@@ -561,7 +565,8 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp" alt="replaceNewlineCharactersForHtml.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp" alt="screenshot" width="50%" loading="lazy"></a>
 
 #### How to get field names dynamically?
 
@@ -598,7 +603,7 @@ $issueFieldRender.getAsTableHtml(
 ### Priority Validation
 
 
-<a href="/uploads/message-field/dynamic-templates-examples/priority.gif" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/priority.gif" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Create issue form with Priority dropdown set to Medium, no message banner visible" width="50%" loading="lazy"></a>
 
       #if($formIssue.priority.name == "Blocker")
       $fieldDisplayConfig.setMessageType("error")
@@ -622,7 +627,7 @@ $issueFieldRender.getAsTableHtml(
 ### Summary Validation
 
 
-<a href="/uploads/message-field/dynamic-templates-examples/summary.gif" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/summary.gif" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Create issue form showing 'Short summary' info message appearing below Summary field" width="50%" loading="lazy"></a>
 
       #if($formIssue.summary.contains("PROJECTKEY"))
          message contains PROJECTKEY<br> ##Message text
@@ -802,10 +807,12 @@ When working with cascade select fields through the `$form` object, you access t
 
 
 <b>Issue create screen</b>: 
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp" alt="Cascade select - Create" width="50%" loading="lazy"></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp" alt="screenshot" width="50%" loading="lazy"></a>   
 
 <b>Other issue screens</b>:
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp" target="_blank"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp" alt="Cascade select - edit - view" width="50%" loading="lazy"></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp" target="_blank">
+<img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp" alt="screenshot" width="50%" loading="lazy"></a>   
 
 <b>Conditions</b>:
 

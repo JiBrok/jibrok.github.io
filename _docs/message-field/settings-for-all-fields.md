@@ -10,11 +10,13 @@ The **All Message Fields Settings** page provides a comprehensive overview and m
 
 To access the All Message Fields Settings page:
 
-1. Navigate to **Administration** (<img src="/uploads/atlassian/cog_icon.webp" style="width:20px" loading="lazy"> in the top panel) → **Manage apps**
+1. Navigate to **Administration** (
+<img src="/uploads/atlassian/cog_icon.webp" alt="cog_icon screenshot" style="width:20px" loading="lazy"> in the top panel) → **Manage apps**
 2. In the left menu, find the **Message Field** section 
 3. Click **All Message fields settings**
 
-<a href="/uploads/message-field/settings-for-all-message-fields.webp" target="_blank"><img src="/uploads/message-field/settings-for-all-message-fields.webp" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/message-field/settings-for-all-message-fields.webp" target="_blank">
+<img src="/uploads/message-field/settings-for-all-message-fields.webp" alt="settings-for-all-message-fields screenshot" style="width:100%;" loading="lazy"></a>
 
 ## Main Features
 

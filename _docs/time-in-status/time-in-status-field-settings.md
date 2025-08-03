@@ -5,15 +5,19 @@ excerpt: Comprehensive guide to configuring Time in Status fields including stat
 ---
 
 1. Create new custom field with type 'Time in status field' and set issue screens.<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" style="width:50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field.webp" alt="time-in-status-field screenshot" style="width:50%" loading="lazy"></a></p>
 
 2. After create open field config.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" style="width:50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config.webp" alt="time-in-status-field-config screenshot" style="width:50%" loading="lazy"></a></p>
 3. Select field context and click 'Edit Time in status field'<br>
-   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" style="width:50%" loading="lazy"></a></p>
+   <p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-config2.webp" alt="time-in-status-field-config2 screenshot" style="width:50%" loading="lazy"></a></p>
 
 [//]: # (All settings:<br>)
-[//]: # (<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.webp" target="_blank"><img src="/uploads/time-in-status/about-fields/time-in-status-config.webp" style="width:100%;" loading="lazy"></a></p>)
+[//]: # (<p style="text-align: center;"><a href="/uploads/time-in-status/about-fields/time-in-status-config.webp" target="_blank">
+<img src="/uploads/time-in-status/about-fields/time-in-status-config.webp" alt="time-in-status-config screenshot" style="width:100%;" loading="lazy"></a></p>)
 
 ## General Settings
 
@@ -77,7 +81,8 @@ Allows displaying an icon in the field based on certain conditions.
 
 ## Panel View
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" target="_blank"><img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" style="width:200px" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" target="_blank">
+<img src="/uploads/time-in-status/time-in-status-field-settings/time-in-status-field-panel-demo.webp" alt="time-in-status-field-panel-demo screenshot" style="width:200px" loading="lazy"></a></p>
 
 ### Display in Panel
 Determines whether to display the calculated time in a panel instead of adding a separate field to the issue view screen. Here's some information about it:

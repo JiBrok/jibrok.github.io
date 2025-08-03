@@ -5,12 +5,14 @@ tags: timer-cloud stopwatch-cloud
 
 Custom events became available for timers and stopwatches.
 Now with their help you can set up triggers for the timer (start, pause, restart, stop) that will work to a specific change in the field.
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-events-menu.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/custom-events-menu.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-events-menu.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/custom-events-menu.webp" alt="custom-events-menu screenshot" style="width:100%" loading="lazy"></a></p>
 
 
 For example, starting a timer when the priority is set to "High".
 
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-event-to-high-priority.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/custom-event-to-high-priority.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/custom-event-to-high-priority.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/custom-event-to-high-priority.webp" alt="custom-event-to-high-priority screenshot" style="width:100%" loading="lazy"></a></p>
 
 Each event contains separate parameters responsible for triggering this event. 
 * The field whose value change is to be tracked. It can be any issue field (system field or custom field).
@@ -22,7 +24,8 @@ Each event contains separate parameters responsible for triggering this event.
 
 Values are set in string representation and have 2 parameters.
 
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/values.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/values.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/values.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/values.webp" alt="values screenshot" style="width:100%" loading="lazy"></a></p>
 
 The first parameter (from/to) contains technical information about the value of the field. For example, the id of an option from the select list.
 
@@ -32,15 +35,18 @@ The parameter values used are best taken from [Jira Cloud Rest API - Get changel
 
 
 Example from [Postman](https://www.postman.com/):
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/rest-changelogs-example.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/rest-changelogs-example.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/rest-changelogs-example.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/rest-changelogs-example.webp" alt="rest-changelogs-example screenshot" style="width:100%" loading="lazy"></a></p>
 
 The values obtained with it can be directly inserted into custom events.
 
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/values-2.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/values-2.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/values-2.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/values-2.webp" alt="values-2 screenshot" style="width:100%" loading="lazy"></a></p>
 
 You can also try to get the required value through the issue history view interface.
 
-<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/history.webp" target="_blank"><img src="/uploads/timer-cloud/customevents/history.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/customevents/history.webp" target="_blank">
+<img src="/uploads/timer-cloud/customevents/history.webp" alt="history screenshot" style="width:100%" loading="lazy"></a></p>
 
 * If both parameters are left blank, it will be treated as an empty value.
 * If at least one of the parameters is filled in, then only it will compare.

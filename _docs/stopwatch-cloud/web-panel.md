@@ -8,8 +8,10 @@ Enables the display of the "stopwatch" fields in the sidebar.
 
 <table>
 <tr>
-<td><a href="/uploads/timer-cloud/web-panel-1.webp" target="_blank"><img src="/uploads/timer-cloud/web-panel-1.webp" loading="lazy"></a></td>
-<td><a href="/uploads/timer-cloud/web-panel-2.webp" target="_blank"><img src="/uploads/timer-cloud/web-panel-2.webp" loading="lazy"></a></td>
+<td><a href="/uploads/timer-cloud/web-panel-1.webp" target="_blank">
+<img src="/uploads/timer-cloud/web-panel-1.webp" alt="web-panel-1 screenshot" loading="lazy"></a></td>
+<td><a href="/uploads/timer-cloud/web-panel-2.webp" target="_blank">
+<img src="/uploads/timer-cloud/web-panel-2.webp" alt="web-panel-2 screenshot" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -17,16 +19,19 @@ Enables the display of the "stopwatch" fields in the sidebar.
 1. Open application "Timer field":<br>
    <ul>
       <li>Open from “Manage your app“:
-      <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.webp" target="_blank"><img src="/uploads/tis-cloud/open-admin-from-app-manage.webp" style="width:100%" loading="lazy"></a></p>
+      <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.webp" target="_blank">
+<img src="/uploads/tis-cloud/open-admin-from-app-manage.webp" alt="open-admin-from-app-manage screenshot" style="width:100%" loading="lazy"></a></p>
       </li>
       <li>Or from “Apps“ menu:
-       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" target="_blank"><img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" alt="" width="100%" loading="lazy"></a></p>
+       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" target="_blank">
+<img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
       </li>
    </ul>
 2. Open "Web panels" tab and click "Create"
 
 You can create many panels with different settings.
-<p style="text-align: center;"><a href="/uploads/timer-cloud/web-panel-create.webp" target="_blank"><img src="/uploads/timer-cloud/web-panel-create.webp" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/web-panel-create.webp" target="_blank">
+<img src="/uploads/timer-cloud/web-panel-create.webp" alt="web-panel-create screenshot" loading="lazy"></a></p>
 
 ### General settings ### 
 

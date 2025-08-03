@@ -11,22 +11,26 @@ The template uses [velocity](https://velocity.apache.org/engine/1.7/user-guide.h
 
 In the menu with all templates, you can see what templates are available and where they are used.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/templates/1.webp" target="_blank"><img src="/uploads/time-in-status/templates/1.webp" style="width:600px" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/templates/1.webp" target="_blank">
+<img src="/uploads/time-in-status/templates/1.webp" alt="1 screenshot" style="width:600px" loading="lazy"></a></p>
 
 In the template itself, you can use HTML, JavaScript and predefined variables that depend on the selected field type.
 
 A small example of what you can do: <br>
 * Display the necessary data about the timer in the table: <br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/templates/2.webp" target="_blank"><img src="/uploads/time-in-status/templates/2.webp" style="width:300px" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/templates/2.webp" target="_blank">
+<img src="/uploads/time-in-status/templates/2.webp" alt="2 screenshot" style="width:300px" loading="lazy"></a></p>
 
 
 <script src="https://gist.github.com/JiBrok/9999437e950b81d35853d85c4975caad.js"></script>
 
 * Connect this template in the field settings: <br>
-  <p style="text-align: center;"><a href="/uploads/time-in-status/templates/3.webp" target="_blank"><img src="/uploads/time-in-status/templates/4.webp" style="width:300px" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/templates/3.webp" target="_blank">
+<img src="/uploads/time-in-status/templates/4.webp" alt="4 screenshot" style="width:300px" loading="lazy"></a></p>
 
 * And this is how the timer value in the task will now look like: <br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/templates/3.webp" target="_blank"><img src="/uploads/time-in-status/templates/3.webp" style="width:300px" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/templates/3.webp" target="_blank">
+<img src="/uploads/time-in-status/templates/3.webp" alt="3 screenshot" style="width:300px" loading="lazy"></a></p>
 
 
 Now you are not limited by anything and can customize the display of values as you like.

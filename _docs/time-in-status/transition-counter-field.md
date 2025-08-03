@@ -7,7 +7,8 @@ excerpt: Count and track the number of status transitions between selected statu
 
 Calculate the number of transitions between selected statuses
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/transition-counter-field/transition-counter-field.webp" target="_blank"><img src="/uploads/time-in-status/transition-counter-field/transition-counter-field.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/transition-counter-field/transition-counter-field.webp" target="_blank">
+<img src="/uploads/time-in-status/transition-counter-field/transition-counter-field.webp" alt="transition-counter-field screenshot" style="width:100%" loading="lazy"></a></p>
 
 Searchable. Returns the number of specified transitions completed by the task.
 
@@ -18,4 +19,5 @@ That: Closed
 The transitions New -> Closed and Open-> Closed will be counted.
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/transition-counter-field/transition-counter-field-settings.webp" target="_blank"><img src="/uploads/time-in-status/transition-counter-field/transition-counter-field-settings.webp" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/transition-counter-field/transition-counter-field-settings.webp" target="_blank">
+<img src="/uploads/time-in-status/transition-counter-field/transition-counter-field-settings.webp" alt="transition-counter-field-settings screenshot" style="width:100%" loading="lazy"></a></p>

@@ -22,7 +22,8 @@ Main features:
 * Setting access rights
 * Ability to work with time as a prime number - simplifies integration with third-party solutions.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank"><img src="/uploads/time-in-status/overview/fields-example-2.webp" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank">
+<img src="/uploads/time-in-status/overview/fields-example-2.webp" alt="fields-example-2 screenshot" style="width:100%;" loading="lazy"></a></p>
 
 * Tracking new requests.
 * Analysis and collection of time data in the status of past tasks.
