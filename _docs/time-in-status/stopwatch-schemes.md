@@ -2,6 +2,8 @@
 title: Stopwatch schemes
 key: time-in-status
 excerpt: Create and manage stopwatch schemes that establish links between projects, issue types, and stopwatch configurations for organized time tracking.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, stopwatch, field-configuration, time-in-status, performance-optimization]
 ---
 
 The diagram establishes the links between project, issue type and stopwatch configuration.   
