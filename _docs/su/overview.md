@@ -38,3 +38,16 @@ Everything! You are logged in under the selected user. At the end of the work, y
 ### All actions with SU Permissions and logins are recorded in the standard Jira audit log. ###
 
 <p style="text-align: center;"><a href="/uploads/su/audit-log.png"><img src="/uploads/su/audit-log.png" style="width:100%"/></a></p>
+
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Shortcuts](/docs/su/shortcuts/)** - Quick switching shortcuts and hotkeys
+
+### ⚙️ Configuration
+- **[Delegating](/docs/su/delegating/)** - Delegate SU permissions to users and groups
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests

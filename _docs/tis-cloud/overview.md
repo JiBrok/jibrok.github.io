@@ -48,5 +48,42 @@ The "Time in status" fields can be used like regular fields in the JQL navigator
 
 (🛠 New functionality for generating and downloading reports is coming soon)
 
-[Get started](/docs/time-in-status/get-started/)
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Get Started Guide](/docs/tis-cloud/get-started/)** - Quick setup and first steps
+- **[Installation](/docs/tis-cloud/install/)** - Install and configure the app
+
+### ⚙️ Field Configuration
+- **[Create Time in Status Field](/docs/tis-cloud/time-in-status-field-create/)** - Set up new time tracking fields
+- **[Time in Status Field Settings](/docs/tis-cloud/time-in-status-field-settings/)** - Configure field options and behavior
+
+### 🔍 Search & JQL Functions
+- **[Time in Status JQL](/docs/tis-cloud/time-in-status-jql/)** - Search and query functions
+
+### 📅 Time Management
+- **[Work Calendar](/docs/tis-cloud/work-calendar/)** - Business hours configuration
+- **[Time Formats](/docs/tis-cloud/time-formats/)** - Display formatting options
+
+### 📊 Reports & Analytics
+- **[Dashboard Statistic Gadget](/docs/tis-cloud/dashboard-statistic-gadget/)** - Dashboard integration
+- **[Export Fields](/docs/tis-cloud/export-fields/)** - Data export options
+- **[Gadget News](/docs/tis-cloud/gadget-news/)** - Latest gadget updates
+
+### 🖥️ Interface & Display
+- **[Web Panel](/docs/tis-cloud/web-panel/)** - Display configuration options
+
+### 📋 System Information
+- **[Service Info](/docs/tis-cloud/service-info/)** - System status and information
+- **[Status Page](/docs/tis-cloud/status-page/)** - Service status monitoring
+- **[Limits](/docs/tis-cloud/limits/)** - Usage limits and constraints
+
+### 🔄 Migration & Updates
+- **[Migration Documentation](/docs/tis-cloud/migrationDocumentation/)** - Version migration guide
+- **[Feature Differences](/docs/tis-cloud/featureDifferenceDocumentation/)** - Compare features across versions
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
 

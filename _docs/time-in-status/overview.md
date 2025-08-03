@@ -65,5 +65,75 @@ The reports will be available for viewing and export via the link.
 * Functions to compare fields in jql.
 * Others
 
+---
 
-[Get started](/docs/time-in-status/get-started/)
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Get Started Guide](/docs/time-in-status/get-started/)** - Quick setup and first steps
+- **[Installation](/docs/time-in-status/install/)** - Install and configure the plugin
+- **[Step-by-Step: Time in Status](/docs/time-in-status/step-by-step-time-in-status/)** - Configure time tracking
+- **[Step-by-Step: Timer](/docs/time-in-status/step-by-step-timer/)** - Set up countdown timers
+- **[Step-by-Step: Stopwatch](/docs/time-in-status/step-by-step-stopwatch/)** - Track time between events
+
+### 📊 Field Types & Configuration
+
+#### Time in Status Fields
+- **[Time in Status Field](/docs/time-in-status/time-in-status-field/)** - Basic time tracking configuration
+- **[Time in Status Field Settings](/docs/time-in-status/time-in-status-field-settings/)** - Advanced field options
+- **[Time in Status All Fields](/docs/time-in-status/time-in-status-all/)** - Complete field reference
+- **[Time in Status JQL](/docs/time-in-status/time-in-status-jql/)** - Search and query functions
+
+#### Timer Fields  
+- **[Timer Field](/docs/time-in-status/timer-field/)** - Countdown timer setup
+- **[Timer Field Settings](/docs/time-in-status/timer-field-settings/)** - Timer configuration options
+- **[Timer All Fields](/docs/time-in-status/timer-field-all/)** - Complete timer reference
+- **[Timer Configs](/docs/time-in-status/timer-configs/)** - Timer scheme configuration
+- **[Timer Schemes](/docs/time-in-status/timer-schemes/)** - Advanced timer workflows
+
+#### Stopwatch Fields
+- **[Stopwatch Field](/docs/time-in-status/stopwatch-field/)** - Event-based time tracking  
+- **[Stopwatch Field Settings](/docs/time-in-status/stopwatch-field-settings/)** - Stopwatch configuration
+- **[Stopwatch All Fields](/docs/time-in-status/stopwatch-field-all/)** - Complete stopwatch reference
+- **[Stopwatch Configs](/docs/time-in-status/stopwatch-configs/)** - Stopwatch scheme setup
+- **[Stopwatch Schemes](/docs/time-in-status/stopwatch-schemes/)** - Advanced stopwatch workflows
+
+### 🔍 Search & JQL Functions
+- **[JQL Function Field](/docs/time-in-status/jql-function-field/)** - Basic JQL functions
+- **[JQL Function Field All](/docs/time-in-status/jql-function-field-all/)** - Complete JQL reference
+- **[Timer Field JQL](/docs/time-in-status/timer-field-jql/)** - Timer search functions
+- **[Stopwatch Field JQL](/docs/time-in-status/stopwatch-field-jql/)** - Stopwatch queries
+
+### 📈 Reports & Analytics
+- **[Report Create](/docs/time-in-status/report-create/)** - Build custom reports
+- **[Report Table](/docs/time-in-status/report-table/)** - Tabular reporting
+- **[Reports All](/docs/time-in-status/reports-all/)** - Complete reporting guide
+- **[Reports Permissions](/docs/time-in-status/reports-permissions/)** - Access control for reports
+- **[Report Assignee Status](/docs/time-in-status/report-assignee-status/)** - Track assignee time
+- **[Report Status Assignee](/docs/time-in-status/report-status-assignee/)** - Status-based assignee reports
+
+### ⚙️ Advanced Configuration
+- **[Common Settings](/docs/time-in-status/common-settings/)** - Global configuration
+- **[Performance Config JQL](/docs/time-in-status/performance-config-jql/)** - Optimize JQL performance
+- **[Performance Config Multithreading](/docs/time-in-status/performance-config-multithreading/)** - Threading optimization
+- **[Work Calendar](/docs/time-in-status/work-calendar/)** - Business hours configuration
+- **[Available Events](/docs/time-in-status/available-events/)** - Trigger event reference
+- **[About Fields](/docs/time-in-status/about-fields/)** - Field architecture overview
+- **[Autotrack](/docs/time-in-status/autotrack/)** - Automatic time tracking
+
+### 🔧 Integration & Export
+- **[REST API](/docs/time-in-status/rest-api/)** - Programmatic access
+- **[Java API](/docs/time-in-status/java-api/)** - Developer integration
+- **[Export Fields](/docs/time-in-status/export-fields/)** - Data export options
+- **[Export to EazyBI](/docs/time-in-status/export-to-eazybi/)** - Business intelligence integration
+- **[Worklog Settings](/docs/time-in-status/worklog-settings/)** - Automatic worklog creation
+
+### 🎨 Display & Customization
+- **[Field Panel Configs](/docs/time-in-status/field-panel-configs/)** - Panel display options
+- **[Bottom Panel Configs](/docs/time-in-status/bottom-panel-configs/)** - Issue bottom panel setup
+- **[Templates for Field Value](/docs/time-in-status/templates-for-field-value/)** - Custom field templates
+- **[Time Formats](/docs/time-in-status/time-formats/)** - Display formatting options
+
+### 💡 Additional Resources
+- **[User Help Info](/docs/time-in-status/user-help-info/)** - End-user guidance
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit requests

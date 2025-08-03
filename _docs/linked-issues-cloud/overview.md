@@ -60,6 +60,13 @@ Web panels are displayed in issues in the browser and in the application:
 * <a href="/uploads/linked-issues-cloud/result-2.png"><img src="/uploads/linked-issues-cloud/result-2.png" style="width:100%;"/></a>
 * <a href="/uploads/linked-issues-cloud/result-3.png"><img src="/uploads/linked-issues-cloud/result-3.png" style="width:100%;"/></a>
 
+---
+
+## 📖 Documentation
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
+
 
 
 

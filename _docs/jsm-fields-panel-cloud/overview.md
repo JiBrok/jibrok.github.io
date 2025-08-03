@@ -59,6 +59,13 @@ This completes the configuration and the selected fields are displayed on the po
 
 <p style="text-align: center;"><a href="/uploads/jsm-fields-panel-cloud/view-example.png"><img src="/uploads/jsm-fields-panel-cloud/view-example.png" style="width:100%"/></a></p>
 
+---
+
+## 📖 Documentation
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
+
 
 
 

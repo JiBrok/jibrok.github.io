@@ -44,5 +44,35 @@ The "Stopwatch" fields can be used like regular fields in the JQL navigator and 
 
 (🛠 New functionality for generating and downloading reports is coming soon)
 
-[Get started](/docs/stopwatch-cloud/get-started/)
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Get Started Guide](/docs/stopwatch-cloud/get-started/)** - Quick setup and first steps
+- **[Installation](/docs/stopwatch-cloud/install/)** - Install and configure the app
+
+### ⚙️ Field Configuration
+- **[Create Stopwatch Field](/docs/stopwatch-cloud/stopwatch-field-create/)** - Set up new stopwatch fields
+- **[Stopwatch Field Settings](/docs/stopwatch-cloud/stopwatch-field-settings/)** - Configure field options and behavior
+
+### 🔍 Search & JQL Functions
+- **[Stopwatch JQL](/docs/stopwatch-cloud/stopwatch-jql/)** - Search and query functions
+
+### 📅 Time Management
+- **[Work Calendar](/docs/stopwatch-cloud/work-calendar/)** - Business hours configuration
+
+### 🖥️ Interface & Display
+- **[Web Panel](/docs/stopwatch-cloud/web-panel/)** - Display configuration options
+
+### 📋 System Information
+- **[Service Info](/docs/stopwatch-cloud/service-info/)** - System status and information
+- **[Status Page](/docs/stopwatch-cloud/status-page/)** - Service status monitoring
+
+### 🔄 Migration & Updates
+- **[Migration Documentation](/docs/stopwatch-cloud/migrationDocumentation/)** - Version migration guide
+- **[Feature Differences](/docs/stopwatch-cloud/featureDifferenceDocumentation/)** - Compare features across versions
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
 

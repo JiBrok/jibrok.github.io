@@ -106,3 +106,17 @@ You can create an unlimited number of calendars and use it in any contexts and p
     <li>Information about scheduled work on the servers or a failure will be displayed on this page(Start page). Additional notifications are available on the page: <a href="https://jibrok.statuspage.io/">Status page</a> </li>
     <li>Please <a href="https://jibrok.atlassian.net/servicedesk/customer/portals" target="_blank">contact support</a> in case of difficulties.</li>
 </ol>
+
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Get Started Guide](/docs/time-between-dates-cloud/get-started/)** - Quick setup and first steps
+
+### ⚙️ Field Configuration
+- **[Create Time Between Dates Field](/docs/time-between-dates-cloud/time-between-dates-field-create/)** - Set up date comparison fields
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
+- **[Status Page](https://jibrok.statuspage.io/)** - Service status monitoring

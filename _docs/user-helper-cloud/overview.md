@@ -33,3 +33,10 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12272
 </li>
     </ul>
 </p>
+
+---
+
+## 📖 Documentation
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests

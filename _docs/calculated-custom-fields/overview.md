@@ -65,4 +65,17 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
   
 [Full list of fields](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields)
 
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[To Do List Field](/docs/calculated-custom-fields/todolist/)** - Create interactive task lists in issues
+
+### 📚 External Resources
+- **[Full Field Documentation](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields)** - Complete field reference and guides
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
+
 

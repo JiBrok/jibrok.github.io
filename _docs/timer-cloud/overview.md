@@ -43,4 +43,35 @@ The "Timer" fields can be used like regular fields in the JQL navigator and expo
 
 (🛠 New functionality for generating and downloading reports is coming soon)
 
-[Get started](/docs/timer-cloud/get-started/)
+---
+
+## 📖 Complete Documentation
+
+### 🚀 Getting Started
+- **[Get Started Guide](/docs/timer-cloud/get-started/)** - Quick setup and first steps
+- **[Installation](/docs/timer-cloud/install/)** - Install and configure the app
+- **[Step-by-Step: Timer](/docs/timer-cloud/step-by-step-timer/)** - Complete timer setup guide
+
+### ⚙️ Field Configuration
+- **[Create Timer Field](/docs/timer-cloud/timer-field-create/)** - Set up new timer fields
+- **[Timer Field Settings](/docs/timer-cloud/timer-field-settings/)** - Configure field options and behavior
+
+### 🔍 Search & JQL Functions
+- **[Timer JQL](/docs/timer-cloud/timer-jql/)** - Search and query functions
+
+### 📅 Time Management
+- **[Work Calendar](/docs/timer-cloud/work-calendar/)** - Business hours configuration
+
+### 🖥️ Interface & Display
+- **[Web Panel](/docs/timer-cloud/web-panel/)** - Display configuration options
+
+### 📋 System Information
+- **[Service Info](/docs/timer-cloud/service-info/)** - System status and information
+- **[Status Page](/docs/timer-cloud/status-page/)** - Service status monitoring
+
+### 🔄 Migration & Updates
+- **[Migration Documentation](/docs/timer-cloud/migrationDocumentation/)** - Version migration guide
+- **[Feature Differences](/docs/timer-cloud/featureDifferenceDocumentation/)** - Compare features across versions
+
+### 💡 Additional Resources
+- **[Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)** - Get help and submit feature requests
