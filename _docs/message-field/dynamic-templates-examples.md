@@ -113,8 +113,11 @@ Priority: #default($formIssue.priority.name "No priority set")
 
 ### Custom Field Values ($cfValues)
 
-#### How to get the value of a custom field for an $issue
 [see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) 
+
+The CFValues utility provides comprehensive methods for accessing custom field values from issues and forms.
+
+#### How to get the value of a custom field for an $issue
     
     $cfValues.get(10100)<br>
     $cfValues.get("customfield_10100")<br>
@@ -138,6 +141,37 @@ Priority: #default($formIssue.priority.name "No priority set")
     $cfValues.getFromFormOrDefault(10100, "Default value")<br>
     $cfValues.getFromFormOrDefault("customfield_10100", 123)<br>
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
+
+#### How to get raw values from form (without type conversion)
+
+The `getRawCFValueFromForm` methods return the raw value from the form without any type conversion:
+
+```velocity
+## Get raw value by field ID as number
+#set($rawValue = $cfValues.getRawCFValueFromForm(10100))
+
+## Get raw value by field ID as string
+#set($rawValue = $cfValues.getRawCFValueFromForm("customfield_10100"))
+
+## Example: Working with raw JSON data from a text field
+#set($jsonData = $cfValues.getRawCFValueFromForm("customfield_10200"))
+#if($jsonData)
+    ## Parse JSON data
+    #set($parsedData = $JSON.parse($jsonData))
+    #if($parsedData)
+        Configuration loaded: $parsedData.get("configName")
+    #end
+#end
+
+## Example: Checking raw form values before type conversion
+#set($rawSelectValue = $cfValues.getRawCFValueFromForm(10300))
+#if($rawSelectValue)
+    Raw select field value (option ID): $rawSelectValue
+    ## Compare with converted value
+    #set($convertedValue = $cfValues.getFromForm(10300))
+    Converted value (option object): $convertedValue.value
+#end
+```
 
 
 ### Issue Field Access
@@ -273,6 +307,42 @@ or
 
 ### How to use and check linked issues?
 [see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
+
+The Links utility provides comprehensive methods for working with issue links. All methods can be called with or without parameters to filter by link type.
+
+#### Available methods:
+
+**Outward Issues and Links:**
+- `getOutwardIssues()` - Get all outward linked issues
+- `getOutwardIssues(String linkTypeName)` - Get outward issues by link type name
+- `getOutwardIssues(long linkTypeId)` - Get outward issues by link type ID
+- `getOutwardIssuesFromForm()` - Get outward issues including form data
+- `getOutwardIssuesFromForm(String linkTypeName)` - Get outward issues from form by type name
+- `getOutwardIssuesFromForm(long linkTypeId)` - Get outward issues from form by type ID
+- `getRawOutwardIssuesFromForm()` - Get only form data outward issues
+- `getRawOutwardIssuesFromForm(String linkTypeName)` - Get raw form outward issues by type
+- `getRawOutwardIssuesFromForm(long linkTypeId)` - Get raw form outward issues by type ID
+- `getOutwardLinks()` - Get all outward issue links
+- `getOutwardLinks(String linkTypeName)` - Get outward links by type name
+- `getOutwardLinks(long linkTypeId)` - Get outward links by type ID
+
+**Inward Issues and Links:**
+- `getInwardIssues()` - Get all inward linked issues
+- `getInwardIssues(String linkTypeName)` - Get inward issues by link type name
+- `getInwardIssues(long linkTypeId)` - Get inward issues by link type ID
+- `getInwardIssuesFromForm()` - Get inward issues including form data
+- `getInwardIssuesFromForm(String linkTypeName)` - Get inward issues from form by type name
+- `getInwardIssuesFromForm(long linkTypeId)` - Get inward issues from form by type ID
+- `getRawInwardIssuesFromForm()` - Get only form data inward issues
+- `getRawInwardIssuesFromForm(String linkTypeName)` - Get raw form inward issues by type
+- `getRawInwardIssuesFromForm(long linkTypeId)` - Get raw form inward issues by type ID
+- `getInwardLinks()` - Get all inward issue links
+- `getInwardLinks(String linkTypeName)` - Get inward links by type name
+- `getInwardLinks(long linkTypeId)` - Get inward links by type ID
+
+#### Examples:
+
+**Basic usage - check blocked issues:**
    
     #set ($blockedIssues = $links.getOutwardIssues("blocked"))
     #if($blockedIssues.size() > 0)
@@ -280,11 +350,92 @@ or
             $blockedIssue.status.name $cfValues.getOrDefault($blockedIssue, "developer custom field", "hasn't developer")<br>
         #end
     #end
+
+**Check all linked issues (both directions):**
+```velocity
+## Get all outward issues
+#set($outwardIssues = $links.getOutwardIssues())
+#set($inwardIssues = $links.getInwardIssues())
+
+#if($outwardIssues.size() > 0 || $inwardIssues.size() > 0)
+    <h4>Linked Issues:</h4>
+    
+    #if($outwardIssues.size() > 0)
+        <h5>This issue links to:</h5>
+        <ul>
+        #foreach($issue in $outwardIssues)
+            <li>$issue.key - $issue.summary ($issue.status.name)</li>
+        #end
+        </ul>
+    #end
+    
+    #if($inwardIssues.size() > 0)
+        <h5>Issues linking to this:</h5>
+        <ul>
+        #foreach($issue in $inwardIssues)
+            <li>$issue.key - $issue.summary ($issue.status.name)</li>
+        #end
+        </ul>
+    #end
+#else
+    <p>No linked issues found.</p>
+#end
+```
+
+**Work with specific link types:**
+```velocity
+## Check if issue is blocked
+#set($blockers = $links.getInwardIssues("Blocks"))
+#if($blockers.size() > 0)
+    <div style="background: #ffebee; padding: 10px;">
+        <h4>⛔ This issue is blocked by:</h4>
+        #foreach($blocker in $blockers)
+            <p>$blocker.key - $blocker.summary 
+            #if($blocker.status.name != "Done")
+                <span style="color: red;">(Still Open)</span>
+            #end
+            </p>
+        #end
+    </div>
+#end
+
+## Check dependencies
+#set($dependencies = $links.getOutwardIssues("Dependency"))
+#if($dependencies.size() > 0)
+    <h4>Dependencies:</h4>
+    #foreach($dep in $dependencies)
+        - $dep.key: $dep.summary (Status: $dep.status.name)<br>
+    #end
+#end
+```
+
+**Working with form data (for create/edit screens):**
+```velocity
+## Get links including unsaved changes from form
+#set($allOutwardIssues = $links.getOutwardIssuesFromForm())
+#if($allOutwardIssues.size() > 0)
+    <p>Total linked issues (including unsaved): $allOutwardIssues.size()</p>
+#end
+
+## Get only new links from form (not yet saved)
+#set($newLinks = $links.getRawOutwardIssuesFromForm())
+#if($newLinks.size() > 0)
+    <p style="color: orange;">⚠️ You are adding $newLinks.size() new link(s)</p>
+#end
+```
 ## Utility Services
 
 ### JQL Service ($jqlService)
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+
+#### Available methods:
+
+**Search methods:**
+- `getIssuesByJQL(String jql, int maxCount)` - Search issues with current user's permissions
+
+**Count methods:**
+- `getIssueCountByJQL(String jql)` - Count issues with current user's permissions
 
 #### How to use JQL in message?
 
@@ -297,6 +448,22 @@ You can use current issue in jql for conditions:
     #if($jqlService.getIssueCountByJQL("key = $issue.key and updated < startOfDay(-2)") > 0)
         The problem has not been updated for more than two days.
     #end
+
+#### Advanced JQL examples:
+
+**Count issues for statistics:**
+```velocity
+#set($criticalCount = $jqlService.getIssueCountByJQL("project = $issue.projectObject.key AND priority = Critical AND status != Done"))
+#set($highCount = $jqlService.getIssueCountByJQL("project = $issue.projectObject.key AND priority = High AND status != Done"))
+
+#if($criticalCount > 0 || $highCount > 0)
+    <div style="background: #fff3cd; padding: 10px;">
+        <h4>⚠️ Project has high priority issues:</h4>
+        <p>Critical: $criticalCount issues</p>
+        <p>High: $highCount issues</p>
+    </div>
+#end
+```
 
 #### How to show fields for issues by JQL in message?
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
@@ -312,8 +479,23 @@ $issueFieldRender.getAsTableHtml(
 
 ### Issue Field Renderer ($issueFieldRender)
 
-#### How to show fields from linked issues (also on Service Desk Portal)?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+
+The Issue Field Renderer provides methods for rendering issue fields and formatting data.
+
+#### Available methods:
+
+- `getFieldValueHtml(Issue issue, long customFieldId)` - Get HTML rendered value of custom field by ID
+- `getFieldValueHtml(Issue issue, String field)` - Get HTML rendered value of field by name/ID
+- `getFieldName(long customFieldId)` - Get the name of a custom field by its ID
+- `getFieldName(String fieldForView)` - Get the name of a field by its string identifier
+- `getAsTableHtml(List<Issue> issues, String... fields)` - Render issues as HTML table
+- `getAsTableHtml(Issue issue, String... fields)` - Render single issue fields as HTML table
+- `getJQLAsTableHtml(String jql, int maxCount, String... fields)` - Execute JQL and render results as table
+- `replaceNewlineCharactersForHtml(String string)` - Convert newlines to HTML breaks
+- `dateFormat(Date date, String format)` - Format date with specified pattern
+
+#### How to show fields from linked issues (also on Service Desk Portal)?
 
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
 1) Create and configure field "Linked issues":
@@ -378,6 +560,35 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 
 Result:
 <a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%"/></a>
+
+#### How to get field names dynamically?
+
+```velocity
+## Get custom field name by ID
+#set($fieldName = $issueFieldRender.getFieldName(10100))
+<p>Field 10100 is named: $fieldName</p>
+
+## Get field name by field key
+#set($summaryName = $issueFieldRender.getFieldName("summary"))
+<p>Summary field display name: $summaryName</p>
+```
+
+#### How to render JQL results directly as a table?
+
+```velocity
+## Execute JQL and display results as table
+$issueFieldRender.getJQLAsTableHtml(
+    "project = $issue.projectObject.key AND created >= -7d", 
+    10,
+    "Key", "Summary", "Status", "Assignee", "Created"
+)
+
+## Display single issue data as table
+$issueFieldRender.getAsTableHtml(
+    $issue,
+    "Summary", "Status", "Priority", "Assignee", "customfield_10100"
+)
+```
 
 
 ## Field Validation Examples
@@ -717,6 +928,35 @@ Current user is not a developer
 
 [see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
 
+The Cast utility provides methods for safe type conversion in Velocity templates.
+
+#### Available methods:
+
+**toInteger(Object object)**
+Converts an object to Integer. Returns null if conversion fails.
+```velocity
+$cast.toInteger("123")     ## returns 123
+$cast.toInteger("abc")     ## returns null
+$cast.toInteger(null)      ## returns null
+```
+
+**toLong(Object object)**
+Converts an object to Long. Returns null if conversion fails.
+```velocity
+$cast.toLong("9999999999")  ## returns 9999999999L
+$cast.toLong("abc")         ## returns null
+$cast.toLong(null)          ## returns null
+```
+
+**toString(Object object)**
+Converts an object to String. Returns null if object is null.
+```velocity
+$cast.toString(123)         ## returns "123"
+$cast.toString($issue)      ## returns string representation
+$cast.toString(null)        ## returns null
+```
+
+#### Example: Dynamic messages based on issue type and custom field
 
       #set ($messages = {
           "Story" : {
@@ -739,6 +979,201 @@ Current user is not a developer
       #else
          $fieldDisplayConfig.setHidden(true)##hide
       #end
+
+### JSON Parser ($JSON)
+
+The JSON utility provides JSON parsing capabilities in Velocity templates.
+
+#### Available methods:
+
+**parse(String jsonString)**
+Parses a JSON string and returns a JSONObject. Returns null if parsing fails.
+
+```velocity
+#set($jsonString = '{"name": "John", "age": 30, "active": true}')
+#set($jsonObject = $JSON.parse($jsonString))
+
+#if($jsonObject)
+    Name: $jsonObject.get("name")
+    Age: $jsonObject.get("age")
+    Active: $jsonObject.get("active")
+#else
+    Failed to parse JSON
+#end
+```
+
+#### Example: Working with JSON data from custom fields
+
+```velocity
+## Assuming a text field contains JSON data
+#set($jsonData = $cfValues.get("JSON Data Field"))
+#if($jsonData)
+    #set($parsedData = $JSON.parse($jsonData))
+    #if($parsedData)
+        <h4>Parsed Configuration:</h4>
+        <ul>
+        #foreach($key in $parsedData.keys())
+            <li>$key: $parsedData.get($key)</li>
+        #end
+        </ul>
+    #else
+        <p style="color: red;">Invalid JSON format in custom field</p>
+    #end
+#end
+```
+
+### Permission Helper ($permissionHelper)
+
+The Permission Helper provides methods to check user permissions in templates. This utility is only available in non-delegated mode.
+
+#### Available methods:
+
+**hasPermission(String permission)**
+Checks if the current user has the specified permission for the current issue.
+```velocity
+#if($permissionHelper.hasPermission("EDIT_ISSUES"))
+    You can edit this issue
+#else
+    You cannot edit this issue
+#end
+```
+
+**hasPermission(String permission, ApplicationUser user)**
+Checks if the specified user has the permission for the current issue.
+```velocity
+#if($permissionHelper.hasPermission("ASSIGN_ISSUES", $formIssue.assignee))
+    The assignee can assign issues
+#end
+```
+
+**hasPermission(String permission, Issue issue)**
+Checks if the current user has the permission for the specified issue.
+```velocity
+#set($parentIssue = $formIssue.parentObject)
+#if($parentIssue && $permissionHelper.hasPermission("VIEW_ISSUES", $parentIssue))
+    You can view the parent issue
+#end
+```
+
+**hasPermission(String permission, Issue issue, ApplicationUser user)**
+Checks if the specified user has the permission for the specified issue.
+```velocity
+#if($permissionHelper.hasPermission("COMMENT_ISSUES", $linkedIssue, $currentUser))
+    You can comment on the linked issue
+#end
+```
+
+#### Common permission types:
+- VIEW_ISSUES - View issues
+- CREATE_ISSUES - Create issues  
+- EDIT_ISSUES - Edit issues
+- ASSIGN_ISSUES - Assign issues
+- RESOLVE_ISSUES - Resolve issues
+- CLOSE_ISSUES - Close issues
+- COMMENT_ISSUES - Add comments
+- DELETE_ISSUES - Delete issues
+- WORK_ON_ISSUES - Work on issues
+- LINK_ISSUES - Link issues
+
+#### Example: Display content based on permissions
+
+```velocity
+#if($permissionHelper.hasPermission("EDIT_ISSUES"))
+    <div style="background: #e8f5e8; padding: 10px;">
+        <h4>✏️ Editor Actions</h4>
+        <p>You have permission to edit this issue.</p>
+        <p>Remember to follow the editing guidelines.</p>
+    </div>
+#elseif($permissionHelper.hasPermission("COMMENT_ISSUES"))
+    <div style="background: #fff3cd; padding: 10px;">
+        <h4>💬 Commenter Access</h4>
+        <p>You can add comments but cannot edit the issue.</p>
+        <p>Please use comments for suggestions.</p>
+    </div>
+#else
+    <div style="background: #f8d7da; padding: 10px;">
+        <h4>👁️ View Only</h4>
+        <p>You have read-only access to this issue.</p>
+    </div>
+#end
+```
+
+### Component Accessor ($ComponentAccessor)
+
+The Component Accessor provides access to various Jira components and services. This powerful utility is only available in non-delegated mode.
+
+#### Common usage examples:
+
+**Get Jira managers and services:**
+```velocity
+## Get various Jira managers
+#set($projectManager = $ComponentAccessor.getProjectManager())
+#set($userManager = $ComponentAccessor.getUserManager())
+#set($groupManager = $ComponentAccessor.getGroupManager())
+#set($customFieldManager = $ComponentAccessor.getCustomFieldManager())
+#set($versionManager = $ComponentAccessor.getVersionManager())
+#set($componentManager = $ComponentAccessor.getProjectComponentManager())
+```
+
+**Working with application properties:**
+```velocity
+#set($appProperties = $ComponentAccessor.getApplicationProperties())
+#set($baseUrl = $appProperties.getString("jira.baseurl"))
+#set($jiraVersion = $appProperties.getString("jira.version"))
+
+Base URL: $baseUrl
+Jira Version: $jiraVersion
+```
+
+**Get user information:**
+```velocity
+#set($userManager = $ComponentAccessor.getUserManager())
+#set($user = $userManager.getUserByName("john.doe"))
+#if($user)
+    User: $user.displayName ($user.emailAddress)
+    Active: $user.isActive()
+#end
+```
+
+**Access custom components:**
+```velocity
+## Get any component by class
+#set($myService = $ComponentAccessor.getComponent("com.example.MyService"))
+#if($myService)
+    ## Use your custom service
+#end
+
+## Get OSGi component
+#set($osgiService = $ComponentAccessor.getOSGiComponentInstanceOfType("com.example.MyOsgiService"))
+```
+
+#### Example: Display project and version information
+
+```velocity
+#set($project = $issue.projectObject)
+
+#if($project)
+    <h4>Project Information</h4>
+    <p><strong>Project:</strong> $project.name ($project.key)</p>
+    <p><strong>Lead:</strong> #if($project.lead) $project.lead.displayName #else Not assigned #end</p>
+    
+    #set($versions = $versionManager.getVersions($project))
+    #if($versions && $versions.size() > 0)
+        <h5>Available Versions:</h5>
+        <ul>
+        #foreach($version in $versions)
+            <li>$version.name 
+                #if($version.isReleased()) 
+                    (Released)
+                #else 
+                    (Unreleased)
+                #end
+            </li>
+        #end
+        </ul>
+    #end
+#end
+```
 
 ## Real-World Example Scenarios
 
@@ -911,6 +1346,31 @@ Current user is not a developer
       #else
          No attachments found.
       #end
+
+### Additional variables
+
+Apart from the services described above, the following variables are also available in templates:
+
+#### Context and Transition Variables
+- `$context` - Current context (CREATE, EDIT, VIEW, TRANSITION, etc.)
+- `$transitionId` - ID of the current transition (if in transition context)
+- `$transitionName` - Name of the current transition (if in transition context)
+- `$previousStatusId` - ID of the previous status (from issue history)
+- `$previousStatusName` - Name of the previous status (from issue history)
+- `$dateOfLastTransition` - Date when the last transition occurred
+- `$secAfterLastTransition` - Seconds elapsed since last transition
+
+#### User and Locale Variables
+- `$currentUser` - Currently logged-in user
+- `$locale` - Current user's locale
+- `$language` - Current language code (e.g., "en", "de")
+- `$country` - Current country code
+- `$timeZone` - Current user's timezone
+- `$nowInUserTimeZone` - Current date/time in user's timezone
+- `$currentDateTime` - Current date/time
+
+#### URLs and Base Information
+- `$baseUrl` - Jira base URL
 
 #### Show different approval workflows based on user group membership. ####
 
