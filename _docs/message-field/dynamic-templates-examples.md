@@ -12,9 +12,9 @@ Examples of using variables that are available for use in dynamic templates.
 
 You can see the official user guide for velocity [here](http://velocity.apache.org/engine/1.7/user-guide.html).
 
-## Velocity Template Basics {#velocity-template-basics}
+## Velocity Template Basics
 
-### Default Values for Variables {#default-values-for-variables}
+### Default Values for Variables
 
 When working with variables that might be null or undefined, you can use these approaches to provide default values:
 
@@ -54,16 +54,16 @@ Assignee: #default($issue.assignee.displayName "Not assigned")
 Priority: #default($formIssue.priority.name "No priority set")
 ```
 
-### Core Velocity Syntax {#core-velocity-syntax}
+### Core Velocity Syntax
 
-#### [How to set the value of variable?](http://velocity.apache.org/engine/1.7/user-guide.html#hello-velocity-world) {#how-to-set-the-value-of-variable}
+#### [How to set the value of variable?](http://velocity.apache.org/engine/1.7/user-guide.html#hello-velocity-world)
 
     
     #set( $foo = "Velocity" )
     Hello $foo World!
     
     
-#### [Conditionals](http://velocity.apache.org/engine/1.7/user-guide.html#conditionals) {#conditionals}
+#### [Conditionals](http://velocity.apache.org/engine/1.7/user-guide.html#conditionals)
 
     #set( $foo = "Velocity" )
     
@@ -73,7 +73,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     #end
     World!
     
-#### [Loops](http://velocity.apache.org/engine/1.7/user-guide.html#loops) {#loops}
+#### [Loops](http://velocity.apache.org/engine/1.7/user-guide.html#loops)
 
     <ul>
     #foreach( $product in $allProducts )
@@ -81,7 +81,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     #end
     </ul>
     
-#### [Comments](http://velocity.apache.org/engine/1.7/user-guide.html#comments) {#comments}
+#### [Comments](http://velocity.apache.org/engine/1.7/user-guide.html#comments)
 
     ## This is a single line comment.  
     
@@ -91,16 +91,16 @@ Priority: #default($formIssue.priority.name "No priority set")
       ignore it.
     *#   
 
-## Data Access Methods {#data-access-methods}
+## Data Access Methods
 
-### Form Data Access {#form-data-access}
+### Form Data Access
 
-#### How to use $form? Get raw data from issue screen {#how-to-use-form-get-raw-data-from-issue-screen}
+#### How to use $form? Get raw data from issue screen
 
     $form.summary <br>
     $form.customfield_10400
     
-#### How to use $formIssue? Get valid data from the issue screen {#how-to-use-formissue-get-valid-data-from-the-issue-screen}
+#### How to use $formIssue? Get valid data from the issue screen
 [see Java doc $formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) 
     
     $formIssue.summary <br>
@@ -111,13 +111,13 @@ Priority: #default($formIssue.priority.name "No priority set")
         Unassigned<br>
     #end
 
-### Custom Field Values ($cfValues) {#custom-field-values-cfvalues}
+### Custom Field Values ($cfValues)
 
 [see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) 
 
 The CFValues utility provides comprehensive methods for accessing custom field values from issues and forms.
 
-#### How to get the value of a custom field for an $issue {#how-to-get-the-value-of-a-custom-field-for-an-issue}
+#### How to get the value of a custom field for an $issue
     
     $cfValues.get(10100)<br>
     $cfValues.get("customfield_10100")<br>
@@ -132,7 +132,7 @@ The CFValues utility provides comprehensive methods for accessing custom field v
     $cfValues.getOrDefault($linkedIssue, "customfield_10100", "Default value")<br>
     $cfValues.getOrDefault($linkedIssue, "Custom field name", 123)<br>
     
-#### How to get the value of a custom field for an $formIssue {#how-to-get-the-value-of-a-custom-field-for-an-formissue}
+#### How to get the value of a custom field for an $formIssue
     
     $cfValues.getFromForm(10100)<br>
     $cfValues.getFromForm("customfield_10100")<br>
@@ -142,7 +142,7 @@ The CFValues utility provides comprehensive methods for accessing custom field v
     $cfValues.getFromFormOrDefault("customfield_10100", 123)<br>
     $cfValues.getFromFormOrDefault("Custom field name", $issue.assignee)<br>
 
-#### How to get raw values from form (without type conversion) {#how-to-get-raw-values-from-form-without-type-conversion}
+#### How to get raw values from form (without type conversion)
 
 The `getRawCFValueFromForm` methods return the raw value from the form without any type conversion:
 
@@ -174,9 +174,9 @@ The `getRawCFValueFromForm` methods return the raw value from the form without a
 ```
 
 
-### Issue Field Access {#issue-field-access}
+### Issue Field Access
 
-#### How to use issue type {#how-to-use-issue-type}
+#### How to use issue type
 
     #if($formIssue.issueType.name == 'Task')
          message for 'Task'
@@ -203,7 +203,7 @@ or
 ($issue - this variable is not defined on the creation screen)
    
 
-#### How to use issue status {#how-to-use-issue-status}
+#### How to use issue status
 
     #if($issue.status.name == 'To Do')
          message for 'To Do' status
@@ -219,7 +219,7 @@ or
          message for 'In progress' status
     #end
 
-#### Get parent issue {#get-parent-issue}
+#### Get parent issue
 
  
     $formIssue.parentObject.key
@@ -230,9 +230,9 @@ or
     #end
 
 
-## Message Display Configuration {#message-display-configuration}
+## Message Display Configuration
 
-### How to use $fieldDisplayConfig? How to change the display of a message? {#how-to-use-fielddisplayconfig-how-to-change-the-display-of-a-message}
+### How to use $fieldDisplayConfig? How to change the display of a message?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) 
 
     $fieldDisplayConfig.setAsFlag(true) ## true, false
@@ -242,7 +242,7 @@ or
     $fieldDisplayConfig.setInsert("before") ## "append", "prepend", "before", "after" 
     $fieldDisplayConfig.setHidden(true)
     
-### How to hide a message? {#how-to-hide-a-message}
+### How to hide a message?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
     
     #set ($optionCustomFieldValue = $cfValues.getFromForm("Option custom field name"))
@@ -258,7 +258,7 @@ or
     #end
 
 
-### How to change message colour? {#how-to-change-message-colour}
+### How to change message colour?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
 
 <a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%"/></a>
@@ -281,16 +281,16 @@ or
     
     $issue.key: $issue.summary
 
-## Context and State Variables {#context-and-state-variables}
+## Context and State Variables
 
-### How to use $context, $transitionId and $transitionName? {#how-to-use-context-transitionid-and-transitionname}
+### How to use $context, $transitionId and $transitionName?
 
     #if($context == "TRANSITION")
     	is transitionId 31 ? #if($transitionId == 31) Yes #else No #end <br>
     	is transitionName "In Progress" ? #if($transitionName == "In Progress") Yes #else No #end<br>
     #end
 
-### How to check how long ago the transition was made? (How to use $secAfterLastTransition) {#how-to-check-how-long-ago-the-transition-was-made}
+### How to check how long ago the transition was made? (How to use $secAfterLastTransition)
 
       $fieldDisplayConfig.setHidden(true)##hide message by default (Including cases when there were no transitions yet.)
 
@@ -305,7 +305,7 @@ or
 
       #end
 
-### How to use and check linked issues? {#how-to-use-and-check-linked-issues}
+### How to use and check linked issues?
 [see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
 
 The Links utility provides comprehensive methods for working with issue links. All methods can be called with or without parameters to filter by link type.
@@ -340,7 +340,7 @@ The Links utility provides comprehensive methods for working with issue links. A
 - `getInwardLinks(String linkTypeName)` - Get inward links by type name
 - `getInwardLinks(long linkTypeId)` - Get inward links by type ID
 
-#### Examples: {#examples}
+#### Examples:
 
 **Basic usage - check blocked issues:**
    
@@ -423,9 +423,9 @@ The Links utility provides comprehensive methods for working with issue links. A
     <p style="color: orange;">⚠️ You are adding $newLinks.size() new link(s)</p>
 #end
 ```
-## Utility Services {#utility-services}
+## Utility Services
 
-### JQL Service ($jqlService) {#jql-service-jqlservice}
+### JQL Service ($jqlService)
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
@@ -437,7 +437,7 @@ The Links utility provides comprehensive methods for working with issue links. A
 **Count methods:**
 - `getIssueCountByJQL(String jql)` - Count issues with current user's permissions
 
-#### How to use JQL in message? {#how-to-use-jql-in-message}
+#### How to use JQL in message?
 
 ```velocity 
 $jqlService.getIssuesByJQL("priority = $formIssue.priority.name ORDER BY Key DESC", 10)
@@ -449,7 +449,7 @@ You can use current issue in jql for conditions:
         The problem has not been updated for more than two days.
     #end
 
-#### Advanced JQL examples: {#advanced-jql-examples}
+#### Advanced JQL examples:
 
 **Count issues for statistics:**
 ```velocity
@@ -465,7 +465,7 @@ You can use current issue in jql for conditions:
 #end
 ```
 
-#### How to show fields for issues by JQL in message? {#how-to-show-fields-for-issues-by-jql-in-message}
+#### How to show fields for issues by JQL in message?
 * [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
 * linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
 
@@ -477,7 +477,7 @@ $issueFieldRender.getAsTableHtml(
   )
 ``` 
 
-### Issue Field Renderer ($issueFieldRender) {#issue-field-renderer-issuefieldrender}
+### Issue Field Renderer ($issueFieldRender)
 
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
@@ -495,7 +495,7 @@ The Issue Field Renderer provides methods for rendering issue fields and formatt
 - `replaceNewlineCharactersForHtml(String string)` - Convert newlines to HTML breaks
 - `dateFormat(Date date, String format)` - Format date with specified pattern
 
-#### How to show fields from linked issues (also on Service Desk Portal)? {#how-to-show-fields-from-linked-issues-also-on-service-desk-portal}
+#### How to show fields from linked issues (also on Service Desk Portal)?
 
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
 1) Create and configure field "Linked issues":
@@ -517,7 +517,7 @@ This example uses a different our plugin: [Display linked issues](https://market
    </tr></table>
 
 
-#### How to display the date in the correct format? {#how-to-display-the-date-in-the-correct-format}
+#### How to display the date in the correct format?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
 ```velocity 
@@ -529,7 +529,7 @@ $issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
 Result:
 <a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%"/></a>
 
-#### How to show the multiline value of a text field? {#how-to-show-the-multiline-value-of-a-text-field}
+#### How to show the multiline value of a text field?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
 
 ```velocity 
@@ -561,7 +561,7 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 Result:
 <a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%"/></a>
 
-#### How to get field names dynamically? {#how-to-get-field-names-dynamically}
+#### How to get field names dynamically?
 
 ```velocity
 ## Get custom field name by ID
@@ -573,7 +573,7 @@ Result:
 <p>Summary field display name: $summaryName</p>
 ```
 
-#### How to render JQL results directly as a table? {#how-to-render-jql-results-directly-as-a-table}
+#### How to render JQL results directly as a table?
 
 ```velocity
 ## Execute JQL and display results as table
@@ -591,9 +591,9 @@ $issueFieldRender.getAsTableHtml(
 ```
 
 
-## Field Validation Examples {#field-validation-examples}
+## Field Validation Examples
 
-### Priority Validation {#priority-validation}
+### Priority Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%"/></a>
 
@@ -607,7 +607,7 @@ $issueFieldRender.getAsTableHtml(
           State the reason for the High priority. ##Message text
       #end
 
-### Component Validation {#component-validation}
+### Component Validation
 
       #foreach($component in $formIssue.components)
          #if($component.name == "Test component")
@@ -616,7 +616,7 @@ $issueFieldRender.getAsTableHtml(
          #end
       #end
 
-### Summary Validation {#summary-validation}
+### Summary Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%"/></a>
 
@@ -632,7 +632,7 @@ $issueFieldRender.getAsTableHtml(
          Short summary<br> ##Message text
       #end
 
-### Description and User Picker Validation {#description-and-user-picker-validation}
+### Description and User Picker Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="50%"/></a>
 
@@ -640,7 +640,7 @@ $issueFieldRender.getAsTableHtml(
          You need to set data in the system description field and specify the user in the custom field "User Picker (single user)" ##Message text
       #end
 
-### Number Field Validation {#number-field-validation}
+### Number Field Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="50%"/></a>
 
@@ -648,7 +648,7 @@ $issueFieldRender.getAsTableHtml(
          number > 10 ##Message text
       #end
 
-### Select Field Validation {#select-field-validation}
+### Select Field Validation
 
 <a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="50%"/></a>
 
@@ -664,9 +664,9 @@ $issueFieldRender.getAsTableHtml(
          "Select List (multiple choices)" contains otpion with id 10301(option2) ##Message text
       #end
 
-## Advanced Features {#advanced-features}
+## Advanced Features
 
-### Multi-language Messages {#multi-language-messages}
+### Multi-language Messages
 
       #if($language == "es")
           mensaje en español<br>
@@ -680,9 +680,9 @@ $issueFieldRender.getAsTableHtml(
       #end
 
 
-### Cascade Select Field {#cascade-select-field}
+### Cascade Select Field
 
-#### Working with $cfValues: {#working-with-cfvalues}
+#### Working with $cfValues:
 
       1 - $cfValues.getFromForm(10101)<br>
       2 - $cfValues.getFromForm("customfield_10101")<br>
@@ -719,7 +719,7 @@ $issueFieldRender.getAsTableHtml(
       30 - $cfValues.getOrDefault("cascade test123123", "defaultOption")<br>
       31 - $cfValues.getOrDefault("cascade test1:12", 10000)<br>
 
-#### Working with $form object directly: {#working-with-form-object-directly}
+#### Working with $form object directly:
 
 When working with cascade select fields through the `$form` object, you access the raw option IDs:
 
@@ -813,7 +813,7 @@ When working with cascade select fields through the `$form` object, you access t
          message3<br>
       #end
 
-### Insight Service ($insightService) {#insight-service-insightservice}
+### Insight Service ($insightService)
 
 [see Java doc $insightService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/InsightService.html)
 
@@ -836,7 +836,7 @@ When working with cascade select fields through the `$form` object, you access t
       #end
 
 
-### User Group Service ($userGroupService) {#user-group-service-usergroupservice}
+### User Group Service ($userGroupService)
 
 [see Java doc $userGroupService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/UserGroupService.html)
 
@@ -1000,7 +1000,7 @@ Current user is not a developer
 <p>No support team members are currently available.</p>
 </div>
 
-### Cast Utility ($cast) {#cast-utility-cast}
+### Cast Utility ($cast)
 
 [see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
 
@@ -1032,7 +1032,7 @@ $cast.toString($issue)      ## returns string representation
 $cast.toString(null)        ## returns null
 ```
 
-#### Example: Dynamic messages based on issue type and custom field {#example-dynamic-messages-based-on-issue-type-and-custom-field}
+#### Example: Dynamic messages based on issue type and custom field
 
       #set ($messages = {
           "Story" : {
@@ -1056,7 +1056,7 @@ $cast.toString(null)        ## returns null
          $fieldDisplayConfig.setHidden(true)##hide
       #end
 
-### JSON Parser ($JSON) {#json-parser-json}
+### JSON Parser ($JSON)
 
 The JSON utility provides JSON parsing capabilities in Velocity templates.
 
@@ -1078,7 +1078,7 @@ Parses a JSON string and returns a JSONObject. Returns null if parsing fails.
 #end
 ```
 
-#### Example: Working with JSON data from custom fields {#example-working-with-json-data-from-custom-fields}
+#### Example: Working with JSON data from custom fields
 
 ```velocity
 ## Assuming a text field contains JSON data
@@ -1098,7 +1098,7 @@ Parses a JSON string and returns a JSONObject. Returns null if parsing fails.
 #end
 ```
 
-### Permission Helper ($permissionHelper) {#permission-helper-permissionhelper}
+### Permission Helper ($permissionHelper)
 
 The Permission Helper provides methods to check user permissions in templates. This utility is only available in non-delegated mode.
 
@@ -1139,7 +1139,7 @@ Checks if the specified user has the permission for the specified issue.
 #end
 ```
 
-#### Common permission types: {#common-permission-types}
+#### Common permission types:
 - VIEW_ISSUES - View issues
 - CREATE_ISSUES - Create issues  
 - EDIT_ISSUES - Edit issues
@@ -1151,7 +1151,7 @@ Checks if the specified user has the permission for the specified issue.
 - WORK_ON_ISSUES - Work on issues
 - LINK_ISSUES - Link issues
 
-#### Example: Display content based on permissions {#example-display-content-based-on-permissions}
+#### Example: Display content based on permissions
 
 ```velocity
 #if($permissionHelper.hasPermission("EDIT_ISSUES"))
@@ -1174,11 +1174,11 @@ Checks if the specified user has the permission for the specified issue.
 #end
 ```
 
-### Component Accessor ($ComponentAccessor) {#component-accessor-componentaccessor}
+### Component Accessor ($ComponentAccessor)
 
 The Component Accessor provides access to various Jira components and services. This powerful utility is only available in non-delegated mode.
 
-#### Common usage examples: {#common-usage-examples}
+#### Common usage examples:
 
 **Get Jira managers and services:**
 ```velocity
@@ -1223,7 +1223,7 @@ Jira Version: $jiraVersion
 #set($osgiService = $ComponentAccessor.getOSGiComponentInstanceOfType("com.example.MyOsgiService"))
 ```
 
-#### Example: Display project and version information {#example-display-project-and-version-information}
+#### Example: Display project and version information
 
 ```velocity
 #set($project = $issue.projectObject)
@@ -1251,9 +1251,9 @@ Jira Version: $jiraVersion
 #end
 ```
 
-## Real-World Example Scenarios {#real-world-example-scenarios}
+## Real-World Example Scenarios
 
-### Priority-Based Warning Messages {#priority-based-warning-messages}
+### Priority-Based Warning Messages
 
       #if($issue.getPriorityObject().name == "High")
       <b style="color:red;">Warning: the issue priority is High!</b>
@@ -1261,7 +1261,7 @@ Jira Version: $jiraVersion
       <p>Normal priority. Work as usual.</p>
       #end
 
-### Priority-Dependent Validation {#priority-dependent-validation}
+### Priority-Dependent Validation
 
 <a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%"/></a>
       
@@ -1288,7 +1288,7 @@ Jira Version: $jiraVersion
     	$fieldDisplayConfig.setHidden(true)
     #end
 
-### Assignee Information with External Links {#assignee-information-with-external-links}
+### Assignee Information with External Links
 
       #if($issue.assignee)
         <p>Assignee: $issue.assignee.displayName</p>
@@ -1304,7 +1304,7 @@ Jira Version: $jiraVersion
         <p><i>No assignee</i></p>
       #end
 
-### Issue Type-Specific Messages {#issue-type-specific-messages}
+### Issue Type-Specific Messages
 
       #set($typeName = $issue.issueTypeObject.name)
       
@@ -1316,7 +1316,7 @@ Jira Version: $jiraVersion
       <p>Issue type: $typeName. No extra instructions required.</p>
       #end
 
-### Component-Based Team Assignments {#component-based-team-assignments}
+### Component-Based Team Assignments
 
       #set($components = $issue.getComponents())
       #if($components && $components.size() > 0)
@@ -1339,7 +1339,7 @@ Jira Version: $jiraVersion
         <p style="color:orange;">No components selected. Please specify at least one!</p>
       #end
 
-### Due Date Warnings {#due-date-warnings}
+### Due Date Warnings
 
       #set($dueDate = $issue.getDueDate())
       #if($dueDate && $dueDate.before($actionDate))
@@ -1348,7 +1348,7 @@ Jira Version: $jiraVersion
       <p>The issue is on schedule or no due date is set.</p>
       #end
 
-### Fix Version Validation {#fix-version-validation}
+### Fix Version Validation
 
       #set($fixVersions = $issue.getFixVersions())
       #if($fixVersions && $fixVersions.size() > 0)
@@ -1361,7 +1361,7 @@ Jira Version: $jiraVersion
       <p>No version selected. Please specify the release.</p>
       #end
 
-### Issue Type Requirements {#issue-type-requirements}
+### Issue Type Requirements
 
       #set($type = $issue.issueTypeObject.name)
       #if($type == "Bug")
@@ -1372,7 +1372,7 @@ Jira Version: $jiraVersion
       <p>No special requirements for type: $type</p>
       #end
 
-### Budget Threshold Alerts {#budget-threshold-alerts}
+### Budget Threshold Alerts
 
       #set($budgetField = $cfValues.getFromForm("Budget")))
       #if($budgetField && $budgetField > 100000)
@@ -1381,7 +1381,7 @@ Jira Version: $jiraVersion
       <p>Budget is within acceptable limits.</p>
       #end
 
-### Component-Specific Reminders {#component-specific-reminders}
+### Component-Specific Reminders
 
       #set($componentList = $issue.getComponents())
       #set($hasUIUX = false)
@@ -1405,7 +1405,7 @@ Jira Version: $jiraVersion
       <p>No specific components selected, proceeding under standard workflow.</p>
       #end
 
-### Attachment Type Detection {#attachment-type-detection}
+### Attachment Type Detection
 
       #set($attachments = $issue.getAttachments())
       #if($attachments && $attachments.size() > 0)
@@ -1423,11 +1423,11 @@ Jira Version: $jiraVersion
          No attachments found.
       #end
 
-### Additional variables {#additional-variables}
+### Additional variables
 
 Apart from the services described above, the following variables are also available in templates:
 
-#### Context and Transition Variables {#context-and-transition-variables}
+#### Context and Transition Variables
 - `$context` - Current context (CREATE, EDIT, VIEW, TRANSITION, etc.)
 - `$transitionId` - ID of the current transition (if in transition context)
 - `$transitionName` - Name of the current transition (if in transition context)
@@ -1436,7 +1436,7 @@ Apart from the services described above, the following variables are also availa
 - `$dateOfLastTransition` - Date when the last transition occurred
 - `$secAfterLastTransition` - Seconds elapsed since last transition
 
-#### User and Locale Variables {#user-and-locale-variables}
+#### User and Locale Variables
 - `$currentUser` - Currently logged-in user
 - `$locale` - Current user's locale
 - `$language` - Current language code (e.g., "en", "de")
@@ -1445,7 +1445,7 @@ Apart from the services described above, the following variables are also availa
 - `$nowInUserTimeZone` - Current date/time in user's timezone
 - `$currentDateTime` - Current date/time
 
-#### URLs and Base Information {#urls-and-base-information}
+#### URLs and Base Information
 - `$baseUrl` - Jira base URL
 
 #### Show different approval workflows based on user group membership. ####
