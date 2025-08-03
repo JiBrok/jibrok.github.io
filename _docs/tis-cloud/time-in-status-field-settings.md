@@ -2,6 +2,8 @@
 title: Time in status - field configuration
 key: tis-cloud
 excerpt: "Configure Time in Status field settings including status selection, display modes, time formats, and advanced options."
+category: field-configuration
+tags: [doc, cloud, time-in-status, field-creation, status-tracking, business-calendar, jql-functions, dashboard-gadgets]
 ---
 
 All settings:<br>

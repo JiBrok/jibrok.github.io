@@ -2,6 +2,8 @@
 title: Time in status - field configuration (Version < 5.6.0)
 key: time-in-status
 excerpt: Legacy field configuration guide for Time in Status plugin versions prior to 5.6.0 with setup instructions and setting explanations.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, field-configuration, sla-tracking, migration]
 ---
 
 1. Create new custom field with type 'Time in status field' and set issue screens.<br>

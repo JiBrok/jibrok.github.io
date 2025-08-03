@@ -2,6 +2,8 @@
 title: Timer config
 key: time-in-status
 excerpt: Configure timer behavior including calculation types, event triggers, goal management, and notification settings for comprehensive time tracking automation.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, timer, field-configuration, time-in-status, business-calendar]
 ---
 
 The configuration is responsible for the stopwatch operation algorithm When should he start the countdown, when should he stop, for what time should he be started, according to what working calendar should the time be counted.<br>

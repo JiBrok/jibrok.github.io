@@ -2,6 +2,8 @@
 title: Time formats
 key: tis-cloud
 excerpt: "Customize time display formats for Time in Status fields with various options including hours, days, business time, and localization."
+category: field-configuration
+tags: [doc, cloud, time-in-status, status-tracking, field-creation, business-calendar]
 ---
 
 

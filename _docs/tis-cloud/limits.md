@@ -2,6 +2,8 @@
 title: Limits
 key: tis-cloud
 excerpt: "Time in Status Cloud app limits including field quotas, calculation restrictions, and performance boundaries for optimal usage."
+category: system-information
+tags: [doc, cloud, time-in-status, status-tracking, service-status, field-creation]
 ---
 
 <ul>

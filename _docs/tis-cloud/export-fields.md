@@ -2,6 +2,8 @@
 title: JQL Reports and export
 key: tis-cloud
 excerpt: "Export Time in Status fields from JQL searches to Excel, XML, and other formats with customizable columns and reporting options."
+category: integration-export
+tags: [doc, cloud, time-in-status, export, jql-functions, status-tracking, dashboard-gadgets]
 ---
 
 <div class="uk-alert-note" data-uk-alert="">

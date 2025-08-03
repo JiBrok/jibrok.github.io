@@ -2,6 +2,8 @@
 title: ⭐️Timers and Stopwatches - Schemes and configurations
 key: time-in-status
 excerpt: Essential guide to timer and stopwatch schemes and configurations including project associations, issue type mappings, and flexible field setup options.
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, timer, stopwatch, field-configuration, time-in-status]
 ---
 <div class="uk-alert-note" data-uk-alert="">
 Schemas start working only after they are connected to the fields.  

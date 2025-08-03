@@ -2,6 +2,8 @@
 title: Feature Difference (Server/Data Center and Cloud)
 key: tis-cloud
 excerpt: Compare Time in Status Cloud features with Server/Data Center versions, including field configuration, work calendar, reports, and functionality differences.
+category: migration
+tags: [doc, cloud, time-in-status, migration, field-creation, status-tracking, web-panels, business-calendar]
 ---
 
 

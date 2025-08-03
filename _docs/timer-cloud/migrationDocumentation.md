@@ -2,6 +2,8 @@
 title: Migration from Server/Data Center
 key: timer-cloud
 excerpt: "Guide for migrating Timer field from Jira Server/Data Center to Cloud with manual settings transfer and configuration checklist."
+category: migration
+tags: [doc, cloud, timer, migration, field-creation, web-panels, business-calendar]
 ---
 
 Automatic migration of settings during development.

@@ -2,6 +2,8 @@
 title: Work calendar
 key: timer-cloud
 excerpt: "Create work calendars for Timer fields with business hours, holidays, timezone support for accurate countdown calculations."
+category: time-management
+tags: [doc, cloud, timer, business-calendar, sla-tracking, goal-time, countdown, field-creation]
 ---
 
 The fields "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)" and "[Stopwatch](/docs/stopwatch-cloud/overview)", as well as [JQL functions](/docs/stopwatch-cloud/user-help-info/) are able to count the time according to working calendars.

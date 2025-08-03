@@ -2,6 +2,8 @@
 title: Service info
 key: tis-cloud
 excerpt: "Monitor Time in Status app performance with real-time service information, background processing, and system health metrics."
+category: system-information
+tags: [doc, cloud, time-in-status, service-status, status-tracking, business-calendar]
 ---
 
 On this tab, you can track the activity of the application.

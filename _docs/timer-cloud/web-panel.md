@@ -2,6 +2,8 @@
 title: Web panel
 key: timer-cloud
 excerpt: "Create Timer field sidebar panels in Jira Cloud with customizable locations, display settings, and project-specific configurations."
+category: display-customization
+tags: [doc, cloud, timer, web-panels, goal-time, countdown, sla-tracking]
 ---
 
 Enables the display of the "Timer" fields in the sidebar.
