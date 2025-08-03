@@ -3,32 +3,59 @@
     <h3>{{ site.data.translation[site.lang].related_docs | default: "Related Docs" }}</h3>
 
     {% assign maxRelated = 5 %}
-    {% assign minCommonTags = 1 %}
+    {% assign minCommonTags = 2 %}
     {% assign maxRelatedCounter = 0 %}
+    {% assign genericTags = 'doc,cloud,server,datacenter,field-creation' | split: ',' %}
     
-    {% comment %} First, find docs with matching tags {% endcomment %}
-    {% if page.tags and page.tags.size > 0 %}
-      <ul class="uk-list link-secondary">
+    {% comment %} First, try to find docs from same product (by key) {% endcomment %}
+    {% if page.key %}
+      {% assign sameProductDocs = site.docs | where: "key", page.key | where_exp: "doc", "doc.url != page.url" %}
+      {% if sameProductDocs.size > 0 %}
+        <ul class="uk-list link-secondary">
+        {% for doc in sameProductDocs limit: maxRelated %}
+          <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+    
+    {% comment %} If not enough same-product docs, find docs with meaningful common tags {% endcomment %}
+    {% if maxRelatedCounter < maxRelated and page.tags and page.tags.size > 0 %}
+      {% assign remainingSlots = maxRelated | minus: maxRelatedCounter %}
+      {% assign relatedDocs = '' | split: '' %}
+      
       {% for doc in site.docs %}
-        {% if doc.url != page.url %}
-          {% assign sameTagCount = 0 %}
+        {% if doc.url != page.url and doc.key != page.key %}
+          {% assign meaningfulTagCount = 0 %}
           
+          {% comment %} Count only meaningful tags (exclude generic ones) {% endcomment %}
           {% for tag in doc.tags %}
-            {% if page.tags contains tag %}
-              {% assign sameTagCount = sameTagCount | plus: 1 %}
-            {% endif %}
+            {% unless genericTags contains tag %}
+              {% if page.tags contains tag %}
+                {% assign meaningfulTagCount = meaningfulTagCount | plus: 1 %}
+              {% endif %}
+            {% endunless %}
           {% endfor %}
 
-          {% if sameTagCount >= minCommonTags %}
-            <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
-            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-            {% if maxRelatedCounter >= maxRelated %}
-              {% break %}
-            {% endif %}
+          {% if meaningfulTagCount >= minCommonTags %}
+            {% assign relatedDocs = relatedDocs | push: doc %}
           {% endif %}
         {% endif %}
       {% endfor %}
-      </ul>
+      
+      {% if relatedDocs.size > 0 %}
+        {% unless maxRelatedCounter > 0 %}
+          <ul class="uk-list link-secondary">
+        {% endunless %}
+        {% for doc in relatedDocs limit: remainingSlots %}
+          <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% endfor %}
+        {% if maxRelatedCounter > 0 %}
+          </ul>
+        {% endif %}
+      {% endif %}
     {% endif %}
     
     {% comment %} If no tag matches, show docs from same folder {% endcomment %}
