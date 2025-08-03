@@ -21,7 +21,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12272
 <p>Pages are accessible from the top menu "Apps":
     <ul>
         <li>JQL helper: contains JQL examples for JiBrok fields created in the system.
-    <a href="/uploads/user-helper-cloud/help-menu.png"><img src="/uploads/user-helper-cloud/help-menu.png" style="width:100%;" loading="lazy"></a>
+    <a href="/uploads/user-helper-cloud/help-menu.webp"><img src="/uploads/user-helper-cloud/help-menu.webp" style="width:100%;" loading="lazy"></a>
 </li>
     </ul>
 </p>
@@ -29,7 +29,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12272
     Gadgets for dashboards:
     <ul>
         <li>JiBrok new: contains news from the vendor, information about new releases and updates, useful materials and use cases published in our blog.
-<a href="/uploads/user-helper-cloud/help-example.png"><img src="/uploads/user-helper-cloud/help-example.png" style="width:100%;" loading="lazy"></a>
+<a href="/uploads/user-helper-cloud/help-example.webp"><img src="/uploads/user-helper-cloud/help-example.webp" style="width:100%;" loading="lazy"></a>
 </li>
     </ul>
 </p>

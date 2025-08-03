@@ -48,9 +48,9 @@ By the "Time in status" fields, you can also sort tasks, build reports and expor
 
 
 ### 2. After creating the field, go to its settings: ###
-1. <a href="/uploads/time-in-status/step-by-step-time-in-status/fields.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/fields.png" alt="time in status fields" width="50%" loading="lazy"></a>
-2. <a href="/uploads/time-in-status/step-by-step-time-in-status/field-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/field-config.png" alt="time in status field config" width="50%" loading="lazy"></a>
-3. <a href="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png"><img src="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.png" alt="time in status field config" width="50%" loading="lazy"></a>
+1. <a href="/uploads/time-in-status/step-by-step-time-in-status/fields.webp"><img src="/uploads/time-in-status/step-by-step-time-in-status/fields.webp" alt="time in status fields" width="50%" loading="lazy"></a>
+2. <a href="/uploads/time-in-status/step-by-step-time-in-status/field-config.webp"><img src="/uploads/time-in-status/step-by-step-time-in-status/field-config.webp" alt="time in status field config" width="50%" loading="lazy"></a>
+3. <a href="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.webp"><img src="/uploads/time-in-status/step-by-step-time-in-status/time-in-status-config.webp" alt="time in status field config" width="50%" loading="lazy"></a>
 
 
 Specify the statuses in which you want to count the time and save the settings. For the search to work, you also need to run the reindx for jira or for the project.

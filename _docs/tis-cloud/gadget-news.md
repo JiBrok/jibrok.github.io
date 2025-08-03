@@ -6,4 +6,4 @@ excerpt: Add a JiBrok news gadget to your Jira dashboard to display useful infor
 
 You can add a gadget with JiBrok news to your dashboard. It will display useful information related to our applications.
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/gadget-news.png"><img src="/uploads/tis-cloud/gadget-news.png" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/gadget-news.webp"><img src="/uploads/tis-cloud/gadget-news.webp" style="width:100%;" loading="lazy"></a></p>

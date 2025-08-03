@@ -501,7 +501,7 @@ The Issue Field Renderer provides methods for rendering issue fields and formatt
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
 1) Create and configure field "Linked issues":
 
-<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png" alt="linked-issues-config.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.webp" alt="linked-issues-config.png" width="50%" loading="lazy"></a>
 
 2) After creating the "linked issues" field, you can display it in the message body:
 
@@ -511,10 +511,10 @@ This example uses a different our plugin: [Display linked issues](https://market
 3) Result:
    
    <table><tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png" alt="render-another-field-1.png" width="100%" loading="lazy"></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.webp" alt="render-another-field-1.png" width="100%" loading="lazy"></a></td>
    </tr>
    <tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png" alt="render-another-field-2.png" width="100%" loading="lazy"></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.webp" alt="render-another-field-2.png" width="100%" loading="lazy"></a></td>
    </tr></table>
 
 
@@ -528,7 +528,7 @@ $issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/dateformat.webp"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.webp" alt="dateformat.png" width="50%" loading="lazy"></a>
 
 #### How to show the multiline value of a text field?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
@@ -560,7 +560,7 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.webp" alt="replaceNewlineCharactersForHtml.png" width="50%" loading="lazy"></a>
 
 #### How to get field names dynamically?
 
@@ -796,10 +796,10 @@ When working with cascade select fields through the `$form` object, you access t
 
 
 <b>Issue create screen</b>: 
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png" alt="Cascade select - Create" width="50%" loading="lazy"></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.webp" alt="Cascade select - Create" width="50%" loading="lazy"></a>   
 
 <b>Other issue screens</b>:
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png" alt="Cascade select - edit - view" width="50%" loading="lazy"></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.webp" alt="Cascade select - edit - view" width="50%" loading="lazy"></a>   
 
 <b>Conditions</b>:
 

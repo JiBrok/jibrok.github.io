@@ -7,7 +7,7 @@ excerpt: "Configure global plugin settings including system user authentication,
 This menu contains general plugin settings that affect a large number of functionality.
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/common-settings/common-settings.png"><img src="/uploads/time-in-status/common-settings/common-settings.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/common-settings/common-settings.webp"><img src="/uploads/time-in-status/common-settings/common-settings.webp" alt="" width="50%" loading="lazy"></a></p>
 ### System user ###
 
 Some functions in the plugin run in the background.

@@ -23,12 +23,12 @@ If you're experiencing display issues, you may need to adjust the resource setti
 1. Click the **Administration** icon in the top right corner of the screen
 2. Navigate to **Manage apps**
 
-    <a href="/uploads/message-field/install/manage-apps.png"><img src="/uploads/message-field/install/manage-apps.png" alt="open manage apps" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/install/manage-apps.webp"><img src="/uploads/message-field/install/manage-apps.webp" alt="open manage apps" width="100%" loading="lazy"></a>
 
 3. Find **Message Field** in the apps list and click on its section
 4. Click the button showing the number of enabled modules (e.g., "X of Y modules enabled") in the right column to display plugin modules
   
-    <a href="/uploads/message-field/plugin-modules.png"><img src="/uploads/message-field/plugin-modules.png" alt="plugin modules" width="100%" loading="lazy"></a>
+    <a href="/uploads/message-field/plugin-modules.webp"><img src="/uploads/message-field/plugin-modules.webp" alt="plugin modules" width="100%" loading="lazy"></a>
     
 5. Hover over each module to see the **Enable** or **Disable** buttons
 6. Configure the resources based on your needs:

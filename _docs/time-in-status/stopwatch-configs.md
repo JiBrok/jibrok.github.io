@@ -12,10 +12,10 @@ Or<br>
 **gg** + "**Stopwatch configs**"
 
 * All stopwatch configs are available in this interface. From here you can create, edit and delete config.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/all-configs.png"><img src="/uploads/time-in-status/stopwatch-configs/all-configs.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/all-configs.webp"><img src="/uploads/time-in-status/stopwatch-configs/all-configs.webp" style="width:100%" loading="lazy"></a></p>
 
 * Click on button "Add stopwatch configuration"<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png"><img src="/uploads/time-in-status/stopwatch-configs/stopwatch-config.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-configs/stopwatch-config.webp"><img src="/uploads/time-in-status/stopwatch-configs/stopwatch-config.webp" style="width:100%" loading="lazy"></a></p>
 
 * Calculate type - after the timer stops, in the event of a restart. The timer will not start. It will restart and delete the previous value. It will be restarted and leave the previous values in the archive.
 * Allow change goal after start - When the timer starts for the first time, it sets a target that is current at the current time. When subsequent events are triggered, the target will specify, which can lead to a re-calculation of time.

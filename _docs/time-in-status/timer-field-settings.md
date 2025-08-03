@@ -23,20 +23,20 @@ Schemes and configs only work if they are connected to the field.
 
 ## Step 3 - Create timer field ##
 Adding a custom field<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field.png" style="width:400px" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field.webp" style="width:400px" loading="lazy"></a></p>
 
 After create open field settings and click "Edit Timer field":<br>
-* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config.png" style="width:50%" loading="lazy"></a>
-* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config2.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config2.png" style="width:50%" loading="lazy"></a>
+* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config.webp" style="width:50%" loading="lazy"></a>
+* <a href="/uploads/time-in-status/timer-field-settings/timer-field-config2.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-config2.webp" style="width:50%" loading="lazy"></a>
 
 
 A window will open for you to configure the field.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-settings.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-settings.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-settings.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-settings.webp" style="width:100%" loading="lazy"></a></p>
 
 * Timer field scheme - Set the scheme according to which the field will work(created in step 2). The field is used to display the timer. But a scheme without a field will not work.
 * Field time format - responsible for the format of the display of time in the fields.<br>
 * Show as panel - Displays the field value in the issue panel.<br>
-  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-panel.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-panel.png" style="width:50%" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-panel.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-panel.webp" style="width:50%" loading="lazy"></a></p>
 * Show as panel on agile board - Displays the field value in the issue panel on Agile board.
 * Panel time format - The timer value can be displayed in different ways in the field and in the panel.
 * Sequence - If a issue has several timers displayed in the panel, they will be sorted in ascending order of this parameter.
@@ -45,18 +45,18 @@ A window will open for you to configure the field.<br>
       If the calendar is not working hours, then a pause icon and the date of the next working day will be indicated.
     * Time and icon - Same thing as time. An icon is added which indicates the current state of the timer. 
     * Time tracking: <br>
-      <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.png" style="width:50%" loading="lazy"></a></p>
+      <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-time-tracker-view.webp" style="width:50%" loading="lazy"></a></p>
     
 * Manual control - You can grant rights to users to manually manage timers.
   The timer will continue to work according to the scheme, but there will be the possibility of manual control.
   The menu for manual control is available only in the panel on the task viewing screen.<br>
-  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-manual.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-manual.png" style="width:200px" loading="lazy"></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-manual.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-manual.webp" style="width:200px" loading="lazy"></a></p>
 
 * Show field value for next users - You can restrict access to the field value. The restrictions apply to fields and panels.
 * Create change log for timer  - Changing the timer state (Running -> Paused) will be recorded in the issue history.
 * Add timer time in issue history - only affects new entries in history.
   * Yes<br>
-    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.png" style="width:50%" loading="lazy"></a></p>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-with-time.webp" style="width:50%" loading="lazy"></a></p>
   * No <br>
-    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.png" style="width:50%" loading="lazy"></a></p>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.webp"><img src="/uploads/time-in-status/timer-field-settings/timer-field-history-without-time.webp" style="width:50%" loading="lazy"></a></p>
 * Sub-tasks - Child tasks can display parent timers. And don't start your timers.

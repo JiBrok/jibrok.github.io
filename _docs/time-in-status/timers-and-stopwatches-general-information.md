@@ -46,7 +46,7 @@ If two triggers fire simultaneously, then only the first one is executed in acco
 For example: When changing status to InProgress, there is a Stop command. And on the set of the assignee is the Start command. If the transition to InProgress is performed with the installation of the assignee, the Start command will be executed.
 </div>
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.webp"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/timer-states.webp" style="width:100%" loading="lazy"></a></p>
 
 
 ## Stopwatch ## 
@@ -59,4 +59,4 @@ Stopwatch may be in the following states:
 If two triggers fire simultaneously, then only the first one is executed in accordance with the order of the commands: Start > Pause > Stop  
 </div>
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.webp"><img src="/uploads/time-in-status/timers-and-stopwatches-general-information/stopwatch-states.webp" style="width:100%" loading="lazy"></a></p>

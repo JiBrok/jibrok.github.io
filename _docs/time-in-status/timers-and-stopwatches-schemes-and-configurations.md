@@ -14,4 +14,4 @@ The scheme partially duplicates the functionality of custom field config, but at
 
 The overall picture is as follows:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png"><img src="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.webp"><img src="/uploads/time-in-status/timers-and-stopwatches-schemes-and-configurations/configs-and-schemes.webp" style="width:100%" loading="lazy"></a></p>

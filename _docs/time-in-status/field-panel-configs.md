@@ -10,10 +10,10 @@ excerpt: "Customize Time in Status field panel layouts in Jira interface with gl
 <tr>
 <td>
 Timer panel config 1:<br>
-<a href="/uploads/time-in-status/field-panel-configs/time-tracking-style.png"><img src="/uploads/time-in-status/field-panel-configs/time-tracking-style.png" style="width:50%" loading="lazy"></a>
+<a href="/uploads/time-in-status/field-panel-configs/time-tracking-style.webp"><img src="/uploads/time-in-status/field-panel-configs/time-tracking-style.webp" style="width:50%" loading="lazy"></a>
 </td>
 <td>Timer panel config 2(Example at the bottom of the screenshot):<br>
-<a href="/uploads/time-in-status/field-panel-configs/panels-reordering.png"><img src="/uploads/time-in-status/field-panel-configs/panels-reordering.png" style="width:50%" loading="lazy"></a>
+<a href="/uploads/time-in-status/field-panel-configs/panels-reordering.webp"><img src="/uploads/time-in-status/field-panel-configs/panels-reordering.webp" style="width:50%" loading="lazy"></a>
 </td>
 </tr>
 </table>
@@ -25,7 +25,7 @@ gg(admin search) + "Field Panels config"
 * And you can set higher or lower should be located panel relative to others.
 * You can set arbitrary text as the title bar.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/field-panel-configs/field-panels-settings.png"><img src="/uploads/time-in-status/field-panel-configs/field-panels-settings.png" style="width:100%;" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/field-panel-configs/field-panels-settings.webp"><img src="/uploads/time-in-status/field-panel-configs/field-panels-settings.webp" style="width:100%;" loading="lazy"></a></p>
 
 
 ## Time in status ## 
@@ -37,8 +37,8 @@ The "Time in status" fields with the  "Show as panel" setting enabled in the sid
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.png" style="width:50%" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png"><img src="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.png" style="width:50%" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png"><img src="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.png" style="width:50%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.webp"><img src="/uploads/time-in-status/field-panel-configs/field-panel-status-ordering.webp" style="width:50%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.webp"><img src="/uploads/time-in-status/field-panel-configs/field-settings-show-as-panel.webp" style="width:50%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.webp"><img src="/uploads/time-in-status/field-panel-configs/worklfow-step-ordering.webp" style="width:50%" loading="lazy"></a></td>
 </tr>
 </table>

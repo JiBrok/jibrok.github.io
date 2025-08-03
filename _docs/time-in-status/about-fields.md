@@ -25,8 +25,8 @@ Serves for solving standard tasks of counting the time spent in the status .</p>
 <p>It has simple configuration. For the field to start working, it is enough to specify the statuses and calendar for calculation after creation. However, the settings are sufficient to meet more complex requirements.<br> 
 </p>
 
-* <a href="/uploads/time-in-status/overview/fields-example-2.png"><img src="/uploads/time-in-status/overview/fields-example-2.png" style="width:50%;" loading="lazy"></a>
-* <a href="/uploads/time-in-status/about-fields/time-in-status-config.png"><img src="/uploads/time-in-status/about-fields/time-in-status-config.png" alt="" width="50%" loading="lazy"></a>
+* <a href="/uploads/time-in-status/overview/fields-example-2.webp"><img src="/uploads/time-in-status/overview/fields-example-2.webp" style="width:50%;" loading="lazy"></a>
+* <a href="/uploads/time-in-status/about-fields/time-in-status-config.webp"><img src="/uploads/time-in-status/about-fields/time-in-status-config.webp" alt="" width="50%" loading="lazy"></a>
 
 
 * Suitable for simple conditions of counting time: time spent in status or statuses.
@@ -45,8 +45,8 @@ The settings are more complicated than for "time in status" field, but due to th
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.png" alt="stopwatch field config" width="100%" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.png"><img src="/uploads/time-in-status/about-fields/stopwatch-config.png" alt="stopwatch config" width="100%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-field-config.webp"><img src="/uploads/time-in-status/about-fields/stopwatch-field-config.webp" alt="stopwatch field config" width="100%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/about-fields/stopwatch-config.webp"><img src="/uploads/time-in-status/about-fields/stopwatch-config.webp" alt="stopwatch config" width="100%" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -69,8 +69,8 @@ Calculates the difference (time remaining) between the goal time (limit) and the
 
 <table>
 <tr>
-<td><a href="/uploads/time-in-status/about-fields/timer-field-config.png"><img src="/uploads/time-in-status/about-fields/timer-field-config.png" alt="timer field config" width="100%" loading="lazy"></a></td>
-<td><a href="/uploads/time-in-status/about-fields/timer-config.png"><img src="/uploads/time-in-status/about-fields/timer-config.png" alt="timer config" width="100%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-field-config.webp"><img src="/uploads/time-in-status/about-fields/timer-field-config.webp" alt="timer field config" width="100%" loading="lazy"></a></td>
+<td><a href="/uploads/time-in-status/about-fields/timer-config.webp"><img src="/uploads/time-in-status/about-fields/timer-config.webp" alt="timer config" width="100%" loading="lazy"></a></td>
 </tr>
 </table>
 

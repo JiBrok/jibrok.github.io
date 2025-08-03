@@ -18,7 +18,7 @@ In previous versions of the application you could change message dynamically onl
 
 
 To enable templates you need to set **Velocity render** **'On'** in the field config.
-<a href="/uploads/message-field/dynamic-templates.png"><img src="/uploads/message-field/dynamic-templates.png" alt="dynamic templates settings" width="600" loading="lazy"></a> 
+<a href="/uploads/message-field/dynamic-templates.webp"><img src="/uploads/message-field/dynamic-templates.webp" alt="dynamic templates settings" width="600" loading="lazy"></a> 
 
 
 Special variables will be available in the template for work with data. Links lead to <a href="/jira/plugins/message-field/java/doc/"> Java doc </a> with descriptions of available methods.
@@ -125,7 +125,7 @@ Special variables will be available in the template for work with data. Links le
 
 You can click **Show Demo** to test the display of a message.
 
-<a href="/uploads/message-field/dynamic-templates-demo.png"><img src="/uploads/message-field/dynamic-templates-demo.png" alt="dynamic templates demo" width="100%" loading="lazy"></a>
+<a href="/uploads/message-field/dynamic-templates-demo.webp"><img src="/uploads/message-field/dynamic-templates-demo.webp" alt="dynamic templates demo" width="100%" loading="lazy"></a>
 
 You can see how your message will look like for the specified issue and execution context.
 
@@ -140,7 +140,7 @@ You can see how your message will look like for the specified issue and executio
       * Execute the following code([Running JavaScript](https://developers.google.com/web/tools/chrome-devtools/console#javascript)): `JSON.stringify(MESSAGE_FIELD_OBJECT.getDataFromDefaultForm (), undefined, 4)`
       * Paste its result in the box above. Except for the first and last quotes.
       
-      <a href="/uploads/message-field/dynamic-templates-demo-collect-data.png"><img src="/uploads/message-field/dynamic-templates-demo-collect-data.png" alt="dynamic templates demo collect data.png" width="100%" loading="lazy"></a>
+      <a href="/uploads/message-field/dynamic-templates-demo-collect-data.webp"><img src="/uploads/message-field/dynamic-templates-demo-collect-data.webp" alt="dynamic templates demo collect data.png" width="100%" loading="lazy"></a>
 
 * **Context** - The message will be generated for this issue context. 
     * **"CREATE"** - Issue create screen

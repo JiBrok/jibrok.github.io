@@ -29,7 +29,7 @@ excerpt: JQL search functions for Time in Status fields including indexed and re
 Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.webp"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-searcher.webp" style="width:100%" loading="lazy"></a></p>
 
 
 ### "Time in status" in active () ###
@@ -75,4 +75,4 @@ By the field “Time in status” it is possible to sort. Sorting takes place ac
 JQL Functions may not be available if their names conflict with functions from other plugins. For this case, each function has a spare with the "_jb" postfix.
 
 In case of conflict, you need to turn off the module with the main function and turn on the spare: <br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.png" style="width:100%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.webp"><img src="/uploads/time-in-status/time-in-status-field-jql/time-in-status-field-jql-reserve.webp" style="width:100%" loading="lazy"></a></p>

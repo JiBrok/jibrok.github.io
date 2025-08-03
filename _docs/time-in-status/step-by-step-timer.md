@@ -40,7 +40,7 @@ excerpt: Comprehensive tutorial for creating and configuring timer fields with e
 1. Create two timer field with names “Time to first response" and “Time to resolution".
 2. Set the screens and contexts on which you want to see the timer. We will configure the field in detail later.
 
-<a href="/uploads/time-in-status/step-by-step-timer/Unknown.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown.png" alt="" width="50%" loading="lazy"></a>
+<a href="/uploads/time-in-status/step-by-step-timer/Unknown.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown.webp" alt="" width="50%" loading="lazy"></a>
 
 ### 2. Open All Timer Configs ###
 
@@ -48,8 +48,8 @@ go to {baseUrl}/secure/jibrokAllTimerConfigs.jspa
 
 or open with admin search (gg + "All Timer Configs")
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-2.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-2.png" alt="" width="50%" loading="lazy"></a></p>
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-3.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-3.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-2.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-2.webp" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-3.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-3.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 3. Click "Add timer configuration" ###
 
@@ -57,13 +57,13 @@ or open with admin search (gg + "All Timer Configs")
 
 Now we will configure the conditions for starting the timer, stopping ...
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-4.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-4.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-4.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-4.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 4. Configure timer for "Time to first response" ###
 
 Configuration "Time to first response":
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-5.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-5.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-5.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-5.webp" alt="" width="50%" loading="lazy"></a></p>
 
 1. Common settings
 * Set a name convenient for navigation - "Time to first response"
@@ -94,12 +94,12 @@ We do not need Thrown events in this timer.
 
 After create "Time to first response":
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-6.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-6.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-6.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-6.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 5. Configure timer for "Time to resolution" ### 
 
 0. Create new Configuration for (see p3)
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-7.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-7.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-7.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-7.webp" alt="" width="50%" loading="lazy"></a></p>
 1. Common settings
 * Set a name convenient for navigation - "Time to resolution".
 * Set Calculate type - "Calculate all start and create archive". The timer may restart and I want to see its previous values.
@@ -128,7 +128,7 @@ After create "Time to first response":
 
 Create goal:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-8.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-8.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-8.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-8.webp" alt="" width="50%" loading="lazy"></a></p>
 
 * JQL - condition by priority.
    * Example: priority = Lowest
@@ -145,28 +145,28 @@ Create goal:
 
 After create first goal:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-9.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-9.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-9.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-9.webp" alt="" width="50%" loading="lazy"></a></p>
 
 **after create all goals click "Save"**
 
 
 after create all goals:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-10.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-10.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-10.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-10.webp" alt="" width="50%" loading="lazy"></a></p>
 
 after save config for "Time to resolution":
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-11.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-11.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-11.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-11.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 6.  Open All timer schemes ###
 
 go to {baseUrl}/secure/jibrokAllTimerSchemes.jspa
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-12.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-12.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-12.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-12.webp" alt="" width="50%" loading="lazy"></a></p>
 
 or open with admin search (gg + "All timer schemes")
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-13.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-13.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-13.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-13.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 7. Click "Add timer configuration scheme" ### 
 
@@ -174,7 +174,7 @@ or open with admin search (gg + "All timer schemes")
 
 Now you need to set which timer configurations to use depending on the project and the type of task. Analogue of context for custom fields.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-14.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-14.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-14.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-14.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 8. Configure timer scheme for "Time to first response" ###
 
@@ -186,31 +186,31 @@ Now you need to set which timer configurations to use depending on the project a
   * We indicated that the timer config are relevant for tasks from the project and issue types.
 * Click "Save"
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-15.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-15.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-15.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-15.webp" alt="" width="50%" loading="lazy"></a></p>
 
 Click "Add Association":
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-16.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-16.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-16.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-16.webp" alt="" width="50%" loading="lazy"></a></p>
 
 Set issue types and timer config(see p5):
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-17.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-17.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-17.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-17.webp" alt="" width="50%" loading="lazy"></a></p>
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-18.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-18.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-18.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-18.webp" alt="" width="50%" loading="lazy"></a></p>
 
 After save:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-19.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-19.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-19.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-19.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 9. Configure timer scheme for "Time to resolution" (see p8) ###
 
 In our case, the schemes differ only in name and selected timer config(Time to resolution)
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-20.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-20.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-20.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-20.webp" alt="" width="50%" loading="lazy"></a></p>
 
 After save:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-21.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-21.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-21.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-21.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 10. Field settings for "Time to first response" ###
 
@@ -226,21 +226,21 @@ Now we need to configure the fields and connect the created schemes to them.
 
 Timer field Click configure:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-22.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-22.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-22.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-22.webp" alt="" width="50%" loading="lazy"></a></p>
 
 Open timer field settings:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-23.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-23.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-23.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-23.webp" alt="" width="50%" loading="lazy"></a></p>
 
 Set timer scheme:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-24.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-24.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-24.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-24.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ## Test ##
 ### 11. Field settings for "Time to resolution" ###
 
 (see p10) All the same, just select the scheme "Time to resolution"
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-25.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-25.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-25.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-25.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 12. At this step, the basic setup is complete. You can test how everything works. ### 
 
@@ -249,7 +249,7 @@ Set timer scheme:
 
 After create new issue:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-26.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-26.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-26.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-26.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 13. Set status in progress ###
 
@@ -257,10 +257,10 @@ After create new issue:
   * In the current settings of the field, only time is displayed. The status of the timer can be displayed by hovering the mouse over the time.
 * Time to resolution - The timer has started.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-27.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-27.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-27.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-27.webp" alt="" width="50%" loading="lazy"></a></p>
 
 ### 14. Set status close or set resolution ###
 
 Time to resolution - The timer has stopped.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-28.png"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-28.png" alt="" width="50%" loading="lazy"></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/step-by-step-timer/Unknown-28.webp"><img src="/uploads/time-in-status/step-by-step-timer/Unknown-28.webp" alt="" width="50%" loading="lazy"></a></p>
