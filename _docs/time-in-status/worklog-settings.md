@@ -1,6 +1,8 @@
 ---
 title: Auto worklog settings
 key: time-in-status
+category: integration-export
+tags: [doc, server, datacenter, time-tracking, worklog, automation]
 excerpt: "Configure automatic worklog creation from Time in Status fields with customizable rules, time calculations, and user assignments."
 ---
 

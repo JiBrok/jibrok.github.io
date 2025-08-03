@@ -1,6 +1,8 @@
 ---
 title: User JQL help
 key: time-in-status
+category: user-guides
+tags: [doc, server, datacenter, time-tracking, jql-functions, user-help]
 excerpt: "JQL help documentation for Time in Status users with function examples, search syntax, and field-specific query options."
 ---
 
