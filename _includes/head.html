@@ -3,7 +3,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  
+  <!-- Enhanced Open Graph meta tags -->
   <meta property="og:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
+  <meta property="og:image:width" content="144"/>
+  <meta property="og:image:height" content="144"/>
+  <meta property="og:image:type" content="image/png"/>
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% elsif page.layout == 'doc' %}article{% else %}website{% endif %}"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  
+  {% if page.layout == 'post' or page.layout == 'doc' %}
+    {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}"/>
+    {% endif %}
+    <meta property="article:author" content="JiBrok"/>
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}"/>
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@JiBrok_apps"/>
+  <meta name="twitter:creator" content="@JiBrok_apps"/>
+  <meta name="twitter:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
+  <meta name="twitter:image:alt" content="{{ site.title }} Logo"/>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -164,6 +191,82 @@
 
 
 <!--  {% endif %}-->
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JiBrok",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}{{ site.uploads }}vendor/jibrok-logo-with-white-background-144px.png",
+    "description": "{{ site.description }}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "{{ site.social.email }}",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      {% if site.social.github %}"{{ site.social.github }}",{% endif %}
+      {% if site.social.youtube %}"{{ site.social.youtube }}",{% endif %}
+      {% if site.social.twitter %}"{{ site.social.twitter }}"{% endif %}
+    ]
+  }
+  </script>
+
+  {% if page.layout == 'doc' %}
+  <!-- JSON-LD for Documentation Pages -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | escape }}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | escape }}{% else %}{{ site.description }}{% endif %}",
+    "author": {
+      "@type": "Organization",
+      "name": "JiBrok"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "JiBrok",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ site.uploads }}vendor/jibrok-logo-with-white-background-144px.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "dateModified": "{{ site.time | date_to_xmlschema }}",
+    "datePublished": "{{ site.time | date_to_xmlschema }}"
+  }
+  </script>
+  {% endif %}
+
+  {% if page.collection == 'docs' and page.title contains 'Overview' %}
+  <!-- JSON-LD for Software Application -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "{{ page.title | replace: ' Overview', '' | escape }}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | escape }}{% else %}{{ site.description }}{% endif %}",
+    "operatingSystem": "Jira",
+    "applicationCategory": "BusinessApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "JiBrok"
+    },
+    "downloadUrl": "https://marketplace.atlassian.com/vendors/1219306/jibrok"
+  }
+  </script>
+  {% endif %}
 
 
 </head>
