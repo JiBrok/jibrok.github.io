@@ -2,6 +2,8 @@
 title: Stopwatch config
 key: time-in-status
 excerpt: Configure stopwatch behavior algorithms including start/stop triggers, calculation types, working calendars, and JQL conditions for precise time tracking.
+category: field-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 The configuration is responsible for the stopwatch operation algorithm When should he start the countdown, when should he stop, for what time should he be started, according to what working calendar should the time be counted.<br>

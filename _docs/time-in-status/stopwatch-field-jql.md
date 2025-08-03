@@ -2,6 +2,8 @@
 title: Stopwatch - JQL
 key: time-in-status
 excerpt: Complete JQL function reference for stopwatch fields including time searches, state queries, date range filters, and real-time data access.
+category: search-jql
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 ## Functions take the following parameters. ##

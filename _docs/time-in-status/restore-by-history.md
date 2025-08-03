@@ -2,6 +2,8 @@
 title: Restore timer and stopwatch by issue history
 key: time-in-status
 excerpt: Restore or recalculate timer and stopwatch values by analyzing issue history to match events with configured triggers and correct data inconsistencies.
+category: advanced-configuration
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 You can restore or recalculate the value of timers and stopwatches based on the issue history.

@@ -2,6 +2,8 @@
 title: 📖 How to set up one timer with different goal time for different issue types?
 key: time-in-status
 excerpt: Learn how to configure timers with different goal times for various issue types using common configurations or separate configs for flexible time tracking.
+category: tutorials
+tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
 Overview
