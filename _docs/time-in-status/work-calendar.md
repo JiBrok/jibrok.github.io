@@ -2,6 +2,8 @@
 title: Work calendar
 key: time-in-status
 excerpt: Create and manage working calendars with time zones, business hours, breaks, and holidays for accurate time tracking calculations in Time in Status fields.
+category: time-management
+tags: [doc, server, datacenter, time-tracking, time-in-status, business-calendar, sla-tracking, field-configuration]
 ---
 
 The fields "Time in status", "Timer" and "Stopwatch", as well as [JQL functions](/docs/time-in-status/user-help-info/) are able to count the time according to working calendars.
