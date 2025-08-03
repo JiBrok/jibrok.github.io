@@ -8,8 +8,8 @@ Enables the display of the "Time in status" in the sidebar.
 
 <table>
 <tr>
-<td><a href="/uploads/tis-cloud/web-panel-1.png"><img src="/uploads/tis-cloud/web-panel-1.png" /></a></td>
-<td><a href="/uploads/tis-cloud/web-panel-2.png"><img src="/uploads/tis-cloud/web-panel-2.png" /></a></td>
+<td><a href="/uploads/tis-cloud/web-panel-1.png"><img src="/uploads/tis-cloud/web-panel-1.png" loading="lazy"></a></td>
+<td><a href="/uploads/tis-cloud/web-panel-2.png"><img src="/uploads/tis-cloud/web-panel-2.png" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -18,7 +18,7 @@ Enables the display of the "Time in status" in the sidebar.
 
 
 You can create many panels with different settings.
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-create.png"><img src="/uploads/tis-cloud/web-panel-create.png" /></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-create.png"><img src="/uploads/tis-cloud/web-panel-create.png" loading="lazy"></a></p>
 
 ### General settings ### 
 
@@ -34,7 +34,7 @@ You can create many panels with different settings.
 
 ### Statistic settings ###
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-settings.png"><img src="/uploads/tis-cloud/web-panel-statistic-settings.png" style="width:100%;"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-settings.png"><img src="/uploads/tis-cloud/web-panel-statistic-settings.png" style="width:100%;" loading="lazy"></a></p>
 
 If you have selected in "Display mode" the display of the values of one of the functions (Average time for example), then in this section you can customize the data for calculating the value of this function in more detail.
 The function value will be displayed in a separate column. Each panel calculates and uses values independently for each of the selected status.
@@ -51,7 +51,7 @@ The data will be recalculated at least once a day. (Beta) Updates will occur mor
   * Issues from context are used to calculate values. You can limit the selection of issues by the date the request was resolved. Only issues solved in the last N days will be used. If 0 is specified then this filter is ignored.
 
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.png"><img src="/uploads/tis-cloud/web-panel-statistic-demo.png" /></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.png"><img src="/uploads/tis-cloud/web-panel-statistic-demo.png" loading="lazy"></a></p>
 
 [More about time statistic](/Time-statistic(Time-in-status-Cloud)/)  
 

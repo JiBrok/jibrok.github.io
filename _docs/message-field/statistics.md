@@ -6,7 +6,7 @@ excerpt: "View Message field usage statistics, performance metrics, and analytic
 
 The **Statistics** page provides comprehensive insights into your Message Field usage across your Jira instance. This powerful analytics tool helps administrators monitor, optimize, and troubleshoot their Message Field configurations.
 
-<a href="/uploads/message-field/statistics.png"><img src="/uploads/message-field/statistics.png" style="width:100%;"/></a>
+<a href="/uploads/message-field/statistics.png"><img src="/uploads/message-field/statistics.png" style="width:100%;" loading="lazy"></a>
 
 ## Accessing Statistics
 

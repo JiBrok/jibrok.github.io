@@ -8,8 +8,8 @@ Enables the display of the "Timer" fields in the sidebar.
 
 <table>
 <tr>
-<td><a href="/uploads/timer-cloud/web-panel-1.png"><img src="/uploads/timer-cloud/web-panel-1.png" /></a></td>
-<td><a href="/uploads/timer-cloud/web-panel-2.png"><img src="/uploads/timer-cloud/web-panel-2.png" /></a></td>
+<td><a href="/uploads/timer-cloud/web-panel-1.png"><img src="/uploads/timer-cloud/web-panel-1.png" loading="lazy"></a></td>
+<td><a href="/uploads/timer-cloud/web-panel-2.png"><img src="/uploads/timer-cloud/web-panel-2.png" loading="lazy"></a></td>
 </tr>
 </table>
 
@@ -17,16 +17,16 @@ Enables the display of the "Timer" fields in the sidebar.
 1. Open application "Timer field":<br>
    <ul>
       <li>Open from “Manage your app“:
-      <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.png"><img src="/uploads/tis-cloud/open-admin-from-app-manage.png" style="width:100%"/></a></p>
+      <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.png"><img src="/uploads/tis-cloud/open-admin-from-app-manage.png" style="width:100%" loading="lazy"></a></p>
       </li>
       <li>Or from “Apps“ menu:
-       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.png"><img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.png" alt="" width="100%"/></a></p>
+       <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.png"><img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.png" alt="" width="100%" loading="lazy"></a></p>
       </li>
    </ul>
 2. Open "Web panels" tab and click "Create"
 
 You can create many panels with different settings.
-<p style="text-align: center;"><a href="/uploads/timer-cloud/web-panel-create.png"><img src="/uploads/timer-cloud/web-panel-create.png" /></a></p>
+<p style="text-align: center;"><a href="/uploads/timer-cloud/web-panel-create.png"><img src="/uploads/timer-cloud/web-panel-create.png" loading="lazy"></a></p>
 
 ### General settings ### 
 

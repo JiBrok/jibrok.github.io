@@ -22,14 +22,14 @@ Reports can work with any fields. Both with system fields and with fields from t
 [Read more in the section on creating a report.](/docs/time-in-status/report-create/)
     
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/4.png"><img src="/uploads/time-in-status/reports-all/4.png" style="width:100%;" loading="lazy"></a></p>
 
 
 ## All reports ##
 
 Users have access to a menu to view all reports available to them. The reports menu is located at the top of the "Reports" screen.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/1.png"><img src="/uploads/time-in-status/reports-all/1.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/1.png"><img src="/uploads/time-in-status/reports-all/1.png" style="width:100%;" loading="lazy"></a></p>
 
 
 
@@ -38,7 +38,7 @@ The user can have read-only or read and edit rights to the report. Depending on 
 
 If the user has rights to create new reports, the corresponding button on the right side of the screen will be available - "Create report".
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.png"><img src="/uploads/time-in-status/reports-all/2.png" style="width:100%;" loading="lazy"></a></p>
 
 Reports are generated at a specific point in time. After that, the finished report is saved and available for viewing. In the report settings, you can specify a schedule for data refresh. Or update the data manually as needed.
 
@@ -50,7 +50,7 @@ Reports are generated at a specific point in time. After that, the finished repo
 
 <div class="uk-alert-note" data-uk-alert="">
 Jira admin can disable this menu via module "jibrok-all-reports-user-link"
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.png"><img src="/uploads/time-in-status/reports-all/3.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.png"><img src="/uploads/time-in-status/reports-all/3.png" style="width:100%;" loading="lazy"></a></p>
 </div>
 
 

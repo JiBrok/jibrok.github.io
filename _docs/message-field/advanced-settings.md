@@ -20,7 +20,7 @@ The settings are organized into the following tabs:
 * TOC
 {:toc}
 
-<a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:50%"/></a>
+<a href="/uploads/message-field/advance-settings.jpg"><img src="/uploads/message-field/advance-settings.jpg" style="width:50%" loading="lazy"></a>
 
 ## Copy Settings (Admin only)
 
@@ -47,7 +47,7 @@ Configure the content and appearance of your message
 
 * **Message Type** - One of the predefined types responsible for the color and style of the message.
     * **Info**, **Warning**, **Error**, **Success**, **Change** <br>
-    <a href="/uploads/message-field/message-types.png"><img src="/uploads/message-field/message-types.png" style="width:100%;"/></a>
+    <a href="/uploads/message-field/message-types.png"><img src="/uploads/message-field/message-types.png" style="width:100%;" loading="lazy"></a>
     * **Custom** - For custom styling when predefined types don't match your needs
         * Configure background color, text color, and icon separately
         * Use Atlassian color palette or custom hex colors
@@ -59,7 +59,7 @@ Configure the content and appearance of your message
         * The position of the message is determined by the position of the field on the screen. 
     * **Yes** - shows message in a small pop-up on the right side of the screen.
     
-    <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:100%;"/></a>
+    <a href="/uploads/message-field/show-as-flag.png"><img src="/uploads/message-field/show-as-flag.png" style="width:100%;" loading="lazy"></a>
 
     * Regardless of this setting, messages can be exported to print.
 
@@ -84,7 +84,7 @@ Control how the message appears on different screens
         * Small pop-up - Standard notification in the upper right corner
         * Big pop-up - Large dialog window with more prominent display
           
-<a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:50%"/></a> 
+<a href="/uploads/message-field/big-popup.png"><img src="/uploads/message-field/big-popup.png" style="width:50%" loading="lazy"></a> 
     
     * **Screen types:**
         * View - Issue view screen
@@ -117,7 +117,7 @@ Note: CSS selectors can use Velocity variables for dynamic placement
 
 Configure when and where the message should be displayed
 
-<a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:100%;"/></a>
+<a href="/uploads/message-field/conditions-for-display-a-message.png"><img src="/uploads/message-field/conditions-for-display-a-message.png" style="width:100%;" loading="lazy"></a>
 
 ### Date and Time Conditions
 
@@ -190,7 +190,7 @@ Configure when and where the message should be displayed
 
 Configure which users should see the message based on their login status, groups, and roles.
 
-<a href="/uploads/message-field/show-message-for-next-users.png"><img src="/uploads/message-field/show-message-for-next-users.png" style="width:100%;"/></a>
+<a href="/uploads/message-field/show-message-for-next-users.png"><img src="/uploads/message-field/show-message-for-next-users.png" style="width:100%;" loading="lazy"></a>
 
 ### Who can see the message
 
@@ -237,7 +237,7 @@ Add custom JavaScript code to create dynamic interactions with form fields and c
 
 **Note**: Most dynamic content needs can now be handled using [Velocity templates](/docs/message-field/dynamic-templates/) which are easier and safer to use.
 
-<a href="/uploads/message-field/javascript.png"><img src="/uploads/message-field/javascript.png" style="width:100%;"/></a>
+<a href="/uploads/message-field/javascript.png"><img src="/uploads/message-field/javascript.png" style="width:100%;" loading="lazy"></a>
 
 ### Available Variables and Objects
 
@@ -338,7 +338,7 @@ Allow non-admin users to manage message field configurations for specific projec
 
 Test how your message will appear before saving:
 
-<a href="/uploads/message-field/advanced-demo.png"><img src="/uploads/message-field/advanced-demo.png" style="width:100%;"/></a>
+<a href="/uploads/message-field/advanced-demo.png"><img src="/uploads/message-field/advanced-demo.png" style="width:100%;" loading="lazy"></a>
 
 * **Show Demo** - Preview the message with current settings
 * **Clean preview** - Clear the preview area

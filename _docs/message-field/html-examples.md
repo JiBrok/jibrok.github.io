@@ -22,9 +22,9 @@ Thank you for your recommendation! 😉
 3. Choose predefined [colours Atlassian](https://www.atlassian.design/foundations/color).
 4. If you can't find the right colour, press **Select a custom color** for manual colour selection.
 
-<a href="/uploads/message-field/message-type-custom.png"><img src="/uploads/message-field/message-type-custom.png" width="100%"/></a>
+<a href="/uploads/message-field/message-type-custom.png"><img src="/uploads/message-field/message-type-custom.png" width="100%" loading="lazy"></a>
 
-<a href="/uploads/message-field/message-type-custom-as-flag.png"><img src="/uploads/message-field/message-type-custom-as-flag.png" width="50%"/></a>
+<a href="/uploads/message-field/message-type-custom-as-flag.png"><img src="/uploads/message-field/message-type-custom-as-flag.png" width="50%" loading="lazy"></a>
 
 Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
 
@@ -42,7 +42,7 @@ Or hex colors
 <text style="background: #000000; color: #FFFFFF"> The white message on the black backgroud</text>
 ```
 
-<a href="/uploads/message-field/html-example-1.png"><img src="/uploads/message-field/html-example-1.png" width="100%"/></a>
+<a href="/uploads/message-field/html-example-1.png"><img src="/uploads/message-field/html-example-1.png" width="100%" loading="lazy"></a>
 
 
 Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>
@@ -56,10 +56,10 @@ Attlassian Design System: <a href="https://www.atlassian.design/foundations/colo
  <table>
     <tr>
         <td>
-            <a href="/uploads/message-field/html-example-scroll.png"><img src="/uploads/message-field/html-example-scroll.png" width="100%"/></a>
+            <a href="/uploads/message-field/html-example-scroll.png"><img src="/uploads/message-field/html-example-scroll.png" width="100%" loading="lazy"></a>
         </td>
         <td>
-            <a href="/uploads/message-field/html-example-scroll-2.png"><img src="/uploads/message-field/html-example-scroll-2.png" width="100%"/></a>
+            <a href="/uploads/message-field/html-example-scroll-2.png"><img src="/uploads/message-field/html-example-scroll-2.png" width="100%" loading="lazy"></a>
         </td>
     </tr>
 </table>

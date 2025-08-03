@@ -17,6 +17,6 @@ The administrator specifies:
 * Additional settings
 
 In tasks from JQL, the specified action will be performed for these fields.
-<p style="text-align: center;"><a href="/uploads/time-in-status/manual-action-by-jql/1.png"><img src="/uploads/time-in-status/manual-action-by-jql/1.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/manual-action-by-jql/1.png"><img src="/uploads/time-in-status/manual-action-by-jql/1.png" style="width:100%;" loading="lazy"></a></p>
 
 

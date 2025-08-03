@@ -23,19 +23,19 @@ Schemes and configs only work if they are connected to the field.
 ### Step 3 - Create stopwatch field ###
 
 Adding a custom field:<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field.png" style="width:400px"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field.png" style="width:400px" loading="lazy"></a></p>
 After create open field configure and click "Edit stopwatch field":<br>
-* <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config.png" style="width:50%"/></a>
-* <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config2.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config2.png" style="width:50%"/></a>
+* <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config.png" style="width:50%" loading="lazy"></a>
+* <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config2.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-config2.png" style="width:50%" loading="lazy"></a>
 
 
 A window will open for you to configure the field.<br>
-<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-settings.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-settings.png" style="width:100%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-settings.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-field-settings.png" style="width:100%" loading="lazy"></a></p>
 
 * Stopwatch scheme - Set the scheme according to which the field will work(created in step 2). The field is used to display the stopwatch. But a scheme without a field will not work.
 * Field time format - responsible for the format of the display of time in the fields.
 * Show as panel - Displays the field value in the issue panel.<br>
-  <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png" style="width:50%"/></a></p>
+  <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-view.png" style="width:50%" loading="lazy"></a></p>
 * Show as panel on agile board - Displays the field value in the issue panel on Agile board.
 * Panel time format - The stopwatch value can be displayed in different ways in the field and in the panel.
 * Sequence - If a issue has several stopwatches displayed in the panel, they will be sorted in ascending order of this parameter.
@@ -46,14 +46,14 @@ A window will open for you to configure the field.<br>
 * Manual control - You can grant rights to users to manually manage stopwatches.
   The stopwatch will continue to work according to the scheme, but there will be the possibility of manual control.
   The menu for manual control is available only in the panel on the task viewing screen.<br>
-  <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png" style="width:200px"/></a>
+  <a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-manual.png" style="width:200px" loading="lazy"></a>
 * Show field value for next users - You can restrict access to the field value. The restrictions apply to fields and panels.
 * Create change log for stopwatch  - Changing the stopwatch state (Running -> Paused) will be recorded in the issue history.
 * Add time of stopwatch in issue history - only affects new entries in history.
   * Yes<br>
-    <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png" style="width:50%"/></a></p>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-with-time.png" style="width:50%" loading="lazy"></a></p>
   * No <br>
-    <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png" style="width:50%"/></a></p>
+    <p style="text-align: center;"><a href="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png"><img src="/uploads/time-in-status/stopwatch-field-settings/stopwatch-history-without-time.png" style="width:50%" loading="lazy"></a></p>
 * Sub-tasks - Child tasks can display parent stopwatches. And don't start your stopwatches.  
 
 

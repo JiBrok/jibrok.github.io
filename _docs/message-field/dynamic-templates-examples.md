@@ -262,7 +262,7 @@ or
 ### How to change message colour?
 [see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
 
-<a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%"/></a>
+<a href="/uploads/message-field/message-field-random-colors.gif"><img src="/uploads/message-field/message-field-random-colors.gif" alt="dynamic template random message colors.gif" width="100%" loading="lazy"></a>
 
 
     $fieldDisplayConfig.setMessageType("custom") ##require for custom colors
@@ -501,7 +501,7 @@ The Issue Field Renderer provides methods for rendering issue fields and formatt
 This example uses a different our plugin: [Display linked issues](https://marketplace.atlassian.com/apps/1223203/display-linked-issues?hosting=datacenter&tab=overview)
 1) Create and configure field "Linked issues":
 
-<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png" alt="linked-issues-config.png" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png"><img src="/uploads/message-field/dynamic-templates-examples/linked-issues-config.png" alt="linked-issues-config.png" width="50%" loading="lazy"></a>
 
 2) After creating the "linked issues" field, you can display it in the message body:
 
@@ -511,10 +511,10 @@ This example uses a different our plugin: [Display linked issues](https://market
 3) Result:
    
    <table><tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png" alt="render-another-field-1.png" width="100%"/></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-1.png" alt="render-another-field-1.png" width="100%" loading="lazy"></a></td>
    </tr>
    <tr>
-   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png" alt="render-another-field-2.png" width="100%"/></a></td>
+   <td><a href="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png"><img src="/uploads/message-field/dynamic-templates-examples/render-another-field-2.png" alt="render-another-field-2.png" width="100%" loading="lazy"></a></td>
    </tr></table>
 
 
@@ -528,7 +528,7 @@ $issueFieldRender.dateFormat($formIssue.created, "dd-MM-yyyy")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/dateformat.png"><img src="/uploads/message-field/dynamic-templates-examples/dateformat.png" alt="dateformat.png" width="50%" loading="lazy"></a>
 
 #### How to show the multiline value of a text field?
 [see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
@@ -560,7 +560,7 @@ $issueFieldRender.getFieldValueHtml($issue, "customfield_10102")
 ``` 
 
 Result:
-<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png"><img src="/uploads/message-field/dynamic-templates-examples/replaceNewlineCharactersForHtml.png" alt="replaceNewlineCharactersForHtml.png" width="50%" loading="lazy"></a>
 
 #### How to get field names dynamically?
 
@@ -596,7 +596,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Priority Validation
 
-<a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/priority.gif"><img src="/uploads/message-field/dynamic-templates-examples/priority.gif" alt="Check priority.gif" width="50%" loading="lazy"></a>
 
       #if($formIssue.priority.name == "Blocker")
       $fieldDisplayConfig.setMessageType("error")
@@ -619,7 +619,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Summary Validation
 
-<a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/summary.gif"><img src="/uploads/message-field/dynamic-templates-examples/summary.gif" alt="Validate summary.gif" width="50%" loading="lazy"></a>
 
       #if($formIssue.summary.contains("PROJECTKEY"))
          message contains PROJECTKEY<br> ##Message text
@@ -635,7 +635,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Description and User Picker Validation
 
-<a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif"><img src="/uploads/message-field/dynamic-templates-examples/description-and-user-picker(single).gif" alt="description-and-user-picker(single).gif" width="50%" loading="lazy"></a>
 
       #if(!$form.description || $form.description.trim() == "" || !$cfValues.getFromForm("User Picker (single user)"))
          You need to set data in the system description field and specify the user in the custom field "User Picker (single user)" ##Message text
@@ -643,7 +643,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Number Field Validation
 
-<a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/numbers.gif"><img src="/uploads/message-field/dynamic-templates-examples/numbers.gif" alt="Check number custom field.gif" width="50%" loading="lazy"></a>
 
       #if($cfValues.getFromForm("Number") > 10)
          number > 10 ##Message text
@@ -651,7 +651,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Select Field Validation
 
-<a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-templates-examples/selects.gif"><img src="/uploads/message-field/dynamic-templates-examples/selects.gif" alt="Check option from custom select field(checkbox or radio).gif" width="50%" loading="lazy"></a>
 
       #if($cfValues.getFromForm("Radio").optionId == 10102)
          Selected option with Id 10102<br> ##Message text
@@ -796,10 +796,10 @@ When working with cascade select fields through the `$form` object, you access t
 
 
 <b>Issue create screen</b>: 
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png" alt="Cascade select - Create" width="50%"/></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-create.png" alt="Cascade select - Create" width="50%" loading="lazy"></a>   
 
 <b>Other issue screens</b>:
-<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png" alt="Cascade select - edit - view" width="50%"/></a>   
+<a href="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png"><img src="/uploads/message-field/dynamic-templates-examples/cascadeselect-edit-view.png" alt="Cascade select - edit - view" width="50%" loading="lazy"></a>   
 
 <b>Conditions</b>:
 
@@ -1264,7 +1264,7 @@ Jira Version: $jiraVersion
 
 ### Priority-Dependent Validation
 
-<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%"/></a>
+<a href="/uploads/message-field/dynamic-template-demo1.gif"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="dynamic template demo.gif" width="50%" loading="lazy"></a>
       
     #if($formIssue.priority.name == "Blocker")
     	$fieldDisplayConfig.setMessageType("error")

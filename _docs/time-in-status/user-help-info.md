@@ -7,11 +7,11 @@ excerpt: "JQL help documentation for Time in Status users with function examples
 Available JQL functions for working with time and examples of their use.
 
 1. This help is available from jira’s help menu:
-<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/help-link.png"><img src="/uploads/time-in-status/user-help-info/help-link.png" alt="work calendars" width="50%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/help-link.png"><img src="/uploads/time-in-status/user-help-info/help-link.png" alt="work calendars" width="50%" loading="lazy"></a></p>
    
 2. You might need a work calendar. You can see their list in the system by following the link from the help menu or this link *{baseUrl}*/secure/jibrokAllCalendars!default.jspa:
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.png"><img src="/uploads/time-in-status/user-help-info/work-calendars.png" alt="work calendars" width="50%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.png"><img src="/uploads/time-in-status/user-help-info/work-calendars.png" alt="work calendars" width="50%" loading="lazy"></a></p>
 
 <hr>
 

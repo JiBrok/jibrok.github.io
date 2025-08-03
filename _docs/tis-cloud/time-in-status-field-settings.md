@@ -5,7 +5,7 @@ excerpt: "Configure Time in Status field settings including status selection, di
 ---
 
 All settings:<br>
-<p style="text-align: center;"><a href="/uploads/tis-cloud/create-field.png"><img src="/uploads/tis-cloud/create-field.png" style="width:100%;"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/create-field.png"><img src="/uploads/tis-cloud/create-field.png" style="width:100%;" loading="lazy"></a></p>
 
 ### General settings ### 
 
@@ -15,7 +15,7 @@ All settings:<br>
 4. Work calendar - If you need to calculate only working hours, you can connect a working calendar.ld.
 5. [Time format](/tis-cloud/time-formats) - format for outputting time in a field. If you need a new format, please write in support.
 6. Display setting - Select an option to display in the field. Below you can customize the calculation of statistical values. 
-    <p style="text-align: center;"><a href="/uploads/tis-cloud/display-settings.png"><img src="/uploads/tis-cloud/display-settings.png" style="width:100%;"></a></p>
+    <p style="text-align: center;"><a href="/uploads/tis-cloud/display-settings.png"><img src="/uploads/tis-cloud/display-settings.png" style="width:100%;" loading="lazy"></a></p>
   
 7. Is active - For a disabled setting, all data updates will be disabled. Once the setting is enabled, the data in the fields will be updated automatically.
 8. Use rounding for display - The time will be rounded when displayed in the field. 21:37 -> 21:30 (use intervals)
@@ -43,12 +43,12 @@ The data will be recalculated at least once a day. (Beta) Updates will occur mor
 
 
 Field view example: 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/field-view-average-time-example.png"><img src="/uploads/tis-cloud/field-view-average-time-example.png" style="width:100%;"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/field-view-average-time-example.png"><img src="/uploads/tis-cloud/field-view-average-time-example.png" style="width:100%;" loading="lazy"></a></p>
 
 ##### JQL for statistic #####
 On the start page, we have added examples of JQL queries for working with statistics. Functions work according to the logic of comparing the time value in the task with the value of the specified function. (Each function value is calculated for each context separately)
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/jql-statistic-examples.png"><img src="/uploads/tis-cloud/jql-statistic-examples.png" style="width:100%;"></a></p>
+<p style="text-align: center;"><a href="/uploads/tis-cloud/jql-statistic-examples.png"><img src="/uploads/tis-cloud/jql-statistic-examples.png" style="width:100%;" loading="lazy"></a></p>
 
 [More about time statistic](/Time-statistic(Time-in-status-Cloud)/)
 

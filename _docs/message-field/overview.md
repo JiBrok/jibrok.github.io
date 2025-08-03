@@ -3,7 +3,7 @@ title: Overview
 key: message-field
 excerpt: "Display contextual messages and banners on Jira issue screens with Message field. Features dynamic templates, custom styling, JQL targeting, and real-time field references."
 ---
-<a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:100%;;"/></a>
+<a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview)
 ## Welcome to Message field! 
@@ -60,7 +60,7 @@ An application for displaying messages on issue screens.
 🌟 Experience streamlined communication and a personalized portal that keeps everyone in sync.
 
 
-<a href="/uploads/message-field/field-demo-create.png"><img src="/uploads/message-field/field-demo-create.png" style="width:100%;"/></a> 
+<a href="/uploads/message-field/field-demo-create.png"><img src="/uploads/message-field/field-demo-create.png" style="width:100%;" loading="lazy"></a> 
 
 ## Key features
 
@@ -73,7 +73,7 @@ An application for displaying messages on issue screens.
 
 
 
-<img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;"/>
+<img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;" loading="lazy">
 
 ---
 

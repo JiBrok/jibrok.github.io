@@ -10,7 +10,7 @@ Timers and stopwatches process events (triggers) in real time and record changes
 This utility analyzes the history of requests and finds a match between the entry in the history and the trigger from the timer or stopwatch configuration.
 And based on this analysis, it gives the current value of the counter based on the history of the issue. Further, this counter will work as before - process triggers in real time.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/restore-by-history/1.png"><img src="/uploads/time-in-status/restore-by-history/1.png" alt="" width="100%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/restore-by-history/1.png"><img src="/uploads/time-in-status/restore-by-history/1.png" alt="" width="100%" loading="lazy"></a></p>
 
 The administrator specifies the JQL and fields for validation. Then one of three actions is performed:
 * Find tasks whose data does not match the history. The reasons for the differences can be very different: errors, problems with the server, incorrect configuration, etc. As a result, requests with "incorrect" values will be shown and the error will be indicated.

@@ -11,5 +11,5 @@ Reports can potentially consume a lot of resources. In addition to [performance 
 
 The administrator can create and control reports and the rights to view them himself. Or as an option to delegate it to a specific role in the project.
 
-<p style="text-align: center;"><a href="/uploads/time-in-status/reports-permissions/1.png"><img src="/uploads/time-in-status/reports-permissions/1.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/reports-permissions/1.png"><img src="/uploads/time-in-status/reports-permissions/1.png" style="width:100%;" loading="lazy"></a></p>
 

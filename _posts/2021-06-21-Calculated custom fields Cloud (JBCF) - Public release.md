@@ -83,14 +83,14 @@ After installing the application, the administration page is available to you. Y
 
 <table>
 <tr>
-<td><a href="/uploads/jbcf-cloud/manage-your-apss-jbcf.png"><img src="/uploads/jbcf-cloud/manage-your-apss-jbcf.png" /></a></td>
-<td><a href="/uploads/jbcf-cloud/manage-your-apss.png"><img src="/uploads/jbcf-cloud/manage-your-apss.png" /></a></td>
-<td><a href="/uploads/jbcf-cloud/jbcf-cloud-configured.png"><img src="/uploads/jbcf-cloud/jbcf-cloud-configured.png" /></a></td>
-<td><a href="/uploads/jbcf-cloud/jbcf-cloud-configured-2.png"><img src="/uploads/jbcf-cloud/jbcf-cloud-configured-2.png" /></a></td>
+<td><a href="/uploads/jbcf-cloud/manage-your-apss-jbcf.png"><img src="/uploads/jbcf-cloud/manage-your-apss-jbcf.png" loading="lazy"></a></td>
+<td><a href="/uploads/jbcf-cloud/manage-your-apss.png"><img src="/uploads/jbcf-cloud/manage-your-apss.png" loading="lazy"></a></td>
+<td><a href="/uploads/jbcf-cloud/jbcf-cloud-configured.png"><img src="/uploads/jbcf-cloud/jbcf-cloud-configured.png" loading="lazy"></a></td>
+<td><a href="/uploads/jbcf-cloud/jbcf-cloud-configured-2.png"><img src="/uploads/jbcf-cloud/jbcf-cloud-configured-2.png" loading="lazy"></a></td>
 </tr>
 </table>
 
-<p><a href="/uploads/tis-cloud/create-field-2.png"><img src="/uploads/tis-cloud/create-field-2.png" style="width:100%;"/></a></p>
+<p><a href="/uploads/tis-cloud/create-field-2.png"><img src="/uploads/tis-cloud/create-field-2.png" style="width:100%;" loading="lazy"></a></p>
 
 
 Unfortunately, we had to abandon the standard interface for creating fields in the Jira Cloud. And the Time in status fields are created and configured through the application interface.

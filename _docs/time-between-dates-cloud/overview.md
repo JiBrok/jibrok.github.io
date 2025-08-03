@@ -4,7 +4,7 @@ key: time-between-dates-cloud
 excerpt: "Calculate time between dates in Jira Cloud with working calendar support, automatic updates, and business hours tracking."
 ---
 
-<p style="text-align: center;"><a href="https://marketplace.atlassian.com/1226143"><img src="/uploads/time-between-dates-cloud/marketplace.png" style="width:100%"/></a></p>
+<p style="text-align: center;"><a href="https://marketplace.atlassian.com/1226143"><img src="/uploads/time-between-dates-cloud/marketplace.png" style="width:100%" loading="lazy"></a></p>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/1226143)
 
@@ -13,13 +13,13 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/1226143)
 <p>This application calculates the time between two dates from the issue fields. These can be either system fields - created, updated ... or any custom fields of the date time type. For example: Time to resolution - time between created and resolution date</p>
 <p>The countdown is specified in the field settings (Start field). Each field dynamically changes its value with a certain frequency. Update rate depends on the time: the longer the time, the less frequently the value will be updated.</p>
 
-<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:100%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:100%" loading="lazy"></a></p>
 
 ### Simple configuration ###
 
 Specify a working calendar and a couple of Issue fields such as date time. The application will automatically calculate the time between the specified dates and update additional information for searching and sorting.
 
-<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/date-fields-settings.png"><img src="/uploads/time-between-dates-cloud/date-fields-settings.png" style="width:100%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/date-fields-settings.png"><img src="/uploads/time-between-dates-cloud/date-fields-settings.png" style="width:100%" loading="lazy"></a></p>
 
 
 
@@ -39,7 +39,7 @@ Specify a working calendar and a couple of Issue fields such as date time. The a
 
 The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
 You can create an unlimited number of calendars and use it in any contexts and projects.
-<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.png"><img src="/uploads/time-in-status/overview/calendar-example.png" style="width:100%;"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.png"><img src="/uploads/time-in-status/overview/calendar-example.png" style="width:100%;" loading="lazy"></a></p>
 
 
 ### JQL for time between dates  ###

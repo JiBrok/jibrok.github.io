@@ -90,14 +90,14 @@ console.log('Full form data:', fullFormData);
 
 The script will check the custom fields on the view issue screen. If all fields are empty the message banner will be hidden.
 
-<img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;"/> 
+<img src="/uploads/message-field/message_field_video_dynamical.gif" style="width:100%;" loading="lazy"> 
 
 <script src="https://gist.github.com/JiBrok/1d308d9e393c739790462d35b5cdb305.js"></script>
 
 
 ### Update message with bundled select(SD-create)
 
-<img src="/uploads/message-field/example-extensions-for-jira.gif" width="100%"/>
+<img src="/uploads/message-field/example-extensions-for-jira.gif" width="100%" loading="lazy">
 
 <script src="https://gist.github.com/JiBrok/28232b1fee05ef8c45490ea91444a5ef.js"></script>
 

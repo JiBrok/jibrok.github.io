@@ -9,7 +9,7 @@ The application allows you to quickly and easily implement the calculation of th
 
 Despite its simplicity, you can use work calendars, JQL search and sort. The data will be updated in the background, so you will always have the most up-to-date result.
 
-<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:50%"/></a></p>
+<p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/demo-field.png"><img src="/uploads/time-between-dates-cloud/demo-field.png" style="width:50%" loading="lazy"></a></p>
 
 * [Marketplace](https://marketplace.atlassian.com/apps/1226143/time-between-dates-for-jira-cloud)
 * [Documentation](/docs/time-between-dates-cloud/overview/)
