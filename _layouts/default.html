@@ -27,46 +27,7 @@
 
     {% include hook-pre-closing-body.html %}
 
-    <script>
-        if(readCookie('cookie-notice-dismissed') != "false" && readCookie('cookie-notice-dismissed') != "true"){
-            swal({
-                text: "We use cookies for the operation of our website. This is to improve its use, to personalize your experience, and to compile visitor statistics. By continuing to use this site, you consent to this policy.",
-                buttons: {
-                    no: {
-                        text: "No",
-                        className: "cookie-notice-dismissed-no",
-                    },
-                    open: {
-                        text: "Open Privacy",
-                        className: "privacy-button",
-                    },
-                    confirm: {
-                        text: "Accept",
-                        className: "cookie-notice-dismissed-yes",
-                    },
-                },
-            })
-                .then((value) => {
-                    if(value == "confirm" || value == "true" || value == true){
-                        createCookie('cookie-notice-dismissed',"true",365)
-                    } else if(value == "open"){
-                        window.location.href = "https://jibrok.com/privacy-policy"//todo
-                    } else {
-                        deleteAllWithOutNoticeCookies();
-                        createCookie('cookie-notice-dismissed',"false",1)
-                        // if(!document.__defineGetter__) {
-                        //     Object.defineProperty(document, 'cookie', {
-                        //         get: function(){return ''},
-                        //         set: function(){return true},
-                        //     });
-                        // } else {
-                        //     document.__defineGetter__("cookie", function() { return '';} );
-                        //     document.__defineSetter__("cookie", function() {} );
-                        // }
-                    }
-                });
-        }
-    </script>
+    {% include cookie-banner.html %}
 
     </body>
 

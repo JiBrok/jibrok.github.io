@@ -34,22 +34,17 @@
   <meta name="twitter:creator" content="@JiBrok_apps"/>
   <meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% elsif site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
   <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }} Logo{% endif %}"/>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="{{ "/assets/css/main.css" | relative_url }}" as="style">
+  <link rel="preload" href="{{ "/assets/js/main.js" | relative_url }}" as="script">
+  <link rel="dns-prefetch" href="//jsd-widget.atlassian.com">
+  
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ "uploads/favicon.png" | relative_url }}" >
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
 
-  <style>
-    .privacy-button {
-      background: #2684FF;
-    }
-    .cookie-notice-dismissed-yes{
-      background: #0747A6;
-    }
-    .cookie-notice-dismissed-no{
-      background: #8993A4;
-    }
-  </style>
 
 <!--  <script type="text/javascript">-->
 <!--    if (window.parent.frames.length > 0) {-->
@@ -102,7 +97,6 @@
     });
   </script>
 
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <script>
     function createCookie(name,value,days) {

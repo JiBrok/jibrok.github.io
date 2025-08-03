@@ -1,32 +1,49 @@
-<!--<div class="uk-margin-large-top">-->
-<!--    <h3>{{ site.data.translation[site.lang].related_docs | default: "Related Docs" }}</h3>-->
+{% if page.collection == 'docs' %}
+  <div class="uk-margin-large-top">
+    <h3>{{ site.data.translation[site.lang].related_docs | default: "Related Docs" }}</h3>
 
-<!--    {% assign maxRelated = 4 %}-->
-<!--    {% assign minCommonTags =  1 %}-->
-<!--    {% assign maxRelatedCounter = 0 %}-->
+    {% assign maxRelated = 5 %}
+    {% assign minCommonTags = 1 %}
+    {% assign maxRelatedCounter = 0 %}
+    
+    {% comment %} First, find docs with matching tags {% endcomment %}
+    {% if page.tags and page.tags.size > 0 %}
+      <ul class="uk-list link-secondary">
+      {% for doc in site.docs %}
+        {% if doc.url != page.url %}
+          {% assign sameTagCount = 0 %}
+          
+          {% for tag in doc.tags %}
+            {% if page.tags contains tag %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
+            {% endif %}
+          {% endfor %}
 
-<!--    <ul class="uk-list link-secondary">-->
-<!--    {% for doc in site.docs %}-->
-
-<!--    {% assign sameTagCount = 0 %}-->
-<!--    {% assign commonTags = '' %}-->
-
-<!--    {% for tag in doc.tags %}-->
-<!--        {% if doc.url != page.url %}-->
-<!--            {% if page.tags contains tag %}-->
-<!--                {% assign sameTagCount = sameTagCount | plus: 1 %}-->
-<!--            {% endif %}-->
-<!--        {% endif %}-->
-<!--    {% endfor %}-->
-
-<!--    {% if sameTagCount >= minCommonTags %}-->
-<!--        <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>-->
-<!--        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}-->
-<!--        {% if maxRelatedCounter >= maxRelated %}-->
-<!--            {% break %}-->
-<!--        {% endif %}-->
-<!--    {% endif %}-->
-
-<!--    {% endfor %}-->
-<!--    </ul>-->
-<!--</div>-->
+          {% if sameTagCount >= minCommonTags %}
+            <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            {% if maxRelatedCounter >= maxRelated %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      </ul>
+    {% endif %}
+    
+    {% comment %} If no tag matches, show docs from same folder {% endcomment %}
+    {% if maxRelatedCounter == 0 %}
+      {% assign current_folder = page.path | split: "/" | slice: 0, -1 | join: "/" %}
+      {% assign folder_docs = site.docs | where_exp: "doc", "doc.path contains current_folder" | where_exp: "doc", "doc.url != page.url" | sort: "title" %}
+      
+      {% if folder_docs.size > 0 %}
+        <h4>More in this section</h4>
+        <ul class="uk-list link-secondary">
+          {% for doc in folder_docs limit: maxRelated %}
+            <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endif %}
