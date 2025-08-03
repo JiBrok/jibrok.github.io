@@ -1,0 +1,47 @@
+{% unless page.url == "/" %}
+<nav aria-label="Breadcrumb" class="uk-breadcrumb uk-margin-small-bottom" style="display: none;">
+  <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+    <li property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{{ site.baseurl }}/">
+        <span property="name">Home</span>
+      </a>
+      <meta property="position" content="1">
+    </li>
+    
+    {% if page.collection == 'docs' %}
+      <li property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="{{ site.baseurl }}/docs/">
+          <span property="name">Documentation</span>
+        </a>
+        <meta property="position" content="2">
+      </li>
+      
+      {% assign url_parts = page.url | split: '/' %}
+      {% if url_parts.size > 3 %}
+        {% assign section = url_parts[2] %}
+        <li property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="{{ site.baseurl }}/docs/{{ section }}/">
+            <span property="name">{{ section | replace: '-', ' ' | capitalize }}</span>
+          </a>
+          <meta property="position" content="3">
+        </li>
+        
+        <li property="itemListElement" typeof="ListItem">
+          <span property="name">{{ page.title }}</span>
+          <meta property="position" content="4">
+        </li>
+      {% else %}
+        <li property="itemListElement" typeof="ListItem">
+          <span property="name">{{ page.title }}</span>
+          <meta property="position" content="3">
+        </li>
+      {% endif %}
+    {% else %}
+      <li property="itemListElement" typeof="ListItem">
+        <span property="name">{{ page.title }}</span>
+        <meta property="position" content="2">
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+{% endunless %}

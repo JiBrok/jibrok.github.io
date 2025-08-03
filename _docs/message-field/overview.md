@@ -1,6 +1,8 @@
 ---
 title: Overview
 key: message-field
+description: "Message field app for displaying contextual banners and notices on any Jira or JSM issue screen. Dynamic templates, HTML/CSS customization, and targeted messaging by JQL, status, groups."
+excerpt: "Display contextual messages and banners on Jira issue screens with Message field. Features dynamic templates, custom styling, JQL targeting, and real-time field references."
 ---
 <a href="https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview"><img src="/uploads/message-field/marketplace.png" style="width:100%;;"/></a>
 

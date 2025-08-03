@@ -112,6 +112,15 @@ kramdown:
   auto_ids: true
   header_offset: 0
   toc_levels: 1..6
+  
+# SEO improvements  
+# twitter:
+#   username: JiBrok_apps
+
+# Better image handling
+image_optim:
+  pngout: false
+  svgo: false
 
 plugins:
   - jekyll-feed

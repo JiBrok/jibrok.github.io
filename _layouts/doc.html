@@ -32,6 +32,8 @@ layout: default
 
                 <article class="uk-article">
 
+                    {% include breadcrumbs.html %}
+
                     <h1 class="uk-article-title">{{ page.title | escape }}</h1>
 
                     {% if page.subtitle %}<p class="uk-text-lead uk-text-muted">{{ page.subtitle }}</p>{% endif %}

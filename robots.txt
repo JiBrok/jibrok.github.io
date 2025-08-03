@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block staging and development paths
+Disallow: /_site/
+Disallow: /node_modules/
+Disallow: /.sass-cache/
+Disallow: /.jekyll-cache/
+
+# Allow access to CSS and JS
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://jibrok.com/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
