@@ -682,6 +682,8 @@ $issueFieldRender.getAsTableHtml(
 
 ### Cascade Select Field
 
+#### Working with $cfValues:
+
       1 - $cfValues.getFromForm(10101)<br>
       2 - $cfValues.getFromForm("customfield_10101")<br>
       3 - $cfValues.getFromForm("customfield_10101").getOptionId()<br>
@@ -716,6 +718,80 @@ $issueFieldRender.getAsTableHtml(
       29 - $cfValues.getOrDefault("cascade test", "defaultOption").get("1").getValue()<br>
       30 - $cfValues.getOrDefault("cascade test123123", "defaultOption")<br>
       31 - $cfValues.getOrDefault("cascade test1:12", 10000)<br>
+
+#### Working with $form object directly:
+
+When working with cascade select fields through the `$form` object, you access the raw option IDs:
+
+```velocity
+## Get parent option ID from form
+#set($parentOptionId = $form.get("customfield_10101"))
+#if($parentOptionId)
+    Parent option ID: $parentOptionId
+#end
+
+## Get child option ID from form
+#set($childOptionId = $form.get("customfield_10101:1"))
+#if($childOptionId)
+    Child option ID: $childOptionId
+#end
+
+## Example: Conditional logic based on cascade select values
+#if($form.get("customfield_10101") == "10000")
+    ## Parent option with ID 10000 is selected
+    #if($form.get("customfield_10101:1") == "10100")
+        ## Child option with ID 10100 is selected
+        <p>You selected: Category A -> Subcategory 1</p>
+    #elseif($form.get("customfield_10101:1") == "10101")
+        <p>You selected: Category A -> Subcategory 2</p>
+    #end
+#elseif($form.get("customfield_10101") == "10001")
+    ## Parent option with ID 10001 is selected
+    <p>You selected Category B</p>
+#end
+
+## Example: Validate cascade select combinations
+#set($parentId = $form.get("customfield_10101"))
+#set($childId = $form.get("customfield_10101:1"))
+
+#if($parentId == "10000" && (!$childId || $childId == ""))
+    <div style="color: red;">
+        ⚠️ Please select a subcategory for Category A
+    </div>
+#end
+
+## Example: Dynamic message based on cascade selection
+#set($cascadeMessages = {
+    "10000": {
+        "10100": "Development -> Frontend: Please follow React guidelines",
+        "10101": "Development -> Backend: Ensure API documentation is updated",
+        "10102": "Development -> Database: Include migration scripts"
+    },
+    "10001": {
+        "10200": "Testing -> Manual: Create test cases in TestRail",
+        "10201": "Testing -> Automated: Add to regression suite"
+    }
+})
+
+#set($parentId = $form.get("customfield_10101"))
+#set($childId = $form.get("customfield_10101:1"))
+
+#if($parentId && $childId)
+    #set($message = $cascadeMessages.get($parentId).get($childId))
+    #if($message)
+        <div style="background: #e3f2fd; padding: 10px;">
+            📌 $message
+        </div>
+    #end
+#end
+
+## Example: Get all form values for debugging
+#foreach($key in $form.keys())
+    #if($key.startsWith("customfield_10101"))
+        Form key: $key = $form.get($key)<br>
+    #end
+#end
+```
 
 
 <b>Issue create screen</b>: 
