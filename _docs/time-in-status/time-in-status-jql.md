@@ -1,4 +1,6 @@
 ---
+category: search-jql
+tags: [doc, server, datacenter, time-tracking, time-in-status, jql-functions]
 title: Time in status - JQL (common)
 key: time-in-status
 excerpt: Common JQL functions for Time in Status queries including timeInStatus, timeInStatusByJql, and working calendar functions with real-time search capabilities.

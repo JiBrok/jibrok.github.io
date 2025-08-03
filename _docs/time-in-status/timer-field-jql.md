@@ -1,6 +1,8 @@
 ---
 title: Timer - JQL
 key: time-in-status
+category: search-jql
+tags: [doc, server, datacenter, time-tracking, timer, jql-functions]
 excerpt: Comprehensive JQL functions for timer fields including status searches, time queries, date filters, and real-time data access for timer management.
 ---
 
