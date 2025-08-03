@@ -21,3 +21,24 @@
 // Other vendor styles
 // @import "syntax-highlighting/cld";
 @import "syntax-highlighting/bw";
+
+// Custom styles for anchor links
+.anchor-link {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 8px;
+  font-weight: normal;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    color: #666;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &:hover .anchor-link {
+    opacity: 1;
+  }
+}

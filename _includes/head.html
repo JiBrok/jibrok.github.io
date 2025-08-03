@@ -38,6 +38,40 @@
   {% endif %}
   {% include hook-head.html %}
 
+  <!-- Auto-generate anchor links for headings -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find all headings h1-h6
+      var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+      
+      headings.forEach(function(heading) {
+        // Skip if heading already has an anchor link
+        if (heading.querySelector('.anchor-link')) return;
+        
+        // Generate id from heading text if it doesn't have one
+        if (!heading.id) {
+          var text = heading.textContent || heading.innerText;
+          var id = text.toLowerCase()
+                       .replace(/[^\w\s-]/g, '') // Remove special chars
+                       .replace(/\s+/g, '-')     // Replace spaces with dashes
+                       .replace(/-+/g, '-')      // Replace multiple dashes with single
+                       .replace(/^-|-$/g, '');   // Remove leading/trailing dashes
+          heading.id = id;
+        }
+        
+        // Create anchor link
+        var anchor = document.createElement('a');
+        anchor.href = '#' + heading.id;
+        anchor.className = 'anchor-link';
+        anchor.innerHTML = '#';
+        anchor.title = 'Link to this section';
+        
+        // Insert anchor at the beginning of heading
+        heading.insertBefore(anchor, heading.firstChild);
+      });
+    });
+  </script>
+
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <script>

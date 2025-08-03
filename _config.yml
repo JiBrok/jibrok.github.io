@@ -107,7 +107,13 @@ uploads:            /uploads/
 markdown:           kramdown
 highlighter:        rouge
 
-gems:
+# Kramdown settings for automatic heading anchors
+kramdown:
+  auto_ids: true
+  header_offset: 0
+  toc_levels: 1..6
+
+plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-gist
