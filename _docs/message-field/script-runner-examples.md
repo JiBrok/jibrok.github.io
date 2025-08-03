@@ -1,6 +1,7 @@
 ---
 title: Script Runner Behaviours - Examples
 key: message-field
+excerpt: "ScriptRunner Behaviours examples for Message Field app integration with GitHub gists demonstrating advanced JavaScript customization techniques."
 ---
 
 Examples for working with the **Message Field** application using the **ScriptRunner Behaviours** are available at [GitHub](https://gist.github.com/JiBrok/public)

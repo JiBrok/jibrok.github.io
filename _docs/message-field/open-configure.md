@@ -1,6 +1,7 @@
 ---
 title: Open message settings
 key: message-field
+excerpt: "Access and configure Message field settings through Jira administration, customize messages for different contexts with base and advanced options."
 ---
 After you create a Message field you can customize its message to display.
 

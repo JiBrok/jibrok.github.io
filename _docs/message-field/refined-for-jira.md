@@ -1,6 +1,7 @@
 ---
 title: Refined for Jira | Sites & Themes
 key: message-field
+excerpt: "Integration guide for Message field with Refined for Jira sites and themes including styling and display compatibility."
 ---
 
 **Message Field** may not display correctly on Jira Service Management portals created with <a href="https://marketplace.atlassian.com/apps/1216711/refined-for-jira-sites-themes?hosting=datacenter&tab=overview" target="_blank">Refined for Jira | Sites & Themes</a>.

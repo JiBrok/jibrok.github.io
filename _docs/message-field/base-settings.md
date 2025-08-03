@@ -1,6 +1,7 @@
 ---
 title: Base settings
 key: message-field
+excerpt: "Configure Message field basic settings including title, body, message types, colors, and banner vs flag display options with demo preview."
 ---
 
 While setting up a field you can choose which settings to show: basic or advanced.

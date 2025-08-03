@@ -1,6 +1,7 @@
 ---
 title: Get started
 key: timer-cloud
+excerpt: "Calculate time between Jira issue events with Timer Cloud. Features working calendar integration, timer fields, JQL search capabilities, and export options for comprehensive reporting."
 ---
 
 

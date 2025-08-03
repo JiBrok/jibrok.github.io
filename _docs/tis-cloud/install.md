@@ -1,6 +1,7 @@
 ---
 title: Install
 key: tis-cloud
+excerpt: "Install Time in Status for Jira Cloud from Atlassian Marketplace with step-by-step admin installation and license activation."
 ---
 
 

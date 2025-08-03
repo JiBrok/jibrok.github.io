@@ -1,6 +1,7 @@
 ---
 title: Service info
 key: stopwatch-cloud
+excerpt: "Monitor Stopwatch field app activity with real-time task tracking, system counters, and background process information."
 ---
 
 On this tab, you can track the activity of the application.

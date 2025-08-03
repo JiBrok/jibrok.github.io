@@ -1,6 +1,7 @@
 ---
 title: 🔥Dynamic templates
 key: message-field
+excerpt: "Create dynamic message templates with real-time issue data, conditions, Jira API access, and customizable display parameters."
 ---
 
 The dynamic templates allow to render the message using data from the issue and issue screens(creation,editing, etc) that can be changed in real time.

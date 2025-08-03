@@ -1,6 +1,7 @@
 ---
 title: Is status field
 key: time-in-status
+excerpt: "Boolean field type that returns true/false for issue status validation with JQL search capabilities for workflow tracking."
 ---
 
 Returns yes or no - whether the issue is in the specified status.

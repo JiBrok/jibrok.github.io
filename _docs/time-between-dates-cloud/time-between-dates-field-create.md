@@ -1,6 +1,7 @@
 ---
 title: Time between dates - How to create field?
 key: time-between-dates-cloud
+excerpt: "Create Time between dates fields in Jira Cloud to calculate time spans with working calendars, date field selection, and JQL support."
 ---
 
 📌 The fields are not created from the standard Jira interface, but will be displayed in it after creation.

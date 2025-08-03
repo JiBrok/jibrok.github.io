@@ -1,6 +1,7 @@
 ---
 title: Dynamic templates - Examples
 key: message-field
+excerpt: "Practical examples of dynamic template variables and implementation for creating context-aware messages with real-time data."
 ---
 Examples of using variables that are available for use in dynamic templates.
 

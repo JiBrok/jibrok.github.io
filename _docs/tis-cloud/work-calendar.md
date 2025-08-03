@@ -1,6 +1,7 @@
 ---
 title: Work calendar
 key: tis-cloud
+excerpt: "Create work calendars for Time in Status with business hours, holidays, timezone support for accurate time calculations."
 ---
 
 The fields "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)" and "[Stopwatch](/docs/stopwatch-cloud/overview)", as well as [JQL functions](/docs/tis-cloud/user-help-info/) are able to count the time according to working calendars.

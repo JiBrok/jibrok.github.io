@@ -1,6 +1,7 @@
 ---
 title: Migration from Server/Data Center
 key: tis-cloud
+excerpt: "Guide for migrating Time in Status from Jira Server/Data Center to Cloud with manual settings transfer and configuration checklist."
 ---
 
 Automatic migration of settings during development.

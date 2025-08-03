@@ -1,6 +1,7 @@
 ---
 title: generator
 key: generator
+excerpt: "Generate promo codes and discounts for Jira apps across Server, Data Center, and Cloud hosting environments with interactive selection tools."
 ---
 
 [comment]: <> (<html>)

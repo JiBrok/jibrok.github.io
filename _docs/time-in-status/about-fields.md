@@ -1,6 +1,7 @@
 ---
 title: About fields
 key: time-in-status
+excerpt: "Overview of Time in Status, Stopwatch, and Timer fields with real-time calculation, work calendars, and comprehensive tracking capabilities."
 ---
 
 Time calculation functionality is based on three field types: Time in status, Stopwatch and Timer.

@@ -1,6 +1,7 @@
 ---
 title: 📖 How to create Timer and configure it step-by-step
 key: timer-cloud
+excerpt: "Complete step-by-step tutorial for creating and configuring Timer fields with goal settings, events, and practical examples."
 ---
 
 ## In this guide we will create timer that will track the time to resolution. ##

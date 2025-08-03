@@ -1,6 +1,7 @@
 ---
 title: Manual control for Timers and Stopwatches
 key: time-in-status
+excerpt: "Manually control timer and stopwatch operations through JQL queries with start, stop, pause, and reset functionality for precise time tracking."
 ---
 
 In different situations, there is a need for manual data control. If there are few requests or they occur periodically, then you can issue the rights to users for manual control of counters (timers and stopwatches). This is set in the field configuration and allows users to manually start and stop counters.

@@ -1,6 +1,7 @@
 ---
 title: Overview
 key: timer-cloud
+excerpt: "Timer field for Jira Cloud with countdown functionality, goal time limits, SLA tracking, and comprehensive time management features."
 ---
 
 <p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud"><img src="/uploads/time-in-status/overview/marketplace.png" style="width:100%;"/></a></p>

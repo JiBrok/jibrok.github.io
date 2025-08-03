@@ -1,6 +1,7 @@
 ---
 title: Timer - JQL
 key: timer-cloud
+excerpt: "Advanced JQL functions for Timer fields including time-based searches, goal tracking, remaining time queries, and sorting options."
 ---
 
 Configure JQL Queries.

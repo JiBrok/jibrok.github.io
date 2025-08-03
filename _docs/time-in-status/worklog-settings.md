@@ -1,6 +1,7 @@
 ---
 title: Auto worklog settings
 key: time-in-status
+excerpt: "Configure automatic worklog creation from Time in Status fields with customizable rules, time calculations, and user assignments."
 ---
 
 This setting allows you to automatically record the time of timers and stopwatches in the task worklog. <br>

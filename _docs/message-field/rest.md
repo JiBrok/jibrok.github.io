@@ -1,6 +1,7 @@
 ---
 title: Rest API
 key: message-field
+excerpt: "REST API documentation for Message field plugin with Postman collection for updating field settings and global plugin configurations."
 ---
 
 You can use the rest service to update the field settings and global plugin settings.

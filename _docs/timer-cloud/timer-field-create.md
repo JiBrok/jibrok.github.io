@@ -1,6 +1,7 @@
 ---
 title: Timer - How to create field?
 key: timer-cloud
+excerpt: "Step-by-step guide to create Timer fields in Jira Cloud with countdown functionality, goal settings, and event configuration."
 ---
 
 1. Open application "Timer field":<br>

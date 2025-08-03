@@ -1,6 +1,7 @@
 ---
 title: Custom colors and HTML
 key: message-field
+excerpt: "Customize Message field appearance with HTML styling, custom colors, and advanced formatting for branded corporate messaging."
 ---
 
 You can configure your own message style, if predefined styles are not enough.

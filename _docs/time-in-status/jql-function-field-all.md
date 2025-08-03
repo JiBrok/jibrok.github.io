@@ -1,6 +1,7 @@
 ---
 title: Periodic calculation of the function by JQL - fields settings
 key: time-in-status
+excerpt: "Configure periodic JQL function calculations for automated field value updates with customizable schedules and query conditions."
 ---
 
 

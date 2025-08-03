@@ -1,6 +1,7 @@
 ---
 title: Field - Periodic calculation of the value of the function by jql
 key: time-in-status
+excerpt: "Create fields with periodic JQL function calculations for dynamic value updates based on issue queries and conditions."
 ---
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/jql-function-field/1.png"><img src="/uploads/time-in-status/jql-function-field/1.png" style="width:50%;"/></a></p>

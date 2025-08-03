@@ -1,6 +1,7 @@
 ---
 title: Available events (triggers) for working with timers and stopwatch
 key: time-in-status
+excerpt: "Complete list of Jira events and triggers for timer and stopwatch automation including status changes, comments, and field updates."
 ---
 
 * Public comment - comment without restrictions

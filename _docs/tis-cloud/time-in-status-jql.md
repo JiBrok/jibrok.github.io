@@ -1,6 +1,7 @@
 ---
 title: Time in status - JQL
 key: tis-cloud
+excerpt: "Advanced JQL functions for Time in Status fields with time-based searches, status queries, and filtering capabilities."
 ---
 
 <ul>Configure JQL Queries.

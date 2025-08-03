@@ -1,6 +1,7 @@
 ---
 title: Dashboard gadget - Calculated functions for time in status (Beta)
 key: tis-cloud
+excerpt: "Beta dashboard gadget for Time in Status with calculated functions, statistical analysis, and customizable reporting widgets."
 ---
 
 Gadget for the dashboards. It allows you to calculate any statistics by time in status for any issues.

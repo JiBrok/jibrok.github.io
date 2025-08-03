@@ -1,6 +1,7 @@
 ---
 title: User JQL help
 key: time-in-status
+excerpt: "JQL help documentation for Time in Status users with function examples, search syntax, and field-specific query options."
 ---
 
 Available JQL functions for working with time and examples of their use.

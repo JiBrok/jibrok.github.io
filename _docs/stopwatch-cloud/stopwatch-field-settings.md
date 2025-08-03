@@ -1,6 +1,7 @@
 ---
 title: Stopwatch - field configuration
 key: stopwatch-cloud
+excerpt: "Configure Stopwatch field settings including events, display modes, time formats, calendars, and module quotas for optimal performance."
 ---
 
 All settings:<br>

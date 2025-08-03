@@ -1,6 +1,7 @@
 ---
 title: Time in status - field configuration
 key: tis-cloud
+excerpt: "Configure Time in Status field settings including status selection, display modes, time formats, and advanced options."
 ---
 
 All settings:<br>

@@ -1,6 +1,7 @@
 ---
 title: Web panel
 key: stopwatch-cloud
+excerpt: "Create Stopwatch field sidebar panels in Jira Cloud with customizable locations, time formats, and project-specific configurations."
 ---
 
 Enables the display of the "stopwatch" fields in the sidebar.

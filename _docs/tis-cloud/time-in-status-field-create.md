@@ -1,6 +1,7 @@
 ---
 title: Time in status - How to create field?
 key: tis-cloud
+excerpt: "Step-by-step guide to create Time in Status fields in Jira Cloud with status selection, calendar settings, and configuration."
 ---
 
 1. Open application "Time in status":<br>

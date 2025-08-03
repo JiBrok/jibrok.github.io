@@ -1,6 +1,7 @@
 ---
 title: Overview (Cloud)
 key: tis-cloud
+excerpt: "Time in Status for Jira Cloud overview with field types, time tracking capabilities, work calendars, and comprehensive reporting features."
 ---
 
 <p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview"><img src="/uploads/time-in-status/overview/marketplace.png" style="width:100%;"/></a></p>

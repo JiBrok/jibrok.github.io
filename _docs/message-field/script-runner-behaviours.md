@@ -1,6 +1,7 @@
 ---
 title: Script Runner Behaviours - Settings
 key: message-field
+excerpt: "Configure ScriptRunner Behaviours integration with Message field for advanced workflow automation and conditional message display."
 ---
 
 # Message field version 5

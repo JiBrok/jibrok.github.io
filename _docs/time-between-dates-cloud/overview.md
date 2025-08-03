@@ -1,6 +1,7 @@
 ---
 title: Overview
 key: time-between-dates-cloud
+excerpt: "Calculate time between dates in Jira Cloud with working calendar support, automatic updates, and business hours tracking."
 ---
 
 <p style="text-align: center;"><a href="https://marketplace.atlassian.com/1226143"><img src="/uploads/time-between-dates-cloud/marketplace.png" style="width:100%"/></a></p>

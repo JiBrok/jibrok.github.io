@@ -1,6 +1,7 @@
 ---
 title: Work calendar
 key: stopwatch-cloud
+excerpt: "Create work calendars for Stopwatch fields with timezone support, working hours, breaks, holidays for accurate time tracking."
 ---
 
 The fields "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)" and "[Stopwatch](/docs/stopwatch-cloud/overview)", as well as [JQL functions](/docs/stopwatch-cloud/user-help-info/) are able to count the time according to working calendars.

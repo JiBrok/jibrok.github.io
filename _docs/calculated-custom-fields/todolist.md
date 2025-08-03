@@ -1,6 +1,7 @@
 ---
 title: To Do list
 key: calculated-custom-fields
+excerpt: "Interactive to-do list custom field for Jira with drag-and-drop functionality, completion tracking, and JQL search capabilities for task management."
 ---
 ### Field for maintaining lists with the ability to mark completed items. ###
 

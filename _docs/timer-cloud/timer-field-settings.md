@@ -1,6 +1,7 @@
 ---
 title: Timer - field configuration
 key: timer-cloud
+excerpt: "Configure Timer field settings including goal time limits, events, display modes, calendars, and JQL conditions for optimal tracking."
 ---
 
 All settings:<br>

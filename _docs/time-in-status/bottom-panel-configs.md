@@ -1,6 +1,7 @@
 ---
 title: Issue panel with reports (bottom)
 key: time-in-status
+excerpt: "Configure issue panel reports with work calendar settings, status filtering, and export options in JSON/CSV formats for time tracking."
 ---
 
 

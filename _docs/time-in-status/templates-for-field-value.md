@@ -1,6 +1,7 @@
 ---
 title: Templates for field values
 key: time-in-status
+excerpt: "Customize field value display with templates including time formats, conditional logic, and dynamic content rendering options."
 ---
 
 

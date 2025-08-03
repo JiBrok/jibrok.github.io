@@ -1,6 +1,7 @@
 ---
 title: Field panels config
 key: time-in-status
+excerpt: "Customize Time in Status field panel layouts in Jira interface with global configuration settings for optimal display."
 ---
 
 ### You can change the layout of the panels in the Jira interface. Settings are set globally for all projects.
