@@ -82,6 +82,7 @@ share:
     doc:            true # Display share buttons on a doc page
     twitter:        true # Enable by setting true 
     facebook:       true # Enable by setting true (Facebook handle not required)
+    linkedin:       true # Enable by setting true
 
 # Default footer image settings
 footer:
