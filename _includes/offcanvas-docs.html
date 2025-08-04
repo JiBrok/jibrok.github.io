@@ -3,16 +3,33 @@
 
         <button class="uk-offcanvas-close" type="button" data-uk-close></button>
 
-        {% for section in site.data.navigation_docs %}
-        <h5 class="uk-margin-top">{{ section.title }}</h5>
-        <ul class="uk-nav uk-nav-default doc-nav">
-        {% for doc in section.docs %}
-          {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-          {% assign p = site.docs | where:"url", doc_url | first %}
-          <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
-        {% endfor %}
-        </ul>
-        {% endfor %}
+        {% assign product_nav = site.data.navigation_docs[page.key] %}
+        {% if product_nav %}
+            {% for section in product_nav %}
+            <h5 class="uk-margin-top">{{ section.title }}</h5>
+            <ul class="uk-nav uk-nav-default doc-nav">
+            {% for doc in section.docs %}
+              {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+              {% assign p = site.docs | where:"url", doc_url | first %}
+              <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}
+            </ul>
+            {% endfor %}
+        {% else %}
+            <!-- Show all products if no specific product key -->
+            {% for product_key in site.data.navigation_docs %}
+                {% assign product_name = product_key[0] %}
+                {% assign product_sections = product_key[1] %}
+                {% assign first_section = product_sections[0] %}
+                <h5 class="uk-margin-top">{{ first_section.title }}</h5>
+                <ul class="uk-nav uk-nav-default doc-nav">
+                    {% assign first_doc = first_section.docs[0] %}
+                    {% assign doc_url = first_doc | prepend:"/docs/" | append:"/" %}
+                    {% assign p = site.docs | where:"url", doc_url | first %}
+                    <li><a href="{{ p.url }}">View Documentation</a></li>
+                </ul>
+            {% endfor %}
+        {% endif %}
 
     </div>
 </div>

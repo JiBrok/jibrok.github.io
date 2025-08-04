@@ -1,326 +1,269 @@
-- title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
-  key: message-field
-  docs:
-  - message-field/overview
-  - message-field/install
-  - message-field/create-field
-  - message-field/open-configure
-  - message-field/base-settings
-  - message-field/advanced-settings
-  - message-field/dynamic-templates
-  - message-field/dynamic-templates-examples
-  - message-field/settings-for-all-fields
-  - message-field/statistics
-  - message-field/delegation
-  - message-field/rest
-  - message-field/html-examples
-  - message-field/java-script-examples
-  - message-field/script-runner-behaviours
-  - message-field/script-runner-examples
-  - message-field/refined-for-jira
+# Navigation organized by product keys
+# Each product has its own section with all related documentation
 
-- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
-  key: time-in-status
-  docs:
-    - time-in-status/overview
-    - time-in-status/install
-    - time-in-status/get-started
+message-field:
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
+    docs:
+    - message-field/overview
+    - message-field/install
+    - message-field/create-field
+    - message-field/open-configure
+    - message-field/base-settings
+    - message-field/advanced-settings
+    - message-field/dynamic-templates
+    - message-field/dynamic-templates-examples
+    - message-field/settings-for-all-fields
+    - message-field/statistics
+    - message-field/delegation
+    - message-field/rest
+    - message-field/html-examples
+    - message-field/java-script-examples
+    - message-field/script-runner-behaviours
+    - message-field/script-runner-examples
+    - message-field/refined-for-jira
 
-- title: Tutorials
-  key: time-in-status
-  docs:
-    - time-in-status/about-fields
-    - time-in-status/user-help-info
-    - time-in-status/step-by-step-time-in-status
-#    - time-in-status/step-by-step-stopwatch
-    - time-in-status/step-by-step-timer
+time-in-status:
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
+    docs:
+      - time-in-status/overview
+      - time-in-status/install
+      - time-in-status/get-started
 
-- title: Settings
-  key: time-in-status
-  docs:
-    - time-in-status/performance-config-jql
-    - time-in-status/performance-config-multithreading
-    - time-in-status/common-settings
+  - title: Tutorials
+    docs:
+      - time-in-status/about-fields
+      - time-in-status/user-help-info
+      - time-in-status/step-by-step-time-in-status
+      - time-in-status/step-by-step-timer
 
-- title: Work calendars
-  key: time-in-status
-  docs:
-    - time-in-status/work-calendar
-    - time-in-status/calendar-field
+  - title: Settings
+    docs:
+      - time-in-status/performance-config-jql
+      - time-in-status/performance-config-multithreading
+      - time-in-status/common-settings
 
-- title: Time in status
-  key: time-in-status
-  docs:
-    - time-in-status/time-in-status-jql
-#    - time-in-status/time-in-status-field
-    - time-in-status/time-in-status-field-settings
-    - time-in-status/time-in-status-field-settings-old
-    - time-in-status/time-in-status-field-all
-    - time-in-status/time-in-status-field-jql
+  - title: Work calendars
+    docs:
+      - time-in-status/work-calendar
+      - time-in-status/calendar-field
 
-- title: Timers and Stopwatches
-  key: time-in-status
-  docs:
-    - time-in-status/timers-and-stopwatches-general-information
-    - time-in-status/timers-and-stopwatches-schemes-and-configurations
+  - title: Time in status
+    docs:
+      - time-in-status/time-in-status-jql
+      - time-in-status/time-in-status-field-settings
+      - time-in-status/time-in-status-field-settings-old
+      - time-in-status/time-in-status-field-all
+      - time-in-status/time-in-status-field-jql
 
+  - title: Timers and Stopwatches
+    docs:
+      - time-in-status/timers-and-stopwatches-general-information
+      - time-in-status/timers-and-stopwatches-schemes-and-configurations
 
-- title: Stopwatch
-  key: time-in-status
-  docs:
-#    - time-in-status/stopwatch-field
-    - time-in-status/stopwatch-field-settings
-    - time-in-status/stopwatch-configs
-    - time-in-status/stopwatch-schemes
-    - time-in-status/stopwatch-field-all
-    - time-in-status/stopwatch-field-jql
+  - title: Stopwatch
+    docs:
+      - time-in-status/stopwatch-field-settings
+      - time-in-status/stopwatch-configs
+      - time-in-status/stopwatch-schemes
+      - time-in-status/stopwatch-field-all
+      - time-in-status/stopwatch-field-jql
 
-- title: Timer
-  key: time-in-status
-  docs:
-    - time-in-status/timer-field-settings
-#    - time-in-status/timer-field
-    - time-in-status/timer-configs
-    - time-in-status/timer-schemes
-    - time-in-status/timer-field-all
-    - time-in-status/timer-field-jql
+  - title: Timer
+    docs:
+      - time-in-status/timer-field-settings
+      - time-in-status/timer-configs
+      - time-in-status/timer-schemes
+      - time-in-status/timer-field-all
+      - time-in-status/timer-field-jql
 
-- title: Additional functions
-  key: time-in-status
-  docs:
-    - time-in-status/templates-for-field-value
-    - time-in-status/worklog-settings
-    - time-in-status/autotrack
-    - time-in-status/detail-history
-    - time-in-status/manual-action-by-jql
-    - time-in-status/restore-by-history
+  - title: Additional functions
+    docs:
+      - time-in-status/templates-for-field-value
+      - time-in-status/worklog-settings
+      - time-in-status/autotrack
+      - time-in-status/detail-history
+      - time-in-status/manual-action-by-jql
+      - time-in-status/restore-by-history
 
-- title: Issue panels
-  key: time-in-status
-  docs:
-    - time-in-status/bottom-panel-configs
-    - time-in-status/field-panel-configs
+  - title: Issue panels
+    docs:
+      - time-in-status/bottom-panel-configs
+      - time-in-status/field-panel-configs
 
-- title: Reports
-  key: time-in-status
-  docs:
-    - time-in-status/export-fields
-    - time-in-status/export-to-eazybi
-    - time-in-status/reports-permissions
-    - time-in-status/reports-all
-    - time-in-status/report-create
-#    - time-in-status/report-table
-#    - time-in-status/report-status-assignee
-#    - time-in-status/report-assignee-status
+  - title: Reports
+    docs:
+      - time-in-status/export-fields
+      - time-in-status/export-to-eazybi
+      - time-in-status/reports-permissions
+      - time-in-status/reports-all
+      - time-in-status/report-create
 
-- title: Field Helpers
-  key: time-in-status
-  docs:
-    - time-in-status/common-helpers
-#    - time-in-status/time-in-status-helper-number
-#    - time-in-status/time-in-status-helper-additional-information
+  - title: Field Helpers
+    docs:
+      - time-in-status/common-helpers
 
-#    - time-in-status/stopwatch-helper-number
-#    - time-in-status/stopwatch-helper-date
-#    - time-in-status/stopwatch-helper-additional-information
-#    -
-#    - time-in-status/timer-helper-number
-#    - time-in-status/timer-helper-date
-#    - time-in-status/timer-helper-additional-information
+  - title: Other fields
+    docs:
+      - time-in-status/jql-function-field
+      - time-in-status/jql-function-field-all
+      - time-in-status/transition-counter-field
+      - time-in-status/is-status-field
 
+  - title: API
+    docs:
+      - time-in-status/rest-api
+      - time-in-status/java-api
 
-- title: Other fields
-  key: time-in-status
-  docs:
-    - time-in-status/jql-function-field
-    - time-in-status/jql-function-field-all
-    - time-in-status/transition-counter-field
-    - time-in-status/is-status-field
+  - title: Reference information
+    docs:
+      - time-in-status/time-formats
+      - time-in-status/available-events
 
-- title: API
-  key: time-in-status
-  docs:
-    - time-in-status/rest-api
-    - time-in-status/java-api
+switch-user:
+  - title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" style="width:24px;height:24px"> Switch to User + Delegating SU (Jira)
+    docs:
+      - su/overview
+      - su/delegating
+      - su/shortcuts
 
-- title: Reference information
-  key: time-in-status
-  docs:
-    - time-in-status/time-formats
-    - time-in-status/available-events
+tis-cloud:
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
+    docs:
+      - tis-cloud/overview
+      - tis-cloud/install
+      - tis-cloud/get-started
+      - tis-cloud/migrationDocumentation
+      - tis-cloud/featureDifferenceDocumentation
 
+  - title: Work calendars
+    docs:
+      - tis-cloud/work-calendar
 
-- title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" style="width:24px;height:24px"> Switch to User + Delegating SU (Jira)
-  key: switch-user
-  docs:
-    - su/overview
-    - su/delegating
-    - su/shortcuts
+  - title: Time in status fields
+    docs:
+      - tis-cloud/time-in-status-field-create
+      - tis-cloud/time-in-status-field-settings
+      - tis-cloud/time-in-status-jql
 
+  - title: Issue panels
+    docs:
+      - tis-cloud/web-panel
 
-- title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
-  key: tis-cloud
-  docs:
-    - tis-cloud/overview
-    - tis-cloud/install
-    - tis-cloud/get-started
-    - tis-cloud/migrationDocumentation
-    - tis-cloud/featureDifferenceDocumentation
+  - title: Reports
+    docs:
+      - tis-cloud/export-fields
+      - tis-cloud/dashboard-statistic-gadget
 
-- title: Work calendars
-  key: tis-cloud
-  docs:
-    - tis-cloud/work-calendar
+  - title: Service tools
+    docs:
+      - tis-cloud/service-info
+      - tis-cloud/limits
+      - tis-cloud/status-page
+      - tis-cloud/gadget-news
 
-- title: Time in status fields
-  key: tis-cloud
-  docs:
-    - tis-cloud/time-in-status-field-create
-    - tis-cloud/time-in-status-field-settings
-    - tis-cloud/time-in-status-jql
+  - title: Reference information
+    docs:
+      - tis-cloud/time-formats
 
-- title: Issue panels
-  key: tis-cloud
-  docs:
-    - tis-cloud/web-panel
+calculated-custom-fields:
+  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF)
+    docs:
+      - calculated-custom-fields/overview
+      - calculated-custom-fields/todolist
 
-- title: Reports
-  key: tis-cloud
-  docs:
-    - tis-cloud/export-fields
-    - tis-cloud/dashboard-statistic-gadget
+jbcf-cloud:
+  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
+    docs:
+      - jbcf-cloud/overview
+      - jbcf-cloud/migrationDocumentation
+      - jbcf-cloud/featureDifferenceDocumentation
 
-- title: Service tools
-  key: tis-cloud
-  docs:
-    - tis-cloud/service-info
-    - tis-cloud/limits
-    - tis-cloud/status-page
-    - tis-cloud/gadget-news
+  - title: JBCF fields
+    docs:
+      - jbcf-cloud/jbcf-field-create
 
+  - title: Service tools
+    docs:
+      - jbcf-cloud/service-info
+      - jbcf-cloud/status-page
 
-- title: Reference information
-  key: tis-cloud
-  docs:
-    - tis-cloud/time-formats
+timer-cloud:
+  - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
+    docs:
+      - timer-cloud/overview
+      - timer-cloud/install
+      - timer-cloud/get-started
+      - timer-cloud/step-by-step-timer
+      - timer-cloud/migrationDocumentation
+      - timer-cloud/featureDifferenceDocumentation
 
+  - title: Work calendars
+    docs:
+      - timer-cloud/work-calendar
 
-- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF)
-  key: calculated-custom-fields
-  docs:
-    - calculated-custom-fields/overview
-    - calculated-custom-fields/todolist
+  - title: Timer fields
+    docs:
+      - timer-cloud/timer-field-create
+      - timer-cloud/timer-field-settings
+      - timer-cloud/timer-jql
 
+  - title: Issue panels
+    docs:
+      - timer-cloud/web-panel
 
-- title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
-  key: jbcf-cloud
-  docs:
-    - jbcf-cloud/overview
-    - jbcf-cloud/migrationDocumentation
-    - jbcf-cloud/featureDifferenceDocumentation
+  - title: Service tools
+    docs:
+      - timer-cloud/service-info
+      - timer-cloud/status-page
 
-- title: JBCF fields
-  key: jbcf-cloud
-  docs:
-    - jbcf-cloud/jbcf-field-create
+stopwatch-cloud:
+  - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
+    docs:
+      - stopwatch-cloud/overview
+      - stopwatch-cloud/install
+      - stopwatch-cloud/get-started
+      - stopwatch-cloud/migrationDocumentation
+      - stopwatch-cloud/featureDifferenceDocumentation
 
-- title: Service tools
-  key: jbcf-cloud
-  docs:
-    - jbcf-cloud/service-info
-    - jbcf-cloud/status-page
+  - title: Work calendars
+    docs:
+      - stopwatch-cloud/work-calendar
 
+  - title: Stopwatch fields
+    docs:
+      - stopwatch-cloud/stopwatch-field-create
+      - stopwatch-cloud/stopwatch-field-settings
+      - stopwatch-cloud/stopwatch-jql
 
-- title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
-  key: timer-cloud
-  docs:
-    - timer-cloud/overview
-    - timer-cloud/install
-    - timer-cloud/get-started
-    - timer-cloud/step-by-step-timer
-    - timer-cloud/migrationDocumentation
-    - timer-cloud/featureDifferenceDocumentation
+  - title: Issue panels
+    docs:
+      - stopwatch-cloud/web-panel
 
-- title: Work calendars
-  key: timer-cloud
-  docs:
-    - timer-cloud/work-calendar
+  - title: Service tools
+    docs:
+      - stopwatch-cloud/service-info
+      - stopwatch-cloud/status-page
 
-- title: Timer fields
-  key: timer-cloud
-  docs:
-    - timer-cloud/timer-field-create
-    - timer-cloud/timer-field-settings
-    - timer-cloud/timer-jql
+time-between-dates-cloud:
+  - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
+    docs:
+      - time-between-dates-cloud/overview
 
-- title: Issue panels
-  key: timer-cloud
-  docs:
-    - timer-cloud/web-panel
+  - title: Time between dates fields
+    docs:
+      - time-between-dates-cloud/time-between-dates-field-create
 
-- title: Service tools
-  key: timer-cloud
-  docs:
-    - timer-cloud/service-info
-    - timer-cloud/status-page
+jsm-fields-panel-cloud:
+  - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
+    docs:
+      - jsm-fields-panel-cloud/overview
 
+linked-issues-cloud:
+  - title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
+    docs:
+      - linked-issues-cloud/overview
 
-
-- title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
-  key: stopwatch-cloud
-  docs:
-    - stopwatch-cloud/overview
-    - stopwatch-cloud/install
-    - stopwatch-cloud/get-started
-    - stopwatch-cloud/migrationDocumentation
-    - stopwatch-cloud/featureDifferenceDocumentation
-
-- title: Work calendars
-  key: stopwatch-cloud
-  docs:
-    - stopwatch-cloud/work-calendar
-
-- title: Stopwatch fields
-  key: stopwatch-cloud
-  docs:
-    - stopwatch-cloud/stopwatch-field-create
-    - stopwatch-cloud/stopwatch-field-settings
-    - stopwatch-cloud/stopwatch-jql
-
-- title: Issue panels
-  key: timer-cloud
-  docs:
-    - stopwatch-cloud/web-panel
-
-- title: Service tools
-  key: stopwatch-cloud
-  docs:
-    - stopwatch-cloud/service-info
-    - stopwatch-cloud/status-page
-
-
-
-- title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
-  key: time-between-dates-cloud
-  docs:
-    - time-between-dates-cloud/overview
-
-- title: Time between dates fields
-  key: time-between-dates-cloud
-  docs:
-    - time-between-dates-cloud/time-between-dates-field-create
-
-- title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
-  key: jsm-fields-panel-cloud
-  docs:
-    - jsm-fields-panel-cloud/overview
-
-- title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
-  key: linked-issues-cloud
-  docs:
-    - linked-issues-cloud/overview
-
-- title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
-  key: user-helper-cloud
-  docs:
-    - user-helper-cloud/overview
+user-helper-cloud:
+  - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
+    docs:
+      - user-helper-cloud/overview
