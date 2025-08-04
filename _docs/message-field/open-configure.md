@@ -5,7 +5,7 @@ excerpt: "Access and configure Message field settings through Jira administratio
 category: getting-started
 tags: [doc, server, datacenter, messaging, configuration, administration, settings, access]
 ---
-After you create a Message field you can customize its message to display.
+After you create a Message field, you can customize its message to display.
 
 * Choose: **Administration** (<img src="/uploads/atlassian/cog_icon.webp" alt="Administration settings icon"  style="width:20px" loading="lazy"> in the top panel on the right) > Issues.
 
@@ -19,8 +19,8 @@ After you create a Message field you can customize its message to display.
 <a href="/uploads/message-field/edit-config.webp" target="_blank">
 <img src="/uploads/message-field/edit-config.webp" alt="edit-config screenshot" style="width:100%;" loading="lazy"></a>
 
-In the opened window you can customize the text and display of the message for the selected context.
-One field can have several contexts, and for each of them you can set your own message.
+In the opened window, you can customize the text and display of the message for the selected context.
+One field can have several contexts, and for each of them, you can set your own message.
 
 * [Base settings](/docs/message-field/base-settings/)
 * [Advanced settings](/docs/message-field/advanced-settings/)

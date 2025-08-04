@@ -6,13 +6,13 @@ category: templates-customization
 tags: [doc, server, datacenter, messaging, dynamic-templates, velocity, java-api, real-time, conditions, customization]
 ---
 
-The dynamic templates allow to render the message using data from the issue and issue screens(creation,editing, etc) that can be changed in real time.
-In templates you can use conditions, use Jira Java API or do some calculations before displaying the message.
-You can change the display parameters of the message - title, body, type, location.
+The dynamic templates allow you to render the message using data from the issue and issue screens (creation, editing, etc.) that can be changed in real time.
+In templates, you can use conditions, use the Jira Java API, or do some calculations before displaying the message.
+You can change the display parameters of the message - title, body, type, and location.
 This functionality works in Jira Core/Software/Service Desk.
 
 
-In previous versions of the application you could change message dynamically only using JavaScript. Many cases now can be done by using the dynamic templates([velocity](https://velocity.apache.org/engine/1.7/user-guide.html) templates (HTML + Java API) + real time render).
+In previous versions of the application you could change messages dynamically only using JavaScript. Many cases can now be done by using the dynamic templates([velocity](https://velocity.apache.org/engine/1.7/user-guide.html) templates (HTML + Java API) + real-time render).
 
 
 <a href="/uploads/message-field/dynamic-template-demo1.gif" target="_blank"><img src="/uploads/message-field/dynamic-template-demo1.gif" alt="Jira create issue form showing Priority field set to Medium without any visible message banner" width="100%" loading="lazy"></a>
@@ -20,12 +20,12 @@ In previous versions of the application you could change message dynamically onl
 [How to do this?](/docs/message-field/dynamic-templates-examples/#show-message-for-description-and-assignee-depending-on-the-priority)
 
 
-To enable templates you need to set **Velocity render** **'On'** in the field config.
+To enable templates, you need to set **Velocity render** **'On'** in the field config.
 <a href="/uploads/message-field/dynamic-templates.webp" target="_blank">
 <img src="/uploads/message-field/dynamic-templates.webp" alt="Velocity render toggle set to On with template variables documentation and code editor" width="600" loading="lazy"></a> 
 
 
-Special variables will be available in the template for work with data. Links lead to <a href="/jira/plugins/message-field/java/doc/"> Java doc </a> with descriptions of available methods.
+Special variables will be available in the template for working with data. Links lead to <a href="/jira/plugins/message-field/java/doc/"> Java doc </a> with descriptions of available methods.
 
 **Note:** Some variables marked with ⚠️ are available only for **non-delegated settings**.
 
@@ -36,14 +36,14 @@ Special variables will be available in the template for work with data. Links le
     * This variable is not defined on the creation screen($context == "CREATE").
 * $form
     * JSON serialization of the form. 
-    * Variable that contains information entered by the user on the screen (Create, Edit issue ...) without additional processing. 
+    * Variable that contains information entered by the user on the screen (Create, Edit issue, etc.) without additional processing. 
     * The data in the variable is updated in real time. 
-    * Variable value is entered data(without any validation). 
+    * Variable value is entered data (without any validation). 
     * You can get values by the name of the property.
 * [$formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) - 🔥Recommended for use.
     * The variable combines data from $issue and $form.
-    * Data from the screen($form) are in priority.
-    * The data from the screen($form) undergoes additional validation and processing. Invalid values return null.
+    * Data from the screen ($form) takes priority.
+    * The data from the screen ($form) undergoes additional validation and processing. Invalid values return null.
     * The data in the variable is updated in real time. 
 * [$fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
     * The variable contains information about the display of the message (message type, location, etc.).
@@ -111,7 +111,7 @@ Special variables will be available in the template for work with data. Links le
 * [$mathTool](https://velocity.apache.org/tools/1.4/javadoc/org/apache/velocity/tools/generic/MathTool.html)
     * Mathematical operations tool for Velocity templates.
 * ⚠️ [$permissionHelper](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/PermissionHelperForMessageField.html)
-    * Tool for check permission.
+    * Tool for checking permissions.
     * **Only for non-delegated settings.**
     * Example: $permissionHelper.hasPermission("BROWSE_PROJECTS", $issue.reporter) - checking that the reporter of the issue has access to the project of the current issue.
     * Permissions: ADD_COMMENTS, ADMINISTER_PROJECTS, ARCHIVE_ISSUES, ASSIGNABLE_USER, ASSIGN_ISSUES, BROWSE_ARCHIVE, BROWSE_PROJECTS, CLOSE_ISSUES, CREATE_ATTACHMENTS, CREATE_ISSUES, DELETE_ALL_ATTACHMENTS, DELETE_ALL_COMMENTS, DELETE_ALL_WORKLOGS, DELETE_ISSUES, DELETE_OWN_ATTACHMENTS, DELETE_OWN_COMMENTS, DELETE_OWN_WORKLOGS, EDIT_ALL_COMMENTS, EDIT_ALL_WORKLOGS, EDIT_ISSUES, EDIT_OWN_COMMENTS, EDIT_OWN_WORKLOGS, EDIT_SPRINT_NAME_AND_GOAL_PERMISSION, LINK_ISSUES, MANAGE_SPRINTS_PERMISSION, MANAGE_WATCHERS, MODIFY_REPORTER, MOVE_ISSUES, RESOLVE_ISSUES, RESTORE_ISSUES, SCHEDULE_ISSUES, SET_ISSUE_SECURITY, START_STOP_SPRINTS_PERMISSION, TRANSITION_ISSUES, VIEW_DEV_TOOLS, VIEW_READONLY_WORKFLOW, VIEW_VOTERS_AND_WATCHERS, WORK_ON_ISSUES
@@ -132,18 +132,18 @@ You can click **Show Demo** to test the display of a message.
 <a href="/uploads/message-field/dynamic-templates-demo.webp" target="_blank">
 <img src="/uploads/message-field/dynamic-templates-demo.webp" alt="Template testing interface with Issue key TEST-7, JSON form data, and context selection dropdown" width="100%" loading="lazy"></a>
 
-You can see how your message will look like for the specified issue and execution context.
+You can see how your message will look for the specified issue and execution context.
 
 **Conditions for displaying message** and **Permissions** are not checked during this demonstration.
 
 
 * **Issue key** - The message will be generated for this issue.
-* **Form data (JSON)** - Text information from issue screen presented in JSON format. 
+* **Form data (JSON)** - Text information from the issue screen presented in JSON format. 
     * To collect test data:
-      * Open the issue screen(create, edit ...).
+      * Open the issue screen (create, edit, etc.).
       * Open your [browser console](https://developers.google.com/web/tools/chrome-devtools/open).
-      * Execute the following code([Running JavaScript](https://developers.google.com/web/tools/chrome-devtools/console#javascript)): `JSON.stringify(MESSAGE_FIELD_OBJECT.getDataFromDefaultForm (), undefined, 4)`
-      * Paste its result in the box above. Except for the first and last quotes.
+      * Execute the following code ([Running JavaScript](https://developers.google.com/web/tools/chrome-devtools/console#javascript)): `JSON.stringify(MESSAGE_FIELD_OBJECT.getDataFromDefaultForm (), undefined, 4)`
+      * Paste its result in the box above, except for the first and last quotes.
       
       <a href="/uploads/message-field/dynamic-templates-demo-collect-data.webp" target="_blank">
 <img src="/uploads/message-field/dynamic-templates-demo-collect-data.webp" alt="Browser console showing JSON form data collection code and colorized JSON output" width="100%" loading="lazy"></a>

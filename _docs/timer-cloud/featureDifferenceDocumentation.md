@@ -7,7 +7,7 @@ tags: [doc, cloud, timer, migration, field-creation, business-calendar, countdow
 ---
 
 
-Due to the difference in architecture and approaches, we will not be able to implement some things in the cloud, while others will be implemented as single solutions. You can see all the news about the plugin after the update on the main page.
+Due to differences in architecture and approaches, we will not be able to implement some features in the cloud, while others will be implemented as unified solutions. You can see all the latest updates about the plugin on the main page.
 
 The application is being actively developed and updated daily.
 
@@ -17,10 +17,10 @@ The application is being actively developed and updated daily.
 <tbody>
 
 <tr><td>Configured field name</td><td>✅</td><td>✅</td></tr>
-<tr><td>Field contexts</td><td>✅<br/>Standard Jira Custom field context</td><td>✅<br>It is set in the application (using JQL: coming soon 🛠)</td></tr>
+<tr><td>Field contexts</td><td>✅<br/>Standard Jira custom field context</td><td>✅<br>Set in the application (using JQL: coming soon 🛠)</td></tr>
 <tr><td>Display time formats</td><td>✅</td><td>✅ without day formats 🛠</td></tr>
 <tr><td>Show as panel</td><td>✅</td><td>🛠</td></tr>
-<tr><td>Many fields can be created</td><td>✅</td><td>✅ No more than 25-100 depending on their settings </td></tr>
+<tr><td>Multiple fields can be created</td><td>✅</td><td>✅ No more than 25-100 depending on settings</td></tr>
 <tr><td>Show as panel on Agile boards</td><td>✅</td><td>🛠</td></tr>
 <tr><td>Calculate time by Work calendar</td><td>✅</td><td>✅</td></tr>
 <tr><td>Show field value permissions</td><td>✅</td><td>❌</td></tr>
@@ -28,8 +28,8 @@ The application is being actively developed and updated daily.
 <tr><td>Show parent value in sub-tasks</td><td>✅</td><td>🛠</td></tr>
 <tr><td>Sort by "Stopwatch" field</td><td>✅</td><td>✅</td></tr>
 <tr><td>Search by "Stopwatch" field</td><td>✅</td><td>✅</td></tr>
-<tr><td>Real-time search by "Stopwatch" field</td><td>✅The data is calculated at the time of the search.</td><td>✅Data is updated every 1-30 minutes (Depending on time and settings).</td></tr>
-<tr><td>Field export format </td><td>✅ Separate setting </td><td>✅It is set together with the time display format in the field</td></tr>
+<tr><td>Real-time search by "Stopwatch" field</td><td>✅ The data is calculated at the time of the search.</td><td>✅ Data is updated every 1-30 minutes (depending on time and settings).</td></tr>
+<tr><td>Field export format</td><td>✅ Separate setting</td><td>✅ Set together with the time display format in the field</td></tr>
 <tr><td>Field export to CSV, XML, Excel</td><td>✅</td><td>✅</td></tr>
 <tr><td>Field export to eazyBi</td><td>✅</td><td>❓</td></tr>
 <tr><td>Different styles of displaying time in the field</td><td>✅ </td><td>🛠</td></tr>
@@ -53,7 +53,7 @@ The application is being actively developed and updated daily.
 <tr><td>Break time intervals</td><td>✅</td><td>✅</td></tr>
 <tr><td>Custom days</td><td>✅</td><td>✅</td></tr>
 <tr><td>Repeatable custom days</td><td>✅</td><td>✅</td></tr>
-<tr><td>Start date time(first day for calendar)</td><td>✅</td><td>✅</td></tr>
+<tr><td>Start date time (first day for calendar)</td><td>✅</td><td>✅</td></tr>
 <tr><td>Work time settings for time formats</td><td>✅</td><td>🛠</td></tr>
 
 </tbody>
@@ -62,7 +62,7 @@ The application is being actively developed and updated daily.
 
 
 
-<h4>Another functions</h4>
+<h4>Other functions</h4>
 <table>
 <tr><th>Features</th><th>Server/Data Center</th><th>Cloud</th></tr>
 <tbody>

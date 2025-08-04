@@ -149,14 +149,14 @@ When editing global configurations, delegated users see warning messages:
 ### Common Issues
 
 #### Access Denied
-**Problem**: Delegated user cannot access configuration
+**Problem**: Delegated user cannot access the configuration
 **Solutions**:
 - Verify user has correct project role/group membership
 - Check that delegation is enabled for the specific configuration
 - Ensure user is accessing the correct project context
 
 #### Global Configuration Concerns
-**Problem**: User unsure about global configuration impact
+**Problem**: User is unsure about global configuration impact
 **Solutions**:
 - Consult with Jira administrator before making changes
 - Review project list where configuration applies

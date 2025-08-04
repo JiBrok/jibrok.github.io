@@ -6,25 +6,25 @@ category: advanced-configuration
 tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---
 
-Time calculation functionality is based on three field types: Time in status, Stopwatch and Timer.
+Time calculation functionality is based on three field types: Time in status, Stopwatch, and Timer.
 
 All these fields have the following functions: 
-* Working with data in real time - searching, sorting.
+* Working with data in real time - searching and sorting.
 * Perform calculations using the work calendar and time zones of users.
 * Suitable for queuing, monitoring, dashboards.
 * They can be used in reports, exports, integration, and can be used to perform additional calculations (e.g., average project time).
 * All fields have appearance and permissions settings.
-* An unlimited number of fields and contexts can be created .
-* They can calculate their values based on the request history. Can be used for both new/future and old tasks. 
-* Also for fields additional functions are available through auxiliary fields and field comparison.
+* An unlimited number of fields and contexts can be created.
+* They can calculate their values based on the request history and can be used for both new/future and old issues. 
+* Additionally, for fields, additional functions are available through auxiliary fields and field comparison.
 
-Now about fields differences.
+Now about field differences:
 
 ### Time in status ###
-<p>Calculate the time spent in the specified status, statuses or status category. 
-Serves for solving standard tasks of counting the time spent in the status .</p>
+<p>Calculate the time spent in the specified status, statuses, or status category. 
+Serves for solving standard tasks of counting the time spent in the status.</p>
 
-<p>It has simple configuration. For the field to start working, it is enough to specify the statuses and calendar for calculation after creation. However, the settings are sufficient to meet more complex requirements.<br> 
+<p>It has simple configuration. For the field to start working, it is enough to specify the statuses and calendar for calculation after creation. However, the settings are sufficient to meet more complex requirements. 
 </p>
 
 * <a href="/uploads/time-in-status/overview/fields-example-2.webp" target="_blank">

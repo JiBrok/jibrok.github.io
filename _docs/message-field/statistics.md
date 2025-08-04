@@ -15,7 +15,7 @@ The **Statistics** page provides comprehensive insights into your Message Field 
 
 To access the Statistics page:
 
-1. Navigate to **Jira Administration** → **Manage apps**
+1. Navigate to **Jira Administration** > **Manage apps**
 2. Find **Message Field** in the installed apps list
 3. Click **Statistics** in the Message Field section
 
@@ -96,9 +96,9 @@ For each JQL condition, view:
 
 ### Performance Optimization
 1. **Identify Slow Queries**: Look for JQL queries with high execution times
-2. **Optimize Heavy Queries**: Refactor queries returning >10,000 issues
+2. **Optimize Heavy Queries**: Refactor queries returning more than 10,000 issues
 3. **Fix Error Queries**: Address invalid JQL syntax
-4. **Monitor Timeouts**: Investigate queries that consistently timeout
+4. **Monitor Timeouts**: Investigate queries that consistently time out
 
 ### Configuration Cleanup
 1. **Remove Unused Fields**: Identify fields not on any screens
@@ -132,7 +132,7 @@ For each JQL condition, view:
 
 ### Tips
 - Run statistics during off-peak hours for better performance
-- Consider simplifying complex JQL conditions that consistently timeout
+- Consider simplifying complex JQL conditions that consistently time out
 - Use project-specific contexts to reduce query complexity
 
 The Statistics page is an essential tool for maintaining healthy Message Field configurations and ensuring optimal performance across your Jira instance.

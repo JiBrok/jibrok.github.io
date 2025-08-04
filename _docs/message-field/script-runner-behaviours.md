@@ -7,12 +7,12 @@ tags: [doc, server, datacenter, messaging, scriptrunner, behaviours, integration
 ---
 
 # Message field version 5
-As soon as Scriptrunner Behaviours changes the value of a field, the message will be automatically updated.  
+As soon as ScriptRunner Behaviours changes the value of a field, the message will be automatically updated.  
 
 # Message field under version 5 
 You can change the message using the [ScriptRunner for Jira](https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=datacenter&tab=overview) application and its [Behaviours](https://scriptrunner.adaptavist.com/6.9.0/jira/behaviours-overview.html) function.
 
-You may need to change the default settings - depending on the complexity of the script in ScriptRunner Behaviours.
+You may need to change the default settings depending on the complexity of the script in ScriptRunner Behaviours.
 
 * Choose: **Administration** (<img src="/uploads/atlassian/cog_icon.webp" alt="Administration settings icon"  style="width:20px" loading="lazy"> in the top panel on the right) > Manage apps.
 
@@ -22,18 +22,18 @@ You may need to change the default settings - depending on the complexity of the
 <img src="/uploads/message-field/settings-for-scriptrunner.webp" alt="settings-for-scriptrunner screenshot" style="width:100%;" loading="lazy"></a> 
 
 
-* **Timeout** - Indicated in milliseconds. The code in the ScriptRunner that changes the message can take quite a long time, a few seconds. For example, when he needs to get information from another system and display it in a message. In this case, you should increase the waiting time for the ScriptRunner result. If ScriptRunner returns a result **within the specified time**, the message will be displayed according to its result. Otherwise, the ScriptRunner result will be ignored.
+* **Timeout** - Indicated in milliseconds. The code in ScriptRunner that changes the message can take quite a long time, a few seconds. For example, when it needs to get information from another system and display it in a message. In this case, you should increase the waiting time for the ScriptRunner result. If ScriptRunner returns a result **within the specified time**, the message will be displayed according to its result. Otherwise, the ScriptRunner result will be ignored.
 * **Show default message?**
-    * **No** - The message which is previously set in the field settings will be displayed only after the timeout expires(in this case the ScriptRunner results are ignored). While waiting for a response, the message will be hidden.
+    * **No** - The message which is previously set in the field settings will be displayed only after the timeout expires (in this case the ScriptRunner results are ignored). While waiting for a response, the message will be hidden.
     * **Yes** - The message which is previously set in the field settings will be displayed until the ScriptRunner result is received. As soon as the result is received, the message will change according to the new data.
-        * For example, you can set the message "Loading..." in the field settings. It will be displayed during "behavior" is running and until the new message will be set from the script.
+        * For example, you can set the message "Loading..." in the field settings. It will be displayed while the "behavior" is running and until the new message is set from the script.
           
           <a href="/uploads/message-field/message-field-loadig.webp" target="_blank">
 <img src="/uploads/message-field/message-field-loadig.webp" alt="message-field-loadig screenshot" style="width:50%" loading="lazy"></a>
     
 * **When the JavaScript from Message field settings should be run?**
-    * **After displaying the default message** - The javascript will be executed after displaying the message from the field settings, i.e. immediately after opening the screen or after a timeout.
-    * **After executing the "behavior" or timeout script** - Javascript will be executed after the ScriptRunner result will be received or after a timeout.
+    * **After displaying the default message** - The JavaScript will be executed after displaying the message from the field settings, i.e., immediately after opening the screen or after a timeout.
+    * **After executing the "behavior" or timeout script** - JavaScript will be executed after the ScriptRunner result is received or after a timeout.
 
 
 

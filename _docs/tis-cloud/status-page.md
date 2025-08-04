@@ -6,4 +6,4 @@ category: system-information
 tags: [doc, cloud, time-in-status, service-status, migration, status-tracking]
 ---
 
-Information about scheduled work on the servers or a failure will be displayed on app Start page. Additional notifications are available on the page: ["Time in status" status page](https://timeinstatus.statuspage.io)
+Information about scheduled server maintenance or failures will be displayed on the app Start page. Additional notifications are available on the ["Time in Status" status page](https://timeinstatus.statuspage.io).

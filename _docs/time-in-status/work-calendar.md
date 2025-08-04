@@ -6,21 +6,21 @@ category: time-management
 tags: [doc, server, datacenter, time-tracking, time-in-status, business-calendar, sla-tracking, field-configuration]
 ---
 
-The fields "Time in status", "Timer" and "Stopwatch", as well as [JQL functions](/docs/time-in-status/user-help-info/) are able to count the time according to working calendars.
-Calendars take into account working hours and [user time zone](https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html). That allows you to coordinate the time between users from different regions.
+The fields "Time in status", "Timer", and "Stopwatch", as well as [JQL functions](/docs/time-in-status/user-help-info/), are able to count the time according to working calendars.
+Calendars take into account working hours and [user time zone](https://docs.oracle.com/javase/8/docs/api/java/time/ZonedDateTime.html). This allows you to coordinate the time between users from different regions.
 
-For example, the timers and stopwatches will display the dates of the continuation of work, taking into account the user's working calendar and timezone. <br>
+For example, the timers and stopwatches will display the dates of the continuation of work, taking into account the user's working calendar and time zone.
 <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/timer-example.webp" target="_blank">
 <img src="/uploads/time-in-status/work-calendar/timer-example.webp" alt="timer-example screenshot" style="width:50%" loading="lazy"></a></p>
 
 
 ### View ###
 All users can view work calendars.
-Open user menu and click on "Work calendars"
+Open the user menu and click on "Work calendars".
 <p style="text-align: center;"><a href="/uploads/time-in-status/user-help-info/work-calendars.webp" target="_blank">
 <img src="/uploads/time-in-status/user-help-info/work-calendars.webp" alt="work-calendars screenshot" style="width:50%" loading="lazy"></a></p>
 
-In the window that opens, select a calendar for detailed viewing.<br>
+In the window that opens, select a calendar for detailed viewing.
 <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/view.webp" target="_blank">
 <img src="/uploads/time-in-status/work-calendar/view.webp" alt="view screenshot" style="width:100%" loading="lazy"></a></p>
 

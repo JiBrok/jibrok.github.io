@@ -6,7 +6,7 @@ category: templates-customization
 tags: [doc, server, datacenter, messaging, javascript, client-side, dynamic-behavior, interactive, customization, examples]
 ---
 
-JavaScript examples for  the **Message Field** application are available at [GitHub](https://gist.github.com/JiBrok/public)
+JavaScript examples for the **Message Field** application are available at [GitHub](https://gist.github.com/JiBrok/public)
 
 {:.no_toc}
 * TOC
@@ -90,7 +90,7 @@ console.log('Full form data:', fullFormData);
 
 ### Hide message if all fields are empty(View issue)
 
-The script will check the custom fields on the view issue screen. If all fields are empty the message banner will be hidden.
+The script will check the custom fields on the view issue screen. If all fields are empty, the message banner will be hidden.
 
 
 <a href="/uploads/message-field/message_field_video_dynamical.gif" target="_blank"><img src="/uploads/message-field/message_field_video_dynamical.gif" alt="Message Field dynamic template demonstration video" style="width:100%;" loading="lazy"></a>

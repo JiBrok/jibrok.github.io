@@ -18,7 +18,7 @@ After installing the app, create a Message Field custom field and add it to the 
 
 * Administration > Issues > Custom Fields > Add Custom Field.
 * Select Message Field, set context and screens.
-* The banner’s position equals the field’s position on the screen – drag it where it should appear.
+* The banner’s position equals the field’s position on the screen – drag it to where it should appear.
  
 <a href="/uploads/message-field/message-field-config-issue-screen.webp" target="_blank">
 <img src="/uploads/message-field/message-field-config-issue-screen.webp" alt="Screen configuration showing Message field positioned at top of Create issue form field list" style="width:100%;" loading="lazy"></a>

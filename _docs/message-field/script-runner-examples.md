@@ -6,7 +6,7 @@ category: integration-automation
 tags: [doc, server, datacenter, messaging, scriptrunner, behaviours, examples, javascript, automation, integration]
 ---
 
-Examples for working with the **Message Field** application using the **ScriptRunner Behaviours** are available at [GitHub](https://gist.github.com/JiBrok/public)
+Examples for working with the **Message Field** application using **ScriptRunner Behaviours** are available at [GitHub](https://gist.github.com/JiBrok/public)
 
 <script src="https://gist.github.com/JiBrok/281ed8dfe5c405dde4faa175def3be14.js"></script>
 

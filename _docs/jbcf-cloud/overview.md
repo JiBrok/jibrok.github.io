@@ -10,10 +10,10 @@ excerpt: JiBrok Calculated fields (JBCF) Cloud provides essential calculated cus
 <img src="/uploads/jbcf/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview)
-## Welcome to JiBrok Calculated fields (JBCF)!
+## Welcome to JiBrok Calculated Fields (JBCF)!
 
 
-### Pack of calculated custom fields:
+### Collection of calculated custom fields:
 
 * Number of comments
   * Number of comments in the issue.
@@ -38,7 +38,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 * Is author of first comment assignee
   * The first comment in the task from the assignee? Values: 'true'/'false'.
 * Is author of first comment reporter
-  * The first comment in the task from the reporter? Values: 'true'/'false.
+  * Is the first comment in the task from the reporter? Values: 'true'/'false'.
 * Previous status
   * Previous status name.
 * Previous assignee
@@ -54,15 +54,15 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 * Number of outward links
   * The number of outgoing links in the issue.
 * Sort by parent ASK
-  * Field for sorting issues by parent issue key. Subtasks will be sorted in key ASK order.  
+  * Field for sorting issues by parent issue key. Subtasks will be sorted in ascending key order.  
 * Sort by parent DESK
-  * Field for sorting issues by parent issue key. Subtasks will be sorted in key DESK order.
+  * Field for sorting issues by parent issue key. Subtasks will be sorted in descending key order.
 * Sort by epic ASK
-  * Field for sorting issues by epic key. Issues under epic will be sorted in key ASK order.
+  * Field for sorting issues by epic key. Issues under the epic will be sorted in ascending key order.
 * Sort by epic DESK
-  * Field for sorting issues by epic key. Issues under epic will be sorted in key DESK order.
+  * Field for sorting issues by epic key. Issues under the epic will be sorted in descending key order.
 * Sort by epic rank
-  * Field for sorting issues by epic rank. Issues under epic will be sorted in rank ASK order.
+  * Field for sorting issues by epic rank. Issues under the epic will be sorted in ascending rank order.
 * User resolver
   * The last User(name) to set the resolution in the issue.
 * User last updater

@@ -10,23 +10,23 @@ excerpt: JiBrok Calculated fields (JBCF) is a comprehensive pack of calculated c
 <img src="/uploads/jbcf/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview)
-## Welcome to JiBrok Calculated fields (JBCF)! 
+## Welcome to JiBrok Calculated Fields (JBCF)! 
 
 
-### Pack of calculated custom fields:
+### A Pack of Calculated Custom Fields:
 
 [Full list of fields](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/542834856/Plugin+Calculated+custom+fields)
 
-## You can find all new fields by: JBCF ##
+## You can find all new fields by searching: JBCF ##
 
 <p style="text-align: center;"><a href="/uploads/jbcf/all-fields.webp" target="_blank">
 <img src="/uploads/jbcf/all-fields.webp" alt="all-fields screenshot" style="width:100%" loading="lazy"></a></p>
 
 * **[To Do list](/docs/calculated-custom-fields/todolist)**
-  * Field for maintaining lists with the ability to mark completed items.
+  * A field for maintaining lists with the ability to mark completed items.
 * **Shared components**
-  * Description: The list of projects is set in the field settings. In this field you can select components from the specified projects
-    * The field allows you to select **components in a issue from any projects**
+  * Description: The list of projects is set in the field settings. In this field, you can select components from the specified projects.
+    * The field allows you to select **components in an issue from any projects**
   * Value: Components
   * Search: The field stores the value in the index.
   <table>
@@ -42,9 +42,9 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
   
 * Status picker
 * Role, Group, 
-* [Versions](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/725614593/Versions) - This field allows you to calculate intersections, merges, and differences between two fields containing versions.
-* [Time between dates](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694255617/Time+between+dates) - Calculates the time between two dates from fields - system fields or custom. jql to search for "time between dates" in time (">", "2h")
-* [Formula (number, string, date)](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694026241/Formula+field+-+script+field) - Field for calculating the value using the specified formula(script). You can use any system and user fields for calculation. You can customize the display. You can connect jql functions to search by time.
+* [Versions](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/725614593/Versions) - This field allows you to calculate intersections, merges, and differences between two version fields.
+* [Time between dates](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694255617/Time+between+dates) - Calculates the time between two date fields - system fields or custom. Use JQL to search for "time between dates" by duration (">", "2h").
+* [Formula (number, string, date)](https://jibrok.atlassian.net/wiki/spaces/JBS/pages/694026241/Formula+field+-+script+field) - A field for calculating values using a specified formula (script). You can use any system and user fields for calculations. You can customize the display and connect JQL functions to search by time.
 * Age
 * Age by resolution
 * Previous assignee
@@ -56,7 +56,7 @@ View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/12210
 * Count of comment
 * Last comment
 * Resolver
-* Not resolves sub-tasks
+* Unresolved sub-tasks
 * Sort by parent
 * Parent status
 * Sort by epic

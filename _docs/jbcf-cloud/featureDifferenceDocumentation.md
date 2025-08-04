@@ -7,9 +7,9 @@ excerpt: Compare JBCF features between Server/Data Center and Cloud versions, sh
 ---
 
 
-Due to the difference in architecture and approaches, we will not be able to implement some things in the cloud, while others will be implemented as single solutions. You can see all the news about the plugin after the update on the main page.
+Due to differences in architecture and approaches, some features cannot be implemented in the cloud version, while others will be implemented as unified solutions. You can see all plugin news after updates on the main page.
 
-The application is being actively developed and updated daily.
+The application is actively developed and updated daily.
 
 <h3>Calculated custom fields (JBCF)</h3>
 <table>

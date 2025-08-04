@@ -6,13 +6,13 @@ tags: [doc, cloud, timer, countdown, sla-tracking, goal-time, business-calendar,
 excerpt: "Complete step-by-step tutorial for creating and configuring Timer fields with goal settings, events, and practical examples."
 ---
 
-## In this guide we will create timer that will track the time to resolution. ##
+## In this guide, we will create a timer that will track the time to resolution.
 
 <div class="uk-alert-note" data-uk-alert="">
     <b>Time to resolution:</b>
 <ul>
 <li>The time will be calculated according to the <b>working calendar</b>.</li>
-<li>The time it takes to resolve the request will <b>depend on the priority</b> of the task. </li>
+<li>The time it takes to resolve the request will <b>depend on the priority</b> of the issue.</li>
 <ul>
 <li>Priority <b>Lowest</b> - 144h</li>
 <li>Priority <b>Low</b> - 72h</li>
@@ -20,16 +20,16 @@ excerpt: "Complete step-by-step tutorial for creating and configuring Timer fiel
 <li>Priority <b>High</b> - 18h</li>
 <li>Priority <b>Highest</b> - 9h</li>
 </ul>
-<li>The timer can be <b>paused</b> by putting the task in <b>Hold status</b>.</li>
-<li>The timer is <b>fixed</b> when you <b>close</b> the task or <b>set the resolution</b>.</li>
+<li>The timer can be <b>paused</b> by putting the issue in <b>Hold status</b>.</li>
+<li>The timer is <b>stopped</b> when you <b>close</b> the issue or <b>set the resolution</b>.</li>
 <li>The timer <b>restarts</b> when the <b>resolution is removed</b>.</li>
 
 </ul>
 </div>
 
-### Open page for create fields ###
+### Open page to create fields
 
-1. In the top bar of the navigator there is a menu "Apps" in it you need to select the "Timer field" application. This will open the Application Settings menu.
+1. In the top bar of the navigator, there is an "Apps" menu where you need to select the "Timer field" application. This will open the Application Settings menu.
 <br><a href="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" alt="screenshot" width="100%" loading="lazy"></a>
 2. Then you need to go to the "Timer fields" tab
@@ -39,41 +39,41 @@ excerpt: "Complete step-by-step tutorial for creating and configuring Timer fiel
 
 ### Create Timer/SLA for "Time to resolution"
 
-1. **Click to "Create" for create new Timer.**
+1. **Click "Create" to create a new Timer.**
    <br><a href="/uploads/timer-cloud/step-by-step/timer-name-and-contexts.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/timer-name-and-contexts.webp" alt="screenshot" width="100%" loading="lazy"></a>
 2. **General information**
    * Provide a name for the timer. A field will be created with the specified name. This name will also be used in JQL queries.
-   * Set this field to active. Otherwise it will not work, it will only save the settings.
+   * Set this field to active. Otherwise, it will not work and will only save the settings.
 3. **Contexts**
    * Provide contexts for this field. The following settings will only apply to issues from the specified projects and specified issue types.
          <br><a href="/uploads/timer-cloud/step-by-step/set-contexts.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/set-contexts.webp" alt="screenshot" width="100%" loading="lazy"></a>
    * You can refine the goals below with JQL conditions.
-4. **Set Calculate type - "First start".**
+4. **Set Calculate type to "First start".**
    <br><a href="/uploads/timer-cloud/step-by-step/timer-config-time-to-resolution.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/timer-config-time-to-resolution.webp" alt="screenshot" width="100%" loading="lazy"></a>
 5. **Events**
    * Start events:
-     * The timer will start when the task transition to "In progress". add "Change status to: In progress".
-     * (see Pause events) When a task returns from Hold status, then a timer must be started. add "Change status from: Hold".
-     * When a task is assigned (assignee change from Null(Empty) to user). add "assigned issue".
+     * The timer will start when the issue transitions to "In progress". Add "Change status to: In progress".
+     * (see Pause events) When an issue returns from Hold status, then the timer must be started. Add "Change status from: Hold".
+     * When an issue is assigned (assignee changes from Null (Empty) to user). Add "assigned issue".
    * Restart events:
-     * If the task is removed from the resolution, then the timer starts the countdown again. add "Remove resolution". (If you do not need to restart the timer, then you need to use a pause instead of a retart.)
-       * ❓It can be omitted if you are only interested in the time of the first decision of the query (Calculate type - "First start".). There will soon be new types to handle cases where requests are re-submitted. If you are interested in the total time, then you need to use the "Pause" events to pause the calculation. After triggering "Stop", the calculation is terminated completely.
+     * If the resolution is removed from the issue, then the timer starts the countdown again. Add "Remove resolution". (If you do not need to restart the timer, then you need to use a pause instead of a restart.)
+       * ❓It can be omitted if you are only interested in the time of the first resolution of the issue (Calculate type - "First start"). There will soon be new types to handle cases where requests are re-submitted. If you are interested in the total time, then you need to use the "Pause" events to pause the calculation. After triggering "Stop", the calculation is terminated completely.
    * Pause events:
-     * The team can send the task to hold the status. While the task in this status the timer needs to be stopped. add "Change status to: Hold".
+     * The team can send the issue to Hold status. While the issue is in this status, the timer needs to be stopped. Add "Change status to: Hold".
    * Stop events:
-     * We fix the timer time when the task closes or a solution is established for it. .add "Change status to: Closed". add "Set resolution".
+     * We stop the timer when the issue closes or a solution is established for it. Add "Change status to: Closed". Add "Set resolution".
 6. **Display settings** 
    * Configure the settings for displaying data in the field. It will not affect the actual value or sorting by field.
      <br><a href="/uploads/timer-cloud/step-by-step/timer-display-settings.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/timer-display-settings.webp" alt="screenshot" width="100%" loading="lazy"></a>
 7. **Time settings**
    * Default calendar - You can set a working calendar by which the timer will be considered. If left blank, the time will be considered 24/7
-   * Default time (Default goal) - Time for which the timer is set if it is not possible to select the goal.
-       * The timer time depends on the priority. If the issue does not have a priority or it does not match any of the conditions, then the default target 0 will be selected. **A zero target does not start the timer**.
-   * The target time will be determined by the priority of the task. For each condition (priority) you need to add a goal.
+   * Default time (Default goal) - Time for which the timer is set if it is not possible to select a goal.
+       * The timer time depends on the priority. If the issue does not have a priority or it does not match any of the conditions, then the default goal of 0 will be selected. **A zero goal does not start the timer**.
+   * The target time will be determined by the priority of the issue. For each condition (priority), you need to add a goal.
    * Create goals by priorities: see screenshots
      * JQL - Condition for the application of this Goal. If none of the conditions match the issue then the default goal will be applied.
      * Time option:
@@ -93,14 +93,14 @@ excerpt: "Complete step-by-step tutorial for creating and configuring Timer fiel
 8. **Click "Save"**
    <br><a href="/uploads/timer-cloud/step-by-step/timer-after-save.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/timer-after-save.webp" alt="screenshot" width="100%" loading="lazy"></a>
-9. After a successful save, the data synchronization process will start. It includes calculating historical values and starting tracking of active timers. Depending on the number of requests, the first synchronization may take some time. You can follow the synchronization status in the "Service info" tab.
+9. After a successful save, the data synchronization process will start. It includes calculating historical values and starting tracking of active timers. Depending on the number of issues, the first synchronization may take some time. You can follow the synchronization status in the "Service info" tab.
    <br><a href="/uploads/timer-cloud/step-by-step/service-info.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/service-info.webp" alt="screenshot" width="100%" loading="lazy"></a>
 10. After you create the field, you can go to the "Start Page" tab. The examples will be updated on it and there will be links to demo JQL queries.
 11. You can also work with this field as with any other. You can display it on screens, in reports, search and sort data by it.
     <br><a href="/uploads/timer-cloud/step-by-step/timer-fields-in-navigator.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/timer-fields-in-navigator.webp" alt="screenshot" width="100%" loading="lazy"></a>
-12. The data in the field will be updated periodically and whenever the task is updated. The frequency of automatic updates is now automatically detected. The less time is left, the more frequent updates will be.
+12. The data in the field will be updated periodically and whenever the issue is updated. The frequency of automatic updates is now automatically detected. The less time remaining, the more frequent the updates will be.
     * Current intervals of time updates:
       * 1-5min: every 1 min
       * 5min-2h: every 5 min

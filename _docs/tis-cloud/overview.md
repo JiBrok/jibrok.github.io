@@ -10,21 +10,21 @@ tags: [doc, cloud, time-in-status, time-tracking, business-calendar, jql-functio
 <img src="/uploads/time-in-status/overview/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;" loading="lazy"></a></p>
 
 <p style="text-align: center;">View app on <a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview">Atlassian Marketplace</a></p>
-## Welcome to Time in status for Jira Cloud!
+## Welcome to Time in Status for Jira Cloud!
 
 
-The issue (task, work) during the solving process goes through various stages. It is necessary to take it into account and control the time spent at each stage.
+An issue (task, work item) goes through various stages during the resolution process. It is necessary to track and control the time spent at each stage.
 
 The plugin provides fields, JQL functions for searching and reports.
 
 
-### Time in status field ###
-* A field that shows the time spent in the selected statuses. It's easy to use and serves to solve typical problems - calculating the time in status.<br>
-  "How long has the task been open? How long was the task in work? How long did it wait for the reaction?" and so on.
+### Time in Status field ###
+* A field that shows the time spent in selected statuses. It's easy to use and serves to solve typical problems - calculating the time in status.<br>
+  "How long has the issue been open? How long was the issue in work? How long did it wait for a response?" and so on.
 
-Fields have functions for finding information using jql.
-Fields can calculate their values both for new(based on issue events) and old issues(based on the history of issues).  
-Fields have a large number of time format for display.
+Fields have functions for finding information using JQL.
+Fields can calculate their values both for new issues (based on issue events) and old issues (based on issue history).
+Fields have a large number of time formats for display.
 
 <table>
 <tr>
@@ -33,16 +33,16 @@ Fields have a large number of time format for display.
 </tr>
 </table>
 
-### Business calendar: ###
+### Business calendar ###
 
-The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
-You can create an unlimited number of calendars and use it in any contexts and projects. 
+The plugin can calculate time according to configured calendars. Fields and JQL have corresponding settings.
+You can create an unlimited number of calendars and use them in any contexts and projects. 
 <p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp" target="_blank">
 <img src="/uploads/time-in-status/overview/calendar-example.webp" alt="calendar-example screenshot" style="width:100%;" loading="lazy"></a></p>
 
-### Reports: ### 
+### Reports ### 
 
-The "Time in status" fields can be used like regular fields in the JQL navigator and exported, for example, to excel.
+The "Time in Status" fields can be used like regular fields in the JQL navigator and exported, for example, to Excel.
 
 <table>
 <tr>

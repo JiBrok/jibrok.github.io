@@ -130,7 +130,7 @@ The CFValues utility provides comprehensive methods for accessing custom field v
     $cfValues.getOrDefault("customfield_10100", 123)<br>
     $cfValues.getOrDefault("Custom field name", $issue.assignee)<br>
     
-    ##use for get value for linked issue
+    ## Use to get value for linked issue
     $cfValues.get($linkedIssue, 10100)<br>
     $cfValues.getOrDefault($linkedIssue, "customfield_10100", "Default value")<br>
     $cfValues.getOrDefault($linkedIssue, "Custom field name", 123)<br>
@@ -1393,7 +1393,7 @@ Jira Version: $jiraVersion
 
       #set($budgetField = $cfValues.getFromForm("Budget")))
       #if($budgetField && $budgetField > 100000)
-      <p style="color:red;">Warning! Budget exceeded 100,000. Additional check required.</p>
+      <p style="color:red;">Warning! Budget exceeds 100,000. Additional check required.</p>
       #else
       <p>Budget is within acceptable limits.</p>
       #end
@@ -1419,7 +1419,7 @@ Jira Version: $jiraVersion
       <p style="color:green;">Check compatibility with the microservices architecture.</p>
       #end
       #if(!$hasUIUX && !$hasBackend)
-      <p>No specific components selected, proceeding under standard workflow.</p>
+      <p>No specific components selected, proceeding under the standard workflow.</p>
       #end
 
 ### Attachment Type Detection

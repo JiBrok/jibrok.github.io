@@ -10,16 +10,16 @@ tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch,
 ## Common ##
 <div class="uk-alert-note" data-uk-alert="">
 So far, only tabular reports are available in the plugin. The functionality of reports will be improved and expanded in new versions. <br>
-Reports can work with any fields. Both with system fields and with fields from third-party applications. The correctness of the work in the report depends on the specific type of field. For questions or concerns, please contact <a href="https://jibrok.atlassian.net/servicedesk/customer/portals"> support </a>.
+Reports can work with any fields, both with system fields and with fields from third-party applications. The correctness of the work in the report depends on the specific type of field. For questions or concerns, please contact <a href="https://jibrok.atlassian.net/servicedesk/customer/portals"> support </a>.
 </div>
 
 * Reports can group data by one attribute. It can be any field or a set of jql conditions to include a query in a group.
 * Reports can display any fields. Additional functions for calculating values will be available depending on the type of data in the field.
-  * For the fields from this application ("Time in status", "Timer", "Stopwatch"), various functions are available - median time and percintiles, average pause time, number of restarts, etc.
-  * For numeric fields, mathematical functions are available - calculation of percintiles, sum, average, maximum and other values.
-* You can also display cells with a custom formula and display, such cells also have access to data from other cells (like excel).
+  * For the fields from this application ("Time in status", "Timer", "Stopwatch"), various functions are available - median time and percentiles, average pause time, number of restarts, etc.
+  * For numeric fields, mathematical functions are available - calculation of percentiles, sum, average, maximum, and other values.
+* You can also display cells with a custom formula and display; such cells also have access to data from other cells (like Excel).
 * For each report, access rights and a schedule for updating data are set separately.
-* Reports can be exported to csv and available via direct link.
+* Reports can be exported to CSV and are available via direct link.
 
 [Read more in the section on creating a report.](/docs/time-in-status/report-create/)
     
@@ -45,7 +45,7 @@ If the user has rights to create new reports, the corresponding button on the ri
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/2.webp" target="_blank">
 <img src="/uploads/time-in-status/reports-all/2.webp" alt="2 screenshot" style="width:100%;" loading="lazy"></a></p>
 
-Reports are generated at a specific point in time. After that, the finished report is saved and available for viewing. In the report settings, you can specify a schedule for data refresh. Or update the data manually as needed.
+Reports are generated at a specific point in time. After that, the finished report is saved and available for viewing. In the report settings, you can specify a schedule for data refresh or update the data manually as needed.
 
 * View - Opens the generated report for viewing. The report has a permalink and you can save it for quick navigation.
 * Edit - Opens the report for editing. The button is available only if you have edit rights.
@@ -54,7 +54,7 @@ Reports are generated at a specific point in time. After that, the finished repo
 
 
 <div class="uk-alert-note" data-uk-alert="">
-Jira admin can disable this menu via module "jibrok-all-reports-user-link"
+The Jira admin can disable this menu via the module "jibrok-all-reports-user-link".
 <p style="text-align: center;"><a href="/uploads/time-in-status/reports-all/3.webp" target="_blank">
 <img src="/uploads/time-in-status/reports-all/3.webp" alt="3 screenshot" style="width:100%;" loading="lazy"></a></p>
 </div>

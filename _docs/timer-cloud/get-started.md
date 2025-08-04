@@ -7,14 +7,14 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
 ---
 
 
-<p>This application calculates time that issue spent between issue events. Calculations can be made according to the working calendar(taking into account weekends, holidays and lunch breaks).</p>
-<p>You can search and sort tasks by the "timer" fields. This allows to create queue/filters according to the time metrics.</p>
-<p>Fields are also available for export in different formats, which allows you to use your favourite reporting tools: excel, rest api, dashboards, etc.</p>
+<p>This application calculates the time that issues spend between issue events. Calculations can be made according to the working calendar (taking into account weekends, holidays, and lunch breaks).</p>
+<p>You can search and sort issues by the "timer" fields. This allows you to create queues/filters according to time metrics.</p>
+<p>Fields are also available for export in different formats, which allows you to use your favorite reporting tools: Excel, REST API, dashboards, etc.</p>
 <h3>Where to begin?</h3>
 <ol>
-    <li>Create a work calendar. To do this, go to the adjacent tab: Calendars.</li>
-    <li>Create fields to track the time between issue events. To do this, go to the adjacent tab: "Timer fields".</li>
-    <li>Configure JQL Queries.</li>
+    <li>Create a work calendar. To do this, go to the Calendars tab.</li>
+    <li>Create fields to track the time between issue events. To do this, go to the "Timer fields" tab.</li>
+    <li>Configure JQL queries.</li>
     <li>You can display new fields in the JQL navigator and dashboards. {this.state.isDownloaded?"(📌 examples are clickable)":"(📌 Clickable examples will be here after creating the timer)"}
         <ul>
             <li><b>"DATE:FIELD_NAME" = startOfDay()</b>
@@ -24,7 +24,7 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
                     <li>"stopped:FIELD_NAME" > startOfDay()</li>
                     <li>"failed:FIELD_NAME" > startOfDay()</li>
                 </ul>
-                For example: <b>"started:FIELD_NAME" = startOfDay()</b>  - to search by start date.
+                For example: <b>"started:FIELD_NAME" = startOfDay()</b> - to search by start date.
             </li>
             <li><b>"state:FIELD_NAME" = STATE</b> - to search by state of timers.
                 <ul>Available <b>STATE</b> values:
@@ -33,7 +33,7 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
                     <li>"state:FIELD_NAME" = completed</li>
                     <li>"state:FIELD_NAME" = failed</li>
                 </ul>
-                For example: <b>"state:FIELD_NAME" = running</b>  - to search running timers.
+                For example: <b>"state:FIELD_NAME" = running</b> - to search for running timers.
             </li>
             <li>
                 <ul>
@@ -45,11 +45,11 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
                     <li>"hours PauseTime:FIELD_NAME" > 2 and "minutes PauseTime:FIELD_NAME" > 45</li>
                     <li>"hours LeftTime:FIELD_NAME" > 2 and "minutes LeftTime:FIELD_NAME" > 45</li>
                 </ul>
-                Combined this conditions:<br/>
+                Combining these conditions:<br/>
                 <b>"hours TIME:FIELD_NAME" > 2 AND "minutes TIME:FIELD_NAME" > 45</b> will search for issues that time more than 2 hours and 45 minutes.
             </li>
             <li>
-                <b>"time in hours TIME:FIELD_NAME" > 1.5</b> -  to search by time in hours. You can enter a fractional number. The all time will be converted to hours in decimal notation.
+                <b>"time in hours TIME:FIELD_NAME" > 1.5</b> - to search by time in hours. You can enter a fractional number. All time will be converted to hours in decimal notation.
                 <ul>Available <b>TIME</b> values:
                     <li>"time in hours TimeSpent:FIELD_NAME" > 1.5</li>
                     <li>"time in hours PauseTime:FIELD_NAME" > 1.5</li>
@@ -58,7 +58,7 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
                 For example: <b>"time in hours TimeSpent:FIELD_NAME" > 1.5</b> - find timers that have counted down more than an hour and a half.
             </li>
             <li>
-                <b>"time in minutes TIME:FIELD_NAME" > 1.5</b> -  to search by time in minutes. The all time will be converted to minutes.
+                <b>"time in minutes TIME:FIELD_NAME" > 1.5</b> - to search by time in minutes. All time will be converted to minutes.
                 <ul>Available <b>TIME</b> values:
                     <li>"time in minutes TimeSpent:FIELD_NAME" > 90</li>
                     <li>"time in minutes PauseTime:FIELD_NAME" > 90</li>
@@ -66,7 +66,7 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
                 </ul>
                 For example: <b>"time in minutes LeftTime:FIELD_NAME" > 90</b> - find timers that have more than 90 minutes left until the end.
             </li>
-            <li>'For sorting, you can use any of these fields with the obligatory indication of <b>'ASC</b> or <b>DESC</b>
+            <li>For sorting, you can use any of these fields with the required indication of <b>ASC</b> or <b>DESC</b>
                 <ul>
                     <li><b>... ORDER BY "minutes TimeSpent:FIELD_NAME" ASC</b></li>
                 </ul>
@@ -77,4 +77,4 @@ tags: [doc, cloud, timer, countdown, business-calendar, jql-functions, setup, co
     <li>Timer Archive - Coming soon 🛠</li>
     <li><b>Contact support in case of difficulties.</b></li>
 </ol>
-<p>The application is now being fine-tuned and improved. Later on, there will be more detailed information about functionality and limitations.</p>
+<p>The application is currently being fine-tuned and improved. More detailed information about functionality and limitations will be provided later.</p>

@@ -12,7 +12,7 @@ tags: [doc, server, datacenter, time-tracking, installation, marketplace, licens
 
 ## Install from Atlassian Marketplace
 
-1. Login to your Jira instance as an admin.
+1. Log in to your Jira instance as an admin.
 2. Click the profile icon on the top right-hand corner of the screen.
 3. Go to **Atlassian Marketplace**.
 
@@ -24,12 +24,12 @@ tags: [doc, server, datacenter, time-tracking, installation, marketplace, licens
 <img src="/uploads/time-in-status/install/install.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
 
 5. Find **<text>Time in status | SLA | Timer | Stopwatch</text>** via search.
-6. Click **Buy Now** to purchase a licence for <text>"Time in status | SLA | Timer | Stopwatch"</text> or **Free Trial** if you want to start a trial.
+6. Click **Buy Now** to purchase a license for <text>"Time in status | SLA | Timer | Stopwatch"</text> or **Free Trial** if you want to start a trial.
 
 7. If you have clicked **Buy Now**, then the Atlassian Marketplace checkout page will appear. After you have purchased a license, click **Apply License**.
 8. If you have clicked **Free Trial**, then the Free Trial screen will pop up. Click **Get License**.
 9. You will then see the my.atlassian.com login page.
-10. Login to my.atlassian.com.
+10. Log in to my.atlassian.com.
 11. Click **Apply License**.
 
 ## Manual install
@@ -45,7 +45,7 @@ tags: [doc, server, datacenter, time-tracking, installation, marketplace, licens
    <p style="text-align: center;"><a href="/uploads/time-in-status/install/install3.webp" target="_blank">
 <img src="/uploads/time-in-status/install/install3.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
 
-4. Login to your Jira instance as an admin.
+4. Log in to your Jira instance as an admin.
 5. Click the **Administration** icon on the top right-hand corner of the screen.
 6. Go to **Manage apps**.
 
@@ -57,19 +57,19 @@ tags: [doc, server, datacenter, time-tracking, installation, marketplace, licens
    <p style="text-align: center;"><a href="/uploads/message-field/install/upload-app.webp" target="_blank">
 <img src="/uploads/message-field/install/upload-app.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
 
-8. Click **Choose file** and select downloading file.
+8. Click **Choose file** and select the downloaded file.
 
    <p style="text-align: center;"><a href="/uploads/time-in-status/install/install4.webp" target="_blank">
 <img src="/uploads/time-in-status/install/install4.webp" alt="screenshot" width="50%" loading="lazy"></a></p>
 
 9. Click **Upload**.
 
-10. Activate a licence for <text>Time in status | SLA | Timer | Stopwatch</text> or **Free Trial** if you want to start a trial.
+10. Activate a license for <text>Time in status | SLA | Timer | Stopwatch</text> or **Free Trial** if you want to start a trial.
 
 7. If you have clicked **Buy Now**, then the Atlassian Marketplace checkout page will appear. After you have purchased a license, click **Apply License**.
 8. If you have clicked **Free Trial**, then the Free Trial screen will pop up. Click **Get License**.
 9. You will then see the my.atlassian.com login page.
-10. Login to my.atlassian.com.
+10. Log in to my.atlassian.com.
 11. Click **Apply License**.
 
 

@@ -7,7 +7,7 @@ tags: [doc, cloud, time-in-status, export, jql-functions, status-tracking, dashb
 ---
 
 <div class="uk-alert-note" data-uk-alert="">
-You can export fields from JQL search to excel, xml.
+You can export fields from JQL searches to Excel, XML, and other formats.
 </div>
 
 The time format is set in the [field configuration](/docs/tis-cloud/time-in-status-field-settings/).

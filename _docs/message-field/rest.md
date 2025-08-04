@@ -6,9 +6,9 @@ category: integration-automation
 tags: [doc, server, datacenter, messaging, rest-api, automation, postman, field-configuration, integration]
 ---
 
-You can use the rest service to update the field settings and global plugin settings.
+You can use the REST service to update the field settings and global plugin settings.
 
-Rest API documentation is available as a [collection in Postman](https://documenter.getpostman.com/view/8684253/TVK5eMhG).
+REST API documentation is available as a [collection in Postman](https://documenter.getpostman.com/view/8684253/TVK5eMhG).
 
 
 #### How to get field config id?

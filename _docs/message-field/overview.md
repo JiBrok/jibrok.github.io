@@ -9,10 +9,10 @@ tags: [doc, server, datacenter, messaging, banners, notifications, dynamic-templ
 <img src="/uploads/message-field/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;;" loading="lazy"></a>
 
 View app on [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=datacenter&tab=overview)
-## Welcome to Message field! 
+## Welcome to Message Field! 
 
 
-An application for displaying messages on issue screens.
+An application for displaying messages on Jira issue screens.
 
 <div id="youtube">
 </div>
@@ -50,7 +50,7 @@ An application for displaying messages on issue screens.
 
 🎯 Deliver onboarding hints, SLA warnings, release notes, or branded announcements with just a few clicks.
 
-🎨 Easily customize style, location, and color, then precisely target messages by project, request type, JQL, status, group, linked issues and more.
+🎨 Easily customize style, location, and color, then precisely target messages by project, request type, JQL, status, group, linked issues, and more.
 
 🔄 Keep content up to date by referencing fields, users, and system values in real time, automatically reflecting any changes.
 
@@ -72,8 +72,8 @@ An application for displaying messages on issue screens.
 * Add dynamic behaviour through [Dynamic Templates](/docs/message-field/dynamic-templates/), client‑side JavaScript or ScriptRunner Behaviours.
 * Pull data from the current issue or Jira API directly into the message on any screen.
 * Choose banner mode or compact flag mode, both printable.
-* A large number of settings, styles and display conditions.
-* Delegate message settings to project roles so that they can manage banners themselves.
+* A large number of settings, styles, and display conditions.
+* Delegate message settings to project roles so they can manage banners themselves.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Time between dates - How to create field?
+title: Time Between Dates - How to Create a Field?
 key: time-between-dates-cloud
 excerpt: "Create Time between dates fields in Jira Cloud to calculate time spans with working calendars, date field selection, and JQL support."
 category: field-configuration
@@ -12,13 +12,13 @@ tags: [doc, cloud, date-calculations, time-tracking, field-creation, business-ca
 <img src="/uploads/time-between-dates-cloud/standard-cf-menu.webp" alt="standard-cf-menu screenshot" style="width:100%" loading="lazy"></a></p>
 
 
-1. Open application "Time between dates":<br>
+1. Open the "Time between dates" application:<br>
    <ul>
-      <li>Open from “Manage your app“:
+      <li>Open from "Manage your apps":
       <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/open-admin-from-app-manage.webp" target="_blank">
 <img src="/uploads/time-between-dates-cloud/open-admin-from-app-manage.webp" alt="open-admin-from-app-manage screenshot" style="width:100%" loading="lazy"></a></p>
       </li>
-      <li>Or from “Apps“ menu:
+      <li>Or from the "Apps" menu:
       <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/open-admin-from-apps-menu.webp" target="_blank">
 <img src="/uploads/time-between-dates-cloud/open-admin-from-apps-menu.webp" alt="open-admin-from-apps-menu screenshot" style="width:100%" loading="lazy"></a></p>
       </li>
@@ -33,7 +33,7 @@ tags: [doc, cloud, date-calculations, time-tracking, field-creation, business-ca
    <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/fields-tab.webp" target="_blank">
 <img src="/uploads/time-between-dates-cloud/fields-tab.webp" alt="fields-tab screenshot" style="width:100%" loading="lazy"></a></p>
 
-4. Specify the name of the field. Be sure to specify the context(for which tasks to calculate the value), the field will not work without it. 
+4. Specify the name of the field. Be sure to specify the context (for which tasks to calculate the value); the field will not work without it. 
 
    <p style="text-align: center;"><a href="/uploads/time-between-dates-cloud/general-settings.webp" target="_blank">
 <img src="/uploads/time-between-dates-cloud/general-settings.webp" alt="general-settings screenshot" style="width:100%" loading="lazy"></a></p>

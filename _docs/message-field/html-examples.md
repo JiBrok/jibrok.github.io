@@ -6,23 +6,23 @@ category: templates-customization
 tags: [doc, server, datacenter, messaging, html-css, custom-styling, colors, branding, customization]
 ---
 
-You can configure your own message style, if predefined styles are not enough.
+You can configure your own message style if predefined styles are not enough.
 
-To do this you can use detailed settings of the message colour and add HTML with structure and style description in the message body
+To do this, you can use detailed settings of the message color and add HTML with structure and style description in the message body.
 
 ## What is HTML?
 
-If you are new to HTML (like us) then here is a great introductory guide recommended by our more experienced users. 
+If you are new to HTML (like us), then here is a great introductory guide recommended by our more experienced users. 
 [Learn HTML Free in [2021] – Basic HTML Codes for Beginners](https://www.websiteplanet.com/blog/html-guide-beginners/)
 
 Thank you for your recommendation! 😉
 
-## How to set colours in the message? ## 
+## How to set colors in the message? 
 
 1. Choose **Message type** **'Custom'**. 
-2. Additional fields **Background color**, **Text color**, **Icon**, **Icon color** should appear.
-3. Choose predefined [colours Atlassian](https://www.atlassian.design/foundations/color).
-4. If you can't find the right colour, press **Select a custom color** for manual colour selection.
+2. Additional fields **Background color**, **Text color**, **Icon**, **Icon color** will appear.
+3. Choose predefined [colors from Atlassian](https://www.atlassian.design/foundations/color).
+4. If you can't find the right color, press **Select a custom color** for manual color selection.
 
 <a href="/uploads/message-field/message-type-custom.webp" target="_blank">
 <img src="/uploads/message-field/message-type-custom.webp" alt="Custom message type configuration with background, text, and icon color pickers shown" width="100%" loading="lazy"></a>
@@ -30,20 +30,20 @@ Thank you for your recommendation! 😉
 <a href="/uploads/message-field/message-type-custom-as-flag.webp" target="_blank">
 <img src="/uploads/message-field/message-type-custom-as-flag.webp" alt="Custom message configuration set as flag with purple text color and custom banner preview" width="50%" loading="lazy"></a>
 
-Message colour can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
+Message color can be set by code in [dynamic templates](/docs/message-field/dynamic-templates-examples/#how-to-change-message-colour).
 
-## How do I change the color of the text and background in a message? ##
-You can display any HTML as a message. To do this select the **Message type** **'Custom'** in the field settings.
+## How do I change the color of the text and background in a message?
+You can display any HTML as a message. To do this, select the **Message type** **'Custom'** in the field settings.
 
 
 ```html
-<text style="background: black; color: white"> The white message on the black backgroud</text>
+<text style="background: black; color: white"> The white message on the black background</text>
 ```
 
 Or hex colors
 
 ```html
-<text style="background: #000000; color: #FFFFFF"> The white message on the black backgroud</text>
+<text style="background: #000000; color: #FFFFFF"> The white message on the black background</text>
 ```
 
 <a href="/uploads/message-field/html-example-1.webp" target="_blank">
@@ -54,7 +54,7 @@ Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>
 
 Attlassian Design System: <a href="https://www.atlassian.design/foundations/color">atlassian.design/foundations/color</a>
 
-## How to add a scroll to a long message? ##
+## How to add a scroll to a long message?
 
 
 

@@ -6,9 +6,9 @@ category: field-configuration
 tags: [doc, cloud, timer, countdown, field-creation, setup, configuration]
 ---
 
-1. Open application "Timer field":<br>
+1. Open the "Timer field" application:<br>
    <ul>
-      <li>Open from “Manage your app“:
+      <li>Open from "Manage your apps":
       <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.webp" target="_blank">
 <img src="/uploads/tis-cloud/open-admin-from-app-manage.webp" alt="open-admin-from-app-manage screenshot" style="width:100%" loading="lazy"></a></p>
       </li>
@@ -17,7 +17,7 @@ tags: [doc, cloud, timer, countdown, field-creation, setup, configuration]
 <img src="/uploads/timer-cloud/step-by-step/open-plugin-menu.webp" alt="screenshot" width="100%" loading="lazy"></a></p>
       </li>
    </ul>
-2. Open "Timer" fields and click "Create":<br>
+2. Open "Timer fields" and click "Create":<br>
 
    <p style="text-align: center;"><a href="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.webp" target="_blank">
 <img src="/uploads/timer-cloud/step-by-step/open-timer-fields-tab.webp" alt="screenshot" width="100%" loading="lazy"></a></p>

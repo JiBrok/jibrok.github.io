@@ -13,24 +13,24 @@ tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch,
 ## Welcome to Time in status | SLA | Timer | Stopwatch!
 
 
-The issue (task, work) during the solving process goes through various stages. It is necessary to take it into account and control the time spent at each stage.
+An issue (task, work item) goes through various stages during the resolution process. It is necessary to track and control the time spent at each stage.
 
-To calculate time in different scenarios, the plugin provides a set of fields, functions for searching, reports and access to api.
+To calculate time in different scenarios, the plugin provides a set of fields, search functions, reports, and API access.
 
 
 ### Fields: ###
 * Time in status field
-    * A field that shows the time spent in the selected statuses. It's easy to use and serves to solve typical problems - calculating the time in status.<br>
-      "How long has the task been open? How long was the task in work? How long did it wait for the reaction?" and so on.
+    * A field that shows the time spent in selected statuses. It's easy to use and solves typical problems related to calculating time in status.<br>
+      "How long has the task been open? How long was the task in progress? How long did it wait for a response?" and so on.
 * Stopwatch field
-    * Tracks the time between events. Events can be as simple as creating a task, commenting. So are more complex ones - increasing priority, changing status to a specific, first appointment. The field is very flexible in the settings and allows to know the time between practically any actions with the task. 
+    * Tracks the time between events. Events can be as simple as creating a task or adding a comment, or more complex ones such as increasing priority, changing to a specific status, or first assignment. The field is very flexible in its settings and allows you to measure the time between practically any actions on the task. 
 * Timer field
     * Based on stopwatch and complemented by countdown functions. 
-    * During startup, it is set for a certain time (5 minutes, 4 hours) and then shows the remaining time. Reacts to issue events (create issue, create comment...). Depending on the settings, it starts the timer or stops. The initial time is determined by the jql condition.
+    * During startup, it is set for a certain duration (5 minutes, 4 hours) and then shows the remaining time. It reacts to issue events (create issue, create comment, etc.). Depending on the settings, it starts or stops the timer. The initial time is determined by JQL conditions.
     * You can send a notification in advance or when the time expires.
 
 All fields have a large number of functions for finding information using jql in real time.
-All fields can calculate their values both for new(based on issue events) and old issues(based on the history of issues).  
+All fields can calculate their values both for new issues (based on issue events) and old issues (based on issue history).  
 All fields have a large number of settings for display and access rights.
 
 <table>
@@ -45,17 +45,17 @@ All fields have a large number of settings for display and access rights.
 ### Business calendar: ###
 
 The plugin can calculate the time according to the configured calendars. In fields and jql there are corresponding settings.
-You can create an unlimited number of calendars and use it in any contexts and projects. 
+You can create an unlimited number of calendars and use them in any contexts and projects. 
 <p style="text-align: center;"><a href="/uploads/time-in-status/overview/calendar-example.webp" target="_blank">
 <img src="/uploads/time-in-status/overview/calendar-example.webp" alt="calendar-example screenshot" style="width:100%;" loading="lazy"></a></p>
 
 ### Reports: ###
-In each task detailed reports are available on time, transitions between statues and performers. They can be downloaded directly from the task interface. 
+Detailed reports are available for each task showing time, transitions between statuses, and assignees. They can be downloaded directly from the task interface. 
 <p style="text-align: center;"><a href="/uploads/time-in-status/overview/issue-report.webp" target="_blank">
 <img src="/uploads/time-in-status/overview/issue-report.webp" alt="issue-report screenshot" style="width:100%;" loading="lazy"></a></p>
 
-Create jql reports grouped by any fields or jql conditions. Various functions are available in reports for calculating values (average, percentiles ...).
-The reports will be available for viewing and export via the link.
+Create JQL reports grouped by any fields or JQL conditions. Various functions are available in reports for calculating values (average, percentiles, etc.).
+The reports will be available for viewing and export via a link.
 
 <table>
 <tr>

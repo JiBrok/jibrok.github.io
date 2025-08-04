@@ -6,11 +6,11 @@ key: time-in-status
 excerpt: Common JQL functions for Time in Status queries including timeInStatus, timeInStatusByJql, and working calendar functions with real-time search capabilities.
 ---
 
-## Functions take the following parameters. ## 
+## Functions take the following parameters ## 
 
 * jql - a string with a valid search query. For example: "Project = TEST and created < startOfWeek()"
-* statuses - the name or id of the statuses, separated by commas. For example: "Open" or "Open, 10000, 10001".
-* condition - one of the characters <, <=, => =,>. For example: ">".
+* statuses - the name or ID of the statuses, separated by commas. For example: "Open" or "Open, 10000, 10001".
+* condition - one of the characters <, <=, =, >=, >. For example: ">".
 * time - time string corresponding to one of the patterns.
 
 <div class="uk-alert-note" data-uk-alert="">
@@ -20,9 +20,9 @@ excerpt: Common JQL functions for Time in Status queries including timeInStatus,
 "0", "0s" ... - time is zero.
 </div>
 
-* calendar - the name or id of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/user-help-info/)
+* calendar - the name or ID of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/user-help-info/)
 
-## Common functions. ## 
+## Common functions ## 
 
 General functions work without reference to the "Time in status" field.
 * issue in timeInStatus ("statuses", "condition", "time")
@@ -37,19 +37,19 @@ Or their replacement counterparts, in case of functions of the same name in othe
 If you want to use both plugins, go to "Manage Plugins", then expand the modules for either plugin, and selectively enable or disable the JQL function modules for those functions. For example, in "Time in status", the module providing jql-functions is displayed as:
 
 ### issue in timeInStatus ("statuses", "condition", "time") ### 
-* Returns tasks that spent a certain time in the indicated statuses.
+* Returns issues that spent a certain time in the indicated statuses.
 * The function works in real time.
-* The function takes tasks matching the query "status was in (statuses)" and additionally filters them by condition.
+* The function takes issues matching the query "status was in (statuses)" and additionally filters them by condition.
 
 ### issue in timeInStatusByJql ("jql", "statuses", "condition", "time") ###
-* It returns tasks from the jql request that spent a certain time in the indicated statuses.
+* It returns issues from the JQL request that spent a certain time in the indicated statuses.
 * The function works in real time.
-* The fewer jql tasks the faster the function works.
+* The fewer JQL issues, the faster the function works.
 
 ### issue in timeInStatusByJqlAndWokCalendar ("jql", "statuses", "condition", "time", "calendar") ###
-* It returns tasks from the jql request that spent a certain time in the indicated statuses. Calculation of time is done according to the specified calendar.
+* It returns issues from the JQL request that spent a certain time in the indicated statuses. Time calculation is done according to the specified calendar.
 * The function works in real time.
-* The fewer jql tasks the faster the function works.
+* The fewer JQL issues, the faster the function works.
 
 ## Examples ## 
 * issue in timeInStatus ("NEW", ">", "1h")

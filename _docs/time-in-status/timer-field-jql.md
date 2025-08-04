@@ -8,11 +8,11 @@ excerpt: Comprehensive JQL functions for timer fields including status searches,
 
 
 
-## Functions take the following parameters. ##
+## Functions take the following parameters ##
 
-* condition - one of the characters <, <=, => =,>. For example: ">".
-* calendar - the name or id of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/work-calendar/)
-* stopwatch config id and stopwatch scheme id - number. Jira admin can view it.
+* condition - one of the characters <, <=, =, >=, >. For example: ">".
+* calendar - the name or ID of the calendar. For example: "Support" or "1". [How to view calendars?](/docs/time-in-status/work-calendar/)
+* stopwatch config ID and stopwatch scheme ID - number. The Jira admin can view it.
 * time - time string corresponding to one of the patterns.
 
 <div class="uk-alert-note" data-uk-alert="">
@@ -23,12 +23,12 @@ excerpt: Comprehensive JQL functions for timer fields including status searches,
 </div>
 
 
-Search works through the field. Therefore, all JQLs begin with the field name.
+Search works through the field. Therefore, all JQL queries begin with the field name.
 
 
-## Search functions in the "Timer" field. ##
+## Search functions in the "Timer" field ##
 
-Work when search engine is connected [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
+Works when the search engine is connected to [Search Templates](https://confluence.atlassian.com/adminjiraserver/configuring-a-custom-field-938847235.html)
 
 <p style="text-align: center;"><a href="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp" target="_blank">
 <img src="/uploads/time-in-status/timer-field-jql/timer-field-searcher.webp" alt="timer-field-searcher screenshot" style="width:100%" loading="lazy"></a></p>
@@ -41,37 +41,37 @@ Work when search engine is connected [Search Templates](https://confluence.atlas
 
 ### “Timer field“ in active() ###
 
-* Returns tasks that have a timer is running
+* Returns tasks that have a timer running
 
-* If the timer uses a calendar, the field may indicate that it is not working hours. This does not affect the search if timer is running.
+* If the timer uses a calendar, the field may indicate that it is not working hours. This does not affect the search if the timer is running.
 
 ### “Timer field“ in inactive() ###
 
-* Returns tasks that have a timer is pause, failed or completed.
+* Returns tasks that have a timer that is paused, failed, or completed.
 
 ### “Timer field“ in isCompleted() ###
 
-* Returns tasks that have a timer is completed. Those the timer is stopped and the time has not yet ended.
+* Returns tasks that have a timer that is completed. That is, the timer is stopped and the time has not yet ended.
 
 ### “Timer field“ in isFailed() ###
 
-* Returns tasks that have a timer is failed. Those the timer is stopped and the time has ended.
+* Returns tasks that have a timer that has failed. That is, the timer is stopped and the time has ended.
 
 ### “Timer field“ in isPaused() ###
 
-* Returns tasks that have a timer is paused. Breaks in the work calendar are not considered a pause. But can be displayed in the field as a pause.
+* Returns tasks that have a timer that is paused. Breaks in the work calendar are not considered a pause, but can be displayed in the field as a pause.
 
 ### “Timer field“ in isRunning() ###
 
-* Returns tasks that have a timer is running. A break in the working calendar does not affect the search. The timer may be in state running, but at the same time the field will be displayed as a pause state.
+* Returns tasks that have a timer that is running. A break in the working calendar does not affect the search. The timer may be in a running state, but at the same time the field will be displayed as paused.
 
 ### "Timer field" in timeSpent("condition", "time") ###
 
-* Returns tasks for which the timer has already counted the specified time. Those. The timer was active(in state Running) for the specified time.
+* Returns tasks for which the timer has already counted the specified time. That is, the timer was active (in Running state) for the specified time.
 
 ### "Timer field" in realTimeSpent("condition", "time") ###
 
-* Returns tasks for which the timer has already counted the specified time. Those. The timer was active(in state Running) for the specified time.
+* Returns tasks for which the timer has already counted the specified time. That is, the timer was active (in Running state) for the specified time.
 * The function works in real time.
 * It has a limit on the size of the issue.
 * The function is suitable for sampling active counters. Real-time reporting, work queues of tasks with reference to reaction time, execution ...

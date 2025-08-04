@@ -37,14 +37,14 @@ Before configuring, you can copy settings from another message field configurati
 
 Configure the content and appearance of your message
 
-* **Title** - Optional field that displays as bold text above the message body. Plain text or HTML (HTML only available for **Message type** **'Custom'** when **Show as flag** is **'No'**).
+* **Title** - Optional field that displays as bold text above the message body. Supports plain text or HTML (HTML is only available for **Message type** **'Custom'** when **Show as flag** is **'No'**).
 * **Velocity render**
     * **Off** (default) - Use plain text or HTML in the message body
     * **On** - Enable dynamic content using Velocity templates with variables like $issue, $context, $formData, and more
     * When enabled, messages are regenerated in real-time based on issue data changes
     * [See Dynamic templates](/docs/message-field/dynamic-templates/)
 
-* **Body** - The main message content. Can be plain text, HTML or Velocity template.
+* **Body** - The main message content. Can be plain text, HTML, or Velocity template.
     * For line breaks, use `<br/>` tag
     * When using Velocity templates, remember to check for null values: `#if($issue.assignee)...#end`
 
@@ -59,14 +59,14 @@ Configure the content and appearance of your message
         * HTML styling is available when **Show as flag** is **'No'**
     
 * **Show as flag**
-    * **No** - shows the message as a banner among the fields.
+    * **No** - Shows the message as a banner among the fields.
         * The position of the message is determined by the position of the field on the screen. 
-    * **Yes** - shows message in a small pop-up on the right side of the screen.
+    * **Yes** - Shows the message in a small pop-up on the right side of the screen.
     
     <a href="/uploads/message-field/show-as-flag.webp" target="_blank">
 <img src="/uploads/message-field/show-as-flag.webp" alt="show-as-flag screenshot" style="width:100%;" loading="lazy"></a>
 
-    * Regardless of this setting, messages can be exported to print.
+    * Regardless of this setting, messages can be exported for printing.
 
 
 
@@ -97,7 +97,7 @@ Control how the message appears on different screens
         * Other - Create, Edit, and Transition screens
     * **Notes:**
         * Left aligned - Message aligns with other custom fields
-        * Service desk - All options automatically hide field names
+        * Service Desk - All options automatically hide field names
         * Field name is only shown on issue creation screens when configured
 
 ### Custom CSS Selectors
@@ -142,7 +142,7 @@ Configure when and where the message should be displayed
 
 * **JQL Condition** - Display message only for issues matching the JQL query
   * The condition checks if the current issue matches: `(JQL Condition) AND key = issue.key`
-  * Ignored on issue creation screens (since issue doesn't exist yet)
+  * Ignored on issue creation screens (since the issue doesn't exist yet)
   * Leave empty to skip this condition
   * Use the "Validate JQL" button to test your query
 
@@ -191,7 +191,7 @@ Configure when and where the message should be displayed
     * Display message only if linked issues are in the selected statuses
     * Leave empty to ignore the status of linked issues
 
-**Important**: The message will be displayed only when ALL enabled conditions are met. This includes date/time, JQL, screens, statuses, and linked issues conditions.
+**Important**: The message will be displayed only when ALL enabled conditions are met. This includes date/time, JQL, screens, statuses, and linked issue conditions.
     
 ## Permissions
 
@@ -215,12 +215,12 @@ When "Only logged in users" or "Selected users and anonymous" is selected:
 * **Show for user groups**
     * Display message only to users in the selected groups
     * Leave empty to ignore this condition
-    * User needs to be in at least one selected group
+    * The user needs to be in at least one selected group
 
 * **Show for users in project roles**
     * Display message only to users with the selected project roles
     * Leave empty to ignore this condition
-    * User needs to have at least one selected role in the issue's project
+    * The user needs to have at least one selected role in the issue's project
 
 * **Don't show for user groups**
     * Hide message from users in the selected groups
@@ -243,7 +243,7 @@ When "Only logged in users" or "Selected users and anonymous" is selected:
 
 Add custom JavaScript code to create dynamic interactions with form fields and customize message behavior.
 
-**Note**: Most dynamic content needs can now be handled using [Velocity templates](/docs/message-field/dynamic-templates/) which are easier and safer to use.
+**Note**: Most dynamic content needs can now be handled using [Velocity templates](/docs/message-field/dynamic-templates/) , which are easier and safer to use.
 
 <a href="/uploads/message-field/javascript.webp" target="_blank">
 <img src="/uploads/message-field/javascript.webp" alt="javascript screenshot" style="width:100%;" loading="lazy"></a>
@@ -337,9 +337,9 @@ Allow non-admin users to manage message field configurations for specific projec
 ### How Delegation Works
 
 1. Delegated users can edit message settings through the project settings page
-2. They have access to the same configuration options as admins
+2. They have access to the same configuration options as administrators
 3. Multiple projects can delegate to the same message field configuration
-4. User needs to match at least one condition (role, group, or specific user) to edit
+4. The user needs to match at least one condition (role, group, or specific user) to edit
 
 ## Testing and Preview
 
@@ -358,7 +358,7 @@ When **Velocity render** is enabled, additional demo options appear:
 * **Issue key** - Test the message with data from a specific issue
 * **Form data (JSON)** - Simulate form data for testing dynamic content
     * Use double quotes for JSON
-    * To get real form data: Open browser console and run `MESSAGE_FIELD_OBJECT.getDataFromDefaultForm()`
+    * To get real form data: Open the browser console and run `MESSAGE_FIELD_OBJECT.getDataFromDefaultForm()`
 * **Demo Context** - Test how the message appears on different screens
     * Issue Create, Issue Edit, Transition, Issue View, Service Desk Create, Service Desk View
 * **Transition ID/Name** - When testing transition context, specify the transition details

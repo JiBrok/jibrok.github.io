@@ -6,4 +6,4 @@ category: system-information
 tags: [doc, cloud, time-tracking, stopwatch, status-page, service-status, maintenance, monitoring]
 ---
 
-Information about scheduled work on the servers or a failure will be displayed on app Start page. Additional notifications are available on the page: ["Stopwatch" status page](https://stopwatch.statuspage.io)
+Information about scheduled work on the servers or failures will be displayed on the app Start page. Additional notifications are available on the ["Stopwatch" status page](https://stopwatch.statuspage.io).
