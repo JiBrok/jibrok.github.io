@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Display Linked Issues for Jira Cloud
 key: linked-issues-cloud
 excerpt: "Display linked issues in Jira Cloud with enhanced visualization, custom filtering, and improved issue relationship management."
 category: getting-started

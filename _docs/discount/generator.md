@@ -1,5 +1,5 @@
 ---
-title: generator
+title: Promo Code Generator for JiBrok Apps
 key: generator
 category: utilities
 tags: [doc, promo-codes, discounts, server, datacenter, cloud, generator, utility, licensing]

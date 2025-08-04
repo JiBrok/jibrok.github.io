@@ -1,5 +1,5 @@
 ---
-title: Overview (Cloud)
+title: Time in Status for Jira Cloud
 key: tis-cloud
 excerpt: "Time in Status for Jira Cloud overview with field types, time tracking capabilities, work calendars, and comprehensive reporting features."
 category: getting-started

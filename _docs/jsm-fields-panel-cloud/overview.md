@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Fields Panel for Jira Service Management (JSM)
 key: jsm-fields-panel-cloud
 category: getting-started
 tags: [doc, cloud, jsm, service-management, field-panels, customer-portal, html-customization, project-configuration, field-display]

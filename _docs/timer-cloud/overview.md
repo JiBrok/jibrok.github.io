@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Timer for Jira Cloud - Countdown & SLA Tracking
 key: timer-cloud
 excerpt: "Timer field for Jira Cloud with countdown functionality, goal time limits, SLA tracking, and comprehensive time management features."
 category: getting-started

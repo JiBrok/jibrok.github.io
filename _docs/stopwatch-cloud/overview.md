@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Stopwatch for Jira Cloud - Event Time Tracking
 key: stopwatch-cloud
 excerpt: "Stopwatch field for Jira Cloud enables flexible time tracking between events with customizable triggers, pause functionality, and JQL integration."
 category: getting-started

@@ -1,5 +1,5 @@
 ---
-title: Overview (Server/DC)
+title: Time in Status - Complete Time Tracking Solution
 key: time-in-status
 excerpt: "Complete Time in Status overview for Jira Server/Data Center with field types, features, and comprehensive time tracking capabilities."
 category: getting-started
