@@ -1,5 +1,5 @@
 ---
-title: Time in status - field configuration
+title: Time in Status - Field Configuration
 key: tis-cloud
 excerpt: "Configure Time in Status field settings including status selection, display modes, time formats, and advanced options."
 category: field-configuration
@@ -12,17 +12,17 @@ All settings:<br>
 
 ### General settings ### 
 
-1. Name - Name is needed for easy navigation in settings. A custom field of the same name will be created. After rename will be created new custom field.
+1. Name - The name is needed for easy navigation in settings. A custom field of the same name will be created. After renaming, a new custom field will be created.
 2. JQL(context) - This is analogous to the context for custom fields. Using JQL, issues are set for which you need to track the time spent in the following statuses.
-3. Statuses - if the task was or is in the indicated status, then the field will calculate the time spent in this status.
-4. Work calendar - If you need to calculate only working hours, you can connect a working calendar.ld.
-5. [Time format](/tis-cloud/time-formats) - format for outputting time in a field. If you need a new format, please write in support.
+3. Statuses - If the issue was or is in the indicated status, then the field will calculate the time spent in this status.
+4. Work calendar - If you need to calculate only working hours, you can connect a work calendar.
+5. [Time format](/tis-cloud/time-formats) - Format for outputting time in a field. If you need a new format, please contact support.
 6. Display setting - Select an option to display in the field. Below you can customize the calculation of statistical values. 
     <p style="text-align: center;"><a href="/uploads/tis-cloud/display-settings.webp" target="_blank">
 <img src="/uploads/tis-cloud/display-settings.webp" alt="Field display configuration options" style="width:100%;" loading="lazy"></a></p>
   
 7. Is active - For a disabled setting, all data updates will be disabled. Once the setting is enabled, the data in the fields will be updated automatically.
-8. Use rounding for display - The time will be rounded when displayed in the field. 21:37 -> 21:30 (use intervals)
+8. Use rounding for display - The time will be rounded when displayed in the field. 21:37 → 21:30 (uses intervals)
 
 ### Statistic settings ###
 

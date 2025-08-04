@@ -7,17 +7,17 @@ tags: [doc, cloud, time-in-status, business-calendar, status-tracking, field-cre
 ---
 
 The fields "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)" and "[Stopwatch](/docs/stopwatch-cloud/overview)", as well as [JQL functions](/docs/tis-cloud/user-help-info/) are able to count the time according to working calendars.
-Calendars take into account working hours and user time zone. That allows you to coordinate the time between users from different regions.
+Calendars take into account working hours and user time zones. This allows you to coordinate time between users from different regions.
 
-For example, the timers and stopwatches will display the dates of the continuation of work, taking into account the user's working calendar and timezone. <br>
+For example, timers and stopwatches will display the dates of work continuation, taking into account the user's working calendar and time zone. <br>
 <p style="text-align: center;"><a href="/uploads/time-in-status/work-calendar/timer-example.webp" target="_blank">
 <img src="/uploads/time-in-status/work-calendar/timer-example.webp" alt="timer-example screenshot" style="width:50%" loading="lazy"></a></p>
 
 ### Create ### 
 
-1. Open admin page of "Time in status":<br>
+1. Open the admin page of "Time in Status":<br>
    <ul>
-      <li>Open from “Manage your app“:
+      <li>Open from "Manage your apps":
       <p style="text-align: center;"><a href="/uploads/tis-cloud/open-admin-from-app-manage.webp" target="_blank">
 <img src="/uploads/tis-cloud/open-admin-from-app-manage.webp" alt="open-admin-from-app-manage screenshot" style="width:100%" loading="lazy"></a></p>
       </li>
