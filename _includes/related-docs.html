@@ -7,12 +7,28 @@
     {% assign maxRelatedCounter = 0 %}
     {% assign genericTags = 'doc,cloud,server,datacenter,field-creation' | split: ',' %}
     
-    {% comment %} First, try to find docs from same product (by key) {% endcomment %}
+    {% comment %} First, try to find docs from same product (by key) with smart prioritization {% endcomment %}
     {% if page.key %}
       {% assign sameProductDocs = site.docs | where: "key", page.key | where_exp: "doc", "doc.url != page.url" %}
       {% if sameProductDocs.size > 0 %}
+        {% comment %} Prioritize docs from same section/category {% endcomment %}
+        {% assign currentPath = page.path | split: "/" %}
+        {% assign prioritizedDocs = '' | split: '' %}
+        {% assign otherDocs = '' | split: '' %}
+        
+        {% for doc in sameProductDocs %}
+          {% assign docPath = doc.path | split: "/" %}
+          {% if currentPath[1] == docPath[1] %}
+            {% assign prioritizedDocs = prioritizedDocs | push: doc %}
+          {% else %}
+            {% assign otherDocs = otherDocs | push: doc %}
+          {% endif %}
+        {% endfor %}
+        
+        {% assign allSameProductDocs = prioritizedDocs | concat: otherDocs %}
+        
         <ul class="uk-list link-secondary">
-        {% for doc in sameProductDocs limit: maxRelated %}
+        {% for doc in allSameProductDocs limit: maxRelated %}
           <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
           {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
         {% endfor %}
@@ -58,18 +74,31 @@
       {% endif %}
     {% endif %}
     
-    {% comment %} If no tag matches, show docs from same folder {% endcomment %}
-    {% if maxRelatedCounter == 0 %}
-      {% assign current_folder = page.path | split: "/" | slice: 0, -1 | join: "/" %}
-      {% assign folder_docs = site.docs | where_exp: "doc", "doc.path contains current_folder" | where_exp: "doc", "doc.url != page.url" | sort: "title" %}
+    {% comment %} If still not enough docs, show popular docs from other products {% endcomment %}
+    {% if maxRelatedCounter < maxRelated %}
+      {% assign remainingSlots = maxRelated | minus: maxRelatedCounter %}
+      {% assign popularPages = 'overview,install,get-started,create-field' | split: ',' %}
+      {% assign popularDocs = '' | split: '' %}
       
-      {% if folder_docs.size > 0 %}
-        <h4>More in this section</h4>
-        <ul class="uk-list link-secondary">
-          {% for doc in folder_docs limit: maxRelated %}
-            <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
-          {% endfor %}
-        </ul>
+      {% for doc in site.docs %}
+        {% if doc.url != page.url and doc.key != page.key %}
+          {% assign docName = doc.path | split: "/" | last | replace: ".md", "" %}
+          {% if popularPages contains docName %}
+            {% assign popularDocs = popularDocs | push: doc %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if popularDocs.size > 0 %}
+        {% unless maxRelatedCounter > 0 %}
+          <ul class="uk-list link-secondary">
+        {% endunless %}
+        {% for doc in popularDocs limit: remainingSlots %}
+          <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a> <span class="uk-text-muted uk-text-small">({{ doc.key | capitalize | replace: "-", " " }})</span></li>
+        {% endfor %}
+        {% if maxRelatedCounter > 0 or popularDocs.size > 0 %}
+          </ul>
+        {% endif %}
       {% endif %}
     {% endif %}
   </div>
