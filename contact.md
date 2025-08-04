@@ -1,16 +1,10 @@
 ---
 layout: page
 width: xsmall
-title: Got Any Questions
+title: Contact Us
 permalink: /contact/
 ---
 
-## Contacts
-
-* Support channels:
-    * [Help Center](https://jibrok.atlassian.net/servicedesk/customer/portals)
-    * [support@jibrok.com](mailto:support@jibrok.com)
-   
-[//]: # (* You can also contact us in social networks:)
-[//]: # (    * <a href="https://twitter.com/JiBrok_apps" class="uk-icon-link uk-icon" target="_blank" target="_blank"><img src="/uploads/social/twitter.svg" alt="rss" style="width: 20px; height: 20px;" loading="lazy"></a>)
+* <span uk-icon="icon: world" class="uk-margin-small-right"></span> [Help Center](https://jibrok.atlassian.net/servicedesk/customer/portals)
+* <span uk-icon="icon: mail" class="uk-margin-small-right"></span> [support@jibrok.com](mailto:support@jibrok.com)
     
