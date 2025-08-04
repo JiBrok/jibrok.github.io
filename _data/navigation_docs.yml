@@ -15,6 +15,7 @@ message-field:
     - message-field/settings-for-all-fields
     - message-field/statistics
     - message-field/delegation
+    - message-field/audit-log
     - message-field/rest
     - message-field/html-examples
     - message-field/java-script-examples

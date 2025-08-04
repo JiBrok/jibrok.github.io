@@ -109,6 +109,7 @@ An application for displaying messages on Jira issue screens.
 
 ### 📊 Analytics & Monitoring
 - **[Statistics](/docs/message-field/statistics/)** - Track message performance and usage
+- **[Audit Log](/docs/message-field/audit-log/)** - Track configuration changes and maintain compliance
 
 ### 💡 Additional Resources
 - **[Video Tutorial](https://www.youtube.com/watch?v=PogUyk9eD7U)** - Watch the overview demo
