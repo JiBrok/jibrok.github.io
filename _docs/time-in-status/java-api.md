@@ -1,5 +1,5 @@
 ---
-title: Java API
+title: Time in Status Java API Reference
 key: time-in-status
 excerpt: "Access comprehensive Java API documentation for Time in Status plugin development and integration with custom solutions."
 category: integration-export

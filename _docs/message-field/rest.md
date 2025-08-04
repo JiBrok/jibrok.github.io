@@ -1,5 +1,5 @@
 ---
-title: Rest API
+title: Message Field REST API Reference
 key: message-field
 excerpt: "REST API documentation for Message field plugin with Postman collection for updating field settings and global plugin configurations."
 category: integration-automation

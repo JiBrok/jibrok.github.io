@@ -1,5 +1,5 @@
 ---
-title: Install
+title: Install Timer Field for Jira Cloud
 key: timer-cloud
 excerpt: "Install Timer field for Jira Cloud from Atlassian Marketplace with step-by-step admin installation and configuration guide."
 category: getting-started

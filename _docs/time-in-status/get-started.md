@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: Getting Started with Time in Status Plugin
 key: time-in-status
 excerpt: "Track time spent in Jira issue statuses with Time in Status plugin. Features working calendar support, JQL functions, custom fields, and comprehensive reporting tools."
 category: getting-started

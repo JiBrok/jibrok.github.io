@@ -1,5 +1,5 @@
 ---
-title: Advanced settings
+title: Message Field Advanced Configuration Options
 key: message-field
 excerpt: "Configure advanced Message field options including conditional display, user permissions, JQL targeting, and complex message logic."
 category: field-configuration

@@ -1,5 +1,5 @@
 ---
-title: Create field and configuring
+title: Create and Configure Message Fields
 key: message-field
 excerpt: "Create and configure Message fields in Jira with context setup, screen assignment, and initial field configuration options."
 category: field-configuration

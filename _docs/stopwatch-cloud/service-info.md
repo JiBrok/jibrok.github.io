@@ -1,5 +1,5 @@
 ---
-title: Service info
+title: Stopwatch Cloud Service Status and Activity Monitor
 key: stopwatch-cloud
 excerpt: "Monitor Stopwatch field app activity with real-time task tracking, system counters, and background process information."
 category: system-information

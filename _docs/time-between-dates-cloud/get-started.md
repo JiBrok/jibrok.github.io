@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: Getting Started with Time Between Dates for Jira Cloud
 key: time-between-dates-cloud
 excerpt: "Calculate time between dates in Jira issue fields with Time Between Dates Cloud. Features dynamic countdown fields, automatic updates, and flexible date field integration."
 category: getting-started

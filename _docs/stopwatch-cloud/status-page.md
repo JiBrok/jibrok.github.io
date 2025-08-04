@@ -1,5 +1,5 @@
 ---
-title: Status page
+title: Stopwatch Cloud Status Page and Maintenance Updates
 key: stopwatch-cloud
 excerpt: "Access Stopwatch field service status updates, scheduled maintenance notifications, and system status information via dedicated status page."
 category: system-information

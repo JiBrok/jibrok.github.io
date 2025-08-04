@@ -1,5 +1,5 @@
 ---
-title: About fields
+title: Time Tracking Field Types Overview and Comparison
 key: time-in-status
 excerpt: "Overview of Time in Status, Stopwatch, and Timer fields with real-time calculation, work calendars, and comprehensive tracking capabilities."
 category: advanced-configuration

@@ -1,5 +1,5 @@
 ---
-title: Shortcuts
+title: Switch User Keyboard Shortcuts and Quick Access
 key: switch-user
 excerpt: Use quick keyboard shortcuts 'xx' and 'su' to open the user switching window when you have the necessary permissions.
 category: user-guides

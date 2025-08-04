@@ -1,5 +1,5 @@
 ---
-title: Get started 
+title: Getting Started with Time in Status for Jira Cloud 
 key: tis-cloud
 excerpt: "Calculate time spent in specific Jira issue statuses with TIS Cloud. Features working calendar support, time metrics, JQL functions, and export capabilities for reporting."
 category: getting-started

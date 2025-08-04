@@ -1,5 +1,5 @@
 ---
-title: Open message settings
+title: Access Message Field Configuration Settings
 key: message-field
 excerpt: "Access and configure Message field settings through Jira administration, customize messages for different contexts with base and advanced options."
 category: getting-started

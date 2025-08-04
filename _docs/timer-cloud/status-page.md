@@ -1,5 +1,5 @@
 ---
-title: Status page
+title: Timer Cloud Status Page and Maintenance Updates
 key: timer-cloud
 excerpt: "Access Timer field service status updates, maintenance notifications, and system availability information via dedicated status page."
 category: system-information

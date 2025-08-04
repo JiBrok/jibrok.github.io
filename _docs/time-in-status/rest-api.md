@@ -1,5 +1,5 @@
 ---
-title: Rest API
+title: Time in Status REST API Reference
 key: time-in-status
 excerpt: Access comprehensive REST API documentation for the Time in Status plugin to integrate with external systems and automate data retrieval.
 category: integration-export

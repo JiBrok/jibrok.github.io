@@ -1,5 +1,5 @@
 ---
-title: Status page
+title: Time in Status Cloud Status Page and Maintenance Updates
 key: tis-cloud
 excerpt: "Access Time in Status service status updates, maintenance notifications, and system availability information via dedicated status page."
 category: system-information

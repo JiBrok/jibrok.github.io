@@ -1,5 +1,5 @@
 ---
-title: Status page
+title: JBCF Cloud Status Page and Maintenance Updates
 key: jbcf-cloud
 category: system-information
 tags: [doc, cloud, calculated-fields, service-status, monitoring]

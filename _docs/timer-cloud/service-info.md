@@ -1,5 +1,5 @@
 ---
-title: Service info
+title: Timer Cloud Service Status and Activity Monitor
 key: timer-cloud
 excerpt: "Monitor Timer field app performance with real-time service information, background task tracking, and system health metrics."
 category: system-information

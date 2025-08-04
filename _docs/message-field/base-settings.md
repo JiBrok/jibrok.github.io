@@ -1,5 +1,5 @@
 ---
-title: Base settings
+title: Message Field Basic Configuration Settings
 key: message-field
 excerpt: "Configure Message field basic settings including title, body, message types, colors, and banner vs flag display options with demo preview."
 category: field-configuration

@@ -1,5 +1,5 @@
 ---
-title: Service info
+title: Time in Status Cloud Service Status and Activity Monitor
 key: tis-cloud
 excerpt: "Monitor Time in Status app performance with real-time service information, background processing, and system health metrics."
 category: system-information

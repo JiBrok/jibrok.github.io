@@ -1,5 +1,5 @@
 ---
-title: Common settings
+title: Time in Status Global Plugin Settings
 key: time-in-status
 excerpt: "Configure global plugin settings including system user authentication, notification mechanisms, and event handling for Time in Status."
 category: field-configuration

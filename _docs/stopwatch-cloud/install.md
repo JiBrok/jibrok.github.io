@@ -1,5 +1,5 @@
 ---
-title: Install
+title: Install Stopwatch Field for Jira Cloud
 key: stopwatch-cloud
 excerpt: "Install Stopwatch field for Jira Cloud from Atlassian Marketplace with step-by-step admin installation and setup instructions."
 category: getting-started

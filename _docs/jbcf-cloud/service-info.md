@@ -1,5 +1,5 @@
 ---
-title: Service info
+title: JBCF Cloud Service Status and Activity Monitor
 key: jbcf-cloud
 category: system-information
 tags: [doc, cloud, calculated-fields, service-status, monitoring]
