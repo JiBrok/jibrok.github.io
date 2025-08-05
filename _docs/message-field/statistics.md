@@ -1,5 +1,5 @@
 ---
-title: Message Field Usage Statistics and Analytics
+title: Usage Statistics and Analytics
 key: message-field
 excerpt: "View Message field usage statistics, performance metrics, and analytics for monitoring field effectiveness and user engagement."
 category: analytics-monitoring

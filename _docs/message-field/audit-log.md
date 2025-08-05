@@ -1,5 +1,5 @@
 ---
-title: Message Field Audit Log and Change Tracking
+title: Audit Log and Change Tracking
 key: message-field
 excerpt: "Track all changes to Message Field configurations with comprehensive audit logging. Monitor who made changes, when they were made, and view detailed before/after comparisons."
 category: analytics-monitoring
