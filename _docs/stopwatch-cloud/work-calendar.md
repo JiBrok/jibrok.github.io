@@ -6,7 +6,7 @@ category: time-management
 tags: [doc, cloud, time-tracking, stopwatch, business-calendar, working-hours, timezone, breaks, holidays]
 ---
 
-The "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)", and "[Stopwatch](/docs/stopwatch-cloud/overview)" fields, as well as [JQL functions](/docs/stopwatch-cloud/user-help-info/), are able to count time according to working calendars.
+The "[Time in status](/docs/tis-cloud/overview/)", "[Timer](/docs/timer-cloud/overview)", and "[Stopwatch](/docs/stopwatch-cloud/overview)" fields, as well as [JQL functions](/docs/user-helper-cloud/overview/), are able to count time according to working calendars.
 Calendars take into account working hours and user time zones. This allows you to coordinate time between users from different regions.
 
 For example, timers and stopwatches will display the dates of work continuation, taking into account the user's working calendar and time zone. <br>
