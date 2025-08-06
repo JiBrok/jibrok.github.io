@@ -2,8 +2,8 @@
 layout: page
 width: expand
 hero:
-    title: How can we help you?
-    subtitle: 
+    title: Powerful Jira Add-ons for Cloud & Data Center
+    subtitle: Enhance your Jira with professional extensions and integrations
     image: atlassian/atlassian-partner-blue-rgb.svg
     search: true
 ---
