@@ -6,7 +6,7 @@
 cache: true
 # Site title and description
 title:              JiBrok
-description:        "JiBrok develops powerful Jira apps and add-ons for Atlassian Cloud and Data Center. Time tracking, custom fields, message displays, timers, and workflow automation tools for enhanced project management."
+description:        "JiBrok | Powerful Jira add-ons for Cloud & Data Center"
 lang:               en
 
 # Site subpath, e.g. /blog
