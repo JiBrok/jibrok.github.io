@@ -1,7 +1,7 @@
 ---
 title: Timer field 
 key: time-in-status
-excerpt: Timer fields provide countdown functionality with goal-based time tracking, automatic start/stop triggers, and comprehensive status monitoring for deadline management.
+excerpt: Timer fields provide countdown functionality with goal-based time tracking, automatic triggers, and status monitoring for deadlines.
 category: field-types-configuration
 tags: [doc, server, datacenter, time-tracking, timer, field-configuration, time-in-status, business-calendar]
 ---

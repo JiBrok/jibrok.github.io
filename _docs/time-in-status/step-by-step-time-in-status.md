@@ -1,7 +1,7 @@
 ---
 title: 📖 Step by step - Time in status
 key: time-in-status
-excerpt: Complete step-by-step guide to setting up Time in Status fields and JQL functions for tracking issue time in different statuses with indexing and search capabilities.
+excerpt: Step-by-step guide to setting up Time in Status fields and JQL functions for tracking issue time in statuses with indexing and search.
 category: tutorials
 tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---

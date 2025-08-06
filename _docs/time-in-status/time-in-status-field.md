@@ -1,7 +1,7 @@
 ---
 title: Time in status field
 key: time-in-status
-excerpt: Track time spent by issues in specific statuses with support for working calendars, real-time searches, flexible configurations, and comprehensive reporting features.
+excerpt: Track time spent by issues in specific statuses with working calendars, real-time searches, flexible configs, and reporting features.
 category: field-types-configuration
 tags: [doc, server, datacenter, time-tracking, time-in-status, business-calendar, sla-tracking, reporting]
 ---

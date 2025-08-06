@@ -1,7 +1,7 @@
 ---
 title: Message Field - Contextual Banners & Notifications
 key: message-field
-excerpt: "Display contextual messages and banners on Jira issue screens with Message field. Features dynamic templates, custom styling, JQL targeting, and real-time field references."
+excerpt: "Display contextual messages and banners on Jira screens. Features dynamic templates, custom styling, JQL targeting, and field references."
 category: getting-started
 tags: [doc, server, datacenter, messaging, banners, notifications, dynamic-templates, velocity, javascript, html-css, jql-targeting, permissions, delegation, jsm-integration, scriptrunner, rest-api, statistics, refined-integration]
 ---

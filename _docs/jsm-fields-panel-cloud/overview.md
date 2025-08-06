@@ -3,7 +3,7 @@ title: Fields Panel for Jira Service Management (JSM)
 key: jsm-fields-panel-cloud
 category: getting-started
 tags: [doc, cloud, jsm, service-management, field-panels, customer-portal, html-customization, project-configuration, field-display]
-excerpt: Fields panel for Jira Service Management (JSM) allows you to display any issue fields to customers on the JSM portal with customizable panels and HTML descriptions.
+excerpt: Fields panel for JSM allows you to display any issue fields to customers on the JSM portal with customizable panels and HTML descriptions.
 ---
 
 

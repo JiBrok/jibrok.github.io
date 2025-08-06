@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Stopwatch Field for Jira Cloud
 key: stopwatch-cloud
-excerpt: "Calculate time between Jira issue events with Stopwatch Cloud. Features working calendar support, time metrics, JQL search capabilities, and export options for reporting."
+excerpt: "Calculate time between Jira events with Stopwatch Cloud. Working calendar support, time metrics, JQL search, and export options."
 category: getting-started
 tags: [doc, cloud, time-tracking, stopwatch, business-calendar, jql-functions, setup, configuration]
 ---

@@ -1,7 +1,7 @@
 ---
 title: 📖 How to create Timer and configure it step-by-step 
 key: time-in-status
-excerpt: Comprehensive tutorial for creating and configuring timer fields with examples for first response time and resolution time tracking using working calendars and priority-based goals.
+excerpt: Tutorial for creating and configuring timer fields with examples for first response and resolution time tracking using calendars and goals.
 category: tutorials
 tags: [doc, server, datacenter, time-tracking, time-in-status, timer, stopwatch, business-calendar, jql-functions, reporting, sla-tracking, performance-optimization, rest-api, java-api, worklog, field-panels, export, eazybi-integration]
 ---

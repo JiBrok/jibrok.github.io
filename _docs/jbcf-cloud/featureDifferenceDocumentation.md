@@ -3,7 +3,7 @@ title: Feature Difference (Server/Data Center and Cloud)
 key: jbcf-cloud
 category: migration
 tags: [doc, cloud, calculated-fields, feature-comparison, server, datacenter]
-excerpt: Compare JBCF features between Server/Data Center and Cloud versions, showing which calculated custom fields are available, in development, or not supported in each platform.
+excerpt: Compare JBCF features between Server/Data Center and Cloud versions showing field availability, development status, and platform support.
 ---
 
 

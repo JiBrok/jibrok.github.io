@@ -3,7 +3,7 @@ title: JiBrok Calculated Fields (JBCF) - Complete Field Pack
 key: calculated-custom-fields
 category: getting-started
 tags: [doc, server, datacenter, calculated-fields, custom-fields, field-creation, overview]
-excerpt: JiBrok Calculated fields (JBCF) is a comprehensive pack of calculated custom fields for Jira, including To Do lists, shared components, formula fields, time calculations, and many more field types to enhance your Jira workflows.
+excerpt: JBCF is a comprehensive pack of calculated custom fields for Jira including To Do lists, formulas, time calculations, and more field types.
 ---
 
 <a href="https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=datacenter&tab=overview" target="_blank">

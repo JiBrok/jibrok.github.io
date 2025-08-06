@@ -1,7 +1,7 @@
 ---
 title: Feature Difference (Server/Data Center and Cloud)
 key: stopwatch-cloud
-excerpt: Compare Stopwatch Cloud features with Server/Data Center versions, including field configuration, work calendar settings, display options, and functionality differences.
+excerpt: Compare Stopwatch Cloud vs Server/Data Center features including field configuration, calendars, display options, and functionality.
 category: migration
 tags: [doc, cloud, time-tracking, stopwatch, feature-comparison, server-vs-cloud, functionality-differences, migration]
 ---
