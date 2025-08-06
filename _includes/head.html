@@ -209,8 +209,8 @@
       "contactType": "customer service"
     },
     "sameAs": [
-      {% if site.social.github %}"{{ site.social.github }}",{% endif %}
-      {% if site.social.youtube %}"{{ site.social.youtube }}",{% endif %}
+      {% if site.social.github %}"{{ site.social.github }}"{% if site.social.youtube or site.social.twitter %},{% endif %}{% endif %}
+      {% if site.social.youtube %}"{{ site.social.youtube }}"{% if site.social.twitter %},{% endif %}{% endif %}
       {% if site.social.twitter %}"{{ site.social.twitter }}"{% endif %}
     ]
   }
