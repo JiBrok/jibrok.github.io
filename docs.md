@@ -21,7 +21,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/message-field/messge-144px.png" alt="Message Field" width="72" height="72">
+                        <a href="/docs/message-field/overview/">
+                            <img src="/uploads/message-field/messge-144px.png" alt="Message Field" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/message-field/overview/" class="uk-link-reset">Message Field</a></h3>
                     <p class="uk-text-small">Display dynamic message banners on issue screens with HTML, conditions, and JavaScript support.</p>
@@ -35,7 +37,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status" width="72" height="72">
+                        <a href="/docs/time-in-status/overview/">
+                            <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/time-in-status/overview/" class="uk-link-reset">Time in Status</a></h3>
                     <p class="uk-text-small">Comprehensive time tracking with SLA, timers, stopwatches, and detailed reporting capabilities.</p>
@@ -49,7 +53,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF" width="72" height="72">
+                        <a href="/docs/calculated-custom-fields/overview/">
+                            <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/calculated-custom-fields/overview/" class="uk-link-reset">Calculated Fields (JBCF)</a></h3>
                     <p class="uk-text-small">Pack of calculated custom fields for advanced Jira customization and automation.</p>
@@ -63,7 +69,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/su/su-144px.png" alt="Switch User" width="72" height="72">
+                        <a href="/docs/su/overview/">
+                            <img src="/uploads/su/su-144px.png" alt="Switch User" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/su/overview/" class="uk-link-reset">Switch to User</a></h3>
                     <p class="uk-text-small">Secure user impersonation with delegation capabilities for Jira administrators.</p>
@@ -84,7 +92,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status Cloud" width="72" height="72">
+                        <a href="/docs/tis-cloud/overview/">
+                            <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status Cloud" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/tis-cloud/overview/" class="uk-link-reset">Time in Status Cloud</a></h3>
                     <p class="uk-text-small">Cloud version of our popular time tracking solution with SLA monitoring and reporting.</p>
@@ -98,7 +108,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF Cloud" width="72" height="72">
+                        <a href="/docs/jbcf-cloud/overview/">
+                            <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF Cloud" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/jbcf-cloud/overview/" class="uk-link-reset">JBCF Cloud</a></h3>
                     <p class="uk-text-small">Cloud version of calculated custom fields with powerful automation capabilities.</p>
@@ -112,7 +124,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/timer-cloud/timer.png" alt="Timer Cloud" width="72" height="72">
+                        <a href="/docs/timer-cloud/overview/">
+                            <img src="/uploads/timer-cloud/timer.png" alt="Timer Cloud" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/timer-cloud/overview/" class="uk-link-reset">Timer Cloud</a></h3>
                     <p class="uk-text-small">SLA timer fields with goal tracking and comprehensive reporting for Jira Cloud.</p>
@@ -126,7 +140,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="Stopwatch Cloud" width="72" height="72">
+                        <a href="/docs/stopwatch-cloud/overview/">
+                            <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="Stopwatch Cloud" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/stopwatch-cloud/overview/" class="uk-link-reset">Stopwatch Cloud</a></h3>
                     <p class="uk-text-small">Manual time tracking with pause/resume functionality for precise time measurement.</p>
@@ -140,7 +156,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="Time Between Dates" width="72" height="72">
+                        <a href="/docs/time-between-dates-cloud/overview/">
+                            <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="Time Between Dates" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/time-between-dates-cloud/overview/" class="uk-link-reset">Time Between Dates</a></h3>
                     <p class="uk-text-small">Calculate time differences between custom date fields with business calendar support.</p>
@@ -154,7 +172,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JSM Fields Panel" width="72" height="72">
+                        <a href="/docs/jsm-fields-panel-cloud/overview/">
+                            <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JSM Fields Panel" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/jsm-fields-panel-cloud/overview/" class="uk-link-reset">JSM Fields Panel</a></h3>
                     <p class="uk-text-small">Enhanced field panels for Jira Service Management with improved customer experience.</p>
@@ -168,7 +188,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="Display Linked Issues" width="72" height="72">
+                        <a href="/docs/linked-issues-cloud/overview/">
+                            <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="Display Linked Issues" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/linked-issues-cloud/overview/" class="uk-link-reset">Display Linked Issues</a></h3>
                     <p class="uk-text-small">Show linked issues with customizable field display and JQL-based filtering.</p>
@@ -182,7 +204,9 @@ hero:
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User Helper" width="72" height="72">
+                        <a href="/docs/user-helper-cloud/overview/">
+                            <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User Helper" width="72" height="72">
+                        </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/user-helper-cloud/overview/" class="uk-link-reset">User Helper</a></h3>
                     <p class="uk-text-small">Contextual help system for JiBrok cloud applications with user guidance features.</p>
