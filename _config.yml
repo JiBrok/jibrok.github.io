@@ -27,8 +27,8 @@ navbar:
   
 # Default author settings
 author:
+    type:           Organization
     name:           JiBrok
-    title:          Lead Developer  
     avatar:         vendor/jibrok-logo-with-white-background-144px.png
 
 # Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter

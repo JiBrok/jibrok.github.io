@@ -28,13 +28,6 @@
     {% endif %}
   {% endif %}
   
-  <!-- Twitter Card meta tags -->
-  <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}"/>
-  <meta name="twitter:site" content="@JiBrok_apps"/>
-  <meta name="twitter:creator" content="@JiBrok_apps"/>
-  <meta name="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% elsif site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
-  <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }} Logo{% endif %}"/>
-  
   <!-- Preload critical resources -->
   <link rel="preload" href="{{ "/assets/css/main.css" | relative_url }}" as="style">
   <link rel="preload" href="{{ "/assets/js/main.js" | relative_url }}" as="script">
