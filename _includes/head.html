@@ -60,9 +60,14 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Skip anchor links on the main page
-      if (window.location.pathname === '/' || window.location.pathname === '/index.html'
+      if (window.location.pathname === '/'
+          || window.location.pathname === '/index.html'
+          || window.location.pathname === '/privacy-policy/'
+          || window.location.pathname === '/EULA/'
+          || window.location.pathname === '/docs/'
+          || window.location.pathname === '/security/'
+          || window.location.pathname === '/contact/'
           || document.title === "404 - Page Not Found | JiBrok"
-          || document.title === "Documentation | JiBrok"
       ) {
         return;
       }
