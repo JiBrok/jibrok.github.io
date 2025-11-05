@@ -23,6 +23,20 @@ message-field:
     - message-field/script-runner-examples
     - message-field/refined-for-jira
 
+message-field-cloud:
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Panel for Jira Cloud" style="width:24px;height:24px"> Message Panel for Jira Cloud
+    docs:
+    - message-field-cloud/overview
+    - message-field-cloud/install
+    - message-field-cloud/configuration
+    - message-field-cloud/modules
+    - message-field-cloud/delegation
+
+  - title: Templates & Customization
+    docs:
+    - message-field-cloud/dynamic-templates
+    - message-field-cloud/template-examples
+
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
     docs:

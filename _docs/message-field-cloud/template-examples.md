@@ -596,67 +596,9 @@ key = "NONE"
 {% endif %}
 ```
 
-## Tips and Best Practices
-
-### Always Check for Null
-
-```
-❌ Bad:
-{{ issue.fields.assignee.displayName }}
-
-✅ Good:
-{{ issue.fields.assignee ? issue.fields.assignee.displayName : "Unassigned" }}
-
-✅ Also good:
-{% if issue.fields.assignee %}
-{{ issue.fields.assignee.displayName }}
-{% else %}
-Unassigned
-{% endif %}
-```
-
-### Use Default Filter
-
-```
-{{ issue.fields.duedate | default("No due date") }}
-{{ issue.fields.priority | default("No priority set") }}
-```
-
-### Format Dates Consistently
-
-```
-Created: {{ issue.fields.created | date("YYYY-MM-DD HH:mm") }}
-Updated: {{ issue.fields.updated | date("YYYY-MM-DD") }}
-```
-
-### Keep Templates Readable
-
-```
-✅ Good - well formatted:
-{% if condition %}
-  Message
-{% endif %}
-
-❌ Bad - hard to read:
-{% if condition %}Message{% endif %}
-```
-
 ## Next Steps
 
-- [Dynamic Templates Guide](/docs/user-docs/dynamic-templates/) - Learn template syntax
-- [Configuration Guide](/docs/user-docs/configuration/) - Set up panels
-- [Field Reference](/docs/user-docs/field-reference/) - Available fields
-
-## Need Help?
-
-Can't find the example you need?
-
-- 🎫 [Contact Support](https://jibrok.atlassian.net/servicedesk/customer/portals) - Request custom examples
-- 💬 [Community](https://community.atlassian.com/) - Share and discuss templates
-- 📖 [Template Engine Docs](/docs/user-docs/dynamic-templates/) - Learn advanced features
-
----
-
-**Pro tip:** Start with a simple example and gradually add features. Use the preview function to test your templates!
+- [Dynamic Templates Guide](/docs/message-field-cloud/dynamic-templates/) - Learn template syntax
+- [Configuration Guide](/docs/message-field-cloud/configuration/) - Set up panels
 
 {% endraw %}
