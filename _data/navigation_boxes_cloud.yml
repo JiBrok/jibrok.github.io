@@ -20,6 +20,11 @@
   icon: time-between-dates
   doc: time-between-dates-cloud/overview
 
+- title: Message Panel (Cloud)
+  desc: Display contextual messages and linked issue panels on Jira screens. Features dynamic templates, JQL queries, and module-based targeting.
+  icon: message-field-cloud
+  doc: message-field-cloud/overview
+
 - title: Calculated custom fields (JBCF Cloud)
   desc: Pack of fields for Jira Cloud
   icon: jbcf
