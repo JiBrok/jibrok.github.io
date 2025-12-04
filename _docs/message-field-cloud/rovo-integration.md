@@ -67,8 +67,6 @@ The skill will appear under "By Atlassian" → "Jira" in the skills selection di
 
 **Skill Name**: Analyze Message Panel
 
-**Action Key**: `getMessagePanel`
-
 **Description**: Retrieves Message Panel information for a Jira issue, including custom messages, instructions, work item data, and related work items (via link types or JQL queries). Supports nested queries and returns structured data for comprehensive analysis.
 
 **Required Parameters**:
