@@ -20,6 +20,10 @@ Dynamic templates allow you to create messages and JQL queries that adapt based 
 
 Message Panel uses a modern template engine with the following syntax:
 
+![Template Syntax Guide](/uploads/message-field-cloud/configuration/right%20panel%20syntax.png)
+
+**Quick Access**: The Template Syntax Guide is available directly in the panel configuration interface. Click the "Template Syntax Guide" tab when creating or editing a panel to see examples and documentation without leaving the page.
+
 ### Variables
 
 Output data using double curly braces:

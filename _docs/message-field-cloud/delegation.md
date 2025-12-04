@@ -53,12 +53,23 @@ Disabled by default, can enable for specific projects.
 
 ### For Site Administrators
 
-1. Go to **Apps** → **Message Panel Settings**
-2. Click **Delegation** tab
-3. Select policy from dropdown
-4. Click **Save**
+![Configuration Delegation Settings](/uploads/message-field-cloud/configuration/delegation%20settings.png)
 
-**For override policies**: Add projects to enable/disable list.
+1. Go to **Apps** → **Message Panel Settings**
+2. Click **Configuration Delegation** tab
+3. Select **Global Delegation Policy** from dropdown:
+   - **Enable for all projects, unless specified otherwise**
+   - **Disable for all projects**
+   - (Other policy options)
+4. Configure **Project-specific Settings** to override the global policy for individual projects
+5. Click **Save Settings**
+
+The delegation settings allow you to control which projects can access and configure message panels. You can:
+- Set a global policy for all projects
+- Optionally configure specific overrides for individual projects
+- Choose between "Use global setting", "Enable", or "Disable" for each project
+
+**For override policies**: Add projects to enable/disable list in the Project-specific Settings table.
 
 ### For Project Administrators
 
