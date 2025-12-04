@@ -8,6 +8,8 @@ tags: [doc, cloud, messaging, panels, linked-issues, jql, dynamic-templates, for
 
 An Atlassian Forge application for displaying custom messages and linked issue panels on Jira issue screens.
 
+**[Get it on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)**
+
 ## Key Features
 
 * Display linked issues in customizable tables
@@ -48,7 +50,7 @@ An Atlassian Forge application for displaying custom messages and linked issue p
 ### Administration
 - [Delegation](/docs/message-field-cloud/delegation/)
 
-## Support
+## Support & Links
 
-- [Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals)
-- [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1234567/message-panel)
+- [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview) - Get the app
+- [Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals) - Get help and report issues
