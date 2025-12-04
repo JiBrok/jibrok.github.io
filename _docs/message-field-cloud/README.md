@@ -26,7 +26,8 @@ Learn how to create dynamic, data-driven messages:
 Dive deeper into Message Panel capabilities:
 
 6. **[Display Modules](modules.md)** - Understanding Issue Panel, Activity, Context, and Action modules
-7. **[Delegation & Permissions](delegation.md)** - Project-based access control and delegation policies
+7. **[Rovo Integration](rovo-integration.md)** - AI-powered analysis with Atlassian Rovo agents
+8. **[Delegation & Permissions](delegation.md)** - Project-based access control and delegation policies
 
 ## 📖 Quick Links by Topic
 
@@ -50,6 +51,7 @@ Dive deeper into Message Panel capabilities:
 - [JQL Templates](template-examples.md#jql-templates)
 - [Complex Filtering](configuration.md#filtering)
 - [Modal Windows](configuration.md#modal-window-issue-panel-only)
+- [Rovo AI Integration](rovo-integration.md)
 
 ### Common Tasks
 
@@ -91,6 +93,13 @@ Find documentation for your specific use case:
 - **Component Status** → [Templates: Multi-Select](template-examples.md#multi-select-field)
 - **Project Metrics** → [Templates: Calculations](dynamic-templates.md#calculations)
 
+### AI & Automation
+
+- **AI-Powered Analysis** → [Rovo Integration](rovo-integration.md)
+- **Intelligent Agents** → [Rovo: Agent Configuration](rovo-integration.md#agent-configuration-examples)
+- **Recursive Dependency Tracking** → [Rovo: Recursive Queries](rovo-integration.md#example-use-cases)
+- **Automated Issue Analysis** → [Rovo: Automated Analysis](rovo-integration.md#example-use-cases)
+
 ## 🔍 Feature Index
 
 ### Configuration Features
@@ -125,6 +134,14 @@ Find documentation for your specific use case:
 | **Issue Context** | Quick reference | [Modules: Issue Context](modules.md#issue-context) |
 | **Issue Action** | User actions | [Modules: Issue Action](modules.md#issue-action) |
 
+### Advanced Features
+
+| Feature | Description | Documentation |
+|---------|-------------|---------------|
+| **Rovo AI Integration** | AI-powered analysis with Atlassian Rovo agents | [Rovo Integration](rovo-integration.md) |
+| **Recursive Queries** | Automatic multi-level linked issue analysis | [Rovo: Recursive Queries](rovo-integration.md) |
+| **Panel Instructions** | AI agents execute panel-defined analysis workflows | [Rovo: Panel Instructions](rovo-integration.md) |
+
 ## 🎓 Learning Path
 
 ### Beginner Path (15 minutes)
@@ -146,8 +163,9 @@ Find documentation for your specific use case:
 1. Master [Advanced Template Techniques](dynamic-templates.md#advanced-techniques)
 2. Create [JQL Templates](dynamic-templates.md#jql-templates) for dynamic queries
 3. Set up [Modal Windows](configuration.md#modal-window-issue-panel-only) for optional content
-4. Configure [Delegation](delegation.md) for project teams
-5. Optimize [Performance](configuration.md#performance)
+4. Integrate with [Atlassian Rovo](rovo-integration.md) for AI-powered analysis
+5. Configure [Delegation](delegation.md) for project teams
+6. Optimize [Performance](configuration.md#performance)
 
 ## 🔗 External Resources
 
@@ -155,6 +173,7 @@ Find documentation for your specific use case:
 
 - [Atlassian Forge Documentation](https://developer.atlassian.com/platform/forge/)
 - [Jira Cloud Platform](https://developer.atlassian.com/cloud/jira/platform/)
+- [Atlassian Rovo](https://www.atlassian.com/software/rovo) - AI-powered platform for intelligent agents
 - [JQL Documentation](https://support.atlassian.com/jira-software-cloud/docs/what-is-advanced-searching-in-jira-cloud/)
 - [Jira Permissions](https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/)
 
@@ -256,6 +275,7 @@ For licensing questions, visit the [Atlassian Marketplace](https://marketplace.a
 2. **Ready to install?** → Go to [Installation Guide](install.md)
 3. **Want to dive deep?** → Check out [Configuration Guide](configuration.md)
 4. **Looking for examples?** → Browse [Template Examples](template-examples.md)
+5. **Want AI-powered analysis?** → Explore [Rovo Integration](rovo-integration.md)
 
 **Happy configuring!** 🎉
 

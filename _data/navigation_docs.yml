@@ -37,6 +37,10 @@ message-field-cloud:
     - message-field-cloud/dynamic-templates
     - message-field-cloud/template-examples
 
+  - title: Advanced Features
+    docs:
+    - message-field-cloud/rovo-integration
+
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
     docs:
