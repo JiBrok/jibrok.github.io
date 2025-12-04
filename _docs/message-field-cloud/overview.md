@@ -18,6 +18,7 @@ An Atlassian Forge application for displaying custom messages and linked issue p
 * Multiple display locations (panels, activities, context menus)
 * Project and issue type targeting
 * Delegation to project admins
+* AI-powered analysis with Atlassian Rovo integration
 
 ## How It Works
 
@@ -34,7 +35,8 @@ An Atlassian Forge application for displaying custom messages and linked issue p
 3. **[Dynamic Templates](/docs/message-field-cloud/dynamic-templates/)** - Learn template syntax
 4. **[Template Examples](/docs/message-field-cloud/template-examples/)** - Ready-to-use examples
 5. **[Modules Guide](/docs/message-field-cloud/modules/)** - Display module locations
-6. **[Delegation](/docs/message-field-cloud/delegation/)** - Manage permissions
+6. **[Rovo Integration](/docs/message-field-cloud/rovo-integration/)** - AI-powered analysis
+7. **[Delegation](/docs/message-field-cloud/delegation/)** - Manage permissions
 
 ## Documentation
 
@@ -46,6 +48,9 @@ An Atlassian Forge application for displaying custom messages and linked issue p
 ### Templates & Customization
 - [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/)
 - [Template Examples](/docs/message-field-cloud/template-examples/)
+
+### Advanced Features
+- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis with Atlassian Rovo
 
 ### Administration
 - [Delegation](/docs/message-field-cloud/delegation/)

@@ -146,7 +146,7 @@ Choose where the panel appears in Jira:
 
 **Important**: Each panel configuration targets ONE specific module. To show the same content in multiple locations, create separate panel configurations for each module.
 
-See [Modules Guide](/docs/message-field-cloud/modules/) for detailed information about each module type and when to use them.
+See [Modules Guide](/docs/message-field-cloud/modules/) for detailed information about each module type with visual examples showing how they appear in Jira.
 
 ### Pagination
 - **Rows Per Page** - Number of issues per page (default: 10)
@@ -357,4 +357,5 @@ Click **...** menu → **Delete** to remove permanently.
 - [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/) - Add dynamic content
 - [Template Examples](/docs/message-field-cloud/template-examples/) - Ready-to-use templates
 - [Modules](/docs/message-field-cloud/modules/) - Display locations
+- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis
 - [Delegation](/docs/message-field-cloud/delegation/) - Project admin access

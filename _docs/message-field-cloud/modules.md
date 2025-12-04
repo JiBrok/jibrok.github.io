@@ -12,11 +12,13 @@ tags: [doc, cloud, modules, display-locations, forge-modules]
 
 ## Available Modules
 
-Message Panel uses Atlassian Forge modules to display panels in different locations on Jira issue screens.
+Message Panel uses Atlassian Forge modules to display panels in different locations on Jira issue screens. Below are detailed descriptions of each module with visual examples showing how they appear in Jira.
 
 ### Issue Panel
 
 **Location**: Right sidebar on issue view screen
+
+![Issue Panel Example](/uploads/message-field-cloud/configuration/example%20issue%20panel.png)
 
 **Characteristics**:
 - Main display location
@@ -29,47 +31,66 @@ Message Panel uses Atlassian Forge modules to display panels in different locati
 - Linked issues tables
 - Detailed dashboards
 
+**Example**: The screenshot shows a "Message panel" displayed in the right sidebar with issue information including summary, status, priority, dates, and other custom fields.
+
 ### Issue Activity
 
 **Location**: Activity feed timeline
+
+![Issue Activity Example](/uploads/message-field-cloud/configuration/example%20issue%20activity.png)
 
 **Characteristics**:
 - Appears in activity/comments section
 - Inline display only
 - Mixed with comments and history
+- Displays as a separate tab in the Activity section
 
 **When to use**:
 - Recent changes summary
 - Activity-related info
 - Timeline context
 
+**Example**: The screenshot shows a "Message Panel" tab in the Activity section alongside "All", "Comments", "History", "Work log", and "Approvals" tabs. The panel displays issue information directly in the activity timeline.
+
 ### Issue Context
 
-**Location**: Context menu (more actions)
+**Location**: Right sidebar context panel
+
+![Issue Context Example](/uploads/message-field-cloud/configuration/example%20issue%20context.png)
 
 **Characteristics**:
-- Appears in "..." menu
-- Compact quick view
-- Fast access
+- Appears in the right sidebar context panel
+- Collapsible/expandable section
+- Displays alongside other sidebar panels (Details, Automation, etc.)
+- Fast access to contextual information
 
 **When to use**:
 - Optional information
 - Quick reference data
 - Supplementary details
+- Contextual issue information
+
+**Example**: The screenshot shows a "Message Panel" section in the right sidebar context panel, positioned below "Automation" and displaying issue details in a collapsible format.
 
 ### Issue Action
 
-**Location**: Issue actions menu
+**Location**: Issue actions toolbar
+
+![Issue Action Example](/uploads/message-field-cloud/configuration/example%20issue%20panel%20button.png)
 
 **Characteristics**:
-- Adds custom action button
+- Adds custom action button to the toolbar
 - Opens on-click
-- User-initiated
+- User-initiated interaction
+- Appears alongside standard actions like "Create subtask" and "Link work item"
 
 **When to use**:
 - User-triggered displays
 - On-demand queries
 - Interactive tools
+- Actions that require explicit user interaction
+
+**Example**: The screenshot shows a "Message panel" button in the issue toolbar, positioned after "Create subtask", "Link work item", and "Create" buttons. Clicking this button opens the message panel.
 
 ## Enabling Modules
 
@@ -150,3 +171,4 @@ Display panels in modal dialogs:
 - [Configuration Guide](/docs/message-field-cloud/configuration/) - Set up panels
 - [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/) - Add dynamic content
 - [Template Examples](/docs/message-field-cloud/template-examples/) - Ready-to-use examples
+- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis

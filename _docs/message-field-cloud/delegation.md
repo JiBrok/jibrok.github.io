@@ -111,3 +111,4 @@ Project admins can create JQL queries that return issues from any project, but:
 - [Configuration Guide](/docs/message-field-cloud/configuration/) - Learn to create panels
 - [Modules Guide](/docs/message-field-cloud/modules/) - Understand display locations
 - [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/) - Add dynamic content
+- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis
