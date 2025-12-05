@@ -124,6 +124,26 @@ Always start by calling the getLinkedIssuesPanel action with the available issue
 
 > **Note**: The agent may not appear immediately after app installation. It can take up to 24 hours for the agent to become available in your Rovo interface.
 
+### Using the Agent
+
+#### Step 1: Configure Panel Description with Commands
+
+![Panel Description with Agent Commands](/uploads/message-field-cloud/configuration/rovo%20description%20example.png)
+
+In the panel configuration, you can add commands in the **Description** field that the agent will execute when analyzing this panel. These instructions guide the agent's analysis behavior — for example, you can specify what aspects to focus on, how to format the output, or what recommendations to provide.
+
+#### Step 2: Request Analysis from the Agent
+
+![Chat Command Example](/uploads/message-field-cloud/configuration/rovo%20chat%20command%20example.png)
+
+To start the analysis, send a message to the agent with the **panel name** and **issue key**. The agent will use the Analyze Message Panel action to retrieve data and execute the commands defined in the panel description.
+
+#### Step 3: Review the Analysis Results
+
+![Agent Response Example](/uploads/message-field-cloud/configuration/rovo%20respopnse%20example.png)
+
+The agent returns a comprehensive analysis based on your panel configuration and the commands specified in the description. The response includes rendered panel messages, linked issue data, field values, and insights generated according to your instructions.
+
 ---
 
 ## Adding the Skill to Your Rovo Agent
