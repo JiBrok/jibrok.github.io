@@ -49,6 +49,38 @@ When you add the "Analyze Message Panel" skill to your Rovo agent, it can:
 - Answer questions about panel content
 - Make intelligent recommendations based on panel instructions
 
+## Message Panel Agent
+
+Message Panel includes a pre-built Rovo agent that's ready to use out of the box. This agent is automatically available after installing the app (note: the agent may take up to 24 hours to appear after installation).
+
+![Message Panel Agent](/uploads/message-field-cloud/configuration/rovo%20agent%20Message%20Panel%20Agent.png)
+
+### Agent Details
+
+**Name**: Message Panel Agent
+
+**Description**: Provides access to Message Panel data: custom messages, instructions, work item fields, and related items via link types or JQL queries. Supports nested queries for analysis.
+
+**Icon**: Custom Message Panel icon
+
+### Conversation Starters
+
+The agent comes with predefined conversation starters to help users get started:
+- "Analyze linked issues for this configuration"
+- "Show me the relationship tree for this issue"
+- "What are the dependencies for this issue?"
+- "Analyze impact of changes to this issue"
+- "Find all blocked issues in this chain"
+- "Show me the complete issue hierarchy"
+
+### Available Actions
+
+The Message Panel Agent uses the **Analyze Message Panel** action (see the [Skill Details](#skill-details) section below for full documentation of this action).
+
+> **Note**: The agent may not appear immediately after app installation. It can take up to 24 hours for the agent to become available in your Rovo interface.
+
+---
+
 ## Adding the Skill to Your Rovo Agent
 
 ![Add Message Panel Skill to Rovo Agent](/uploads/message-field-cloud/configuration/rovo%20action%20Analyze%20Message%20Panel.png)
