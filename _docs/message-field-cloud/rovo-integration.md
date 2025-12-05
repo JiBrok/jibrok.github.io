@@ -102,7 +102,7 @@ When you receive response.message containing HTML:
 
 ## Data collection workflow:
 - **Required inputs**: Issue key (from user or current screen context) and config/panel name
-- **API interaction**: Call getLinkedIssuesPanel action with these parameters
+- **API interaction**: Call getMessagePanel action with these parameters
 - **Response processing**: Handle JSON response containing linkedIssues, fieldValues, message, and description
 - **Deep analysis**: If needed, make additional API calls to get detailed information for discovered issues
 - **Recursive exploration**: For comprehensive analysis, call the same action with the same config for all discovered linked issues to build a relationship graph/tree of desired depth
@@ -119,7 +119,7 @@ When you receive response.message containing HTML:
 - Highlight important relationships and patterns found in the linked issues
 - Include visual representations of issue hierarchies when relevant
 
-Always start by calling the getLinkedIssuesPanel action with the available issue key and config name.
+Always start by calling the getMessagePanel action with the available issue key and config name.
 ```
 
 > **Note**: The agent may not appear immediately after app installation. It can take up to 24 hours for the agent to become available in your Rovo interface.
