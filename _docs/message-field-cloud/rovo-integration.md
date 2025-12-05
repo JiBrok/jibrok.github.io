@@ -132,6 +132,11 @@ Always start by calling the getLinkedIssuesPanel action with the available issue
 
 In the panel configuration, you can add commands in the **Description** field that the agent will execute when analyzing this panel. These instructions guide the agent's analysis behavior — for example, you can specify what aspects to focus on, how to format the output, or what recommendations to provide.
 
+**Example description:**
+```
+When you're asked to analyze the Panel, please say "Hello, user!" (use user name), mention today's date, and state whether there are all linked issues related to the current one being issue.
+```
+
 #### Step 2: Request Analysis from the Agent
 
 ![Chat Command Example](/uploads/message-field-cloud/configuration/rovo%20chat%20command%20example.png)
