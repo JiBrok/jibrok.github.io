@@ -1,61 +1,82 @@
 ---
-title: Message Panel for Jira Cloud
+title: Overview
 key: message-field-cloud
-excerpt: "Display contextual messages and linked issues on Jira screens. Features dynamic templates, JQL queries, and custom targeting."
+excerpt: Learn what Message Panel for Jira Cloud does and how it helps your team
 category: getting-started
-tags: [doc, cloud, messaging, panels, linked-issues, jql, dynamic-templates, forge]
+tags:
+  - doc
+  - cloud
+  - overview
+  - introduction
 ---
 
-An Atlassian Forge application for displaying custom messages and linked issue panels on Jira issue screens.
+# Overview
+{:.no_toc}
+
+* TOC
+{:toc}
+
+## What is Message Panel?
+
+Message Panel is a Jira Cloud app that displays dynamic information panels on issues. It helps teams communicate important context, warnings, and related data directly where work happens.
 
 **[Get it on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)**
 
+Use it to:
+- Show warnings and blockers prominently on issues
+- Display related issues from JQL queries
+- Present linked issues in organized tables
+- Guide users with contextual instructions
+- Automate information display based on conditions
+
 ## Key Features
 
-* Display linked issues in customizable tables
-* Query issues via JQL and show results
-* Dynamic templates with real-time issue data
-* Multiple display locations (panels, activities, context menus)
-* Project and issue type targeting
-* Delegation to project admins
-* AI-powered analysis with Atlassian Rovo integration
+| Feature | Description |
+|---------|-------------|
+| **Dynamic Templates** | Use `{% raw %}{{ issue.fields.status.name }}{% endraw %}` syntax to show live issue data |
+| **Multiple Data Sources** | Display linked issues, JQL results, or custom messages |
+| **Display Modules** | Jira modules (Issue Panel, Activity, Context, Action) and JSM Portal modules |
+| **Conditional Display** | Show panels only for specific projects, issue types, or JQL conditions |
+| **User Field Visibility** | Show panels only when viewing user is in specific fields |
+| **Enable/Disable** | Toggle configurations on/off without deleting them |
+| **Modal Windows** | Display important information in pop-up dialogs (Issue Panel) |
+| **Message Formats** | Plain text, HTML, Markdown, or ADF formatting |
+| **Delegation** | Allow project admins to manage their own panels |
+| **Rovo Integration** | AI-powered actions for analysis and automation |
+
+## Use Cases
+
+**For Development Teams:**
+- Show blocking issues that must be resolved first
+- Display epic progress and child issue summaries
+- Link related bugs and features
+
+**For Support Teams:**
+- Show customer information from linked tickets
+- Display SLA warnings and escalation notices
+- Guide agents with resolution instructions
+
+**For Project Managers:**
+- Present dependency information
+- Show milestone and deadline reminders
+- Display team workload summaries
 
 ## How It Works
 
-1. **Configure Panels** - Create configurations in admin settings
-2. **Choose Data Source** - Select linked issues or JQL query
-3. **Select Fields** - Pick which fields to display
-4. **Add Messages** - Write dynamic messages with templates
-5. **Enable Modules** - Activate panels on issue screens
+1. **Create a configuration** in the admin page
+2. **Choose a data source**: linked issues, JQL query, or message only
+3. **Set display conditions**: which projects and issue types
+4. **Add dynamic content** using template syntax
+5. **Enable the module** where you want it to appear
 
-## Getting Started
+## Next Steps
 
-1. **[Installation Guide](/docs/message-field-cloud/install/)** - Install and configure Message Panel
-2. **[Configuration](/docs/message-field-cloud/configuration/)** - Create your first panel
-3. **[Dynamic Templates](/docs/message-field-cloud/dynamic-templates/)** - Learn template syntax
-4. **[Template Examples](/docs/message-field-cloud/template-examples/)** - Ready-to-use examples
-5. **[Modules Guide](/docs/message-field-cloud/modules/)** - Display module locations
-6. **[Rovo Integration](/docs/message-field-cloud/rovo-integration/)** - AI-powered analysis
-7. **[Delegation](/docs/message-field-cloud/delegation/)** - Manage permissions
+- [Getting Started](getting-started) - Create your first panel in 5 minutes
+- [Modules](modules) - Learn about display locations
+- [Templates](templates) - Master dynamic content
+- [Use Cases](use-cases) - Examples and best practices
 
-## Documentation
-
-### Getting Started
-- [Installation Guide](/docs/message-field-cloud/install/)
-- [Configuration](/docs/message-field-cloud/configuration/)
-- [Modules](/docs/message-field-cloud/modules/)
-
-### Templates & Customization
-- [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/)
-- [Template Examples](/docs/message-field-cloud/template-examples/)
-
-### Advanced Features
-- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis with Atlassian Rovo
-
-### Administration
-- [Delegation](/docs/message-field-cloud/delegation/)
-
-## Support & Links
+## Support
 
 - [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview) - Get the app
 - [Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals) - Get help and report issues

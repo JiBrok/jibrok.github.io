@@ -1,56 +1,69 @@
 ---
 title: Display Modules
 key: message-field-cloud
-excerpt: "Understand different display locations for Message Panel: Issue Panel, Activity, Context, and Action modules."
+excerpt: Learn about all display locations including Jira and JSM Portal modules
 category: configuration
-tags: [doc, cloud, modules, display-locations, forge-modules]
+tags:
+  - doc
+  - cloud
+  - modules
+  - jsm
+  - display-locations
 ---
 
+# Display Modules
 {:.no_toc}
+
 * TOC
 {:toc}
 
-## Available Modules
+Message Panel can display in multiple locations across Jira and Jira Service Management.
 
-Message Panel uses Atlassian Forge modules to display panels in different locations on Jira issue screens. Below are detailed descriptions of each module with visual examples showing how they appear in Jira.
+## Module Overview
+
+| Module | Location | Supports Modal |
+|--------|----------|----------------|
+| **Issue Panel** | Right sidebar | Yes |
+| **Issue Activity** | Activity feed tab | No |
+| **Issue Context** | Context panel | No |
+| **Issue Action** | Toolbar button | No |
+| **JSM Portal Panel** | Request details page | No |
+| **JSM Portal Footer** | Portal page footer | No |
+| **JSM Portal Subheader** | Portal page subheader | No |
+
+---
+
+## Jira Modules
 
 ### Issue Panel
 
-**Location**: Right sidebar on issue view screen
+**Location**: Right sidebar on issue view
 
 ![Issue Panel Example](/uploads/message-field-cloud/configuration/example%20issue%20panel.png)
 
-**Characteristics**:
-- Main display location
+**Features**:
 - Collapsible/expandable panels
 - Supports modal windows
 - Best for detailed information
 
-**When to use**:
-- Main data displays
-- Linked issues tables
-- Detailed dashboards
+**Use for**: Main data displays, linked issues tables, dashboards
 
-**Example**: The screenshot shows a "Message panel" displayed in the right sidebar with issue information including summary, status, priority, dates, and other custom fields.
+---
 
 ### Issue Activity
 
-**Location**: Activity feed timeline
+**Location**: Tab in Activity section
 
 ![Issue Activity Example](/uploads/message-field-cloud/configuration/example%20issue%20activity.png)
 
-**Characteristics**:
-- Appears in activity/comments section
-- Inline display only
-- Mixed with comments and history
-- Displays as a separate tab in the Activity section
+**Features**:
+- Appears alongside Comments, History tabs
+- Inline display
+- Good for activity context
 
-**When to use**:
-- Recent changes summary
-- Activity-related info
-- Timeline context
+**Use for**: Recent changes, timeline context
 
-**Example**: The screenshot shows a "Message Panel" tab in the Activity section alongside "All", "Comments", "History", "Work log", and "Approvals" tabs. The panel displays issue information directly in the activity timeline.
+---
 
 ### Issue Context
 
@@ -58,117 +71,139 @@ Message Panel uses Atlassian Forge modules to display panels in different locati
 
 ![Issue Context Example](/uploads/message-field-cloud/configuration/example%20issue%20context.png)
 
-**Characteristics**:
-- Appears in the right sidebar context panel
-- Collapsible/expandable section
-- Displays alongside other sidebar panels (Details, Automation, etc.)
-- Fast access to contextual information
+**Features**:
+- Collapsible section
+- Alongside Details, Automation panels
+- Quick access
 
-**When to use**:
-- Optional information
-- Quick reference data
-- Supplementary details
-- Contextual issue information
+**Use for**: Reference data, supplementary details
 
-**Example**: The screenshot shows a "Message Panel" section in the right sidebar context panel, positioned below "Automation" and displaying issue details in a collapsible format.
+---
 
 ### Issue Action
 
-**Location**: Issue actions toolbar
+**Location**: Issue toolbar
 
 ![Issue Action Example](/uploads/message-field-cloud/configuration/example%20issue%20panel%20button.png)
 
-**Characteristics**:
-- Adds custom action button to the toolbar
-- Opens on-click
-- User-initiated interaction
-- Appears alongside standard actions like "Create subtask" and "Link work item"
+**Features**:
+- Custom action button
+- Opens on click
+- User-initiated
 
-**When to use**:
-- User-triggered displays
-- On-demand queries
-- Interactive tools
-- Actions that require explicit user interaction
+**Use for**: On-demand queries, interactive tools
 
-**Example**: The screenshot shows a "Message panel" button in the issue toolbar, positioned after "Create subtask", "Link work item", and "Create" buttons. Clicking this button opens the message panel.
+---
+
+## JSM Portal Modules
+
+These modules display on the customer-facing Jira Service Management portal.
+
+### Portal Request Detail Panel
+
+**Location**: Request details page in customer portal
+
+**Features**:
+- Visible to customers viewing their requests
+- Shows alongside request details
+- Supports templates with request data
+
+**Use for**:
+- Customer instructions
+- SLA information
+- Related articles or links
+
+---
+
+### Portal Footer
+
+**Location**: Bottom of portal pages
+
+**Features**:
+- Appears on all portal pages
+- Global visibility
+- Static or dynamic content
+
+**Use for**:
+- Contact information
+- Legal notices
+- Help links
+
+---
+
+### Portal Subheader
+
+**Location**: Below portal header
+
+**Features**:
+- Prominent placement
+- Visible before request details
+- Good for announcements
+
+**Use for**:
+- Service announcements
+- Maintenance notices
+- Important updates
+
+---
 
 ## Enabling Modules
 
-### Global Module Settings
+### Global Settings
 
 ![Module Settings](/uploads/message-field-cloud/configuration/module%20settings.png)
 
 1. Go to **Apps** → **Message Panel Settings**
 2. Click the **Module Settings** tab
-3. Toggle modules on/off:
-   - **Issue Panel** - Displays messages as a collapsible panel on the issue view page
-   - **Issue Activity** - Shows messages in the activity stream section of the issue
-   - **Issue Context Panel** - Displays messages in the context panel on the right side of the issue view
-   - **Issue Action** - Adds an action button to the issue toolbar for viewing messages
+3. Toggle modules on/off
 4. Click **Save Settings**
 
-**Note**: Disabled modules won't appear anywhere, even if configurations target them. Configure which modules are enabled for displaying message panels in your Jira instance. These settings control where and how the panels appear in the issue view.
+Disabled modules won't display anywhere, even with configurations targeting them.
 
-### Per-Configuration Module Selection
+### Per-Configuration
 
-Each configuration specifies which module to use:
+Each configuration specifies its display module:
 
 1. Edit or create a configuration
-2. Find **Display Module** setting
-3. Select one module from dropdown
-4. Save configuration
+2. Find **Display Module** dropdown
+3. Select one module
+4. Save
 
-## Module Behavior
+---
 
-### Visibility Rules - Where and When Panels Appear
+## Visibility Rules
 
-Understanding panel visibility requires knowing TWO key concepts:
+A panel appears when **ALL** conditions are met:
 
-**WHERE** = Display Module (Issue Panel, Activity, Context, or Action)
-**WHEN** = Context Filters (Projects, Issue Types, JQL conditions)
+1. Module is enabled globally
+2. Configuration targets that module
+3. Project filter matches (if specified)
+4. Issue type filter matches (if specified)
+5. Display JQL condition matches (if specified)
+6. User field condition matches (if specified)
+7. Request type matches (JSM only, if specified)
 
-A panel appears when ALL of these conditions are met:
-
-1. **Module is enabled globally** - The module type must be turned on in Module Settings
-2. **Configuration targets that module** - The panel config must select that specific module
-3. **Project filter matches** - Issue must be in selected projects (if any specified)
-4. **Issue type filter matches** - Issue must have selected type (if any specified)
-5. **Display JQL matches** - Issue must match JQL condition (if any specified)
-6. **User field condition matches** - Current user must be in specified fields (if any specified)
-
-**Example**: You have a panel configured with:
-- Display Module: Issue Panel
+**Example**: Panel with:
+- Module: Issue Panel
 - Projects: "Marketing"
 - Display JQL: `status = "In Progress"`
 
-This panel will appear in the **right sidebar** (Issue Panel location) ONLY when viewing issues from the "Marketing" project that have status "In Progress".
+Shows in right sidebar **only** for Marketing issues with status "In Progress".
 
-### Multiple Panels
+---
+
+## Multiple Panels
 
 Multiple configurations can target the same module:
 
-- **Ordering**: By weight (lower first), then alphabetically
-- **Collapsible**: Each panel can be collapsed independently (Issue Panel only)
+- **Order**: By weight (lower first), then alphabetically
+- **Collapsing**: Each panel collapses independently (Issue Panel only)
 
-## Module-Specific Features
-
-### Issue Panel - Modal Windows
-
-Display panels in modal dialogs:
-
-**Options**:
-- **Show in Modal** - Enable modal window
-- **Modal Button Text** - Custom button label
-- **Button Appearance** - Visual style
-- **Modal Size** - Small/Medium/Large/X-Large
-- **Auto-Open** - Open automatically on issue load
-- **Show Once Per Issue** - Only auto-open once
-
-**Example use case**: Critical blockers warning with auto-open and danger appearance.
+---
 
 ## Next Steps
 
-- [Configuration Guide](/docs/message-field-cloud/configuration/) - Set up panels
-- [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/) - Add dynamic content
-- [Template Examples](/docs/message-field-cloud/template-examples/) - Ready-to-use examples
-- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis
+- [Configuration Basics](configuration-basics) - Create panel configurations
+- [Context Filters](context-filters) - Control when panels appear
+- [Modal Windows](modal-windows) - Pop-up dialogs (Issue Panel only)
+- [JSM Integration](jsm-integration) - Detailed JSM setup

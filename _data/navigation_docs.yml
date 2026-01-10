@@ -27,19 +27,33 @@ message-field-cloud:
   - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Panel for Jira Cloud" style="width:24px;height:24px"> Message Panel for Jira Cloud
     docs:
     - message-field-cloud/overview
-    - message-field-cloud/install
-    - message-field-cloud/configuration
-    - message-field-cloud/modules
-    - message-field-cloud/delegation
+    - message-field-cloud/getting-started
 
-  - title: Templates & Customization
+  - title: Configuration
     docs:
-    - message-field-cloud/dynamic-templates
-    - message-field-cloud/template-examples
+    - message-field-cloud/configuration-basics
+    - message-field-cloud/modules
+    - message-field-cloud/data-sources
+    - message-field-cloud/context-filters
+    - message-field-cloud/message-formats
+
+  - title: Templates
+    docs:
+    - message-field-cloud/templates
 
   - title: Advanced Features
     docs:
+    - message-field-cloud/modal-windows
+    - message-field-cloud/jsm-integration
     - message-field-cloud/rovo-integration
+
+  - title: Administration
+    docs:
+    - message-field-cloud/delegation
+
+  - title: Guides
+    docs:
+    - message-field-cloud/use-cases
 
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch

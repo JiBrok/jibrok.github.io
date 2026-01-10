@@ -1,9 +1,14 @@
 ---
-title: Delegation and Permissions
+title: Delegation
 key: message-field-cloud
-excerpt: "Delegate Message Panel management to project admins with project-based permissions."
+excerpt: Allow project admins to manage their own panel configurations
 category: administration
-tags: [doc, cloud, delegation, permissions, project-admin, administration]
+tags:
+  - doc
+  - cloud
+  - delegation
+  - permissions
+  - administration
 ---
 
 {:.no_toc}
@@ -29,23 +34,23 @@ Delegation allows site administrators to grant project administrators the abilit
 
 ## Delegation Policies
 
-### ENABLE_ALL
-Delegation enabled for all projects.
+### Enable for All Projects
+Delegation enabled for all projects. All project administrators can manage panels for their projects.
 
 **Use when**: You trust all project admins and want self-service configuration.
 
-### DISABLE_ALL
+### Disable for All Projects
 Delegation disabled for all projects. Only site admins can manage panels.
 
 **Use when**: Strict governance required and centralized control needed.
 
-### ENABLE_OVERRIDE
-Enabled by default, can disable for specific projects.
+### Enable with Exceptions
+Enabled by default, with ability to disable for specific projects.
 
 **Use when**: Most projects should have access, few projects need restriction.
 
-### DISABLE_OVERRIDE
-Disabled by default, can enable for specific projects.
+### Disable with Exceptions
+Disabled by default, with ability to enable for specific projects.
 
 **Use when**: Want controlled rollout or testing delegation feature.
 
@@ -108,7 +113,7 @@ Project admins can create JQL queries that return issues from any project, but:
 
 ## Next Steps
 
-- [Configuration Guide](/docs/message-field-cloud/configuration/) - Learn to create panels
-- [Modules Guide](/docs/message-field-cloud/modules/) - Understand display locations
-- [Dynamic Templates](/docs/message-field-cloud/dynamic-templates/) - Add dynamic content
-- [Rovo Integration](/docs/message-field-cloud/rovo-integration/) - AI-powered analysis
+- [Configuration Basics](configuration-basics) - Create panel configurations
+- [Modules](modules) - Display locations
+- [Templates](templates) - Dynamic content
+- [Use Cases](use-cases) - Examples and best practices
