@@ -46,7 +46,7 @@ An application for displaying messages on Jira issue screens.
 [comment]: <> (<p style="text-align: center;"><iframe width="600" height="315" src="https://www.youtube.com/embed/PogUyk9eD7U?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>)
 
 
-📌 Message Field places contextual banners and notices on any Jira or JSM issue screen—no coding required.
+📌 Message Field places contextual banners and notices on any Jira or JSM issue screen-no coding required.
 
 🎯 Deliver onboarding hints, SLA warnings, release notes, or branded announcements with just a few clicks.
 
@@ -58,7 +58,7 @@ An application for displaying messages on Jira issue screens.
 
 🔗 Integrations with external apps open endless possibilities, from highlighting priorities to preventing missing attachments.
 
-🚀 Empower your team to reduce ticket ping‑pong, guide reporters effectively, and speed up resolutions—exactly where it matters.
+🚀 Empower your team to reduce ticket ping‑pong, guide reporters effectively, and speed up resolutions-exactly where it matters.
 
 🌟 Experience streamlined communication and a personalized portal that keeps everyone in sync.
 
