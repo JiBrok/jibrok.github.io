@@ -6,17 +6,11 @@
 #- title: Docs
 #  url: /docs/message-field/overview
 
-- title: Privacy policy
-  url: /privacy-policy/
-
-- title: EULA
-  url: /EULA/
+- title: Trust Center
+  url: /trust-center/
 
 #- title: Blog
 #  url: /blog/
-
-- title: Security and SOC Reports
-  url: /security/
 
 - title: Status Page
   url: https://jibrok.statuspage.io/

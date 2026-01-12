@@ -10,14 +10,8 @@ left:
 #  - title: Blog
 #    url: /blog/
 
-  - title: Privacy policy
-    url: /privacy-policy/
-
-  - title: EULA
-    url: /EULA/
-
-  - title: Security and SOC Reports
-    url: /security/
+  - title: Trust Center
+    url: /trust-center/
 
 
 # Navbar right menu navigation links
