@@ -38,6 +38,21 @@ Atlassian Rovo is an AI-powered platform that helps teams work smarter with inte
 
 ---
 
+## Message Panel Assistant
+
+The Message Panel Assistant is an AI-powered tool built into the admin settings. It helps you create and update panel configurations by generating templates with issue variables, loops, and conditions based on your natural language requests.
+
+![Message Panel Assistant](/uploads/message-field-cloud/configuration/message-panel-assistant.png)
+
+**How to use:**
+1. Open Message Panel Settings in Jira admin
+2. Click the Assistant icon to open the AI panel
+3. Describe what template you need in plain language
+4. Review the generated configuration
+5. Apply changes directly to your panel
+
+---
+
 ## Message Panel Agent
 
 Message Panel includes a pre-built Rovo agent ready to use.
