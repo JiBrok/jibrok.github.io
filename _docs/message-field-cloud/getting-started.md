@@ -10,9 +10,6 @@ tags:
   - quickstart
 ---
 
-# Getting Started
-{:.no_toc}
-
 * TOC
 {:toc}
 

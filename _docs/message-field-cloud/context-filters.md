@@ -11,9 +11,6 @@ tags:
   - jql
 ---
 
-# Context Filters
-{:.no_toc}
-
 * TOC
 {:toc}
 

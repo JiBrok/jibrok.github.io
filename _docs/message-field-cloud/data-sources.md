@@ -11,9 +11,6 @@ tags:
   - data-sources
 ---
 
-# Data Sources
-{:.no_toc}
-
 * TOC
 {:toc}
 
@@ -69,6 +66,8 @@ This shows all issues that block the current issue.
 ## JQL Query
 
 Display issues matching any JQL search.
+
+![JQL Settings](/uploads/message-field-cloud/configuration/panel%20settings%20jql.png)
 
 ### Basic Query
 
@@ -236,6 +235,8 @@ Choose which columns appear in the issue table.
 ### Display Fields
 
 Show current issue data above the table.
+
+![Display Fields Settings](/uploads/message-field-cloud/configuration/panel%20settings%20display%20fields.png)
 
 These are fields from the **current issue** (not the linked issues), displayed in a compact format above the table.
 

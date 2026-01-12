@@ -11,9 +11,6 @@ tags:
   - conditions
 ---
 
-# Dynamic Templates
-{:.no_toc}
-
 * TOC
 {:toc}
 

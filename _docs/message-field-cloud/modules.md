@@ -11,9 +11,6 @@ tags:
   - display-locations
 ---
 
-# Display Modules
-{:.no_toc}
-
 * TOC
 {:toc}
 

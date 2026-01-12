@@ -12,9 +12,6 @@ tags:
   - adf
 ---
 
-# Message Formats
-{:.no_toc}
-
 * TOC
 {:toc}
 
@@ -62,6 +59,8 @@ Please check the issue details.
 ## HTML
 
 Full HTML support with inline styles.
+
+![HTML Message Settings](/uploads/message-field-cloud/configuration/panel%20settings%20message%20html.png)
 
 ### Basic Tags
 
@@ -153,6 +152,64 @@ Full HTML support with inline styles.
 ```
 {% endraw %}
 
+### Section Messages
+
+Use the `<section-message>` tag for Atlassian-styled highlighted message blocks with icons.
+
+![Section Message Examples](/uploads/message-field-cloud/configuration/section%20message%20examples.png)
+
+**Basic Syntax:**
+{% raw %}
+```html
+<section-message appearance="warning" title="Attention">
+  This issue requires review before release
+</section-message>
+```
+{% endraw %}
+
+**Available Appearances:**
+
+| Appearance | Description | Aliases |
+|------------|-------------|---------|
+| `info` | Blue informational message | `information` |
+| `warning` | Yellow warning message | - |
+| `error` | Red error message | - |
+| `success` | Green success message | `confirmation` |
+| `change` | Purple change/discovery message | `discovery`, `note` |
+
+**Examples:**
+
+{% raw %}
+```html
+<!-- Info message with title -->
+<section-message appearance="info" title="Note">
+  This issue is part of the current sprint
+</section-message>
+
+<!-- Warning without title -->
+<section-message appearance="warning">
+  Due date is approaching - {{ issue.fields.duedate | date("MMM dd") }}
+</section-message>
+
+<!-- Error message -->
+<section-message appearance="error" title="Blocked">
+  This issue is blocked by {{ linkedIssues | len }} unresolved issues
+</section-message>
+
+<!-- Success message -->
+<section-message appearance="success">
+  All acceptance criteria have been met
+</section-message>
+
+<!-- Change/Discovery message -->
+<section-message appearance="change" title="Update">
+  New feature available in this release
+</section-message>
+```
+{% endraw %}
+
+> **Tip:** Section messages provide native Atlassian styling without writing custom CSS. They're the recommended way to create highlighted message blocks.
+
 ### When to Use HTML
 
 - Complex layouts and styling
@@ -165,6 +222,8 @@ Full HTML support with inline styles.
 ## Markdown
 
 GitHub-flavored Markdown syntax.
+
+![Markdown Message Settings](/uploads/message-field-cloud/configuration/panel%20settings%20message%20markdown.png)
 
 ### Basic Formatting
 
@@ -346,8 +405,10 @@ JSON-based format for advanced Atlassian-native formatting.
 | Formatting | None | Full | Basic | Full |
 | Colors | No | Yes | No | Limited |
 | Tables | No | Yes | Yes | Yes |
-| Atlassian panels | No | No | No | Yes |
+| Atlassian panels | No | Yes* | No | Yes |
 | Template support | Yes | Yes | Yes | Limited |
+
+*HTML supports Atlassian-styled panels via `<section-message>` tag.
 
 ---
 

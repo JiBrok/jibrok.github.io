@@ -11,9 +11,6 @@ tags:
   - portal
 ---
 
-# JSM Integration
-{:.no_toc}
-
 * TOC
 {:toc}
 
@@ -40,6 +37,20 @@ Message Panel supports three JSM portal locations:
    - JSM Portal Footer
    - JSM Portal Subheader
 4. Click **Save**
+
+---
+
+## JSM Portal Example
+
+Here's how Message Panel looks on the customer portal with multiple panels configured:
+
+![JSM Portal Example](/uploads/message-field-cloud/configuration/example%20jsm%20portal%20full.png)
+
+This example shows:
+- **Subheader** with important notice
+- **Request Detail Panels** in the sidebar (Issue Details Panel, HTML Alert Panel)
+- **Related Issues Panel** with linked issues table
+- **Footer** with support contact information
 
 ---
 

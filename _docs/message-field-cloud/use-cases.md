@@ -11,9 +11,6 @@ tags:
   - scenarios
 ---
 
-# Use Cases
-{:.no_toc}
-
 * TOC
 {:toc}
 
@@ -640,7 +637,137 @@ Display service announcements across all portal pages.
 
 ---
 
+## Simplified Examples with Section Messages
+
+These examples use the `<section-message>` tag or **Message Type** setting for cleaner, no-CSS-required styling.
+
+### Quick Warning Message
+
+**Using Message Type setting (no HTML required):**
+- **Message Type:** Warning
+- **Message Title:** Sprint Planning Required
+- **Render Type:** Plain Text
+- **Message:** `This issue is not assigned to any sprint.`
+
+**Or using HTML with section-message:**
+
+{% raw %}
+```html
+<section-message appearance="warning" title="Sprint Planning Required">
+  This issue is not assigned to any sprint.
+  {% if issue.fields.assignee %}
+  Assignee: {{ issue.fields.assignee.displayName }}
+  {% else %}
+  No assignee - consider assigning this issue.
+  {% endif %}
+</section-message>
+```
+{% endraw %}
+
+---
+
+### Blocking Issues Alert (Simplified)
+
+{% raw %}
+```html
+{% if linkedIssues | len > 0 %}
+<section-message appearance="error" title="Blocked">
+  This issue is blocked by {{ linkedIssues | len }} unresolved issue(s).
+  Blockers: {% for blocker in linkedIssues %}{{ blocker.key }}{% if not loop.last %}, {% endif %}{% endfor %}
+</section-message>
+{% endif %}
+```
+{% endraw %}
+
+---
+
+### Code Review Reminder (Simplified)
+
+{% raw %}
+```html
+<section-message appearance="info" title="Code Review Checklist">
+  Before approving: code follows conventions, tests added, no security issues, docs updated.
+  {% if issue.fields.customfield_10001 %}
+  PR: {{ issue.fields.customfield_10001 }}
+  {% endif %}
+</section-message>
+```
+{% endraw %}
+
+---
+
+### SLA Status (Simplified)
+
+{% raw %}
+```html
+{% set duedate = issue.fields.duedate %}
+{% if duedate %}
+  {% if isPast(duedate) %}
+  <section-message appearance="error" title="SLA Breached">
+    Due date was {{ duedate | fromNow }}. Immediate action required!
+  </section-message>
+  {% elif dateDiff(now(), duedate, "hours") < 24 %}
+  <section-message appearance="warning" title="SLA At Risk">
+    Due {{ duedate | fromNow }} ({{ duedate | date("yyyy-MM-dd HH:mm") }})
+  </section-message>
+  {% else %}
+  <section-message appearance="success" title="SLA On Track">
+    Due {{ duedate | fromNow }}
+  </section-message>
+  {% endif %}
+{% endif %}
+```
+{% endraw %}
+
+---
+
+### Service Announcement (Simplified)
+
+{% raw %}
+```html
+<section-message appearance="info" title="Scheduled Maintenance">
+  Our systems will be offline on Saturday, January 15 from 2AM-6AM EST for upgrades.
+</section-message>
+```
+{% endraw %}
+
+---
+
+### Data Privacy Notice (Simplified)
+
+{% raw %}
+```html
+<section-message appearance="error" title="Data Privacy Notice">
+  This issue may contain PII. Do not share outside the organization.
+  Delete personal data when resolved. Report any breaches immediately.
+</section-message>
+```
+{% endraw %}
+
+---
+
 ## Tips & Best Practices
+
+### Using Section Messages
+
+The `<section-message>` tag provides Atlassian-styled message boxes without custom CSS:
+
+{% raw %}
+```html
+<section-message appearance="info|warning|error|success|change" title="Optional Title">
+  Message content here
+</section-message>
+```
+{% endraw %}
+
+**Available appearances:**
+- `info` - Blue informational
+- `warning` - Yellow warning
+- `error` - Red error
+- `success` - Green success
+- `change` - Purple change/discovery
+
+Alternatively, use the **Message Type** setting in configuration to wrap your entire message without writing any HTML.
 
 ### Display JQL Examples
 

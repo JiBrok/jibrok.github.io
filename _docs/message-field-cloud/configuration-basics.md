@@ -10,9 +10,6 @@ tags:
   - basics
 ---
 
-# Configuration Basics
-{:.no_toc}
-
 * TOC
 {:toc}
 
@@ -122,6 +119,36 @@ Configure what elements appear in the panel:
 | **Show Description** | Display description below title | Yes |
 | **Show Count** | Display total issue count badge | Yes |
 | **Show JQL Link** | Add link to open results in Issue Navigator | No |
+
+---
+
+## Message Type
+
+Wrap your message content in a styled Atlassian message box without writing HTML.
+
+### Message Type Options
+
+| Type | Description |
+|------|-------------|
+| **Custom** | No wrapper - display message content as-is (default) |
+| **Info** | Blue informational message with info icon |
+| **Warning** | Yellow warning message with warning icon |
+| **Error** | Red error message with error icon |
+| **Success** | Green success message with checkmark icon |
+| **Change** | Purple change/discovery message with discovery icon |
+
+### Message Title
+
+When a Message Type other than Custom is selected, you can optionally provide a title that appears above the message content.
+
+**Example Configuration:**
+- **Message Type:** Warning
+- **Message Title:** Attention Required
+- **Message:** `This issue has {{ linkedIssues | len }} blockers that need to be resolved`
+
+This renders as a yellow warning box with "Attention Required" as the header.
+
+> **Tip:** Message Type provides a no-code alternative to using `<section-message>` HTML tags. Both produce the same Atlassian-styled result.
 
 ---
 

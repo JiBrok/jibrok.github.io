@@ -11,9 +11,6 @@ tags:
   - advanced
 ---
 
-# Modal Windows
-{:.no_toc}
-
 * TOC
 {:toc}
 
