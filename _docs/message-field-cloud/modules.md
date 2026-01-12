@@ -16,6 +16,8 @@ tags:
 
 Message Panel can display in multiple locations across Jira and Jira Service Management.
 
+![All Jira Modules Example](/uploads/message-field-cloud/configuration/example%20jira%20modules.png)
+
 ## Module Overview
 
 | Module | Location | Supports Modal |

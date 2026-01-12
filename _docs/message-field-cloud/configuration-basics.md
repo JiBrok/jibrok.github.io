@@ -185,12 +185,16 @@ Save configurations as JSON file:
 
 ### Import Configurations
 
-Load configurations from JSON file:
+Load configurations from JSON or CSV file:
+
+![Import Configurations](/uploads/message-field-cloud/configuration/bulk%20import%20configurations.png)
+
 1. Go to **Bulk Operations** tab
 2. Click **Import**
-3. Select JSON file
-4. Review imported configurations
-5. Confirm import
+3. Choose file format (JSON or CSV)
+4. Paste file content
+5. Click **Validate** to review
+6. Confirm import
 
 > **Note:** Imported configurations with duplicate names will be renamed automatically.
 

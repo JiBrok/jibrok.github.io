@@ -17,7 +17,7 @@ tags:
 
 Message Panel is a Jira Cloud app that displays dynamic information panels on issues. It helps teams communicate important context, warnings, and related data directly where work happens.
 
-![Message Panel Example](/uploads/message-field-cloud/configuration/example%20issue%20activity.png)
+![Message Panel Example](/uploads/message-field-cloud/configuration/example%20jira%20modules.png)
 
 **[Get it on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)**
 

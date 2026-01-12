@@ -18,6 +18,8 @@ tags:
 
 Create messages that adapt based on issue data, user context, and linked issues.
 
+![Template Editor with Preview](/uploads/message-field-cloud/configuration/template%20editor%20with%20preview.png)
+
 ## Basic Syntax
 
 ### Variables
