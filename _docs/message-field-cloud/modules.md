@@ -29,6 +29,8 @@ Message Panel can display in multiple locations across Jira and Jira Service Man
 | **JSM Portal Panel** | Request details page | No |
 | **JSM Portal Footer** | Portal page footer | No |
 | **JSM Portal Subheader** | Portal page subheader | No |
+| **JSM Portal Subheader (Create)** | Request create form, below title | No |
+| **JSM Portal Footer (Create)** | Request create form, bottom | No |
 
 ---
 
@@ -143,6 +145,71 @@ These modules display on the customer-facing Jira Service Management portal.
 - Service announcements
 - Maintenance notices
 - Important updates
+
+---
+
+## JSM Create Modules
+
+These modules display on the **request creation form** in JSM portals - before the issue is created.
+
+### Portal Subheader (Create)
+
+**Location**: Below the title on the request creation form
+
+**Features**:
+- Visible during request submission
+- Access to form field values via UIM (UI Modifications)
+- Dynamic content based on request type and form data
+
+**Use for**:
+- Pre-submission instructions
+- Request type guidance
+- Required information reminders
+
+### Portal Footer (Create)
+
+**Location**: Bottom of the request creation form
+
+**Features**:
+- Below form fields, before submit button
+- Access to form field values via UIM
+- Good for terms and conditions
+
+**Use for**:
+- Terms and conditions links
+- Submission guidelines
+- Legal notices
+
+### JSM Create Module Constraints
+
+JSM Create modules have specific limitations because the issue doesn't exist yet:
+
+| Feature | Available | Notes |
+|---------|-----------|-------|
+| **Display JQL** | No | No issue to query |
+| **User Fields Filter** | No | No issue fields to check |
+| **Issue Data** | No | Use UIM form data instead |
+| **Portals Filter** | **Required** | Must select at least one portal |
+| **Request Type Filter** | Yes | Filter by request types |
+| **Display Condition** | Yes | Use `fields.*` for UIM form values |
+
+### Using Form Data in Templates
+
+On create pages, use `fields.*` to access current form values:
+
+{% raw %}
+```
+{% if fields.summary %}
+Summary: {{ fields.summary }}
+{% endif %}
+
+{% if fields.priority %}
+Priority: {{ fields.priority.name }}
+{% endif %}
+```
+{% endraw %}
+
+> **Note:** Field values update as the user fills out the form.
 
 ---
 

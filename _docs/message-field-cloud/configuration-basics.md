@@ -156,8 +156,6 @@ This renders as a yellow warning box with "Attention Required" as the header.
 
 For Issue Panel module, you can display the panel content in a modal dialog instead of inline.
 
-### Modal Settings
-
 | Setting | Description |
 |---------|-------------|
 | **Show in Modal** | Enable modal display mode |
@@ -173,94 +171,10 @@ See [Modal Windows](modal-windows) for detailed usage and examples.
 
 ---
 
-## Bulk Operations
-
-### Export Configurations
-
-Save configurations as JSON file:
-1. Go to admin page
-2. Click **Bulk Operations** tab
-3. Select configurations to export
-4. Click **Export Selected** or **Export All**
-
-### Import Configurations
-
-Load configurations from JSON or CSV file:
-
-![Import Configurations](/uploads/message-field-cloud/configuration/bulk%20import%20configurations.png)
-
-1. Go to **Bulk Operations** tab
-2. Click **Import**
-3. Choose file format (JSON or CSV)
-4. Paste file content
-5. Click **Validate** to review
-6. Confirm import
-
-> **Note:** Imported configurations with duplicate names will be renamed automatically.
-
-### Duplicate Configuration
-
-Create a copy of existing configuration:
-1. Click **...** menu on the configuration row
-2. Select **Duplicate**
-3. New configuration created with "(Copy)" suffix
-
----
-
-## Configuration Management
-
-### Edit
-
-1. Click on configuration name or row
-2. Modify settings
-3. Click **Save**
-
-### Delete
-
-Remove configuration permanently:
-1. Click **...** menu
-2. Select **Delete**
-3. Confirm deletion
-
-> **Warning:** Deletion is permanent. Export configuration first if you may need it later.
-
----
-
-## Testing Your Panel
-
-### Panel Preview
-
-![Panel Preview Example](/uploads/message-field-cloud/configuration/panel%20preview%20example.png)
-
-Test with real issue data:
-1. Enter an **Issue key** (e.g., PROJ-123)
-2. Click **Preview Panel**
-3. View rendered result
-
-### Show Issue JSON
-
-![Show Issue JSON](/uploads/message-field-cloud/configuration/right%20panel%20json.png)
-
-View complete data structure:
-1. Enter issue key
-2. Click **Download Issue Data**
-3. Explore available fields
-
-Useful for finding field IDs and understanding data format.
-
-### Template Syntax Guide
-
-![Template Syntax Guide](/uploads/message-field-cloud/configuration/right%20panel%20syntax.png)
-
-Quick reference panel with:
-- Variable syntax
-- Condition examples
-- Loop patterns
-
----
-
 ## Next Steps
 
+- [Testing Panels](testing-panels) - Preview and debug your configurations
+- [Bulk Operations](bulk-operations) - Export, import, and manage configurations
 - [Data Sources](data-sources) - JQL, Linked Issues, or Message only
 - [Context Filters](context-filters) - Control when panels appear
 - [Templates](templates) - Dynamic content syntax

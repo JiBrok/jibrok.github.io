@@ -18,13 +18,17 @@ Display information panels on the customer-facing Jira Service Management portal
 
 ## Overview
 
-Message Panel supports three JSM portal locations:
+Message Panel supports five JSM portal locations:
 
 | Module | Location | Visibility |
 |--------|----------|------------|
 | **Portal Request Detail Panel** | Request details page | Customers viewing requests |
 | **Portal Footer** | Bottom of portal pages | All portal visitors |
 | **Portal Subheader** | Below portal header | All portal visitors |
+| **Portal Subheader (Create)** | Request creation form, below title | Users creating requests |
+| **Portal Footer (Create)** | Request creation form, bottom | Users creating requests |
+
+For Create modules, see [JSM Create Modules](jsm-create-modules).
 
 ---
 
@@ -211,6 +215,35 @@ Filter for "IT Help" and "Hardware Request" → Panel only appears for those req
 
 ---
 
+## Portal Filtering
+
+Restrict configurations to specific JSM customer portals.
+
+### How Portal Filtering Works
+
+Portal filtering is the JSM equivalent of project filtering. It restricts which customer portals show the panel.
+
+- **Empty portals list**: Shows on all portals (not allowed for Create modules)
+- **Selected portals**: Shows only on selected portals
+
+### Configuration
+
+1. Edit your JSM configuration
+2. Go to **Context** tab
+3. Find **Show only in portals**
+4. Select one or more portals
+
+### Portals vs Projects
+
+For JSM modules, use portals instead of projects:
+
+| Filter | JSM Modules | Jira Modules |
+|--------|-------------|--------------|
+| **Projects** | Ignored | Used for filtering |
+| **Portals** | Used for filtering | Ignored |
+
+---
+
 ## JSM-Specific Templates
 
 ### Request Type Information
@@ -254,79 +287,6 @@ SLA Status: {{ sla.ongoingCycle.breached ? "Breached" : "On Track" }}
   {% default %}
     Status: {{ issue.fields.status.name }}
 {% endswitch %}
-```
-{% endraw %}
-
----
-
-## Examples
-
-### IT Support Panel
-
-**Module**: Portal Request Detail Panel
-**Request Types**: IT Help, Software Request
-
-{% raw %}
-```html
-<div style="padding: 16px; background: #F4F5F7; border-radius: 8px;">
-  <h4 style="margin-top: 0;">IT Support Information</h4>
-
-  {% if issue.fields.status.name == "Waiting for customer" %}
-  <div style="padding: 8px; background: #FFFAE6; border-radius: 4px; margin-bottom: 12px;">
-    Action Required: Please provide the requested information in comments.
-  </div>
-  {% endif %}
-
-  <p><strong>Need immediate help?</strong></p>
-  <ul>
-    <li>Password resets: <a href="/self-service">Self-service portal</a></li>
-    <li>Urgent issues: Call ext. 1234</li>
-  </ul>
-</div>
-```
-{% endraw %}
-
-### Hardware Request Panel
-
-**Module**: Portal Request Detail Panel
-**Request Types**: Hardware Request
-
-{% raw %}
-```
-## Hardware Request Status
-
-{% switch issue.fields.status.name %}
-  {% case "Open" %}
-    Your request is pending manager approval.
-  {% case "Waiting for approval" %}
-    Awaiting approval from your manager.
-  {% case "In Progress" %}
-    Your hardware has been ordered and is being prepared.
-  {% case "Pending" %}
-    Waiting for hardware delivery from supplier.
-  {% case "Resolved" %}
-    Your hardware is ready for pickup or has been delivered.
-{% endswitch %}
-
-**Typical processing time**: 5-7 business days
-
-For questions, contact procurement@company.com
-```
-{% endraw %}
-
-### Global Service Announcement
-
-**Module**: Portal Subheader
-**Projects**: All JSM projects
-
-{% raw %}
-```html
-{% set hour = now() | date("HH") %}
-{% if hour >= "17" or hour < "09" %}
-<div style="padding: 10px; background: #DEEBFF; text-align: center;">
-  Our support team is currently offline. We'll respond to your request during business hours (9AM-5PM).
-</div>
-{% endif %}
 ```
 {% endraw %}
 
@@ -380,6 +340,7 @@ For questions, contact procurement@company.com
 
 ## Next Steps
 
+- [JSM Create Modules](jsm-create-modules) - Panels on request creation forms
 - [Context Filters](context-filters) - Filter by request types
 - [Message Formats](message-formats) - HTML formatting for portal
 - [Templates](templates) - Dynamic content syntax

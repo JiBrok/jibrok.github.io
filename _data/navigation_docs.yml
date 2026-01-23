@@ -32,19 +32,25 @@ message-field-cloud:
   - title: Configuration
     docs:
     - message-field-cloud/configuration-basics
+    - message-field-cloud/testing-panels
+    - message-field-cloud/bulk-operations
     - message-field-cloud/modules
     - message-field-cloud/data-sources
     - message-field-cloud/context-filters
+    - message-field-cloud/display-conditions
     - message-field-cloud/message-formats
 
   - title: Templates
     docs:
     - message-field-cloud/templates
+    - message-field-cloud/template-filters
+    - message-field-cloud/template-advanced
 
   - title: Advanced Features
     docs:
     - message-field-cloud/modal-windows
     - message-field-cloud/jsm-integration
+    - message-field-cloud/jsm-create-modules
     - message-field-cloud/rovo-integration
 
   - title: Administration
@@ -54,6 +60,8 @@ message-field-cloud:
   - title: Guides
     docs:
     - message-field-cloud/use-cases
+    - message-field-cloud/use-cases-management
+    - message-field-cloud/use-cases-portal
 
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
