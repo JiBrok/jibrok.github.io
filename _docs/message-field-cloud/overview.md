@@ -54,8 +54,11 @@ Use it to:
 - Show customer information from linked tickets
 - Display SLA warnings and escalation notices
 - Guide agents with resolution instructions
+- Show priority-based guidance on request creation forms
 
 ![JSM Portal Example](/uploads/message-field-cloud/configuration/example%20jsm%20portal%20full.png)
+
+![JSM Create Priority Example](/uploads/message-field-cloud/configuration/example%20jsm%20create%20priority.png)
 
 **For Project Managers:**
 - Present dependency information

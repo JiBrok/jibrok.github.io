@@ -189,6 +189,8 @@ Show instructions specific to the selected request type.
 
 Alert when high priority is selected.
 
+![Priority Warning Example](/uploads/message-field-cloud/configuration/example%20jsm%20create%20priority.png)
+
 **Module**: Portal Subheader (Create)
 **Display Condition**: `{{ fields.priority.name == 'High' or fields.priority.name == 'Highest' }}`
 

@@ -152,6 +152,8 @@ These modules display on the customer-facing Jira Service Management portal.
 
 These modules display on the **request creation form** in JSM portals - before the issue is created.
 
+![JSM Create Module Example](/uploads/message-field-cloud/configuration/example%20jsm%20create%20priority.png)
+
 ### Portal Subheader (Create)
 
 **Location**: Below the title on the request creation form
