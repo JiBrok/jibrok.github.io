@@ -42,6 +42,7 @@ After installation, enable where panels can appear:
 | JSM Portal Panel | Service desk portal |
 | JSM Portal Footer | Portal page footer |
 | JSM Portal Subheader | Portal page subheader |
+| Message Field (Custom Field) | Custom field on issue screens |
 
 4. Click **Save**
 
@@ -87,6 +88,8 @@ Click **Save Configuration**
 ### Step 8: Test
 
 Open any Jira issue - you should see your panel in the right sidebar!
+
+You can also use Message Panel as a custom field — see [Custom Fields](custom-fields) for setup instructions.
 
 ## What's Next?
 

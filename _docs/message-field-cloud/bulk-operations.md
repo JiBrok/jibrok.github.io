@@ -18,7 +18,7 @@ tags:
 ## Export Configurations
 
 Save configurations as JSON file:
-1. Go to admin page
+1. Go to **Apps** → **Message Panel Settings**
 2. Click **Bulk Operations** tab
 3. Select configurations to export
 4. Click **Export Selected** or **Export All**
@@ -39,6 +39,8 @@ Load configurations from JSON or CSV file:
 6. Confirm import
 
 > **Note:** Imported configurations with duplicate names will be renamed automatically.
+
+> **Note:** Export and import includes custom field configurations alongside panel configurations.
 
 ---
 
@@ -63,6 +65,8 @@ This is useful for:
 - Temporarily disabling all panels during maintenance
 - Enabling a set of new configurations together
 - Testing by toggling configurations on/off
+
+> **Note:** Bulk enable/disable operations also apply to custom field configurations.
 
 > **Tip:** You can also toggle individual configurations using the switch in the configuration list.
 

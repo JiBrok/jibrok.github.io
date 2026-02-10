@@ -329,6 +329,76 @@ Display troubleshooting steps based on issue category.
 
 ---
 
+## Custom Field Examples
+
+### Form Guidance on Create Screen
+
+Show instructions when creating issues using a custom field on the create screen.
+
+**Module**: Message Field (Custom Field)
+**Data Source**: Empty (Message only)
+**Screen**: Create Screen
+**Context**: Bug issues in Support project
+
+{% raw %}
+```html
+<div style="padding: 12px; background: #DEEBFF; border-left: 4px solid #0052CC;">
+  <strong>Bug Report Instructions</strong>
+  <div style="margin-top: 8px;">
+    <p>Please include the following information:</p>
+    <ol>
+      <li>Steps to reproduce the issue</li>
+      <li>Expected behavior</li>
+      <li>Actual behavior</li>
+      <li>Browser/OS version</li>
+      <li>Screenshots or screen recordings if possible</li>
+    </ol>
+  </div>
+</div>
+```
+{% endraw %}
+
+---
+
+### Context-Specific Warnings
+
+Display different warnings per project/issue type context using a custom field.
+
+**Module**: Message Field (Custom Field)
+**Data Source**: Empty (Message only)
+**Screen**: View Screen
+
+**Context 1** — Production project, all issue types:
+
+{% raw %}
+```html
+<div style="padding: 12px; background: #FFEBE6; border-left: 4px solid #DE350B;">
+  <strong>Production Environment</strong>
+  <p style="margin: 8px 0 0 0;">
+    Changes to this project require Change Advisory Board (CAB) approval.
+    Ensure a change request is linked before transitioning to "In Progress".
+  </p>
+</div>
+```
+{% endraw %}
+
+**Context 2** — Internal project, Story issue type:
+
+{% raw %}
+```html
+<div style="padding: 12px; background: #E3FCEF; border-left: 4px solid #00875A;">
+  <strong>Internal Project</strong>
+  <p style="margin: 8px 0 0 0;">
+    This project follows simplified approval. No CAB review required.
+  </p>
+</div>
+```
+{% endraw %}
+
+> **Tip:** Custom field contexts allow you to maintain a single field with different messages per project and issue type combination. See [Custom Fields](custom-fields) for setup details.
+
+---
+
 ## More Examples
 
 - [Use Cases - Management & HR](use-cases-management) - Project managers, HR, and compliance examples

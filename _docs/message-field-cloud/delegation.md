@@ -11,7 +11,6 @@ tags:
   - administration
 ---
 
-{:.no_toc}
 * TOC
 {:toc}
 
@@ -30,6 +29,7 @@ Delegation allows site administrators to grant project administrators the abilit
 **Project Administrators** (when delegation enabled):
 - Access project-specific configuration page
 - Create/edit/delete configurations for their projects
+- Manage custom field configurations for their projects
 - Limited by delegation policy
 
 ## Delegation Policies
@@ -52,7 +52,7 @@ Enabled by default, with ability to disable for specific projects.
 ### Disable with Exceptions
 Disabled by default, with ability to enable for specific projects.
 
-**Use when**: Want controlled rollout or testing delegation feature.
+**Use when**: You want a controlled rollout or to test the delegation feature.
 
 ## Setting Up Delegation
 
@@ -90,6 +90,7 @@ Project admins can:
 - Create new configurations for their project
 - Edit existing configurations for their project
 - Delete configurations for their project
+- Manage custom field configurations for their project
 - Preview, duplicate, export/import configurations
 
 Project admins cannot:

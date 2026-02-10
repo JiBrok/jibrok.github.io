@@ -35,6 +35,7 @@ message-field-cloud:
     - message-field-cloud/testing-panels
     - message-field-cloud/bulk-operations
     - message-field-cloud/modules
+    - message-field-cloud/custom-fields
     - message-field-cloud/data-sources
     - message-field-cloud/context-filters
     - message-field-cloud/display-conditions

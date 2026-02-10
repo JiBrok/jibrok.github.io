@@ -27,6 +27,7 @@ Use it to:
 - Present linked issues in organized tables
 - Guide users with contextual instructions
 - Automate information display based on conditions
+- Embed contextual information directly in custom fields on create, edit, and view screens
 
 ## Key Features
 
@@ -41,6 +42,7 @@ Use it to:
 | **Modal Windows** | Display important information in pop-up dialogs (Issue Panel) |
 | **Message Formats** | Plain text, HTML, Markdown, or ADF formatting |
 | **Delegation** | Allow project admins to manage their own panels |
+| **Custom Fields** | Display message panels as native Jira custom fields with per-context configuration |
 | **Rovo Integration** | AI-powered actions for analysis and automation |
 
 ## Use Cases

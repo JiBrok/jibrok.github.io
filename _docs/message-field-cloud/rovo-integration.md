@@ -11,7 +11,6 @@ tags:
   - integration
 ---
 
-{:.no_toc}
 * TOC
 {:toc}
 
@@ -31,6 +30,7 @@ Atlassian Rovo is an AI-powered platform that helps teams work smarter with inte
 ### Key Benefits
 
 - **AI-Powered Analysis** - Let Rovo agents analyze panel data and provide insights
+- **Configuration Management** - Create, edit, and diagnose configurations using natural language
 - **Intelligent Automation** - Automate workflows based on panel information
 - **Natural Language Queries** - Ask questions about panel data in plain language
 - **Context-Aware Responses** - Agents understand panel structure and custom fields

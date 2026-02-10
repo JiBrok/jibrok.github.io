@@ -31,6 +31,7 @@ Message Panel can display in multiple locations across Jira and Jira Service Man
 | **JSM Portal Subheader** | Portal page subheader | No |
 | **JSM Portal Subheader (Create)** | Request create form, below title | No |
 | **JSM Portal Footer (Create)** | Request create form, bottom | No |
+| **Message Field (Custom Field)** | Custom field on issue view / create / edit screens | No |
 
 ---
 
@@ -215,6 +216,52 @@ Priority: {{ fields.priority.name }}
 
 ---
 
+## Custom Field Module
+
+**Location**: Displays as a Jira custom field value on issue view, create, edit, and transition screens
+
+**Features**:
+- Per-context configuration — different messages for different project/issue type combinations
+- Works on create and transition screens, not just issue view
+- Automatic cleanup of orphaned configurations when fields or contexts are deleted
+
+**Use for**: Embedded contextual information, form guidance, field-level messages and warnings
+
+> For full setup instructions, see [Custom Fields](custom-fields).
+
+---
+
+## UIM Management
+
+UI Modifications (UIMs) are used by Message Panel to display content in JSM portals. The Modules page includes a management section for monitoring and troubleshooting UIMs.
+
+![UIM Management section](/uploads/message-field-cloud/configuration/uim-management.png)
+
+### UIM Status
+
+The Modules page shows the current status of registered UIMs, including:
+- Total number of registered UIMs
+- Status indicators (normal, warning, or danger levels)
+
+### Jira API UIMs
+
+Expand the **Jira API UIMs** section to view all UIMs currently registered with Jira. This is useful for verifying that modules are properly registered.
+
+### Bulk UIM Operations
+
+The following operations are available for troubleshooting and cleanup:
+
+| Operation | Description |
+|-----------|-------------|
+| **Delete Jira UIMs** | Remove all Jira-related UIMs |
+| **Delete JSM UIMs** | Remove all JSM portal UIMs |
+| **Delete All UIMs** | Remove all registered UIMs |
+| **Reregister All** | Delete and re-create all UIMs |
+
+> **When to use:** These operations are primarily for troubleshooting. Use **Reregister All** if modules are not displaying correctly, or delete operations to clean up after configuration changes.
+
+---
+
 ## Enabling Modules
 
 ### Global Settings
@@ -272,6 +319,7 @@ Multiple configurations can target the same module:
 ## Next Steps
 
 - [Configuration Basics](configuration-basics) - Create panel configurations
+- [Custom Fields](custom-fields) - Use Message Panel as a custom field
 - [Context Filters](context-filters) - Control when panels appear
 - [Modal Windows](modal-windows) - Pop-up dialogs (Issue Panel only)
 - [JSM Integration](jsm-integration) - Detailed JSM setup
