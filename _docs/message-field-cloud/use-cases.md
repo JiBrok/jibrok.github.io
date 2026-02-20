@@ -411,4 +411,6 @@ Display different warnings per project/issue type context using a custom field.
 - [Configuration Basics](configuration-basics) - Create panels
 - [Data Sources](data-sources) - JQL and linked issues
 - [Templates](templates) - Template syntax reference
+- [Template Filters](template-filters) - Filter reference
 - [Context Filters](context-filters) - Visibility rules
+- [Custom Fields](custom-fields) - Custom field module setup

@@ -57,12 +57,15 @@ message-field-cloud:
   - title: Administration
     docs:
     - message-field-cloud/delegation
+    - message-field-cloud/permissions-security
+    - message-field-cloud/limits
 
   - title: Guides
     docs:
     - message-field-cloud/use-cases
     - message-field-cloud/use-cases-management
     - message-field-cloud/use-cases-portal
+    - message-field-cloud/faq
 
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch

@@ -228,6 +228,8 @@ Result: Panel shows only when the person who reported the issue is viewing it.
 
 ## Troubleshooting
 
+> **Tip:** Use the **Test Context** button in the configuration editor to check all filter conditions for a specific issue at once. See [Testing Panels](testing-panels) for details.
+
 ### Panel Not Showing
 
 Check conditions in order:

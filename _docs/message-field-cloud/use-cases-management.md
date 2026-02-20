@@ -277,4 +277,6 @@ Show GDPR/privacy notice for issues containing personal data.
 - [Use Cases](use-cases) - Development and support team examples
 - [Use Cases - Portal](use-cases-portal) - JSM portal and simplified examples
 - [Templates](templates) - Template syntax reference
+- [Template Filters](template-filters) - Filter reference
 - [Context Filters](context-filters) - Visibility rules
+- [Configuration Basics](configuration-basics) - Panel setup

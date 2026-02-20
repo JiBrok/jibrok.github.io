@@ -440,5 +440,6 @@ Use **Preview Panel** to test your message formatting before saving.
 ## Next Steps
 
 - [Templates](templates) - Dynamic content syntax
+- [Template Filters](template-filters) - Transform values with filters
 - [Use Cases](use-cases) - Ready-to-use examples
 - [Configuration Basics](configuration-basics) - Panel settings

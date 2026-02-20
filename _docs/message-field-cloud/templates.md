@@ -257,5 +257,6 @@ See [Template Filters](template-filters) for the complete list.
 - [Template Advanced](template-advanced) - Functions, JQL templates, display conditions
 - [Message Formats](message-formats) - HTML, Markdown, ADF
 - [Use Cases](use-cases) - Ready-to-use examples
+- [Limits](limits) - Template engine limits and performance tips
 
 {% endraw %}

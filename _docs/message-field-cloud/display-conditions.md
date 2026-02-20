@@ -275,12 +275,13 @@ You may have left conditions empty or have a syntax error in Display Condition (
 
 ### Testing Display Conditions
 
-Use the Preview panel with a real issue key to test how your condition evaluates.
+Use the **Preview Panel** and **Test Context** features with a real issue key to test how your conditions evaluate. See [Testing Panels](testing-panels) for detailed instructions on testing display conditions.
 
 ---
 
 ## Next Steps
 
 - [Context Filters](context-filters) - Project, issue type, and user field filters
+- [Testing Panels](testing-panels) - Preview and debug display conditions
 - [Templates](templates) - Template syntax reference
 - [JSM Create Modules](jsm-create-modules) - Using conditions on create forms

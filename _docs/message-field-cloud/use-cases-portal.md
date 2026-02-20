@@ -276,5 +276,7 @@ Use these colors for consistent styling:
 
 - [Use Cases](use-cases) - Development and support team examples
 - [Use Cases - Management](use-cases-management) - PM, HR, and compliance examples
+- [JSM Integration](jsm-integration) - JSM portal setup
+- [JSM Create Modules](jsm-create-modules) - Panels on request creation forms
 - [Configuration Basics](configuration-basics) - Create panels
 - [Templates](templates) - Template syntax reference

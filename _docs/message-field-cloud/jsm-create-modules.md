@@ -231,4 +231,6 @@ Display terms at the bottom of the form.
 
 - [JSM Integration](jsm-integration) - Main JSM documentation
 - [Context Filters](context-filters) - Filter by request types and portals
+- [Display Conditions](display-conditions) - Dynamic visibility conditions
 - [Templates](templates) - Template syntax reference
+- [Use Cases - Portal](use-cases-portal) - More JSM portal examples

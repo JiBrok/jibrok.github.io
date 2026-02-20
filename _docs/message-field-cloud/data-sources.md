@@ -143,6 +143,16 @@ assignee = {{ currentUser.accountId }} AND status != Done ORDER BY priority DESC
 
 Shows open issues assigned to the person viewing the panel.
 
+### JQL Validation
+
+When configuring a JQL query, Message Panel provides inline validation:
+
+- **Syntax check** — validates the JQL syntax before saving
+- **Issue count preview** — shows how many issues match the query
+- **Error messages** — displays Jira's JQL error messages for invalid queries
+
+For parametric JQL (using template variables), use the **Test JQL** feature in the [Testing Panels](testing-panels) page to verify the query resolves correctly with a real issue key.
+
 ---
 
 ## Empty (Message Only)
@@ -252,8 +262,8 @@ These are fields from the **current issue** (not the linked issues), displayed i
 
 | Setting | Purpose | Range | Default |
 |---------|---------|-------|---------|
-| **Max Issues** | Total issues loaded from Jira API | 1-500 | 100 |
-| **Rows Per Page** | Issues displayed per page in table | 1-25 | 10 |
+| **Max Issues** | Total issues loaded from Jira API | 1-1,000 | 50 |
+| **Rows Per Page** | Issues displayed per page in table | 1-100 | 10 |
 
 **How they work together:**
 
@@ -272,8 +282,9 @@ These are fields from the **current issue** (not the linked issues), displayed i
 | Scenario | Max Issues | Rows Per Page |
 |----------|------------|---------------|
 | Quick overview | 25 | 5 |
-| Standard use | 100 | 10 |
-| Comprehensive lists | 500 | 25 |
+| Standard use | 50 | 10 |
+| Comprehensive lists | 200 | 25 |
+| Large datasets | 1,000 | 50 |
 
 > **Tip:** Start with lower limits for better performance. Increase only if needed.
 
@@ -402,4 +413,5 @@ Access custom fields by ID or name:
 - [Templates](templates) - Dynamic content syntax
 - [Use Cases](use-cases) - Ready-to-use examples
 - [Message Formats](message-formats) - HTML, Markdown, ADF syntax
+- [Limits](limits) - Data limits and performance tips
 

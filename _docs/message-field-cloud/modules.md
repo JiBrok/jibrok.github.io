@@ -101,6 +101,8 @@ Message Panel can display in multiple locations across Jira and Jira Service Man
 
 These modules display on the customer-facing Jira Service Management portal.
 
+![JSM Portal Example](/uploads/message-field-cloud/configuration/example%20jsm%20portal.png)
+
 ### Portal Request Detail Panel
 
 **Location**: Request details page in customer portal
@@ -309,10 +311,26 @@ Shows in right sidebar **only** for Marketing issues with status "In Progress".
 
 ## Multiple Panels
 
-Multiple configurations can target the same module:
+Multiple configurations can target the same module. Here's how they interact:
 
-- **Order**: By weight (lower first), then alphabetically
+- **Order**: By weight (lower first), then alphabetically by name for equal weights
 - **Collapsing**: Each panel collapses independently (Issue Panel only)
+- **Independence**: Each panel loads its own data source and renders independently
+- **No limit**: There is no hard limit on the number of panels per module, but performance degrades with many active panels
+
+### Ordering with Weight
+
+Use the **Weight** setting to control display order:
+
+| Weight | Position |
+|--------|----------|
+| Negative values (-1000 to -1) | Appear first (top) |
+| 0 (default) | Middle |
+| Positive values (1 to 1000) | Appear last (bottom) |
+
+Panels with the same weight are sorted alphabetically by name.
+
+> **Tip:** Use weight increments of 10 to leave room for future insertions.
 
 ---
 
