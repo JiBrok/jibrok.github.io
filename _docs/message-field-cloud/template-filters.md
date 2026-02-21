@@ -142,5 +142,6 @@ Filters can be chained together:
 
 - [Templates](templates) - Basic syntax and variables
 - [Template Advanced](template-advanced) - Functions, JQL templates, display conditions
+- [Use Cases](use-cases) - Practical examples using filters
 
 {% endraw %}

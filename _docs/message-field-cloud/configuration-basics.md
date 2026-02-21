@@ -64,6 +64,12 @@ Toggle to enable/disable the panel without deleting the configuration.
 - **Enabled** - Panel is active and will display when conditions match
 - **Disabled** - Panel is hidden but configuration is preserved
 
+**Common use cases for disabling:**
+- **Maintenance mode** — temporarily hide panels during system changes
+- **Staged rollout** — create configurations in advance, enable when ready
+- **Seasonal content** — disable holiday notices after the season ends
+- **Debugging** — isolate issues by disabling panels one at a time
+
 ---
 
 ## Display Settings
@@ -81,6 +87,8 @@ Choose where the panel appears:
 | JSM Portal Panel | Customer portal request page | No |
 | JSM Portal Footer | Portal footer area | No |
 | JSM Portal Subheader | Portal subheader area | No |
+| JSM Portal Subheader (Create) | Request creation form, below title | No |
+| JSM Portal Footer (Create) | Request creation form, bottom | No |
 
 Each configuration targets **one** module. Create multiple configurations for multiple locations.
 
@@ -90,8 +98,8 @@ See [Modules](modules) for detailed information about each module type.
 
 | Setting | Description | Range | Default |
 |---------|-------------|-------|---------|
-| **Rows Per Page** | Issues shown per page in table | 1-25 | 10 |
-| **Max Issues** | Maximum issues to load from query | 1-500 | 100 |
+| **Rows Per Page** | Issues shown per page in table | 1-100 | 10 |
+| **Max Issues** | Maximum issues to load from query | 1-1,000 | 50 |
 
 > **Note:** Rows Per Page controls pagination display. Max Issues controls how many issues are fetched from Jira API. Set Max Issues high enough to show all relevant issues.
 
@@ -99,6 +107,8 @@ See [Modules](modules) for detailed information about each module type.
 
 Controls display order when multiple panels target the same module:
 - **Lower weights** appear first
+- **Negative values allowed** — use them to force panels to the top
+- **Same weight** — panels with equal weight are sorted alphabetically by name
 - **Range:** -1000 to 1000
 - **Default:** 0
 
@@ -106,6 +116,8 @@ Controls display order when multiple panels target the same module:
 - Panel A: weight = -10 (appears first)
 - Panel B: weight = 0 (appears second)
 - Panel C: weight = 100 (appears last)
+
+**Ordering strategy:** Use weight increments of 10 (e.g., -20, -10, 0, 10, 20) to leave room for inserting new panels between existing ones later.
 
 ---
 

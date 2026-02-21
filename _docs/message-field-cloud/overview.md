@@ -36,14 +36,15 @@ Use it to:
 | **Dynamic Templates** | Use `{% raw %}{{ issue.fields.status.name }}{% endraw %}` syntax to show live issue data |
 | **Multiple Data Sources** | Display linked issues, JQL results, or custom messages |
 | **Display Modules** | Jira modules (Issue Panel, Activity, Context, Action) and JSM Portal modules |
+| **JSM Create Modules** | Display panels on request creation forms with access to form field values |
+| **Custom Fields** | Display message panels as native Jira custom fields with per-context configuration |
 | **Conditional Display** | Show panels only for specific projects, issue types, or JQL conditions |
 | **User Field Visibility** | Show panels only when viewing user is in specific fields |
 | **Enable/Disable** | Toggle configurations on/off without deleting them |
 | **Modal Windows** | Display important information in pop-up dialogs (Issue Panel) |
 | **Message Formats** | Plain text, HTML, Markdown, or ADF formatting |
 | **Delegation** | Allow project admins to manage their own panels |
-| **Custom Fields** | Display message panels as native Jira custom fields with per-context configuration |
-| **Rovo Integration** | AI-powered actions for analysis and automation |
+| **Rovo Integration** | AI-powered analysis agent and admin agent for natural language configuration management |
 
 ## Use Cases
 
@@ -74,6 +75,7 @@ Use it to:
 3. **Set display conditions**: which projects and issue types
 4. **Add dynamic content** using template syntax
 5. **Enable the module** where you want it to appear
+6. **Delegate to project admins** (optional) — let teams manage their own panels
 
 ## Next Steps
 
@@ -81,6 +83,8 @@ Use it to:
 - [Modules](modules) - Learn about display locations
 - [Templates](templates) - Master dynamic content
 - [Use Cases](use-cases) - Examples and best practices
+- [FAQ](faq) - Common questions and troubleshooting
+- [Permissions & Security](permissions-security) - Access control and security model
 
 ## Support
 

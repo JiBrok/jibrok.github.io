@@ -142,13 +142,39 @@ Custom field configurations support the same options as panel configurations:
 
 ---
 
+## UIM for Create Screens
+
+Message Panel uses **UI Modifications (UIM)** to display custom field content on create screens. This is managed automatically, but there are two configuration options that control this behavior:
+
+| Option | Description |
+|--------|-------------|
+| **UIM for Jira** (`uimForJira`) | Enables the custom field on standard Jira issue create forms |
+| **UIM for JSM** (`uimForJsm`) | Enables the custom field on JSM portal request creation forms |
+
+When enabled, the custom field content appears in the create form alongside other fields, providing guidance and context before the issue is created.
+
+> **Note:** UIM registrations are managed through the [Modules](modules) page. If the custom field doesn't appear on create screens, check the UIM status and use **Reregister All** if needed.
+
+---
+
 ## Automatic Cleanup
 
-Message Panel automatically manages custom field configurations:
+Message Panel automatically manages custom field configurations through an **hourly scheduler** that detects changes to fields and contexts.
 
-- When a custom field is **deleted** in Jira, its configurations are automatically disabled
-- When a field context is **removed**, the associated configuration is disabled
-- Orphaned configurations (where the field or context no longer exists) are marked as disabled and can be cleaned up
+### What the Scheduler Detects
+
+| Change | Action |
+|--------|--------|
+| Custom field **deleted** in Jira | Configuration is **disabled** |
+| Field context **removed** | Associated configuration is **disabled** |
+| Field context **re-added** | Configuration can be manually re-enabled |
+
+### How It Works
+
+1. The scheduler runs every hour
+2. It checks all custom field configurations against Jira's current field and context data
+3. Orphaned configurations (where the field or context no longer exists) are marked as **disabled**
+4. Disabled configurations remain in the list and can be cleaned up manually or re-enabled if the field/context is restored
 
 This prevents stale configurations from accumulating and ensures the system stays in sync with your Jira custom field setup.
 
@@ -167,4 +193,5 @@ This prevents stale configurations from accumulating and ensures the system stay
 - [Modules](modules) — Overview of all display modules
 - [Configuration Basics](configuration-basics) — Create and manage configurations
 - [Templates](templates) — Dynamic content with template syntax
+- [FAQ](faq) — Custom field troubleshooting
 - [Getting Started](getting-started) — Quick start guide

@@ -1,7 +1,7 @@
 ---
 title: Rovo Integration
 key: message-field-cloud
-excerpt: Integrate Message Panel with Atlassian Rovo for AI-powered analysis
+excerpt: Integrate Message Panel with Atlassian Rovo for AI-powered analysis and administration
 category: advanced
 tags:
   - doc
@@ -9,6 +9,7 @@ tags:
   - rovo
   - ai
   - integration
+  - admin-agent
 ---
 
 * TOC
@@ -53,9 +54,67 @@ The Message Panel Assistant is an AI-powered tool built into the admin settings.
 
 ---
 
+## Requirements
+
+To use Rovo integration features, you need:
+
+- **Atlassian Rovo** — Rovo must be enabled for your Atlassian site
+- **Rovo license** — users interacting with Rovo agents need a Rovo-enabled plan
+- **Message Panel app** — installed and configured with at least one panel configuration
+- **Site admin permissions** — required to manage Rovo agent settings
+
+> **Note:** Rovo agents may take up to 24 hours to appear after Message Panel is installed or updated.
+
+---
+
+## Message Panel Admin Agent
+
+The Message Panel Admin Agent is a Rovo-powered agent designed for **site administrators**. It helps you manage panel configurations using natural language — no need to navigate through settings pages manually.
+
+### What It Can Do
+
+The Admin Agent provides the following capabilities:
+
+- **Create configurations** — describe what you want in plain language and the agent creates the configuration
+- **Update configurations** — modify existing configurations by name or description
+- **Clone configurations** — duplicate configurations with modifications
+- **Toggle configurations** — enable or disable configurations individually or in bulk
+- **Health checks** — scan all configurations for common issues (broken JQL, missing modules, orphaned contexts)
+- **Diagnostics** — troubleshoot why a panel isn't appearing on a specific issue
+- **Step-by-step wizard** — guided walkthrough for creating complex configurations
+
+### Example Conversations
+
+**Creating a configuration:**
+> "Create a warning panel for the SUPPORT project that shows on Bug issues when priority is Critical. It should display a red warning message saying 'This bug requires immediate triage.'"
+
+**Bulk operations:**
+> "Disable all panel configurations for the OLD-PROJECT project."
+
+**Diagnostics:**
+> "Why isn't any panel showing on issue PROJ-123?"
+
+**Health check:**
+> "Run a health check on all my configurations and report any issues."
+
+### Admin Agent Actions
+
+| Action | Description |
+|--------|-------------|
+| **Create Config** | Create a new panel configuration from a natural language description |
+| **Update Config** | Modify an existing configuration's settings |
+| **Clone Config** | Duplicate a configuration, optionally with modifications |
+| **Toggle Config** | Enable or disable one or more configurations |
+| **List Configs** | List configurations with optional filtering |
+| **Health Check** | Scan configurations for issues and report findings |
+| **Diagnose Issue** | Analyze why a panel does or doesn't appear on a specific issue |
+| **Wizard** | Step-by-step guided configuration creation |
+
+---
+
 ## Message Panel Agent
 
-Message Panel includes a pre-built Rovo agent ready to use.
+Message Panel includes a pre-built Rovo agent ready to use for **data analysis**.
 
 > **Note**: The agent may take up to 24 hours to appear after installation.
 
@@ -75,6 +134,17 @@ Message Panel includes a pre-built Rovo agent ready to use.
 - "Analyze impact of changes to this issue"
 - "Find all blocked issues in this chain"
 - "Show me the complete issue hierarchy"
+
+### Agent Actions
+
+The Message Panel Agent has access to the following actions:
+
+| Action | Description |
+|--------|-------------|
+| **Get Panel Data** | Retrieve panel data for a specific issue, including message content, linked issues, and field values |
+| **List Panels** | List all panel configurations matching an issue's project and type |
+| **Analyze Dependencies** | Build dependency trees from linked issue data across multiple levels |
+| **Execute Instructions** | Follow analysis instructions defined in the panel Description field |
 
 ### Agent Behavior
 
@@ -204,6 +274,7 @@ Analyze the linked issues in this panel:
 - [Configuration Basics](configuration-basics) - Set up panels for Rovo analysis
 - [Templates](templates) - Create dynamic panel content
 - [Data Sources](data-sources) - Configure JQL and linked issues
+- [FAQ](faq) - Troubleshoot common Rovo issues
 - [Atlassian Rovo Documentation](https://www.atlassian.com/software/rovo) - Learn more about Rovo
 
 ## Support

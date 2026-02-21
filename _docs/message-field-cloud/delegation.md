@@ -25,6 +25,7 @@ Delegation allows site administrators to grant project administrators the abilit
 - Configure delegation policies
 - Manage global module settings
 - View and edit all project configurations
+- Set actor (impersonation) for configurations
 
 **Project Administrators** (when delegation enabled):
 - Access project-specific configuration page
@@ -84,19 +85,60 @@ The delegation settings allow you to control which projects can access and confi
 
 **Note**: This option only appears if delegation is enabled for your project.
 
-#### What Project Admins Can Do
+---
 
-Project admins can:
-- Create new configurations for their project
-- Edit existing configurations for their project
-- Delete configurations for their project
-- Manage custom field configurations for their project
-- Preview, duplicate, export/import configurations
+## Project Admin UI
 
-Project admins cannot:
-- Manage global module settings
-- Configure delegation policies
-- View/edit configurations for other projects
+When delegation is enabled, project admins see a dedicated settings page within their project settings. This page provides a simplified interface focused on their project's configurations.
+
+### What the Project Settings Page Shows
+
+The project-specific settings page includes:
+
+- **Configuration list** — all panel configurations targeting the current project
+- **Create panel** button — create new configurations scoped to this project
+- **Edit/Delete/Duplicate** — full management of project configurations
+- **Custom Fields** tab — manage custom field configurations for the project
+- **Preview** — test panels with real issue data
+- **Export/Import** — bulk operations scoped to the project
+
+### Walkthrough: Creating a First Panel as Project Admin
+
+1. Navigate to your **Project Settings** → **Apps** → **Message Panel Settings**
+2. Click **Create panel**
+3. Enter a **Name** (e.g., "Sprint Planning Reminder")
+4. Select a **Display Module** (e.g., Issue Panel)
+5. The **Project** filter is automatically set to your project
+6. Optionally filter by **Issue Type** (e.g., Story, Bug)
+7. Set the **Data Source** (e.g., Empty for message-only)
+8. Enter your **Message** content
+9. Click **Save**
+10. Navigate to an issue in your project to verify the panel appears
+
+---
+
+## Restrictions
+
+Project administrators have the following restrictions compared to site administrators:
+
+### What Project Admins Cannot Do
+
+| Restriction | Reason |
+|-------------|--------|
+| **Set actor (impersonation)** | Actor configuration affects JQL execution permissions and is a security-sensitive setting |
+| **Edit global or multi-project configurations** | Configurations that target multiple projects or "All Projects" are managed by site admins only |
+| **Access other projects' configurations** | Each project admin can only see and manage configurations for their own projects |
+| **Manage global module settings** | Enabling/disabling modules globally affects all projects |
+| **Configure delegation policies** | Delegation settings are a site-level administration function |
+| **See audit metadata** | Audit information (who created/modified, timestamps) is available to site admins only |
+
+### Configuration Visibility
+
+- Project admins see **only** configurations that target their project specifically
+- Configurations targeting "All Projects" (no project filter) are **not visible** to project admins
+- If a configuration targets multiple projects, it is only visible to and editable by **site admins**
+
+---
 
 ## Permission Checking
 
@@ -115,6 +157,8 @@ Project admins can create JQL queries that return issues from any project, but:
 ## Next Steps
 
 - [Configuration Basics](configuration-basics) - Create panel configurations
+- [Permissions & Security](permissions-security) - Detailed permissions and security model
 - [Modules](modules) - Display locations
 - [Templates](templates) - Dynamic content
+- [FAQ](faq) - Common delegation questions
 - [Use Cases](use-cases) - Examples and best practices

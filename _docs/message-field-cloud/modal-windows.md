@@ -242,3 +242,4 @@ Review your context filters:
 - [Context Filters](context-filters) - Control when modals appear
 - [Templates](templates) - Dynamic modal content
 - [Modules](modules) - Other display options
+- [FAQ](faq) - Troubleshoot modal issues

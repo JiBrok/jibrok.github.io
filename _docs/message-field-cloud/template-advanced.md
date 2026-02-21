@@ -296,6 +296,56 @@ Always test your conditions before deploying.
 
 ---
 
+## Performance Tips
+
+The template engine has a **10,000 iteration limit** and an **800ms timeout**. Keep these limits in mind when writing complex templates.
+
+### Avoid Heavy Operations in Loops
+
+**Slow:**
+```
+{% for issue in linkedIssues %}
+  {% set filtered = linkedIssues | filter("fields.status.name", "==", issue.fields.status.name) %}
+  {{ issue.key }}: {{ filtered | len }} similar
+{% endfor %}
+```
+
+**Faster — pre-compute outside the loop:**
+```
+{% set doneCount = linkedIssues | filter("fields.status.statusCategory.key", "==", "done") | len %}
+{% set total = linkedIssues | len %}
+Done: {{ doneCount }} / {{ total }}
+```
+
+### Limit Loop Iterations
+
+Use `| take(N)` to limit the number of items processed:
+```
+{% for issue in linkedIssues | take(10) %}
+  {{ issue.key }}
+{% endfor %}
+{% if linkedIssues | len > 10 %}
+  ...and {{ linkedIssues | len - 10 }} more
+{% endif %}
+```
+
+### Use `{% set %}` to Cache Values
+
+Avoid repeating expensive expressions:
+```
+{% set assigneeName = issue.fields.assignee.displayName | default("Unassigned") %}
+{{ assigneeName }} has {{ linkedIssues | len }} related issues.
+Reminder: {{ assigneeName }} should review these.
+```
+
+### Keep Conditional Logic Simple
+
+Deeply nested conditions are harder to debug and slower to execute. Consider using `switch` for multiple conditions on the same value.
+
+See [Limits](limits) for all template engine constraints.
+
+---
+
 ## Debugging Templates
 
 When templates don't work as expected:
@@ -368,5 +418,6 @@ When templates don't work as expected:
 - [Templates](templates) - Basic syntax and variables
 - [Template Filters](template-filters) - All available filters
 - [Message Formats](message-formats) - HTML, Markdown, ADF
+- [Limits](limits) - Template engine constraints and performance tips
 
 {% endraw %}
