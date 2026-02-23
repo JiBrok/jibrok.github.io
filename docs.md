@@ -215,7 +215,23 @@ hero:
                     </div>
                 </div>
             </div>
-            
+
+            <!-- JiBrok Studio -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/jibrok-studio-jira/overview/">
+                            <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/jibrok-studio-jira/overview/" class="uk-link-reset">JiBrok Studio</a></h3>
+                    <p class="uk-text-small">Scripting platform for Jira Cloud — automate workflows with triggers, computed fields, and custom extensions.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/jibrok-studio-jira/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
     </div>

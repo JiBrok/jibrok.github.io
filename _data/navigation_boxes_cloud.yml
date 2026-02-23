@@ -50,6 +50,11 @@
 #  icon:
 #  href: /Cloud-discount-calculator/
 
+- title: JiBrok Studio for Jira Cloud
+  desc: Forge-based scripting platform — automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.
+  icon: jibrok-studio-jira
+  doc: jibrok-studio-jira/overview
+
 - title: Other apps
   desc: More plugins will be added soon
   icon: bolt
