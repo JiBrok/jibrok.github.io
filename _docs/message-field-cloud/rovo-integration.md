@@ -1,7 +1,7 @@
 ---
 title: Rovo Integration
 key: message-field-cloud
-excerpt: Integrate Message Panel with Atlassian Rovo for AI-powered analysis and administration
+excerpt: Integrate Message Field with Atlassian Rovo for AI-powered analysis and administration
 category: advanced
 tags:
   - doc
@@ -17,7 +17,7 @@ tags:
 
 ## Overview
 
-Message Panel integrates with Atlassian Rovo, allowing AI-powered agents to analyze and interact with your panel data. This integration enables intelligent automation, data analysis, and enhanced decision-making capabilities.
+Message Field integrates with Atlassian Rovo, allowing AI-powered agents to analyze and interact with your panel data. This integration enables intelligent automation, data analysis, and enhanced decision-making capabilities.
 
 **Key Features**:
 - **Instruction-Driven Analysis** - Define analysis workflows in panel messages that Rovo agents execute
@@ -26,7 +26,7 @@ Message Panel integrates with Atlassian Rovo, allowing AI-powered agents to anal
 
 ## What is Rovo Integration?
 
-Atlassian Rovo is an AI-powered platform that helps teams work smarter with intelligent agents and automation. Message Panel provides skills that Rovo agents can use to retrieve and analyze panel information from any Jira issue.
+Atlassian Rovo is an AI-powered platform that helps teams work smarter with intelligent agents and automation. Message Field provides skills that Rovo agents can use to retrieve and analyze panel information from any Jira issue.
 
 ### Key Benefits
 
@@ -39,14 +39,14 @@ Atlassian Rovo is an AI-powered platform that helps teams work smarter with inte
 
 ---
 
-## Message Panel Assistant
+## Message Field Assistant
 
-The Message Panel Assistant is an AI-powered tool built into the admin settings. It helps you create and update panel configurations by generating templates with issue variables, loops, and conditions based on your natural language requests.
+The Message Field Assistant is an AI-powered tool built into the admin settings. It helps you create and update panel configurations by generating templates with issue variables, loops, and conditions based on your natural language requests.
 
-![Message Panel Assistant](/uploads/message-field-cloud/configuration/message-panel-assistant.png)
+![Message Field Assistant](/uploads/message-field-cloud/configuration/message-field-assistant.png)
 
 **How to use:**
-1. Open Message Panel Settings in Jira admin
+1. Open Message Field Settings in Jira admin
 2. Click the Assistant icon to open the AI panel
 3. Describe what template you need in plain language
 4. Review the generated configuration
@@ -60,16 +60,16 @@ To use Rovo integration features, you need:
 
 - **Atlassian Rovo** — Rovo must be enabled for your Atlassian site
 - **Rovo license** — users interacting with Rovo agents need a Rovo-enabled plan
-- **Message Panel app** — installed and configured with at least one panel configuration
+- **Message Field app** — installed and configured with at least one panel configuration
 - **Site admin permissions** — required to manage Rovo agent settings
 
-> **Note:** Rovo agents may take up to 24 hours to appear after Message Panel is installed or updated.
+> **Note:** Rovo agents may take up to 24 hours to appear after Message Field is installed or updated.
 
 ---
 
-## Message Panel Admin Agent
+## Message Field Admin Agent
 
-The Message Panel Admin Agent is a Rovo-powered agent designed for **site administrators**. It helps you manage panel configurations using natural language — no need to navigate through settings pages manually.
+The Message Field Admin Agent is a Rovo-powered agent designed for **site administrators**. It helps you manage panel configurations using natural language — no need to navigate through settings pages manually.
 
 ### What It Can Do
 
@@ -112,19 +112,19 @@ The Admin Agent provides the following capabilities:
 
 ---
 
-## Message Panel Agent
+## Message Field Agent
 
-Message Panel includes a pre-built Rovo agent ready to use for **data analysis**.
+Message Field includes a pre-built Rovo agent ready to use for **data analysis**.
 
 > **Note**: The agent may take up to 24 hours to appear after installation.
 
-![Message Panel Agent](/uploads/message-field-cloud/configuration/rovo%20agent%20Message%20Panel%20Agent.png)
+![Message Field Agent](/uploads/message-field-cloud/configuration/rovo%20agent%20Message%20Field%20Agent.png)
 
 ### Agent Details
 
-**Name**: Message Panel Agent
+**Name**: Message Field Agent
 
-**Description**: Provides access to Message Panel data: custom messages, instructions, work item fields, and related items via link types or JQL queries. Supports nested queries for analysis.
+**Description**: Provides access to Message Field data: custom messages, instructions, work item fields, and related items via link types or JQL queries. Supports nested queries for analysis.
 
 ### Conversation Starters
 
@@ -137,7 +137,7 @@ Message Panel includes a pre-built Rovo agent ready to use for **data analysis**
 
 ### Agent Actions
 
-The Message Panel Agent has access to the following actions:
+The Message Field Agent has access to the following actions:
 
 | Action | Description |
 |--------|-------------|
@@ -238,7 +238,7 @@ Analyze the linked issues in this panel:
 ### Skill Not Appearing
 
 **Solutions**:
-- Ensure Message Panel app is installed
+- Ensure Message Field app is installed
 - Check admin permissions
 - Wait up to 24 hours after installation
 - Refresh the skills list

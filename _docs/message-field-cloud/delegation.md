@@ -16,7 +16,7 @@ tags:
 
 ## Overview
 
-Delegation allows site administrators to grant project administrators the ability to manage Message Panel configurations for their projects.
+Delegation allows site administrators to grant project administrators the ability to manage Message Field configurations for their projects.
 
 ### Administrator Roles
 
@@ -61,7 +61,7 @@ Disabled by default, with ability to enable for specific projects.
 
 ![Configuration Delegation Settings](/uploads/message-field-cloud/configuration/delegation%20settings.png)
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click **Configuration Delegation** tab
 3. Select **Global Delegation Policy** from dropdown:
    - **Enable for all projects, unless specified otherwise**
@@ -70,7 +70,7 @@ Disabled by default, with ability to enable for specific projects.
 4. Configure **Project-specific Settings** to override the global policy for individual projects
 5. Click **Save Settings**
 
-The delegation settings allow you to control which projects can access and configure message panels. You can:
+The delegation settings allow you to control which projects can access and configure message fields. You can:
 - Set a global policy for all projects
 - Optionally configure specific overrides for individual projects
 - Choose between "Use global setting", "Enable", or "Disable" for each project
@@ -81,7 +81,7 @@ The delegation settings allow you to control which projects can access and confi
 
 1. Go to **Project Settings** for your project
 2. Look for **Apps** section in sidebar
-3. Click **Message Panel Settings**
+3. Click **Message Field Settings**
 
 **Note**: This option only appears if delegation is enabled for your project.
 
@@ -104,7 +104,7 @@ The project-specific settings page includes:
 
 ### Walkthrough: Creating a First Panel as Project Admin
 
-1. Navigate to your **Project Settings** → **Apps** → **Message Panel Settings**
+1. Navigate to your **Project Settings** → **Apps** → **Message Field Settings**
 2. Click **Create panel**
 3. Enter a **Name** (e.g., "Sprint Planning Reminder")
 4. Select a **Display Module** (e.g., Issue Panel)

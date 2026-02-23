@@ -24,7 +24,7 @@ message-field:
     - message-field/refined-for-jira
 
 message-field-cloud:
-  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Panel for Jira Cloud" style="width:24px;height:24px"> Message Panel for Jira Cloud
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" style="width:24px;height:24px"> Message Field for Jira Cloud
     docs:
     - message-field-cloud/overview
     - message-field-cloud/getting-started
@@ -312,3 +312,43 @@ user-helper-cloud:
   - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
     docs:
       - user-helper-cloud/overview
+
+jibrok-studio-jira:
+  - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:24px;height:24px"> JiBrok Studio for Jira Cloud
+    docs:
+    - jibrok-studio-jira/overview
+    - jibrok-studio-jira/getting-started
+
+  - title: Core Features
+    docs:
+    - jibrok-studio-jira/script-console
+    - jibrok-studio-jira/script-engine-reference
+    - jibrok-studio-jira/script-library
+    - jibrok-studio-jira/global-variables
+
+  - title: Triggers
+    docs:
+    - jibrok-studio-jira/triggers
+    - jibrok-studio-jira/triggers-scheduled
+    - jibrok-studio-jira/triggers-events
+    - jibrok-studio-jira/triggers-async
+
+  - title: Extensions
+    docs:
+    - jibrok-studio-jira/scripted-fields
+    - jibrok-studio-jira/ui-modifications
+    - jibrok-studio-jira/automation
+    - jibrok-studio-jira/rovo
+
+  - title: Data Storage
+    docs:
+    - jibrok-studio-jira/data-storage
+
+  - title: Administration & Reference
+    docs:
+    - jibrok-studio-jira/admin-settings
+    - jibrok-studio-jira/scripting-language
+    - jibrok-studio-jira/scripting-api
+    - jibrok-studio-jira/use-cases
+    - jibrok-studio-jira/limits
+    - jibrok-studio-jira/faq

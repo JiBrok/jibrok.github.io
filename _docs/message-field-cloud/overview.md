@@ -1,7 +1,7 @@
 ---
 title: Overview
 key: message-field-cloud
-excerpt: Learn what Message Panel for Jira Cloud does and how it helps your team
+excerpt: Learn what Message Field for Jira Cloud does and how it helps your team
 category: getting-started
 tags:
   - doc
@@ -13,11 +13,11 @@ tags:
 * TOC
 {:toc}
 
-## What is Message Panel?
+## What is Message Field?
 
-Message Panel is a Jira Cloud app that displays dynamic information panels on issues. It helps teams communicate important context, warnings, and related data directly where work happens.
+Message Field is a Jira Cloud app that displays dynamic information panels on issues. It helps teams communicate important context, warnings, and related data directly where work happens.
 
-![Message Panel Example](/uploads/message-field-cloud/configuration/example%20jira%20modules.png)
+![Message Field Example](/uploads/message-field-cloud/configuration/example%20jira%20modules.png)
 
 **[Get it on Atlassian Marketplace](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)**
 
@@ -37,7 +37,7 @@ Use it to:
 | **Multiple Data Sources** | Display linked issues, JQL results, or custom messages |
 | **Display Modules** | Jira modules (Issue Panel, Activity, Context, Action) and JSM Portal modules |
 | **JSM Create Modules** | Display panels on request creation forms with access to form field values |
-| **Custom Fields** | Display message panels as native Jira custom fields with per-context configuration |
+| **Custom Fields** | Display message fields as native Jira custom fields with per-context configuration |
 | **Conditional Display** | Show panels only for specific projects, issue types, or JQL conditions |
 | **User Field Visibility** | Show panels only when viewing user is in specific fields |
 | **Enable/Disable** | Toggle configurations on/off without deleting them |

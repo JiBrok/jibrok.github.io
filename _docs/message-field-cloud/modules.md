@@ -14,7 +14,7 @@ tags:
 * TOC
 {:toc}
 
-Message Panel can display in multiple locations across Jira and Jira Service Management.
+Message Field can display in multiple locations across Jira and Jira Service Management.
 
 ![All Jira Modules Example](/uploads/message-field-cloud/configuration/example%20jira%20modules.png)
 
@@ -235,7 +235,7 @@ Priority: {{ fields.priority.name }}
 
 ## UIM Management
 
-UI Modifications (UIMs) are used by Message Panel to display content in JSM portals. The Modules page includes a management section for monitoring and troubleshooting UIMs.
+UI Modifications (UIMs) are used by Message Field to display content in JSM portals. The Modules page includes a management section for monitoring and troubleshooting UIMs.
 
 ![UIM Management section](/uploads/message-field-cloud/configuration/uim-management.png)
 
@@ -270,7 +270,7 @@ The following operations are available for troubleshooting and cleanup:
 
 ![Module Settings](/uploads/message-field-cloud/configuration/module%20settings.png)
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click the **Module Settings** tab
 3. Toggle modules on/off
 4. Click **Save Settings**
@@ -337,7 +337,7 @@ Panels with the same weight are sorted alphabetically by name.
 ## Next Steps
 
 - [Configuration Basics](configuration-basics) - Create panel configurations
-- [Custom Fields](custom-fields) - Use Message Panel as a custom field
+- [Custom Fields](custom-fields) - Use Message Field as a custom field
 - [Context Filters](context-filters) - Control when panels appear
 - [Modal Windows](modal-windows) - Pop-up dialogs (Issue Panel only)
 - [JSM Integration](jsm-integration) - Detailed JSM setup

@@ -38,7 +38,7 @@
                         <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field"
                              style="width:100px;height:100px">
                         {% elsif item.icon == 'message-field-cloud' %}
-                        <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Panel for Jira Cloud"
+                        <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud"
                              style="width:100px;height:100px">
                         {% elsif item.icon == 'confluence' %}
                         <img src="/uploads/atlassian/mark-gradient-blue-confluence.svg" alt="JiBrok confluence" style="width:100px;height:100px">
@@ -60,6 +60,9 @@
                         <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:170px;height:100px">
                         {% elsif item.icon == 'user-helper-cloud' %}
                         <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:100px;height:100px">
+                        {% elsif item.icon == 'jibrok-studio-jira' %}
+                        <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud"
+                             style="width:100px;height:100px">
                         {% else %}
                         <span data-uk-icon="icon: {{ item.icon }}; ratio: 3.4" class=""></span>
                         {% endif %}

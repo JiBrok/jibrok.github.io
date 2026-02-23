@@ -1,7 +1,7 @@
 ---
 title: Permissions & Security
 key: message-field-cloud
-excerpt: How Message Panel handles permissions, data access, and security
+excerpt: How Message Field handles permissions, data access, and security
 category: administration
 tags:
   - doc
@@ -29,7 +29,7 @@ tags:
 
 ## App Scopes
 
-Message Panel requests the following Jira API scopes:
+Message Field requests the following Jira API scopes:
 
 | Scope | Purpose |
 |-------|---------|
@@ -63,7 +63,7 @@ When [delegation](delegation) is enabled, project administrators can:
 - Create, edit, and delete configurations **for their own projects**
 - Manage custom field configurations for their projects
 - Preview, duplicate, and export/import configurations
-- Access project-specific settings via **Project Settings** → **Apps** → **Message Panel Settings**
+- Access project-specific settings via **Project Settings** → **Apps** → **Message Field Settings**
 
 Project administrators **cannot**:
 - Change the actor (impersonation) setting
@@ -195,7 +195,7 @@ When configuring panels for JSM portals, consider what data is visible to custom
 
 ### Personal Data
 
-Message Panel may display personal data from Jira (user names, email addresses, avatars) when template variables reference user fields. The app:
+Message Field may display personal data from Jira (user names, email addresses, avatars) when template variables reference user fields. The app:
 
 - Does **not** store personal data independently — all user data comes from Jira's API at render time
 - Does **not** transfer data to external services
@@ -212,13 +212,13 @@ Message Panel may display personal data from Jira (user names, email addresses, 
 
 ## Jira Permission Respect
 
-Message Panel respects Jira's native permission model:
+Message Field respects Jira's native permission model:
 
 | Permission | Effect |
 |------------|--------|
 | **Browse Projects** | Users can only see panel data from projects they can browse |
 | **Administer Projects** | Required for project-level delegation access |
-| **Jira Administrators** | Full access to all Message Panel settings |
+| **Jira Administrators** | Full access to all Message Field settings |
 | **Service Desk Customer** | Can view JSM portal panels on their requests |
 
 The app never elevates a user's permissions. If a user cannot see an issue in Jira, they cannot see its data through a panel.

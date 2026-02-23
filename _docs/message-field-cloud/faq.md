@@ -18,7 +18,7 @@ tags:
 
 ### The app is installed but I don't see any panels
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Check the **Module Settings** tab — ensure the desired modules are enabled
 3. Create at least one panel configuration with [Configuration Basics](configuration-basics)
 4. Verify the configuration is **Enabled** (toggle is on)
@@ -172,7 +172,7 @@ If template variables in JQL aren't being replaced:
 
 ### Custom field configurations disappearing
 
-- Message Panel runs an hourly cleanup scheduler that detects deleted fields and removed contexts
+- Message Field runs an hourly cleanup scheduler that detects deleted fields and removed contexts
 - If a custom field is deleted in Jira, its configurations are automatically **disabled**
 - If a field context is removed, the associated configuration is **disabled**
 - Disabled configurations can be found in the configuration list and re-enabled if the field/context is restored
@@ -201,10 +201,10 @@ If template variables in JQL aren't being replaced:
 
 ## Delegation Issues
 
-### Project admin can't see Message Panel Settings
+### Project admin can't see Message Field Settings
 
 1. Verify delegation is **enabled** for the project — check with a site admin
-2. The setting appears in **Project Settings** → **Apps** → **Message Panel Settings**
+2. The setting appears in **Project Settings** → **Apps** → **Message Field Settings**
 3. The user must have the **Administer Projects** permission for the project
 4. If using "Disable with Exceptions" policy, the specific project must be in the enabled list
 

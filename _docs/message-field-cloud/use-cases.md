@@ -14,7 +14,7 @@ tags:
 * TOC
 {:toc}
 
-Practical examples of how teams use Message Panel to solve real problems.
+Practical examples of how teams use Message Field to solve real problems.
 
 ---
 

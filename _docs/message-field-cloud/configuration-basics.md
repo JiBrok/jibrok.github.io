@@ -22,12 +22,12 @@ Each panel configuration controls:
 
 ## Creating a Configuration
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click **Create panel**
 3. Configure settings across tabs
 4. Click **Save**
 
-![Message Panel Settings Overview](/uploads/message-field-cloud/configuration/navigation%20and%20all%20settings.png)
+![Message Field Settings Overview](/uploads/message-field-cloud/configuration/navigation%20and%20all%20settings.png)
 
 ---
 
