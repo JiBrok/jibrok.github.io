@@ -55,9 +55,9 @@ Results are highlighted to show which criteria matched.
 
 ### Filtering
 
-- **By labels** — select one or more labels to filter
-- **By trigger type** — show only scripts with specific triggers
-- **By folder** — navigate into folders via breadcrumb navigation
+- **By labels** - select one or more labels to filter
+- **By trigger type** - show only scripts with specific triggers
+- **By folder** - navigate into folders via breadcrumb navigation
 
 ---
 
@@ -153,7 +153,7 @@ Select two versions to see a **diff view** highlighting what changed between the
 
 ### Restoring Versions
 
-Restore any previous version — this creates a **new version entry** (the restored content becomes the latest version, preserving the full history).
+Restore any previous version - this creates a **new version entry** (the restored content becomes the latest version, preserving the full history).
 
 <a href="/uploads/jibrok-studio-jira/library-save-script-dialog.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-save-script-dialog.png" alt="Save script dialog" style="width:100%;" loading="lazy"></a>
@@ -195,6 +195,6 @@ Each script has a quick actions menu:
 
 ## Next Steps
 
-- [Script Console](/docs/jibrok-studio-jira/script-console) — Write and run scripts
-- [Triggers](/docs/jibrok-studio-jira/triggers) — Automate script execution
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Import/export and label management
+- [Script Console](/docs/jibrok-studio-jira/script-console) - Write and run scripts
+- [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Import/export and label management

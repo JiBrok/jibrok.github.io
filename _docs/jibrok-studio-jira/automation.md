@@ -123,8 +123,8 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ## Important Notes
 
-- Scripts run as **Application** — they use the Forge app's permissions, not a specific user's
-- The script must have an enabled **Automation** trigger — otherwise the action will fail
+- Scripts run as **Application** - they use the Forge app's permissions, not a specific user's
+- The script must have an enabled **Automation** trigger - otherwise the action will fail
 - The **Automation** trigger type must be enabled in [Administration](/docs/jibrok-studio-jira/admin-settings)
 - Standard [execution limits](/docs/jibrok-studio-jira/limits) apply
 
@@ -132,7 +132,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ## Next Steps
 
-- [Triggers](/docs/jibrok-studio-jira/triggers) — All trigger types
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Enable/disable Automation trigger type
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language and API reference
-- [Limits](/docs/jibrok-studio-jira/limits) — Execution limits
+- [Triggers](/docs/jibrok-studio-jira/triggers) - All trigger types
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Enable/disable Automation trigger type
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference
+- [Limits](/docs/jibrok-studio-jira/limits) - Execution limits

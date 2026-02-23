@@ -26,9 +26,9 @@ tags:
 | Max collection size (Set/Map) | 10,000 | 10,000 |
 | Max array size | 50,000 | 50,000 |
 | Max pending promises | 50 | 0 |
-| Max API calls | 40 | — |
+| Max API calls | 40 | - |
 | Max eval calls | 20 | 0 |
-| Max include depth | 5 | — |
+| Max include depth | 5 | - |
 | Max input size | 100,000 chars | 100,000 chars |
 
 > **Note:** The Globals Script column shows reduced limits for the global variables script, which runs before every other script execution.
@@ -179,6 +179,6 @@ tags:
 
 ## Next Steps
 
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language details and sandbox
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Configuring limits and restrictions
-- [FAQ](/docs/jibrok-studio-jira/faq) — Troubleshooting limit-related issues
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language details and sandbox
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Configuring limits and restrictions
+- [FAQ](/docs/jibrok-studio-jira/faq) - Troubleshooting limit-related issues

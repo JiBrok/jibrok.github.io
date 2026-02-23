@@ -82,6 +82,6 @@ log("Issue:", issueKey, "-", issue.fields.summary)
 
 ## See Also
 
-- [Triggers Overview](/docs/jibrok-studio-jira/triggers) — All trigger types at a glance
-- [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) — Run scripts on a schedule
-- [Async Events](/docs/jibrok-studio-jira/triggers-async) — Trigger scripts asynchronously
+- [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
+- [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) - Run scripts on a schedule
+- [Async Events](/docs/jibrok-studio-jira/triggers-async) - Trigger scripts asynchronously

@@ -59,10 +59,10 @@ SQL-backed structured storage accessible from both the UI and scripts.
 
 ### Managing Data in the UI
 
-- **Add Row** — opens a form with fields for each column
-- **Edit Row** — click a row to modify values
-- **Delete Row** — select rows and delete, or delete individually
-- **Search and Sort** — filter rows by column values, sort ascending or descending
+- **Add Row** - opens a form with fields for each column
+- **Edit Row** - click a row to modify values
+- **Delete Row** - select rows and delete, or delete individually
+- **Search and Sort** - filter rows by column values, sort ascending or descending
 
 ### Script API
 
@@ -193,7 +193,7 @@ View messages filtered by status (Pending, Processing, Failed). Actions include:
 Access queues from scripts using the `queue` variable:
 
 ```js
-// Push a message (with optional priority — higher = processed first)
+// Push a message (with optional priority - higher = processed first)
 await queue.push("tasks", { action: "process", data: "..." }, 5)
 
 // Pull messages for processing
@@ -236,5 +236,5 @@ const stats = await queue.stats("tasks")
 
 ## Next Steps
 
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Full API reference
-- [Limits](/docs/jibrok-studio-jira/limits) — All storage limits
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Full API reference
+- [Limits](/docs/jibrok-studio-jira/limits) - All storage limits

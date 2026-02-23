@@ -1,7 +1,7 @@
 ---
 title: Overview
 key: jibrok-studio-jira
-excerpt: Scripting platform for Jira Cloud — automate, extend, and customize your Jira workflows
+excerpt: Scripting platform for Jira Cloud - automate, extend, and customize your Jira workflows
 category: getting-started
 tags:
   - doc
@@ -15,7 +15,7 @@ tags:
 
 ## What is JiBrok Studio for Jira Cloud?
 
-JiBrok Studio for Jira Cloud is a Forge-based scripting platform for Jira Cloud. It lets Jira administrators write, manage, and automate scripts that interact with Jira data — all from within the Jira interface.
+JiBrok Studio for Jira Cloud is a Forge-based scripting platform for Jira Cloud. It lets Jira administrators write, manage, and automate scripts that interact with Jira data - all from within the Jira interface.
 
 Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API, ensuring your data stays safe.
 
@@ -55,10 +55,10 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 1. **Write** scripts in the built-in code editor using a JavaScript-like language (Python and Groovy engines also available)
 2. **Test** interactively in the Console with sandbox mode for safe experimentation
 3. **Save** scripts to the Library for reuse and organization
-4. **Automate** by attaching triggers — schedules, events, form changes, and more
+4. **Automate** by attaching triggers - schedules, events, form changes, and more
 5. **Store** structured data in Custom Tables and process async workloads via Message Queues
 
-All scripts run inside a Forge-powered sandbox with strict resource limits. There is no access to external networks, filesystems, or browser APIs — only the Jira REST API is available.
+All scripts run inside a Forge-powered sandbox with strict resource limits. There is no access to external networks, filesystems, or browser APIs - only the Jira REST API is available.
 
 ---
 

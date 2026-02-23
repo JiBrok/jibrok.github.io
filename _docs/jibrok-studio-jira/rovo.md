@@ -15,7 +15,7 @@ tags:
 
 ## Overview
 
-JiBrok Studio registers as a **Rovo AI agent**, allowing Atlassian Rovo to discover and run scripts from your library through natural language conversations. Users can ask Rovo to list available scripts and execute them — directly from the Rovo chat interface.
+JiBrok Studio registers as a **Rovo AI agent**, allowing Atlassian Rovo to discover and run scripts from your library through natural language conversations. Users can ask Rovo to list available scripts and execute them - directly from the Rovo chat interface.
 
 ---
 
@@ -107,7 +107,7 @@ Rovo displays these results in the chat conversation.
 ## Important Notes
 
 - Scripts must be **enabled** with an **enabled Rovo trigger** to appear in Rovo
-- By default, scripts run as the **current Rovo user** — they use that user's Jira permissions. If the user cannot be resolved, falls back to Application.
+- By default, scripts run as the **current Rovo user** - they use that user's Jira permissions. If the user cannot be resolved, falls back to Application.
 - The **Rovo** trigger type must be enabled in [Administration](/docs/jibrok-studio-jira/admin-settings)
 - Standard [execution limits](/docs/jibrok-studio-jira/limits) apply
 
@@ -118,7 +118,7 @@ Rovo displays these results in the chat conversation.
 
 ## Next Steps
 
-- [Triggers](/docs/jibrok-studio-jira/triggers) — All trigger types
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Enable/disable Rovo trigger type
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language and API reference
-- [Limits](/docs/jibrok-studio-jira/limits) — Execution limits
+- [Triggers](/docs/jibrok-studio-jira/triggers) - All trigger types
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Enable/disable Rovo trigger type
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference
+- [Limits](/docs/jibrok-studio-jira/limits) - Execution limits

@@ -30,9 +30,9 @@ The Console is the main interface for writing and executing scripts. It provides
 The editor supports:
 
 - **Syntax highlighting** for the scripting language
-- **Script engine selection** — choose between JavaScript (primary), Python, and Groovy engines. More engines will be added in future updates.
-- **Variables popup** — insert available variable names into the editor
-- **Local draft auto-save** — drafts are saved to browser localStorage automatically
+- **Script engine selection** - choose between JavaScript (primary), Python, and Groovy engines. More engines will be added in future updates.
+- **Variables popup** - insert available variable names into the editor
+- **Local draft auto-save** - drafts are saved to browser localStorage automatically
 
 <a href="/uploads/jibrok-studio-jira/console-editor-logging-functions.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-editor-logging-functions.png" alt="Code editor with logging functions example" style="width:100%;" loading="lazy"></a>
@@ -86,9 +86,9 @@ Complex objects are displayed as formatted JSON.
 
 After each run, the console shows:
 
-- **Duration** — total script execution time
-- **Result** — the value of the last expression or explicit `return`
-- **Log output** — messages from `log()`, `debug()`, `info()`, `warn()`, `error()`
+- **Duration** - total script execution time
+- **Result** - the value of the last expression or explicit `return`
+- **Log output** - messages from `log()`, `debug()`, `info()`, `warn()`, `error()`
 
 ---
 
@@ -190,7 +190,7 @@ See [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) 
 
 ### Output
 
-Shows the execution output — log messages and the script result. Cleared on each new run.
+Shows the execution output - log messages and the script result. Cleared on each new run.
 
 ### History
 
@@ -281,8 +281,8 @@ When working in draft mode (no saved script open), the Console automatically sav
 
 ## Next Steps
 
-- [Script Library](/docs/jibrok-studio-jira/script-library) — Manage saved scripts
-- [Triggers](/docs/jibrok-studio-jira/triggers) — Automate script execution
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Configure Run As modes and security
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language reference
-- [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) — Built-in reference panel
+- [Script Library](/docs/jibrok-studio-jira/script-library) - Manage saved scripts
+- [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Configure Run As modes and security
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language reference
+- [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) - Built-in reference panel

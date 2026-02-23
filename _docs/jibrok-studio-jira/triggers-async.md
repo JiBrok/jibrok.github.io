@@ -82,6 +82,6 @@ See the [Async Event API](/docs/jibrok-studio-jira/scripting-api#asyncevent) for
 
 ## See Also
 
-- [Triggers Overview](/docs/jibrok-studio-jira/triggers) — All trigger types at a glance
-- [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) — Run scripts on a schedule
-- [Event Triggers](/docs/jibrok-studio-jira/triggers-events) — React to Jira events
+- [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
+- [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) - Run scripts on a schedule
+- [Event Triggers](/docs/jibrok-studio-jira/triggers-events) - React to Jira events

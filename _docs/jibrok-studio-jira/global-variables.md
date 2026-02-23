@@ -45,7 +45,7 @@ log(formatDate(new Date()))    // => 2024-01-15
 
 1. Navigate to the **Global Variables** tab
 2. Edit the global script in the editor
-3. Click **Run** to test — the output shows defined variables with types and preview values
+3. Click **Run** to test - the output shows defined variables with types and preview values
 4. Click **Save** to activate
 
 <a href="/uploads/jibrok-studio-jira/global-variables-config.png" target="_blank">
@@ -82,6 +82,6 @@ After running, a table shows the defined variables:
 
 ## Next Steps
 
-- [Script Console](/docs/jibrok-studio-jira/script-console) — Using variables in scripts
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language reference
-- [Limits](/docs/jibrok-studio-jira/limits) — All system limits
+- [Script Console](/docs/jibrok-studio-jira/script-console) - Using variables in scripts
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language reference
+- [Limits](/docs/jibrok-studio-jira/limits) - All system limits

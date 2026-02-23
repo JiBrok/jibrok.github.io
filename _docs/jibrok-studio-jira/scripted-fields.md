@@ -60,19 +60,19 @@ Scripted fields can be restricted to specific projects and issue types, limiting
 
 ## Examples
 
-### Scripted Text Field — Priority + Status
+### Scripted Text Field - Priority + Status
 
 ```js
 return `${issue.priority} - ${issue.status}`
 ```
 
-### Scripted Number Field — Days Since Creation
+### Scripted Number Field - Days Since Creation
 
 ```js
 return issue.age
 ```
 
-### Scripted Number Field — Sum Subtask Story Points
+### Scripted Number Field - Sum Subtask Story Points
 
 ```js
 let subtasks = await Issues.search(`parent = ${issueKey}`, {
@@ -87,14 +87,14 @@ for (let sub of subtasks.issues) {
 return total
 ```
 
-### Scripted Date Field — Due Date + Business Days
+### Scripted Date Field - Due Date + Business Days
 
 ```js
 const due = DateUtils.addBusinessDays(issue.created, 14)
 return DateUtils.format(due, 'YYYY-MM-DD')
 ```
 
-### Scripted DateTime Field — Last Comment Timestamp
+### Scripted DateTime Field - Last Comment Timestamp
 
 ```js
 const comments = await issue.getComments()
@@ -108,6 +108,6 @@ return null
 
 ## Next Steps
 
-- [Triggers](/docs/jibrok-studio-jira/triggers) — Scripted field trigger configuration
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language and API reference
-- [Limits](/docs/jibrok-studio-jira/limits) — Execution limits
+- [Triggers](/docs/jibrok-studio-jira/triggers) - Scripted field trigger configuration
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference
+- [Limits](/docs/jibrok-studio-jira/limits) - Execution limits

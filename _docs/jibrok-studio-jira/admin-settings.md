@@ -100,8 +100,8 @@ Control which Jira REST API endpoints scripts can access.
 
 Create named whitelist/blacklist profiles for per-script restrictions:
 
-- **Custom Whitelists** — named profiles with endpoint patterns, assigned to specific scripts in their Config tab. A script must pass both the global whitelist AND its custom whitelist.
-- **Custom Blacklists** — named profiles assigned to specific scripts. Blacklist checked before whitelist at the script level.
+- **Custom Whitelists** - named profiles with endpoint patterns, assigned to specific scripts in their Config tab. A script must pass both the global whitelist AND its custom whitelist.
+- **Custom Blacklists** - named profiles assigned to specific scripts. Blacklist checked before whitelist at the script level.
 - Up to **50 profiles** each, with up to **200 entries** per profile
 
 <a href="/uploads/jibrok-studio-jira/admin-script-whitelists.png" target="_blank">
@@ -126,7 +126,7 @@ Manage UI Modification registrations:
 
 1. Go to the **Admin** tab > Export section
 2. Select scripts to export (or export all)
-3. Click **Export** — copy to clipboard or download as file
+3. Click **Export** - copy to clipboard or download as file
 
 Exported data includes: script source code, name, description, enabled status, actor configuration, labels, folder path, trigger configurations, and version history.
 
@@ -150,9 +150,9 @@ Import behavior:
 
 Run database maintenance tasks:
 
-- **Run migrations** — apply pending database schema updates (also runs hourly automatically)
-- **Check duplicates** — detect and remove duplicate global variable scripts
-- **Storage Usage** — view Forge SQL database size, table sizes, index sizes, and row counts
+- **Run migrations** - apply pending database schema updates (also runs hourly automatically)
+- **Check duplicates** - detect and remove duplicate global variable scripts
+- **Storage Usage** - view Forge SQL database size, table sizes, index sizes, and row counts
 
 <a href="/uploads/jibrok-studio-jira/admin-health-check.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-health-check.png" alt="Health Check panel" style="width:100%;" loading="lazy"></a>
@@ -199,7 +199,7 @@ Rolling log of all script executions across the site.
 <a href="/uploads/jibrok-studio-jira/admin-audit-script-runs.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-audit-script-runs.png" alt="Script Runs audit log" style="width:100%;" loading="lazy"></a>
 
-Maximum **10,000 records** (rolling window — oldest entries are automatically deleted when the limit is reached).
+Maximum **10,000 records** (rolling window - oldest entries are automatically deleted when the limit is reached).
 
 ### Version History Audit
 
@@ -240,6 +240,6 @@ GDPR personal data reporting is supported through the Forge platform.
 
 ## Next Steps
 
-- [Script Console](/docs/jibrok-studio-jira/script-console) — Run As selection in the console
-- [Triggers](/docs/jibrok-studio-jira/triggers) — Trigger type configuration
-- [Limits](/docs/jibrok-studio-jira/limits) — All system limits
+- [Script Console](/docs/jibrok-studio-jira/script-console) - Run As selection in the console
+- [Triggers](/docs/jibrok-studio-jira/triggers) - Trigger type configuration
+- [Limits](/docs/jibrok-studio-jira/limits) - All system limits

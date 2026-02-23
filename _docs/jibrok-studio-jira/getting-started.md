@@ -75,11 +75,11 @@ The `issueKey` variable is automatically available when you provide an issue key
 
 Scripts run in a secure sandbox with strict limits:
 
-- **No network access** — except through `requestJira()` and built-in API namespaces
-- **No filesystem** — scripts cannot read or write files
-- **Resource limits** — execution time (10s), loop iterations (50K), and API calls (40) are capped. These limits will be increased in future updates.
-- **Method whitelisting** — only approved methods can be called
-- **Auto-await** — async API calls are automatically resolved
+- **No network access** - except through `requestJira()` and built-in API namespaces
+- **No filesystem** - scripts cannot read or write files
+- **Resource limits** - execution time (10s), loop iterations (50K), and API calls (40) are capped. These limits will be increased in future updates.
+- **Method whitelisting** - only approved methods can be called
+- **Auto-await** - async API calls are automatically resolved
 
 ### Output
 
@@ -91,7 +91,7 @@ log("a", "b", "c")      // multiple values (space-separated)
 log({key: "value"})      // objects are JSON-formatted
 ```
 
-Other log levels: `debug()`, `info()`, `warn()`, `error()` — they appear with different styling in the output.
+Other log levels: `debug()`, `info()`, `warn()`, `error()` - they appear with different styling in the output.
 
 ### Result
 

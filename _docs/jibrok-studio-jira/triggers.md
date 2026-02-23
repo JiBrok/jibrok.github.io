@@ -78,9 +78,9 @@ Each trigger has its own enabled/disabled toggle, independent of the script's en
 
 ## Next Steps
 
-- [Script Console](/docs/jibrok-studio-jira/script-console) — Configure triggers via Config tab
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — Global trigger type controls
-- [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) — Field computation triggers
-- [UI Modifications](/docs/jibrok-studio-jira/ui-modifications) — Form customization triggers
-- [Jira Automation Integration](/docs/jibrok-studio-jira/automation) — Run scripts from Jira Automation rules
-- [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) — Expose scripts to Rovo AI
+- [Script Console](/docs/jibrok-studio-jira/script-console) - Configure triggers via Config tab
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - Global trigger type controls
+- [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) - Field computation triggers
+- [UI Modifications](/docs/jibrok-studio-jira/ui-modifications) - Form customization triggers
+- [Jira Automation Integration](/docs/jibrok-studio-jira/automation) - Run scripts from Jira Automation rules
+- [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) - Expose scripts to Rovo AI

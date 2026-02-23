@@ -46,6 +46,6 @@ return results.issues.length + " issues closed"
 
 ## See Also
 
-- [Triggers Overview](/docs/jibrok-studio-jira/triggers) — All trigger types at a glance
-- [Event Triggers](/docs/jibrok-studio-jira/triggers-events) — React to Jira events
-- [Async Events](/docs/jibrok-studio-jira/triggers-async) — Trigger scripts asynchronously
+- [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
+- [Event Triggers](/docs/jibrok-studio-jira/triggers-events) - React to Jira events
+- [Async Events](/docs/jibrok-studio-jira/triggers-async) - Trigger scripts asynchronously

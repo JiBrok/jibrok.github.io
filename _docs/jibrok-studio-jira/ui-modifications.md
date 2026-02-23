@@ -61,10 +61,10 @@ UIM is configured as a trigger type on scripts. Add a **UIM trigger** in the scr
 
 UIM scripts apply to:
 
-- **Create screens** — issue creation forms
-- **Edit screens** — issue edit forms
-- **Transition screens** — workflow transition dialogs
-- **JSM portal** — service desk request forms (per project/request type)
+- **Create screens** - issue creation forms
+- **Edit screens** - issue edit forms
+- **Transition screens** - workflow transition dialogs
+- **JSM portal** - service desk request forms (per project/request type)
 
 ---
 
@@ -180,6 +180,6 @@ Administrators can manage UIM registrations in the Admin tab:
 
 ## Next Steps
 
-- [Triggers](/docs/jibrok-studio-jira/triggers) — UIM trigger configuration details
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) — Language and API reference
-- [Administration](/docs/jibrok-studio-jira/admin-settings) — UIM registration management
+- [Triggers](/docs/jibrok-studio-jira/triggers) - UIM trigger configuration details
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference
+- [Administration](/docs/jibrok-studio-jira/admin-settings) - UIM registration management

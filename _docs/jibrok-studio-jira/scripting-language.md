@@ -1,7 +1,7 @@
 ---
 title: Scripting Language
 key: jibrok-studio-jira
-excerpt: Language reference — engines, syntax, built-in APIs, and sandbox details
+excerpt: Language reference - engines, syntax, built-in APIs, and sandbox details
 category: administration
 tags:
   - doc
