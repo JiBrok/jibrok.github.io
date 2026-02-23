@@ -145,7 +145,7 @@ Shows open issues assigned to the person viewing the panel.
 
 ### JQL Validation
 
-When configuring a JQL query, Message Panel provides inline validation:
+When configuring a JQL query, Message Field provides inline validation:
 
 - **Syntax check** — validates the JQL syntax before saving
 - **Issue count preview** — shows how many issues match the query

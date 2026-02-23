@@ -17,7 +17,7 @@ This file tracks screenshots that need to be captured for the updated documentat
 
 ## Delegation
 
-- [ ] **Project admin settings page** — Screenshot of what project admins see in Project Settings → Apps → Message Panel Settings (delegation.md)
+- [ ] **Project admin settings page** — Screenshot of what project admins see in Project Settings → Apps → Message Field Settings (delegation.md)
 - [ ] **Project-specific configuration table** — Screenshot of the configuration list from the project admin perspective (delegation.md)
 
 ## Testing Panels
@@ -28,7 +28,7 @@ This file tracks screenshots that need to be captured for the updated documentat
 
 ## Rovo Integration
 
-- [ ] **Message Panel Admin Agent** — Screenshot of the Admin Agent in Rovo (rovo-integration.md)
+- [ ] **Message Field Admin Agent** — Screenshot of the Admin Agent in Rovo (rovo-integration.md)
 - [ ] **Admin Agent conversation** — Screenshot showing an example conversation with the Admin Agent (rovo-integration.md)
 
 ## Custom Fields
@@ -78,8 +78,8 @@ These images exist and are already referenced in the documentation:
 - `example jsm create priority.png` — JSM Create Priority
 - `navigation and all settings.png` — Navigation Overview
 - `template editor with preview.png` — Template Editor
-- `rovo agent Message Panel Agent.png` — Rovo Agent
-- `message-panel-assistant.png` — Message Panel Assistant
+- `rovo agent Message Field Agent.png` — Rovo Agent
+- `message-field-assistant.png` — Message Field Assistant
 - `module-settings-custom-field.png` — Custom Field Module Settings
 - `custom-field-issue-view.png` — Custom Field Issue View
 - `custom-field-context-config.png` — Custom Field Context Config

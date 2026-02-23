@@ -110,7 +110,7 @@ Transform values using `|` (pipe) syntax: `{{ value | filter }}`.
 | `issueLink` | Issue browse URL | `{{ linked.key \| issueLink }}` |
 | `formatField(fieldId)` | Format field value | `{{ value \| formatField("customfield_10001") }}` |
 
-> **Context-Dependent Filters**: The filters `statusBadge`, `avatar`, and `formatField` require runtime context to render properly. When used in Message Panel templates, this context is automatically provided. If the context is unavailable, these filters return the input value unchanged.
+> **Context-Dependent Filters**: The filters `statusBadge`, `avatar`, and `formatField` require runtime context to render properly. When used in Message Field templates, this context is automatically provided. If the context is unavailable, these filters return the input value unchanged.
 
 **Filter Details:**
 

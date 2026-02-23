@@ -82,7 +82,7 @@ You've hit the **40-call-per-execution** limit. Solutions:
 
 ### What are uncatchable errors?
 
-Some errors cannot be caught with `try/catch`: timeout errors, iteration limit errors, and security errors. These immediately terminate the script to prevent abuse.
+Some errors cannot be caught with `try/catch`: timeout errors, iteration limit errors, AST node limit errors, eval limit errors, and security errors. These immediately terminate the script to prevent abuse.
 
 ---
 
@@ -102,7 +102,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 ### Event triggers
 
 - Verify the correct event type is selected (e.g., `issue_updated` for issue edits)
-- Check if **ignoreSelf** is preventing execution when expected
+- Events triggered by the app itself (via Application mode) are automatically ignored to prevent infinite loops
 - Verify context restrictions (projects/issue types) match
 
 ### Async event triggers
@@ -128,7 +128,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 - Ensure the script handles both `onInit` and `onChange` callbacks as needed
 - Verify field IDs are correct (use `Fields.id()` to resolve by name)
 - UIM scripts always run as **current user** — check user permissions
-- Use **Demo Mode** to test safely
+- Use **Sandbox Mode** in Console to test safely - UIM commands will be logged instead of executed
 
 ---
 
@@ -167,6 +167,47 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 - For bulk operations, process in batches across multiple scheduled runs
 - Keep UIM scripts fast — they run on every form interaction
 - Use the Globals script for shared constants instead of re-fetching in every script
+
+---
+
+## Automation & Integrations
+
+### Can I run scripts from Jira Automation?
+
+Yes. JiBrok Studio provides an Automation action that can be used in Jira Automation rules. Configure it with:
+
+- **scriptId** (required) - the ID of the script to run
+- **issueKey** (optional) - supports smart values like `{{issue.key}}`
+
+The Automation trigger type is enabled by default. You can disable it in [Administration](/docs/jibrok-studio-jira/admin-settings).
+
+### Can I use scripts with Rovo AI Agent?
+
+Yes. JiBrok Studio integrates with Rovo AI Agent, providing two actions: list available scripts and run a script. Scripts must have a Rovo trigger configured and be enabled.
+
+The Rovo trigger type is **disabled by default** - enable it in [Administration](/docs/jibrok-studio-jira/admin-settings).
+
+---
+
+## Export, Import & Version History
+
+### Can I back up or transfer scripts?
+
+Yes. Scripts can be exported and imported as JSON (v2 format):
+
+- **Export** individual scripts or all at once (up to 200)
+- **Import** updates existing scripts by matching ID, or creates new ones if no match is found
+- Exported data includes: id, name, source code, language, actor, labels, and folder path
+
+### Can I revert a script to a previous version?
+
+Yes. JiBrok Studio automatically saves up to **50 versions** per script. A new version is created each time you save. Each version stores:
+
+- Source code and description
+- Author who made the change
+- Snapshot of trigger configuration
+
+Older versions are removed automatically when the limit is reached.
 
 ---
 

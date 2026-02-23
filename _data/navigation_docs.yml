@@ -24,7 +24,7 @@ message-field:
     - message-field/refined-for-jira
 
 message-field-cloud:
-  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Panel for Jira Cloud" style="width:24px;height:24px"> Message Panel for Jira Cloud
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" style="width:24px;height:24px"> Message Field for Jira Cloud
     docs:
     - message-field-cloud/overview
     - message-field-cloud/getting-started
@@ -324,8 +324,14 @@ jibrok-studio-jira:
     - jibrok-studio-jira/script-console
     - jibrok-studio-jira/script-engine-reference
     - jibrok-studio-jira/script-library
-    - jibrok-studio-jira/triggers
     - jibrok-studio-jira/global-variables
+
+  - title: Triggers
+    docs:
+    - jibrok-studio-jira/triggers
+    - jibrok-studio-jira/triggers-scheduled
+    - jibrok-studio-jira/triggers-events
+    - jibrok-studio-jira/triggers-async
 
   - title: Extensions
     docs:

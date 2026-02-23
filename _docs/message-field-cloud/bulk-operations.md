@@ -19,7 +19,7 @@ tags:
 ## Export Configurations
 
 Save configurations as JSON file:
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click **Bulk Operations** tab
 3. Select configurations to export
 4. Click **Export Selected** or **Export All**

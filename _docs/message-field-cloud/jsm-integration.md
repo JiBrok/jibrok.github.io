@@ -18,7 +18,7 @@ Display information panels on the customer-facing Jira Service Management portal
 
 ## Overview
 
-Message Panel supports five JSM portal locations:
+Message Field supports five JSM portal locations:
 
 | Module | Location | Visibility |
 |--------|----------|------------|
@@ -34,7 +34,7 @@ For Create modules, see [JSM Create Modules](jsm-create-modules).
 
 ## Enabling JSM Modules
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click **Module Settings** tab
 3. Enable JSM modules:
    - JSM Portal Panel
@@ -46,7 +46,7 @@ For Create modules, see [JSM Create Modules](jsm-create-modules).
 
 ## JSM Portal Example
 
-Here's how Message Panel looks on the customer portal with multiple panels configured:
+Here's how Message Field looks on the customer portal with multiple panels configured:
 
 ![JSM Portal Example](/uploads/message-field-cloud/configuration/example%20jsm%20portal%20full.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 key: message-field-cloud
-excerpt: Install Message Panel and create your first panel in 5 minutes
+excerpt: Install Message Field and create your first panel in 5 minutes
 category: getting-started
 tags:
   - doc
@@ -18,7 +18,7 @@ tags:
 1. Log in to Jira Cloud as an **administrator**
 2. Click **Settings** (gear icon) → **Apps**
 3. Click **Find new apps** in the sidebar
-4. Search for **"Message Panel"**
+4. Search for **"Message Field"**
 5. Click **Get it now** or **Try it free**
 6. Accept the app permissions
 7. Wait for installation (1-2 minutes)
@@ -29,7 +29,7 @@ tags:
 
 After installation, enable where panels can appear:
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click the **Modules** tab
 3. Enable the modules you need:
 
@@ -48,11 +48,11 @@ After installation, enable where panels can appear:
 
 ## Create Your First Panel
 
-Let's create a simple welcome message panel:
+Let's create a simple welcome message field:
 
 ### Step 1: Open Settings
 
-Go to **Apps** → **Message Panel Settings**
+Go to **Apps** → **Message Field Settings**
 
 ### Step 2: Create Configuration
 
@@ -89,7 +89,7 @@ Click **Save Configuration**
 
 Open any Jira issue - you should see your panel in the right sidebar!
 
-You can also use Message Panel as a custom field — see [Custom Fields](custom-fields) for setup instructions.
+You can also use Message Field as a custom field — see [Custom Fields](custom-fields) for setup instructions.
 
 ## What's Next?
 

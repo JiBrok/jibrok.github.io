@@ -234,7 +234,7 @@ Result: Panel shows only when the person who reported the issue is viewing it.
 
 Check conditions in order:
 
-1. **Module enabled?** - Check Apps → Message Panel Settings → Modules tab
+1. **Module enabled?** - Check Apps → Message Field Settings → Modules tab
 2. **Configuration enabled?** - Check the "Enabled" toggle on the configuration
 3. **Project matches?** - Is issue in one of the selected projects?
 4. **Issue type matches?** - Is issue type in the selected types?

@@ -23,7 +23,8 @@ tags:
 | Max call depth | 64 | 32 |
 | Max string size | 1 MB | 100 KB |
 | Max log calls | 200 | 0 |
-| Max collection size (Set/Map/Array) | 10,000 | 10,000 |
+| Max collection size (Set/Map) | 10,000 | 10,000 |
+| Max array size | 50,000 | 50,000 |
 | Max pending promises | 50 | 0 |
 | Max API calls | 40 | — |
 | Max eval calls | 20 | 0 |
@@ -51,10 +52,10 @@ tags:
 |-------|-------|
 | Max scripts | 1,000 |
 | Max script size | 50 KB |
-| Max script name | 100 characters |
+| Max script name | 200 characters |
 | Max versions per script | 50 |
-| Max script description | 500 characters |
-| Max version description | 500 characters |
+| Max script description | 2,000 characters |
+| Max version description | 2,000 characters |
 | Max run history per script | 10 |
 | Max run logs size | 100 KB |
 | Max run result size | 50 KB |
@@ -87,10 +88,10 @@ tags:
 |-------|-------|
 | Max folders | 200 |
 | Max folder nesting depth | 10 levels |
-| Max folder description | 500 characters |
+| Max folder description | 2,000 characters |
 | Max labels | 100 |
 | Max labels per script | 10 |
-| Max label description | 500 characters |
+| Max label description | 2,000 characters |
 
 ---
 
@@ -117,7 +118,6 @@ tags:
 | Limit | Value |
 |-------|-------|
 | Max async event calls per script | 10 |
-| Max async event calls (chained, depth > 0) | 3 |
 | Max payload size | 100 KB |
 | Max delay | 900 seconds (15 min) |
 | Max chain depth | 1 |
@@ -162,6 +162,7 @@ tags:
 | Max import JSON size | 5 MB |
 | Audit run records | 10,000 (rolling) |
 | Scheduled trigger timeout | 120 seconds |
+| Async event consumer timeout | 25 seconds |
 | Max log string length | 1,000 characters |
 
 ---

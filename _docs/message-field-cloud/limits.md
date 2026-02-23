@@ -65,7 +65,7 @@ UI Modifications (UIMs) are used for JSM portal modules and custom field create 
 
 ## Caching
 
-Message Panel uses a 3-level caching strategy to optimize performance:
+Message Field uses a 3-level caching strategy to optimize performance:
 
 | Level | Storage | TTL | Purpose |
 |-------|---------|-----|---------|

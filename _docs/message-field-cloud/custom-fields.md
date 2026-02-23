@@ -1,7 +1,7 @@
 ---
 title: Custom Fields
 key: message-field-cloud
-excerpt: Use Message Panel as a native Jira custom field
+excerpt: Use Message Field as a native Jira custom field
 category: configuration
 tags:
   - doc
@@ -15,7 +15,7 @@ tags:
 
 ## What is the Custom Field Module?
 
-The Custom Field module allows Message Panel to function as a **native Jira custom field** rather than a display panel. Instead of appearing in fixed locations (sidebar, activity feed, etc.), the message is embedded directly in a custom field — visible on issue create, edit, transition, and view screens.
+The Custom Field module allows Message Field to function as a **native Jira custom field** rather than a display panel. Instead of appearing in fixed locations (sidebar, activity feed, etc.), the message is embedded directly in a custom field — visible on issue create, edit, transition, and view screens.
 
 This is ideal for delivering contextual guidance, warnings, or dynamic information exactly where users interact with issue data.
 
@@ -35,7 +35,7 @@ This is ideal for delivering contextual guidance, warnings, or dynamic informati
 
 ### Step 1: Enable the Custom Field Module
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Click the **Module Settings** tab
 3. Enable **Message Field (Custom Field)**
 4. Click **Save Settings**
@@ -66,7 +66,7 @@ Add your new custom field to the Jira screens where you want it to appear:
 
 ### Step 4: Configure the Field
 
-1. Go to **Apps** → **Message Panel Settings**
+1. Go to **Apps** → **Message Field Settings**
 2. Select the **Custom Fields** tab
 3. Select your custom field from the dropdown
 
@@ -83,7 +83,7 @@ Add your new custom field to the Jira screens where you want it to appear:
 
 ## Field Contexts
 
-Jira custom fields use **contexts** to define which projects and issue types the field applies to. Message Panel leverages these contexts to provide **different configurations per context**.
+Jira custom fields use **contexts** to define which projects and issue types the field applies to. Message Field leverages these contexts to provide **different configurations per context**.
 
 This means you can show:
 - One message for Bug issues in Project A
@@ -95,7 +95,7 @@ Each context has its own independent configuration — data source, message temp
 ### How Contexts Work
 
 1. When Jira displays the custom field, it determines which **field context** applies based on the current project and issue type
-2. Message Panel looks up the configuration for that specific context
+2. Message Field looks up the configuration for that specific context
 3. The configured message is rendered and displayed in the field
 
 > **Note:** If no configuration exists for a context, the field displays as empty.
@@ -144,7 +144,7 @@ Custom field configurations support the same options as panel configurations:
 
 ## UIM for Create Screens
 
-Message Panel uses **UI Modifications (UIM)** to display custom field content on create screens. This is managed automatically, but there are two configuration options that control this behavior:
+Message Field uses **UI Modifications (UIM)** to display custom field content on create screens. This is managed automatically, but there are two configuration options that control this behavior:
 
 | Option | Description |
 |--------|-------------|
@@ -159,7 +159,7 @@ When enabled, the custom field content appears in the create form alongside othe
 
 ## Automatic Cleanup
 
-Message Panel automatically manages custom field configurations through an **hourly scheduler** that detects changes to fields and contexts.
+Message Field automatically manages custom field configurations through an **hourly scheduler** that detects changes to fields and contexts.
 
 ### What the Scheduler Detects
 
