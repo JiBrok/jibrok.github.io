@@ -87,11 +87,11 @@ The **Test Context** feature checks all filter conditions for a specific issue t
 1. Enter an **Issue key**
 2. Click **Test Context**
 3. View results for each filter condition:
-   - **Project filter** — does the issue's project match?
-   - **Issue type filter** — does the issue type match?
-   - **Display JQL** — does the issue match the JQL condition?
-   - **User field filter** — does the current user match?
-   - **Portal/Request type filter** (JSM) — do the portal settings match?
+   - **Project filter** - does the issue's project match?
+   - **Issue type filter** - does the issue type match?
+   - **Display JQL** - does the issue match the JQL condition?
+   - **User field filter** - does the current user match?
+   - **Portal/Request type filter** (JSM) - do the portal settings match?
 
 Each condition shows a pass/fail status, making it easy to identify which filter is preventing a panel from appearing.
 
@@ -105,14 +105,14 @@ Display conditions use template syntax to conditionally show or hide panels. To 
 
 1. Configure a **Display Condition** using template syntax (see [Display Conditions](display-conditions))
 2. Enter a test **Issue key** in the preview
-3. Click **Preview Panel** — the preview respects display conditions
+3. Click **Preview Panel** - the preview respects display conditions
 4. If the condition evaluates to false, the preview shows that the panel would be hidden
 
 **Testing tips:**
 - Start with a simple condition and build up complexity
 - Use the **Issue JSON** view to verify field values before writing conditions
 - Test with multiple issues to verify both the "show" and "hide" cases
-- Remember that display conditions **fail open** by default — if the template has an error, the panel shows
+- Remember that display conditions **fail open** by default - if the template has an error, the panel shows
 
 ---
 
@@ -120,10 +120,10 @@ Display conditions use template syntax to conditionally show or hide panels. To 
 
 JSM portal panels have additional considerations when testing:
 
-- **Portal filter** — ensure the correct portal is selected in context filters
-- **Request type filter** — verify the request type matches
-- **Customer vs Agent view** — portal panels are visible to customers; test from the customer portal if possible
-- **Unlicensed access** — JSM portal panels use `unlicensedAccess`, so the viewer doesn't need a Jira license
+- **Portal filter** - ensure the correct portal is selected in context filters
+- **Request type filter** - verify the request type matches
+- **Customer vs Agent view** - portal panels are visible to customers; test from the customer portal if possible
+- **Unlicensed access** - JSM portal panels use `unlicensedAccess`, so the viewer doesn't need a Jira license
 
 **Tips for testing JSM panels:**
 1. Use **Preview Panel** with a service desk issue key to test message rendering
@@ -190,7 +190,7 @@ When a template has a syntax error, the panel displays an error message instead 
 - Unclosed string: {% raw %}`{% if status == "Open %}`{% endraw %}
 
 **How to fix:**
-1. Check the error message — it typically includes the line number and description
+1. Check the error message - it typically includes the line number and description
 2. Use the **Template Syntax Guide** panel for correct syntax
 3. Start with a minimal template and add complexity incrementally
 4. Use **Preview Panel** after each change to catch errors early
@@ -212,7 +212,7 @@ JQL errors appear when the query syntax is invalid or references nonexistent fie
 
 ### Display Condition Errors
 
-Display conditions use the same template engine as messages. Errors in display conditions cause the condition to **fail open** — the panel shows regardless.
+Display conditions use the same template engine as messages. Errors in display conditions cause the condition to **fail open** - the panel shows regardless.
 
 **How to fix:**
 1. Use **Test Context** to check the condition evaluation

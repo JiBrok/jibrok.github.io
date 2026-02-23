@@ -310,7 +310,7 @@ The template engine has a **10,000 iteration limit** and an **800ms timeout**. K
 {% endfor %}
 ```
 
-**Faster — pre-compute outside the loop:**
+**Faster - pre-compute outside the loop:**
 ```
 {% set doneCount = linkedIssues | filter("fields.status.statusCategory.key", "==", "done") | len %}
 {% set total = linkedIssues | len %}

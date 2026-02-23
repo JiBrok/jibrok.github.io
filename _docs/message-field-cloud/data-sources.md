@@ -147,9 +147,9 @@ Shows open issues assigned to the person viewing the panel.
 
 When configuring a JQL query, Message Field provides inline validation:
 
-- **Syntax check** — validates the JQL syntax before saving
-- **Issue count preview** — shows how many issues match the query
-- **Error messages** — displays Jira's JQL error messages for invalid queries
+- **Syntax check** - validates the JQL syntax before saving
+- **Issue count preview** - shows how many issues match the query
+- **Error messages** - displays Jira's JQL error messages for invalid queries
 
 For parametric JQL (using template variables), use the **Test JQL** feature in the [Testing Panels](testing-panels) page to verify the query resolves correctly with a real issue key.
 

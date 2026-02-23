@@ -4,7 +4,7 @@ title: DPA - JiBrok Studio for Jira Cloud
 permalink: /dpa-jibrok-studio-jira/
 ---
 
-## Data Processing Agreement (DPA) — JiBrok Studio for Jira Cloud (Atlassian Forge)
+## Data Processing Agreement (DPA) - JiBrok Studio for Jira Cloud (Atlassian Forge)
 
 **Effective date:**  [YYYY-MM-DD]
 
@@ -128,7 +128,7 @@ If this DPA conflicts with the main agreement/terms, this DPA prevails only rega
 
 ---
 
-## Annex 1 — Processing details (GDPR Art. 28(3))
+## Annex 1 - Processing details (GDPR Art. 28(3))
 
 ### A. Service
 
@@ -194,7 +194,7 @@ The App enforces automatic data retention limits:
 
 ---
 
-## Annex 2 — Security measures (TOMs)
+## Annex 2 - Security measures (TOMs)
 
 - **Platform isolation:** Runs entirely on Atlassian Forge; no external egress, no third-party analytics, no Forge Remote.
 - **Administrator-only access:** All App functionality restricted to Jira administrators. Non-administrator users have no access.
@@ -209,6 +209,6 @@ The App enforces automatic data retention limits:
 
 ---
 
-## Annex 3 — Sub-processors
+## Annex 3 - Sub-processors
 
 - **Atlassian (Forge platform)** - hosting/compute/storage required to run the App.

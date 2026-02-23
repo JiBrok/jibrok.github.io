@@ -89,7 +89,7 @@ Click **Save Configuration**
 
 Open any Jira issue - you should see your panel in the right sidebar!
 
-You can also use Message Field as a custom field — see [Custom Fields](custom-fields) for setup instructions.
+You can also use Message Field as a custom field - see [Custom Fields](custom-fields) for setup instructions.
 
 ## What's Next?
 

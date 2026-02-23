@@ -15,7 +15,7 @@ tags:
 
 ## What is the Custom Field Module?
 
-The Custom Field module allows Message Field to function as a **native Jira custom field** rather than a display panel. Instead of appearing in fixed locations (sidebar, activity feed, etc.), the message is embedded directly in a custom field — visible on issue create, edit, transition, and view screens.
+The Custom Field module allows Message Field to function as a **native Jira custom field** rather than a display panel. Instead of appearing in fixed locations (sidebar, activity feed, etc.), the message is embedded directly in a custom field - visible on issue create, edit, transition, and view screens.
 
 This is ideal for delivering contextual guidance, warnings, or dynamic information exactly where users interact with issue data.
 
@@ -40,7 +40,7 @@ This is ideal for delivering contextual guidance, warnings, or dynamic informati
 3. Enable **Message Field (Custom Field)**
 4. Click **Save Settings**
 
-![Module Settings — Custom Field enabled](/uploads/message-field-cloud/configuration/module-settings-custom-field.png)
+![Module Settings - Custom Field enabled](/uploads/message-field-cloud/configuration/module-settings-custom-field.png)
 
 ### Step 2: Create a Custom Field in Jira
 
@@ -58,10 +58,10 @@ Add your new custom field to the Jira screens where you want it to appear:
 
 1. Go to **Jira Administration** → **Issues** → **Screens**
 2. Select the relevant screen(s):
-   - **Create Screen** — field appears when creating issues
-   - **Edit Screen** — field appears when editing issues
-   - **View Screen** — field appears on issue view
-   - **Transition Screen** — field appears during workflow transitions
+   - **Create Screen** - field appears when creating issues
+   - **Edit Screen** - field appears when editing issues
+   - **View Screen** - field appears on issue view
+   - **Transition Screen** - field appears during workflow transitions
 3. Add your Message Field custom field to each screen
 
 ### Step 4: Configure the Field
@@ -90,7 +90,7 @@ This means you can show:
 - A different message for Story issues in Project A
 - Yet another message for all issues in Project B
 
-Each context has its own independent configuration — data source, message template, display conditions, and formatting.
+Each context has its own independent configuration - data source, message template, display conditions, and formatting.
 
 ### How Contexts Work
 
@@ -182,16 +182,16 @@ This prevents stale configurations from accumulating and ensures the system stay
 
 ## Limitations
 
-- **Display conditions limited on create screens** — JQL and User Fields conditions only work on issue view, not on create/transition screens
-- **One configuration per context** — Each field context has a single configuration (unlike panel modules where multiple configs can target the same module)
-- **Screen configuration required** — The field must be added to Jira screens manually; enabling the module alone is not sufficient
+- **Display conditions limited on create screens** - JQL and User Fields conditions only work on issue view, not on create/transition screens
+- **One configuration per context** - Each field context has a single configuration (unlike panel modules where multiple configs can target the same module)
+- **Screen configuration required** - The field must be added to Jira screens manually; enabling the module alone is not sufficient
 
 ---
 
 ## Next Steps
 
-- [Modules](modules) — Overview of all display modules
-- [Configuration Basics](configuration-basics) — Create and manage configurations
-- [Templates](templates) — Dynamic content with template syntax
-- [FAQ](faq) — Custom field troubleshooting
-- [Getting Started](getting-started) — Quick start guide
+- [Modules](modules) - Overview of all display modules
+- [Configuration Basics](configuration-basics) - Create and manage configurations
+- [Templates](templates) - Dynamic content with template syntax
+- [FAQ](faq) - Custom field troubleshooting
+- [Getting Started](getting-started) - Quick start guide

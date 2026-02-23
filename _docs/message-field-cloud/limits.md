@@ -33,10 +33,10 @@ tags:
 |---------|-------|---------|
 | **Max Issues** (JQL / Linked Issues) | 1-1,000 | 50 |
 | **Rows Per Page** | 1-100 | 10 |
-| **Table fields** per configuration | Max 50 | — |
-| **Display fields** per configuration | Max 50 | — |
-| **Projects** per context filter | Max 1,000 | — |
-| **Issue types** per context filter | Max 1,000 | — |
+| **Table fields** per configuration | Max 50 | - |
+| **Display fields** per configuration | Max 50 | - |
+| **Projects** per context filter | Max 1,000 | - |
+| **Issue types** per context filter | Max 1,000 | - |
 
 ---
 
@@ -46,8 +46,8 @@ tags:
 |------------|-------|
 | **Loop iterations** | Max 10,000 total iterations per render |
 | **Execution timeout** | 800ms per template rendering |
-| **Prototype access** | Blocked — templates cannot access JavaScript prototypes |
-| **Eval / exec** | Not available — no arbitrary code execution |
+| **Prototype access** | Blocked - templates cannot access JavaScript prototypes |
+| **Eval / exec** | Not available - no arbitrary code execution |
 
 If a template exceeds the iteration limit or timeout, it stops execution and returns an error message.
 
@@ -99,21 +99,21 @@ Higher Max Issues values mean more API calls and longer rendering times. Start l
 
 - **Use indexed fields** in JQL: `project`, `status`, `assignee`, `priority`, `issuetype`, `created`, `updated`
 - **Avoid text searches** on large datasets: `text ~ "keyword"` is expensive
-- **Be specific** with project and issue type filters — narrower queries are faster
+- **Be specific** with project and issue type filters - narrower queries are faster
 - **Use ORDER BY** to ensure the most relevant issues appear first (especially with low Max Issues)
 
 ### Optimize Templates
 
-- **Avoid nested loops** — they multiply iteration counts rapidly
+- **Avoid nested loops** - they multiply iteration counts rapidly
 - **Use `| take(N)`** to limit items processed in loops
-- **Minimize filter chains** — each filter adds processing time
+- **Minimize filter chains** - each filter adds processing time
 - **Pre-compute values** with {% raw %}`{% set %}`{% endraw %} variables instead of repeating expressions
-- **Keep conditional logic simple** — deeply nested if/else blocks are harder to debug and slower to execute
+- **Keep conditional logic simple** - deeply nested if/else blocks are harder to debug and slower to execute
 
 ### Optimize Field Selection
 
-- Select only the **table fields** you actually display — each field adds to the data transfer
-- Use **display fields** sparingly — they add additional field rendering per panel
+- Select only the **table fields** you actually display - each field adds to the data transfer
+- Use **display fields** sparingly - they add additional field rendering per panel
 - For message-only panels (Empty data source), no field selection overhead applies
 
 ### Reduce Panel Count

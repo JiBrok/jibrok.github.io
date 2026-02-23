@@ -225,7 +225,7 @@ hero:
                         </a>
                     </div>
                     <h3 class="uk-card-title uk-text-center"><a href="/docs/jibrok-studio-jira/overview/" class="uk-link-reset">JiBrok Studio</a></h3>
-                    <p class="uk-text-small">Scripting platform for Jira Cloud — automate workflows with triggers, computed fields, and custom extensions.</p>
+                    <p class="uk-text-small">Scripting platform for Jira Cloud - automate workflows with triggers, computed fields, and custom extensions.</p>
                     <div class="uk-text-center">
                         <a href="/docs/jibrok-studio-jira/overview/" class="uk-button uk-button-primary">View Documentation</a>
                     </div>

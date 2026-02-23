@@ -95,12 +95,12 @@ When delegation is enabled, project admins see a dedicated settings page within 
 
 The project-specific settings page includes:
 
-- **Configuration list** — all panel configurations targeting the current project
-- **Create panel** button — create new configurations scoped to this project
-- **Edit/Delete/Duplicate** — full management of project configurations
-- **Custom Fields** tab — manage custom field configurations for the project
-- **Preview** — test panels with real issue data
-- **Export/Import** — bulk operations scoped to the project
+- **Configuration list** - all panel configurations targeting the current project
+- **Create panel** button - create new configurations scoped to this project
+- **Edit/Delete/Duplicate** - full management of project configurations
+- **Custom Fields** tab - manage custom field configurations for the project
+- **Preview** - test panels with real issue data
+- **Export/Import** - bulk operations scoped to the project
 
 ### Walkthrough: Creating a First Panel as Project Admin
 

@@ -114,8 +114,8 @@ The **Actor** setting controls which user's permissions are used when executing 
 
 ### Security Implications
 
-- **Viewing user** is the most restrictive — users only see issues they have permission to browse
-- **App user** can return issues the viewer may not normally have access to — use carefully
+- **Viewing user** is the most restrictive - users only see issues they have permission to browse
+- **App user** can return issues the viewer may not normally have access to - use carefully
 - **Application user** is designed for JSM portal contexts where customers need to see specific data
 - Only **site administrators** can configure the actor setting (not project admins via delegation)
 
@@ -197,9 +197,9 @@ When configuring panels for JSM portals, consider what data is visible to custom
 
 Message Field may display personal data from Jira (user names, email addresses, avatars) when template variables reference user fields. The app:
 
-- Does **not** store personal data independently — all user data comes from Jira's API at render time
+- Does **not** store personal data independently - all user data comes from Jira's API at render time
 - Does **not** transfer data to external services
-- Respects Jira's user anonymization — when a user is anonymized in Jira, templates referencing that user show anonymized data
+- Respects Jira's user anonymization - when a user is anonymized in Jira, templates referencing that user show anonymized data
 - Supports Atlassian's personal data reporting APIs
 
 ### Data Retention

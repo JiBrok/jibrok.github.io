@@ -65,10 +65,10 @@ Toggle to enable/disable the panel without deleting the configuration.
 - **Disabled** - Panel is hidden but configuration is preserved
 
 **Common use cases for disabling:**
-- **Maintenance mode** — temporarily hide panels during system changes
-- **Staged rollout** — create configurations in advance, enable when ready
-- **Seasonal content** — disable holiday notices after the season ends
-- **Debugging** — isolate issues by disabling panels one at a time
+- **Maintenance mode** - temporarily hide panels during system changes
+- **Staged rollout** - create configurations in advance, enable when ready
+- **Seasonal content** - disable holiday notices after the season ends
+- **Debugging** - isolate issues by disabling panels one at a time
 
 ---
 
@@ -107,8 +107,8 @@ See [Modules](modules) for detailed information about each module type.
 
 Controls display order when multiple panels target the same module:
 - **Lower weights** appear first
-- **Negative values allowed** — use them to force panels to the top
-- **Same weight** — panels with equal weight are sorted alphabetically by name
+- **Negative values allowed** - use them to force panels to the top
+- **Same weight** - panels with equal weight are sorted alphabetically by name
 - **Range:** -1000 to 1000
 - **Default:** 0
 

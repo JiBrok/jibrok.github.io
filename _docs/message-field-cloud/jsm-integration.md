@@ -302,7 +302,7 @@ When configuring panels that show JQL results or linked issue data on the portal
 
 | Actor | Behavior | Best For |
 |-------|----------|----------|
-| **Viewing user** | JQL runs as the portal customer — may have limited permissions | Simple messages without data queries |
+| **Viewing user** | JQL runs as the portal customer - may have limited permissions | Simple messages without data queries |
 | **Application user** | JQL runs as a service account with broader access | Portal panels that need to display issue data |
 
 > **Tip:** Use the **Application user** actor for JSM portal panels that need consistent data access regardless of who is viewing the request.

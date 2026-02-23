@@ -368,7 +368,7 @@ Display different warnings per project/issue type context using a custom field.
 **Data Source**: Empty (Message only)
 **Screen**: View Screen
 
-**Context 1** — Production project, all issue types:
+**Context 1** - Production project, all issue types:
 
 {% raw %}
 ```html
@@ -382,7 +382,7 @@ Display different warnings per project/issue type context using a custom field.
 ```
 {% endraw %}
 
-**Context 2** — Internal project, Story issue type:
+**Context 2** - Internal project, Story issue type:
 
 {% raw %}
 ```html

@@ -75,7 +75,7 @@ Use it to:
 3. **Set display conditions**: which projects and issue types
 4. **Add dynamic content** using template syntax
 5. **Enable the module** where you want it to appear
-6. **Delegate to project admins** (optional) — let teams manage their own panels
+6. **Delegate to project admins** (optional) - let teams manage their own panels
 
 ## Next Steps
 

@@ -19,7 +19,7 @@ tags:
 ### The app is installed but I don't see any panels
 
 1. Go to **Apps** → **Message Field Settings**
-2. Check the **Module Settings** tab — ensure the desired modules are enabled
+2. Check the **Module Settings** tab - ensure the desired modules are enabled
 3. Create at least one panel configuration with [Configuration Basics](configuration-basics)
 4. Verify the configuration is **Enabled** (toggle is on)
 5. Check that the configuration targets the correct project and issue type
@@ -32,7 +32,7 @@ Only **Jira site administrators** can install apps from the Atlassian Marketplac
 
 1. Verify modules are enabled in **Module Settings**
 2. After enabling a module, refresh the issue page
-3. For JSM portal modules, verify UIM registrations in the [Modules](modules) page — use **Reregister All** if needed
+3. For JSM portal modules, verify UIM registrations in the [Modules](modules) page - use **Reregister All** if needed
 4. Check that your browser is not caching old content (try hard refresh)
 
 ---
@@ -50,10 +50,10 @@ If a panel isn't appearing where you expect it, work through this checklist:
    - Open the configuration and check the **Enabled** toggle
 
 3. **Do context filters match?**
-   - Check **Project** filter — does the issue's project match?
-   - Check **Issue Type** filter — does the issue type match?
-   - Check **Portal** filter (JSM) — does the portal match?
-   - Check **Request Type** filter (JSM) — does the request type match?
+   - Check **Project** filter - does the issue's project match?
+   - Check **Issue Type** filter - does the issue type match?
+   - Check **Portal** filter (JSM) - does the portal match?
+   - Check **Request Type** filter (JSM) - does the request type match?
 
 4. **Does the Display JQL match?**
    - Test the Display JQL in Jira's Issue Navigator with the specific issue
@@ -79,13 +79,13 @@ If a panel isn't appearing where you expect it, work through this checklist:
 
 ### Template shows an error message
 
-- Check the error details — they usually include the line number and description
+- Check the error details - they usually include the line number and description
 - Common causes:
   - Typo in variable name ({% raw %}`{{ isue.key }}`{% endraw %} instead of {% raw %}`{{ issue.key }}`{% endraw %})
   - Missing closing tag
   - Invalid filter name
   - Unclosed string in condition
-- Use **Preview Panel** to test incrementally — start with a simple template and add complexity
+- Use **Preview Panel** to test incrementally - start with a simple template and add complexity
 
 ### How do I debug template variables?
 
@@ -124,7 +124,7 @@ If template variables in JQL aren't being replaced:
 ### currentUser not working in JQL
 
 {% raw %}
-- Use `{{ currentUser.accountId }}` — not `currentUser()` (which is Jira's built-in function)
+- Use `{{ currentUser.accountId }}` - not `currentUser()` (which is Jira's built-in function)
 - `currentUser()` works in **Display JQL** (Jira native) but not in parametric JQL templates
 - In the JQL data source, use: `assignee = "{{ currentUser.accountId }}"`
 {% endraw %}
@@ -136,14 +136,14 @@ If template variables in JQL aren't being replaced:
 ### Panel not showing on portal
 
 1. Verify you're using a **JSM Portal module** (not a Jira module)
-2. Check the **Portal** filter in context settings — at least one portal must be selected
+2. Check the **Portal** filter in context settings - at least one portal must be selected
 3. Verify UIMs are registered: go to [Modules](modules) → **UIM Management** → **Reregister All** if needed
 4. Check that the request type matches (if request type filter is set)
 5. Clear browser cache and reload the portal page
 
 ### Customers can't see the panel
 
-- JSM portal panels use **unlicensed access** — customers don't need a Jira license
+- JSM portal panels use **unlicensed access** - customers don't need a Jira license
 - Verify the module is one of the JSM portal modules (Portal Panel, Footer, Subheader, or Create variants)
 - Ensure the panel is targeting the correct portal and request types
 
@@ -183,11 +183,11 @@ If template variables in JQL aren't being replaced:
 
 ### Panels are slow to render
 
-- Reduce **Max Issues** — start with 50 and increase only if needed
-- Simplify JQL queries — avoid `text ~ "keyword"` on large datasets
+- Reduce **Max Issues** - start with 50 and increase only if needed
+- Simplify JQL queries - avoid `text ~ "keyword"` on large datasets
 - Use indexed fields in JQL: `project`, `status`, `assignee`, `priority`
-- Reduce the number of **table fields** — each field adds to rendering time
-- Simplify template logic — avoid nested loops and complex calculations
+- Reduce the number of **table fields** - each field adds to rendering time
+- Simplify template logic - avoid nested loops and complex calculations
 - See [Limits](limits) for performance recommendations
 
 ### Too many API calls
@@ -203,7 +203,7 @@ If template variables in JQL aren't being replaced:
 
 ### Project admin can't see Message Field Settings
 
-1. Verify delegation is **enabled** for the project — check with a site admin
+1. Verify delegation is **enabled** for the project - check with a site admin
 2. The setting appears in **Project Settings** → **Apps** → **Message Field Settings**
 3. The user must have the **Administer Projects** permission for the project
 4. If using "Disable with Exceptions" policy, the specific project must be in the enabled list
@@ -227,7 +227,7 @@ If template variables in JQL aren't being replaced:
 
 ### Agent actions timing out
 
-- Reduce the scope of analysis — use specific issue keys instead of broad queries
+- Reduce the scope of analysis - use specific issue keys instead of broad queries
 - Add link type filters to narrow dependency trees
 - Use project filters to limit the search scope
 - Break large analyses into multiple smaller queries

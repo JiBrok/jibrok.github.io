@@ -223,7 +223,7 @@ Priority: {{ fields.priority.name }}
 **Location**: Displays as a Jira custom field value on issue view, create, edit, and transition screens
 
 **Features**:
-- Per-context configuration — different messages for different project/issue type combinations
+- Per-context configuration - different messages for different project/issue type combinations
 - Works on create and transition screens, not just issue view
 - Automatic cleanup of orphaned configurations when fields or contexts are deleted
 

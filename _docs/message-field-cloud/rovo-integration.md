@@ -58,10 +58,10 @@ The Message Field Assistant is an AI-powered tool built into the admin settings.
 
 To use Rovo integration features, you need:
 
-- **Atlassian Rovo** — Rovo must be enabled for your Atlassian site
-- **Rovo license** — users interacting with Rovo agents need a Rovo-enabled plan
-- **Message Field app** — installed and configured with at least one panel configuration
-- **Site admin permissions** — required to manage Rovo agent settings
+- **Atlassian Rovo** - Rovo must be enabled for your Atlassian site
+- **Rovo license** - users interacting with Rovo agents need a Rovo-enabled plan
+- **Message Field app** - installed and configured with at least one panel configuration
+- **Site admin permissions** - required to manage Rovo agent settings
 
 > **Note:** Rovo agents may take up to 24 hours to appear after Message Field is installed or updated.
 
@@ -69,19 +69,19 @@ To use Rovo integration features, you need:
 
 ## Message Field Admin Agent
 
-The Message Field Admin Agent is a Rovo-powered agent designed for **site administrators**. It helps you manage panel configurations using natural language — no need to navigate through settings pages manually.
+The Message Field Admin Agent is a Rovo-powered agent designed for **site administrators**. It helps you manage panel configurations using natural language - no need to navigate through settings pages manually.
 
 ### What It Can Do
 
 The Admin Agent provides the following capabilities:
 
-- **Create configurations** — describe what you want in plain language and the agent creates the configuration
-- **Update configurations** — modify existing configurations by name or description
-- **Clone configurations** — duplicate configurations with modifications
-- **Toggle configurations** — enable or disable configurations individually or in bulk
-- **Health checks** — scan all configurations for common issues (broken JQL, missing modules, orphaned contexts)
-- **Diagnostics** — troubleshoot why a panel isn't appearing on a specific issue
-- **Step-by-step wizard** — guided walkthrough for creating complex configurations
+- **Create configurations** - describe what you want in plain language and the agent creates the configuration
+- **Update configurations** - modify existing configurations by name or description
+- **Clone configurations** - duplicate configurations with modifications
+- **Toggle configurations** - enable or disable configurations individually or in bulk
+- **Health checks** - scan all configurations for common issues (broken JQL, missing modules, orphaned contexts)
+- **Diagnostics** - troubleshoot why a panel isn't appearing on a specific issue
+- **Step-by-step wizard** - guided walkthrough for creating complex configurations
 
 ### Example Conversations
 

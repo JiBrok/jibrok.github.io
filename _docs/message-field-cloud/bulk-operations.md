@@ -183,10 +183,10 @@ Use export/import to migrate configurations between Jira instances (e.g., dev �
 
 1. **Export** all configurations from the source instance
 2. **Review** the exported JSON for environment-specific values:
-   - Project keys — must match on the target instance
-   - Issue type names — must match on the target instance
-   - Custom field IDs — may differ between instances
-   - Portal IDs — will differ between instances
+   - Project keys - must match on the target instance
+   - Issue type names - must match on the target instance
+   - Custom field IDs - may differ between instances
+   - Portal IDs - will differ between instances
 3. **Edit** the JSON if needed to adjust values for the target environment
 4. **Import** into the target instance
 5. **Validate** and review the import preview
@@ -195,10 +195,10 @@ Use export/import to migrate configurations between Jira instances (e.g., dev �
 ### Tips for Migration
 
 - **Project keys**: Keep project keys consistent across environments when possible
-- **Custom fields**: Use field names instead of IDs in templates when possible — names are more portable
+- **Custom fields**: Use field names instead of IDs in templates when possible - names are more portable
 - **JQL queries**: Review parametric JQL for environment-specific references
 - **Portals**: JSM portal IDs will need to be updated manually after import
-- **Module settings**: Module enable/disable settings are not included in export — configure these separately on each instance
+- **Module settings**: Module enable/disable settings are not included in export - configure these separately on each instance
 
 ---
 

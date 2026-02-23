@@ -4,7 +4,7 @@ title: DPA - Message Field Cloud
 permalink: /dpa-message-field-cloud/
 ---
 
-## Data Processing Agreement (DPA) — Message Field Cloud (Atlassian Forge)
+## Data Processing Agreement (DPA) - Message Field Cloud (Atlassian Forge)
 
 **Effective date:**  [YYYY-MM-DD]
 
@@ -103,10 +103,10 @@ If this DPA conflicts with the main agreement/terms, this DPA prevails only rega
 
 ---
 
-## Annex 1 — Processing details (GDPR Art. 28(3))
+## Annex 1 - Processing details (GDPR Art. 28(3))
 
 ### A. Service
-**Message Field Cloud** — Jira app on Atlassian Marketplace running on Atlassian Forge.
+**Message Field Cloud** - Jira app on Atlassian Marketplace running on Atlassian Forge.
 
 ### B. Categories of Data Subjects
 Customer's Jira users (e.g., admins/users creating or updating App configuration).
@@ -130,7 +130,7 @@ While installed/active, plus any Atlassian Forge platform retention behavior aft
 
 ---
 
-## Annex 2 — Security measures (TOMs)
+## Annex 2 - Security measures (TOMs)
 
 - Runs entirely on Atlassian Forge; no external egress/third-party analytics for this App.
 - Minimal data: `accountId` for attribution + configuration stored in Forge storage.
@@ -140,6 +140,6 @@ While installed/active, plus any Atlassian Forge platform retention behavior aft
 
 ---
 
-## Annex 3 — Sub-processors
+## Annex 3 - Sub-processors
 
-- **Atlassian (Forge platform)** — hosting/compute/storage required to run the App.
+- **Atlassian (Forge platform)** - hosting/compute/storage required to run the App.
