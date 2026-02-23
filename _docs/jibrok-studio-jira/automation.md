@@ -39,7 +39,7 @@ The script must be **enabled** and have an **enabled Automation trigger** to be 
 
 1. In Jira, go to **Project Settings > Automation** (or global automation)
 2. Create or edit a rule
-3. Add the action **"Run JiBrok Studio Script"**
+3. Add the action **"Run Script - JiBrok Studio"**
 4. Configure the inputs (see below)
 
 ---
@@ -80,7 +80,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 1. **Trigger:** Issue created
 2. **Condition:** Priority = Highest or High
-3. **Action:** Run JiBrok Studio Script
+3. **Action:** Run Script - JiBrok Studio
    - Script: *"Auto-assign reviewer"*
    - Issue Key: `{% raw %}{{issue.key}}{% endraw %}`
 4. **Condition:** `{% raw %}{{triggeredJiraScript.success}}{% endraw %}` equals `true`
