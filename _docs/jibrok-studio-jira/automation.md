@@ -35,12 +35,24 @@ In the [Administration](/docs/jibrok-studio-jira/admin-settings) panel, ensure t
 
 The script must be **enabled** and have an **enabled Automation trigger** to be available in Jira Automation.
 
+<a href="/uploads/jibrok-studio-jira/automation-add-trigger.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-add-trigger.png" alt="Add Automation trigger to script" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-script-return-json.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-script-return-json.png" alt="Script returning JSON for automation" style="width:100%;" loading="lazy"></a>
+
 ### 3. Create an Automation Rule
 
 1. In Jira, go to **Project Settings > Automation** (or global automation)
 2. Create or edit a rule
 3. Add the action **"Run Script - JiBrok Studio"**
 4. Configure the inputs (see below)
+
+<a href="/uploads/jibrok-studio-jira/automation-add-component.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-add-component.png" alt="Add component to automation rule" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-search-action.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-search-action.png" alt="Search for JiBrok Studio action" style="width:100%;" loading="lazy"></a>
 
 ---
 
@@ -50,6 +62,12 @@ The script must be **enabled** and have an **enabled Automation trigger** to be 
 |-------|----------|-------------|
 | **Script** | Yes | The script to execute (selected by script ID) |
 | **Issue Key** | No | The issue key to pass to the script. Use `{% raw %}{{issue.key}}{% endraw %}` smart value to pass the triggering issue |
+
+<a href="/uploads/jibrok-studio-jira/automation-action-config-select.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-action-config-select.png" alt="Automation action script selection" style="max-height:600px;width:auto;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-action-config-full.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-action-config-full.png" alt="Automation action configuration" style="max-height:600px;width:auto;" loading="lazy"></a>
 
 ---
 
@@ -72,6 +90,12 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 - `{% raw %}{{jsonStringToObject(triggeredJiraScript.result).status}}{% endraw %}` - access a specific field
 - `{% raw %}{{jsonStringToObject(triggeredJiraScript.result).count}}{% endraw %}` - access another field
 
+<a href="/uploads/jibrok-studio-jira/automation-log-result-data.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-log-result-data.png" alt="Automation log result data" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-log-json-parse.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-log-json-parse.png" alt="Automation log JSON parse result" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Example Automation Rule
@@ -85,6 +109,15 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
    - Issue Key: `{% raw %}{{issue.key}}{% endraw %}`
 4. **Condition:** `{% raw %}{{triggeredJiraScript.success}}{% endraw %}` equals `true`
 5. **Action:** Log or send notification with `{% raw %}{{triggeredJiraScript.result}}{% endraw %}`
+
+<a href="/uploads/jibrok-studio-jira/automation-rule-overview.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-rule-overview.png" alt="Automation rule overview" style="max-height:600px;width:auto;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-rule-log-result.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-rule-log-result.png" alt="Automation rule execution log result" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/automation-audit-log-results.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/automation-audit-log-results.png" alt="Automation audit log results" style="width:100%;" loading="lazy"></a>
 
 ---
 

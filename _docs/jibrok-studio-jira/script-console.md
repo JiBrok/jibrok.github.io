@@ -17,6 +17,12 @@ tags:
 
 The Console is the main interface for writing and executing scripts. It provides a code editor with syntax highlighting, execution controls, output display, and configuration options.
 
+<a href="/uploads/jibrok-studio-jira/console-jira-sidebar-navigation.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-jira-sidebar-navigation.png" alt="JiBrok Studio in Jira sidebar navigation" style="max-height:600px;width:auto;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/console-interface-overview.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="Script Console interface overview" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Code Editor
@@ -27,6 +33,9 @@ The editor supports:
 - **Script engine selection** — choose between JavaScript (primary), Python, and Groovy engines. More engines will be added in future updates.
 - **Variables popup** — insert available variable names into the editor
 - **Local draft auto-save** — drafts are saved to browser localStorage automatically
+
+<a href="/uploads/jibrok-studio-jira/console-editor-logging-functions.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-editor-logging-functions.png" alt="Code editor with logging functions example" style="width:100%;" loading="lazy"></a>
 
 ---
 
@@ -61,6 +70,9 @@ Scripts produce output through logging functions:
 
 Each level has distinct styling in the output panel. Multiple arguments are joined with a space.
 
+<a href="/uploads/jibrok-studio-jira/console-output-log-levels.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-output-log-levels.png" alt="Output panel showing different log levels" style="width:100%;" loading="lazy"></a>
+
 ### Script Result
 
 The result field shows either:
@@ -93,6 +105,9 @@ When sandbox mode is active:
 
 This is useful for testing bulk update scripts before running them for real, verifying script logic without side effects, and debugging write operations safely.
 
+<a href="/uploads/jibrok-studio-jira/console-sandbox-tooltip.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-sandbox-tooltip.png" alt="Sandbox mode tooltip" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Run As (Execution Identity)
@@ -105,6 +120,9 @@ The **Run As** dropdown controls which identity the script uses when making Jira
 | **Application** | Script runs with app-level permissions (if enabled by admin) |
 | **Pre-configured User** | Select from admin-defined user list (if configured) |
 | **Specific User** | Search for any Jira user (if enabled by admin) |
+
+<a href="/uploads/jibrok-studio-jira/console-run-as-dropdown.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-run-as-dropdown.png" alt="Run As dropdown with execution identity options" style="max-width:480px;width:100%;" loading="lazy"></a>
 
 > **Note:** Available modes are controlled by the site administrator in [Administration](/docs/jibrok-studio-jira/admin-settings). If a mode is disabled after being selected, a warning is shown.
 
@@ -151,6 +169,9 @@ When saving a new script, you will be prompted to set a name in the Config tab f
 
 When saving an existing script, a dialog appears where you can add an optional **version note** (up to 200 characters) describing the changes. Each save creates a new version entry in the Version History.
 
+<a href="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" alt="Save dialog for existing script with version note" style="width:100%;" loading="lazy"></a>
+
 ### Validation on Save
 
 Before saving, the script is automatically checked for syntax errors. If issues are found, a warning is shown - you can still save the script, but it may not execute correctly.
@@ -185,6 +206,9 @@ Persistent execution history across all sessions:
 - Trigger type (console, scheduled, event, etc.)
 - Issue key (if provided)
 
+<a href="/uploads/jibrok-studio-jira/console-run-history.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-run-history.png" alt="Run History tab showing past executions" style="width:100%;" loading="lazy"></a>
+
 ### Version History
 
 All saved versions of the current script:
@@ -206,11 +230,20 @@ Script metadata and configuration:
 - API restrictions (whitelist/blacklist profiles)
 - Execution identity (Run As)
 
+<a href="/uploads/jibrok-studio-jira/console-full-view-config.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-full-view-config.png" alt="Config tab with script settings" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/console-triggers-tab-empty.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-triggers-tab-empty.png" alt="Triggers section in Config tab" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Variables Popup
 
 The **Variables** button in the editor toolbar opens a popup showing all available variables grouped by section:
+
+<a href="/uploads/jibrok-studio-jira/console-variables-popup.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-variables-popup.png" alt="Variables popup showing available variables" style="max-height:600px;width:auto;" loading="lazy"></a>
 
 | Section | Description | Examples |
 |---------|-------------|---------|

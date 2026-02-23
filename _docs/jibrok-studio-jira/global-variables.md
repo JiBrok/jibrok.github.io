@@ -48,6 +48,9 @@ log(formatDate(new Date()))    // => 2024-01-15
 3. Click **Run** to test — the output shows defined variables with types and preview values
 4. Click **Save** to activate
 
+<a href="/uploads/jibrok-studio-jira/global-variables-config.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/global-variables-config.png" alt="Global Variables configuration page" style="width:100%;" loading="lazy"></a>
+
 ### Variable Display
 
 After running, a table shows the defined variables:

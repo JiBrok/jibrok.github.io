@@ -52,6 +52,15 @@ Configure context restrictions in the script's **Config** tab.
 4. Select trigger type and configure settings
 5. **Save** the script
 
+<a href="/uploads/jibrok-studio-jira/triggers-tab-empty-state.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/triggers-tab-empty-state.png" alt="Triggers tab empty state" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/triggers-add-dialog-types.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/triggers-add-dialog-types.png" alt="Add Trigger dialog with trigger type options" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/triggers-add-dialog-rovo.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/triggers-add-dialog-rovo.png" alt="Add Trigger dialog showing Rovo option" style="max-height:600px;width:auto;" loading="lazy"></a>
+
 ### Enabling/Disabling
 
 Each trigger has its own enabled/disabled toggle, independent of the script's enabled status. **Both** must be enabled for the trigger to fire.

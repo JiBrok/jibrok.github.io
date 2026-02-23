@@ -19,6 +19,9 @@ JiBrok Studio for Jira Cloud is a Forge-based scripting platform for Jira Cloud.
 
 Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API, ensuring your data stays safe.
 
+<a href="/uploads/jibrok-studio-jira/console-interface-overview.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="JiBrok Studio Script Console interface" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Key Capabilities

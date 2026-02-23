@@ -24,12 +24,18 @@ JiBrok Studio for Jira Cloud provides two data storage mechanisms: **Custom Tabl
 
 SQL-backed structured storage accessible from both the UI and scripts.
 
+<a href="/uploads/jibrok-studio-jira/data-storage-tables-list.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/data-storage-tables-list.png" alt="Custom Tables list view" style="width:100%;" loading="lazy"></a>
+
 ### Creating a Table
 
 1. Navigate to the **Tables** tab
 2. Click **Create Table**
 3. Enter a table name
 4. Define columns with name, type, and required flag
+
+<a href="/uploads/jibrok-studio-jira/data-storage-create-table.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/data-storage-create-table.png" alt="Create Table dialog" style="width:100%;" loading="lazy"></a>
 
 ### Column Types
 

@@ -42,6 +42,9 @@ When a script runs as Application, it uses the Forge app's own permissions (with
 
 > **Note:** If a mode is disabled after scripts are configured to use it, a warning is shown but existing configurations are preserved.
 
+<a href="/uploads/jibrok-studio-jira/admin-run-as-config.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-run-as-config.png" alt="Run As configuration panel" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Trigger Type Settings
@@ -60,6 +63,12 @@ Toggle each trigger type on/off globally:
 
 Disabled types **preserve existing configurations** but prevent execution. All toggles are recorded in the audit log.
 
+<a href="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" alt="Trigger type toggle settings" style="width:100%;" loading="lazy"></a>
+
+<a href="/uploads/jibrok-studio-jira/admin-event-types.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-event-types.png" alt="Event trigger type configuration" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## API Whitelist/Blacklist
@@ -74,12 +83,18 @@ Control which Jira REST API endpoints scripts can access.
 - **API Catalog** for quickly adding common endpoint groups
 - **Reset to defaults** restores the original whitelist
 
+<a href="/uploads/jibrok-studio-jira/admin-api-whitelist.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-api-whitelist.png" alt="Global API whitelist configuration" style="width:100%;" loading="lazy"></a>
+
 ### Global Blacklist
 
 - **Disabled by default** (nothing blocked)
 - Enable to block matching patterns
 - Blacklist is checked **before** whitelist
 - Useful for blocking sensitive endpoints while allowing everything else
+
+<a href="/uploads/jibrok-studio-jira/admin-api-blacklist.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-api-blacklist.png" alt="Global API blacklist configuration" style="width:100%;" loading="lazy"></a>
 
 ### Custom API Restrictions
 
@@ -88,6 +103,9 @@ Create named whitelist/blacklist profiles for per-script restrictions:
 - **Custom Whitelists** — named profiles with endpoint patterns, assigned to specific scripts in their Config tab. A script must pass both the global whitelist AND its custom whitelist.
 - **Custom Blacklists** — named profiles assigned to specific scripts. Blacklist checked before whitelist at the script level.
 - Up to **50 profiles** each, with up to **200 entries** per profile
+
+<a href="/uploads/jibrok-studio-jira/admin-script-whitelists.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-script-whitelists.png" alt="Custom API restriction profiles" style="width:100%;" loading="lazy"></a>
 
 ---
 
@@ -136,6 +154,9 @@ Run database maintenance tasks:
 - **Check duplicates** — detect and remove duplicate global variable scripts
 - **Storage Usage** — view Forge SQL database size, table sizes, index sizes, and row counts
 
+<a href="/uploads/jibrok-studio-jira/admin-health-check.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-health-check.png" alt="Health Check panel" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Audit Logs
@@ -174,6 +195,9 @@ Rolling log of all script executions across the site.
 - By success/error status
 - By user (account ID)
 - By date range (from/to)
+
+<a href="/uploads/jibrok-studio-jira/admin-audit-script-runs.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/admin-audit-script-runs.png" alt="Script Runs audit log" style="width:100%;" loading="lazy"></a>
 
 Maximum **10,000 records** (rolling window — oldest entries are automatically deleted when the limit is reached).
 

@@ -27,6 +27,9 @@ Key features:
 - **Copy button** - one-click copy on every code example for quick insertion into the editor
 - **Organized categories** - content is grouped into logical categories with expandable sections
 
+<a href="/uploads/jibrok-studio-jira/script-reference-output-functions.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/script-reference-output-functions.png" alt="Script Engine Reference panel overview" style="width:100%;" loading="lazy"></a>
+
 ---
 
 ## Navigation
@@ -45,6 +48,9 @@ The search field at the top filters across all categories. It matches against:
 - Code examples
 
 Matching results are grouped by category. Clear the search field to return to the full category list.
+
+<a href="/uploads/jibrok-studio-jira/script-reference-issue-methods.png" target="_blank">
+<img src="/uploads/jibrok-studio-jira/script-reference-issue-methods.png" alt="Script Engine Reference search results" style="width:100%;" loading="lazy"></a>
 
 ---
 
