@@ -1,27 +1,48 @@
 # Navigation organized by product keys
 # Each product has its own section with all related documentation
 
-message-field:
-  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
+# === Cloud Apps ===
+
+jibrok-studio-jira:
+  - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:24px;height:24px"> JiBrok Studio for Jira Cloud
     docs:
-    - message-field/overview
-    - message-field/install
-    - message-field/create-field
-    - message-field/open-configure
-    - message-field/base-settings
-    - message-field/advanced-settings
-    - message-field/dynamic-templates
-    - message-field/dynamic-templates-examples
-    - message-field/settings-for-all-fields
-    - message-field/statistics
-    - message-field/delegation
-    - message-field/audit-log
-    - message-field/rest
-    - message-field/html-examples
-    - message-field/java-script-examples
-    - message-field/script-runner-behaviours
-    - message-field/script-runner-examples
-    - message-field/refined-for-jira
+    - jibrok-studio-jira/landing
+    - jibrok-studio-jira/overview
+    - jibrok-studio-jira/getting-started
+
+  - title: Core Features
+    docs:
+    - jibrok-studio-jira/script-console
+    - jibrok-studio-jira/script-engine-reference
+    - jibrok-studio-jira/script-library
+    - jibrok-studio-jira/global-variables
+
+  - title: Triggers
+    docs:
+    - jibrok-studio-jira/triggers
+    - jibrok-studio-jira/triggers-scheduled
+    - jibrok-studio-jira/triggers-events
+    - jibrok-studio-jira/triggers-async
+
+  - title: Extensions
+    docs:
+    - jibrok-studio-jira/scripted-fields
+    - jibrok-studio-jira/ui-modifications
+    - jibrok-studio-jira/automation
+    - jibrok-studio-jira/rovo
+
+  - title: Data Storage
+    docs:
+    - jibrok-studio-jira/data-storage
+
+  - title: Administration & Reference
+    docs:
+    - jibrok-studio-jira/admin-settings
+    - jibrok-studio-jira/scripting-language
+    - jibrok-studio-jira/scripting-api
+    - jibrok-studio-jira/use-cases
+    - jibrok-studio-jira/limits
+    - jibrok-studio-jira/faq
 
 message-field-cloud:
   - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" style="width:24px;height:24px"> Message Field for Jira Cloud
@@ -66,6 +87,166 @@ message-field-cloud:
     - message-field-cloud/use-cases-management
     - message-field-cloud/use-cases-portal
     - message-field-cloud/faq
+
+tis-cloud:
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
+    docs:
+      - tis-cloud/overview
+      - tis-cloud/install
+      - tis-cloud/get-started
+      - tis-cloud/migrationDocumentation
+      - tis-cloud/featureDifferenceDocumentation
+
+  - title: Work calendars
+    docs:
+      - tis-cloud/work-calendar
+
+  - title: Time in status fields
+    docs:
+      - tis-cloud/time-in-status-field-create
+      - tis-cloud/time-in-status-field-settings
+      - tis-cloud/time-in-status-jql
+
+  - title: Issue panels
+    docs:
+      - tis-cloud/web-panel
+
+  - title: Reports
+    docs:
+      - tis-cloud/export-fields
+      - tis-cloud/dashboard-statistic-gadget
+
+  - title: Service tools
+    docs:
+      - tis-cloud/service-info
+      - tis-cloud/limits
+      - tis-cloud/status-page
+      - tis-cloud/gadget-news
+
+  - title: Reference information
+    docs:
+      - tis-cloud/time-formats
+
+jbcf-cloud:
+  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
+    docs:
+      - jbcf-cloud/overview
+      - jbcf-cloud/migrationDocumentation
+      - jbcf-cloud/featureDifferenceDocumentation
+
+  - title: JBCF fields
+    docs:
+      - jbcf-cloud/jbcf-field-create
+
+  - title: Service tools
+    docs:
+      - jbcf-cloud/service-info
+      - jbcf-cloud/status-page
+
+timer-cloud:
+  - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
+    docs:
+      - timer-cloud/overview
+      - timer-cloud/install
+      - timer-cloud/get-started
+      - timer-cloud/step-by-step-timer
+      - timer-cloud/migrationDocumentation
+      - timer-cloud/featureDifferenceDocumentation
+
+  - title: Work calendars
+    docs:
+      - timer-cloud/work-calendar
+
+  - title: Timer fields
+    docs:
+      - timer-cloud/timer-field-create
+      - timer-cloud/timer-field-settings
+      - timer-cloud/timer-jql
+
+  - title: Issue panels
+    docs:
+      - timer-cloud/web-panel
+
+  - title: Service tools
+    docs:
+      - timer-cloud/service-info
+      - timer-cloud/status-page
+
+stopwatch-cloud:
+  - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
+    docs:
+      - stopwatch-cloud/overview
+      - stopwatch-cloud/install
+      - stopwatch-cloud/get-started
+      - stopwatch-cloud/migrationDocumentation
+      - stopwatch-cloud/featureDifferenceDocumentation
+
+  - title: Work calendars
+    docs:
+      - stopwatch-cloud/work-calendar
+
+  - title: Stopwatch fields
+    docs:
+      - stopwatch-cloud/stopwatch-field-create
+      - stopwatch-cloud/stopwatch-field-settings
+      - stopwatch-cloud/stopwatch-jql
+
+  - title: Issue panels
+    docs:
+      - stopwatch-cloud/web-panel
+
+  - title: Service tools
+    docs:
+      - stopwatch-cloud/service-info
+      - stopwatch-cloud/status-page
+
+time-between-dates-cloud:
+  - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
+    docs:
+      - time-between-dates-cloud/overview
+
+  - title: Time between dates fields
+    docs:
+      - time-between-dates-cloud/time-between-dates-field-create
+
+jsm-fields-panel-cloud:
+  - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
+    docs:
+      - jsm-fields-panel-cloud/overview
+
+linked-issues-cloud:
+  - title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
+    docs:
+      - linked-issues-cloud/overview
+
+user-helper-cloud:
+  - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
+    docs:
+      - user-helper-cloud/overview
+
+# === Data Center / Server Apps ===
+
+message-field:
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
+    docs:
+    - message-field/overview
+    - message-field/install
+    - message-field/create-field
+    - message-field/open-configure
+    - message-field/base-settings
+    - message-field/advanced-settings
+    - message-field/dynamic-templates
+    - message-field/dynamic-templates-examples
+    - message-field/settings-for-all-fields
+    - message-field/statistics
+    - message-field/delegation
+    - message-field/audit-log
+    - message-field/rest
+    - message-field/html-examples
+    - message-field/java-script-examples
+    - message-field/script-runner-behaviours
+    - message-field/script-runner-examples
+    - message-field/refined-for-jira
 
 time-in-status:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
@@ -171,184 +352,8 @@ switch-user:
       - su/delegating
       - su/shortcuts
 
-tis-cloud:
-  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
-    docs:
-      - tis-cloud/overview
-      - tis-cloud/install
-      - tis-cloud/get-started
-      - tis-cloud/migrationDocumentation
-      - tis-cloud/featureDifferenceDocumentation
-
-  - title: Work calendars
-    docs:
-      - tis-cloud/work-calendar
-
-  - title: Time in status fields
-    docs:
-      - tis-cloud/time-in-status-field-create
-      - tis-cloud/time-in-status-field-settings
-      - tis-cloud/time-in-status-jql
-
-  - title: Issue panels
-    docs:
-      - tis-cloud/web-panel
-
-  - title: Reports
-    docs:
-      - tis-cloud/export-fields
-      - tis-cloud/dashboard-statistic-gadget
-
-  - title: Service tools
-    docs:
-      - tis-cloud/service-info
-      - tis-cloud/limits
-      - tis-cloud/status-page
-      - tis-cloud/gadget-news
-
-  - title: Reference information
-    docs:
-      - tis-cloud/time-formats
-
 calculated-custom-fields:
   - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF)
     docs:
       - calculated-custom-fields/overview
       - calculated-custom-fields/todolist
-
-jbcf-cloud:
-  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
-    docs:
-      - jbcf-cloud/overview
-      - jbcf-cloud/migrationDocumentation
-      - jbcf-cloud/featureDifferenceDocumentation
-
-  - title: JBCF fields
-    docs:
-      - jbcf-cloud/jbcf-field-create
-
-  - title: Service tools
-    docs:
-      - jbcf-cloud/service-info
-      - jbcf-cloud/status-page
-
-timer-cloud:
-  - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
-    docs:
-      - timer-cloud/overview
-      - timer-cloud/install
-      - timer-cloud/get-started
-      - timer-cloud/step-by-step-timer
-      - timer-cloud/migrationDocumentation
-      - timer-cloud/featureDifferenceDocumentation
-
-  - title: Work calendars
-    docs:
-      - timer-cloud/work-calendar
-
-  - title: Timer fields
-    docs:
-      - timer-cloud/timer-field-create
-      - timer-cloud/timer-field-settings
-      - timer-cloud/timer-jql
-
-  - title: Issue panels
-    docs:
-      - timer-cloud/web-panel
-
-  - title: Service tools
-    docs:
-      - timer-cloud/service-info
-      - timer-cloud/status-page
-
-stopwatch-cloud:
-  - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
-    docs:
-      - stopwatch-cloud/overview
-      - stopwatch-cloud/install
-      - stopwatch-cloud/get-started
-      - stopwatch-cloud/migrationDocumentation
-      - stopwatch-cloud/featureDifferenceDocumentation
-
-  - title: Work calendars
-    docs:
-      - stopwatch-cloud/work-calendar
-
-  - title: Stopwatch fields
-    docs:
-      - stopwatch-cloud/stopwatch-field-create
-      - stopwatch-cloud/stopwatch-field-settings
-      - stopwatch-cloud/stopwatch-jql
-
-  - title: Issue panels
-    docs:
-      - stopwatch-cloud/web-panel
-
-  - title: Service tools
-    docs:
-      - stopwatch-cloud/service-info
-      - stopwatch-cloud/status-page
-
-time-between-dates-cloud:
-  - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
-    docs:
-      - time-between-dates-cloud/overview
-
-  - title: Time between dates fields
-    docs:
-      - time-between-dates-cloud/time-between-dates-field-create
-
-jsm-fields-panel-cloud:
-  - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
-    docs:
-      - jsm-fields-panel-cloud/overview
-
-linked-issues-cloud:
-  - title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
-    docs:
-      - linked-issues-cloud/overview
-
-user-helper-cloud:
-  - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
-    docs:
-      - user-helper-cloud/overview
-
-jibrok-studio-jira:
-  - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:24px;height:24px"> JiBrok Studio for Jira Cloud
-    docs:
-    - jibrok-studio-jira/overview
-    - jibrok-studio-jira/getting-started
-
-  - title: Core Features
-    docs:
-    - jibrok-studio-jira/script-console
-    - jibrok-studio-jira/script-engine-reference
-    - jibrok-studio-jira/script-library
-    - jibrok-studio-jira/global-variables
-
-  - title: Triggers
-    docs:
-    - jibrok-studio-jira/triggers
-    - jibrok-studio-jira/triggers-scheduled
-    - jibrok-studio-jira/triggers-events
-    - jibrok-studio-jira/triggers-async
-
-  - title: Extensions
-    docs:
-    - jibrok-studio-jira/scripted-fields
-    - jibrok-studio-jira/ui-modifications
-    - jibrok-studio-jira/automation
-    - jibrok-studio-jira/rovo
-
-  - title: Data Storage
-    docs:
-    - jibrok-studio-jira/data-storage
-
-  - title: Administration & Reference
-    docs:
-    - jibrok-studio-jira/admin-settings
-    - jibrok-studio-jira/scripting-language
-    - jibrok-studio-jira/scripting-api
-    - jibrok-studio-jira/use-cases
-    - jibrok-studio-jira/limits
-    - jibrok-studio-jira/faq

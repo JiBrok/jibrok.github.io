@@ -11,83 +11,28 @@ hero:
 
 <div class="uk-section">
     <div class="uk-container">
-        
-        <!-- Data Center/Server Products -->
-        <h2 class="uk-heading-line uk-text-center"><span>Data Center / Server Products</span></h2>
-        
-        <div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
-            
-            <!-- Message Field -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <div class="uk-card-media-top uk-text-center">
-                        <a href="/docs/message-field/overview/">
-                            <img src="/uploads/message-field/messge-144px.png" alt="Message Field" width="72" height="72">
-                        </a>
-                    </div>
-                    <h3 class="uk-card-title uk-text-center"><a href="/docs/message-field/overview/" class="uk-link-reset">Message Field</a></h3>
-                    <p class="uk-text-small">Display dynamic message banners on issue screens with HTML, conditions, and JavaScript support.</p>
-                    <div class="uk-text-center">
-                        <a href="/docs/message-field/overview/" class="uk-button uk-button-primary">View Documentation</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Time in Status -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <div class="uk-card-media-top uk-text-center">
-                        <a href="/docs/time-in-status/overview/">
-                            <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status" width="72" height="72">
-                        </a>
-                    </div>
-                    <h3 class="uk-card-title uk-text-center"><a href="/docs/time-in-status/overview/" class="uk-link-reset">Time in Status</a></h3>
-                    <p class="uk-text-small">Comprehensive time tracking with SLA, timers, stopwatches, and detailed reporting capabilities.</p>
-                    <div class="uk-text-center">
-                        <a href="/docs/time-in-status/overview/" class="uk-button uk-button-primary">View Documentation</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Calculated Custom Fields -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <div class="uk-card-media-top uk-text-center">
-                        <a href="/docs/calculated-custom-fields/overview/">
-                            <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF" width="72" height="72">
-                        </a>
-                    </div>
-                    <h3 class="uk-card-title uk-text-center"><a href="/docs/calculated-custom-fields/overview/" class="uk-link-reset">Calculated Fields (JBCF)</a></h3>
-                    <p class="uk-text-small">Pack of calculated custom fields for advanced Jira customization and automation.</p>
-                    <div class="uk-text-center">
-                        <a href="/docs/calculated-custom-fields/overview/" class="uk-button uk-button-primary">View Documentation</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Switch User -->
-            <div>
-                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <div class="uk-card-media-top uk-text-center">
-                        <a href="/docs/su/overview/">
-                            <img src="/uploads/su/su-144px.png" alt="Switch User" width="72" height="72">
-                        </a>
-                    </div>
-                    <h3 class="uk-card-title uk-text-center"><a href="/docs/su/overview/" class="uk-link-reset">Switch to User</a></h3>
-                    <p class="uk-text-small">Secure user impersonation with delegation capabilities for Jira administrators.</p>
-                    <div class="uk-text-center">
-                        <a href="/docs/su/overview/" class="uk-button uk-button-primary">View Documentation</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
+
         <!-- Cloud Products -->
-        <h2 class="uk-heading-line uk-text-center uk-margin-large-top"><span>Jira Cloud Products</span></h2>
+        <h2 class="uk-heading-line uk-text-center"><span>Jira Cloud Products</span></h2>
         
         <div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
-            
+
+            <!-- JiBrok Studio -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/jibrok-studio-jira/landing/">
+                            <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/jibrok-studio-jira/landing/" class="uk-link-reset">JiBrok Studio</a></h3>
+                    <p class="uk-text-small">Scripting platform for Jira Cloud - automate workflows with triggers, computed fields, and custom extensions.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/jibrok-studio-jira/landing/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Time in Status Cloud -->
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
@@ -104,6 +49,22 @@ hero:
                 </div>
             </div>
             
+            <!-- Message Field Cloud -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/message-field-cloud/overview/">
+                            <img src="/uploads/message-field/messge-144px.png" alt="Message Field Cloud" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/message-field-cloud/overview/" class="uk-link-reset">Message Field Cloud</a></h3>
+                    <p class="uk-text-small">Display contextual messages and linked issue panels on Jira Cloud screens with dynamic templates and JQL queries.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/message-field-cloud/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- JBCF Cloud -->
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
@@ -216,24 +177,79 @@ hero:
                 </div>
             </div>
 
-            <!-- JiBrok Studio -->
+        </div>
+
+        <!-- Data Center/Server Products -->
+        <h2 class="uk-heading-line uk-text-center uk-margin-large-top"><span>Data Center / Server Products</span></h2>
+
+        <div class="uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
+
+            <!-- Message Field -->
             <div>
                 <div class="uk-card uk-card-default uk-card-hover uk-card-body">
                     <div class="uk-card-media-top uk-text-center">
-                        <a href="/docs/jibrok-studio-jira/overview/">
-                            <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio" width="72" height="72">
+                        <a href="/docs/message-field/overview/">
+                            <img src="/uploads/message-field/messge-144px.png" alt="Message Field" width="72" height="72">
                         </a>
                     </div>
-                    <h3 class="uk-card-title uk-text-center"><a href="/docs/jibrok-studio-jira/overview/" class="uk-link-reset">JiBrok Studio</a></h3>
-                    <p class="uk-text-small">Scripting platform for Jira Cloud - automate workflows with triggers, computed fields, and custom extensions.</p>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/message-field/overview/" class="uk-link-reset">Message Field</a></h3>
+                    <p class="uk-text-small">Display dynamic message banners on issue screens with HTML, conditions, and JavaScript support.</p>
                     <div class="uk-text-center">
-                        <a href="/docs/jibrok-studio-jira/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                        <a href="/docs/message-field/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time in Status -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/time-in-status/overview/">
+                            <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="Time in Status" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/time-in-status/overview/" class="uk-link-reset">Time in Status</a></h3>
+                    <p class="uk-text-small">Comprehensive time tracking with SLA, timers, stopwatches, and detailed reporting capabilities.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/time-in-status/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculated Custom Fields -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/calculated-custom-fields/overview/">
+                            <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JBCF" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/calculated-custom-fields/overview/" class="uk-link-reset">Calculated Fields (JBCF)</a></h3>
+                    <p class="uk-text-small">Pack of calculated custom fields for advanced Jira customization and automation.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/calculated-custom-fields/overview/" class="uk-button uk-button-primary">View Documentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Switch User -->
+            <div>
+                <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top uk-text-center">
+                        <a href="/docs/su/overview/">
+                            <img src="/uploads/su/su-144px.png" alt="Switch User" width="72" height="72">
+                        </a>
+                    </div>
+                    <h3 class="uk-card-title uk-text-center"><a href="/docs/su/overview/" class="uk-link-reset">Switch to User</a></h3>
+                    <p class="uk-text-small">Secure user impersonation with delegation capabilities for Jira administrators.</p>
+                    <div class="uk-text-center">
+                        <a href="/docs/su/overview/" class="uk-button uk-button-primary">View Documentation</a>
                     </div>
                 </div>
             </div>
 
         </div>
-        
+
     </div>
 </div>
 

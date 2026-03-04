@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="360" viewBox="230 280 560 380">
+  <!-- Flat icon variant: pastel sky -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cube fills -->
+    <path d="M378 390 L512 455 L512 611 L378 536 Z" fill="#A7D9FF" stroke="none"/>
+    <path d="M512 455 L646 390 L646 536 L512 611 Z" fill="#84C9FB" stroke="none"/>
+    <path d="M378 390 L512 315 L646 390 L512 455 Z" fill="#F5FBFF" stroke="none"/>
+
+    <!-- Top split -->
+    <path d="M541 336 L469 429" stroke="#2C7FC4" stroke-width="14"/>
+    <path d="M512 315 L541 336" stroke="#2C7FC4" stroke-width="14"/>
+
+    <!-- Cube outline -->
+    <g stroke="#2C7FC4" stroke-width="14">
+      <path d="M378 390 L378 536 L512 611 L646 536 L646 390 L512 315 Z"/>
+      <path d="M378 390 L512 455 L646 390"/>
+      <path d="M512 455 L512 611"/>
+    </g>
+
+    <!-- Side chevrons -->
+    <g stroke="#2C7FC4" stroke-width="13">
+      <path d="M336 407 L262 460 L336 514"/>
+      <path d="M688 407 L762 460 L688 514"/>
+    </g>
+
+    <!-- Terminal glyph -->
+    <g stroke="#FFFFFF" stroke-width="6">
+      <path d="M413 480 L435 500 L413 512"/>
+      <path d="M444 526 L468 541"/>
+    </g>
+  </g>
+</svg>

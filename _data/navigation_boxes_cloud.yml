@@ -3,7 +3,7 @@
 - title: JiBrok Studio for Jira Cloud
   desc: Forge-based scripting platform - automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.
   icon: jibrok-studio-jira
-  doc: jibrok-studio-jira/overview
+  doc: jibrok-studio-jira/landing
 
 - title: Time in status (Cloud)
   desc: Calculation and search by time spent in statuses. Working calendars, reports, JQL filters and more.
