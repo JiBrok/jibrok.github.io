@@ -30,7 +30,7 @@ The Console is the main interface for writing and executing scripts. It provides
 The editor supports:
 
 - **Syntax highlighting** for the scripting language
-- **Script engine selection** - choose between JavaScript (primary), Python, and Groovy engines. More engines will be added in future updates.
+- **Script engine selection** - choose between JavaScript (primary), Python, Groovy, and Jira Expressions engines
 - **Variables popup** - insert available variable names into the editor
 - **Local draft auto-save** - drafts are saved to browser localStorage automatically
 

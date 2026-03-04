@@ -18,20 +18,39 @@ tags:
 
 | Limit | Value | Globals Script |
 |-------|-------|----------------|
-| Max execution time | 10,000 ms | 1,000 ms |
-| Max loop iterations | 50,000 | 1,000 |
+| Max execution time | per trigger (see below) | 1,000 ms |
+| Max loop iterations | 50,000 (100,000 for scheduled) | 1,000 |
 | Max call depth | 64 | 32 |
 | Max string size | 1 MB | 100 KB |
 | Max log calls | 200 | 0 |
 | Max collection size (Set/Map) | 10,000 | 10,000 |
 | Max array size | 50,000 | 50,000 |
-| Max pending promises | 50 | 0 |
-| Max API calls | 40 | - |
+| Max pending promises | per trigger (see below) | 0 |
+| Max API calls | per trigger (see below) | - |
 | Max eval calls | 20 | 0 |
 | Max include depth | 5 | - |
 | Max input size | 100,000 chars | 100,000 chars |
 
 > **Note:** The Globals Script column shows reduced limits for the global variables script, which runs before every other script execution.
+
+### Per-Trigger Limits
+
+Execution time, API calls, and promises vary by trigger type:
+
+| Trigger | Execution | API Calls | Promises | Loop Iterations |
+|---------|-----------|-----------|----------|-----------------|
+| Console | 18s | 40 | 50 | 50,000 |
+| UIM | 5s | 20 | 20 | 50,000 |
+| Scripted Fields | 5s | 20 | 20 | 50,000 |
+| Event | 25s | 60 | 50 | 50,000 |
+| Scheduled | 55s | 100 | 50 | 100,000 |
+| Async Event | 55s | 100 | 50 | 50,000 |
+| Automation | 40s | 80 | 50 | 50,000 |
+| Rovo | 40s | 80 | 50 | 50,000 |
+| Workflow Post Function | 15s | 40 | 30 | 50,000 |
+| Workflow Validator | 10s | 20 | 20 | 50,000 |
+
+> **Note:** The Workflow Condition trigger uses the Jira Expressions engine, which is evaluated natively by Jira. It has no sandbox engine limits - execution is managed entirely by Jira.
 
 ---
 
@@ -39,7 +58,7 @@ tags:
 
 | Limit | Value |
 |-------|-------|
-| Max API calls per script | 40 (shared across all methods) |
+| Max API calls per script | per trigger (see table above) |
 | Max response size per call | 512 KB |
 | Max table API calls per script | 50 |
 | Max queue API calls per script | 25 |
@@ -78,7 +97,7 @@ tags:
 |-------|-------|
 | Max triggers per script | 10 |
 | Max trigger config size | 10 KB |
-| Singleton types | All types (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo) |
+| Singleton types | All types (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition) |
 
 ---
 
@@ -120,7 +139,7 @@ tags:
 | Max async event calls per script | 10 |
 | Max payload size | 100 KB |
 | Max delay | 900 seconds (15 min) |
-| Max chain depth | 1 |
+| Max chain depth | 1 (allows 2 hops: depth 0, 1) |
 | Deduplication window | 5 minutes |
 
 ---
@@ -161,8 +180,8 @@ tags:
 | Max UIM field values | 200 |
 | Max import JSON size | 5 MB |
 | Audit run records | 10,000 (rolling) |
-| Scheduled trigger timeout | 120 seconds |
-| Async event consumer timeout | 25 seconds |
+| Scheduled handler timeout | 55 seconds |
+| Async consumer timeout | 120 seconds |
 | Max log string length | 1,000 characters |
 
 ---

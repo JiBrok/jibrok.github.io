@@ -17,11 +17,14 @@ Run scripts on a recurring schedule. One per script (singleton).
 
 | Interval | Description |
 |----------|-------------|
+| **Every 5 minutes** | Runs approximately every 5 minutes |
 | **Hourly** | Runs every hour |
 | **Daily** | Runs once per day |
 | **Weekly** | Runs once per week |
 
 Scripts run with the **actor configured on the script**.
+
+**How it works:** The scheduled handler pushes each script into the async queue instead of executing them directly. Each script then runs independently in its own async consumer invocation with up to 55 seconds of execution time and 100 API calls.
 
 > **Note:** The `event` variable is **not available** in scheduled triggers. Use the [Jira REST API](/docs/jibrok-studio-jira/scripting-api#jira-rest-api) or [built-in functions](/docs/jibrok-studio-jira/scripting-api) to fetch data.
 

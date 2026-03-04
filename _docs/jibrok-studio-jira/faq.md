@@ -30,7 +30,7 @@ Yes. Scripts run in a multi-layer sandbox with strict resource limits (execution
 
 ### Can scripts call external APIs?
 
-No. Scripts can only call the Jira REST API through `requestJira()` and built-in API namespaces. There is no `fetch`, `XMLHttpRequest`, or other network access.
+Now no. Now scripts can only call the Jira REST API through `requestJira()` and built-in API namespaces. There is no `fetch`, `XMLHttpRequest`, or other network access.
 
 ### Can I use npm packages?
 
@@ -64,17 +64,17 @@ It determines whose permissions are used for Jira API calls:
 
 ### Why did my script time out?
 
-Scripts have a **10-second** execution time limit. Common causes:
+Scripts have execution time limits that vary by trigger type: console (18s), scripted fields/UIM (5s), event (25s), scheduled/async (55s), workflow post function (15s), workflow validator (10s). Common causes:
 
 - Too many API calls (each call takes time)
 - Large loops processing many items
 - Complex JQL queries returning lots of data
 
-**Tips:** Use `maxResults` in searches, process data in batches across multiple runs, select only needed `fields`.
+**Tips:** Use `maxResults` in searches, process data in batches across multiple runs, select only needed `fields`. See [Limits](/docs/jibrok-studio-jira/limits) for all trigger-specific limits.
 
 ### I get "API call limit exceeded"
 
-You've hit the **40-call-per-execution** limit. Solutions:
+You've hit the per-execution API call limit (varies by trigger type: 20-100 calls). Solutions:
 
 - Use JQL to fetch data in bulk instead of one-by-one
 - Use `Jira.search()` with specific `fields` to reduce data

@@ -29,6 +29,9 @@ Triggers automate script execution in response to events, schedules, or user act
 | Scripted Field (Text/Number/Date/DateTime) | [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) |
 | Automation | [Jira Automation Integration](/docs/jibrok-studio-jira/automation) |
 | Rovo | [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) |
+| Workflow Post Function | [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) |
+| Workflow Validator | [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) |
+| Workflow Condition | [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) |
 
 ---
 
@@ -67,7 +70,7 @@ Each trigger has its own enabled/disabled toggle, independent of the script's en
 
 ### Singleton vs Multiple
 
-- **Singleton triggers** (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo): one per script
+- **Singleton triggers** (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition): one per script
 
 ### Limits
 
@@ -84,3 +87,6 @@ Each trigger has its own enabled/disabled toggle, independent of the script's en
 - [UI Modifications](/docs/jibrok-studio-jira/ui-modifications) - Form customization triggers
 - [Jira Automation Integration](/docs/jibrok-studio-jira/automation) - Run scripts from Jira Automation rules
 - [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) - Expose scripts to Rovo AI
+- [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) - Run scripts after workflow transitions
+- [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) - Validate workflow transitions before they complete
+- [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) - Control transition availability with Jira Expressions

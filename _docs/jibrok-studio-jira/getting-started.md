@@ -77,7 +77,7 @@ Scripts run in a secure sandbox with strict limits:
 
 - **No network access** - except through `requestJira()` and built-in API namespaces
 - **No filesystem** - scripts cannot read or write files
-- **Resource limits** - execution time (10s), loop iterations (50K), and API calls (40) are capped. These limits will be increased in future updates.
+- **Resource limits** - execution time, loop iterations, and API calls are capped. Limits vary by trigger type (e.g., console: 18s/40 API calls, scheduled: 55s/100 API calls). See [Limits](/docs/jibrok-studio-jira/limits) for details.
 - **Method whitelisting** - only approved methods can be called
 - **Auto-await** - async API calls are automatically resolved
 

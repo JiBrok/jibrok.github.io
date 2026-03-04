@@ -173,12 +173,24 @@ Each script has a quick actions menu:
 |--------|-------------|
 | **Open** | Open in Console editor |
 | **Duplicate** | Create a copy with "(copy)" suffix |
+| **Where Used** | Show where the script is used (workflows, custom fields) |
 | **Enable/Disable** | Toggle script execution |
 | **Delete** | Remove from Library (with confirmation) |
 | **Export** | Export as JSON |
 
 <a href="/uploads/jibrok-studio-jira/library-context-menu.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-context-menu.png" alt="Script context menu with actions" style="width:100%;" loading="lazy"></a>
+
+### Where Used
+
+The **Where Used** action opens a dialog showing all locations where the script is referenced:
+
+- **Workflow rules** - post functions, validators, and conditions that use this script, with links to the workflow editor
+- **Custom fields** - scripted fields bound to this script
+
+Each entry shows the usage type, location, and version status (whether the deployed version matches the latest saved version).
+
+> **Tip:** For a site-wide view of all script usage, see [Script Usage](/docs/jibrok-studio-jira/admin-settings#script-usage) in the Admin tab.
 
 > **Note:** Import/Export for bulk operations is available in the Admin tab. See [Administration](/docs/jibrok-studio-jira/admin-settings).
 

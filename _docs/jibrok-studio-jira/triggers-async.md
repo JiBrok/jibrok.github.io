@@ -42,14 +42,21 @@ The `event` variable in the target script contains:
 | `issueKey` | string | Issue key in `PROJ-123` format, passed as context to the target script |
 | `delayInSeconds` | number | Delay before processing (0-900, max 15 minutes) |
 
+### Return Value
+
+Both `push()` and `pushSelf()` return `{ jobId: string }`.
+
 ### Limits
 
 | Limit | Value |
 |-------|-------|
 | Max `push`/`pushSelf` calls per execution | 10 |
+| Max `push`/`pushSelf` calls per execution (chained, depth > 0) | 3 |
 | Max payload size | 100KB |
 | Max delay | 900 seconds (15 minutes) |
 | Max chain depth | 1 (allows 2 hops: depth 0, 1) |
+
+**Fanout reduction:** Chained executions (depth > 0) are limited to 3 push calls instead of 10, reducing worst-case total executions.
 
 ### Example
 

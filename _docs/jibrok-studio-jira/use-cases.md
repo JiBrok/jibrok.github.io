@@ -297,6 +297,61 @@ return `Exported ${issues.issues.length} resolved issues`
 
 ---
 
+## Workflow Validator
+
+Validate that required fields are set before a workflow transition completes.
+
+**Features used:** Workflow Validator trigger, Issues.get, event.transition, event.modifiedFields
+
+```js
+// Trigger: Workflow Validator
+const issue = await Issues.get(issueKey)
+
+// Only validate when transitioning to "Done"
+if (event.transition.to_status === "Done") {
+  // Check required fields
+  if (!issue.fields.fixVersions || issue.fields.fixVersions.length === 0) {
+    return { valid: false, message: "Fix Version is required before closing" }
+  }
+
+  if (!issue.fields.resolution) {
+    return { valid: false, message: "Resolution must be set" }
+  }
+}
+
+return { valid: true }
+```
+
+---
+
+## Workflow Post Function
+
+Automatically perform actions after a workflow transition.
+
+**Features used:** Workflow Post Function trigger, Issues.get, issue.update, issue.addComment, event.transition
+
+```js
+// Trigger: Workflow Post Function
+const issue = await Issues.get(issueKey)
+
+// When issue moves to "In Progress", auto-assign to current user
+if (event.transition.to_status === "In Progress" && !issue.isAssigned) {
+  await issue.assign(currentUser.accountId)
+  await issue.addComment(`Auto-assigned to ${currentUser.displayName} on transition start`)
+  log(`Assigned ${issue.key} to ${currentUser.displayName}`)
+}
+
+// When issue moves to "Done", set resolution date label
+if (event.transition.to_status === "Done") {
+  const today = DateUtils.format(new Date(), "YYYY-MM-DD")
+  await issue.update({
+    labels: [...issue.labels, `resolved-${today}`]
+  })
+}
+```
+
+---
+
 ## Next Steps
 
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference

@@ -35,8 +35,12 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 | **[UI Modifications](/docs/jibrok-studio-jira/ui-modifications)** | Dynamically customize issue create and transition forms |
 | **[Automation](/docs/jibrok-studio-jira/automation)** | Run scripts as Jira Automation actions |
 | **[Rovo AI Agent](/docs/jibrok-studio-jira/rovo)** | Expose scripts to Atlassian Rovo AI for natural language execution |
+| **[Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function)** | Run scripts after workflow transitions with full transition context |
+| **[Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator)** | Validate workflow transitions with scripts before they complete |
+| **[Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition)** | Control transition visibility with Jira Expressions |
 | **[Custom Tables](/docs/jibrok-studio-jira/data-storage)** | SQL-backed structured data storage with a visual browser |
 | **[Message Queues](/docs/jibrok-studio-jira/data-storage)** | Async message processing with priority-based ordering |
+| **[Script Usage Tracking](/docs/jibrok-studio-jira/admin-settings#script-usage)** | See where scripts are used across workflows and custom fields |
 
 ---
 

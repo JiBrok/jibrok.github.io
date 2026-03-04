@@ -17,15 +17,18 @@ tags:
 
 ## Script Engines
 
-Three language engines are available:
+Four language engines are available:
 
 | Engine | Description |
 |--------|-------------|
 | **JavaScript** | Primary engine, most complete feature set |
 | **Python** | Python-like syntax support |
 | **Groovy** | Groovy-like syntax support |
+| **Jira Expressions** | Native Jira expression language (Workflow Condition only) |
 
 JavaScript is recommended for most use cases and has the widest API coverage.
+
+> **Note:** The Jira Expressions engine is a special engine exclusively available with the [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) trigger. Unlike the other three engines, Jira Expressions are evaluated natively by Jira - they do not run in the JiBrok sandbox and have no sandbox engine limits. See [Jira Expressions documentation](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/) for the language reference.
 
 ---
 
@@ -96,6 +99,7 @@ The scripting platform provides a rich set of APIs. See [Scripting API](/docs/ji
 | `Versions` | `get()`, `create()`, `update()`, `release()` |
 | `Boards` | `list()`, `get()`, `getSprints()`, `getIssues()` |
 | `Sprints` | `get()`, `getIssues()`, `moveIssues()` |
+| `Links` | `types()` - get all issue link types |
 
 > **Note:** `Jira.search(jql, options?)` and `Jira.getIssue(key, options?)` are low-level convenience wrappers that return raw Jira REST API responses. For rich functionality (RichIssue, auto-transform, chainable promises), use the `Issues` namespace instead.
 
@@ -134,7 +138,13 @@ Variables available in scripts depending on context:
 | `issueKey` | Issue key provided | The issue key string |
 | `issue` | Issue context loaded | Issue data object |
 | `context` | Always | Execution context metadata |
-| `event` | Event/scheduled/async triggers | Event payload |
+| `event` | Event/async/workflow post function/workflow validator triggers | Event payload |
+| `event.transition` | Workflow post function/workflow validator trigger | Transition details (`from_status`, `to_status`, `transitionName`) |
+| `event.modifiedFields` | Workflow validator trigger | Fields modified during the transition |
+| `issue` (Jira Expressions) | Workflow condition trigger | Jira-native issue object (not sandbox `issue`) |
+| `project` (Jira Expressions) | Workflow condition trigger | Project of the transitioning issue |
+| `user` (Jira Expressions) | Workflow condition trigger | User performing the transition |
+| `now()` (Jira Expressions) | Workflow condition trigger | Current date and time |
 | `uim` | UIM triggers | UI modification methods |
 | `uimData` | UIM triggers | Form field values and callback info |
 | `currentUser` | Always | Current user info |
@@ -172,6 +182,12 @@ Scripts run in a secure, isolated sandbox:
 | Range operators (`..`, `..<`) | Not available | Supported |
 | Regex operators (`=~`, `==~`) | Not available | Supported |
 | `String.format(pattern, ...args)` | Not available | Supported (Java-style formatting) |
+| `in` operator on arrays | Checks index (`1 in [a,b]`) | Checks value (`'a' in ['a','b']` is true) |
+| `typeof` precedence | Lower than member access | Parsed with primary precedence |
+| C-style `for` loop scope | New scope per iteration | Single scope for the whole loop |
+| `decodeURI`/`decodeURIComponent` | Throws `URIError` on invalid input | Returns `undefined` on invalid input |
+| `new` keyword | For built-in types | For user-defined classes, Date, RegExp, Set, Map |
+| `instanceof` | For built-in types | For user-defined and built-in types |
 
 ---
 

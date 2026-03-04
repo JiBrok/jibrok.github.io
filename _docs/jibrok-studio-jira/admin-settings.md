@@ -17,7 +17,7 @@ tags:
 
 ## Overview
 
-All administrative settings are in the **Admin** tab, accessible to Jira site administrators only. This page covers execution identity, trigger controls, API restrictions, import/export, health checks, audit logs, and data privacy.
+All administrative settings are in the **Admin** tab, accessible to Jira site administrators only. This page covers execution identity, trigger controls, API restrictions, script usage tracking, import/export, health checks, audit logs, support tools, and data privacy.
 
 ---
 
@@ -60,14 +60,45 @@ Toggle each trigger type on/off globally:
 | **Scripted Fields** | Custom field computation |
 | **Automation** | Jira Automation action triggers |
 | **Rovo** | Rovo AI Agent script access |
+| **Workflow Post Function** | Workflow transition post functions |
+| **Workflow Validator** | Workflow transition validators |
+| **Workflow Condition** | Workflow transition conditions (Jira Expressions) |
 
 Disabled types **preserve existing configurations** but prevent execution. All toggles are recorded in the audit log.
 
 <a href="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" alt="Trigger type toggle settings" style="width:100%;" loading="lazy"></a>
 
+### Event Type Settings
+
+Fine-grained control over which Jira event types trigger scripts. Only applies to scripts with Event triggers.
+
+- 32 event types available (issue_created, issue_updated, etc.)
+- 7 core events enabled by default: `issue_created`, `issue_updated`, `issue_deleted`, `issue_assigned`, `comment_created`, `comment_deleted`, `comment_mentioned`
+- Disable specific event types to reduce unnecessary script executions
+- Changes are recorded in the audit log
+
 <a href="/uploads/jibrok-studio-jira/admin-event-types.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-event-types.png" alt="Event trigger type configuration" style="width:100%;" loading="lazy"></a>
+
+### Audit Trigger Type Settings
+
+Control which trigger types are logged in the Script Runs Audit:
+
+| Trigger Type | Default | Description |
+|--------------|---------|-------------|
+| Manual | Enabled | Console executions |
+| Scheduled | Enabled | Scheduled trigger runs |
+| Event | Enabled | Event trigger runs |
+| UIM | Enabled | UIM trigger runs |
+| Scripted Fields | **Disabled** | Custom field computations (high volume) |
+| Async Event | Enabled | Async event runs |
+| Automation | Enabled | Automation action runs |
+| Rovo | Enabled | Rovo action runs |
+| Workflow Post Function | Enabled | Workflow post function runs |
+| Workflow Validator | Enabled | Workflow validator runs |
+
+Scripted Fields auditing is disabled by default because field computations can produce a high volume of audit entries.
 
 ---
 
@@ -106,6 +137,45 @@ Create named whitelist/blacklist profiles for per-script restrictions:
 
 <a href="/uploads/jibrok-studio-jira/admin-script-whitelists.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-script-whitelists.png" alt="Custom API restriction profiles" style="width:100%;" loading="lazy"></a>
+
+---
+
+## Script Usage
+
+Track where scripts are used across your Jira instance - in workflows and custom fields.
+
+### Collecting Data
+
+Click **Collect Information** to scan all workflows and custom fields for script references. The process:
+
+1. Scans all workflow rules (post functions, validators, conditions) for scripts managed by the app
+2. Scans all scripted custom field configurations
+3. Stores results in a usage cache
+
+### Usage Table
+
+| Column | Description |
+|--------|-------------|
+| **Script** | Script name (or truncated ID if deleted) |
+| **Type** | Usage type - Post Function, Validator, Condition, or Custom Field |
+| **Location** | Workflow name with link (for workflow rules) or field name (for custom fields) |
+| **Version** | Version status - Current (green), Outdated (orange), or - (not tracked) |
+
+### Version Tracking
+
+For workflow rules, the table shows whether the deployed script version matches the latest saved version:
+
+- **Current** - the workflow uses the latest script version
+- **Outdated** - the workflow uses an older version
+- **-** - version information is not available
+
+### Search and Pagination
+
+Search across script names, workflow names, and field names. Results are paginated (20 per page).
+
+### Per-Script View
+
+Each script also has a **Where Used** action in the Library context menu, showing only that script's usage locations.
 
 ---
 
@@ -153,9 +223,26 @@ Run database maintenance tasks:
 - **Run migrations** - apply pending database schema updates (also runs hourly automatically)
 - **Check duplicates** - detect and remove duplicate global variable scripts
 - **Storage Usage** - view Forge SQL database size, table sizes, index sizes, and row counts
+- **Data integrity** - detect and clean up orphaned records left by failed deletions
 
 <a href="/uploads/jibrok-studio-jira/admin-health-check.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/admin-health-check.png" alt="Health Check panel" style="width:100%;" loading="lazy"></a>
+
+---
+
+## Support
+
+### Diagnostic Logging
+
+Time-limited diagnostic logging for troubleshooting trigger and script execution issues.
+
+- When enabled, detailed info-level logs are written for all trigger invocations
+- Logs include: trigger invocations, script start/complete events, timing, skip reasons
+- No sensitive data is logged (source code, issue data, PII are excluded)
+- Duration options: 5 minutes to 14 days - auto-disables after the chosen duration
+- Can be disabled manually at any time
+- View logs: `forge logs --environment <env>`
+- Enable/disable actions are recorded in the settings audit log
 
 ---
 

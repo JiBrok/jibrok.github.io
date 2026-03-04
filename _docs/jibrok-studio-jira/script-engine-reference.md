@@ -16,7 +16,7 @@ tags:
 
 ## Overview
 
-The Script Engine Reference is a built-in, searchable reference panel that provides language syntax, API documentation, and ready-to-use code examples for all three script engines (JavaScript, Python, Groovy).
+The Script Engine Reference is a built-in, searchable reference panel that provides language syntax, API documentation, and ready-to-use code examples for all script engines (JavaScript, Python, Groovy, and Jira Expressions).
 
 To open it, click the **Help** button in the Console toolbar. The reference panel adapts to the currently selected script engine - switching the engine in the Console automatically updates the reference content.
 
@@ -238,22 +238,37 @@ Groovy-specific features include:
 | **Utils** | GDK collection methods |
 | **Java Lang** | `String`, `Integer`, `Long`, `Double`, `Character`, `Arrays` |
 
+### Jira Expressions
+
+A special engine exclusively available with the [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) trigger. Unlike the other three engines, Jira Expressions are **not executed in the JiBrok sandbox** - they are sent directly to Jira and evaluated natively.
+
+Key differences:
+
+- **No sandbox features** - no `log()`, `requestJira()`, API namespaces, or built-in utilities
+- **No engine limits** - execution is managed entirely by Jira
+- **Jira-native context** - `issue`, `project`, `user`, `now()` are Jira Expression objects, not sandbox variables
+- **Return value** - must evaluate to `true` (allow transition) or `false` (hide transition button)
+
+The reference panel provides Jira Expressions-specific content when this engine is selected, including context variables, available types, and expression examples.
+
+For the full Jira Expressions language reference, see [Atlassian documentation](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/).
+
 ### Category Comparison
 
-| Category | JavaScript | Python | Groovy |
-|----------|:---:|:---:|:---:|
-| Getting Started | + | + | + |
-| Operators | + | + | + |
-| Control Flow | + | + | + |
-| Functions | + | + | + |
-| Built-ins | + | + | 5 categories |
-| Type Methods | + | + | + |
-| Classes | + | + | + |
-| Async & API | + | + | + |
-| Data & Storage | + | + | + |
-| Limits & Rules | + | + | + |
-| Jira API | + | + | + |
-| Utilities | + | + | + |
+| Category | JavaScript | Python | Groovy | Jira Expressions |
+|----------|:---:|:---:|:---:|:---:|
+| Getting Started | + | + | + | + |
+| Operators | + | + | + | - |
+| Control Flow | + | + | + | - |
+| Functions | + | + | + | - |
+| Built-ins | + | + | 5 categories | - |
+| Type Methods | + | + | + | - |
+| Classes | + | + | + | - |
+| Async & API | + | + | + | - |
+| Data & Storage | + | + | + | - |
+| Limits & Rules | + | + | + | - |
+| Jira API | + | + | + | - |
+| Utilities | + | + | + | - |
 
 ---
 
