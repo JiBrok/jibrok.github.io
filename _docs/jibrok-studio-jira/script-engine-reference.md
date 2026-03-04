@@ -253,23 +253,6 @@ The reference panel provides Jira Expressions-specific content when this engine 
 
 For the full Jira Expressions language reference, see [Atlassian documentation](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/).
 
-### Category Comparison
-
-| Category | JavaScript | Python | Groovy | Jira Expressions |
-|----------|:---:|:---:|:---:|:---:|
-| Getting Started | + | + | + | + |
-| Operators | + | + | + | - |
-| Control Flow | + | + | + | - |
-| Functions | + | + | + | - |
-| Built-ins | + | + | 5 categories | - |
-| Type Methods | + | + | + | - |
-| Classes | + | + | + | - |
-| Async & API | + | + | + | - |
-| Data & Storage | + | + | + | - |
-| Limits & Rules | + | + | + | - |
-| Jira API | + | + | + | - |
-| Utilities | + | + | + | - |
-
 ---
 
 ## Next Steps
