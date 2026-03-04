@@ -30,15 +30,15 @@ $text-lead-font-size:                           1.125rem;
 $text-lead-color:                               $global-muted-color;
 
 // Borders
-$global-border:                               #e5e5e5;
-$border-light:                                #ebecee;
-$border-xlight:                               #f5f5f5;
+$global-border:                               #e8e9ed;
+$border-light:                                #eef0f3;
+$border-xlight:                               #f7f8fa;
 
 // Border radius
-$border-rounded-border-radius:                  5px;
-$border-radius-small:                           8px;
-$border-radius-medium:                          12px;
-$border-radius-large:                           16px;
+$border-rounded-border-radius:                  6px;
+$border-radius-small:                           10px;
+$border-radius-medium:                          14px;
+$border-radius-large:                           20px;
 
 // Pre & Code
 $base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
@@ -52,9 +52,9 @@ $base-pre-color:                                $base-code-color;
 $container-xxsmall:                             560px;
 
 // Box shadow
-$global-medium-box-shadow:                      0 5px 15px rgba(0,0,0,0.08);
-$global-large-box-shadow:                       0 10px 35px rgba(0,0,0,0.12);
-$global-xlarge-box-shadow:                      0 28px 50px rgba(0,0,0,0.16);
+$global-medium-box-shadow:                      0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06);
+$global-large-box-shadow:                       0 4px 8px rgba(0,0,0,0.04), 0 16px 40px rgba(0,0,0,0.08);
+$global-xlarge-box-shadow:                      0 8px 16px rgba(0,0,0,0.06), 0 24px 56px rgba(0,0,0,0.10);
 
 // Logo
 $logo-font-size:                                1.5rem;

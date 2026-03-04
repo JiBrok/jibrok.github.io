@@ -19,8 +19,8 @@
 @import "theme/uikit";
 
 // Other vendor styles
-// @import "syntax-highlighting/cld";
-@import "syntax-highlighting/bw";
+@import "syntax-highlighting/cld";
+// @import "syntax-highlighting/bw";
 
 // Custom styles for anchor links
 .anchor-link {
@@ -51,6 +51,19 @@ html {
 // Alternative method for older browsers
 h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
   scroll-margin-top: 120px; // Same value as above
+}
+
+// Selection color
+::selection {
+    background-color: rgba(0, 82, 204, 0.15);
+}
+
+// Inline code styling
+code:not([class]) {
+    background-color: rgba(0, 82, 204, 0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
 }
 
 // Breadcrumbs styling

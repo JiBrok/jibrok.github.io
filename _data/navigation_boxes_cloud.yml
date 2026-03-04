@@ -1,7 +1,7 @@
 # Boxes include navigation
 
 - title: JiBrok Studio for Jira Cloud
-  desc: Forge-based scripting platform — automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.
+  desc: Forge-based scripting platform - automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.
   icon: jibrok-studio-jira
   doc: jibrok-studio-jira/overview
 

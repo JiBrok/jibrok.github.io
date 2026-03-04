@@ -12,9 +12,9 @@
         -webkit-appearance:none;
     }
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav) {
-        transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
         border-bottom: 1px solid $global-primary-background;
-        color: $global-primary-background;        
+        color: $global-primary-background;
     }
 
     .link-primary a:not(.lightbox):not(.uk-inline):not(.uk-link-muted):not(.uk-slidenav):hover {
@@ -55,6 +55,28 @@
             margin-right: -$navbar-nav-item-padding-horizontal;
         }
     }
+    // Animated underline indicator for navbar items
+    .uk-navbar-nav > li > a {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 20px;
+            height: 2px;
+            background-color: $global-primary-background;
+            border-radius: 1px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+    }
+    .uk-navbar-nav > li.uk-active > a::after {
+        transform: translateX(-50%) scaleX(1);
+    }
 }
 
 @mixin hook-logo(){
@@ -63,6 +85,10 @@
 
 @mixin hook-button(){
     border-radius: 30px;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:active {
+        transform: scale(0.97);
+    }
 }
 
 @mixin hook-button-misc(){
@@ -224,6 +250,14 @@
 }
 
 @mixin hook-card-misc(){
+    // Card hover lift effect
+    .uk-card-default.uk-card-hover {
+        transition: box-shadow 300ms ease, transform 300ms ease;
+    }
+    .uk-card-default.uk-card-hover:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.04), 0 20px 48px rgba(0,0,0,0.10);
+        transform: translateY(-2px);
+    }
     .uk-position-cover {
         z-index: 1;
     }
@@ -362,27 +396,31 @@
         margin-bottom: $global-medium-margin;
         >tr:not(:first-child), >:not(:first-child)>tr, >:first-child>tr:not(:first-child) {
             border-top: 1px solid $table-divider-border;
-        }  
+        }
         tbody tr {
-            transition: background-color .1s linear;
+            transition: background-color .15s linear;
+            &:hover {
+                background-color: rgba(0, 82, 204, 0.03);
+            }
         }
         th, td {
-            padding: 10px 12px;
-        }  
+            padding: 12px 14px;
+        }
         td {
             vertical-align: top;
-        }  
+        }
         th {
             text-align: left;
             vertical-align: bottom;
+            background-color: #f7f8fa;
         }
         th:first-child, td:first-child {
             padding-left: 0;
-        }  
+        }
         th:last-child, td:last-child {
             padding-right: 0;
         }
-    }         
+    }
 }
 
 @mixin hook-label(){
@@ -392,6 +430,9 @@
 
 @mixin hook-navbar-sticky(){
     border-bottom: solid 1px $border-xlight;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.85) !important;
 }
 @mixin hook-accordion-title(){
 
@@ -400,6 +441,12 @@
     border-radius: $border-radius-small;
     padding: 20px;
     font-weight: 500;
+    transition: background-color 200ms ease, border-color 200ms ease;
+
+    &:hover {
+        background-color: rgba(0, 82, 204, 0.03);
+        border-color: darken($border-light, 5%);
+    }
 
     &::after {
         content: "";
@@ -498,6 +545,7 @@
         bottom: 70px;
         overflow-y: scroll;
         overflow-x: hidden;
+        scrollbar-width: thin;
         > h5 {
             margin: 15px 0 0;
             &:first-child {
@@ -519,18 +567,29 @@
     ul.doc-nav {
         padding-left: 14px;
         margin-top: 5px;
+        > li > a {
+            transition: background-color 200ms ease, color 200ms ease;
+            border-radius: $border-rounded-border-radius;
+            &:hover {
+                background-color: rgba(0, 82, 204, 0.04);
+                text-decoration: none;
+            }
+        }
     }
-    
+
     .doc-nav > li.uk-active > a {
         position: relative;
-        background-color: #EBECF0;
+        background-color: rgba(0, 82, 204, 0.08);
+        border-radius: $border-rounded-border-radius;
         &:before {
             content: "";
             position: absolute;
-            top: 15px;
+            top: 6px;
+            bottom: 6px;
             left: -14px;
-            width: 7px;
-            border-top: 1px solid $global-primary-background;
+            width: 3px;
+            border-radius: 2px;
+            background-color: $global-primary-background;
         }
     }
     
@@ -553,6 +612,7 @@
 
     .section-hero {
         z-index: 10;
+        background: linear-gradient(180deg, rgba(0,82,204,0.03) 0%, rgba(255,255,255,0) 100%);
         .hero-search {
             margin: 60px auto 0 auto;
             .uk-search-input {
