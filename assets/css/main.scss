@@ -58,8 +58,8 @@ h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
     background-color: rgba(0, 82, 204, 0.15);
 }
 
-// Inline code styling
-code:not([class]) {
+// Inline code styling (exclude code inside pre blocks)
+:not(pre) > code:not([class]) {
     background-color: rgba(0, 82, 204, 0.06);
     padding: 2px 6px;
     border-radius: 4px;
