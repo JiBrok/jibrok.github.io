@@ -125,11 +125,7 @@ function handleCookieChoice(choice) {
   document.getElementById('cookie-banner').style.display = 'none';
   
   if (choice === 'true') {
-    // Include JSD widget if accepted
     includeJSD();
-  } else {
-    // Delete all cookies except notice
-    deleteAllWithOutNoticeCookies();
   }
 }
 

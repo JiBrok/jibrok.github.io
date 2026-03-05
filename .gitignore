@@ -1,7 +1,7 @@
 .DS_Store
 _site
 .idea
-.sass-cahge
+.sass-cache
 /.sass-cache/
 .jekyll-metadata
 /.claude/
