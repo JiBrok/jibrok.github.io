@@ -19,7 +19,7 @@ Scripted Fields are read-only computed custom fields whose values are calculated
 
 ---
 
-## Field Types
+## Field types
 
 | Type | Script returns | Example use case |
 |------|----------------|------------------|
@@ -32,19 +32,19 @@ Scripted Fields are read-only computed custom fields whose values are calculated
 
 ## Setup
 
-### 1. Create the Custom Field
+### 1. Create the custom field
 
 1. In Jira, go to **Settings > Issues > Custom Fields**
 2. Create a new field of type **Scripted Text Field**, **Scripted Number Field**, **Scripted Date Field**, or **Scripted DateTime Field**
 3. Assign the field to the appropriate screens
 
-### 2. Link a Script
+### 2. Link a script
 
 In the script's **Config** tab, add a trigger of the appropriate type (`customFieldText`, `customFieldNumber`, `customFieldDate`, or `customFieldDatetime`) and select the custom field to associate with.
 
 ---
 
-## How It Works
+## How it works
 
 - Scripts run automatically on **issue create** and **issue update**
 - The script receives `issue` (RichIssue object) and `issueKey` (string)
@@ -52,7 +52,7 @@ In the script's **Config** tab, add a trigger of the appropriate type (`customFi
 - If the script errors, the field shows empty (fail-safe)
 - Scripts always run as **Application** (not current user)
 
-### Context Restrictions
+### Context restrictions
 
 Scripted fields can be restricted to specific projects and issue types, limiting which issues have the field computed.
 
@@ -60,19 +60,19 @@ Scripted fields can be restricted to specific projects and issue types, limiting
 
 ## Examples
 
-### Scripted Text Field - Priority + Status
+### Scripted text field - priority + status
 
 ```js
 return `${issue.priority} - ${issue.status}`
 ```
 
-### Scripted Number Field - Days Since Creation
+### Scripted number field - days since creation
 
 ```js
 return issue.age
 ```
 
-### Scripted Number Field - Sum Subtask Story Points
+### Scripted number field - sum subtask story points
 
 ```js
 let subtasks = await Issues.search(`parent = ${issueKey}`, {
@@ -87,14 +87,14 @@ for (let sub of subtasks.issues) {
 return total
 ```
 
-### Scripted Date Field - Due Date + Business Days
+### Scripted date field - due date + business days
 
 ```js
 const due = DateUtils.addBusinessDays(issue.created, 14)
 return DateUtils.format(due, 'YYYY-MM-DD')
 ```
 
-### Scripted DateTime Field - Last Comment Timestamp
+### Scripted datetime field - last comment timestamp
 
 ```js
 const comments = await issue.getComments()
@@ -106,7 +106,7 @@ return null
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Scripted field trigger configuration
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference

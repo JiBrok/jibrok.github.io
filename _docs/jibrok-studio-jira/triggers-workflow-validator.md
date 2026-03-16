@@ -12,7 +12,7 @@ tags:
 * TOC
 {:toc}
 
-## Workflow Validator
+## Workflow validator
 
 Validate workflow transitions before they complete. One per script (singleton).
 
@@ -38,7 +38,7 @@ A Workflow Validator trigger executes your script every time an issue is about t
 |---------|-------------|
 | `errorMessage` | Default error message shown to users when the transition is blocked. If the script returns its own message, this is overridden. Default: "Transition validation failed" |
 
-### Context Variables
+### Context variables
 
 The following variables are available in workflow validator scripts:
 
@@ -51,7 +51,7 @@ The following variables are available in workflow validator scripts:
 | `event.modifiedFields` | object/null | Fields modified during the transition |
 | `currentUser` | object | Current user info |
 
-#### Transition Object
+#### Transition object
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -59,7 +59,7 @@ The following variables are available in workflow validator scripts:
 | `event.transition.to_status` | string | Status after transition |
 | `event.transition.transitionName` | string | Name of the transition |
 
-### Return Values
+### Return values
 
 The script's return value determines whether the transition is allowed or blocked:
 
@@ -74,7 +74,7 @@ The script's return value determines whether the transition is allowed or blocke
 
 > **Important:** Workflow Validators use a **fail-open** design. If the script fails due to a runtime error, license issue, or configuration problem, the transition is allowed. This prevents broken scripts from blocking all workflow transitions.
 
-### Run As (Actor Resolution)
+### Run as (actor resolution)
 
 The script runs with the **actor configured on the script**. If no specific actor is set, the identity is resolved in this order:
 
@@ -85,12 +85,7 @@ The script runs with the **actor configured on the script**. If no specific acto
 
 ### Limits
 
-| Limit | Value |
-|-------|-------|
-| Max execution time | 10,000 ms |
-| Max API calls | 20 |
-| Max pending promises | 20 |
-| Max loop iterations | 50,000 |
+See [Limits](/docs/jibrok-studio-jira/limits) for execution time, API call, and other limits for workflow validators.
 
 ### Example
 
@@ -124,7 +119,7 @@ return { valid: true }
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) - Run scripts after workflow transitions

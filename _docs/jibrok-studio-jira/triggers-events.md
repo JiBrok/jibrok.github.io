@@ -12,11 +12,11 @@ tags:
 * TOC
 {:toc}
 
-## Event Triggers
+## Event triggers
 
 Run scripts in response to Jira events. One per script (singleton). You can select **multiple events** for one trigger.
 
-### Available Events
+### Available events
 
 | Category | Events |
 |----------|--------|
@@ -37,7 +37,7 @@ Scripts run with **application permissions**. The `event` variable contains the 
 
 Enable **ignoreSelf** to prevent infinite loops when your script modifies the issue that triggered it.
 
-### Event Variable
+### Event variable
 
 The `event` object contains properties depending on the event type:
 
@@ -80,7 +80,7 @@ log("Issue:", issueKey, "-", issue.fields.summary)
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) - Run scripts on a schedule

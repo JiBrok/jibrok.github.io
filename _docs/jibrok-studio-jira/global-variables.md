@@ -19,7 +19,7 @@ Global Variables let you define shared constants, values, and functions that are
 
 ---
 
-## How It Works
+## How it works
 
 A single **Global Script** returns an object whose keys become variables available in all other scripts.
 
@@ -41,7 +41,7 @@ log(formatDate(new Date()))    // => 2024-01-15
 
 ---
 
-## Managing Global Variables
+## Managing global variables
 
 1. Navigate to the **Global Variables** tab
 2. Edit the global script in the editor
@@ -51,7 +51,7 @@ log(formatDate(new Date()))    // => 2024-01-15
 <a href="/uploads/jibrok-studio-jira/global-variables-config.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/global-variables-config.png" alt="Global Variables configuration page" style="width:100%;" loading="lazy"></a>
 
-### Variable Display
+### Variable display
 
 After running, a table shows the defined variables:
 
@@ -63,7 +63,7 @@ After running, a table shows the defined variables:
 
 ---
 
-## Rules and Limits
+## Rules and limits
 
 - The script **must return a plain object** (`return { key: value }`)
 - Reserved variable names (engine built-ins) cannot be overridden
@@ -71,16 +71,13 @@ After running, a table shows the defined variables:
 - `eval()` is not allowed in the global script
 - Version history tracks all changes
 
-| Limit | Value |
-|-------|-------|
-| Max variables | 50 |
-| Max global script size | 10 KB |
+See [Limits](/docs/jibrok-studio-jira/limits) for global variable limits.
 
-> **Note:** The global script runs before every other script execution, so it should be kept lightweight. It has reduced engine limits (1s timeout, 1K loop iterations).
+> **Note:** The global script runs before every other script execution, so it should be kept lightweight. It has reduced engine limits compared to regular scripts.
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Using variables in scripts
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language reference

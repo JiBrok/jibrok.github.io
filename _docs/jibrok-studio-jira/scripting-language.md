@@ -15,53 +15,34 @@ tags:
 * TOC
 {:toc}
 
-## Script Engines
+## Script engines
 
 Four language engines are available:
 
 | Engine | Description |
 |--------|-------------|
 | **JavaScript** | Primary engine, most complete feature set |
-| **Python** | Python-like syntax support |
-| **Groovy** | Groovy-like syntax support |
+| **[Python](/docs/jibrok-studio-jira/scripting-python)** | Python-like syntax - `def`/`lambda`, f-strings, list comprehensions, `*args`/`**kwargs`, `match`/`case`, stdlib modules (`math`, `random`, `re`, `datetime`, `collections`, `itertools`, and more) |
+| **[Groovy](/docs/jibrok-studio-jira/scripting-groovy)** | Groovy-like syntax - closures, GString, ranges, GDK collection methods, safe navigation/Elvis operators, Java date/time classes (`LocalDate`, `Duration`, `ZonedDateTime`), `JsonSlurper`/`JsonOutput`, `MarkupBuilder`, and more |
 | **Jira Expressions** | Native Jira expression language (Workflow Condition only) |
 
-JavaScript is recommended for most use cases and has the widest API coverage.
+All three sandbox engines (JavaScript, Python, Groovy) share the same Jira APIs, resource limits, and security model. JavaScript is recommended for most use cases and has the widest API coverage.
 
 > **Note:** The Jira Expressions engine is a special engine exclusively available with the [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) trigger. Unlike the other three engines, Jira Expressions are evaluated natively by Jira - they do not run in the JiBrok sandbox and have no sandbox engine limits. See [Jira Expressions documentation](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/) for the language reference.
 
 ---
 
-## Language Basics
+## Getting started by engine
 
-The scripting language is JavaScript-like and runs in a secure sandbox. It supports:
-
-- **Variables**: `var`, `let`, `const`
-- **Arrow functions**: `(x) => x * 2`
-- **Classes**: `class Animal { constructor(name) { this.name = name } }`
-- **Async/await**: `const data = await Jira.search(jql)`
-- **Destructuring**: `const { key, summary } = issue`
-- **Template literals**: `` `Issue ${issue.key} is ${issue.status}` ``
-- **Spread/rest**: `[...arr, 4, 5]`, `function(...args) {}`
-- **Optional chaining**: `issue?.fields?.priority?.name`
-- **Nullish coalescing**: `value ?? "default"`
-- **Try/catch/finally** with typed catch and multi-catch
-
-### Typed Catch
-
-```js
-try {
-  throw new TypeError("bad type")
-} catch (TypeError | RangeError e) {
-  log("caught: " + e.message)
-}
-```
-
-Available error types: `Error`, `TypeError`, `RangeError`, `SyntaxError`, `ReferenceError`.
+| Engine | Get started |
+|--------|-------------|
+| **JavaScript** | [Language Basics](/docs/jibrok-studio-jira/scripting-language-basics) — variables, operators, control flow, collections, destructuring |
+| **Python** | [Python Engine](/docs/jibrok-studio-jira/scripting-python) — `def`/`lambda`, f-strings, list comprehensions, stdlib modules |
+| **Groovy** | [Groovy Engine](/docs/jibrok-studio-jira/scripting-groovy) — closures, GString, ranges, GDK methods, Java date/time classes |
 
 ---
 
-## Script Inclusion via `eval(uuid)`
+## Script inclusion via `eval(uuid)`
 
 One script can call another saved script by its UUID:
 
@@ -73,12 +54,7 @@ eval("550e8400-e29b-41d4-a716-446655440000")
 let result = myUtilityFunction(data)
 ```
 
-| Limit | Value |
-|-------|-------|
-| Max eval calls per script | 20 |
-| Max nesting depth | 5 |
-
-Circular includes are detected and prevented.
+Circular includes are detected and prevented. See [Limits](/docs/jibrok-studio-jira/limits) for eval call and nesting depth limits.
 
 ---
 
@@ -123,13 +99,33 @@ The scripting platform provides a rich set of APIs. See [Scripting API](/docs/ji
 | `CSV` | CSV processing - `parse()`, `stringify()` |
 | `Validator` | Value validation - `isEmail()`, `isUrl()`, `isJiraKey()`, `isAccountId()` |
 
-### Built-in Globals
+### Built-in globals
 
 `Math`, `JSON`, `Date`, `RegExp`, `Set`, `Map`, `String.format()`, `structuredClone`, `parseInt`, `parseFloat`, `isNaN`, `isFinite`, `encodeURIComponent`, `decodeURIComponent`, and more.
 
+### Logger
+
+The `logger` object provides structured logging with named log levels. Available in all engine types (JavaScript, Python, Groovy).
+
+| Method | Log Level |
+|--------|-----------|
+| `logger.log(...)` | `log` |
+| `logger.debug(...)` | `debug` |
+| `logger.info(...)` | `info` |
+| `logger.warn(...)` | `warn` |
+| `logger.error(...)` | `error` |
+
+```js
+logger.info("Processing issue", issue.key)
+logger.warn("Field missing", fieldName)
+logger.error("Failed to update", error.message)
+```
+
+These methods behave identically to the top-level `log()`, `debug()`, `info()`, `warn()`, `error()` functions. Multiple arguments are joined with a space. Each call counts toward the `maxLogCalls` limit.
+
 ---
 
-## Script Context Variables
+## Script context variables
 
 Variables available in scripts depending on context:
 
@@ -165,37 +161,36 @@ Scripts run in a secure, isolated sandbox:
 - **Method whitelisting** - only approved methods can be called
 - **Auto-await** - promises are automatically resolved
 
----
-
-## Notable Differences from Standard JavaScript
-
-| Behavior | Standard JS | JiBrok Studio for Jira Cloud Script |
-|----------|------------|-------------------|
-| Division by zero | `Infinity` | `0` |
-| `parseInt` radix | Defaults to auto-detect | Defaults to `10` |
-| Arrow function `arguments` | Not available | Has own `arguments` |
-| Generators | Supported | Not supported |
-| `import`/`export` | Supported | Not supported (use `eval(uuid)`) |
-| `Symbol` | Supported | Not supported |
-| `WeakMap`/`WeakRef` | Supported | Not supported |
-| `Proxy` | Supported | Not supported |
-| Range operators (`..`, `..<`) | Not available | Supported |
-| Regex operators (`=~`, `==~`) | Not available | Supported |
-| `String.format(pattern, ...args)` | Not available | Supported (Java-style formatting) |
-| `in` operator on arrays | Checks index (`1 in [a,b]`) | Checks value (`'a' in ['a','b']` is true) |
-| `typeof` precedence | Lower than member access | Parsed with primary precedence |
-| C-style `for` loop scope | New scope per iteration | Single scope for the whole loop |
-| `decodeURI`/`decodeURIComponent` | Throws `URIError` on invalid input | Returns `undefined` on invalid input |
-| `new` keyword | For built-in types | For user-defined classes, Date, RegExp, Set, Map |
-| `instanceof` | For built-in types | For user-defined and built-in types |
+For a detailed breakdown of the security pipeline and tenant isolation, see [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security).
 
 ---
 
-## Next Steps
+## Detailed reference
+
+### JavaScript Engine
+
+- **[JS: Language Basics](/docs/jibrok-studio-jira/scripting-language-basics)** - Variables, operators, control flow, collections, destructuring
+- **[JS: Functions & Classes](/docs/jibrok-studio-jira/scripting-functions-classes)** - Function declarations, arrow functions, closures, classes, inheritance
+- **[JS: Async/Await](/docs/jibrok-studio-jira/scripting-async-await)** - Auto-await, Promise API, delay, async patterns
+- **[JS: Differences from Standard JS](/docs/jibrok-studio-jira/scripting-differences-from-js)** - All known differences from standard JavaScript
+- **[JS: Type Methods](/docs/jibrok-studio-jira/scripting-type-methods)** - Whitelisted methods on strings, arrays, numbers, dates
+
+### Other Engines
+
+- **[Python Engine](/docs/jibrok-studio-jira/scripting-python)** - Python-like syntax, stdlib modules, type methods
+- **[Groovy Engine](/docs/jibrok-studio-jira/scripting-groovy)** - Groovy-like syntax, Java classes, GDK methods
+
+### Scripting API (all engines)
+
+- **[Scripting API](/docs/jibrok-studio-jira/scripting-api)** - Full API reference with examples
+
+---
+
+## Next steps
 
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference with examples
+- [Scripting Examples](/docs/jibrok-studio-jira/scripting-examples) - Practical recipes and patterns
 - [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) - Built-in interactive reference with examples
-- [Use Cases](/docs/jibrok-studio-jira/use-cases) - Practical scripting examples
 - [Limits](/docs/jibrok-studio-jira/limits) - All execution and storage limits
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Interactive editor and execution
 - [Data Storage](/docs/jibrok-studio-jira/data-storage) - Tables and queues API usage

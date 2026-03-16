@@ -15,7 +15,7 @@ tags:
 
 ## Overview
 
-The Console is the main interface for writing and executing scripts. It provides a code editor with syntax highlighting, execution controls, output display, and configuration options.
+Use the Console to write and run scripts interactively. It provides a code editor with syntax highlighting, execution controls, output display, and configuration options.
 
 <a href="/uploads/jibrok-studio-jira/console-jira-sidebar-navigation.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-jira-sidebar-navigation.png" alt="JiBrok Studio in Jira sidebar navigation" style="max-height:600px;width:auto;" loading="lazy"></a>
@@ -25,7 +25,7 @@ The Console is the main interface for writing and executing scripts. It provides
 
 ---
 
-## Code Editor
+## Code editor
 
 The editor supports:
 
@@ -39,7 +39,19 @@ The editor supports:
 
 ---
 
-## Running Scripts
+## Autocomplete
+
+The editor provides context-aware autocomplete that works with all script engines (JavaScript, Python, Groovy):
+
+- **On-type suggestions** - completions appear as you type, or press **Ctrl+Space** to trigger manually
+- **Dot completion** - type `issue.` to see available properties and methods for that object
+- **Signature help** - parameter hints appear when calling functions (e.g., `Issues.search(` shows expected arguments)
+- **Return type awareness** - the editor knows return types of API calls, so `Issues.get("PROJ-123").` suggests RichIssue methods
+- **Engine-specific** - completions match the selected script engine, showing Python builtins/modules, Groovy classes/GDK methods, or JavaScript APIs accordingly
+
+---
+
+## Running scripts
 
 Click the **Run** button to execute the current script. During execution:
 
@@ -48,15 +60,15 @@ Click the **Run** button to execute the current script. During execution:
 - The result is displayed when execution completes
 - Errors are shown with descriptive messages
 
-### Keyboard Shortcuts
+### Keyboard shortcuts
 
 Use the standard keyboard shortcut to run scripts quickly without clicking the button.
 
 ---
 
-## Output and Results
+## Output and results
 
-### Log Output
+### Log output
 
 Scripts produce output through logging functions:
 
@@ -73,7 +85,7 @@ Each level has distinct styling in the output panel. Multiple arguments are join
 <a href="/uploads/jibrok-studio-jira/console-output-log-levels.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-output-log-levels.png" alt="Output panel showing different log levels" style="width:100%;" loading="lazy"></a>
 
-### Script Result
+### Script result
 
 The result field shows either:
 
@@ -82,7 +94,7 @@ The result field shows either:
 
 Complex objects are displayed as formatted JSON.
 
-### Execution Metadata
+### Execution metadata
 
 After each run, the console shows:
 
@@ -92,7 +104,7 @@ After each run, the console shows:
 
 ---
 
-## Sandbox Mode
+## Sandbox mode
 
 Toggle **Sandbox Mode** to simulate write operations without modifying Jira data.
 
@@ -110,7 +122,7 @@ This is useful for testing bulk update scripts before running them for real, ver
 
 ---
 
-## Run As (Execution Identity)
+## Run As (execution identity)
 
 The **Run As** dropdown controls which identity the script uses when making Jira API calls.
 
@@ -128,7 +140,7 @@ The **Run As** dropdown controls which identity the script uses when making Jira
 
 ---
 
-## Issue Key Context
+## Issue key context
 
 The **Issue Key** field (e.g., `PROJ-123`) provides context to your script:
 
@@ -145,7 +157,7 @@ log("Status:", issue.status)
 
 ---
 
-## Syntax Check
+## Syntax check
 
 Click the **Check** button to validate your script without executing it. This catches:
 
@@ -157,28 +169,28 @@ Check is faster than Run because it only parses the script without executing it.
 
 ---
 
-## Saving Scripts
+## Saving scripts
 
 Click the **Save** button to save the script to the Library. If the script has unsaved changes, the Save button is highlighted.
 
-### New Scripts
+### New scripts
 
 When saving a new script, you will be prompted to set a name in the Config tab first.
 
-### Existing Scripts
+### Existing scripts
 
 When saving an existing script, a dialog appears where you can add an optional **version note** (up to 200 characters) describing the changes. Each save creates a new version entry in the Version History.
 
 <a href="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" alt="Save dialog for existing script with version note" style="width:100%;" loading="lazy"></a>
 
-### Validation on Save
+### Validation on save
 
 Before saving, the script is automatically checked for syntax errors. If issues are found, a warning is shown - you can still save the script, but it may not execute correctly.
 
 ---
 
-## Script Engine Reference
+## Script engine reference
 
 Click the **Help** button in the toolbar to open the Script Engine Reference - a built-in, searchable reference panel with examples for all script engines.
 
@@ -186,7 +198,7 @@ See [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) 
 
 ---
 
-## Console Tabs
+## Console tabs
 
 ### Output
 
@@ -196,7 +208,7 @@ Shows the execution output - log messages and the script result. Cleared on each
 
 Session-level history of recent executions. Each entry shows timestamp, script preview, execution status (success/error), and result preview. Click an entry to view full details.
 
-### Run History
+### Run history
 
 Persistent execution history across all sessions:
 
@@ -209,7 +221,7 @@ Persistent execution history across all sessions:
 <a href="/uploads/jibrok-studio-jira/console-run-history.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-run-history.png" alt="Run History tab showing past executions" style="width:100%;" loading="lazy"></a>
 
-### Version History
+### Version history
 
 All saved versions of the current script:
 
@@ -238,7 +250,7 @@ Script metadata and configuration:
 
 ---
 
-## Variables Popup
+## Variables popup
 
 The **Variables** button in the editor toolbar opens a popup showing all available variables grouped by section:
 
@@ -259,7 +271,7 @@ The **Variables** button in the editor toolbar opens a popup showing all availab
 
 ---
 
-## Local Draft
+## Local draft
 
 When working in draft mode (no saved script open), the Console automatically saves your work to the browser's localStorage.
 
@@ -279,7 +291,7 @@ When working in draft mode (no saved script open), the Console automatically sav
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Script Library](/docs/jibrok-studio-jira/script-library) - Manage saved scripts
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution

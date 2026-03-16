@@ -32,7 +32,7 @@ UI Modifications (UIM) let you dynamically customize Jira issue create and trans
 | `uim.setDescription(fieldId, text)` | Set a field's description text |
 | `uim.setOptionsVisibility(fieldId, options, boolean)` | Show or hide specific options in a select field |
 
-### Convenience Aliases
+### Convenience aliases
 
 | Alias | Equivalent to |
 |-------|---------------|
@@ -44,7 +44,7 @@ UI Modifications (UIM) let you dynamically customize Jira issue create and trans
 
 ---
 
-## Trigger Configuration
+## Trigger configuration
 
 UIM is configured as a trigger type on scripts. Add a **UIM trigger** in the script's Config tab:
 
@@ -68,7 +68,7 @@ UIM scripts apply to:
 
 ---
 
-## Callback Types
+## Callback types
 
 ### onInit
 
@@ -104,7 +104,7 @@ if (uimData.changedFieldId === 'priority') {
 
 ## Examples
 
-### Conditional Required Fields
+### Conditional required fields
 
 ```js
 if (uimData.callbackType === 'onInit' || uimData.changedFieldId === 'priority') {
@@ -117,7 +117,7 @@ if (uimData.callbackType === 'onInit' || uimData.changedFieldId === 'priority') 
 }
 ```
 
-### Show/Hide Fields by Issue Type
+### Show/hide fields by issue type
 
 ```js
 if (uimData.callbackType === 'onInit' || uimData.changedFieldId === 'issuetype') {
@@ -132,7 +132,7 @@ if (uimData.callbackType === 'onInit' || uimData.changedFieldId === 'issuetype')
 }
 ```
 
-### Auto-Fill Fields on Create
+### Auto-fill fields on create
 
 ```js
 if (uimData.callbackType === 'onInit' && uimData.viewType === 'GIC') {
@@ -147,7 +147,7 @@ if (uimData.callbackType === 'onInit' && uimData.viewType === 'GIC') {
 
 ---
 
-## Demo Mode
+## Demo mode
 
 Test UIM scripts safely using Demo Mode:
 
@@ -158,7 +158,7 @@ Test UIM scripts safely using Demo Mode:
 
 ---
 
-## Admin Management
+## Admin management
 
 Administrators can manage UIM registrations in the Admin tab:
 
@@ -169,7 +169,7 @@ Administrators can manage UIM registrations in the Admin tab:
 
 ---
 
-## Important Notes
+## Important notes
 
 - UIM scripts always run as **current user**
 - UIM is registered per project/issue type combination
@@ -178,7 +178,7 @@ Administrators can manage UIM registrations in the Admin tab:
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Triggers](/docs/jibrok-studio-jira/triggers) - UIM trigger configuration details
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language and API reference

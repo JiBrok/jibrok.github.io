@@ -26,11 +26,11 @@ A JavaScript-like language that runs in a secure sandbox. It supports most JS sy
 
 ### Is it safe to run scripts?
 
-Yes. Scripts run in a multi-layer sandbox with strict resource limits (execution time, loop iterations, API calls, etc.). There is no way to access the host system, other apps, or data outside Jira.
+Yes. Scripts run in a multi-layer sandbox with strict resource limits. There is no way to access the host system, other apps, or data outside Jira. See [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security) for a detailed explanation of the security model and tenant isolation.
 
 ### Can scripts call external APIs?
 
-Now no. Now scripts can only call the Jira REST API through `requestJira()` and built-in API namespaces. There is no `fetch`, `XMLHttpRequest`, or other network access.
+No. Scripts can only call the Jira REST API through `requestJira()` and built-in API namespaces. There is no `fetch`, `XMLHttpRequest`, or other network access.
 
 ### Can I use npm packages?
 
@@ -38,7 +38,7 @@ No. The sandbox has no module system. Only built-in globals and methods are avai
 
 ---
 
-## Console Issues
+## Console issues
 
 ### What's the difference between "result" and "output"?
 
@@ -60,11 +60,11 @@ It determines whose permissions are used for Jira API calls:
 
 ---
 
-## Script Errors
+## Script errors
 
 ### Why did my script time out?
 
-Scripts have execution time limits that vary by trigger type: console (18s), scripted fields/UIM (5s), event (25s), scheduled/async (55s), workflow post function (15s), workflow validator (10s). Common causes:
+Scripts have execution time limits that vary by trigger type. See [Limits](/docs/jibrok-studio-jira/limits) for specific values. Common causes:
 
 - Too many API calls (each call takes time)
 - Large loops processing many items
@@ -74,7 +74,7 @@ Scripts have execution time limits that vary by trigger type: console (18s), scr
 
 ### I get "API call limit exceeded"
 
-You've hit the per-execution API call limit (varies by trigger type: 20-100 calls). Solutions:
+You've hit the per-execution API call limit (varies by trigger type, see [Limits](/docs/jibrok-studio-jira/limits)). Solutions:
 
 - Use JQL to fetch data in bulk instead of one-by-one
 - Use `Jira.search()` with specific `fields` to reduce data
@@ -82,11 +82,11 @@ You've hit the per-execution API call limit (varies by trigger type: 20-100 call
 
 ### What are uncatchable errors?
 
-Some errors cannot be caught with `try/catch`: timeout errors, iteration limit errors, AST node limit errors, eval limit errors, and security errors. These immediately terminate the script to prevent abuse.
+Some errors cannot be caught with `try/catch`: timeout errors, resource limit errors, and security errors. These immediately terminate the script to prevent abuse.
 
 ---
 
-## Triggers Not Firing
+## Triggers not firing
 
 ### Checklist for all triggers
 
@@ -112,7 +112,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 
 ---
 
-## Scripted Fields Not Updating
+## Scripted fields not updating
 
 - Scripted fields recalculate on **issue create** and **issue update** only
 - Verify the `scripted_fields` trigger type is enabled in Admin Settings
@@ -121,7 +121,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 
 ---
 
-## UI Modifications Not Working
+## UI modifications not working
 
 - Verify the `uim` trigger type is enabled in Admin Settings
 - Check the UIM trigger is configured for the correct project and issue type
@@ -132,24 +132,31 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 
 ---
 
-## Tables and Queues Issues
+## Tables and queues issues
+
+### What's the difference between tables and queues?
+
+- **Tables** store persistent, structured data with columns and rows. Think of them as simple databases.
+- **Queues** are for temporary, ordered messages that get processed and removed. Think of them as task lists.
 
 ### Tables
 
 - Verify the table exists and column names match exactly (case-sensitive)
-- Check row count hasn't reached the 5,000 limit
-- Ensure row data size is under 100 KB
+- Check row count hasn't reached the limit (see [Limits](/docs/jibrok-studio-jira/limits))
+- Ensure row data size is within the allowed limit
+- Tables can be accessed from scripts using the [Tables API](/docs/jibrok-studio-jira/scripting-api-tables) and directly from the UI
 
 ### Queues
 
 - Verify the queue exists
-- Check message count hasn't reached the 50,000 limit
-- Ensure message payload is under 100 KB
+- Check message count hasn't reached the limit (see [Limits](/docs/jibrok-studio-jira/limits))
+- Ensure message payload is within the allowed limit
 - Remember: `pull()` puts messages in Processing state - use `ack()` or `reject()` to finalize
+- See [Queue API](/docs/jibrok-studio-jira/scripting-api-queues) for full reference
 
 ---
 
-## Permission Errors
+## Permission errors
 
 - Check the **Run As** setting - the configured actor must have permission for the operations
 - If using **Application** mode, verify it's enabled in Admin Settings
@@ -158,7 +165,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 
 ---
 
-## Performance Tips
+## Performance tips
 
 - Keep scripts simple and focused - do one thing well
 - Use JQL `fields` parameter to fetch only needed data
@@ -170,7 +177,7 @@ Some errors cannot be caught with `try/catch`: timeout errors, iteration limit e
 
 ---
 
-## Automation & Integrations
+## Automation & integrations
 
 ### Can I run scripts from Jira Automation?
 
@@ -187,21 +194,43 @@ Yes. JiBrok Studio integrates with Rovo AI Agent, providing two actions: list av
 
 The Rovo trigger type is **disabled by default** - enable it in [Administration](/docs/jibrok-studio-jira/admin-settings).
 
+### Can external systems trigger scripts?
+
+Yes. The [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) (Webtrigger) lets external systems call your scripts via HTTP requests with Basic Auth credentials. Supports GET, POST, PUT, and DELETE methods. Rate-limited per webhook.
+
+The Webtrigger trigger type is **disabled by default** - enable it in [Administration](/docs/jibrok-studio-jira/admin-settings).
+
 ---
 
-## Export, Import & Version History
+## Scenarios & bulk operations
+
+### How do I process thousands of issues?
+
+Use [Scenarios](/docs/jibrok-studio-jira/scenarios). Scenarios split long-running scripts into managed steps - each step runs as a separate Forge event, avoiding execution timeouts. The `batch()` step type handles automatic pagination, progress tracking, and error handling:
+
+```js
+batch('cleanup', 'project = PROJ AND updated < -180d', (issue) => {
+  issue.transition('Done')
+})
+```
+
+For simpler cases (under ~100 issues), a regular console script with `Issues.searchAll()` may be sufficient.
+
+---
+
+## Export, import & version history
 
 ### Can I back up or transfer scripts?
 
 Yes. Scripts can be exported and imported as JSON (v2 format):
 
-- **Export** individual scripts or all at once (up to 200)
+- **Export** individual scripts or all at once
 - **Import** updates existing scripts by matching ID, or creates new ones if no match is found
 - Exported data includes: id, name, source code, language, actor, labels, and folder path
 
 ### Can I revert a script to a previous version?
 
-Yes. JiBrok Studio automatically saves up to **50 versions** per script. A new version is created each time you save. Each version stores:
+Yes. JiBrok Studio automatically saves versions for every script. A new version is created each time you save. Each version stores:
 
 - Source code and description
 - Author who made the change
@@ -211,7 +240,7 @@ Older versions are removed automatically when the limit is reached.
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Getting Started](/docs/jibrok-studio-jira/getting-started) - First steps with JiBrok Studio for Jira Cloud
 - [Limits](/docs/jibrok-studio-jira/limits) - All system limits

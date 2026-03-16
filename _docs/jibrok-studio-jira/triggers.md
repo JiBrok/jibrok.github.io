@@ -16,9 +16,11 @@ tags:
 
 ## Overview
 
-Triggers automate script execution in response to events, schedules, or user actions. Configure triggers in the script's **Config** tab.
+Automate script execution by attaching triggers to schedules, events, or user actions. Configure triggers in the script's **Config** tab.
 
-### Trigger Types at a Glance
+> **Not sure which trigger to use?** See [Choose the right trigger](/docs/jibrok-studio-jira/triggers-comparison) for a side-by-side comparison of all 11 types.
+
+### Trigger types at a glance
 
 | Trigger Type | Covered in detail |
 |---|---|
@@ -32,22 +34,23 @@ Triggers automate script execution in response to events, schedules, or user act
 | Workflow Post Function | [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) |
 | Workflow Validator | [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) |
 | Workflow Condition | [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) |
+| Webhook (HTTP) | [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) |
 
 ---
 
-## Context Restrictions
+## Context restrictions
 
-Scripts can be limited to specific **projects** (up to 50) and **issue types** (up to 50). When restricted, scripts skip non-matching issues.
+Scripts can be limited to specific **projects** and **issue types**. When restricted, scripts skip non-matching issues.
 
-For UI Modification triggers, you can also restrict by **JSM portals** (up to 50) and **request types** (up to 200).
+For UI Modification triggers, you can also restrict by **JSM portals** and **request types**. See [Limits](/docs/jibrok-studio-jira/limits) for context restriction limits.
 
 Configure context restrictions in the script's **Config** tab.
 
 ---
 
-## Managing Triggers
+## Managing triggers
 
-### Adding a Trigger
+### Adding a trigger
 
 1. Open a script in the Console
 2. Go to the **Config** tab
@@ -64,22 +67,21 @@ Configure context restrictions in the script's **Config** tab.
 <a href="/uploads/jibrok-studio-jira/triggers-add-dialog-rovo.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/triggers-add-dialog-rovo.png" alt="Add Trigger dialog showing Rovo option" style="max-height:600px;width:auto;" loading="lazy"></a>
 
-### Enabling/Disabling
+### Enabling/disabling
 
 Each trigger has its own enabled/disabled toggle, independent of the script's enabled status. **Both** must be enabled for the trigger to fire.
 
-### Singleton vs Multiple
+### Singleton vs multiple
 
-- **Singleton triggers** (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition): one per script
+- **Singleton triggers** (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition, Webtrigger): one per script
 
 ### Limits
 
-- Up to **10 triggers** per script
-- Global trigger type toggles are available in [Administration](/docs/jibrok-studio-jira/admin-settings)
+See [Limits](/docs/jibrok-studio-jira/limits) for trigger count limits. Global trigger type toggles are available in [Administration](/docs/jibrok-studio-jira/admin-settings).
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Configure triggers via Config tab
 - [Administration](/docs/jibrok-studio-jira/admin-settings) - Global trigger type controls
@@ -90,3 +92,4 @@ Each trigger has its own enabled/disabled toggle, independent of the script's en
 - [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) - Run scripts after workflow transitions
 - [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) - Validate workflow transitions before they complete
 - [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) - Control transition availability with Jira Expressions
+- [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) - Trigger scripts via HTTP requests

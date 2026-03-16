@@ -54,11 +54,11 @@ Matching results are grouped by category. Clear the search field to return to th
 
 ---
 
-## Reference Categories
+## Reference categories
 
 The reference content is organized into categories. JavaScript (the primary engine) has the most complete set with 12 categories. Python and Groovy share several categories with engine-specific syntax.
 
-### Getting Started
+### Getting started
 
 Covers the basics of writing scripts:
 
@@ -81,7 +81,7 @@ All supported operators with examples:
 - **Spread & Delete** - `...` spread/rest, `delete` operator
 - **Assignment** - `=`, `+=`, `-=`, `*=`, `/=`, `??=`
 
-### Control Flow
+### Control flow
 
 Flow control statements:
 
@@ -116,7 +116,7 @@ Built-in objects and global functions:
 - **Set & Map** - `new Set()`, `new Map()`
 - **URI** - `encodeURIComponent()`, `decodeURIComponent()`
 
-### Type Methods
+### Type methods
 
 Methods available on built-in types:
 
@@ -133,7 +133,7 @@ Asynchronous operations and API calls:
 - **delay()** - `await delay(ms)` to pause execution
 - **requestJira()** - low-level Jira REST API calls
 
-### Data & Storage
+### Data & storage
 
 Persistent data operations (see also [Data Storage](/docs/jibrok-studio-jira/data-storage)):
 
@@ -142,12 +142,12 @@ Persistent data operations (see also [Data Storage](/docs/jibrok-studio-jira/dat
 - **Queue** - `queue.push()`, `queue.pull()`, `queue.consume()`, `queue.ack()`, `queue.reject()`
 - **Async Event** - `asyncEvent.push()`, `asyncEvent.pushSelf()`
 
-### Limits & Rules
+### Limits & rules
 
 Resource constraints and security rules:
 
-- **Resource Limits** - execution time, loop iterations, API calls, string size
-- **Security Rules** - forbidden properties (`__proto__`, `constructor`, `prototype`), method whitelisting, sandbox restrictions
+- **Resource Limits** - execution time, loop iterations, API calls, string size (see [Limits](/docs/jibrok-studio-jira/limits))
+- **Security Rules** - dangerous property access blocked, method whitelisting, sandbox restrictions
 
 ### Classes
 
@@ -170,7 +170,7 @@ High-level Jira operations (see also [Scripting API](/docs/jibrok-studio-jira/sc
 
 ### Utilities
 
-Helper namespaces (see also [Scripting API - Utilities](/docs/jibrok-studio-jira/scripting-api#utilities)):
+Helper namespaces (see also [Scripting API - Utilities](/docs/jibrok-studio-jira/scripting-api-utilities)):
 
 - **Adf** - Atlassian Document Format builder for rich text (headings, lists, tables, panels, mentions)
 - **DateUtils** - date arithmetic (`diff()`, `addDays()`, `businessDays()`, `format()`)
@@ -181,7 +181,7 @@ Helper namespaces (see also [Scripting API - Utilities](/docs/jibrok-studio-jira
 
 ---
 
-## Engine-Specific Differences
+## Engine-specific differences
 
 All three engines share common API categories (Async & API, Data & Storage, Limits & Rules, Jira API, Utilities) - these use the same APIs but with engine-appropriate syntax. The language-specific categories differ between engines.
 
@@ -255,7 +255,7 @@ For the full Jira Expressions language reference, see [Atlassian documentation](
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and sandbox details
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference with examples

@@ -1,7 +1,7 @@
 ---
-title: Overview
+title: JiBrok Studio for Jira Cloud -Overview
 key: jibrok-studio-jira
-excerpt: Scripting platform for Jira Cloud - automate, extend, and customize your Jira workflows
+excerpt: "JiBrok Studio for Jira Cloud is a Forge-based scripting platform. Automate workflows, create scripted fields, and extend Jira with JavaScript, Python, and Groovy."
 category: getting-started
 tags:
   - doc
@@ -15,16 +15,16 @@ tags:
 
 ## What is JiBrok Studio for Jira Cloud?
 
-JiBrok Studio for Jira Cloud is a Forge-based scripting platform for Jira Cloud. It lets Jira administrators write, manage, and automate scripts that interact with Jira data - all from within the Jira interface.
+Write, manage, and automate scripts that interact with your Jira data - directly from the Jira interface. JiBrok Studio for Jira Cloud is a Forge-based scripting platform built for Jira administrators.
 
-Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API, ensuring your data stays safe.
+Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API.
 
 <a href="/uploads/jibrok-studio-jira/console-interface-overview.png" target="_blank">
-<img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="JiBrok Studio Script Console interface" style="width:100%;" loading="lazy"></a>
+<img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="JiBrok Studio Script Console interface" width="2754" height="1736" style="width:100%;height:auto;" loading="lazy"></a>
 
 ---
 
-## Key Capabilities
+## Key capabilities
 
 | Feature | Description |
 |---------|-------------|
@@ -38,13 +38,15 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 | **[Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function)** | Run scripts after workflow transitions with full transition context |
 | **[Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator)** | Validate workflow transitions with scripts before they complete |
 | **[Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition)** | Control transition visibility with Jira Expressions |
-| **[Custom Tables](/docs/jibrok-studio-jira/data-storage)** | SQL-backed structured data storage with a visual browser |
+| **[Custom Tables](/docs/jibrok-studio-jira/data-storage)** | Structured data storage with a visual browser |
 | **[Message Queues](/docs/jibrok-studio-jira/data-storage)** | Async message processing with priority-based ordering |
-| **[Script Usage Tracking](/docs/jibrok-studio-jira/admin-settings#script-usage)** | See where scripts are used across workflows and custom fields |
+| **[Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook)** | Trigger scripts via HTTP requests with Basic Auth and rate limiting |
+| **[Scenarios](/docs/jibrok-studio-jira/scenarios)** | Split long-running scripts into managed steps for bulk operations |
+| **[Script Usage Tracking](/docs/jibrok-studio-jira/admin-tools#script-usage)** | See where scripts are used across workflows and custom fields |
 
 ---
 
-## Who Is It For?
+## Who is it for?
 
 - **Jira administrators** who need to automate repetitive tasks
 - **Automation engineers** building advanced workflows beyond native Jira capabilities
@@ -52,9 +54,11 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 
 > **Note:** JiBrok Studio for Jira Cloud is available to **Jira site administrators only**. Non-admin users cannot access the app interface.
 
+> **Ready to try it?** [Install JiBrok Studio from Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) -free to get started.
+
 ---
 
-## How It Works
+## How it works
 
 1. **Write** scripts in the built-in code editor using a JavaScript-like language (Python and Groovy engines also available)
 2. **Test** interactively in the Console with sandbox mode for safe experimentation
@@ -62,11 +66,11 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 4. **Automate** by attaching triggers - schedules, events, form changes, and more
 5. **Store** structured data in Custom Tables and process async workloads via Message Queues
 
-All scripts run inside a Forge-powered sandbox with strict resource limits. There is no access to external networks, filesystems, or browser APIs - only the Jira REST API is available.
+All scripts run inside a Forge-powered sandbox with strict resource limits. There is no access to external networks, filesystems, or browser APIs - only the Jira REST API is available. Learn more about the [Forge platform architecture](/docs/jibrok-studio-jira/forge-platform-security).
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Getting Started](/docs/jibrok-studio-jira/getting-started) - Install the app and run your first script
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Learn the editor and execution features
@@ -74,3 +78,6 @@ All scripts run inside a Forge-powered sandbox with strict resource limits. Ther
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference (Issues, Users, Projects, Fields, utilities)
 - [Use Cases](/docs/jibrok-studio-jira/use-cases) - Practical scripting examples
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution
+- [Security](/docs/jibrok-studio-jira/security) - Security model and data protection
+- [FAQ & Troubleshooting](/docs/jibrok-studio-jira/faq) - Answers to common questions
+- [Limits](/docs/jibrok-studio-jira/limits) - Platform quotas and constraints

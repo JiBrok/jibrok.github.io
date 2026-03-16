@@ -14,7 +14,7 @@ tags:
 * TOC
 {:toc}
 
-## Bulk Update
+## Bulk update
 
 Mass-update issue fields by JQL query.
 
@@ -33,7 +33,7 @@ return `Updated ${issues.issues.length} issues`
 
 ---
 
-## Auto-Assignment
+## Auto-assignment
 
 Automatically assign issues when created, based on component or issue type.
 
@@ -60,7 +60,7 @@ for (const comp of issue.components) {
 
 ---
 
-## SLA Monitoring
+## SLA monitoring
 
 Scheduled script to find overdue issues and notify via comments.
 
@@ -83,7 +83,7 @@ return `Found ${overdue.issues.length} overdue issues`
 
 ---
 
-## Custom Dashboard Data
+## Custom dashboard data
 
 Collect project statistics into a custom table for reporting.
 
@@ -110,7 +110,7 @@ for (const proj of projects) {
 
 ---
 
-## Field Sync
+## Field sync
 
 Sync a field value from parent to all subtasks when updated.
 
@@ -133,7 +133,7 @@ for (const sub of subtasks.issues) {
 
 ---
 
-## Dynamic Forms (UIM)
+## Dynamic forms (UIM)
 
 Show/hide fields based on issue type and set defaults on creation.
 
@@ -164,7 +164,7 @@ if (uimData.callbackType === 'onInit' && uimData.viewType === 'GIC') {
 
 ---
 
-## Async Workflow
+## Async workflow
 
 Chain processing steps using async events and queues.
 
@@ -198,7 +198,7 @@ for (const msg of messages) {
 
 ---
 
-## Sprint Automation
+## Sprint automation
 
 Automatically move unfinished issues to the next sprint when a sprint closes.
 
@@ -233,7 +233,7 @@ return `Moved ${keys.length} unfinished issues`
 
 ---
 
-## Issue Cloning
+## Issue cloning
 
 Clone issues with modifications - useful for recurring tasks.
 
@@ -258,7 +258,7 @@ return clone.key
 
 ---
 
-## Data Export
+## Data export
 
 Export Jira data to a custom table for reporting or integration.
 
@@ -297,7 +297,7 @@ return `Exported ${issues.issues.length} resolved issues`
 
 ---
 
-## Workflow Validator
+## Workflow validator
 
 Validate that required fields are set before a workflow transition completes.
 
@@ -324,7 +324,7 @@ return { valid: true }
 
 ---
 
-## Workflow Post Function
+## Workflow post function
 
 Automatically perform actions after a workflow transition.
 
@@ -352,9 +352,68 @@ if (event.transition.to_status === "Done") {
 
 ---
 
-## Next Steps
+## Webhook handler
+
+Process incoming HTTP requests from external systems.
+
+**Features used:** Webtrigger, webhook context variables, Issues.get, issue.addComment
+
+```js
+// Trigger: Webtrigger (POST)
+log("Received:", webhook.method, webhook.path)
+
+if (webhook.body && webhook.body.issueKey) {
+  const issue = await Issues.get(webhook.body.issueKey)
+  const source = webhook.headers["x-source"] ?? "unknown"
+
+  await issue.addComment(`External notification from ${source}: ${webhook.body.message ?? "no message"}`)
+  log(`Processed webhook for ${issue.key}`)
+
+  return { status: "ok", issue: issue.key }
+}
+
+return { status: "error", message: "issueKey is required in request body" }
+```
+
+---
+
+## Bulk scenario
+
+Process thousands of issues using scenarios with automatic pagination and error handling.
+
+**Features used:** Scenarios (step, batch), Issues.count, issue.transition
+
+```js
+step('count', () => {
+  return { total: Issues.count('project = PROJ') }
+})
+
+batch('cleanup', {
+  jql: 'project = PROJ AND updated < -180d',
+  fields: ['summary', 'status'],
+  batchSize: 50,
+  continueOnError: true,
+}, (issue) => {
+  issue.transition('Done')
+})
+
+step('report', (ctx) => {
+  log(`Done: ${ctx.cleanup.processed}/${ctx.count.total}`)
+  log(`Failed: ${ctx.cleanup.failed}`)
+  if (ctx.cleanup.errors.length > 0) {
+    log('Errors: ' + ctx.cleanup.errors.join(', '))
+  }
+})
+```
+
+Run as a scenario from the Console - each batch page executes as a separate Forge event, allowing processing of thousands of issues without timeouts. See [Scenarios](/docs/jibrok-studio-jira/scenarios) for the full guide.
+
+---
+
+## Next steps
 
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and features
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Trigger configuration
+- [Scenarios](/docs/jibrok-studio-jira/scenarios) - Multi-step scenarios for bulk operations
 - [Data Storage](/docs/jibrok-studio-jira/data-storage) - Tables and queues

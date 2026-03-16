@@ -12,13 +12,13 @@ tags:
 * TOC
 {:toc}
 
-## Async Events
+## Async events
 
 Trigger scripts asynchronously via Forge Queue. One per script (singleton).
 
 Async events are triggered from scripts using `asyncEvent.push(scriptId, payload?, options?)` or `asyncEvent.pushSelf(payload?, options?)`. The target script must have an enabled async event trigger - otherwise events are discarded.
 
-### Event Variable
+### Event variable
 
 The `event` variable in the target script contains:
 
@@ -42,21 +42,15 @@ The `event` variable in the target script contains:
 | `issueKey` | string | Issue key in `PROJ-123` format, passed as context to the target script |
 | `delayInSeconds` | number | Delay before processing (0-900, max 15 minutes) |
 
-### Return Value
+### Return value
 
 Both `push()` and `pushSelf()` return `{ jobId: string }`.
 
 ### Limits
 
-| Limit | Value |
-|-------|-------|
-| Max `push`/`pushSelf` calls per execution | 10 |
-| Max `push`/`pushSelf` calls per execution (chained, depth > 0) | 3 |
-| Max payload size | 100KB |
-| Max delay | 900 seconds (15 minutes) |
-| Max chain depth | 1 (allows 2 hops: depth 0, 1) |
+See [Limits](/docs/jibrok-studio-jira/limits) for async event limits including call counts, payload size, delay, and chain depth.
 
-**Fanout reduction:** Chained executions (depth > 0) are limited to 3 push calls instead of 10, reducing worst-case total executions.
+**Fanout reduction:** Chained executions have reduced push call limits, reducing worst-case total executions.
 
 ### Example
 
@@ -87,7 +81,7 @@ See the [Async Event API](/docs/jibrok-studio-jira/scripting-api#asyncevent) for
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Scheduled Triggers](/docs/jibrok-studio-jira/triggers-scheduled) - Run scripts on a schedule

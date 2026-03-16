@@ -56,7 +56,7 @@ The script must be **enabled** and have an **enabled Automation trigger** to be 
 
 ---
 
-## Action Inputs
+## Action inputs
 
 | Input | Required | Description |
 |-------|----------|-------------|
@@ -71,7 +71,7 @@ The script must be **enabled** and have an **enabled Automation trigger** to be 
 
 ---
 
-## Output Smart Values
+## Output smart values
 
 The action produces smart values available to subsequent rule components:
 
@@ -98,7 +98,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ---
 
-## Example Automation Rule
+## Example automation rule
 
 **Scenario:** When a high-priority issue is created, run a script that assigns a reviewer and posts a Slack-style comment.
 
@@ -121,7 +121,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ---
 
-## Important Notes
+## Important notes
 
 - Scripts run as **Application** - they use the Forge app's permissions, not a specific user's
 - The script must have an enabled **Automation** trigger - otherwise the action will fail
@@ -130,7 +130,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Triggers](/docs/jibrok-studio-jira/triggers) - All trigger types
 - [Administration](/docs/jibrok-studio-jira/admin-settings) - Enable/disable Automation trigger type

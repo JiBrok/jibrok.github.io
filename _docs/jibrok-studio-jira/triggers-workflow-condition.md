@@ -12,7 +12,7 @@ tags:
 * TOC
 {:toc}
 
-## Workflow Condition
+## Workflow condition
 
 Control whether a workflow transition is allowed using a Jira Expression. One per script (singleton).
 
@@ -35,7 +35,7 @@ If the expression returns `true`, the transition is allowed. If it returns `fals
 9. Add the **JiBrok Studio - Workflow Condition** condition
 10. Select the configured script from the dropdown
 
-### Jira Expressions Engine
+### Jira Expressions engine
 
 When you add a Workflow Condition trigger, the script engine is automatically switched to **Jira Expressions**. This is a special engine type that differs from JavaScript, Python, and Groovy:
 
@@ -51,7 +51,7 @@ When you add a Workflow Condition trigger, the script engine is automatically sw
 |---------|-------------|
 | `description` | Optional description for the condition (up to 2,000 characters). Helps identify the condition in Jira workflow configuration |
 
-### Context Variables
+### Context variables
 
 Jira Expressions have their own context, provided by Jira (not by the JiBrok sandbox):
 
@@ -91,7 +91,7 @@ now().minusDays(1).isAfter(issue.created)
 issue.assignee != null && issue.priority.name != "Low" && issue.status.name == "In Review"
 ```
 
-### Differences from Other Triggers
+### Differences from other triggers
 
 | Aspect | Workflow Condition | Other Triggers |
 |--------|-------------------|----------------|
@@ -105,7 +105,7 @@ issue.assignee != null && issue.priority.name != "Low" && issue.status.name == "
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) - Validate transitions with sandbox scripts

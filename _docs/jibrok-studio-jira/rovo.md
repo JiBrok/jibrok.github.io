@@ -19,7 +19,7 @@ JiBrok Studio registers as a **Rovo AI agent**, allowing Atlassian Rovo to disco
 
 ---
 
-## How It Works
+## How it works
 
 The JiBrok Studio agent provides two actions to Rovo:
 
@@ -28,7 +28,7 @@ The JiBrok Studio agent provides two actions to Rovo:
 | **List available scripts** | Returns all enabled scripts that have a Rovo trigger |
 | **Run script** | Executes a specific script by ID, optionally with an issue key |
 
-### Agent Prompt
+### Agent prompt
 
 Rovo uses JiBrok Studio as a scripting assistant. The agent will:
 
@@ -76,7 +76,7 @@ Only scripts with an enabled Rovo trigger are visible to the Rovo agent.
 
 ---
 
-## Script Context
+## Script context
 
 When a script is executed via Rovo:
 
@@ -88,7 +88,7 @@ The script receives the same `event` variable as other trigger types, with trigg
 
 ---
 
-## Run Script Outputs
+## Run script outputs
 
 | Variable | Type | Description |
 |----------|------|-------------|
@@ -104,7 +104,20 @@ Rovo displays these results in the chat conversation.
 
 ---
 
-## Important Notes
+## Security model
+
+Rovo integration follows a **delegation by design** approach:
+
+- **Admin controls access** - only scripts with an explicitly enabled Rovo trigger are visible to users
+- **User-level permissions** - scripts run with the calling user's Jira permissions, not the admin's. Users can only affect data they already have access to
+- **All sandbox protections apply** - the same security pipeline, API access control, and resource limits protect Rovo-triggered executions
+- **Full audit trail** - every Rovo execution is logged in the [Script Runs Audit](/docs/jibrok-studio-jira/admin-audit)
+
+See [Security](/docs/jibrok-studio-jira/security) for the complete security model overview.
+
+---
+
+## Important notes
 
 - Scripts must be **enabled** with an **enabled Rovo trigger** to appear in Rovo
 - By default, scripts run as the **current Rovo user** - they use that user's Jira permissions. If the user cannot be resolved, falls back to Application.
@@ -116,7 +129,7 @@ Rovo displays these results in the chat conversation.
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Triggers](/docs/jibrok-studio-jira/triggers) - All trigger types
 - [Administration](/docs/jibrok-studio-jira/admin-settings) - Enable/disable Rovo trigger type

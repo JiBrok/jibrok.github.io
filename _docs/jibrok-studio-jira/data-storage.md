@@ -16,18 +16,18 @@ tags:
 
 ## Overview
 
-JiBrok Studio for Jira Cloud provides two data storage mechanisms: **Custom Tables** for persistent structured data and **Message Queues** for asynchronous message processing.
+Store persistent data in **Custom Tables** or process asynchronous messages with **Message Queues**. Both are accessible from scripts and the app UI.
 
 ---
 
-## Custom Tables
+## Custom tables
 
-SQL-backed structured storage accessible from both the UI and scripts.
+Structured data storage accessible from both the UI and scripts.
 
 <a href="/uploads/jibrok-studio-jira/data-storage-tables-list.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/data-storage-tables-list.png" alt="Custom Tables list view" style="width:100%;" loading="lazy"></a>
 
-### Creating a Table
+### Creating a table
 
 1. Navigate to the **Tables** tab
 2. Click **Create Table**
@@ -37,7 +37,7 @@ SQL-backed structured storage accessible from both the UI and scripts.
 <a href="/uploads/jibrok-studio-jira/data-storage-create-table.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/data-storage-create-table.png" alt="Create Table dialog" style="width:100%;" loading="lazy"></a>
 
-### Column Types
+### Column types
 
 | Type | Description |
 |------|-------------|
@@ -48,16 +48,9 @@ SQL-backed structured storage accessible from both the UI and scripts.
 | **Select** | Dropdown from predefined options |
 | **JSON** | Arbitrary JSON data |
 
-### Limits
+See [Limits](/docs/jibrok-studio-jira/limits) for table size and storage limits.
 
-| Limit | Value |
-|-------|-------|
-| Max tables | 50 |
-| Max columns per table | 30 |
-| Max rows per table | 5,000 |
-| Max row data size | 100 KB |
-
-### Managing Data in the UI
+### Managing data in the UI
 
 - **Add Row** - opens a form with fields for each column
 - **Edit Row** - click a row to modify values
@@ -108,7 +101,7 @@ const total = await tables.count("Users")
 const active = await tables.count("Users", { Status: { $eq: "active" } })
 ```
 
-### Context-Aware Methods (*For)
+### Context-aware methods (*For)
 
 When a table has a **context** configured (project/issue type restrictions), use `*For` methods. The `issue` parameter can be an issue object or a string key (e.g. `"PROJ-123"`).
 
@@ -129,7 +122,7 @@ await tables.addRowFor("Logs", "PROJ-123", { Message: "Done" })
 await tables.rowsFor("Logs", issue, { where: { Status: "open" } })
 ```
 
-### Filtering Operators
+### Filtering operators
 
 | Operator | Description |
 |----------|-------------|
@@ -144,17 +137,17 @@ await tables.rowsFor("Logs", issue, { where: { Status: "open" } })
 
 ---
 
-## Message Queues
+## Message queues
 
 Async message processing between scripts and triggers.
 
-### Creating a Queue
+### Creating a queue
 
 1. Navigate to the **Queues** tab
 2. Click **Create Queue**
 3. Enter a queue name
 
-### Queue Dashboard
+### Queue dashboard
 
 The queue list shows:
 
@@ -162,7 +155,7 @@ The queue list shows:
 - Message counts by status (Pending, Processing, Failed)
 - Last activity time
 
-### Message States
+### Message states
 
 | State | Description |
 |-------|-------------|
@@ -170,15 +163,9 @@ The queue list shows:
 | **Processing** | Pulled by a consumer, awaiting acknowledgment |
 | **Failed** | Rejected by a consumer |
 
-### Limits
+See [Limits](/docs/jibrok-studio-jira/limits) for queue size and message limits.
 
-| Limit | Value |
-|-------|-------|
-| Max queues | 50 |
-| Max messages per queue | 50,000 |
-| Max message payload size | 100 KB |
-
-### Message Browser
+### Message browser
 
 View messages filtered by status (Pending, Processing, Failed). Actions include:
 
@@ -220,7 +207,7 @@ const stats = await queue.stats("tasks")
 
 ---
 
-## When to Use Tables vs Queues
+## When to use tables vs queues
 
 | Use Case | Tables | Queues |
 |----------|--------|--------|
@@ -234,7 +221,10 @@ const stats = await queue.stats("tasks")
 
 ---
 
-## Next Steps
+## Next steps
 
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Full API reference
+- [Scripting API: Tables](/docs/jibrok-studio-jira/scripting-api-tables) - Full Tables API reference with filter operators, sort syntax, upsert, and context-aware methods
+- [Scripting API: Queues](/docs/jibrok-studio-jira/scripting-api-queues) - Full Queue API reference with message lifecycle and context-aware methods
+- [Scripting Examples](/docs/jibrok-studio-jira/scripting-examples) - Table and queue patterns and recipes
+- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Full language reference
 - [Limits](/docs/jibrok-studio-jira/limits) - All storage limits

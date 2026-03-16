@@ -12,7 +12,7 @@ tags:
 * TOC
 {:toc}
 
-## Workflow Post Function
+## Workflow post function
 
 Run scripts after a workflow transition completes. One per script (singleton).
 
@@ -29,7 +29,7 @@ A Workflow Post Function trigger executes your script every time an issue transi
 7. Add the **JiBrok Studio - Run Script** post function
 8. Select the configured script from the dropdown
 
-### Context Variables
+### Context variables
 
 The following variables are available in workflow post function scripts:
 
@@ -41,7 +41,7 @@ The following variables are available in workflow post function scripts:
 | `event.transition` | object | Transition details (see below) |
 | `currentUser` | object | Current user info |
 
-#### Transition Object
+#### Transition object
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -49,7 +49,7 @@ The following variables are available in workflow post function scripts:
 | `event.transition.to_status` | string | Status after transition |
 | `event.transition.transitionName` | string | Name of the transition |
 
-### Run As (Actor Resolution)
+### Run as (actor resolution)
 
 The script runs with the **actor configured on the script**. If no specific actor is set, the identity is resolved in this order:
 
@@ -60,12 +60,7 @@ The script runs with the **actor configured on the script**. If no specific acto
 
 ### Limits
 
-| Limit | Value |
-|-------|-------|
-| Max execution time | 15,000 ms |
-| Max API calls | 40 |
-| Max pending promises | 30 |
-| Max loop iterations | 50,000 |
+See [Limits](/docs/jibrok-studio-jira/limits) for execution time, API call, and other limits for workflow post functions.
 
 ### Example
 
@@ -97,7 +92,7 @@ if (event.transition.to_status === "Done") {
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Event Triggers](/docs/jibrok-studio-jira/triggers-events) - React to Jira events

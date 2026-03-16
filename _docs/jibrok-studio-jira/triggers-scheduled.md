@@ -11,7 +11,7 @@ tags:
 * TOC
 {:toc}
 
-## Scheduled Triggers
+## Scheduled triggers
 
 Run scripts on a recurring schedule. One per script (singleton).
 
@@ -24,9 +24,9 @@ Run scripts on a recurring schedule. One per script (singleton).
 
 Scripts run with the **actor configured on the script**.
 
-**How it works:** The scheduled handler pushes each script into the async queue instead of executing them directly. Each script then runs independently in its own async consumer invocation with up to 55 seconds of execution time and 100 API calls.
+**How it works:** The scheduled handler pushes each script into the async queue instead of executing them directly. Each script then runs independently in its own invocation. See [Limits](/docs/jibrok-studio-jira/limits) for execution time and API call limits.
 
-> **Note:** The `event` variable is **not available** in scheduled triggers. Use the [Jira REST API](/docs/jibrok-studio-jira/scripting-api#jira-rest-api) or [built-in functions](/docs/jibrok-studio-jira/scripting-api) to fetch data.
+> **Note:** The `event` variable is **not available** in scheduled triggers. Use the [Jira REST API](/docs/jibrok-studio-jira/scripting-api#jira-api) or [built-in functions](/docs/jibrok-studio-jira/scripting-api) to fetch data.
 
 ### Example
 
@@ -47,7 +47,7 @@ return results.issues.length + " issues closed"
 
 ---
 
-## See Also
+## See also
 
 - [Triggers Overview](/docs/jibrok-studio-jira/triggers) - All trigger types at a glance
 - [Event Triggers](/docs/jibrok-studio-jira/triggers-events) - React to Jira events

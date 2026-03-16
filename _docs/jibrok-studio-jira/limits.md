@@ -14,26 +14,29 @@ tags:
 * TOC
 {:toc}
 
-## Script Execution
+## Script engine limits
 
-| Limit | Value | Globals Script |
-|-------|-------|----------------|
-| Max execution time | per trigger (see below) | 1,000 ms |
-| Max loop iterations | 50,000 (100,000 for scheduled) | 1,000 |
-| Max call depth | 64 | 32 |
-| Max string size | 1 MB | 100 KB |
-| Max log calls | 200 | 0 |
-| Max collection size (Set/Map) | 10,000 | 10,000 |
-| Max array size | 50,000 | 50,000 |
-| Max pending promises | per trigger (see below) | 0 |
-| Max API calls | per trigger (see below) | - |
-| Max eval calls | 20 | 0 |
-| Max include depth | 5 | - |
-| Max input size | 100,000 chars | 100,000 chars |
+These limits protect Jira performance and prevent runaway scripts. If you hit a limit, optimize your script or split work across multiple runs using [Scenarios](/docs/jibrok-studio-jira/scenarios).
+
+| Limit | Value | Globals Script | Description |
+|-------|-------|----------------|-------------|
+| Max AST nodes | 15,000 | 200 | Script complexity (number of abstract syntax tree nodes) |
+| Max execution time | per trigger (see below) | 1,000 ms | Maximum script execution time |
+| Max loop iterations | 50,000 (100,000 for scheduled) | 1,000 | Total number of loop iterations |
+| Max call depth | 64 | 32 | Maximum nesting/recursion depth of calls |
+| Max string size | 1 MB | 100 KB | Total string memory size |
+| Max log calls | 200 | 0 | Number of output function calls (log, print) |
+| Max collection size (Set/Map) | 10,000 | 10,000 | Maximum collection size |
+| Max array size | 50,000 | 50,000 | Maximum array size |
+| Max pending promises | per trigger (see below) | 0 | Number of concurrent async operations |
+| Max API calls | per trigger (see below) | - | Number of Jira REST API calls per script |
+| Max eval calls | 20 | 0 | Number of eval() calls per script |
+| Max include depth | 5 | - | Nesting depth of eval-by-id calls |
+| Max input size | 100,000 chars | 100,000 chars | Maximum number of source code characters |
 
 > **Note:** The Globals Script column shows reduced limits for the global variables script, which runs before every other script execution.
 
-### Per-Trigger Limits
+### Per-trigger limits
 
 Execution time, API calls, and promises vary by trigger type:
 
@@ -44,17 +47,20 @@ Execution time, API calls, and promises vary by trigger type:
 | Scripted Fields | 5s | 20 | 20 | 50,000 |
 | Event | 25s | 60 | 50 | 50,000 |
 | Scheduled | 55s | 100 | 50 | 100,000 |
-| Async Event | 55s | 100 | 50 | 50,000 |
+| Async Event | 55s | 250 | 50 | 50,000 |
 | Automation | 40s | 80 | 50 | 50,000 |
 | Rovo | 40s | 80 | 50 | 50,000 |
 | Workflow Post Function | 15s | 40 | 30 | 50,000 |
 | Workflow Validator | 10s | 20 | 20 | 50,000 |
+| Webtrigger | 50s | 100 | 50 | 50,000 |
 
 > **Note:** The Workflow Condition trigger uses the Jira Expressions engine, which is evaluated natively by Jira. It has no sandbox engine limits - execution is managed entirely by Jira.
 
 ---
 
-## API Limits
+## API limits
+
+Each script has a budget for Jira REST API calls and storage operations. Use JQL bulk searches instead of one-by-one fetches to stay within limits.
 
 | Limit | Value |
 |-------|-------|
@@ -65,7 +71,9 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Script Management
+## Script management
+
+These limits apply to scripts stored in the Library.
 
 | Limit | Value |
 |-------|-------|
@@ -81,7 +89,9 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Global Variables
+## Global variables
+
+The global variables script runs before every script execution, so its limits are intentionally strict.
 
 | Limit | Value |
 |-------|-------|
@@ -91,17 +101,19 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Triggers and Parameters
+## Triggers and parameters
 
 | Limit | Value |
 |-------|-------|
 | Max triggers per script | 10 |
 | Max trigger config size | 10 KB |
-| Singleton types | All types (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition) |
+| Singleton types | All types (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition, Webtrigger) |
 
 ---
 
 ## Organization
+
+Folders and labels help you manage scripts at scale.
 
 | Limit | Value |
 |-------|-------|
@@ -114,7 +126,9 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Custom Tables
+## Custom tables
+
+Tables store structured data accessible from scripts and the UI. If you need more than 5,000 rows, consider archiving old data or splitting across multiple tables.
 
 | Limit | Value |
 |-------|-------|
@@ -132,19 +146,60 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Async Events
+## Async events
+
+Async events let scripts trigger other scripts. Chain depth and fanout limits prevent infinite recursion.
 
 | Limit | Value |
 |-------|-------|
 | Max async event calls per script | 10 |
+| Max async event calls (chained) | 3 |
 | Max payload size | 100 KB |
 | Max delay | 900 seconds (15 min) |
-| Max chain depth | 1 (allows 2 hops: depth 0, 1) |
+| Max chain depth | 2 (allows 3 hops: depth 0, 1, 2) |
 | Deduplication window | 5 minutes |
+| Async consumer execution time | 55,000 ms |
 
 ---
 
-## Message Queues
+## Webtrigger limits
+
+Rate limits protect against request floods from external systems.
+
+| Limit | Value |
+|-------|-------|
+| Rate limit | 60 requests per minute |
+| Rate limit window | 60 seconds |
+| Max tokens per script | 1 |
+
+---
+
+## Scenario limits
+
+Scenarios split long-running operations into managed steps. If you need to process more data than one step allows, use `emit()` to pass data between steps.
+
+| Limit | Value | Description |
+|-------|-------|-------------|
+| Max steps per scenario | 100 | Total `step()` + `loop()` + `batch()` calls |
+| Max iterations per step | 1,000 | Maximum `next()` calls in a `loop()` or pages in `batch()` |
+| Max step result size | 5 MB | JSON-serialized return value of a single step |
+| Max context size | 20 MB | Total JSON size of all completed step results |
+| Max step logs size | 512 KB | Console output per step (truncated with warning if exceeded) |
+| Batch size | 1-100 | Issues per batch page |
+| Batch errors | 100 | Maximum number of error messages stored per batch step |
+| Emit items per iteration | 1,000 | Maximum `emit()` calls per step/loop iteration |
+| Emit data per iteration | 2 MB | Maximum serialized size of emitted data per iteration |
+| Emit total per step | 10 MB | Maximum total emitted data across all iterations of a step |
+| getStepData max limit | 10,000 | Maximum items returned in a single `getStepData()` call |
+| Runs per script | 20 | Old completed runs are automatically cleaned up |
+| Stale step timeout | 10 min | Steps running longer are reset for retry |
+| API calls per step | Same as async event trigger | Each step has its own API call budget |
+
+---
+
+## Message queues
+
+Queues handle asynchronous communication between scripts. Use `consume()` for simple pipelines and `pull()`/`ack()` when you need error handling.
 
 | Limit | Value |
 |-------|-------|
@@ -159,7 +214,9 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## API Restrictions
+## API restrictions
+
+Whitelist and blacklist profiles control which Jira REST API endpoints scripts can call.
 
 | Limit | Value |
 |-------|-------|
@@ -170,7 +227,7 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Other Limits
+## Other limits
 
 | Limit | Value |
 |-------|-------|
@@ -186,18 +243,38 @@ Execution time, API calls, and promises vary by trigger type:
 
 ---
 
-## Engine Internals
+## Working within limits
 
-| Limit | Value |
-|-------|-------|
-| Max regex pattern length | 200 characters |
-| Max template literal depth | 32 |
-| Max format pattern length | 500 characters |
+### Hitting execution timeout?
+
+- Add the `fields` parameter to `Issues.search()` and `Issues.get()` to load only the fields you need
+- Reduce the number of API calls per script - combine operations where possible
+- Move bulk operations to [Scenarios](/docs/jibrok-studio-jira/scenarios) where each step gets its own time budget
+
+### Hitting API call limit?
+
+- Use JQL bulk searches (`Issues.search()`) instead of fetching issues one by one
+- Cache data in variables instead of re-fetching the same issue multiple times
+- Split work across multiple scheduled runs or use async events to chain scripts
+
+### Hitting string or array size limit?
+
+- Process data in chunks instead of building one large array
+- Use [Custom Tables](/docs/jibrok-studio-jira/data-storage) for intermediate storage between script runs
+- Filter data server-side with JQL instead of loading everything and filtering in the script
+
+### Hitting loop iteration limit?
+
+- Use `Issues.searchAll()` with pagination instead of manual loops
+- In Scenarios, use `batch()` which handles pagination automatically
+- Scheduled triggers have a higher loop limit (100,000) - consider switching from event triggers for heavy processing
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language details and sandbox
 - [Administration](/docs/jibrok-studio-jira/admin-settings) - Configuring limits and restrictions
+- [Scenarios](/docs/jibrok-studio-jira/scenarios) - Multi-step scenarios for bulk operations
+- [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) - HTTP webhook trigger details
 - [FAQ](/docs/jibrok-studio-jira/faq) - Troubleshooting limit-related issues

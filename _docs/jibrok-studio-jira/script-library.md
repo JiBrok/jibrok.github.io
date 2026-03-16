@@ -16,11 +16,11 @@ tags:
 
 ## Overview
 
-The Library is the central hub for managing all saved scripts. It provides a table view with search, filtering, folder navigation, labels, and version history.
+Manage all your saved scripts from the Library. It provides a table view with search, filtering, folder navigation, labels, and version history.
 
 ---
 
-## Script List
+## Script list
 
 The Library displays all saved scripts in a table:
 
@@ -40,7 +40,7 @@ The Library displays all saved scripts in a table:
 
 ---
 
-## Search and Filtering
+## Search and filtering
 
 ### Search
 
@@ -65,7 +65,7 @@ Results are highlighted to show which criteria matched.
 
 Folders provide a hierarchical structure for organizing scripts.
 
-### Creating Folders
+### Creating folders
 
 1. In the Library, click **Create Folder**
 2. Enter a folder name
@@ -80,19 +80,11 @@ Folders provide a hierarchical structure for organizing scripts.
 - Click folder names to enter them
 - "All Scripts" returns to the root
 
-### Moving Scripts
+### Moving scripts
 
 Drag scripts between folders or use the script's Config tab to set the folder.
 
-### Folder Limits
-
-| Limit | Value |
-|-------|-------|
-| Max folders | 200 |
-| Max folder name length | 50 characters |
-| Max nesting depth | 10 levels |
-
-Names must be unique within the same parent folder. When deleting a folder, its scripts and subfolders move to the parent folder (or root).
+Names must be unique within the same parent folder. When deleting a folder, its scripts and subfolders move to the parent folder (or root). See [Limits](/docs/jibrok-studio-jira/limits) for folder limits.
 
 ---
 
@@ -100,7 +92,7 @@ Names must be unique within the same parent folder. When deleting a folder, its 
 
 Labels are color-coded tags for categorizing scripts. Unlike folders, one script can have multiple labels, and one label can be on multiple scripts.
 
-### Creating Labels
+### Creating labels
 
 1. Go to the **Admin** tab > Labels section
 2. Click **Create Label**
@@ -109,63 +101,52 @@ Labels are color-coded tags for categorizing scripts. Unlike folders, one script
 <a href="/uploads/jibrok-studio-jira/library-manage-labels.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-manage-labels.png" alt="Manage labels interface" style="width:100%;" loading="lazy"></a>
 
-### Available Colors
+### Available colors
 
 Auto, Default, Blue, Yellow, Purple, Red, Green. Each color has a regular and **bold** variant (13 options total).
 
-### Assigning Labels
+### Assigning labels
 
 Assign labels in the script's Config tab. Select from available labels in the Labels dropdown.
 
-### Filtering by Label
+### Filtering by label
 
 In the Library, click a label name to filter scripts by that label. Multiple labels can be selected.
 
-### Label Limits
-
-| Limit | Value |
-|-------|-------|
-| Max labels | 100 |
-| Max label name length | 30 characters |
-| Max labels per script | 10 |
-
-Label names are normalized to lowercase. Deleting a label removes it from all scripts.
+Label names are normalized to lowercase. Deleting a label removes it from all scripts. See [Limits](/docs/jibrok-studio-jira/limits) for label limits.
 
 ---
 
-## Version History
+## Version history
 
 Every time you save a script, a version snapshot is created automatically.
 
-### Viewing Versions
+### Viewing versions
 
 Open a script and go to the **Version History** tab to see all saved versions with date, author, and description.
 
 <a href="/uploads/jibrok-studio-jira/library-save-version-note.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-save-version-note.png" alt="Save version with note dialog" style="width:100%;" loading="lazy"></a>
 
-### Comparing Versions
+### Comparing versions
 
 Select two versions to see a **diff view** highlighting what changed between them.
 
 <a href="/uploads/jibrok-studio-jira/library-version-history-diff.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-version-history-diff.png" alt="Version history diff view" style="width:100%;" loading="lazy"></a>
 
-### Restoring Versions
+### Restoring versions
 
 Restore any previous version - this creates a **new version entry** (the restored content becomes the latest version, preserving the full history).
 
 <a href="/uploads/jibrok-studio-jira/library-save-script-dialog.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-save-script-dialog.png" alt="Save script dialog" style="width:100%;" loading="lazy"></a>
 
-### Limits
-
-- Up to **50 versions** per script
-- When the limit is reached, the oldest version is removed
+When the limit is reached, the oldest version is removed automatically. See [Limits](/docs/jibrok-studio-jira/limits) for version history limits.
 
 ---
 
-## Script Actions
+## Script actions
 
 Each script has a quick actions menu:
 
@@ -181,7 +162,7 @@ Each script has a quick actions menu:
 <a href="/uploads/jibrok-studio-jira/library-context-menu.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/library-context-menu.png" alt="Script context menu with actions" style="width:100%;" loading="lazy"></a>
 
-### Where Used
+### Where used
 
 The **Where Used** action opens a dialog showing all locations where the script is referenced:
 
@@ -190,7 +171,7 @@ The **Where Used** action opens a dialog showing all locations where the script 
 
 Each entry shows the usage type, location, and version status (whether the deployed version matches the latest saved version).
 
-> **Tip:** For a site-wide view of all script usage, see [Script Usage](/docs/jibrok-studio-jira/admin-settings#script-usage) in the Admin tab.
+> **Tip:** For a site-wide view of all script usage, see [Script Usage](/docs/jibrok-studio-jira/admin-tools#script-usage) in the Admin tab.
 
 > **Note:** Import/Export for bulk operations is available in the Admin tab. See [Administration](/docs/jibrok-studio-jira/admin-settings).
 
@@ -205,7 +186,7 @@ Each entry shows the usage type, location, and version status (whether the deplo
 
 ---
 
-## Next Steps
+## Next steps
 
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Write and run scripts
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution

@@ -1,0 +1,281 @@
+---
+title: "Scripting API: Issues"
+key: jibrok-studio-jira
+excerpt: Search, create, update, and transition Jira issues
+category: administration
+tags:
+  - doc
+  - cloud
+  - scripting
+  - api
+  - issues
+---
+
+* TOC
+{:toc}
+
+> Part of the [Scripting API](/docs/jibrok-studio-jira/scripting-api) reference.
+> **Issues** | [Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) | [Utilities](/docs/jibrok-studio-jira/scripting-api-utilities) | [Smart Values](/docs/jibrok-studio-jira/scripting-api-smart-values)
+
+## Issues
+
+Work with Jira issues - search, create, update, transition, and more.
+
+### Static methods
+
+| Method | Description | API calls |
+|--------|-------------|-----------|
+| `Issues.get(key, options?)` | Get issue by key. Returns a RichIssue | 1 |
+| `Issues.search(jql, options?)` | Search issues by JQL. Returns SearchResult | 1 |
+| `Issues.searchAll(jql, options?)` | Search all matching issues (auto-pagination). Returns SearchResult | 1 (count) + N (pages) |
+| `Issues.count(jql)` | Count issues matching JQL | 1 |
+| `Issues.create(project, issueType, fields?)` | Create a new issue | 1 (+1 field cache) |
+| `Issues.link(key1, linkType, key2)` | Link two issues | 1 |
+
+```js
+// Get an issue
+const issue = await Issues.get("TEST-1")
+log(issue.summary)
+log(issue.status)
+
+// Search issues
+const results = await Issues.search("project = TEST AND status = Open", {
+  maxResults: 10,
+  fields: ["summary", "status"],
+  includeTotal: true
+})
+log(`Found: ${results.total}`)
+for (const issue of results.issues) {
+  log(`${issue.key}: ${issue.summary}`)
+}
+
+// Search all (auto-pagination)
+const all = await Issues.searchAll("project = TEST AND status = Open")
+log(`Total: ${all.issues.length}`)
+
+// Count
+const count = await Issues.count("project = TEST")
+
+// Create an issue
+const created = await Issues.create("TEST", "Task", {
+  summary: "New task",
+  description: "Task description"
+})
+log(created.key)
+
+// Link issues
+await Issues.link("TEST-1", "Blocks", "TEST-2")
+```
+
+### RichIssue properties
+
+**Core properties:**
+
+| Property | Description |
+|----------|-------------|
+| `key` | Issue key (e.g., `"TEST-1"`) |
+| `id` | Issue ID |
+| `summary` | Summary text |
+| `status` | Status name |
+| `statusCategory` | Status category name (e.g., "To Do", "In Progress", "Done") |
+| `assignee` | Assignee display name |
+| `assigneeId` | Assignee account ID |
+| `reporter` | Reporter display name |
+| `priority` | Priority name |
+| `issueType` | Issue type name |
+| `project` | Project key |
+| `labels` | Labels array |
+| `components` | Components array (names) |
+| `fixVersions` | Fix versions array (names) |
+| `created` | Created date string |
+| `updated` | Updated date string |
+| `dueDate` | Due date string (null if not set) |
+| `resolutionDate` | Resolution date string (null if unresolved) |
+| `description` | Description text |
+| `parent` | Parent issue key (null if no parent) |
+| `links` | Array of linked issues |
+| `fields` | Raw fields object |
+
+**Computed properties** (calculated automatically, no API call):
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `age` | number | Days since creation |
+| `staleDays` | number | Days since last update |
+| `isOverdue` | boolean | Whether past due date |
+| `isAssigned` | boolean | Whether assigned |
+| `isResolved` | boolean | Whether in resolved status category |
+
+**Typed wrapper properties:**
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `assigneeUser` | User/null | Assignee as User wrapper |
+| `reporterUser` | User | Reporter as User wrapper |
+| `projectObj` | Project | Project as Project wrapper |
+
+### RichIssue methods
+
+| Method | Description | API calls |
+|--------|-------------|-----------|
+| `issue.update(fields)` | Update issue fields | 1 |
+| `issue.transition(nameOrStatus, options?)` | Transition to a status | 2 |
+| `issue.addComment(textOrAdf)` | Add a comment (plain text or ADF) | 1 |
+| `issue.getComments()` | Get all comments | 1 |
+| `issue.getTransitions()` | Get available transitions | 1 |
+| `issue.assign(accountId)` | Assign to a user | 1 |
+| `issue.unassign()` | Remove assignee | 1 |
+| `issue.addWatcher(accountId)` | Add a watcher | 1 |
+| `issue.link(linkType, targetKey)` | Link to another issue | 1 |
+| `issue.addLabel(label)` | Add a label | 1 |
+| `issue.removeLabel(label)` | Remove a label | 1 |
+| `issue.field(nameOrId)` | Get a field value by name or ID (with smart resolution) | 0 |
+| `issue.delete()` | Delete the issue | 1 |
+| `issue.reload()` | Reload issue data from Jira | 1 |
+| `issue.clone(overrides?)` | Clone the issue | 1 |
+
+```js
+const issue = await Issues.get("TEST-1")
+
+// Update fields
+await issue.update({ summary: "Updated title", priority: { name: "High" } })
+
+// Transition
+await issue.transition("Done")
+await issue.transition("In Progress", { comment: "Starting work" })
+
+// Comments
+await issue.addComment("Plain text comment")
+const comments = await issue.getComments()
+
+// Assignment
+const user = await Users.current()
+await issue.assign(user.accountId)
+await issue.unassign()
+
+// Clone with overrides
+const copy = await issue.clone({ summary: "Copy of " + issue.summary })
+
+// Reload fresh data
+await issue.reload()
+```
+
+### SearchResult
+
+| Property / Method | Description |
+|-------------------|-------------|
+| `results.issues` | Array of RichIssue objects |
+| `results.keys` | Array of issue keys |
+| `results.total` | Total matching count (requires `includeTotal: true`, +1 API call) |
+| `results.hasMore` | Whether more pages exist |
+| `results.nextPageToken` | Token for next page |
+| `results.nextPage()` | Fetch next page |
+| `results.map(fn)` | Map over issues |
+| `results.filter(fn)` | Filter issues |
+| `results.groupBy(key)` | Group issues by property |
+| `results.countBy(key)` | Count issues by property value |
+| `results.forEach(fn)` | Execute async function for each issue (returns report) |
+| `results.updateAll(fields)` | Update all issues with the same fields (returns report) |
+| `results.transitionAll(status, options?)` | Transition all issues (returns report) |
+
+### Search options
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `fields` | `string[]` | all | Fields to return |
+| `maxResults` | `number` | 50 | Issues per page (max 100) |
+| `nextPageToken` | `string` | - | Token for next page |
+| `expand` | `string[]` | - | Expand options |
+| `includeTotal` | `boolean` | `false` | Include total count (+1 API call) |
+
+### searchAll Options
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `fields` | `string[]` | all | Fields to return |
+| `maxResults` | `number` | 100 | Issues per page (max 100) |
+| `maxPages` | `number` | 10 | Max pages to load |
+| `expand` | `string[]` | - | Expand options |
+
+```js
+const results = await Issues.search("project = TEST", { maxResults: 50 })
+
+// Iterate
+const keys = results.keys
+const summaries = results.map(i => i.summary)
+const bugs = results.filter(i => i.issueType === "Bug")
+const byStatus = results.groupBy("status")
+
+// Pagination
+if (results.hasMore) {
+  const page2 = await results.nextPage()
+}
+```
+
+### Smart field resolution
+
+Field names in plain objects are automatically resolved to Jira field IDs:
+
+```js
+// 'Story Points' -> 'customfield_10016'
+await Issues.create("PROJ", "Story", { "Story Points": 5, summary: "My story" })
+```
+
+This works in `Issues.create()`, `issue.update()`, and other methods that accept field objects.
+
+### Field auto-transform
+
+Common fields are automatically transformed to Jira API format:
+
+| Input | Transformation |
+|-------|---------------|
+| `priority: 'High'` | `priority: { name: 'High' }` |
+| `assignee: 'accountId'` | `assignee: { accountId: '...' }` |
+| `description: 'text'` | `description: { type: 'doc', ... }` (ADF) |
+| `labels: 'single'` | `labels: ['single']` |
+| `components: 'Backend'` | `components: [{ name: 'Backend' }]` |
+
+### ChainablePromise
+
+`Issues.get()` returns a chainable promise - methods can be chained before `await`:
+
+```js
+await Issues.get("PROJ-1").update({ summary: "New" }).addComment("Updated!")
+```
+
+---
+
+### Bulk operation reports
+
+`forEach()`, `updateAll()`, and `transitionAll()` return a report object:
+
+| Property | Description |
+|----------|-------------|
+| `success` | Number of successfully processed issues |
+| `failed` | Number of failed issues |
+| `errors` | Array of error details |
+
+```js
+const result = await Issues.search('project = TEST AND status = Open')
+
+// Update all
+const report = await result.updateAll({ priority: 'Medium' })
+log(`Updated ${report.success}, failed ${report.failed}`)
+
+// Transition all
+const report2 = await result.transitionAll('In Progress')
+
+// Custom processing
+const report3 = await result.forEach(async (issue) => {
+  await issue.addComment('Batch processed')
+})
+```
+
+---
+
+## Next steps
+
+- [Scripting API: Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) - Users, Projects, Fields, Boards, Sprints
+- [Scripting API: Configuration & Assets](/docs/jibrok-studio-jira/scripting-api-admin) - Administration namespaces and JSM Assets
+- [Scripting API: Utilities](/docs/jibrok-studio-jira/scripting-api-utilities) - Adf, DateUtils, Arrays, Strings, CSV
+- [Scripting Examples](/docs/jibrok-studio-jira/scripting-examples) - Practical scripting examples

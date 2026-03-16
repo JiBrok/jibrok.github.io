@@ -23,13 +23,13 @@ tags:
 
 ---
 
-## Navigate to the App
+## Navigate to the app
 
 Open the Jira top navigation bar and click **Apps > JiBrok Studio for Jira Cloud**. The Console tab opens by default with an empty editor.
 
 ---
 
-## Your First Script
+## Your first script
 
 ### 1. Write a Script
 
@@ -69,15 +69,15 @@ The `issueKey` variable is automatically available when you provide an issue key
 
 ---
 
-## Key Concepts
+## Key concepts
 
-### Script Isolation
+### Script isolation
 
 Scripts run in a secure sandbox with strict limits:
 
 - **No network access** - except through `requestJira()` and built-in API namespaces
 - **No filesystem** - scripts cannot read or write files
-- **Resource limits** - execution time, loop iterations, and API calls are capped. Limits vary by trigger type (e.g., console: 18s/40 API calls, scheduled: 55s/100 API calls). See [Limits](/docs/jibrok-studio-jira/limits) for details.
+- **Resource limits** - execution time, loop iterations, and API calls are capped. Limits vary by trigger type. See [Limits](/docs/jibrok-studio-jira/limits) for details.
 - **Method whitelisting** - only approved methods can be called
 - **Auto-await** - async API calls are automatically resolved
 
@@ -107,13 +107,13 @@ return "done"
 // result: "done"
 ```
 
-### Sandbox Mode
+### Sandbox mode
 
 Toggle **Sandbox Mode** to test scripts that make changes without actually modifying Jira data. Write operations (POST, PUT, DELETE) are simulated and logged.
 
 ---
 
-## Save to Library
+## Save to library
 
 Click **Save** to persist your script to the Library:
 
@@ -126,12 +126,35 @@ Saved scripts appear in the [Script Library](/docs/jibrok-studio-jira/script-lib
 
 ---
 
-## Next Steps
+## What to do next
 
-- [Script Console](/docs/jibrok-studio-jira/script-console) - Learn all console features: editor, output, history, variables
-- [Script Library](/docs/jibrok-studio-jira/script-library) - Save and organize your scripts
+After your first script, here is a checklist to explore the platform:
+
+- [ ] **Browse the API** - open the [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) panel (Help button in the Console toolbar) and explore available functions with examples
+- [ ] **Search and update issues** - try `Issues.search()` and `issue.update()` in the Console. See [Scripting API](/docs/jibrok-studio-jira/scripting-api) for all available namespaces
+- [ ] **Save a script** - save your work to the [Library](/docs/jibrok-studio-jira/script-library) with a name, folder, and labels
+- [ ] **Set up a trigger** - attach a [trigger](/docs/jibrok-studio-jira/triggers) to run your script on a schedule, on Jira events, or on workflow transitions. See [Choose the right trigger](/docs/jibrok-studio-jira/triggers-comparison) to compare options
+- [ ] **Try Sandbox Mode** - toggle Sandbox Mode on and run a script that modifies data. Write operations are simulated so you can verify logic safely
+- [ ] **Explore use cases** - check [Use Cases](/docs/jibrok-studio-jira/use-cases) and [Scripting Examples](/docs/jibrok-studio-jira/scripting-examples) for practical recipes
+
+### Based on your goal
+
+| I want to... | Start here |
+|---|---|
+| Automate repetitive tasks | [Triggers](/docs/jibrok-studio-jira/triggers) - attach scheduled or event-based triggers |
+| Create computed fields | [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) - Text, Number, Date, DateTime |
+| Customize issue forms | [UI Modifications](/docs/jibrok-studio-jira/ui-modifications) - hide/show fields, set defaults |
+| Process issues in bulk | [Scenarios](/docs/jibrok-studio-jira/scenarios) - split bulk operations into managed steps |
+| Store custom data | [Data Storage](/docs/jibrok-studio-jira/data-storage) - Custom Tables and Message Queues |
+| Add Jira Automation actions | [Automation integration](/docs/jibrok-studio-jira/automation) - run scripts from Automation rules |
+| Validate workflow transitions | [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) - block invalid transitions |
+| Receive external webhooks | [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) - trigger scripts via HTTP |
+
+---
+
+## Reference
+
+- [Script Console](/docs/jibrok-studio-jira/script-console) - Full console features: editor, output, history, variables
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and sandbox details
-- [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference
-- [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) - Built-in reference with examples for all engines
-- [Use Cases](/docs/jibrok-studio-jira/use-cases) - Practical scripting examples for common scenarios
-- [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution
+- [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Complete API reference
+- [Limits](/docs/jibrok-studio-jira/limits) - Platform quotas and constraints

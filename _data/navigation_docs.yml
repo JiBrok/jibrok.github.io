@@ -16,6 +16,9 @@ jibrok-studio-jira:
     - jibrok-studio-jira/script-engine-reference
     - jibrok-studio-jira/script-library
     - jibrok-studio-jira/global-variables
+    - jibrok-studio-jira/error-monitoring
+    - jibrok-studio-jira/version-history
+    - jibrok-studio-jira/recipes
 
   - title: Triggers
     docs:
@@ -23,6 +26,11 @@ jibrok-studio-jira:
     - jibrok-studio-jira/triggers-scheduled
     - jibrok-studio-jira/triggers-events
     - jibrok-studio-jira/triggers-async
+    - jibrok-studio-jira/triggers-webhook
+    - jibrok-studio-jira/triggers-workflow-post-function
+    - jibrok-studio-jira/triggers-workflow-validator
+    - jibrok-studio-jira/triggers-workflow-condition
+    - jibrok-studio-jira/scenarios
 
   - title: Extensions
     docs:
@@ -35,12 +43,53 @@ jibrok-studio-jira:
     docs:
     - jibrok-studio-jira/data-storage
 
-  - title: Administration & Reference
+  - title: Scripting Overview
+    docs:
+    - jibrok-studio-jira/scripting-language
+
+  - title: "JavaScript Engine"
+    docs:
+    - jibrok-studio-jira/scripting-language-basics
+    - jibrok-studio-jira/scripting-functions-classes
+    - jibrok-studio-jira/scripting-async-await
+    - jibrok-studio-jira/scripting-differences-from-js
+    - jibrok-studio-jira/scripting-type-methods
+
+  - title: "Python Engine"
+    docs:
+    - jibrok-studio-jira/scripting-python
+
+  - title: "Groovy Engine"
+    docs:
+    - jibrok-studio-jira/scripting-groovy
+
+  - title: Scripting API
+    docs:
+    - jibrok-studio-jira/scripting-api
+    - jibrok-studio-jira/scripting-api-issues
+    - jibrok-studio-jira/scripting-api-jira
+    - jibrok-studio-jira/scripting-api-admin
+    - jibrok-studio-jira/scripting-api-async-event
+    - jibrok-studio-jira/scripting-api-tables
+    - jibrok-studio-jira/scripting-api-queues
+    - jibrok-studio-jira/scripting-api-uim
+    - jibrok-studio-jira/scripting-api-utilities
+    - jibrok-studio-jira/scripting-api-smart-values
+
+  - title: Administration
     docs:
     - jibrok-studio-jira/admin-settings
-    - jibrok-studio-jira/scripting-language
-    - jibrok-studio-jira/scripting-api
+    - jibrok-studio-jira/admin-api-restrictions
+    - jibrok-studio-jira/admin-tools
+    - jibrok-studio-jira/admin-audit
+    - jibrok-studio-jira/admin-compliance
+    - jibrok-studio-jira/admin-service-projects
+    - jibrok-studio-jira/import-export
+
+  - title: Guides
+    docs:
     - jibrok-studio-jira/use-cases
+    - jibrok-studio-jira/scripting-examples
     - jibrok-studio-jira/limits
     - jibrok-studio-jira/faq
 
@@ -261,6 +310,7 @@ time-in-status:
       - time-in-status/user-help-info
       - time-in-status/step-by-step-time-in-status
       - time-in-status/step-by-step-timer
+      - time-in-status/step-by-step-stopwatch
 
   - title: Settings
     docs:
@@ -275,6 +325,7 @@ time-in-status:
 
   - title: Time in status
     docs:
+      - time-in-status/time-in-status-field
       - time-in-status/time-in-status-jql
       - time-in-status/time-in-status-field-settings
       - time-in-status/time-in-status-field-settings-old
@@ -288,6 +339,7 @@ time-in-status:
 
   - title: Stopwatch
     docs:
+      - time-in-status/stopwatch-field
       - time-in-status/stopwatch-field-settings
       - time-in-status/stopwatch-configs
       - time-in-status/stopwatch-schemes
@@ -296,6 +348,7 @@ time-in-status:
 
   - title: Timer
     docs:
+      - time-in-status/timer-field
       - time-in-status/timer-field-settings
       - time-in-status/timer-configs
       - time-in-status/timer-schemes
@@ -323,10 +376,14 @@ time-in-status:
       - time-in-status/reports-permissions
       - time-in-status/reports-all
       - time-in-status/report-create
+      - time-in-status/report-table
+      - time-in-status/report-assignee-status
+      - time-in-status/report-status-assignee
 
   - title: Field Helpers
     docs:
       - time-in-status/common-helpers
+      - time-in-status/time-in-status-all
 
   - title: Other fields
     docs:
