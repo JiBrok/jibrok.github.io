@@ -360,7 +360,7 @@ log(resolved)   // => [2, 4, 6]
 ```js
 const keys = ["TEST-1", "TEST-2", "TEST-3"]
 for (const key of keys) {
-  const issue = await Issues.get(key)
+  const issue = Issues.get(key)
   log(issue.summary)
 }
 ```

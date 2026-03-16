@@ -136,7 +136,7 @@ if (uimData.callbackType === 'onInit' || uimData.changedFieldId === 'issuetype')
 
 ```js
 if (uimData.callbackType === 'onInit' && uimData.viewType === 'GIC') {
-  let user = await Users.current()
+  let user = Users.current()
   uim.setValue('reporter', { accountId: user.accountId })
 
   // Set default due date to 2 weeks from now

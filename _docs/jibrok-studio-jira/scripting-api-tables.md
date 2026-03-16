@@ -60,9 +60,9 @@ Used in `where` clauses. A plain value implies `$eq`.
 The `orderBy` option accepts a column name. Prefix with `-` for descending.
 
 ```js
-await tables.rows("Users", { orderBy: "Name" })      // ascending
-await tables.rows("Users", { orderBy: "-Age" })       // descending
-await tables.rows("Users", { orderBy: "-updatedAt" }) // built-in field
+tables.rows("Users", { orderBy: "Name" })      // ascending
+tables.rows("Users", { orderBy: "-Age" })       // descending
+tables.rows("Users", { orderBy: "-updatedAt" }) // built-in field
 ```
 
 ---
@@ -71,21 +71,21 @@ await tables.rows("Users", { orderBy: "-updatedAt" }) // built-in field
 
 ```js
 // Get table schema
-const schema = await tables.get("Users")
+const schema = tables.get("Users")
 log(schema.columns)  // [{ id, name, type }, ...]
 
 // Add a single row
-const row = await tables.addRow("Users", { Name: "Alice", Age: 30, Status: "active" })
+const row = tables.addRow("Users", { Name: "Alice", Age: 30, Status: "active" })
 log(row.id)
 
 // Bulk insert
-const rows = await tables.addRows("Users", [
+const rows = tables.addRows("Users", [
   { Name: "Bob", Age: 25 },
   { Name: "Eve", Age: 35 },
 ])
 
 // Search with filter and sort
-const result = await tables.rows("Users", {
+const result = tables.rows("Users", {
   where: { Age: { $gte: 18 }, Status: "active" },
   orderBy: "-Age",
   limit: 10,
@@ -95,24 +95,24 @@ log(result.rows)   // [{ id, data: { Name, Age, Status }, createdAt, updatedAt }
 log(result.total)  // total matching count
 
 // Find first matching row
-const user = await tables.findRow("Users", { Name: "Alice" })
+const user = tables.findRow("Users", { Name: "Alice" })
 
 // Count rows
-const total = await tables.count("Users")
-const active = await tables.count("Users", { Status: "active" })
+const total = tables.count("Users")
+const active = tables.count("Users", { Status: "active" })
 
 // Update a row
-await tables.updateRow("Users", row.id, { Status: "inactive" })
+tables.updateRow("Users", row.id, { Status: "inactive" })
 
 // Delete by filter
-const deleted = await tables.deleteRows("Users", { Status: "inactive" })
+const deleted = tables.deleteRows("Users", { Status: "inactive" })
 log(deleted)  // number of deleted rows
 
 // Delete by ID
-await tables.deleteRow("Users", row.id)
+tables.deleteRow("Users", row.id)
 
 // Upsert - insert or update
-const upserted = await tables.upsert("Users",
+const upserted = tables.upsert("Users",
   { Name: "Alice" },                          // where (find)
   { Name: "Alice", Age: 31, Status: "active" } // data (set)
 )
@@ -138,8 +138,8 @@ When a table has a **context** configured (project/issue type restrictions), use
 | `tables.countFor(name, issue, where?)` | Count with context check |
 
 ```js
-await tables.addRowFor("Logs", "PROJ-123", { Message: "Done" })
-await tables.rowsFor("Logs", issue, { where: { Status: "open" } })
+tables.addRowFor("Logs", "PROJ-123", { Message: "Done" })
+tables.rowsFor("Logs", issue, { where: { Status: "open" } })
 ```
 
 ---

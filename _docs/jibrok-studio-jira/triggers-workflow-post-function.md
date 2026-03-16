@@ -72,14 +72,14 @@ log("Transition:", event.transition.transitionName)
 
 // Auto-assign when moving to "In Progress"
 if (event.transition.to_status === "In Progress" && !issue.fields.assignee) {
-  const me = await Users.current()
-  await Issues.get(issueKey).assign(me.accountId)
+  const me = Users.current()
+  Issues.get(issueKey).assign(me.accountId)
   log("Auto-assigned to:", me.displayName)
 }
 
 // Add a comment when issue is done
 if (event.transition.to_status === "Done") {
-  await Issues.get(issueKey).addComment(
+  Issues.get(issueKey).addComment(
     Adf.doc(
       Adf.paragraph(
         "Issue resolved via transition ",

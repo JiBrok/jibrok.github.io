@@ -75,7 +75,7 @@ return issue.age
 ### Scripted number field - sum subtask story points
 
 ```js
-let subtasks = await Issues.search(`parent = ${issueKey}`, {
+let subtasks = Issues.search(`parent = ${issueKey}`, {
   fields: ['customfield_10016']  // Story Points
 })
 
@@ -97,7 +97,7 @@ return DateUtils.format(due, 'YYYY-MM-DD')
 ### Scripted datetime field - last comment timestamp
 
 ```js
-const comments = await issue.getComments()
+const comments = issue.getComments()
 if (comments.length > 0) {
   return comments[comments.length - 1].created
 }

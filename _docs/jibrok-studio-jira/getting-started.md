@@ -63,7 +63,7 @@ Click the **Run** button (or use the keyboard shortcut). You will see:
 Enter a Jira issue key (e.g., `PROJ-1`) in the **Issue Key** field, then run:
 
 ```js
-const issue = await Issues.get(issueKey)
+const issue = Issues.get(issueKey)
 log("Issue:", issue.key)
 log("Summary:", issue.summary)
 log("Status:", issue.status)

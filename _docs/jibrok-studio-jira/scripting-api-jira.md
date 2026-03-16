@@ -29,14 +29,14 @@ Look up and search for Jira users.
 | `Users.findAssignable(project, query?)` | Find users assignable to a project |
 
 ```js
-const me = await Users.current()
+const me = Users.current()
 log(me.displayName)
 
-const user = await Users.get("5b10ac8d82e05b22cc7d4ef5")
+const user = Users.get("5b10ac8d82e05b22cc7d4ef5")
 log(user.emailAddress)
 
-const devs = await Users.find("john")
-const assignable = await Users.findAssignable("PROJ", "alice")
+const devs = Users.find("john")
+const assignable = Users.findAssignable("PROJ", "alice")
 ```
 
 ### User wrapper
@@ -60,11 +60,11 @@ const assignable = await Users.findAssignable("PROJ", "alice")
 | `equals(other)` | Compare by accountId |
 
 ```js
-const user = await Users.current()
+const user = Users.current()
 log(user.displayName)
 log(user.timeZone)
 
-const issue = await Issues.get("TEST-1")
+const issue = Issues.get("TEST-1")
 log(issue.assigneeUser?.displayName)
 log(issue.reporterUser?.equals(user))
 ```
@@ -90,13 +90,13 @@ Access Jira project data.
 | `project.getRoles()` | Get project roles |
 
 ```js
-const project = await Projects.get("PROJ")
+const project = Projects.get("PROJ")
 log(project.name)
 
-const components = await project.getComponents()
-const versions = await project.getVersions()
+const components = project.getComponents()
+const versions = project.getVersions()
 
-const projects = await Projects.list()
+const projects = Projects.list()
 for (const p of projects) {
   log(p.key + ": " + p.name)
 }
@@ -126,13 +126,13 @@ for (const p of projects) {
 | `equals(other)` | Compare by key |
 
 ```js
-const proj = await Projects.get("PROJ")
+const proj = Projects.get("PROJ")
 log(proj.name)
 log(proj.lead?.displayName)
-const comps = await proj.getComponents()
+const comps = proj.getComponents()
 
 // Access from issue
-const issue = await Issues.get("TEST-1")
+const issue = Issues.get("TEST-1")
 log(issue.projectObj?.name)
 ```
 
@@ -149,13 +149,13 @@ Work with Jira field metadata.
 | `Fields.id(name)` | Resolve field name to its ID |
 
 ```js
-const fields = await Fields.list()
+const fields = Fields.list()
 
-const priority = await Fields.get("Priority")
+const priority = Fields.get("Priority")
 log(priority.id)
 
 // Resolve custom field name to ID
-const fieldId = await Fields.id("Story Points")
+const fieldId = Fields.id("Story Points")
 log(fieldId)  // e.g., "customfield_10016"
 ```
 
@@ -173,16 +173,16 @@ CRUD operations on project components.
 | `Components.delete(id)` | Delete a component |
 
 ```js
-const comp = await Components.create("PROJ", "Backend", {
+const comp = Components.create("PROJ", "Backend", {
   description: "Backend services"
 })
 
-await Components.update(comp.id, { description: "Updated" })
+Components.update(comp.id, { description: "Updated" })
 
-const fetched = await Components.get(comp.id)
+const fetched = Components.get(comp.id)
 log(fetched.name)
 
-await Components.delete(comp.id)
+Components.delete(comp.id)
 ```
 
 ---
@@ -199,13 +199,13 @@ Manage project versions (releases).
 | `Versions.release(id)` | Release a version |
 
 ```js
-const version = await Versions.create("10001", "v2.0", {
+const version = Versions.create("10001", "v2.0", {
   description: "Major release"
 })
 
-await Versions.update(version.id, { description: "Updated" })
+Versions.update(version.id, { description: "Updated" })
 
-await Versions.release(version.id)
+Versions.release(version.id)
 ```
 
 ---
@@ -222,17 +222,17 @@ Access Jira Software boards.
 | `Boards.getIssues(boardId, options?)` | Get issues on a board |
 
 ```js
-const boards = await Boards.list({ projectKeyOrId: "PROJ" })
-const board = await Boards.get(1)
+const boards = Boards.list({ projectKeyOrId: "PROJ" })
+const board = Boards.get(1)
 
 // Get active sprints
-const sprints = await Boards.getSprints(1, "active")
+const sprints = Boards.getSprints(1, "active")
 for (const s of sprints) {
   log(s.name + ": " + s.state)
 }
 
 // Get board issues
-const issues = await Boards.getIssues(1, { maxResults: 20 })
+const issues = Boards.getIssues(1, { maxResults: 20 })
 ```
 
 ---
@@ -248,13 +248,13 @@ Work with Jira Software sprints.
 | `Sprints.moveIssues(sprintId, issueKeys)` | Move issues to a sprint |
 
 ```js
-const sprint = await Sprints.get(10)
+const sprint = Sprints.get(10)
 log(sprint.name)
 
-const issues = await Sprints.getIssues(10)
+const issues = Sprints.getIssues(10)
 
 // Move issues to sprint
-await Sprints.moveIssues(10, ["TEST-1", "TEST-2", "TEST-3"])
+Sprints.moveIssues(10, ["TEST-1", "TEST-2", "TEST-3"])
 ```
 
 ---
@@ -268,7 +268,7 @@ Get information about issue link types.
 | `Links.types()` | Get all issue link types (id, name, inward, outward) |
 
 ```js
-const linkTypes = await Links.types()
+const linkTypes = Links.types()
 for (const lt of linkTypes) {
   log(`${lt.name}: ${lt.inward} / ${lt.outward}`)
 }

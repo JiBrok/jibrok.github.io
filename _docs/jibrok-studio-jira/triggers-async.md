@@ -58,7 +58,7 @@ See [Limits](/docs/jibrok-studio-jira/limits) for async event limits including c
 
 ```js
 // Push with payload and issue context
-await asyncEvent.push(
+asyncEvent.push(
   "550e8400-e29b-41d4-a716-446655440000",
   { action: "process", itemId: 42 },
   { issueKey: "PROJ-123", delayInSeconds: 60 }

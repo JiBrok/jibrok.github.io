@@ -53,27 +53,27 @@ push() -> [Pending] -> consume() -> [Deleted] (auto-ack)
 
 ```js
 // Push a message
-const msg = await queue.push("notifications", { type: "email", to: "user@example.com" })
+const msg = queue.push("notifications", { type: "email", to: "user@example.com" })
 log(msg.id)
 
 // Push with priority (higher = processed first)
-await queue.push("tasks", { action: "process" }, 10)
+queue.push("tasks", { action: "process" }, 10)
 
 // Pull and process
-const messages = await queue.pull("tasks", 5)
+const messages = queue.pull("tasks", 5)
 for (const m of messages) {
   log(m.payload)
-  await queue.ack(m.id)
+  queue.ack(m.id)
 }
 
 // Consume (pull + auto-ack)
-const consumed = await queue.consume("events", 3)
+const consumed = queue.consume("events", 3)
 
 // Peek without changing status
-const peeked = await queue.peek("tasks", 5)
+const peeked = queue.peek("tasks", 5)
 
 // Get stats
-const stats = await queue.stats("tasks")
+const stats = queue.stats("tasks")
 log(stats.pending, stats.processing, stats.failed)
 ```
 
@@ -96,8 +96,8 @@ When a queue has a **context** configured (project/issue type restrictions), use
 | `queue.requeueFor(messageId, issue)` | Requeue with context check |
 
 ```js
-await queue.pushFor("project-queue", "PROJ-123", { data: "test" })
-await queue.pushFor("project-queue", issue, { data: "test" })
+queue.pushFor("project-queue", "PROJ-123", { data: "test" })
+queue.pushFor("project-queue", issue, { data: "test" })
 ```
 
 ---

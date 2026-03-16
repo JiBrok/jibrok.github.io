@@ -40,17 +40,17 @@ Low-level Jira REST API call. Use this for endpoints not covered by the high-lev
 
 ```js
 // GET request
-const res = await requestJira('/rest/api/3/myself')
+const res = requestJira('/rest/api/3/myself')
 log(res.body.displayName)
 
 // POST request
-const res = await requestJira('/rest/api/3/issue', {
+const res = requestJira('/rest/api/3/issue', {
   method: 'POST',
   body: { fields: { project: { key: 'PROJ' }, summary: 'Test', issuetype: { name: 'Task' } } }
 })
 
 // Error handling
-const res = await requestJira(`/rest/api/3/issue/${issueKey}`)
+const res = requestJira(`/rest/api/3/issue/${issueKey}`)
 if (!res.ok) {
   log(`Error: ${res.status}`)
 }
@@ -121,13 +121,13 @@ See [Data Storage](/docs/jibrok-studio-jira/data-storage) for full details.
 
 ```js
 // Trigger another script
-await asyncEvent.push("550e8400-e29b-41d4-a716-446655440000", {
+asyncEvent.push("550e8400-e29b-41d4-a716-446655440000", {
   action: "process",
   issueKey: "TEST-1"
 })
 
 // Trigger self with delay
-await asyncEvent.pushSelf({ step: 2 }, { delayInSeconds: 60 })
+asyncEvent.pushSelf({ step: 2 }, { delayInSeconds: 60 })
 ```
 
 ---

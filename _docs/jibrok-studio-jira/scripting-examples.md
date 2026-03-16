@@ -24,8 +24,8 @@ Practical recipes and patterns for common automation tasks. All examples can be 
 ### Update all issues in a project
 
 ```js
-const result = await Issues.search('project = PROJ AND status = Open')
-const report = await result.updateAll({ priority: 'Medium' })
+const result = Issues.search('project = PROJ AND status = Open')
+const report = result.updateAll({ priority: 'Medium' })
 
 return `Updated ${report.success} issues, ${report.failed} failed`
 ```
@@ -36,7 +36,7 @@ return `Updated ${report.success} issues, ${report.failed} failed`
 const keys = ['PROJ-1', 'PROJ-2', 'PROJ-3']
 
 for (const key of keys) {
-  await Issues.get(key).addComment('Reviewed and approved.')
+  Issues.get(key).addComment('Reviewed and approved.')
   log(`Commented on ${key}`)
 }
 
@@ -48,8 +48,8 @@ return `Commented on ${keys.length} issues`
 Move issues matching a query to a target status.
 
 ```js
-const result = await Issues.search('project = PROJ AND status = "To Do" AND created < -30d')
-const report = await result.transitionAll('In Progress')
+const result = Issues.search('project = PROJ AND status = "To Do" AND created < -30d')
+const report = result.transitionAll('In Progress')
 
 return `Transitioned ${report.success}/${report.success + report.failed}`
 ```
@@ -57,10 +57,10 @@ return `Transitioned ${report.success}/${report.success + report.failed}`
 ### Bulk assign issues
 
 ```js
-const user = await Users.current()
-const result = await Issues.search('project = PROJ AND assignee is EMPTY AND status = Open')
-const report = await result.forEach(async (issue) => {
-  await issue.assign(user.accountId)
+const user = Users.current()
+const result = Issues.search('project = PROJ AND assignee is EMPTY AND status = Open')
+const report = result.forEach((issue) => {
+  issue.assign(user.accountId)
 })
 
 return `Assigned ${report.success} issues to ${user.displayName}`
@@ -105,7 +105,7 @@ batch('export', {
 ### Issue count by status
 
 ```js
-const result = await Issues.search('project = PROJ')
+const result = Issues.search('project = PROJ')
 const counts = result.countBy('status')
 
 log('Issue counts by status:')
@@ -119,7 +119,7 @@ return counts
 ### Overdue issues report
 
 ```js
-const result = await Issues.search(
+const result = Issues.search(
   'project = PROJ AND duedate < now() AND status != Done'
 )
 const overdue = result.filter(issue => issue.isOverdue)
@@ -135,7 +135,7 @@ return { count: overdue.length }
 ### Assignee workload
 
 ```js
-const result = await Issues.search('project = PROJ AND status != Done')
+const result = Issues.search('project = PROJ AND status != Done')
 const workload = result.countBy('assignee')
 
 const sorted = Object.entries(workload).sort((a, b) => b[1] - a[1])
@@ -151,8 +151,8 @@ return Object.fromEntries(sorted)
 ### Created vs resolved trend
 
 ```js
-const created = await Issues.search('project = PROJ AND created >= -7d', { includeTotal: true })
-const resolved = await Issues.search('project = PROJ AND resolved >= -7d', { includeTotal: true })
+const created = Issues.search('project = PROJ AND created >= -7d', { includeTotal: true })
+const resolved = Issues.search('project = PROJ AND resolved >= -7d', { includeTotal: true })
 
 return {
   period: 'Last 7 days',
@@ -165,12 +165,12 @@ return {
 ### Component coverage
 
 ```js
-const project = await Projects.get('PROJ')
-const components = await project.getComponents()
+const project = Projects.get('PROJ')
+const components = project.getComponents()
 
 let results = []
 for (const comp of components) {
-  const issues = await Issues.search(
+  const issues = Issues.search(
     `project = PROJ AND component = "${comp.name}"`,
     { includeTotal: true }
   )
@@ -188,11 +188,11 @@ return results
 ### Sync labels from parent to subtasks
 
 ```js
-const parent = await Issues.get('PROJ-100')
-const subtasks = await Issues.search(`parent = ${parent.key}`)
+const parent = Issues.get('PROJ-100')
+const subtasks = Issues.search(`parent = ${parent.key}`)
 
-const report = await subtasks.forEach(async (sub) => {
-  await sub.update({ labels: parent.labels })
+const report = subtasks.forEach((sub) => {
+  sub.update({ labels: parent.labels })
   log(`Synced labels to ${sub.key}`)
 })
 
@@ -202,13 +202,13 @@ return `Synced labels to ${report.success} subtasks`
 ### Copy priority from epic to stories
 
 ```js
-const epic = await Issues.get('PROJ-50')
-const stories = await Issues.search(`"Epic Link" = ${epic.key}`)
+const epic = Issues.get('PROJ-50')
+const stories = Issues.search(`"Epic Link" = ${epic.key}`)
 
 let updated = 0
 for (const story of stories.issues) {
   if (story.priority !== epic.priority) {
-    await story.update({ priority: epic.priority })
+    story.update({ priority: epic.priority })
     updated++
   }
 }
@@ -219,14 +219,14 @@ return `Updated priority on ${updated}/${stories.issues.length} stories`
 ### Sync custom field across project
 
 ```js
-const source = await Issues.get('PROJ-100')
-const value = await source.field('Story Points')
+const source = Issues.get('PROJ-100')
+const value = source.field('Story Points')
 
-const targets = await Issues.search(
+const targets = Issues.search(
   'project = PROJ AND "Epic Link" = PROJ-100 AND "Story Points" is EMPTY'
 )
-const report = await targets.forEach(async (target) => {
-  await target.update({ 'Story Points': value })
+const report = targets.forEach((target) => {
+  target.update({ 'Story Points': value })
 })
 
 return `Synced Story Points to ${report.success} issues`
@@ -240,29 +240,29 @@ return `Synced Story Points to ${report.success} issues`
 
 ```js
 // Add a row
-await tables.addRow('inventory', {
+tables.addRow('inventory', {
   name: 'Widget A',
   quantity: 100,
   category: 'hardware'
 })
 
 // Find and update
-let row = await tables.findRow('inventory', { name: 'Widget A' })
+let row = tables.findRow('inventory', { name: 'Widget A' })
 if (row) {
-  await tables.updateRow('inventory', row.id, {
+  tables.updateRow('inventory', row.id, {
     quantity: row.data.quantity - 10
   })
 }
 
 // Delete by condition
-let deleted = await tables.deleteRows('inventory', { quantity: 0 })
+let deleted = tables.deleteRows('inventory', { quantity: 0 })
 return `Deleted ${deleted} empty rows`
 ```
 
 ### Upsert pattern
 
 ```js
-const upserted = await tables.upsert('inventory',
+const upserted = tables.upsert('inventory',
   { name: 'Widget A' },
   { name: 'Widget A', quantity: 100, category: 'hardware' }
 )
@@ -272,7 +272,7 @@ log(upserted._action)  // "created" or "updated"
 ### Sync Jira data to a table
 
 ```js
-const issues = await Issues.search(
+const issues = Issues.search(
   'project = PROJ AND status = Done AND resolved >= -7d',
   { fields: ['summary', 'assignee', 'resolved'] }
 )
@@ -284,16 +284,16 @@ let data = issues.map(i => ({
   resolved: i.created
 }))
 
-await tables.addRows('resolved-report', data)
+tables.addRows('resolved-report', data)
 return `Exported ${data.length} issues to table`
 ```
 
 ### Count and statistics
 
 ```js
-let total = await tables.count('inventory')
-let lowStock = await tables.count('inventory', { quantity: { $lt: 10 } })
-let outOfStock = await tables.count('inventory', { quantity: 0 })
+let total = tables.count('inventory')
+let lowStock = tables.count('inventory', { quantity: { $lt: 10 } })
+let outOfStock = tables.count('inventory', { quantity: 0 })
 
 return { total, lowStock, outOfStock, healthy: total - lowStock }
 ```
@@ -307,10 +307,10 @@ return { total, lowStock, outOfStock, healthy: total - lowStock }
 **Producer (pushes messages):**
 
 ```js
-let issues = await Issues.search('project = PROJ AND status = "To Do" AND created >= -1d')
+let issues = Issues.search('project = PROJ AND status = "To Do" AND created >= -1d')
 
 for (let issue of issues.issues) {
-  await queue.push('pending-review', {
+  queue.push('pending-review', {
     issueKey: issue.key,
     summary: issue.summary,
   })
@@ -322,14 +322,14 @@ return `Queued ${issues.issues.length} issues for review`
 **Consumer (processes messages):**
 
 ```js
-let messages = await queue.pull('pending-review', 5)
+let messages = queue.pull('pending-review', 5)
 
 for (let msg of messages) {
   try {
-    await Issues.get(msg.payload.issueKey).addComment('Auto-reviewed by script')
-    await queue.ack(msg.id)
+    Issues.get(msg.payload.issueKey).addComment('Auto-reviewed by script')
+    queue.ack(msg.id)
   } catch (e) {
-    await queue.reject(msg.id)
+    queue.reject(msg.id)
   }
 }
 
@@ -340,12 +340,12 @@ return `Processed ${messages.length} messages`
 
 ```js
 // Push with different priorities (higher = processed first)
-await queue.push('notifications', { type: 'critical', text: 'Server down' }, 10)
-await queue.push('notifications', { type: 'warning', text: 'High memory' }, 5)
-await queue.push('notifications', { type: 'info', text: 'Deploy complete' }, 1)
+queue.push('notifications', { type: 'critical', text: 'Server down' }, 10)
+queue.push('notifications', { type: 'warning', text: 'High memory' }, 5)
+queue.push('notifications', { type: 'info', text: 'Deploy complete' }, 1)
 
 // Pull returns highest priority first
-let msgs = await queue.pull('notifications', 3)
+let msgs = queue.pull('notifications', 3)
 for (let msg of msgs) {
   log(`[${msg.payload.type}] ${msg.payload.text}`)
 }
@@ -354,7 +354,7 @@ for (let msg of msgs) {
 ### Consume pattern (one-shot processing)
 
 ```js
-let messages = await queue.consume('email-queue', 5)
+let messages = queue.consume('email-queue', 5)
 
 for (let msg of messages) {
   log(`Sending email to ${msg.payload.to}: ${msg.payload.subject}`)
@@ -371,7 +371,7 @@ let queues = ['work-queue', 'email-queue', 'notification-queue']
 let report = []
 
 for (let name of queues) {
-  let stats = await queue.stats(name)
+  let stats = queue.stats(name)
   report.push({ name, ...stats })
   if (stats.failed > 0) {
     warn(`Queue "${name}" has ${stats.failed} failed messages`)
@@ -388,11 +388,11 @@ return report
 ### Scheduled: daily stale issue reminder
 
 ```js
-const result = await Issues.search(
+const result = Issues.search(
   'project = PROJ AND status != Done AND updated < -14d'
 )
-const report = await result.forEach(async (issue) => {
-  await issue.addComment('This issue has not been updated in 14 days. Please review.')
+const report = result.forEach((issue) => {
+  issue.addComment('This issue has not been updated in 14 days. Please review.')
 })
 
 return `Reminded ${report.success} stale issues`
@@ -401,11 +401,11 @@ return `Reminded ${report.success} stale issues`
 ### Scheduled: weekly status report to table
 
 ```js
-let open = await Issues.search('project = PROJ AND status != Done', { includeTotal: true })
-let created = await Issues.search('project = PROJ AND created >= -7d', { includeTotal: true })
-let resolved = await Issues.search('project = PROJ AND resolved >= -7d', { includeTotal: true })
+let open = Issues.search('project = PROJ AND status != Done', { includeTotal: true })
+let created = Issues.search('project = PROJ AND created >= -7d', { includeTotal: true })
+let resolved = Issues.search('project = PROJ AND resolved >= -7d', { includeTotal: true })
 
-await tables.addRow('weekly-stats', {
+tables.addRow('weekly-stats', {
   date: Date.create().jiraDate(),
   open: open.total,
   created: created.total,
@@ -429,7 +429,7 @@ let components = issue.components || []
 if (components.length > 0) {
   let accountId = assignments[components[0]]
   if (accountId) {
-    await issue.assign(accountId)
+    issue.assign(accountId)
     log(`Assigned ${issue.key} to ${components[0]} owner`)
   }
 }
@@ -476,11 +476,11 @@ return `${days} days`
 ### Scripted field: sum subtask story points
 
 ```js
-const subtasks = await Issues.search(`parent = ${issue.key}`)
+const subtasks = Issues.search(`parent = ${issue.key}`)
 
 let total = 0
 for (const sub of subtasks.issues) {
-  let sp = await sub.field('Story Points')
+  let sp = sub.field('Story Points')
   total += sp || 0
 }
 

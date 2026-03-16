@@ -33,12 +33,10 @@ Scripts run with the **actor configured on the script**.
 ```js
 // Daily cleanup: close stale issues with no updates in 30 days
 const jql = 'status = "Waiting for Customer" AND updated <= -30d'
-const results = await jqlSearch(jql, ["status"])
+const results = Issues.search(jql, { fields: ["status"] })
 
 for (const issue of results.issues) {
-  await editIssue(issue.key, {
-    transition: { id: "31" }  // "Close" transition
-  })
+  issue.transition("Close")
   log("Closed:", issue.key)
 }
 

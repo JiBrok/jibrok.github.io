@@ -34,12 +34,12 @@ Work with Jira issues - search, create, update, transition, and more.
 
 ```js
 // Get an issue
-const issue = await Issues.get("TEST-1")
+const issue = Issues.get("TEST-1")
 log(issue.summary)
 log(issue.status)
 
 // Search issues
-const results = await Issues.search("project = TEST AND status = Open", {
+const results = Issues.search("project = TEST AND status = Open", {
   maxResults: 10,
   fields: ["summary", "status"],
   includeTotal: true
@@ -50,21 +50,21 @@ for (const issue of results.issues) {
 }
 
 // Search all (auto-pagination)
-const all = await Issues.searchAll("project = TEST AND status = Open")
+const all = Issues.searchAll("project = TEST AND status = Open")
 log(`Total: ${all.issues.length}`)
 
 // Count
-const count = await Issues.count("project = TEST")
+const count = Issues.count("project = TEST")
 
 // Create an issue
-const created = await Issues.create("TEST", "Task", {
+const created = Issues.create("TEST", "Task", {
   summary: "New task",
   description: "Task description"
 })
 log(created.key)
 
 // Link issues
-await Issues.link("TEST-1", "Blocks", "TEST-2")
+Issues.link("TEST-1", "Blocks", "TEST-2")
 ```
 
 ### RichIssue properties
@@ -135,29 +135,29 @@ await Issues.link("TEST-1", "Blocks", "TEST-2")
 | `issue.clone(overrides?)` | Clone the issue | 1 |
 
 ```js
-const issue = await Issues.get("TEST-1")
+const issue = Issues.get("TEST-1")
 
 // Update fields
-await issue.update({ summary: "Updated title", priority: { name: "High" } })
+issue.update({ summary: "Updated title", priority: { name: "High" } })
 
 // Transition
-await issue.transition("Done")
-await issue.transition("In Progress", { comment: "Starting work" })
+issue.transition("Done")
+issue.transition("In Progress", { comment: "Starting work" })
 
 // Comments
-await issue.addComment("Plain text comment")
-const comments = await issue.getComments()
+issue.addComment("Plain text comment")
+const comments = issue.getComments()
 
 // Assignment
-const user = await Users.current()
-await issue.assign(user.accountId)
-await issue.unassign()
+const user = Users.current()
+issue.assign(user.accountId)
+issue.unassign()
 
 // Clone with overrides
-const copy = await issue.clone({ summary: "Copy of " + issue.summary })
+const copy = issue.clone({ summary: "Copy of " + issue.summary })
 
 // Reload fresh data
-await issue.reload()
+issue.reload()
 ```
 
 ### SearchResult
@@ -198,7 +198,7 @@ await issue.reload()
 | `expand` | `string[]` | - | Expand options |
 
 ```js
-const results = await Issues.search("project = TEST", { maxResults: 50 })
+const results = Issues.search("project = TEST", { maxResults: 50 })
 
 // Iterate
 const keys = results.keys
@@ -208,7 +208,7 @@ const byStatus = results.groupBy("status")
 
 // Pagination
 if (results.hasMore) {
-  const page2 = await results.nextPage()
+  const page2 = results.nextPage()
 }
 ```
 
@@ -218,7 +218,7 @@ Field names in plain objects are automatically resolved to Jira field IDs:
 
 ```js
 // 'Story Points' -> 'customfield_10016'
-await Issues.create("PROJ", "Story", { "Story Points": 5, summary: "My story" })
+Issues.create("PROJ", "Story", { "Story Points": 5, summary: "My story" })
 ```
 
 This works in `Issues.create()`, `issue.update()`, and other methods that accept field objects.
@@ -240,7 +240,7 @@ Common fields are automatically transformed to Jira API format:
 `Issues.get()` returns a chainable promise - methods can be chained before `await`:
 
 ```js
-await Issues.get("PROJ-1").update({ summary: "New" }).addComment("Updated!")
+Issues.get("PROJ-1").update({ summary: "New" }).addComment("Updated!")
 ```
 
 ---
@@ -256,18 +256,18 @@ await Issues.get("PROJ-1").update({ summary: "New" }).addComment("Updated!")
 | `errors` | Array of error details |
 
 ```js
-const result = await Issues.search('project = TEST AND status = Open')
+const result = Issues.search('project = TEST AND status = Open')
 
 // Update all
-const report = await result.updateAll({ priority: 'Medium' })
+const report = result.updateAll({ priority: 'Medium' })
 log(`Updated ${report.success}, failed ${report.failed}`)
 
 // Transition all
-const report2 = await result.transitionAll('In Progress')
+const report2 = result.transitionAll('In Progress')
 
 // Custom processing
-const report3 = await result.forEach(async (issue) => {
-  await issue.addComment('Batch processed')
+const report3 = result.forEach((issue) => {
+  issue.addComment('Batch processed')
 })
 ```
 

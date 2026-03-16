@@ -104,37 +104,37 @@ Methods accepting `opts?` support:
 
 ```js
 // List all workflow schemes
-const schemes = await WorkflowSchemes.list()
+const schemes = WorkflowSchemes.list()
 log(schemes.length)
 
 // Get a specific screen
-const screen = await Screens.get('10001')
+const screen = Screens.get('10001')
 log(screen.name)
 
 // Create a project role
-const role = await Roles.create({
+const role = Roles.create({
   name: 'Release Manager',
   description: 'Manages releases'
 })
 
 // List issue types for a project
-const types = await IssueTypes.forProject('PROJ')
+const types = IssueTypes.forProject('PROJ')
 for (const t of types) {
   log(t.name, t.id)
 }
 
 // Search dashboards
-const dashboards = await Dashboards.search({ maxResults: 10 })
+const dashboards = Dashboards.search({ maxResults: 10 })
 for (const d of dashboards) {
   log(d.name)
 }
 
 // Search statuses by name
-const statuses = await Statuses.list({ searchString: 'Done', maxResults: 50 })
+const statuses = Statuses.list({ searchString: 'Done', maxResults: 50 })
 log(statuses.length)
 
 // List all Jira events
-const events = await Events.list()
+const events = Events.list()
 for (const e of events) {
   log(e.name)
 }
@@ -179,24 +179,24 @@ The `Assets` namespace provides access to JSM Assets (CMDB) for managing objects
 
 ```js
 // Search for laptops
-const result = await Assets.search('objectType = "Laptop"', {
+const result = Assets.search('objectType = "Laptop"', {
   resultPerPage: 50,
   includeAttributes: true
 })
 log(`Found ${result.objectEntries.length} laptops`)
 
 // Get a specific object
-const obj = await Assets.getObject('123')
+const obj = Assets.getObject('123')
 log(obj.label)
 
 // Create an object
-const newObj = await Assets.createObject('15', [
+const newObj = Assets.createObject('15', [
   { objectTypeAttributeId: '100', objectAttributeValues: [{ value: 'My Laptop' }] },
   { objectTypeAttributeId: '101', objectAttributeValues: [{ value: 'Dell' }] }
 ])
 
 // List schemas
-const schemas = await Assets.getSchemas()
+const schemas = Assets.getSchemas()
 for (const s of schemas.objectschemas) {
   log(s.name, s.id)
 }

@@ -78,24 +78,24 @@ When a script runs via an async event trigger, the `event` variable contains:
 
 ```js
 // Push event to another script
-const result = await asyncEvent.push(
+const result = asyncEvent.push(
   "550e8400-e29b-41d4-a716-446655440000",
   {action: "process", itemId: 42}
 )
 log(result.jobId)
 
 // Push with delay and issue context
-await asyncEvent.push(
+asyncEvent.push(
   "550e8400-e29b-41d4-a716-446655440000",
   {action: "cleanup"},
   {issueKey: "PROJ-123", delayInSeconds: 60}
 )
 
 // Re-trigger current script (e.g. multi-step processing)
-await asyncEvent.pushSelf({step: 2, batch: nextBatch})
+asyncEvent.pushSelf({step: 2, batch: nextBatch})
 
 // Re-trigger with delay (polling pattern)
-await asyncEvent.pushSelf(
+asyncEvent.pushSelf(
   {retryCount: (event.payload.retryCount || 0) + 1},
   {delayInSeconds: 300}  // retry in 5 minutes
 )
@@ -109,13 +109,13 @@ log("Source:", event.source)
 log("Payload:", event.payload)
 
 if (event.issueKey) {
-  const issue = await Issues.get(event.issueKey)
+  const issue = Issues.get(event.issueKey)
   log("Processing issue:", issue.summary)
 }
 
 // Chain to next step
 if (event.payload.step < 3) {
-  await asyncEvent.pushSelf({
+  asyncEvent.pushSelf({
     step: event.payload.step + 1,
     data: event.payload.data,
   })

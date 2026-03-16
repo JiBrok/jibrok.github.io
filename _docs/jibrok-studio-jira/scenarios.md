@@ -170,8 +170,8 @@ batch('collect', 'project = PROJ', (issue, ctx) => {
   emit({ key: issue.key, summary: issue.summary })
 })
 
-step('report', async (ctx) => {
-  var page = await getStepData('collect', { offset: 0, limit: 100 })
+step('report', (ctx) => {
+  var page = getStepData('collect', { offset: 0, limit: 100 })
   // page = { items: [{key:'PROJ-1', summary:'...'}, ...], total: 1500 }
   log('Total collected: ' + page.total)
 })

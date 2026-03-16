@@ -84,10 +84,10 @@ const doc = Adf.doc(
   )
 )
 
-await issue.addComment(doc)
+issue.addComment(doc)
 
 // Reader functions
-const issue = await Issues.get("PROJ-1")
+const issue = Issues.get("PROJ-1")
 const text = Adf.toText(issue.fields.description)
 const links = Adf.extractLinks(issue.fields.description)
 const mentions = Adf.extractMentions(issue.fields.description)

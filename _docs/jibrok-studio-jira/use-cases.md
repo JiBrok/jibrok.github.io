@@ -21,10 +21,10 @@ Mass-update issue fields by JQL query.
 **Features used:** Issues.searchAll, issue.update
 
 ```js
-const issues = await Issues.searchAll("project = PROJ AND status = Open AND priority = Low")
+const issues = Issues.searchAll("project = PROJ AND status = Open AND priority = Low")
 
 for (const issue of issues.issues) {
-  await issue.update({ priority: { name: "Medium" } })
+  issue.update({ priority: { name: "Medium" } })
   log(`Updated ${issue.key}`)
 }
 
@@ -41,7 +41,7 @@ Automatically assign issues when created, based on component or issue type.
 
 ```js
 // Trigger: Event - issue_created
-const issue = await Issues.get(issueKey)
+const issue = Issues.get(issueKey)
 
 const assignmentRules = {
   "Backend": "5b10ac8d82e05b22cc7d4ef5",
@@ -51,7 +51,7 @@ const assignmentRules = {
 for (const comp of issue.components) {
   const accountId = assignmentRules[comp.name]
   if (accountId) {
-    await issue.assign(accountId)
+    issue.assign(accountId)
     log(`Assigned ${issue.key} to ${comp.name} lead`)
     break
   }
@@ -68,13 +68,13 @@ Scheduled script to find overdue issues and notify via comments.
 
 ```js
 // Trigger: Scheduled - Daily
-const overdue = await Issues.searchAll(
+const overdue = Issues.searchAll(
   "project = PROJ AND status != Done AND duedate < now()"
 )
 
 for (const issue of overdue.issues) {
   const days = DateUtils.diffDays(issue.fields.duedate, new Date())
-  await issue.addComment(`This issue is ${days} days overdue. Please review.`)
+  issue.addComment(`This issue is ${days} days overdue. Please review.`)
   log(`Notified: ${issue.key} (${days} days overdue)`)
 }
 
@@ -94,11 +94,11 @@ Collect project statistics into a custom table for reporting.
 const projects = ["PROJ", "DEV", "OPS"]
 
 for (const proj of projects) {
-  const open = await Issues.count(`project = ${proj} AND status != Done`)
-  const bugs = await Issues.count(`project = ${proj} AND issuetype = Bug AND status != Done`)
-  const created = await Issues.count(`project = ${proj} AND created >= -7d`)
+  const open = Issues.count(`project = ${proj} AND status != Done`)
+  const bugs = Issues.count(`project = ${proj} AND issuetype = Bug AND status != Done`)
+  const created = Issues.count(`project = ${proj} AND created >= -7d`)
 
-  await tables.addRow("daily_stats", {
+  tables.addRow("daily_stats", {
     project: proj,
     date: DateUtils.format(new Date(), "YYYY-MM-DD"),
     open_issues: open,
@@ -118,14 +118,14 @@ Sync a field value from parent to all subtasks when updated.
 
 ```js
 // Trigger: Event - issue_updated
-const parent = await Issues.get(issueKey)
-const subtasks = await Issues.search(`parent = ${issueKey}`, {
+const parent = Issues.get(issueKey)
+const subtasks = Issues.search(`parent = ${issueKey}`, {
   fields: ["priority"]
 })
 
 for (const sub of subtasks.issues) {
   if (sub.priority !== parent.priority) {
-    await sub.update({ priority: { name: parent.priority } })
+    sub.update({ priority: { name: parent.priority } })
     log(`Synced priority to ${sub.key}`)
   }
 }
@@ -172,10 +172,10 @@ Chain processing steps using async events and queues.
 
 ```js
 // Script 1: Trigger async processing chain
-const issues = await Issues.searchAll("project = PROJ AND labels = needs-review")
+const issues = Issues.searchAll("project = PROJ AND labels = needs-review")
 
 for (const issue of issues.issues) {
-  await queue.push("review-queue", {
+  queue.push("review-queue", {
     issueKey: issue.key,
     priority: issue.priority
   })
@@ -186,12 +186,12 @@ log(`Queued ${issues.issues.length} issues for review`)
 
 ```js
 // Script 2: Process the queue (Scheduled trigger)
-const messages = await queue.consume("review-queue", 10)
+const messages = queue.consume("review-queue", 10)
 
 for (const msg of messages) {
-  const issue = await Issues.get(msg.payload.issueKey)
-  await issue.addComment("Automated review: checked by scheduled job")
-  await issue.update({ labels: [...issue.labels.filter(l => l !== "needs-review"), "reviewed"] })
+  const issue = Issues.get(msg.payload.issueKey)
+  issue.addComment("Automated review: checked by scheduled job")
+  issue.update({ labels: [...issue.labels.filter(l => l !== "needs-review"), "reviewed"] })
   log(`Reviewed: ${msg.payload.issueKey}`)
 }
 ```
@@ -209,7 +209,7 @@ Automatically move unfinished issues to the next sprint when a sprint closes.
 const boardId = event.boardId
 
 // Find the next active/future sprint
-const sprints = await Boards.getSprints(boardId, "active")
+const sprints = Boards.getSprints(boardId, "active")
 if (sprints.length === 0) {
   return "No active sprint to move issues to"
 }
@@ -218,13 +218,13 @@ const nextSprint = sprints[0]
 
 // Get incomplete issues from closed sprint
 const closedSprintId = event.sprintId
-const issues = await Sprints.getIssues(closedSprintId, {
+const issues = Sprints.getIssues(closedSprintId, {
   jql: "status != Done"
 })
 
 const keys = issues.issues.map(i => i.key)
 if (keys.length > 0) {
-  await Sprints.moveIssues(nextSprint.id, keys)
+  Sprints.moveIssues(nextSprint.id, keys)
   log(`Moved ${keys.length} issues to ${nextSprint.name}`)
 }
 
@@ -241,13 +241,13 @@ Clone issues with modifications - useful for recurring tasks.
 
 ```js
 // Clone a template issue with new values
-const template = await Issues.get("PROJ-100")
+const template = Issues.get("PROJ-100")
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 const month = months[new Date().getMonth()]
 
-const clone = await template.clone({
+const clone = template.clone({
   summary: `Monthly Report - ${month}`,
   description: `Monthly report for ${month}. Based on template ${template.key}.`
 })
@@ -266,14 +266,14 @@ Export Jira data to a custom table for reporting or integration.
 
 ```js
 // Trigger: Scheduled - Weekly
-const issues = await Issues.searchAll(
+const issues = Issues.searchAll(
   "project = PROJ AND resolved >= -7d",
   { fields: ["summary", "status", "assignee", "resolutiondate", "priority"] }
 )
 
 // Save to custom table
 for (const issue of issues.issues) {
-  await tables.addRow("weekly_resolved", {
+  tables.addRow("weekly_resolved", {
     key: issue.key,
     summary: issue.summary,
     assignee: issue.assignee ?? "Unassigned",
@@ -305,7 +305,7 @@ Validate that required fields are set before a workflow transition completes.
 
 ```js
 // Trigger: Workflow Validator
-const issue = await Issues.get(issueKey)
+const issue = Issues.get(issueKey)
 
 // Only validate when transitioning to "Done"
 if (event.transition.to_status === "Done") {
@@ -332,19 +332,19 @@ Automatically perform actions after a workflow transition.
 
 ```js
 // Trigger: Workflow Post Function
-const issue = await Issues.get(issueKey)
+const issue = Issues.get(issueKey)
 
 // When issue moves to "In Progress", auto-assign to current user
 if (event.transition.to_status === "In Progress" && !issue.isAssigned) {
-  await issue.assign(currentUser.accountId)
-  await issue.addComment(`Auto-assigned to ${currentUser.displayName} on transition start`)
+  issue.assign(currentUser.accountId)
+  issue.addComment(`Auto-assigned to ${currentUser.displayName} on transition start`)
   log(`Assigned ${issue.key} to ${currentUser.displayName}`)
 }
 
 // When issue moves to "Done", set resolution date label
 if (event.transition.to_status === "Done") {
   const today = DateUtils.format(new Date(), "YYYY-MM-DD")
-  await issue.update({
+  issue.update({
     labels: [...issue.labels, `resolved-${today}`]
   })
 }
@@ -363,10 +363,10 @@ Process incoming HTTP requests from external systems.
 log("Received:", webhook.method, webhook.path)
 
 if (webhook.body && webhook.body.issueKey) {
-  const issue = await Issues.get(webhook.body.issueKey)
+  const issue = Issues.get(webhook.body.issueKey)
   const source = webhook.headers["x-source"] ?? "unknown"
 
-  await issue.addComment(`External notification from ${source}: ${webhook.body.message ?? "no message"}`)
+  issue.addComment(`External notification from ${source}: ${webhook.body.message ?? "no message"}`)
   log(`Processed webhook for ${issue.key}`)
 
   return { status: "ok", issue: issue.key }

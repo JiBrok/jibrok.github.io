@@ -79,8 +79,8 @@ log("Query:", JSON.stringify(webhook.query))
 
 // Process JSON body
 if (webhook.body && webhook.body.issueKey) {
-  const issue = await Issues.get(webhook.body.issueKey)
-  await issue.addComment("Processed via webhook")
+  const issue = Issues.get(webhook.body.issueKey)
+  issue.addComment("Processed via webhook")
   return { status: "ok", issue: issue.key }
 }
 
