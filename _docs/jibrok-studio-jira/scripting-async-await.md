@@ -62,26 +62,25 @@ for (const key of keys) {
 The `async` keyword is supported but optional. Both forms work identically:
 
 ```js
-// Without async keyword (works thanks to auto-await):
-function fetchValue() {
-  return Promise.resolve(10)
+// async keyword is optional - both forms work identically:
+function fetchCount() {
+  return Issues.count("project = TEST")
 }
 
-// With explicit async/await:
-async function fetchValue() {
-  return await Promise.resolve(10)
+async function fetchCount() {
+  return await Issues.count("project = TEST")
 }
 
-const val = fetchValue()
-log(val)   // => 10
+const val = fetchCount()
+log(val)   // => number of issues
 ```
 
 ### Async arrow functions
 
 ```js
-const double = (x) => Promise.resolve(x * 2)
-const val = double(5)
-log(val)   // => 10
+const getTitle = (key) => Issues.get(key).summary
+const val = getTitle("TEST-1")
+log(val)   // => issue summary
 ```
 
 ---
