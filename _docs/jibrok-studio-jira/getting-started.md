@@ -132,18 +132,7 @@ Saved scripts appear in the [Script Library](/docs/jibrok-studio-jira/script-lib
 
 ---
 
-## What to do next
-
-After your first script, here is a checklist to explore the platform:
-
-- [ ] **Browse the API** - open the [Script Engine Reference](/docs/jibrok-studio-jira/script-engine-reference) panel (Help button in the Console toolbar) and explore available functions with examples
-- [ ] **Search and update issues** - try `Issues.search()` and `issue.update()` in the Console. See [Scripting API](/docs/jibrok-studio-jira/scripting-api) for all available namespaces
-- [ ] **Save a script** - save your work to the [Library](/docs/jibrok-studio-jira/script-library) with a name, folder, and labels
-- [ ] **Set up a trigger** - attach a [trigger](/docs/jibrok-studio-jira/triggers) to run your script on a schedule, on Jira events, or on workflow transitions. See [Choose the right trigger](/docs/jibrok-studio-jira/triggers-comparison) to compare options
-- [ ] **Try Sandbox Mode** - toggle Sandbox Mode on and run a script that modifies data. Write operations are simulated so you can verify logic safely
-- [ ] **Explore use cases** - check [Use Cases](/docs/jibrok-studio-jira/use-cases) and [Scripting Examples](/docs/jibrok-studio-jira/scripting-examples) for practical recipes
-
-### Based on your goal
+## Based on your goal
 
 | I want to... | Start here |
 |---|---|
@@ -156,11 +145,3 @@ After your first script, here is a checklist to explore the platform:
 | Validate workflow transitions | [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator) - block invalid transitions |
 | Receive external webhooks | [Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook) - trigger scripts via HTTP |
 
----
-
-## Reference
-
-- [Script Console](/docs/jibrok-studio-jira/script-console) - Full console features: editor, output, history, variables
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and sandbox details
-- [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Complete API reference
-- [Limits](/docs/jibrok-studio-jira/limits) - Platform quotas and constraints

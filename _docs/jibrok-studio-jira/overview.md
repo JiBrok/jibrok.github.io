@@ -8,6 +8,12 @@ tags:
   - cloud
   - overview
   - introduction
+related:
+  - jibrok-studio-jira/getting-started
+  - jibrok-studio-jira/script-console
+  - jibrok-studio-jira/triggers
+  - jibrok-studio-jira/use-cases
+  - jibrok-studio-jira/scripting-api
 ---
 
 * TOC
@@ -52,18 +58,12 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 - **Automation engineers** building advanced workflows beyond native Jira capabilities
 - **Teams** that need computed fields, conditional form logic, or custom data storage
 
-> **Note:** JiBrok Studio for Jira Cloud is available to **Jira site administrators only**. Non-admin users cannot access the app interface.
-
 ---
 
 ## Next steps
 
 - [Getting Started](/docs/jibrok-studio-jira/getting-started) - Install the app and run your first script
 - [Script Console](/docs/jibrok-studio-jira/script-console) - Learn the editor and execution features
-- [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and sandbox details
 - [Scripting API](/docs/jibrok-studio-jira/scripting-api) - Full API reference (Issues, Users, Projects, Fields, utilities)
 - [Use Cases](/docs/jibrok-studio-jira/use-cases) - Practical scripting examples
 - [Triggers](/docs/jibrok-studio-jira/triggers) - Automate script execution
-- [Security](/docs/jibrok-studio-jira/security) - Security model and data protection
-- [FAQ & Troubleshooting](/docs/jibrok-studio-jira/faq) - Answers to common questions
-- [Limits](/docs/jibrok-studio-jira/limits) - Platform quotas and constraints
