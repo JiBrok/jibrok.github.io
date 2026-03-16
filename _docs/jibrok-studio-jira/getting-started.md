@@ -8,6 +8,12 @@ tags:
   - cloud
   - getting-started
   - installation
+related:
+  - jibrok-studio-jira/script-console
+  - jibrok-studio-jira/triggers
+  - jibrok-studio-jira/use-cases
+  - jibrok-studio-jira/scripting-api
+  - jibrok-studio-jira/scripting-language
 ---
 
 * TOC

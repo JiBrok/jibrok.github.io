@@ -1,5 +1,5 @@
 {% unless page.url == "/" %}
-<nav aria-label="Breadcrumb" class="uk-breadcrumb uk-margin-small-bottom" style="display: none;">
+<nav aria-label="Breadcrumb" class="uk-breadcrumb uk-margin-small-bottom">
   <ul vocab="https://schema.org/" typeof="BreadcrumbList">
     <li property="itemListElement" typeof="ListItem">
       <a property="item" typeof="WebPage" href="{{ site.baseurl }}/">
@@ -7,7 +7,7 @@
       </a>
       <meta property="position" content="1">
     </li>
-    
+
     {% if page.collection == 'docs' %}
       <li property="itemListElement" typeof="ListItem">
         <a property="item" typeof="WebPage" href="{{ site.baseurl }}/docs/">
@@ -15,17 +15,35 @@
         </a>
         <meta property="position" content="2">
       </li>
-      
+
       {% assign url_parts = page.url | split: '/' %}
       {% if url_parts.size > 3 %}
         {% assign section = url_parts[2] %}
+        {% comment %} Map product keys to display names {% endcomment %}
+        {% case section %}
+          {% when 'jibrok-studio-jira' %}{% assign section_name = 'JiBrok Studio' %}
+          {% when 'tis-cloud' %}{% assign section_name = 'Time in Status' %}
+          {% when 'timer-cloud' %}{% assign section_name = 'Timer / SLA' %}
+          {% when 'stopwatch-cloud' %}{% assign section_name = 'Stopwatch' %}
+          {% when 'jbcf-cloud' %}{% assign section_name = 'Calculated Fields' %}
+          {% when 'message-field-cloud' %}{% assign section_name = 'Message Field' %}
+          {% when 'message-field' %}{% assign section_name = 'Message Field (DC)' %}
+          {% when 'linked-issues-cloud' %}{% assign section_name = 'Display Linked Issues' %}
+          {% when 'jsm-fields-panel-cloud' %}{% assign section_name = 'Fields Panel for JSM' %}
+          {% when 'time-between-dates-cloud' %}{% assign section_name = 'Time Between Dates' %}
+          {% when 'user-helper-cloud' %}{% assign section_name = 'User Helper' %}
+          {% when 'time-in-status' %}{% assign section_name = 'Time in Status (DC)' %}
+          {% when 'su' %}{% assign section_name = 'Switch to User (DC)' %}
+          {% when 'calculated-custom-fields' %}{% assign section_name = 'Calculated Fields (DC)' %}
+          {% else %}{% assign section_name = section | replace: '-', ' ' | capitalize %}
+        {% endcase %}
         <li property="itemListElement" typeof="ListItem">
           <a property="item" typeof="WebPage" href="{{ site.baseurl }}/docs/{{ section }}/">
-            <span property="name">{{ section | replace: '-', ' ' | capitalize }}</span>
+            <span property="name">{{ section_name }}</span>
           </a>
           <meta property="position" content="3">
         </li>
-        
+
         <li property="itemListElement" typeof="ListItem">
           <span property="name">{{ page.title }}</span>
           <meta property="position" content="4">

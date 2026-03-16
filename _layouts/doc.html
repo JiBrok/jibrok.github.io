@@ -10,17 +10,28 @@ layout: default
                 <div class="sidebar-docs uk-position-fixed uk-margin-top">
                     {% assign product_nav = site.data.navigation_docs[page.key] %}
                     {% if product_nav %}
+                        <ul class="sidebar-accordion" uk-accordion="multiple: true; collapsible: true">
                         {% for section in product_nav %}
-                        <h5>{{ section.title }}</h5>
-                        <ul class="uk-nav uk-nav-default doc-nav">
+                            {% assign section_has_active = false %}
                             {% for doc in section.docs %}
-                            {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
-                            {% assign p = site.docs | where:"url", doc_url | first %}
-                            <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a
-                                    href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                                {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                                {% if doc_url == page.url %}{% assign section_has_active = true %}{% endif %}
                             {% endfor %}
-                        </ul>
+                            <li{% if section_has_active %} class="uk-open"{% endif %}>
+                                <a class="uk-accordion-title sidebar-section-title" href>{{ section.title }}</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default doc-nav">
+                                        {% for doc in section.docs %}
+                                        {% assign doc_url = doc | prepend:"/docs/" | append:"/" %}
+                                        {% assign p = site.docs | where:"url", doc_url | first %}
+                                        <li class="{% if doc_url == page.url %}uk-active{% endif %}"><a
+                                                href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </li>
                         {% endfor %}
+                        </ul>
                     {% endif %}
                 </div>
             </div>
@@ -67,7 +78,10 @@ layout: default
                         offset: 120
                     });
                     try{
-                        document.getElementsByClassName('sidebar-docs')[0].scrollTo(0, document.getElementsByClassName('uk-active')[0].offsetTop - 300)
+                        var activeEl = document.querySelector('.sidebar-docs li.uk-active');
+                        if (activeEl) {
+                            document.getElementsByClassName('sidebar-docs')[0].scrollTo(0, activeEl.offsetTop - 300);
+                        }
                     } catch (e){
                         //ignore
                     }

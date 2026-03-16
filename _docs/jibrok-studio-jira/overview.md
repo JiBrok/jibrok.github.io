@@ -1,5 +1,5 @@
 ---
-title: JiBrok Studio for Jira Cloud -Overview
+title: Overview
 key: jibrok-studio-jira
 excerpt: "JiBrok Studio for Jira Cloud is a Forge-based scripting platform. Automate workflows, create scripted fields, and extend Jira with JavaScript, Python, and Groovy."
 category: getting-started
@@ -53,20 +53,6 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 - **Teams** that need computed fields, conditional form logic, or custom data storage
 
 > **Note:** JiBrok Studio for Jira Cloud is available to **Jira site administrators only**. Non-admin users cannot access the app interface.
-
-> **Ready to try it?** [Install JiBrok Studio from Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) -free to get started.
-
----
-
-## How it works
-
-1. **Write** scripts in the built-in code editor using a JavaScript-like language (Python and Groovy engines also available)
-2. **Test** interactively in the Console with sandbox mode for safe experimentation
-3. **Save** scripts to the Library for reuse and organization
-4. **Automate** by attaching triggers - schedules, events, form changes, and more
-5. **Store** structured data in Custom Tables and process async workloads via Message Queues
-
-All scripts run inside a Forge-powered sandbox with strict resource limits. There is no access to external networks, filesystems, or browser APIs - only the Jira REST API is available. Learn more about the [Forge platform architecture](/docs/jibrok-studio-jira/forge-platform-security).
 
 ---
 

@@ -6,7 +6,6 @@
 jibrok-studio-jira:
   - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:24px;height:24px"> JiBrok Studio for Jira Cloud
     docs:
-    - jibrok-studio-jira/landing
     - jibrok-studio-jira/overview
     - jibrok-studio-jira/getting-started
 

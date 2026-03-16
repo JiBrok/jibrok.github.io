@@ -6,7 +6,20 @@
     {% assign minCommonTags = 2 %}
     {% assign maxRelatedCounter = 0 %}
     {% assign genericTags = 'doc,cloud,server,datacenter,field-creation' | split: ',' %}
-    
+
+    {% comment %} Manual curation via front matter {% endcomment %}
+    {% if page.related %}
+      <ul class="uk-list link-secondary">
+      {% for rel_path in page.related %}
+        {% assign rel_url = rel_path | prepend: "/docs/" | append: "/" %}
+        {% assign rel_doc = site.docs | where: "url", rel_url | first %}
+        {% if rel_doc %}
+          <li><a href="{{ rel_doc.url | relative_url }}">{{ rel_doc.title }}</a></li>
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      </ul>
+    {% else %}
     {% comment %} First, try to find docs from same product (by key) with smart prioritization {% endcomment %}
     {% if page.key %}
       {% assign sameProductDocs = site.docs | where: "key", page.key | where_exp: "doc", "doc.url != page.url" %}
@@ -15,7 +28,7 @@
         {% assign currentPath = page.path | split: "/" %}
         {% assign prioritizedDocs = '' | split: '' %}
         {% assign otherDocs = '' | split: '' %}
-        
+
         {% for doc in sameProductDocs %}
           {% assign docPath = doc.path | split: "/" %}
           {% if currentPath[1] == docPath[1] %}
@@ -24,9 +37,9 @@
             {% assign otherDocs = otherDocs | push: doc %}
           {% endif %}
         {% endfor %}
-        
+
         {% assign allSameProductDocs = prioritizedDocs | concat: otherDocs %}
-        
+
         <ul class="uk-list link-secondary">
         {% for doc in allSameProductDocs limit: maxRelated %}
           <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
@@ -100,6 +113,7 @@
           </ul>
         {% endif %}
       {% endif %}
+    {% endif %}
     {% endif %}
   </div>
 {% endif %}

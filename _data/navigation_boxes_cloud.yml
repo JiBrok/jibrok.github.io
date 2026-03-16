@@ -55,12 +55,6 @@
 #  icon:
 #  href: /Cloud-discount-calculator/
 
-- title: Other apps
-  desc: More plugins will be added soon
-  icon: bolt
-  href: https://marketplace.atlassian.com/vendors/1216083/jibrok
-
-
 - title: Documentation for other apps
   desc:
   icon: confluence
