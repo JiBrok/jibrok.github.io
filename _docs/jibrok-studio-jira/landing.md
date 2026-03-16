@@ -2,6 +2,7 @@
 layout: page
 title: JiBrok Studio for Jira Cloud
 key: jibrok-studio-jira
+permalink: /docs/jibrok-studio-jira/
 width: expand
 excerpt: Scripting platform for Jira Cloud - automate, extend, and customize your Jira workflows with JavaScript, Python, and Groovy
 category: getting-started

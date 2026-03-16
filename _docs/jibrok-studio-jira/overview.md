@@ -25,6 +25,8 @@ Write, manage, and automate scripts that interact with your Jira data - directly
 
 Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API.
 
+> [Get JiBrok Studio on Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) — free to get started.
+
 <a href="/uploads/jibrok-studio-jira/console-interface-overview.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="JiBrok Studio Script Console interface" width="2754" height="1736" style="width:100%;height:auto;" loading="lazy"></a>
 
