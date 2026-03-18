@@ -38,7 +38,7 @@ Product documentation published on this Website is provided for informational pu
 
 ## 4. Third-Party Links
 
-The Website may contain links to third-party websites (including Atlassian Marketplace, Drata Trust Center, and others). We do not control and are not responsible for the content, privacy practices, or availability of third-party websites.
+The Website may contain links to third-party websites (including Atlassian Marketplace and others). We do not control and are not responsible for the content, privacy practices, or availability of third-party websites.
 
 ---
 

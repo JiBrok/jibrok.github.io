@@ -58,7 +58,7 @@ width: expand
             <div>
                 <p>JiBrok is an EU-based software vendor specializing in professional extensions for Atlassian Jira. Since our first app launch on the Atlassian Marketplace in 2018, we have grown into a trusted provider serving over 1,000 companies worldwide.</p>
                 <p>Our portfolio spans 23+ apps across Jira Cloud and Data Center/Server, covering workflow automation, custom fields, time tracking, SLA management, and scripting. As Atlassian shifted toward Cloud, we embraced the Forge platform early — building our flagship product, JiBrok Studio, as a fully Forge-native application with zero external infrastructure.</p>
-                <p>Security and compliance are central to how we operate. We achieved SOC 2 Type II certification in 2024, maintain continuous compliance monitoring through Drata, and publish transparent security documentation including CAIQ assessments and Data Processing Agreements for every Cloud product.</p>
+                <p>Security and compliance are central to how we operate. We achieved SOC 2 Type II certification in 2024 and publish transparent security documentation including CAIQ assessments and Data Processing Agreements for every Cloud product.</p>
             </div>
             <div>
                 <h4 class="uk-text-uppercase uk-text-muted" style="letter-spacing:0.1em; font-size:0.85rem;">Milestones</h4>
@@ -137,10 +137,10 @@ width: expand
             </div>
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
-                    <a class="uk-position-cover" href="https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3" target="_blank"></a>
+                    <a class="uk-position-cover" href="/trust-center/"></a>
                     <span data-uk-icon="icon: check; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin-small">Continuous Compliance</h3>
-                    <p class="uk-text-small">Monitored via Drata, regular audits, and published CAIQ assessments. Compliance is ongoing, not one-time.</p>
+                    <p class="uk-text-small">Regular audits and published CAIQ assessments. Compliance is ongoing, not one-time.</p>
                 </div>
             </div>
         </div>

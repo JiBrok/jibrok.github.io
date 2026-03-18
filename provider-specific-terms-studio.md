@@ -156,7 +156,6 @@ The Provider maintains the following security documentation:
 * **Security & SOC Reports:** [jibrok.com/security/](/security/)
 * **Forge Platform Security:** [jibrok.com/docs/jibrok-studio-jira/forge-platform-security/](/docs/jibrok-studio-jira/forge-platform-security/)
 * **Vulnerability Disclosure Policy:** [jibrok.com/vulnerability-disclosure/](/vulnerability-disclosure/)
-* **Drata Trust Center:** [app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3](https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3)
 
 ---
 

@@ -181,7 +181,7 @@ width: expand
                     <a class="uk-position-cover" href="/security/"></a>
                     <span data-uk-icon="icon: world; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin">Security & SOC Reports</h3>
-                    <p>Independent audit results, Drata Trust Center, and CAIQ self-assessment.</p>
+                    <p>Independent audit results and CAIQ self-assessment.</p>
                 </div>
             </div>
         </div>

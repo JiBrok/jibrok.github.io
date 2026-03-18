@@ -487,6 +487,34 @@
     .remove-underline, .remove-underline:hover{
         text-decoration: none;
     }
+    .card-link-wrapper {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+    .label-pill {
+        padding: 8px 16px;
+        border-radius: 100px;
+    }
+    .label-sm {
+        font-size: 0.75rem;
+    }
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
     .uk-container.uk-container-xsmall {
         max-width: 700px;
     }

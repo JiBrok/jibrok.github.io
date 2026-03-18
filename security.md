@@ -9,7 +9,6 @@ width: expand
     <div class="uk-container uk-container-small">
         <h1 class="uk-heading-small">Security and SOC Reports</h1>
         <p class="uk-text-lead">Since 2018, JiBrok has served 1,000+ companies on Atlassian Marketplace. We undergo rigorous independent SOC 2 Type II audits to demonstrate our commitment to protecting customer data.</p>
-        <a href="https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3" target="_blank" class="uk-button uk-button-primary uk-button-large uk-margin-top">View on Drata Trust Center</a>
     </div>
 </div>
 
@@ -42,11 +41,6 @@ width: expand
                     <h3 class="uk-card-title">Access Our Reports</h3>
                     <p>We provide access to our detailed SOC 2 Type 2 Report upon request, as well as publicly available SOC 3 and CAIQ Lite documentation.</p>
                     <ul class="uk-list uk-list-large uk-list-divider">
-                        <li>
-                            <a href="https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3" target="_blank">
-                                <span data-uk-icon="icon: world" class="uk-margin-small-right"></span>Drata Trust Center
-                            </a>
-                        </li>
                         <li>
                             <a href="/uploads/security-reports/JiBrokCAIQ-Lite%20public.pdf" target="_blank">
                                 <span data-uk-icon="icon: file-pdf" class="uk-margin-small-right"></span>CAIQ Lite (PDF)
