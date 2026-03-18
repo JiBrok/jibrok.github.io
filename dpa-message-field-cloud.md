@@ -6,14 +6,14 @@ permalink: /dpa-message-field-cloud/
 
 ## Data Processing Agreement (DPA) - Message Field Cloud (Atlassian Forge)
 
-**Effective date:**  2026-03-18
+**Version 1.1 | Effective date:** 2026-03-18
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the **Message Field Cloud** app by Jibrok, hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (the "**App**").
 
 > **Parties**
 >
 > - **Customer** (Controller): [Customer legal name], [address] ("Customer")
-> - **Jibrok** (Processor): **Jibrok**, (EU), [], email: **support@jibrok.com** ("Jibrok")
+> - **Jibrok** (Processor): **JiBrok**, Nicosia, Republic of Cyprus, email: **support@jibrok.com** ("Jibrok")
 
 ---
 
@@ -69,6 +69,16 @@ Jibrok ensures that any person authorized to process Personal Data is bound by c
 
 ---
 
+## 6A. International Data Transfers
+
+6A.1 Jibrok does not independently transfer Personal Data outside the European Economic Area (EEA). All App data is processed within the Atlassian Forge platform.
+
+6A.2 Atlassian, as sub-processor, determines the geographic location of data processing based on the Customer's Atlassian cloud instance configuration. Any international transfers by Atlassian are governed by Atlassian's own Data Processing Addendum and transfer safeguards (including Standard Contractual Clauses where applicable).
+
+6A.3 If Customer requires information about the location of its data processing, Customer should consult Atlassian's documentation on data residency and Forge data handling.
+
+---
+
 ## 7. Assistance with Data Subject requests
 
 7.1 Jibrok will reasonably assist Customer in responding to Data Subject requests (access/erasure/rectification/restriction) to the extent applicable to data processed by the App and technically feasible.
@@ -79,7 +89,7 @@ Jibrok ensures that any person authorized to process Personal Data is bound by c
 
 ## 8. Personal Data Breach
 
-Jibrok will notify Customer **without undue delay and in any event within 48 hours** after confirming a Personal Data Breach affecting Personal Data processed under this DPA. Jibrok will provide available information reasonably necessary for Customer's compliance obligations.
+Jibrok will notify Customer **without undue delay and in any event within 48 hours** after confirming a Personal Data Breach affecting Personal Data processed under this DPA. Jibrok will provide available information reasonably necessary for Customer's compliance obligations, including the nature of the breach, categories of data subjects affected, likely consequences, and measures taken or proposed to mitigate the breach. Jibrok will cooperate with Customer's notification obligations under GDPR Articles 33 and 34, and will document all Personal Data Breaches in accordance with GDPR Article 33(5).
 
 ---
 
@@ -93,7 +103,7 @@ Jibrok will notify Customer **without undue delay and in any event within 48 hou
 
 ## 10. Audit / information
 
-Upon reasonable request, Jibrok will provide information necessary to demonstrate compliance with this DPA (typically via written responses and security documentation). Any audits will be subject to reasonable scope, confidentiality and avoidance of disproportionate burden.
+Upon reasonable written request (no more than once per calendar year), Jibrok will provide information necessary to demonstrate compliance with this DPA, typically via written responses, SOC 2 reports, and security documentation. If Customer requires an audit beyond documentation review, such audit shall be: (a) conducted at Customer's expense; (b) preceded by at least thirty (30) days' written notice; (c) limited to records and processes relevant to this DPA; and (d) subject to reasonable confidentiality obligations. Jibrok may satisfy audit requests by providing its most recent SOC 2 Type II report and answering supplemental written questions.
 
 ---
 

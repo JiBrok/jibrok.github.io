@@ -12,20 +12,28 @@ hero:
     <div class="uk-container">
         <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" data-uk-grid>
             <div>
-                <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Since 2018</div>
-                <div class="uk-text-meta">On Atlassian Marketplace</div>
+                <a href="/about/" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Since 2018</div>
+                    <div class="uk-text-meta">On Atlassian Marketplace</div>
+                </a>
             </div>
             <div>
-                <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">1,000+</div>
-                <div class="uk-text-meta">Company Installations</div>
+                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">1,000+</div>
+                    <div class="uk-text-meta">Company Installations</div>
+                </a>
             </div>
             <div>
-                <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">SOC 2 Type II</div>
-                <div class="uk-text-meta">Independently Audited</div>
+                <a href="/security/" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">SOC 2 Type II</div>
+                    <div class="uk-text-meta">Independently Audited</div>
+                </a>
             </div>
             <div>
-                <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Forge-Native</div>
-                <div class="uk-text-meta">Secure by Architecture</div>
+                <a href="/forge/" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Forge-Native</div>
+                    <div class="uk-text-meta">Secure by Architecture</div>
+                </a>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@ title: "Provider-Specific Terms — JiBrok Apps"
 permalink: /provider-specific-terms/
 ---
 
-Last updated: March, 2026
+Version 1.1 | Last updated: March, 2026
 
 These Provider-Specific Terms supplement the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) ("Standard Agreement") for JiBrok apps listed below, provided by JiBrok ("Provider"). In the event of any conflict between these Provider-Specific Terms and the Standard Agreement, these Provider-Specific Terms shall prevail.
 
@@ -129,6 +129,7 @@ The following terms apply specifically to Data Center and Server products:
 * (b) The Provider is not responsible for the Customer's infrastructure, including server hardware, operating systems, database systems, network configuration, or security measures.
 * (c) The Customer is responsible for maintaining compatible versions of Atlassian host products (e.g., Jira Software, Jira Service Management) as specified in the Product documentation.
 * (d) End-of-support dates for Data Center and Server products may be announced via the Atlassian Marketplace listing with at least twelve (12) months' notice.
+* (e) The Provider does not process Personal Data on behalf of the Customer in connection with Data Center and Server products. No Data Processing Agreement applies to these products. The Customer is solely responsible for all data processing on its own infrastructure.
 
 ---
 
@@ -141,11 +142,17 @@ In addition to events of Force Majeure described in Section 19.8 of the Standard
 * (c) regulatory actions by government authorities affecting the Provider's ability to deliver the Product;
 * (d) supply chain disruptions affecting cloud infrastructure providers used by Atlassian.
 
+For events described in subsections (a) and (b) of this section, the period referenced in Section 19.8 of the Standard Agreement after which either party may terminate shall be extended to sixty (60) days.
+
 ---
 
 ### 11. Amendments
 
-The Provider may update these Provider-Specific Terms from time to time. Material changes will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect. Continued use of the Product after the effective date constitutes acceptance of the updated terms.
+This section supersedes Section 19.5 of the Standard Agreement with respect to amendments to these Provider-Specific Terms.
+
+The Provider may update these Provider-Specific Terms from time to time. Material changes — including changes to liability limitations, data processing obligations, or governing law — will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect.
+
+If the Customer objects to a material change, the Customer may terminate its subscription by providing written notice to the Provider within the thirty (30) day notice period. In such case, the Customer will receive a pro-rata refund of any prepaid fees for the remainder of the subscription term. Continued use of the Product after the effective date of a material change constitutes acceptance of the updated terms.
 
 ---
 
@@ -162,13 +169,21 @@ The Provider maintains the following security documentation:
 
 ### 13. Support
 
+Support is provided in accordance with the Provider's Support Policy at [jibrok.com/support-policy/](/support-policy/).
+
 Support requests may be submitted through the Provider's Help Center at [jibrok.atlassian.net/servicedesk/customer/portals](https://jibrok.atlassian.net/servicedesk/customer/portals) or by email at [support@jibrok.com](mailto:support@jibrok.com).
 
 For security-related reports, contact [security@jibrok.com](mailto:security@jibrok.com).
 
 ---
 
-### 14. Contact Information
+### 14. Survival
+
+The following sections of these Provider-Specific Terms survive termination or expiration of this Agreement: Section 2 (Governing Law and Jurisdiction), Section 5 (Customer Data and Configuration), Section 6 (AI and Machine Learning), Section 7 (Backup and Data Recovery), Section 8 (Liability Clarifications), and Section 9 (Data Center / Server Specific Terms).
+
+---
+
+### 15. Contact Information
 
 JiBrok
 

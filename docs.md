@@ -11,7 +11,7 @@ hero:
 
 <div class="uk-section uk-section-small uk-padding-remove-top">
     <div class="uk-container">
-        <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium border-radius-large border-xlight uk-margin-medium-bottom" style="background: linear-gradient(135deg, rgba(0,82,204,0.04) 0%, rgba(0,82,204,0.01) 100%);">
+        <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium border-radius-large border-xlight uk-margin-medium-bottom docs-hero-card" style="background: linear-gradient(135deg, rgba(0,82,204,0.04) 0%, rgba(0,82,204,0.01) 100%);">
             <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
                 <div class="uk-width-auto@m uk-text-center">
                     <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:80px;height:80px;" loading="lazy">

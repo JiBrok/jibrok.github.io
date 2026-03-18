@@ -4,7 +4,7 @@
 
 Jekyll-based documentation and marketing site for JiBrok's Atlassian Marketplace apps.
 - **URL**: https://jibrok.com
-- **Marketplace**: https://marketplace.atlassian.com/vendors/1227803/jibrok
+- **Marketplace**: https://marketplace.atlassian.com/vendors/1216083/jibrok
 - **Current focus**: JiBrok Studio for Jira Cloud (flagship product)
 
 ## Documentation Conventions

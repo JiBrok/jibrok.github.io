@@ -4,7 +4,7 @@ title: "Provider-Specific Terms — JiBrok Studio for Jira"
 permalink: /provider-specific-terms-studio/
 ---
 
-Last updated: March, 2026
+Version 1.1 | Last updated: March, 2026
 
 These Provider-Specific Terms supplement the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) ("Standard Agreement") for **JiBrok Studio for Jira Cloud** provided by JiBrok ("Provider"). In the event of any conflict between these Provider-Specific Terms and the Standard Agreement, these Provider-Specific Terms shall prevail.
 
@@ -78,11 +78,13 @@ To the maximum extent permitted by applicable law, the Provider shall have no li
 * (f) interactions between Customer scripts and third-party services or Atlassian platform features;
 * (g) data stored by the Customer in custom tables or message queues.
 
+The exclusions in this Section 4.7 apply only to the extent that the loss, damage, or claim is attributable to Customer scripts, Customer configurations, or Customer data, and not to any defect, error, or vulnerability in the Provider's platform, sandbox, or execution environment.
+
 This exclusion applies in addition to, and does not limit, the liability limitations and exclusions in Sections 14.1 and 14.2 of the Standard Agreement.
 
 #### 4.8 Customer Indemnification for Scripts
 
-In addition to the Customer-Covered Claims defined in Section 15.2 of the Standard Agreement, the Customer shall indemnify, defend, and hold harmless the Provider from and against any third-party claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from or related to Customer scripts, including claims alleging that Customer scripts violate applicable law, infringe third-party rights, cause data breaches, or result in harm to third parties.
+In addition to the Customer-Covered Claims defined in Section 15.2 of the Standard Agreement, the Customer shall indemnify, defend, and hold harmless the Provider from and against any third-party claims, regulatory investigations, proceedings, penalties, damages, losses, and expenses (including reasonable attorneys' fees and regulatory defense costs) arising from or related to Customer scripts, including claims alleging that Customer scripts violate applicable law, infringe third-party rights, cause data breaches, or result in harm to third parties.
 
 ---
 
@@ -132,11 +134,17 @@ In addition to events of Force Majeure described in Section 19.8 of the Standard
 * (c) regulatory actions by government authorities affecting the Provider's ability to deliver the Product;
 * (d) supply chain disruptions affecting cloud infrastructure providers used by Atlassian.
 
+For events described in subsections (a) and (b) of this section, the period referenced in Section 19.8 of the Standard Agreement after which either party may terminate shall be extended to sixty (60) days.
+
 ---
 
 ### 9. Amendments
 
-The Provider may update these Provider-Specific Terms from time to time. Material changes will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect. Continued use of the Product after the effective date constitutes acceptance of the updated terms.
+This section supersedes Section 19.5 of the Standard Agreement with respect to amendments to these Provider-Specific Terms.
+
+The Provider may update these Provider-Specific Terms from time to time. Material changes — including changes to liability limitations, data processing obligations, or governing law — will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect.
+
+If the Customer objects to a material change, the Customer may terminate its subscription by providing written notice to the Provider within the thirty (30) day notice period. In such case, the Customer will receive a pro-rata refund of any prepaid fees for the remainder of the subscription term. Continued use of the Product after the effective date of a material change constitutes acceptance of the updated terms.
 
 ---
 
@@ -154,13 +162,21 @@ The Provider maintains the following security documentation:
 
 ### 11. Support
 
+Support is provided in accordance with the Provider's Support Policy at [jibrok.com/support-policy/](/support-policy/).
+
 Support requests may be submitted through the Provider's Help Center at [jibrok.atlassian.net/servicedesk/customer/portals](https://jibrok.atlassian.net/servicedesk/customer/portals) or by email at [support@jibrok.com](mailto:support@jibrok.com).
 
 For security-related reports, contact [security@jibrok.com](mailto:security@jibrok.com).
 
 ---
 
-### 12. Contact Information
+### 12. Survival
+
+The following sections of these Provider-Specific Terms survive termination or expiration of this Agreement: Section 1 (Governing Law and Jurisdiction), Section 4.7 (Exclusion of Liability for Script-Related Harm), Section 4.8 (Customer Indemnification for Scripts), Section 5 (AI and Machine Learning), Section 6 (Backup and Data Recovery), and Section 7 (Liability Clarifications).
+
+---
+
+### 13. Contact Information
 
 JiBrok
 

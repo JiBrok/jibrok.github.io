@@ -4,9 +4,9 @@ title: Privacy Policy
 permalink: /privacy-policy/
 ---
 
-**Last updated: March 18, 2026**
+**Version 1.1 | Last updated: March 18, 2026**
 
-This Privacy Policy explains how JiBrok ("we", "us", "our") collects, uses, and protects your personal data when you visit [jibrok.com](https://jibrok.com) and use our products. JiBrok is the data controller for the personal data processed through this website.
+This Privacy Policy explains how JiBrok ("we", "us", "our") collects, uses, and protects your personal data when you visit [jibrok.com](https://jibrok.com) and use our products. JiBrok is a software company based in the European Union (Republic of Cyprus). JiBrok is the data controller for the personal data processed through this website.
 
 ---
 
@@ -66,6 +66,7 @@ If you are in the European Economic Area (EEA) or UK, you have the following rig
 - **Right to data portability** (Art. 20): Request your data in a structured, machine-readable format.
 - **Right to object** (Art. 21): Object to our processing of your personal data.
 - **Right to withdraw consent** (Art. 7(3)): Withdraw your consent at any time by clicking "Cookie Settings" in the website footer.
+- **Right to lodge a complaint** (Art. 77): You have the right to lodge a complaint with a supervisory authority. The relevant authority for JiBrok is the [Commissioner for Personal Data Protection](http://www.dataprotection.gov.cy/) of the Republic of Cyprus. You may also lodge a complaint with the supervisory authority in your member state of habitual residence.
 
 To exercise any of these rights, contact us at [support@jibrok.com](mailto:support@jibrok.com). We will respond within 30 days.
 
@@ -94,7 +95,11 @@ None of our on-premise add-ons (apps) collect any analytics or personal informat
 
 ## Atlassian Marketplace
 
-Our add-ons/apps are sold on Atlassian Marketplace. If you generate an evaluation license or purchase a license for any of our add-ons, Atlassian Marketplace provides us contact information of the licensee. We don't store this information in our own servers and we only access this through Atlassian Marketplace user interface when required. We don't have any newsletter and we don't send bulk emails but we may use this contact email address to notify you about our add-ons, for example expired license, security issues. You can opt-out anytime you want to and we will not send you any email again.
+Our add-ons/apps are sold on Atlassian Marketplace. If you generate an evaluation license or purchase a license for any of our add-ons, Atlassian Marketplace provides us contact information of the licensee. We do not store this information on our own servers and only access it through the Atlassian Marketplace interface when required.
+
+We may use the contact email address provided by Atlassian Marketplace to send you **service-related communications** such as license expiry notices, security advisories, and critical product updates. These communications are based on our legitimate interest in fulfilling our contractual obligations (Art. 6(1)(f) GDPR). We do not send marketing emails, newsletters, or bulk promotional communications.
+
+To opt out of all communications, send a request to [support@jibrok.com](mailto:support@jibrok.com) and we will not contact you again.
 
 ---
 
@@ -118,6 +123,14 @@ To create a support request in our issue tracker you need to provide an email ad
 
 ---
 
+## International Data Transfers
+
+When you consent to analytics cookies, usage data is processed by Google LLC, which may transfer data to servers outside the European Economic Area (EEA), including the United States. Google participates in the EU-US Data Privacy Framework, which provides an adequate level of data protection as recognized by the European Commission. For more information, see [Google's privacy policy](https://policies.google.com/privacy).
+
+JiBrok does not independently transfer your personal data outside the EEA. Our support systems are provided by Atlassian (Help Center), which maintains its own data processing and transfer safeguards.
+
+---
+
 ## Changes to This Policy
 
 We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this page periodically.
@@ -128,5 +141,6 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 If you have any questions about this Privacy Policy or wish to exercise your data rights, please contact us:
 
-- **Email**: [support@jibrok.com](mailto:support@jibrok.com)
+- **Data protection inquiries**: [privacy@jibrok.com](mailto:privacy@jibrok.com)
+- **General support**: [support@jibrok.com](mailto:support@jibrok.com)
 - **Service Desk**: [JiBrok Help Center](https://jibrok.atlassian.net/servicedesk/customer/portals)

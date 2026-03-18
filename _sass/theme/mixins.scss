@@ -884,8 +884,14 @@
     
             }
         }
-    }        
+    }
 
 }
 
-
+.docs-hero-card .uk-button-default {
+    &:hover {
+        background-color: #0052CC;
+        border-color: #0052CC;
+        color: #fff;
+    }
+}

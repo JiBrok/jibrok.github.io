@@ -16,28 +16,36 @@ width: expand
     <div class="uk-container">
         <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-text-center" data-uk-grid>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">8+</div>
-                    <p class="uk-text-meta uk-margin-remove-top">Years on Atlassian Marketplace</p>
-                </div>
+                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
+                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">8+</div>
+                        <p class="uk-text-meta uk-margin-remove-top">Years on Atlassian Marketplace</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">1,000+</div>
-                    <p class="uk-text-meta uk-margin-remove-top">Company Installations</p>
-                </div>
+                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
+                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">1,000+</div>
+                        <p class="uk-text-meta uk-margin-remove-top">Company Installations</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">23+</div>
-                    <p class="uk-text-meta uk-margin-remove-top">Apps Published</p>
-                </div>
+                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
+                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">23+</div>
+                        <p class="uk-text-meta uk-margin-remove-top">Apps Published</p>
+                    </div>
+                </a>
             </div>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">SOC 2</div>
-                    <p class="uk-text-meta uk-margin-remove-top">Type II — Independently Audited</p>
-                </div>
+                <a href="/security/" style="text-decoration:none; color:inherit; display:block;">
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
+                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">SOC 2</div>
+                        <p class="uk-text-meta uk-margin-remove-top">Type II — Independently Audited</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

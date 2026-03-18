@@ -1,12 +1,53 @@
 <div id="cookie-banner" class="cookie-banner" style="display: none;">
   <div class="cookie-banner-content">
-    <p class="cookie-banner-text">
-      We use cookies to analyze site traffic and improve your experience. Necessary cookies are always active. You can choose to accept or decline analytics and functional cookies.
-    </p>
-    <div class="cookie-banner-actions">
-      <button class="cookie-button cookie-button-no" onclick="handleNecessaryOnly()">Necessary Only</button>
-      <button class="cookie-button cookie-button-privacy" onclick="window.open('/cookie-policy/', '_blank')">Cookie Policy</button>
-      <button class="cookie-button cookie-button-accept" onclick="handleAcceptAll()">Accept All</button>
+    <div id="cookie-banner-main">
+      <p class="cookie-banner-text">
+        We use cookies to analyze site traffic and improve your experience. Necessary cookies are always active. You can choose to accept or decline analytics and functional cookies.
+      </p>
+      <div class="cookie-banner-actions">
+        <button class="cookie-button cookie-button-no" onclick="handleNecessaryOnly()">Necessary Only</button>
+        <button class="cookie-button cookie-button-customize" onclick="showCustomize()">Customize</button>
+        <button class="cookie-button cookie-button-accept" onclick="handleAcceptAll()">Accept All</button>
+      </div>
+    </div>
+    <div id="cookie-banner-customize" style="display: none;">
+      <p class="cookie-banner-text" style="margin-bottom: 16px;">Choose which cookie categories to allow:</p>
+      <div class="cookie-toggles">
+        <div class="cookie-toggle-row">
+          <div class="cookie-toggle-info">
+            <span class="cookie-toggle-label">Necessary</span>
+            <span class="cookie-toggle-desc">Essential for website operation</span>
+          </div>
+          <label class="cookie-switch cookie-switch-disabled">
+            <input type="checkbox" checked disabled>
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <div class="cookie-toggle-row">
+          <div class="cookie-toggle-info">
+            <span class="cookie-toggle-label">Analytics</span>
+            <span class="cookie-toggle-desc">Google Analytics 4 — anonymous usage data</span>
+          </div>
+          <label class="cookie-switch">
+            <input type="checkbox" id="cookie-toggle-analytics">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <div class="cookie-toggle-row">
+          <div class="cookie-toggle-info">
+            <span class="cookie-toggle-label">Functional</span>
+            <span class="cookie-toggle-desc">Support widget (Jira Service Desk)</span>
+          </div>
+          <label class="cookie-switch">
+            <input type="checkbox" id="cookie-toggle-functional">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+      </div>
+      <div class="cookie-banner-actions" style="margin-top: 16px;">
+        <button class="cookie-button cookie-button-privacy" onclick="window.open('/cookie-policy/', '_blank')">Cookie Policy</button>
+        <button class="cookie-button cookie-button-accept" onclick="handleSavePreferences()">Save Preferences</button>
+      </div>
     </div>
   </div>
 </div>
@@ -99,6 +140,103 @@
   background: #7A869A;
 }
 
+.cookie-button-customize {
+  background: #2684FF;
+  color: white;
+}
+
+.cookie-button-customize:hover {
+  background: #0065FF;
+}
+
+.cookie-toggles {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.cookie-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cookie-toggle-row:last-child {
+  border-bottom: none;
+}
+
+.cookie-toggle-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cookie-toggle-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cookie-toggle-desc {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.cookie-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.cookie-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cookie-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.cookie-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.cookie-switch input:checked + .cookie-slider {
+  background-color: #0747A6;
+}
+
+.cookie-switch input:checked + .cookie-slider:before {
+  transform: translateX(20px);
+}
+
+.cookie-switch-disabled .cookie-slider {
+  background-color: #0747A6;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 @media (max-width: 480px) {
   .cookie-banner {
     bottom: 0;
@@ -145,8 +283,44 @@ function handleNecessaryOnly() {
   deleteGACookies();
 }
 
+function showCustomize() {
+  document.getElementById('cookie-banner-main').style.display = 'none';
+  document.getElementById('cookie-banner-customize').style.display = 'block';
+  // Set toggles to current state
+  var analyticsState = readCookie('cookie_consent_analytics');
+  var functionalState = readCookie('cookie_consent_functional');
+  document.getElementById('cookie-toggle-analytics').checked = (analyticsState === 'granted');
+  document.getElementById('cookie-toggle-functional').checked = (functionalState === 'granted');
+}
+
+function handleSavePreferences() {
+  var analyticsGranted = document.getElementById('cookie-toggle-analytics').checked;
+  var functionalGranted = document.getElementById('cookie-toggle-functional').checked;
+
+  createCookie('cookie_consent_given', 'true', 365);
+  createCookie('cookie_consent_analytics', analyticsGranted ? 'granted' : 'denied', 365);
+  createCookie('cookie_consent_functional', functionalGranted ? 'granted' : 'denied', 365);
+  document.getElementById('cookie-banner').style.display = 'none';
+
+  if (analyticsGranted) {
+    grantAnalytics();
+  } else {
+    deleteGACookies();
+  }
+  if (functionalGranted) {
+    includeJSD();
+  }
+}
+
 function showCookieSettings() {
+  document.getElementById('cookie-banner-main').style.display = 'none';
+  document.getElementById('cookie-banner-customize').style.display = 'block';
   document.getElementById('cookie-banner').style.display = 'block';
+  // Set toggles to current state
+  var analyticsState = readCookie('cookie_consent_analytics');
+  var functionalState = readCookie('cookie_consent_functional');
+  document.getElementById('cookie-toggle-analytics').checked = (analyticsState === 'granted');
+  document.getElementById('cookie-toggle-functional').checked = (functionalState === 'granted');
 }
 
 // Show banner if no consent given, or if GPC is active and analytics was granted
@@ -161,6 +335,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var consentGiven = readCookie('cookie_consent_given');
   if (consentGiven !== 'true') {
+    document.getElementById('cookie-banner-main').style.display = 'block';
+    document.getElementById('cookie-banner-customize').style.display = 'none';
     document.getElementById('cookie-banner').style.display = 'block';
   }
 });
