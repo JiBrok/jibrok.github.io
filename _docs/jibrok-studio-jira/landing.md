@@ -512,6 +512,10 @@ tags:
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
             Audit logs
           </span>
+          <span class="studio-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            SOC 2 Type II
+          </span>
         </div>
       </div>
       <div>
@@ -733,6 +737,43 @@ tags:
 </div>
 
 
+<!-- ==================== 100% ON FORGE ==================== -->
+<div class="studio-section studio-section-gray">
+  <div class="studio-container">
+    <div class="section-header">
+      <h2>100% on Atlassian Forge</h2>
+      <p class="section-subtitle">No external servers. No external analytics. No external logs. Your data never leaves Atlassian infrastructure.</p>
+    </div>
+    <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="feature-card">
+        <div class="feature-card-icon icon-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        </div>
+        <h3>No External Servers</h3>
+        <p>Runs entirely within Atlassian's serverless infrastructure. No vendor-hosted servers, databases, or companion services.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon icon-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>No External Analytics</h3>
+        <p>Zero third-party analytics or tracking services inside the app. No Google Analytics, no Mixpanel, no Datadog.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon icon-green">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>No External Logging</h3>
+        <p>All execution logs and audit trails stay within Atlassian Forge. No Splunk, no CloudWatch, no external log aggregation.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="/forge/" style="color:#0052CC; font-weight:600; text-decoration:none; font-size:1rem;">Learn more about our Forge architecture &rarr;</a>
+    </div>
+  </div>
+</div>
+
+
 <!-- ==================== DOCUMENTATION ==================== -->
 <div class="studio-section studio-section-dark">
   <div class="studio-container">
@@ -780,5 +821,8 @@ tags:
       <a href="https://marketplace.atlassian.com/apps/2349892699" class="btn-primary-hero" target="_blank">Get it on Marketplace</a>
       <a href="https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/140" class="btn-secondary-hero" target="_blank">Contact Us</a>
     </div>
+    <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; margin-top:24px;">
+      Trusted by 1,000+ companies &middot; SOC 2 Type II certified &middot; EU-based vendor &middot; Since 2018
+    </p>
   </div>
 </div>

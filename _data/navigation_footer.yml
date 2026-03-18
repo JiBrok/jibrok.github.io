@@ -3,6 +3,9 @@
 - title: Home
   url: /
 
+- title: About
+  url: /about/
+
 #- title: Blog
 #  url: /blog/
 
@@ -11,6 +14,12 @@
 
 - title: Trust Center
   url: /trust-center/
+
+- title: Forge Architecture
+  url: /forge/
+
+- title: Vulnerability Disclosure
+  url: /vulnerability-disclosure/
 
 - title: Privacy Policy
   url: /privacy-policy/

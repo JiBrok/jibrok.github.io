@@ -8,7 +8,7 @@ width: expand
 <div class="uk-section uk-section-muted uk-text-center">
     <div class="uk-container uk-container-small">
         <h1 class="uk-heading-small">Security and SOC Reports</h1>
-        <p class="uk-text-lead">JiBrok undergoes rigorous independent SOC 2 audits to demonstrate our commitment to protecting customer data.</p>
+        <p class="uk-text-lead">Since 2018, JiBrok has served 1,000+ companies on Atlassian Marketplace. We undergo rigorous independent SOC 2 Type II audits to demonstrate our commitment to protecting customer data.</p>
         <a href="https://app.drata.com/trust/ee309dcb-df9f-462a-a1c6-84eaea7908f3" target="_blank" class="uk-button uk-button-primary uk-button-large uk-margin-top">View on Drata Trust Center</a>
     </div>
 </div>
@@ -81,6 +81,50 @@ width: expand
                         <li>
                             <a href="/docs/jibrok-studio-jira/admin-compliance/">
                                 <span data-uk-icon="icon: check" class="uk-margin-small-right"></span>Compliance & Drift Monitoring
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <div class="uk-child-width-1-2@m" data-uk-grid>
+            <div>
+                <h2>Security Testing & Validation</h2>
+                <p>JiBrok apps are built on Atlassian Forge — a serverless platform that runs entirely within Atlassian's infrastructure. This architecture eliminates the traditional attack surface that penetration testing addresses: there are no JiBrok-owned servers, databases, or network endpoints to test.</p>
+                <h3 class="uk-margin-medium-top">Atlassian Security Review</h3>
+                <p>All Marketplace apps undergo Atlassian's security review process before publication. This review evaluates app permissions, data access patterns, and compliance with Atlassian's security requirements.</p>
+                <h3 class="uk-margin-medium-top">Marketplace Bug Bounty Program</h3>
+                <p>JiBrok Studio participates in the Atlassian Marketplace Security Bug Bounty Program — a crowdsourced vulnerability discovery program managed by Atlassian through the Bugcrowd platform. Security researchers are invited to test our apps and report vulnerabilities.</p>
+                <h3 class="uk-margin-medium-top">Forge Platform Security</h3>
+                <p>The Forge platform provides built-in security guarantees including tenant isolation, scoped permissions, encrypted storage, and zero external network access. These protections are managed and maintained by Atlassian.</p>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
+                    <h3 class="uk-card-title">Security Resources</h3>
+                    <ul class="uk-list uk-list-large uk-list-divider">
+                        <li>
+                            <a href="https://developer.atlassian.com/platform/marketplace/marketplace-security-bug-bounty-program/" target="_blank">
+                                <span data-uk-icon="icon: warning" class="uk-margin-small-right"></span>Marketplace Bug Bounty Program <span class="uk-label uk-label-default" style="font-size:0.7rem; vertical-align:middle;">External</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/docs/jibrok-studio-jira/forge-platform-security/">
+                                <span data-uk-icon="icon: server" class="uk-margin-small-right"></span>Forge Platform Security
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/docs/jibrok-studio-jira/security/">
+                                <span data-uk-icon="icon: lock" class="uk-margin-small-right"></span>JiBrok Studio Security
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/vulnerability-disclosure/">
+                                <span data-uk-icon="icon: mail" class="uk-margin-small-right"></span>Vulnerability Disclosure Policy
                             </a>
                         </li>
                     </ul>

@@ -6,11 +6,24 @@ permalink: /EULA/
 
 Last updated: March, 2026
 
-This EULA is for the following apps, listed on the Atlassian Marketplace:
+---
+
+## JiBrok Studio for Jira
+
+**JiBrok Studio for Jira** uses the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) with [Provider-Specific Terms](/provider-specific-terms-studio/).
+
+* [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1)
+* [Provider-Specific Terms — JiBrok Studio](/provider-specific-terms-studio/)
+* [Data Processing Agreement (DPA)](/dpa-jibrok-studio-jira/)
+
+---
+
+## Other JiBrok Apps
+
+The following End-User License Agreement applies to all other JiBrok apps listed on the Atlassian Marketplace:
 
 **Cloud**
 
-* [JiBrok Studio for Jira](https://marketplace.atlassian.com/apps/2349892699)
 * [Message Field for Jira Cloud](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)
 * [Time in Status / SLA / Timer / Stopwatch (Cloud)](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=cloud&tab=overview)
 * [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
