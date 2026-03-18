@@ -1,12 +1,12 @@
 <div id="cookie-banner" class="cookie-banner" style="display: none;">
   <div class="cookie-banner-content">
     <p class="cookie-banner-text">
-      We use cookies for the operation of our website. This is to improve its use, to personalize your experience, and to compile visitor statistics. By continuing to use this site, you consent to this policy.
+      We use cookies to analyze site traffic and improve your experience. Necessary cookies are always active. You can choose to accept or decline analytics and functional cookies.
     </p>
     <div class="cookie-banner-actions">
-      <button class="cookie-button cookie-button-no" onclick="handleCookieChoice('false')">No</button>
-      <button class="cookie-button cookie-button-privacy" onclick="window.open('/privacy-policy/', '_blank')">Open Privacy</button>
-      <button class="cookie-button cookie-button-accept" onclick="handleCookieChoice('true')">Accept</button>
+      <button class="cookie-button cookie-button-no" onclick="handleNecessaryOnly()">Necessary Only</button>
+      <button class="cookie-button cookie-button-privacy" onclick="window.open('/cookie-policy/', '_blank')">Cookie Policy</button>
+      <button class="cookie-button cookie-button-accept" onclick="handleAcceptAll()">Accept All</button>
     </div>
   </div>
 </div>
@@ -108,11 +108,11 @@
     border-radius: 12px 12px 0 0;
     padding: 20px;
   }
-  
+
   .cookie-banner-actions {
     flex-direction: column;
   }
-  
+
   .cookie-button {
     width: 100%;
   }
@@ -120,19 +120,47 @@
 </style>
 
 <script>
-function handleCookieChoice(choice) {
-  createCookie('cookie-notice-dismissed', choice, 365);
-  document.getElementById('cookie-banner').style.display = 'none';
-  
-  if (choice === 'true') {
-    includeJSD();
+function grantAnalytics() {
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
   }
 }
 
-// Show banner if no choice made
+function handleAcceptAll() {
+  createCookie('cookie_consent_given', 'true', 365);
+  createCookie('cookie_consent_analytics', 'granted', 365);
+  createCookie('cookie_consent_functional', 'granted', 365);
+  document.getElementById('cookie-banner').style.display = 'none';
+  grantAnalytics();
+  includeJSD();
+}
+
+function handleNecessaryOnly() {
+  createCookie('cookie_consent_given', 'true', 365);
+  createCookie('cookie_consent_analytics', 'denied', 365);
+  createCookie('cookie_consent_functional', 'denied', 365);
+  document.getElementById('cookie-banner').style.display = 'none';
+  deleteGACookies();
+}
+
+function showCookieSettings() {
+  document.getElementById('cookie-banner').style.display = 'block';
+}
+
+// Show banner if no consent given, or if GPC is active and analytics was granted
 document.addEventListener('DOMContentLoaded', function() {
-  var cookieChoice = readCookie('cookie-notice-dismissed');
-  if (cookieChoice !== 'true' && cookieChoice !== 'false') {
+  // Respect Global Privacy Control (CCPA/CPRA requirement)
+  if (navigator.globalPrivacyControl) {
+    if (readCookie('cookie_consent_analytics') === 'granted') {
+      createCookie('cookie_consent_analytics', 'denied', 365);
+      deleteGACookies();
+    }
+  }
+
+  var consentGiven = readCookie('cookie_consent_given');
+  if (consentGiven !== 'true') {
     document.getElementById('cookie-banner').style.display = 'block';
   }
 });

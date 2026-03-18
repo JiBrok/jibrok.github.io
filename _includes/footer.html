@@ -18,6 +18,7 @@
                         <li{{ current }}><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></li>
                     {% endif %}
                 {% endfor %}
+                <li><a href="#" onclick="showCookieSettings(); return false;">Cookie Settings</a></li>
             </ul>
         </div>
         <div class="uk-margin-medium">

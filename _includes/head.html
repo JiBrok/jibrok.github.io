@@ -42,6 +42,7 @@
       if (window.location.pathname === '/'
           || window.location.pathname === '/index.html'
           || window.location.pathname === '/privacy-policy/'
+          || window.location.pathname === '/cookie-policy/'
           || window.location.pathname === '/EULA/'
           || window.location.pathname === '/docs/'
           || window.location.pathname === '/security/'
@@ -84,27 +85,45 @@
 
 
   <script>
-    function createCookie(name,value,days) {
+    function createCookie(name, value, days) {
       var expires = "";
       if (days) {
         var date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
         expires = "; expires=" + date.toUTCString();
       }
-      document.cookie = name + "=" + value + expires + "; path=/";
+      document.cookie = name + "=" + value + expires + "; path=/; SameSite=Lax; Secure";
     }
+
     function readCookie(name) {
       var nameEQ = name + "=";
       var ca = document.cookie.split(';');
-      for(var i=0;i < ca.length;i++) {
+      for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
       }
       return null;
     }
+
     function eraseCookie(name) {
-      createCookie(name,"",-1);
+      createCookie(name, "", -1);
+    }
+
+    function deleteGACookies() {
+      // Delete GA cookies from both current hostname and .jibrok.com domain
+      var cookieNames = ['_ga', '_gid'];
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim();
+        var cname = c.split('=')[0];
+        if (cname === '_ga' || cname === '_gid' || cname.indexOf('_ga_') === 0) {
+          // Delete with no domain (current hostname)
+          document.cookie = cname + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          // Delete with .jibrok.com domain
+          document.cookie = cname + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=.jibrok.com';
+        }
+      }
     }
 
     function includeJSD() {
@@ -117,11 +136,27 @@
       document.head.appendChild(js);
     }
 
-    // Load JSD widget if cookies already accepted
-    if (readCookie('cookie-notice-dismissed') === 'true') {
+    // Migrate old cookie format to new consent cookies (one-time)
+    (function() {
+      var oldCookie = readCookie('cookie-notice-dismissed');
+      if (oldCookie !== null && readCookie('cookie_consent_given') === null) {
+        if (oldCookie === 'true') {
+          createCookie('cookie_consent_given', 'true', 365);
+          createCookie('cookie_consent_analytics', 'granted', 365);
+          createCookie('cookie_consent_functional', 'granted', 365);
+        } else {
+          createCookie('cookie_consent_given', 'true', 365);
+          createCookie('cookie_consent_analytics', 'denied', 365);
+          createCookie('cookie_consent_functional', 'denied', 365);
+        }
+        eraseCookie('cookie-notice-dismissed');
+      }
+    })();
+
+    // Load JSD widget if functional cookies are accepted
+    if (readCookie('cookie_consent_functional') === 'granted') {
       includeJSD();
     }
-    // Otherwise, cookie-banner.html will call includeJSD() on acceptance
   </script>
 
   {% include google-analytics.html %}
