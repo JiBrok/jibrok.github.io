@@ -8,21 +8,24 @@ Last updated: March, 2026
 
 ---
 
-## JiBrok Studio for Jira
+## Agreement Framework
 
-**JiBrok Studio for Jira** uses the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) with [Provider-Specific Terms](/provider-specific-terms-studio/).
+All JiBrok apps use the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) with Provider-Specific Terms. The Provider-Specific Terms supplement and, where stated, replace provisions of the Standard Agreement. In the event of any conflict, the Provider-Specific Terms shall prevail (per Section 1.4 of the Standard Agreement).
 
 * [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1)
+* [Privacy Policy](/privacy-policy/)
+* [Cookie Policy](/cookie-policy/)
+
+---
+
+## JiBrok Studio for Jira Cloud
+
 * [Provider-Specific Terms — JiBrok Studio](/provider-specific-terms-studio/)
 * [Data Processing Agreement (DPA)](/dpa-jibrok-studio-jira/)
 
 ---
 
-## Other JiBrok Apps
-
-The following End-User License Agreement applies to all other JiBrok apps listed on the Atlassian Marketplace:
-
-**Cloud**
+## Other JiBrok Cloud Apps
 
 * [Message Field for Jira Cloud](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)
 * [Time in Status / SLA / Timer / Stopwatch (Cloud)](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=cloud&tab=overview)
@@ -32,7 +35,15 @@ The following End-User License Agreement applies to all other JiBrok apps listed
 * [Display Linked Issues](https://marketplace.atlassian.com/apps/1223203)
 * [Fields panel for Jira Service Management (JSM)](https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm)
 
-**Data Center / Server**
+**Legal documents:**
+
+* [Provider-Specific Terms — JiBrok Apps](/provider-specific-terms/)
+* [Data Processing Agreement (DPA) — JiBrok Cloud Apps](/dpa-jibrok-cloud-apps/) (Time in Status, Timer field, Stopwatch field, JBCF, Display Linked Issues, Fields panel for JSM)
+* [Data Processing Agreement (DPA) — Message Field Cloud](/dpa-message-field-cloud/)
+
+---
+
+## JiBrok Data Center / Server Apps
 
 * [Message field](https://marketplace.atlassian.com/apps/1219615/message-field)
 * [Time in status / SLA / Timer / Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
@@ -47,65 +58,6 @@ The following End-User License Agreement applies to all other JiBrok apps listed
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
 * [Project help info](https://marketplace.atlassian.com/apps/1222760/project-help-info)
 
-The following End-User License Agreement applies to all apps listed above.
+**Legal documents:**
 
-Please read this End-User License Agreement ("Agreement") carefully before downloading or using the app.
-
-Downloading or using the app, you are agreeing to be bound by the terms and conditions of this Agreement.
-
-This Agreement is a legal agreement between you (either an individual or a single entity) and JiBrok ("Vendor") and it governs your use of the app made available to you by the Vendor.
-
-If you do not agree to the terms of this Agreement, do not download or use the app.
-
-### License
-
-The Vendor grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Applications strictly in accordance with the terms of this Agreement.
-
-### Restrictions
-
-You agree not to, and you will not permit others to:
-
-* modify, make derivative works of, disassemble, decrypt, reverse compile or reverse engineer any part of the Applications.
-
-* remove, alter or obscure any proprietary notice (including any notice of copyright or trademark).
-
-### Term and Termination
-
-This app shall remain in effect until terminated by you or the Vendor
-
-The Vendor may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.
-
-This Agreement will terminate immediately, without prior notice from the Vendor, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the app and all copies thereof from your computer.
-
-Upon termination of this Agreement, you shall cease all use of the Application and delete all copies of the app from your computer.
-
-Termination of this Agreement will not limit any of the Vendor's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement.
-
-
-### Amendments to this Agreement
-
-The Vendor reserves the right, at its sole discretion, to modify or replace this Agreement at any time.
-By continuing to access or use our app after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Application.
-
-### Limited Warranty and Disclaimer of Warranty
-
-THIS SOFTWARE AND THE ACCOMPANYING FILES ARE PROVIDED "AS IS" AND WITHOUT
-WARRANTIES AS TO PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER
-EXPRESSED OR IMPLIED, OR NONINFRINGEMENT. In no event shall the supplier be
-liable for any consequential, incidental or indirect damages whatsoever
-(including, without limitation, damages for loss of business profits, business
-interruption, loss of business information, or any other pecuniary loss)
-resulting of the use of or inability to use this software. The entire risk
-resulting of use or performance of the Software remains with the Licensee.
-
-### Contact Information
-
-If you have any questions about this Agreement, please contact us.
-
-[support@jibrok.com](mailto:support@jibrok.com)
-
-### Entire Agreement
-
-The Agreement constitutes the entire agreement between you and the Vendor regarding your use of the app and supersedes all prior and contemporaneous written or oral agreements between you and the Vendor.
-
-
+* [Provider-Specific Terms — JiBrok Apps](/provider-specific-terms/) (including Data Center / Server Specific Terms in Section 9)

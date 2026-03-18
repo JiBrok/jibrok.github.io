@@ -32,9 +32,9 @@ The DPA governs the processing of personal data by the Provider on behalf of the
 
 ### 3. Platform Dependency
 
-The Product runs entirely on Atlassian Forge, a serverless platform managed by Atlassian. The Provider does not operate its own servers, databases, or network infrastructure for the Product.
+The Product runs entirely on Atlassian Forge, a serverless platform managed by Atlassian. The Provider does not operate its own servers, databases, or network infrastructure for the Product. This dependency extends to all Atlassian platform services the Product interacts with, including but not limited to Atlassian Forge runtime, Forge SQL, Forge Key-Value Storage, Atlassian REST APIs, and Atlassian CDN.
 
-Outages, performance degradation, or limitations of the Atlassian Forge platform that are outside the Provider's reasonable control shall not constitute a breach of this Agreement, a failure of the Performance Warranty (Section 6.2), or grounds for termination under the Force Majeure provisions (Section 19.8).
+Outages, performance degradation, or limitations of the Atlassian Forge platform or related Atlassian services that are outside the Provider's reasonable control shall not constitute a breach of this Agreement, a failure of the Performance Warranty (Section 6.2), or grounds for termination under the Force Majeure provisions (Section 19.8).
 
 Platform availability is subject to Atlassian's own service commitments. Current operational status is available at [jibrok.statuspage.io](https://jibrok.statuspage.io/).
 
@@ -42,17 +42,105 @@ Platform availability is subject to Atlassian's own service commitments. Current
 
 ### 4. Customer Scripts and Content
 
-The Product enables Customers to create, store, and execute custom scripts (JavaScript, Python, Groovy). The Customer is solely responsible for:
+#### 4.1 Script Authoring and Execution Responsibility
 
-* The content, legality, and compliance of all scripts created and executed using the Product
-* Ensuring that scripts do not process personal data or sensitive information in violation of applicable laws
-* Any actions performed by scripts on the Customer's Jira instance, including modifications to issues, workflows, and data
+The Product enables Customers to create, store, and execute custom scripts in JavaScript, Python, and Groovy. The Customer is solely responsible for the content, legality, accuracy, compliance, and consequences of all scripts created, modified, and executed using the Product. This responsibility applies regardless of how scripts are triggered, including manual execution, scheduled execution, event-driven execution, webhook invocation, or invocation through Atlassian platform integrations (such as Automation for Jira, Rovo, or Workflows).
 
-The Provider does not review, approve, or endorse Customer scripts. Scripts that cause harm to the Customer's Jira environment or data are the Customer's responsibility.
+#### 4.2 No Monitoring, Review, or Approval
+
+The Provider does not monitor, review, audit, approve, or endorse Customer scripts at any time — before, during, or after execution. The Provider has no obligation to review scripts for correctness, security, compliance with applicable laws, or fitness for any particular purpose. The Provider does not provide any certification, validation, or quality assurance of Customer scripts.
+
+#### 4.3 Impersonation
+
+The Product allows administrators to configure scripts to execute on behalf of other users (impersonation) or as the application identity. The Customer is solely responsible for configuring and using impersonation in accordance with the Customer's internal policies, applicable employment law, and data protection requirements. The Provider is not responsible for any consequences arising from scripts executing actions attributed to users who did not directly initiate or authorize those actions.
+
+#### 4.4 Custom Tables, Message Queues, and Customer-Stored Data
+
+The Product provides storage facilities including custom tables (with user-defined schemas) and message queues (with arbitrary JSON payloads). The Customer determines the content and structure of data stored in these facilities. The Customer is solely responsible for ensuring that data stored in custom tables and message queues complies with applicable laws, including but not limited to data protection regulations (GDPR, CCPA), industry-specific requirements (HIPAA, PCI DSS, SOX), and any internal Customer data governance policies. For clarity, the restrictions on Sensitive Data in Section 7.2 of the Standard Agreement apply equally to data stored by the Customer in custom tables and message queues.
+
+#### 4.5 Webhook Token Security
+
+Certain Product features use authentication tokens for webhook (Web Trigger) access. The Customer is responsible for safeguarding webhook tokens and for any actions initiated through webhooks, whether authorized or resulting from compromised tokens. The Provider encrypts tokens at rest but is not responsible for token exposure resulting from the Customer's sharing, logging, or insecure handling of tokens.
+
+#### 4.6 Third-Party and Atlassian Platform Integrations
+
+The Product may be accessed through or invoked by Atlassian platform features and services including, without limitation, Rovo (AI agents), Automation for Jira, Jira Workflows, and third-party applications. The Provider does not control the behavior, inputs, or invocation patterns of these platforms. The Customer's use of the Product through such integrations is subject to the terms of the respective platform, and the Customer bears sole responsibility for the consequences of scripts invoked through these channels.
+
+#### 4.7 Exclusion of Liability for Script-Related Harm
+
+To the maximum extent permitted by applicable law, the Provider shall have no liability for any loss, damage, claim, or expense arising from or related to:
+
+* (a) the content, logic, or output of Customer scripts;
+* (b) data loss, corruption, or unauthorized modification caused by Customer scripts;
+* (c) violations of applicable law, regulation, or contractual obligations caused by Customer scripts;
+* (d) business interruptions, workflow disruptions, or operational failures resulting from Customer scripts;
+* (e) security incidents arising from Customer script logic, webhook token compromise, or impersonation configuration;
+* (f) interactions between Customer scripts and third-party services or Atlassian platform features;
+* (g) data stored by the Customer in custom tables or message queues.
+
+This exclusion applies in addition to, and does not limit, the liability limitations and exclusions in Sections 14.1 and 14.2 of the Standard Agreement.
+
+#### 4.8 Customer Indemnification for Scripts
+
+In addition to the Customer-Covered Claims defined in Section 15.2 of the Standard Agreement, the Customer shall indemnify, defend, and hold harmless the Provider from and against any third-party claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from or related to Customer scripts, including claims alleging that Customer scripts violate applicable law, infringe third-party rights, cause data breaches, or result in harm to third parties.
 
 ---
 
-### 5. Security Documentation
+### 5. AI and Machine Learning
+
+The Provider will not use Customer Data (including Customer scripts, custom table data, message queue data, and script execution history) to train, fine-tune, or improve artificial intelligence or machine learning models. Usage Data collected under Section 3.4 of the Standard Agreement (aggregated, de-identified product usage metrics) is not Customer Data for these purposes and may be used for product improvement.
+
+---
+
+### 6. Backup and Data Recovery
+
+The Customer is solely responsible for maintaining independent backups of its Jira data. The Product is not a backup or disaster recovery solution. The Provider shall not be liable for any failure to recover Customer data, whether caused by script execution, platform outages, Customer configuration, or any other cause. The Customer acknowledges that scripts may irreversibly modify or delete Jira data and that such modifications cannot be reversed by the Provider.
+
+---
+
+### 7. Liability Clarifications
+
+This section supplements Section 14 of the Standard Agreement.
+
+#### 7.1 General Cap Calculation
+
+For the purposes of Section 14.1 of the Standard Agreement, the "General Cap" means amounts actually paid by the Customer to the Provider for the Product during the twelve (12) month period immediately preceding the first event giving rise to liability. Free trial periods, promotional periods, and any period during which the Customer did not pay fees do not contribute to the General Cap calculation.
+
+#### 7.2 Specific Exclusions from Damages
+
+Without limiting Section 14.2 of the Standard Agreement, neither party shall be liable for:
+
+* (a) cost of procurement of substitute goods, technology, or services;
+* (b) lost goodwill or reputational damage;
+* (c) damages arising from the Customer's failure to implement reasonable data backup procedures;
+* (d) damages arising from the Customer's continued use of the Product after becoming aware of a defect or vulnerability;
+* (e) damages arising from use of the Product in combination with third-party products, platforms, or services not provided by the Provider;
+* (f) penalties, fines, or sanctions imposed by regulatory authorities on the Customer.
+
+#### 7.3 Sole Remedy
+
+For any claim related to Product performance or functionality, the Customer's sole and exclusive remedy is as set forth in Section 6.2 of the Standard Agreement.
+
+---
+
+### 8. Force Majeure Extension
+
+In addition to events of Force Majeure described in Section 19.8 of the Standard Agreement, the following shall constitute Force Majeure events:
+
+* (a) Atlassian platform outages, degradation, or changes to Forge APIs that materially affect Product functionality;
+* (b) changes to Atlassian Marketplace policies that require Product modifications;
+* (c) regulatory actions by government authorities affecting the Provider's ability to deliver the Product;
+* (d) supply chain disruptions affecting cloud infrastructure providers used by Atlassian.
+
+---
+
+### 9. Amendments
+
+The Provider may update these Provider-Specific Terms from time to time. Material changes will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect. Continued use of the Product after the effective date constitutes acceptance of the updated terms.
+
+---
+
+### 10. Security Documentation
 
 The Provider maintains the following security documentation:
 
@@ -64,7 +152,7 @@ The Provider maintains the following security documentation:
 
 ---
 
-### 6. Support
+### 11. Support
 
 Support requests may be submitted through the Provider's Help Center at [jibrok.atlassian.net/servicedesk/customer/portals](https://jibrok.atlassian.net/servicedesk/customer/portals) or by email at [support@jibrok.com](mailto:support@jibrok.com).
 
@@ -72,7 +160,7 @@ For security-related reports, contact [security@jibrok.com](mailto:security@jibr
 
 ---
 
-### 7. Contact Information
+### 12. Contact Information
 
 JiBrok
 
