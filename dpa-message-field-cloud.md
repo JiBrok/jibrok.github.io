@@ -6,7 +6,7 @@ permalink: /dpa-message-field-cloud/
 
 ## Data Processing Agreement (DPA) - Message Field Cloud (Atlassian Forge)
 
-**Effective date:**  [YYYY-MM-DD]
+**Effective date:**  2026-03-18
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the **Message Field Cloud** app by Jibrok, hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (the "**App**").
 

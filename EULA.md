@@ -4,27 +4,37 @@ title: EULA
 permalink: /EULA/
 ---
 
-Last updated: September, 2020
+Last updated: March, 2026
 
 This EULA is for the following apps, listed on the Atlassian Marketplace:
 
+**Cloud**
+
+* [JiBrok Studio for Jira](https://marketplace.atlassian.com/apps/2349892699)
+* [Message Field for Jira Cloud](https://marketplace.atlassian.com/apps/1219615/message-field?hosting=cloud&tab=overview)
+* [Time in Status / SLA / Timer / Stopwatch (Cloud)](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=cloud&tab=overview)
+* [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
+* [Stopwatch field](https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud)
+* [Calculated and other custom fields (JBCF)](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview)
+* [Display Linked Issues](https://marketplace.atlassian.com/apps/1223203)
+* [Fields panel for Jira Service Management (JSM)](https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm)
+
+**Data Center / Server**
+
 * [Message field](https://marketplace.atlassian.com/apps/1219615/message-field)
+* [Time in status / SLA / Timer / Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
+* [Calculated custom fields](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
+* [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
+* [Linked issues](https://marketplace.atlassian.com/apps/1223203/linked-issues)
 * [One-time Link](https://marketplace.atlassian.com/apps/1220718/one-time-link)
 * [Simple notifications for Jira](https://marketplace.atlassian.com/apps/1220740/simple-notifications-for-jira)
 * [Search by workflow](https://marketplace.atlassian.com/apps/1220773/search-by-workflows)
 * [Delegating group management](https://marketplace.atlassian.com/apps/1220878/delegating-group-management)
-* [Switch to User + Delegating SU (Jira)](https://marketplace.atlassian.com/apps/1220949/switch-to-user-delegating-su-jira)
 * [Customizable Announcements for Jira](https://marketplace.atlassian.com/apps/1220965/customizable-announcements-for-jira)
-* [Time in status / SLA / Timer / Stopwatch](https://marketplace.atlassian.com/apps/1220908/time-in-status-field)
-* [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
-* [Stopwatch field](https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud)
-* [Calculated custom fields](https://marketplace.atlassian.com/apps/1221055/calculated-custom-fields)
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
 * [Project help info](https://marketplace.atlassian.com/apps/1222760/project-help-info)
-* [Linked issues](https://marketplace.atlassian.com/apps/1223203/linked-issues)
-* [Fields panel for Jira Service Management (JSM)](https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm)
 
-For every of these apps the following EULA belongs to.
+The following End-User License Agreement applies to all apps listed above.
 
 Please read this End-User License Agreement ("Agreement") carefully before downloading or using the app.
 

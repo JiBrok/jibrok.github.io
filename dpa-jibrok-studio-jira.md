@@ -6,7 +6,7 @@ permalink: /dpa-jibrok-studio-jira/
 
 ## Data Processing Agreement (DPA) - JiBrok Studio for Jira Cloud (Atlassian Forge)
 
-**Effective date:**  [YYYY-MM-DD]
+**Effective date:**  2026-03-18
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the **JiBrok Studio for Jira Cloud** app by Jibrok, hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (the "**App**").
 
