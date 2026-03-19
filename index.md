@@ -3,38 +3,30 @@ layout: page
 width: expand
 hero:
     title: Powerful Jira Add-ons for Cloud & Data Center
-    subtitle: Trusted by 1,000+ companies since 2018. SOC 2 certified, EU-based, Forge-native.
+    subtitle: Trusted by 1,000+ companies since 2016. SOC 2 certified, EU-based, Forge-native.
     image: atlassian/atlassian-partner-blue-rgb.svg
     search: true
 ---
 
-<div class="uk-section uk-section-muted uk-padding-small">
-    <div class="uk-container">
-        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" data-uk-grid>
-            <div>
-                <a href="/about/" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Since 2018</div>
-                    <div class="uk-text-meta">On Atlassian Marketplace</div>
-                </a>
-            </div>
-            <div>
-                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">1,000+</div>
-                    <div class="uk-text-meta">Company Installations</div>
-                </a>
-            </div>
-            <div>
-                <a href="/security/" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">SOC 2 Type II</div>
-                    <div class="uk-text-meta">Independently Audited</div>
-                </a>
-            </div>
-            <div>
-                <a href="/forge/" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-text-bold" style="font-size:1.3rem; color:#0052CC;">Forge-Native</div>
-                    <div class="uk-text-meta">Secure by Architecture</div>
-                </a>
-            </div>
+<div class="studio-section" style="padding:48px 0;">
+    <div class="studio-container">
+        <div class="feature-grid" style="grid-template-columns: repeat(4, 1fr);">
+            <a href="/about/" class="stat-card">
+                <div class="stat-number">10+</div>
+                <p class="stat-label">Years on Marketplace</p>
+            </a>
+            <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" class="stat-card">
+                <div class="stat-number">1,000+</div>
+                <p class="stat-label">Company Installations</p>
+            </a>
+            <a href="/security/" class="stat-card">
+                <div class="stat-number">SOC 2</div>
+                <p class="stat-label">Type II - Independently Audited</p>
+            </a>
+            <a href="/forge/" class="stat-card">
+                <div class="stat-number">Forge</div>
+                <p class="stat-label">Secure by Architecture</p>
+            </a>
         </div>
     </div>
 </div>

@@ -8,45 +8,29 @@ width: expand
 <div class="uk-section uk-section-muted uk-text-center">
     <div class="uk-container uk-container-small">
         <h1 class="uk-heading-small">Trusted by 1,000+ Companies on Atlassian Marketplace</h1>
-        <p class="uk-text-lead">JiBrok has been building professional Jira extensions since 2018. EU-based, SOC 2 certified, Forge-native.</p>
+        <p class="uk-text-lead">JiBrok has been building professional Jira extensions since 2016. EU-based, SOC 2 certified, Forge-native.</p>
     </div>
 </div>
 
-<div class="uk-section uk-section-default uk-padding-small">
-    <div class="uk-container">
-        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-text-center" data-uk-grid>
-            <div>
-                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">8+</div>
-                        <p class="uk-text-meta uk-margin-remove-top">Years on Atlassian Marketplace</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">1,000+</div>
-                        <p class="uk-text-meta uk-margin-remove-top">Company Installations</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">23+</div>
-                        <p class="uk-text-meta uk-margin-remove-top">Apps Published</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="/security/" style="text-decoration:none; color:inherit; display:block;">
-                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                        <div class="uk-heading-small uk-text-primary uk-margin-remove-bottom">SOC 2</div>
-                        <p class="uk-text-meta uk-margin-remove-top">Type II — Independently Audited</p>
-                    </div>
-                </a>
-            </div>
+<div class="studio-section" style="padding:48px 0;">
+    <div class="studio-container">
+        <div class="feature-grid" style="grid-template-columns: repeat(4, 1fr);">
+            <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" class="stat-card">
+                <div class="stat-number">10+</div>
+                <p class="stat-label">Years on Marketplace</p>
+            </a>
+            <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" class="stat-card">
+                <div class="stat-number">1,000+</div>
+                <p class="stat-label">Company Installations</p>
+            </a>
+            <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" class="stat-card">
+                <div class="stat-number">23+</div>
+                <p class="stat-label">Apps Published</p>
+            </a>
+            <a href="/security/" class="stat-card">
+                <div class="stat-number">SOC 2</div>
+                <p class="stat-label">Type II - Independently Audited</p>
+            </a>
         </div>
     </div>
 </div>
@@ -56,7 +40,7 @@ width: expand
         <h2 class="uk-h2 uk-text-center">Our Journey</h2>
         <div class="uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid>
             <div>
-                <p>JiBrok is an EU-based software vendor specializing in professional extensions for Atlassian Jira. Since our first app launch on the Atlassian Marketplace in 2018, we have grown into a trusted provider serving over 1,000 companies worldwide.</p>
+                <p>JiBrok is an EU-based software vendor specializing in professional extensions for Atlassian Jira. Since our first app launch on the Atlassian Marketplace in 2016, we have grown into a trusted provider serving over 1,000 companies worldwide.</p>
                 <p>Our portfolio spans 23+ apps across Jira Cloud and Data Center/Server, covering workflow automation, custom fields, time tracking, SLA management, and scripting. As Atlassian shifted toward Cloud, we embraced the Forge platform early — building our flagship product, JiBrok Studio, as a fully Forge-native application with zero external infrastructure.</p>
                 <p>Security and compliance are central to how we operate. We achieved SOC 2 Type II certification in 2024 and publish transparent security documentation including CAIQ assessments and Data Processing Agreements for every Cloud product.</p>
             </div>
@@ -64,7 +48,7 @@ width: expand
                 <h4 class="uk-text-uppercase uk-text-muted" style="letter-spacing:0.1em; font-size:0.85rem;">Milestones</h4>
                 <ul class="uk-list uk-list-divider">
                     <li>
-                        <span class="uk-text-bold uk-text-primary">2018</span><br>
+                        <span class="uk-text-bold uk-text-primary">2016</span><br>
                         First app published on Atlassian Marketplace
                     </li>
                     <li>
@@ -131,8 +115,8 @@ width: expand
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
                     <span data-uk-icon="icon: history; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">8+ Years on Marketplace</h3>
-                    <p class="uk-text-small">Established track record since 2018. Consistent updates, long-term support, and proven vendor stability.</p>
+                    <h3 class="uk-card-title uk-margin-small">10+ Years on Marketplace</h3>
+                    <p class="uk-text-small">Established track record since 2016. Consistent updates, long-term support, and proven vendor stability.</p>
                 </div>
             </div>
             <div>

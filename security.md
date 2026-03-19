@@ -8,7 +8,7 @@ width: expand
 <div class="uk-section uk-section-muted uk-text-center">
     <div class="uk-container uk-container-small">
         <h1 class="uk-heading-small">Security and SOC Reports</h1>
-        <p class="uk-text-lead">Since 2018, JiBrok has served 1,000+ companies on Atlassian Marketplace. We undergo rigorous independent SOC 2 Type II audits to demonstrate our commitment to protecting customer data.</p>
+        <p class="uk-text-lead">Since 2016, JiBrok has served 1,000+ companies on Atlassian Marketplace. We undergo rigorous independent SOC 2 Type II audits to demonstrate our commitment to protecting customer data.</p>
     </div>
 </div>
 
