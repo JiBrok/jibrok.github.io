@@ -2,7 +2,7 @@
 title: Scripting Language
 key: jibrok-studio-jira
 excerpt: Language reference - engines, syntax, built-in APIs, and sandbox details
-category: administration
+category: scripting
 tags:
   - doc
   - cloud
@@ -36,9 +36,9 @@ All three sandbox engines (JavaScript, Python, Groovy) share the same Jira APIs,
 
 | Engine | Get started |
 |--------|-------------|
-| **JavaScript** | [Language Basics](/docs/jibrok-studio-jira/scripting-language-basics) — variables, operators, control flow, collections, destructuring |
-| **Python** | [Python Engine](/docs/jibrok-studio-jira/scripting-python) — `def`/`lambda`, f-strings, list comprehensions, stdlib modules |
-| **Groovy** | [Groovy Engine](/docs/jibrok-studio-jira/scripting-groovy) — closures, GString, ranges, GDK methods, Java date/time classes |
+| **JavaScript** | [Language Basics](/docs/jibrok-studio-jira/scripting-language-basics) - variables, operators, control flow, collections, destructuring |
+| **Python** | [Python Engine](/docs/jibrok-studio-jira/scripting-python) - `def`/`lambda`, f-strings, list comprehensions, stdlib modules |
+| **Groovy** | [Groovy Engine](/docs/jibrok-studio-jira/scripting-groovy) - closures, GString, ranges, GDK methods, Java date/time classes |
 
 ---
 
@@ -155,7 +155,7 @@ Scripts run in a secure, isolated sandbox:
 - **No network access** - except through `requestJira()` and built-in API namespaces
 - **No filesystem** - scripts cannot read or write files
 - **No `import`/`export`** - use `eval(uuid)` for script inclusion
-- **No generators, Symbol, WeakMap, Proxy** - not supported
+- **Some advanced JS features unavailable** - see [Differences from JS](/docs/jibrok-studio-jira/scripting-differences-from-js) for the full list
 - **Division by zero returns `0`** - not `Infinity`
 - **Resource limits** - execution time, loop iterations, API calls are capped (see [Limits](/docs/jibrok-studio-jira/limits))
 - **Method whitelisting** - only approved methods can be called

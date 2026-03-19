@@ -1,6 +1,7 @@
 ---
 title: Event Triggers
 key: jibrok-studio-jira
+excerpt: Run scripts in response to 32 Jira events - issue creates, updates, comments, and more
 category: core-features
 tags:
   - doc
@@ -50,7 +51,8 @@ The `event` object contains properties depending on the event type:
 | `event.comment` | object/undefined | Comment events |
 | `event.worklog` | object/undefined | Worklog events |
 | `event.attachment` | object/undefined | Attachment events |
-| `event.sprint` | object/undefined | Sprint events |
+| `event.sprint` | object/undefined | Sprint events (includes `id`, `name`, `state`, `boardId`) |
+| `event.sprint.boardId` | number/undefined | Sprint events - the board ID associated with the sprint |
 | `event.board` | object/undefined | Board events |
 | `event.version` | object/undefined | Version events |
 | `event.component` | object/undefined | Component events |

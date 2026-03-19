@@ -43,7 +43,7 @@ JSON with metadata:
 
 ```json
 {
-  "format_version": 1,
+  "format_version": 2,
   "exportedAt": "2024-01-15T12:00:00Z",
   "scripts": [...]
 }

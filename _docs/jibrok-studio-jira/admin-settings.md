@@ -36,7 +36,7 @@ Time-limited diagnostic logging for troubleshooting trigger and script execution
 - Logs include: trigger invocations, script start/complete events, timing, skip reasons
 - No sensitive data is logged (source code, issue data, PII are excluded)
 - Duration options: 5 minutes to 14 days - auto-disables after the chosen duration
-- View logs: `forge logs --environment <env>`
+- Diagnostic logs are written to the Forge runtime log. Contact the app vendor if you need access to raw logs
 
 ---
 

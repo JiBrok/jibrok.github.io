@@ -2,7 +2,7 @@
 title: "JS: Language Basics"
 key: jibrok-studio-jira
 excerpt: Variables, operators, control flow, collections, destructuring, and core syntax
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

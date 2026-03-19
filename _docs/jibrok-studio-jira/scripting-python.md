@@ -2,7 +2,7 @@
 title: "Python Engine"
 key: jibrok-studio-jira
 excerpt: Python-like syntax engine - supported constructs, built-in functions, stdlib modules, and type methods
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

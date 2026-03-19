@@ -2,7 +2,7 @@
 title: "Scripting API: Queues"
 key: jibrok-studio-jira
 excerpt: Message Queue API - push, pull, consume, acknowledge, and queue statistics
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

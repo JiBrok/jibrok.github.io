@@ -2,7 +2,7 @@
 title: "Scripting API: UI Modifications"
 key: jibrok-studio-jira
 excerpt: UIM API - modify form fields on Jira issue create and transition screens
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

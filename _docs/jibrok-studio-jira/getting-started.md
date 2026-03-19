@@ -81,10 +81,10 @@ The `issueKey` variable is automatically available when you provide an issue key
 
 Scripts run in a secure sandbox with strict limits:
 
-- **No network access** - except through `requestJira()` and built-in API namespaces
+- **No network access** - except through `requestJira()` and built-in functions (Issues, Users, Projects, etc.)
 - **No filesystem** - scripts cannot read or write files
 - **Resource limits** - execution time, loop iterations, and API calls are capped. Limits vary by trigger type. See [Limits](/docs/jibrok-studio-jira/limits) for details.
-- **Method whitelisting** - only approved methods can be called
+- **Safe methods only** - scripts can only use a curated set of approved operations
 - **Auto-await** - async API calls are automatically resolved
 
 ### Output

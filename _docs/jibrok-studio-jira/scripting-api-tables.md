@@ -2,7 +2,7 @@
 title: "Scripting API: Tables"
 key: jibrok-studio-jira
 excerpt: Custom Tables API - CRUD operations, filtering, sorting, and context-aware methods
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

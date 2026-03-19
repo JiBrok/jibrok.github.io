@@ -2,7 +2,7 @@
 title: "JS: Differences from Standard JS"
 key: jibrok-studio-jira
 excerpt: All known differences between the script engine and standard JavaScript
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

@@ -2,7 +2,7 @@
 title: "JS: Async/Await"
 key: jibrok-studio-jira
 excerpt: Auto-await, async functions, Promise API, delay, and async patterns
-category: administration
+category: scripting
 tags:
   - doc
   - cloud
@@ -43,7 +43,7 @@ log(getIssueSummary("TEST-1"))
 
 **Important limitations:**
 
-- `Promise.all()` works, but does not provide parallelism - all calls inside are resolved sequentially before `Promise.all` receives them. Use `await` with `Promise.all()`.
+- `Promise.all()` works, but does not provide parallelism - auto-await resolves each call individually as it is evaluated, so the array passed to `Promise.all()` already contains resolved values. Use `await` to unwrap the result of `Promise.all()`.
 - For async operations inside `.map()` / `.filter()` callbacks, use `for...of` loop instead (array callbacks run in sync context).
 
 ```js

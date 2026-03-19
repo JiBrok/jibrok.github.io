@@ -1,6 +1,7 @@
 ---
 title: Workflow Post Function
 key: jibrok-studio-jira
+excerpt: Run scripts after workflow transitions with full transition context
 category: core-features
 tags:
   - doc

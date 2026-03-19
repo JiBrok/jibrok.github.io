@@ -2,7 +2,7 @@
 title: "Scripting API: Async Events"
 key: jibrok-studio-jira
 excerpt: Trigger scripts asynchronously via asyncEvent.push and asyncEvent.pushSelf
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

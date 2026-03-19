@@ -16,7 +16,7 @@ tags:
 
 JiBrok Studio integrates with **Jira Automation** as a custom action. You can add the **"Run JiBrok Studio Script"** action to any automation rule to execute a script from your library.
 
-Scripts run as **Application** (no user context), making this ideal for system-level automations that don't depend on a specific user's permissions.
+Scripts run with the configured actor (defaults to Application). This makes them ideal for system-level automations that don't depend on a specific user's permissions.
 
 ---
 
@@ -123,7 +123,7 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 ## Important notes
 
-- Scripts run as **Application** - they use the Forge app's permissions, not a specific user's
+- Scripts run with the configured actor (defaults to **Application**) - see the script's Config tab to change the execution identity
 - The script must have an enabled **Automation** trigger - otherwise the action will fail
 - The **Automation** trigger type must be enabled in [Administration](/docs/jibrok-studio-jira/admin-settings)
 - Standard [execution limits](/docs/jibrok-studio-jira/limits) apply

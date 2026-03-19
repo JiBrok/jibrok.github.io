@@ -1,6 +1,7 @@
 ---
 title: Scheduled Triggers
 key: jibrok-studio-jira
+excerpt: Run scripts on a recurring schedule - every 5 minutes, hourly, daily, or weekly
 category: core-features
 tags:
   - doc

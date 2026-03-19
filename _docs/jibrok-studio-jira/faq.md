@@ -2,7 +2,7 @@
 title: FAQ & Troubleshooting
 key: jibrok-studio-jira
 excerpt: Frequently asked questions and solutions to common issues
-category: administration
+category: support
 tags:
   - doc
   - cloud

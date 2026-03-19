@@ -2,7 +2,7 @@
 title: Scripting API
 key: jibrok-studio-jira
 excerpt: Complete API reference - Jira namespaces, domain APIs, and utilities
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

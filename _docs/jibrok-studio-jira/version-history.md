@@ -2,7 +2,7 @@
 title: Version History
 key: jibrok-studio-jira
 excerpt: Automatic version tracking, comparison, and rollback for scripts
-category: administration
+category: core-features
 tags:
   - doc
   - cloud

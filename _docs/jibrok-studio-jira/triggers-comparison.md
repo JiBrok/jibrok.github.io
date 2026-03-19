@@ -26,7 +26,7 @@ tags:
 | [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) | Control transition button visibility | N/A (Jira-native) | Yes (Jira-native) | Sync | Jira Expressions |
 | [UI Modification](/docs/jibrok-studio-jira/ui-modifications) | Customize issue create/edit/transition forms | Current user | Yes (form context) | Real-time | Sandbox |
 | [Scripted Field](/docs/jibrok-studio-jira/scripted-fields) | Compute custom field values | Application | Yes (RichIssue) | Sync | Sandbox |
-| [Automation](/docs/jibrok-studio-jira/automation) | Run scripts as Jira Automation actions | Application | Optional | Async | Sandbox |
+| [Automation](/docs/jibrok-studio-jira/automation) | Run scripts as Jira Automation actions | Configured actor (default: Application) | Optional | Async | Sandbox |
 | [Rovo AI](/docs/jibrok-studio-jira/rovo) | Let users run pre-approved scripts via Rovo chat | Current Rovo user | Optional | Async | Sandbox |
 
 ---
@@ -55,7 +55,7 @@ Use a **[UI Modification trigger](/docs/jibrok-studio-jira/ui-modifications)**. 
 
 ### I need computed custom fields
 
-Use a **[Scripted Field](/docs/jibrok-studio-jira/scripted-fields)**. It recalculates on every issue create and update. Available types: Text, Number, Date, DateTime.
+Use a **[Scripted Field](/docs/jibrok-studio-jira/scripted-fields)**. It recalculates on every issue create and update. Available types: Text, Number, Date, DateTime, Paragraph.
 
 ### I need to chain scripts together
 

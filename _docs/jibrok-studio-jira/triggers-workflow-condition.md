@@ -1,6 +1,7 @@
 ---
 title: Workflow Condition
 key: jibrok-studio-jira
+excerpt: Control workflow transition visibility using Jira Expressions
 category: core-features
 tags:
   - doc
@@ -40,7 +41,7 @@ If the expression returns `true`, the transition is allowed. If it returns `fals
 When you add a Workflow Condition trigger, the script engine is automatically switched to **Jira Expressions**. This is a special engine type that differs from JavaScript, Python, and Groovy:
 
 - The script is a **native Jira Expression**, not sandbox code
-- Jira evaluates the expression directly - there are **no sandbox engine limits** (no execution time cap, no API call limits, no loop iteration limits)
+- Jira evaluates the expression directly - JiBrok Studio sandbox limits do not apply (no execution time cap, no API call limits, no loop iteration limits). Standard [Jira Expressions limits](https://developer.atlassian.com/cloud/jira/platform/jira-expressions/) managed by Jira itself still apply
 - All limits and restrictions are managed by Jira itself
 - The Jira Expressions engine is **exclusive to the Workflow Condition trigger** - it cannot be used with other trigger types
 - Adding a Workflow Condition trigger removes all other triggers from the script

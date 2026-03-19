@@ -2,7 +2,7 @@
 title: "JS: Functions & Classes"
 key: jibrok-studio-jira
 excerpt: Function declarations, arrow functions, closures, recursion, classes, and inheritance
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

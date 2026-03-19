@@ -7,7 +7,6 @@ tags:
   - doc
   - cloud
   - triggers
-
   - events
 ---
 
@@ -28,7 +27,7 @@ Automate script execution by attaching triggers to schedules, events, or user ac
 | Event (32 Jira events) | [Event Triggers](/docs/jibrok-studio-jira/triggers-events) |
 | Async Event | [Async Events](/docs/jibrok-studio-jira/triggers-async) |
 | UI Modification (onInit/onChange) | [UI Modifications](/docs/jibrok-studio-jira/ui-modifications) |
-| Scripted Field (Text/Number/Date/DateTime) | [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) |
+| Scripted Field (Text/Number/Date/DateTime/Paragraph) | [Scripted Fields](/docs/jibrok-studio-jira/scripted-fields) |
 | Automation | [Jira Automation Integration](/docs/jibrok-studio-jira/automation) |
 | Rovo | [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) |
 | Workflow Post Function | [Workflow Post Function](/docs/jibrok-studio-jira/triggers-workflow-post-function) |
@@ -71,9 +70,9 @@ Configure context restrictions in the script's **Config** tab.
 
 Each trigger has its own enabled/disabled toggle, independent of the script's enabled status. **Both** must be enabled for the trigger to fire.
 
-### Singleton vs multiple
+### One trigger per type
 
-- **Singleton triggers** (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition, Webtrigger): one per script
+All trigger types are singleton - each script can have at most one trigger of each type.
 
 ### Limits
 

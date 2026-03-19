@@ -73,7 +73,7 @@ After running, a table shows the defined variables:
 
 See [Limits](/docs/jibrok-studio-jira/limits) for global variable limits.
 
-> **Note:** The global script runs before every other script execution, so it should be kept lightweight. It has reduced engine limits compared to regular scripts.
+> **Note:** The global script runs before every other script execution and has strict reduced limits (1 second execution time, no logging, 1,000 loop iterations). Keep it simple - return constants and short helper functions.
 
 ---
 

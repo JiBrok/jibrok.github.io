@@ -2,7 +2,7 @@
 title: Use Cases
 key: jibrok-studio-jira
 excerpt: Practical scripting examples for common Jira automation scenarios
-category: administration
+category: examples
 tags:
   - doc
   - cloud
@@ -206,7 +206,7 @@ Automatically move unfinished issues to the next sprint when a sprint closes.
 
 ```js
 // Trigger: Event - sprint_closed
-const boardId = event.boardId
+const boardId = event.sprint.boardId
 
 // Find the next active/future sprint
 const sprints = Boards.getSprints(boardId, "active")
@@ -217,7 +217,7 @@ if (sprints.length === 0) {
 const nextSprint = sprints[0]
 
 // Get incomplete issues from closed sprint
-const closedSprintId = event.sprintId
+const closedSprintId = event.sprint.id
 const issues = Sprints.getIssues(closedSprintId, {
   jql: "status != Done"
 })
@@ -311,11 +311,11 @@ const issue = Issues.get(issueKey)
 if (event.transition.to_status === "Done") {
   // Check required fields
   if (!issue.fields.fixVersions || issue.fields.fixVersions.length === 0) {
-    return { valid: false, message: "Fix Version is required before closing" }
+    return { valid: false, errorMessage: "Fix Version is required before closing" }
   }
 
   if (!issue.fields.resolution) {
-    return { valid: false, message: "Resolution must be set" }
+    return { valid: false, errorMessage: "Resolution must be set" }
   }
 }
 

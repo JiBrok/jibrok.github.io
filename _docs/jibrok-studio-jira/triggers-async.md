@@ -1,6 +1,7 @@
 ---
 title: Async Events
 key: jibrok-studio-jira
+excerpt: Trigger scripts asynchronously from other scripts with optional delay and payload
 category: core-features
 tags:
   - doc
@@ -14,7 +15,7 @@ tags:
 
 ## Async events
 
-Trigger scripts asynchronously via Forge Queue. One per script (singleton).
+Trigger scripts asynchronously. One per script (singleton).
 
 Async events are triggered from scripts using `asyncEvent.push(scriptId, payload?, options?)` or `asyncEvent.pushSelf(payload?, options?)`. The target script must have an enabled async event trigger - otherwise events are discarded.
 
@@ -30,7 +31,7 @@ The `event` variable in the target script contains:
 | `event.pushedAt` | number | Timestamp in milliseconds |
 | `event.scriptId` | string | UUID of the current script |
 | `event.issueKey` | string/null | Issue key (e.g. `"PROJ-123"`) or `null` |
-| `event.depth` | number | Current chain depth (0 = initial trigger) |
+| `event.depth` | number | Current chain depth (0 = initial trigger, max 2). See [Limits](/docs/jibrok-studio-jira/limits#async-events) |
 | `event.chainId` | string | UUID identifying the event chain (for tracing) |
 
 > **Automatic context:** When `issueKey` is provided via options, the runtime variables `issue` and `issueKey` are set automatically in the target script.
@@ -50,7 +51,7 @@ Both `push()` and `pushSelf()` return `{ jobId: string }`.
 
 See [Limits](/docs/jibrok-studio-jira/limits) for async event limits including call counts, payload size, delay, and chain depth.
 
-**Fanout reduction:** Chained executions have reduced push call limits, reducing worst-case total executions.
+**Fanout reduction:** To prevent cascading script chains from growing out of control, scripts triggered by async events have a lower limit on how many async events they can push (3 instead of 10).
 
 ### Example
 

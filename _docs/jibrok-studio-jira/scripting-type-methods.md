@@ -2,7 +2,7 @@
 title: "JS: Type Methods"
 key: jibrok-studio-jira
 excerpt: Whitelisted methods for strings, arrays, numbers, dates, objects, and wrapper types
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

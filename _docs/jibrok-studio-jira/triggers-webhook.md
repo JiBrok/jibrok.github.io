@@ -107,13 +107,13 @@ return { status: "no issue key provided" }
 
 See [Limits](/docs/jibrok-studio-jira/limits) for execution time, API call, and rate limits for webhook triggers.
 
-Scripts run with the **actor configured on the script** (defaults to application).
+Scripts run with the **actor configured on the script**. If no specific actor is set, the identity is resolved in the same order as other triggers - see [Execution Identity](/docs/jibrok-studio-jira/security#execution-identity). Default: Application.
 
 ---
 
 ## Notes
 
-- The Webtrigger trigger type is **disabled by default** and must be enabled in [Administration](/docs/jibrok-studio-jira/admin-settings) before use
+- The Webhook trigger type is **disabled by default** and must be enabled in [Administration](/docs/jibrok-studio-jira/admin-settings) before use
 - Both the script and the trigger must be enabled for the webhook to accept requests
 - The script must have a generated token - without a token, the webhook URL exists but returns 401
 - Webhook triggers are singleton - only one per script

@@ -2,7 +2,7 @@
 title: "Scripting API: Issues"
 key: jibrok-studio-jira
 excerpt: Search, create, update, and transition Jira issues
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

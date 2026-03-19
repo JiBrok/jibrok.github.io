@@ -62,7 +62,7 @@ Click the **Run** button to execute the current script. During execution:
 
 ### Keyboard shortcuts
 
-Use the standard keyboard shortcut to run scripts quickly without clicking the button.
+Press **Cmd+Enter** (Mac) or **Ctrl+Enter** (Windows/Linux) to run scripts quickly without clicking the button.
 
 ---
 
@@ -179,7 +179,7 @@ When saving a new script, you will be prompted to set a name in the Config tab f
 
 ### Existing scripts
 
-When saving an existing script, a dialog appears where you can add an optional **version note** (up to 200 characters) describing the changes. Each save creates a new version entry in the Version History.
+When saving an existing script, a dialog appears where you can add an optional **version note** (up to 2,000 characters) describing the changes. Each save creates a new version entry in the Version History.
 
 <a href="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-new-script-unsaved-dialog.png" alt="Save dialog for existing script with version note" style="width:100%;" loading="lazy"></a>

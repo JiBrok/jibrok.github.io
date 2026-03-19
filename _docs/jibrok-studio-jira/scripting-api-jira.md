@@ -2,7 +2,7 @@
 title: "Scripting API: Jira Entities"
 key: jibrok-studio-jira
 excerpt: Users, Projects, Fields, Components, Versions, Boards, Sprints, Links
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

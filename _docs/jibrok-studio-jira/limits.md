@@ -2,7 +2,7 @@
 title: Limits & Quotas
 key: jibrok-studio-jira
 excerpt: All system limits for script execution, storage, and configuration
-category: administration
+category: reference
 tags:
   - doc
   - cloud
@@ -20,7 +20,7 @@ These limits protect Jira performance and prevent runaway scripts. If you hit a 
 
 | Limit | Value | Globals Script | Description |
 |-------|-------|----------------|-------------|
-| Max AST nodes | 15,000 | 200 | Script complexity (number of abstract syntax tree nodes) |
+| Max script complexity | 15,000 | 200 | Controls the maximum complexity of a single script (measured in parsed nodes) |
 | Max execution time | per trigger (see below) | 1,000 ms | Maximum script execution time |
 | Max loop iterations | 50,000 (100,000 for scheduled) | 1,000 | Total number of loop iterations |
 | Max call depth | 64 | 32 | Maximum nesting/recursion depth of calls |

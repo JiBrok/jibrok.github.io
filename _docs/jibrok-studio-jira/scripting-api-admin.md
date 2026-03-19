@@ -2,7 +2,7 @@
 title: "Scripting API: Configuration & Assets"
 key: jibrok-studio-jira
 excerpt: Administration namespaces for workflows, screens, schemes, roles, and JSM Assets
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

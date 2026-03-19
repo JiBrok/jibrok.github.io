@@ -493,7 +493,7 @@ tags:
         </div>
         <h1>The Scripting Platform for Jira&nbsp;Cloud</h1>
         <p class="hero-subtitle">
-          Write scripts in JavaScript, Python, or Groovy. Execute interactively, save to a shared library, and automate anything -schedules, events, workflows, AI&nbsp;agents.
+          Write scripts in JavaScript, Python, or Groovy. Execute interactively, save to a shared library, and automate anything - schedules, events, workflows, AI&nbsp;agents.
         </p>
         <div class="hero-buttons">
           <a href="https://marketplace.atlassian.com/apps/2349892699" class="btn-primary-hero" target="_blank">Get it on Marketplace</a>
@@ -533,7 +533,7 @@ tags:
   <div class="studio-container">
     <div class="section-header">
       <h2>Everything you need to script Jira</h2>
-      <p class="section-subtitle">A complete toolkit: interactive console, shared library, global variables, and powerful triggers -all running securely on Atlassian Forge.</p>
+      <p class="section-subtitle">A complete toolkit: interactive console, shared library, global variables, and powerful triggers - all running securely on Atlassian Forge.</p>
     </div>
     <div class="feature-grid">
       <a href="/docs/jibrok-studio-jira/script-console/" class="feature-card">
@@ -562,14 +562,14 @@ tags:
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3>Scheduled Triggers</h3>
-        <p>Run scripts on a cron schedule -daily cleanups, weekly reports, periodic syncs.</p>
+        <p>Run scripts on a cron schedule - daily cleanups, weekly reports, periodic syncs.</p>
       </a>
       <a href="/docs/jibrok-studio-jira/triggers-events/" class="feature-card">
         <div class="feature-card-icon icon-teal">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
         <h3>Event Triggers</h3>
-        <p>React to issue creates, updates, comments, and 20+ other Jira events in real time.</p>
+        <p>React to issue creates, updates, comments, and 30+ Jira events in real time.</p>
       </a>
       <a href="/docs/jibrok-studio-jira/triggers-workflow-post-function/" class="feature-card">
         <div class="feature-card-icon icon-red">
@@ -588,11 +588,11 @@ tags:
   <div class="studio-container">
     <div class="showcase-block">
       <div class="showcase-text">
-        <h3>Write, test, and iterate -in seconds</h3>
-        <p>The Script Console is your interactive playground. Write code, run it instantly, and see results -all without leaving Jira.</p>
+        <h3>Write, test, and iterate - in seconds</h3>
+        <p>The Script Console is your interactive playground. Write code, run it instantly, and see results - all without leaving Jira.</p>
         <ul>
           <li>Syntax highlighting &amp; autocomplete</li>
-          <li>Sandbox mode -test safely, no risk to live data</li>
+          <li>Sandbox mode - test safely, no risk to live data</li>
           <li>Run as any user for permission testing</li>
           <li>Full output with structured log levels</li>
         </ul>
@@ -643,14 +643,14 @@ tags:
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
         </div>
         <h3>Scripted Fields</h3>
-        <p>Computed custom fields -text, number, date -that recalculate on issue create and update.</p>
+        <p>Computed custom fields - text, number, date - that recalculate on issue create and update.</p>
       </a>
       <a href="/docs/jibrok-studio-jira/ui-modifications/" class="feature-card">
         <div class="feature-card-icon icon-purple">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         </div>
         <h3>UI Modifications</h3>
-        <p>Dynamically customize create and transition forms -hide, show, and set fields in real time.</p>
+        <p>Dynamically customize create and transition forms - hide, show, and set fields in real time.</p>
       </a>
       <a href="/docs/jibrok-studio-jira/automation/" class="feature-card">
         <div class="feature-card-icon icon-green">
@@ -715,7 +715,7 @@ tags:
       <div class="step-item">
         <div class="step-number">2</div>
         <h3>Test</h3>
-        <p>Run interactively in sandbox mode -no risk to live data</p>
+        <p>Run interactively in sandbox mode - no risk to live data</p>
       </div>
       <div class="step-item">
         <div class="step-number">3</div>
@@ -822,7 +822,7 @@ tags:
       <a href="https://jibrok.atlassian.net/servicedesk/customer/portal/9/group/41/create/140" class="btn-secondary-hero" target="_blank">Contact Us</a>
     </div>
     <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; margin-top:24px;">
-      Trusted by 1,000+ companies &middot; SOC 2 Type II certified &middot; EU-based vendor &middot; Since 2018
+      SOC 2 Type II certified &middot; EU-based vendor &middot; Building for Jira since 2018
     </p>
   </div>
 </div>

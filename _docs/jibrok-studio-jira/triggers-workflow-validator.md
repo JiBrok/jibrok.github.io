@@ -1,6 +1,7 @@
 ---
 title: Workflow Validator
 key: jibrok-studio-jira
+excerpt: Validate workflow transitions with scripts before they complete
 category: core-features
 tags:
   - doc
@@ -61,6 +62,8 @@ The following variables are available in workflow validator scripts:
 
 ### Return values
 
+> **Warning:** Workflow Validators use a **fail-open** design. If the script fails (runtime error, timeout, license issue), the transition is **allowed**. This prevents broken scripts from blocking all workflow transitions. Design your validators to explicitly return `{ valid: false }` for all disallowed cases.
+
 The script's return value determines whether the transition is allowed or blocked:
 
 | Return value | Effect |
@@ -71,8 +74,6 @@ The script's return value determines whether the transition is allowed or blocke
 | Truthy value (string, number, non-empty object) | Allow transition |
 | Falsy value (`null`, `undefined`, `false`, `0`, `""`) | Block transition with the default error message |
 | Script error (runtime exception) | **Fail-open** - transition is allowed |
-
-> **Important:** Workflow Validators use a **fail-open** design. If the script fails due to a runtime error, license issue, or configuration problem, the transition is allowed. This prevents broken scripts from blocking all workflow transitions.
 
 ### Run as (actor resolution)
 

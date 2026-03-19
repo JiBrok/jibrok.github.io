@@ -1,7 +1,7 @@
 ---
 title: Scenarios
 key: jibrok-studio-jira
-category: administration
+category: core-features
 tags:
   - doc
   - cloud

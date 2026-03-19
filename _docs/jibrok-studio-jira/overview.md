@@ -23,9 +23,9 @@ related:
 
 Write, manage, and automate scripts that interact with your Jira data - directly from the Jira interface. JiBrok Studio for Jira Cloud is a Forge-based scripting platform built for Jira administrators.
 
-Scripts run in a secure sandbox with no access to external networks or filesystems. The only external interaction is through the Jira REST API.
+Scripts run in a secure sandbox with no access to external networks or filesystems. The only way scripts interact with data is through the Jira REST API of the current site.
 
-> [Get JiBrok Studio on Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) — free to get started.
+> [Get JiBrok Studio on Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) - free to get started.
 
 <a href="/uploads/jibrok-studio-jira/console-interface-overview.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/console-interface-overview.png" alt="JiBrok Studio Script Console interface" width="2754" height="1736" style="width:100%;height:auto;" loading="lazy"></a>
@@ -38,8 +38,8 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 |---------|-------------|
 | **[Script Console](/docs/jibrok-studio-jira/script-console)** | Interactive code editor with syntax highlighting, multiple language engines, and instant execution |
 | **[Script Library](/docs/jibrok-studio-jira/script-library)** | Central storage for saved scripts with folders, labels, search, and version history |
-| **[Triggers](/docs/jibrok-studio-jira/triggers)** | Automate script execution via schedules, Jira events, and async events |
-| **[Scripted Fields](/docs/jibrok-studio-jira/scripted-fields)** | Computed custom fields (text, number, date, datetime) that recalculate on issue create/update |
+| **[Triggers](/docs/jibrok-studio-jira/triggers)** | Automate script execution via schedules, Jira events, webhooks, and async events |
+| **[Scripted Fields](/docs/jibrok-studio-jira/scripted-fields)** | Computed custom fields (text, number, date, datetime, paragraph) that recalculate on issue create/update |
 | **[UI Modifications](/docs/jibrok-studio-jira/ui-modifications)** | Dynamically customize issue create and transition forms |
 | **[Automation](/docs/jibrok-studio-jira/automation)** | Run scripts as Jira Automation actions |
 | **[Rovo AI Agent](/docs/jibrok-studio-jira/rovo)** | Expose scripts to Atlassian Rovo AI for natural language execution |

@@ -2,7 +2,7 @@
 title: Script Engine Reference
 key: jibrok-studio-jira
 excerpt: Built-in reference panel - language features, APIs, and examples for all script engines
-category: core-features
+category: scripting
 tags:
   - doc
   - cloud

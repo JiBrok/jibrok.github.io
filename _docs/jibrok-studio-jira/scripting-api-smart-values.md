@@ -2,7 +2,7 @@
 title: "Scripting API: Smart Value Methods"
 key: jibrok-studio-jira
 excerpt: String, Array, and Date instance methods compatible with Jira Automation
-category: administration
+category: scripting
 tags:
   - doc
   - cloud
@@ -327,6 +327,7 @@ println dt.startOfDay().jiraDate()  // => 2024-06-15
 
 ## Next steps
 
+- [JS: Type Methods](/docs/jibrok-studio-jira/scripting-type-methods) - All whitelisted methods per type (strings, arrays, numbers, dates, objects)
 - [Scripting API: Issues](/docs/jibrok-studio-jira/scripting-api-issues) - Search, create, update, and transition issues
 - [Scripting API: Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) - Users, Projects, Fields, Boards, Sprints
 - [Use Cases](/docs/jibrok-studio-jira/use-cases) - Practical scripting examples

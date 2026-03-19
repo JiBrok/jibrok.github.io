@@ -2,7 +2,7 @@
 title: "Groovy Engine"
 key: jibrok-studio-jira
 excerpt: Groovy-like syntax engine - supported constructs, Java/Groovy classes, GDK methods, and type extensions
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

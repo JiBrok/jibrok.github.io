@@ -79,7 +79,7 @@ Scripts can only call the Jira REST API - no other network access is possible. E
 | 1 | **Read-only mode** - scripted fields and UI modifications allow only GET requests | Block with error |
 | 2 | **Permanent blacklist** - sensitive endpoints always blocked (see below) | Block with error |
 | 3 | **App actor restrictions** - destructive/admin operations blocked for Application actor (see below) | Block with error |
-| 4 | **Hardcoded API whitelist** - only pre-approved endpoint groups are allowed (~40 groups) | Block with error |
+| 4 | **Hardcoded API whitelist** - only a curated set of pre-approved endpoint groups are allowed | Block with error |
 | 5 | **Global blacklist** - admin-configurable blocked patterns | Block with error |
 | 6 | **Global whitelist** - admin-configurable allowed patterns | Block with error |
 
@@ -87,18 +87,13 @@ Blacklists always take priority over whitelists at the same level. See [API Rest
 
 ### API access model - whitelist-first
 
-Scripts operate on a **whitelist-first** model: only ~40 pre-approved endpoint groups are allowed, and everything else is blocked by default. This means scripts can only access Jira APIs that have been explicitly reviewed and approved - there is no way to "discover" an unprotected endpoint.
+Scripts operate on a **whitelist-first** model: only a curated set of pre-approved endpoint groups are allowed, and everything else is blocked by default. This means scripts can only access Jira APIs that have been explicitly reviewed and approved - there is no way to "discover" an unprotected endpoint.
 
-On top of this, a **permanent blacklist** provides an additional safety layer - ensuring that sensitive endpoints remain blocked even if the whitelist is expanded in the future. Permanently blocked categories include:
-
-- **Security** - webhooks, Jira Expressions evaluation, bulk operations, JQL internal functions (prevent data exfiltration, code execution bypass, and uncontrolled mass changes)
-- **Privacy** - user email addresses, audit logs, data policy and PII redaction endpoints
-- **Platform internal** - Forge runtime, Connect APIs, app properties, UI modification registration, internal APIs, CI/CD provider integrations (not intended for user scripts)
-- **System configuration** - server info, application properties, settings, license data, announcement banner, project templates (prevent information disclosure and unauthorized configuration access)
+On top of this, a **permanent blacklist** provides an additional safety layer - ensuring that sensitive endpoints remain blocked even if the whitelist is expanded in the future. Permanently blocked categories include security-sensitive operations, privacy-related endpoints, platform-internal APIs, and system configuration endpoints.
 
 ### Application actor restrictions
 
-When a script runs as **Application** (`__APP__`), additional restrictions apply on top of the permanent blacklist. The goal: destructive and administrative operations require a real user context for proper Jira permission checks and correct audit trail attribution.
+When a script runs as **Application**, additional restrictions apply on top of the permanent blacklist. The goal: destructive and administrative operations require a real user context for proper Jira permission checks and correct audit trail attribution.
 
 **Blocked for Application actor:**
 
@@ -185,7 +180,7 @@ By default, only **Current User** mode is available. All other modes must be exp
 
 - **No external network requests** - the app manifest does not declare `external:` permissions. Scripts cannot call `fetch()`, `XMLHttpRequest`, or any HTTP client
 - **Jira REST API only** - the only network access from scripts is `requestJira()`, routed through the Forge proxy to the Jira REST API of the current site
-- **Hardcoded API whitelist** - only ~40 pre-approved endpoint groups are allowed. If an endpoint is not in this list, it is blocked regardless of any configuration
+- **Hardcoded API whitelist** - only a curated set of pre-approved endpoint groups are allowed. If an endpoint is not in this list, it is blocked regardless of any configuration
 - **Data residency** - all data is stored within Atlassian-managed infrastructure and subject to the same [data residency policies](https://www.atlassian.com/software/data-residency) as your Jira Cloud site
 
 See [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security) for details on tenant isolation, egress controls, and zero external infrastructure.
@@ -209,7 +204,7 @@ Every script passes through multiple layers of security validation before and du
 | Network | No HTTP requests, no sockets, no external connections |
 | Browser APIs | No `window`, `document`, `fetch`, `XMLHttpRequest` |
 | Node.js | No `require`, `process`, `Buffer`, `child_process` |
-| Code generation | No `eval()`, `Function()`, `import()` |
+| Code generation | No `Function()`, `import()`. `eval(uuid)` is available only for including saved scripts by ID |
 | Prototype chain | Prototype manipulation blocked |
 | Timers | No `setTimeout`, `setInterval`, `requestAnimationFrame` |
 | Module system | No `require()`, `import`, `module.exports` |

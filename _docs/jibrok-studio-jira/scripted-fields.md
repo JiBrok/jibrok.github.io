@@ -15,7 +15,7 @@ tags:
 
 ## Overview
 
-Scripted Fields are read-only computed custom fields whose values are calculated by scripts on issue create and update. Four field types are available.
+Scripted Fields are read-only computed custom fields whose values are calculated by scripts on issue create and update. Five field types are available.
 
 ---
 
@@ -27,6 +27,7 @@ Scripted Fields are read-only computed custom fields whose values are calculated
 | **Scripted Number Field** | Number | Computed scores, subtask point totals |
 | **Scripted Date Field** | Date string (ISO format) | Business day calculations, SLA dates |
 | **Scripted DateTime Field** | DateTime string (ISO format) | Timestamp calculations, deadline tracking |
+| **Scripted Paragraph Field** | ADF object (Atlassian Document Format) | Rich text content, formatted descriptions |
 
 ---
 
@@ -35,12 +36,12 @@ Scripted Fields are read-only computed custom fields whose values are calculated
 ### 1. Create the custom field
 
 1. In Jira, go to **Settings > Issues > Custom Fields**
-2. Create a new field of type **Scripted Text Field**, **Scripted Number Field**, **Scripted Date Field**, or **Scripted DateTime Field**
+2. Create a new field of type **Scripted Text Field**, **Scripted Number Field**, **Scripted Date Field**, **Scripted DateTime Field**, or **Scripted Paragraph Field**
 3. Assign the field to the appropriate screens
 
 ### 2. Link a script
 
-In the script's **Config** tab, add a trigger of the appropriate type (`customFieldText`, `customFieldNumber`, `customFieldDate`, or `customFieldDatetime`) and select the custom field to associate with.
+In the script's **Config** tab, add a trigger of the appropriate type (Text Field, Number Field, Date Field, DateTime Field, or Paragraph Field) and select the custom field to associate with.
 
 ---
 
@@ -102,6 +103,16 @@ if (comments.length > 0) {
   return comments[comments.length - 1].created
 }
 return null
+```
+
+### Scripted paragraph field - rich text summary
+
+```js
+return Adf.doc(
+  Adf.paragraph(
+    Adf.text(`Priority: ${issue.priority} | Status: ${issue.status}`)
+  )
+)
 ```
 
 ---

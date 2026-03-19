@@ -2,7 +2,7 @@
 title: "Scripting API: Utilities"
 key: jibrok-studio-jira
 excerpt: Adf, DateUtils, Arrays, Strings, CSV, Validator
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

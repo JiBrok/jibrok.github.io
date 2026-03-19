@@ -2,7 +2,7 @@
 title: Scripting Examples
 key: jibrok-studio-jira
 excerpt: Practical recipes - bulk operations, reporting, field sync, table CRUD, queue patterns, automation
-category: administration
+category: scripting
 tags:
   - doc
   - cloud

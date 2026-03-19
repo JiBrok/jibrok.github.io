@@ -2,7 +2,7 @@
 title: Recipes
 key: jibrok-studio-jira
 excerpt: Built-in batch operations for recalculating fields and processing issues at scale
-category: administration
+category: core-features
 tags:
   - doc
   - cloud
