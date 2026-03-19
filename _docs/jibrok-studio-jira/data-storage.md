@@ -48,7 +48,7 @@ Structured data storage accessible from both the UI and scripts.
 | **Select** | Dropdown from predefined options |
 | **JSON** | Arbitrary JSON data |
 
-See [Limits](/docs/jibrok-studio-jira/limits) for table size and storage limits.
+See [Limits](/docs/jibrok-studio-jira/limits) for table size and storage limits. When a table reaches its row limit, new inserts will fail with an error - delete existing rows or increase limits before adding more data.
 
 ### Managing data in the UI
 
@@ -163,7 +163,7 @@ The queue list shows:
 | **Processing** | Pulled by a consumer, awaiting acknowledgment |
 | **Failed** | Rejected by a consumer |
 
-See [Limits](/docs/jibrok-studio-jira/limits) for queue size and message limits.
+See [Limits](/docs/jibrok-studio-jira/limits) for queue size and message limits. When a queue reaches its message limit, new pushes will fail - consume or purge messages to free space.
 
 ### Message browser
 

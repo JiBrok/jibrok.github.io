@@ -103,7 +103,7 @@ Labels are color-coded tags for categorizing scripts. Unlike folders, one script
 
 ### Available colors
 
-Auto, Default, Blue, Yellow, Purple, Red, Green. Each color has a regular and **bold** variant (13 options total).
+Auto, Default, Blue, Yellow, Purple, Red, Green. Each color has a regular and **bold** variant.
 
 ### Assigning labels
 

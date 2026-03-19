@@ -34,7 +34,7 @@ The `tables` variable provides access to Custom Tables from scripts. All methods
 | `tables.deleteRow(name, rowId)` | Delete a row by ID |
 | `tables.deleteRows(name, where)` | Delete rows matching filter |
 | `tables.count(name, where?)` | Count rows (optionally filtered) |
-| `tables.upsert(name, where, data)` | Insert or update row (returns `_action: 'created'\|'updated'`) |
+| `tables.upsert(name, where, data)` | Insert or update row (returns `_action: 'created'` or `'updated'`) |
 
 ---
 

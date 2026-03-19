@@ -20,7 +20,7 @@ Recipes are built-in batch operations that process large numbers of Jira issues.
 
 ---
 
-## Available recipes
+## Available recipe
 
 ### Recalculate fields
 

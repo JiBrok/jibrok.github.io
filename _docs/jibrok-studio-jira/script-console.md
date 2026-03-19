@@ -30,7 +30,7 @@ Use the Console to write and run scripts interactively. It provides a code edito
 The editor supports:
 
 - **Syntax highlighting** for the scripting language
-- **Script engine selection** - choose between JavaScript (primary), Python, Groovy, and Jira Expressions engines
+- **Script engine selection** - choose between JavaScript (primary), Python, and Groovy engines. Jira Expressions are available exclusively with the [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition) trigger
 - **Variables popup** - insert available variable names into the editor
 - **Local draft auto-save** - drafts are saved to browser localStorage automatically
 

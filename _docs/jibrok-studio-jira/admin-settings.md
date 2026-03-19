@@ -21,12 +21,7 @@ All administrative settings are in the **Admin** tab, accessible to Jira site ad
 
 ### Health check
 
-Database maintenance and application data integrity tools:
-
-- **Run migrations** - apply pending database schema updates (also runs hourly automatically)
-- **Check duplicates** - detect and remove duplicate global variable scripts
-- **Storage usage** - monitor database size, table sizes, and row counts
-- **Data integrity** - detect and clean up orphaned records left by failed deletions
+Database maintenance and integrity tools (migrations, duplicate detection, storage usage, data integrity). See [Admin Tools - Health Check](/docs/jibrok-studio-jira/admin-tools#run-health-check) for details.
 
 ### Diagnostic logging
 
@@ -86,9 +81,6 @@ Toggle each trigger type on/off globally:
 
 Disabled types **preserve existing configurations** but prevent execution. All toggles are recorded in the audit log.
 
-<a href="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" target="_blank">
-<img src="/uploads/jibrok-studio-jira/admin-triggers-toggles.png" alt="Trigger type toggle settings" style="width:100%;" loading="lazy"></a>
-
 ### Event type settings
 
 Fine-grained control over which Jira event types trigger scripts. Only applies to scripts with Event triggers.
@@ -97,9 +89,6 @@ Fine-grained control over which Jira event types trigger scripts. Only applies t
 - 7 core events enabled by default: `issue_created`, `issue_updated`, `issue_deleted`, `issue_assigned`, `comment_created`, `comment_deleted`, `comment_mentioned`
 - Disable specific event types to reduce unnecessary script executions
 - Changes are recorded in the audit log
-
-<a href="/uploads/jibrok-studio-jira/admin-event-types.png" target="_blank">
-<img src="/uploads/jibrok-studio-jira/admin-event-types.png" alt="Event trigger type configuration" style="width:100%;" loading="lazy"></a>
 
 ### Audit trigger type settings
 

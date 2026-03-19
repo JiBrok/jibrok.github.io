@@ -74,6 +74,11 @@ Each trigger has its own enabled/disabled toggle, independent of the script's en
 
 All trigger types are singleton - each script can have at most one trigger of each type.
 
+### Important notes
+
+- **Workflow Condition is exclusive** - adding a Workflow Condition trigger removes all other triggers from the script. This trigger uses Jira Expressions (not the sandbox engine) and is incompatible with other trigger types. See [Workflow Condition](/docs/jibrok-studio-jira/triggers-workflow-condition).
+- **Workflow Validator is fail-open** - if a validator script throws an error or times out, the transition is **allowed** (not blocked). Design validators to explicitly return `false` with a message to block transitions. See [Workflow Validator](/docs/jibrok-studio-jira/triggers-workflow-validator).
+
 ### Limits
 
 See [Limits](/docs/jibrok-studio-jira/limits) for trigger count limits. Global trigger type toggles are available in [Administration](/docs/jibrok-studio-jira/admin-settings).

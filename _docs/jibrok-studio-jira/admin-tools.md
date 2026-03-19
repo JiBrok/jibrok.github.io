@@ -76,7 +76,7 @@ Manage UI Modification registrations:
 2. Select scripts to export (or export all)
 3. Click **Export** - copy to clipboard or download as file
 
-Exported data includes: script source code, name, description, enabled status, actor configuration, labels, folder path, trigger configurations, and version history.
+See [Import & Export](/docs/jibrok-studio-jira/import-export) for details on what's included and the export format.
 
 ### Import
 

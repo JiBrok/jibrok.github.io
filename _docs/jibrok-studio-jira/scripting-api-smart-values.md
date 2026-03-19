@@ -272,7 +272,9 @@ log(d.diff(d.plusDays(1)))             // -86400000
 
 ---
 
-## Groovy date types
+## Groovy-specific date types
+
+> **Note:** The following date types are only available in the Groovy engine. JavaScript and Python engines use the standard Date object documented above.
 
 When using the Groovy engine, `LocalDate` and `LocalDateTime` have additional methods matching the Date wrapper API:
 

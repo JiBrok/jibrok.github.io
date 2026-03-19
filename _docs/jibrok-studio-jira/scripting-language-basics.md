@@ -238,7 +238,7 @@ log("Count: " + 42)            // => Count: 42
 | Operator | Description     |
 |----------|-----------------|
 | `&&`     | Logical AND     |
-| `\|\|`  | Logical OR      |
+| <code>&#124;&#124;</code> | Logical OR      |
 | `!`      | Logical NOT     |
 
 ### Bitwise
@@ -246,7 +246,7 @@ log("Count: " + 42)            // => Count: 42
 | Operator | Description          |
 |----------|----------------------|
 | `&`      | Bitwise AND          |
-| `\|`     | Bitwise OR           |
+| <code>&#124;</code> | Bitwise OR           |
 | `^`      | Bitwise XOR          |
 | `~`      | Bitwise NOT          |
 | `<<`     | Left shift           |
@@ -345,7 +345,7 @@ log(a)     // => 7
 | `%=`     | `x = x % val`  |
 | `**=`    | `x = x ** val` |
 | `&=`     | `x = x & val`  |
-| `\|=`    | `x = x \| val` |
+| <code>&#124;=</code> | <code>x = x &#124; val</code> |
 | `^=`     | `x = x ^ val`  |
 | `<<=`    | `x = x << val` |
 | `>>=`    | `x = x >> val` |
@@ -356,7 +356,7 @@ log(a)     // => 7
 | Operator | Description                            |
 |----------|----------------------------------------|
 | `&&=`    | Assign if current value is truthy      |
-| `\|\|=`  | Assign if current value is falsy       |
+| <code>&#124;&#124;=</code> | Assign if current value is falsy       |
 | `??=`    | Assign if current value is null/undefined |
 
 ```js

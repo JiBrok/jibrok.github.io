@@ -56,6 +56,8 @@ if (!res.ok) {
 }
 ```
 
+The `requestJira()` function returns an object with `ok` (boolean), `status` (number), and `body` (parsed JSON or text) properties.
+
 ---
 
 ## Script context variables

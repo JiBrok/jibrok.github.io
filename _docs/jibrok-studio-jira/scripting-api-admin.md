@@ -144,6 +144,8 @@ for (const e of events) {
 
 ## Assets namespace
 
+> **Note:** The Assets API requires Jira Service Management with Assets (CMDB) enabled on your Jira site.
+
 The `Assets` namespace provides access to JSM Assets (CMDB) for managing objects, schemas, and object types.
 
 ### Methods

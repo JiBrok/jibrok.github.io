@@ -68,7 +68,7 @@ After running, a table shows the defined variables:
 - The script **must return a plain object** (`return { key: value }`)
 - Reserved variable names (engine built-ins) cannot be overridden
 - Only one global script exists per site
-- `eval()` is not allowed in the global script
+- `eval()` (direct code evaluation) is not allowed in the global script. Use `eval(scriptId)` in regular scripts to include shared code.
 - Version history tracks all changes
 
 See [Limits](/docs/jibrok-studio-jira/limits) for global variable limits.
