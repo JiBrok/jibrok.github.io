@@ -3,10 +3,6 @@ layout: page
 title: Documentation
 subtitle: Comprehensive guides and documentation for all JiBrok products
 width: expand
-hero:
-    title: Product Documentation
-    subtitle: Choose a product to view its complete documentation
-    search: true
 ---
 
 <div class="docs-featured-hero">
