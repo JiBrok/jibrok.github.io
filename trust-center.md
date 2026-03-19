@@ -211,42 +211,31 @@ excerpt: "SOC 2 Type II certified Atlassian Forge vendor. Security reports, DPAs
             <h2>Support & Availability</h2>
             <p class="section-subtitle">Target response times and operational status monitoring</p>
         </div>
-        <div class="uk-child-width-1-2@m" data-uk-grid>
+        <div class="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
             <div>
-                <div class="table-styled-wrapper">
-                    <table class="uk-table uk-table-striped uk-table-small uk-margin-remove-bottom">
-                        <thead>
-                            <tr>
-                                <th>Severity</th>
-                                <th>Description</th>
-                                <th>Target Response</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="uk-label uk-label-danger label-sm">Critical</span></td>
-                                <td>Service completely unavailable</td>
-                                <td><strong>4 business hours</strong></td>
-                            </tr>
-                            <tr>
-                                <td><span class="uk-label uk-label-warning label-sm">High</span></td>
-                                <td>Major feature broken, no workaround</td>
-                                <td><strong>8 business hours</strong></td>
-                            </tr>
-                            <tr>
-                                <td><span class="uk-label label-sm">Medium</span></td>
-                                <td>Feature issue with workaround</td>
-                                <td><strong>2 business days</strong></td>
-                            </tr>
-                            <tr>
-                                <td><span class="uk-label uk-label-default label-sm">Low</span></td>
-                                <td>Question, enhancement request</td>
-                                <td><strong>5 business days</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="feature-card" style="padding:0; overflow:hidden;">
+                    <div class="sla-row sla-critical">
+                        <div class="sla-severity">Critical</div>
+                        <div class="sla-desc">Service completely unavailable</div>
+                        <div class="sla-time">4 business hours</div>
+                    </div>
+                    <div class="sla-row sla-high">
+                        <div class="sla-severity">High</div>
+                        <div class="sla-desc">Major feature broken, no workaround</div>
+                        <div class="sla-time">8 business hours</div>
+                    </div>
+                    <div class="sla-row sla-medium">
+                        <div class="sla-severity">Medium</div>
+                        <div class="sla-desc">Feature issue with workaround</div>
+                        <div class="sla-time">2 business days</div>
+                    </div>
+                    <div class="sla-row sla-low">
+                        <div class="sla-severity">Low</div>
+                        <div class="sla-desc">Question, enhancement request</div>
+                        <div class="sla-time">5 business days</div>
+                    </div>
                 </div>
-                <p class="uk-text-small uk-text-muted uk-margin-small-top">These are target response times, not contractual SLAs. See the full <a href="/support-policy/">Support Policy</a> for details.</p>
+                <p class="uk-text-small uk-text-muted uk-margin-small-top">Target response times, not contractual SLAs. See the full <a href="/support-policy/">Support Policy</a> for details.</p>
             </div>
             <div>
                 <div class="feature-card" style="padding:28px;">
@@ -254,12 +243,12 @@ excerpt: "SOC 2 Type II certified Atlassian Forge vendor. Security reports, DPAs
                     <ul class="uk-list uk-list-large uk-list-divider uk-margin-remove-bottom">
                         <li>
                             <a href="https://jibrok.statuspage.io/" target="_blank">
-                                <span data-uk-icon="icon: bolt" class="uk-margin-small-right"></span>StatusPage - Real-time Status <span class="uk-label uk-label-default label-sm">External</span>
+                                <span data-uk-icon="icon: bolt" class="uk-margin-small-right"></span>StatusPage - Real-time Status
                             </a>
                         </li>
                         <li>
                             <a href="https://jibrok.atlassian.net/servicedesk/customer/portals" target="_blank">
-                                <span data-uk-icon="icon: comment" class="uk-margin-small-right"></span>Help Center - Submit a Request <span class="uk-label uk-label-default label-sm">External</span>
+                                <span data-uk-icon="icon: comment" class="uk-margin-small-right"></span>Help Center - Submit a Request
                             </a>
                         </li>
                         <li>

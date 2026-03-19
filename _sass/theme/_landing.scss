@@ -834,13 +834,46 @@ a.stat-card {
   }
 }
 
-// ===== TABLE STYLED =====
+// ===== SLA ROWS =====
 
-.table-styled-wrapper {
-  border-radius: $border-radius-medium;
-  border: 1px solid $border-light;
-  overflow: hidden;
-  background: #fff;
+.sla-row {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid $border-light;
+  gap: 16px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sla-severity {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 6px;
+  min-width: 72px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sla-critical .sla-severity { background: #ffebe6; color: #DE350B; }
+.sla-high .sla-severity { background: #fff4e5; color: #FF8B00; }
+.sla-medium .sla-severity { background: #e6f0ff; color: #0052CC; }
+.sla-low .sla-severity { background: #f0f2f5; color: #6b6d7b; }
+
+.sla-desc {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #6b6d7b;
+}
+
+.sla-time {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $global-color;
+  white-space: nowrap;
 }
 
 .label-sm {
