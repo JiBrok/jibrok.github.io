@@ -9,23 +9,38 @@ hero:
     search: true
 ---
 
-<div class="uk-section uk-section-small uk-padding-remove-top">
-    <div class="uk-container">
-        <div class="docs-promo-card uk-box-shadow-medium uk-margin-medium-bottom">
-            <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
-                <div class="uk-width-auto@m uk-text-center">
-                    <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" class="docs-promo-icon" loading="lazy">
+<div class="docs-featured-hero">
+    <div class="studio-container">
+        <div class="docs-featured-grid">
+            <div>
+                <div class="hero-logo-row">
+                    <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio" class="hero-logo-icon">
+                    <span class="hero-logo-label">Featured Product</span>
                 </div>
-                <div class="uk-width-expand@m">
-                    <h2 class="uk-margin-small-bottom docs-promo-card h2">JiBrok Studio for Jira Cloud</h2>
-                    <p class="uk-text-muted uk-margin-remove-bottom">Forge-based scripting platform - automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.</p>
-                    <div class="uk-margin-small-top">
-                        <a href="/docs/jibrok-studio-jira/getting-started/" class="uk-button uk-button-primary uk-button-small">Getting Started</a>
-                        <a href="/docs/jibrok-studio-jira/scripting-api/" class="uk-button uk-button-default uk-button-small uk-margin-small-left">API Reference</a>
-                        <a href="/docs/jibrok-studio-jira/use-cases/" class="uk-button uk-button-default uk-button-small uk-margin-small-left">Use Cases</a>
-                        <a href="/docs/jibrok-studio-jira/overview/" class="uk-button uk-button-default uk-button-small uk-margin-small-left">Overview</a>
-                    </div>
+                <h2 class="docs-featured-title">JiBrok Studio for Jira Cloud</h2>
+                <p class="docs-featured-subtitle">The scripting platform for Jira Cloud. Write scripts in JavaScript, Python, or Groovy - automate workflows, create computed fields, and extend Jira.</p>
+                <div class="hero-buttons">
+                    <a href="/docs/jibrok-studio-jira/getting-started/" class="btn-primary-hero">Getting Started</a>
+                    <a href="/docs/jibrok-studio-jira/" class="btn-secondary-hero">Overview</a>
                 </div>
+            </div>
+            <div class="docs-featured-links">
+                <a href="/docs/jibrok-studio-jira/scripting-api/" class="docs-featured-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    API Reference
+                </a>
+                <a href="/docs/jibrok-studio-jira/use-cases/" class="docs-featured-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Use Cases
+                </a>
+                <a href="/docs/jibrok-studio-jira/script-console/" class="docs-featured-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                    Script Console
+                </a>
+                <a href="/docs/jibrok-studio-jira/faq/" class="docs-featured-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    FAQ
+                </a>
             </div>
         </div>
     </div>
