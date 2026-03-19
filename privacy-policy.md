@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy-policy/
 ---
 
-**Version 1.1 | Last updated: March 18, 2026**
+**Version 1.1** - Last updated: March 18, 2026
 
 This Privacy Policy explains how JiBrok ("we", "us", "our") collects, uses, and protects your personal data when you visit [jibrok.com](https://jibrok.com) and use our products. JiBrok is a software company based in the European Union (Republic of Cyprus). JiBrok is the data controller for the personal data processed through this website.
 

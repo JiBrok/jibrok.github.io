@@ -4,7 +4,7 @@ title: "Provider-Specific Terms — JiBrok Studio for Jira"
 permalink: /provider-specific-terms-studio/
 ---
 
-Version 1.1 | Last updated: March, 2026
+**Version 1.1** - Last updated: March, 2026
 
 These Provider-Specific Terms supplement the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) ("Standard Agreement") for **JiBrok Studio for Jira Cloud** provided by JiBrok ("Provider"). In the event of any conflict between these Provider-Specific Terms and the Standard Agreement, these Provider-Specific Terms shall prevail.
 

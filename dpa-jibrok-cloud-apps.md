@@ -6,7 +6,7 @@ permalink: /dpa-jibrok-cloud-apps/
 
 ## Data Processing Agreement (DPA) — JiBrok Cloud Apps (Atlassian Forge)
 
-**Version 1.1 | Effective date:** 2026-03-18
+**Version 1.1** - Effective date: 2026-03-18
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the following JiBrok Cloud apps hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (each, an "**App**"):
 

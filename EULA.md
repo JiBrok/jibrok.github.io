@@ -4,7 +4,7 @@ title: EULA
 permalink: /EULA/
 ---
 
-Version 1.1 | Last updated: March, 2026
+**Version 1.1** - Last updated: March, 2026
 
 ---
 

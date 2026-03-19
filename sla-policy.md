@@ -4,7 +4,7 @@ title: Support Policy
 permalink: /support-policy/
 ---
 
-**Version 1.0 | Last updated: March, 2026**
+**Version 1.0** - Last updated: March, 2026
 
 This Support Policy describes the support services provided by JiBrok for apps available on the Atlassian Marketplace.
 

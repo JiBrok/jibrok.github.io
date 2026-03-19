@@ -4,7 +4,7 @@ title: Cookie Policy
 permalink: /cookie-policy/
 ---
 
-**Version 1.0 | Last updated: March 18, 2026**
+**Version 1.0** - Last updated: March 18, 2026
 
 This Cookie Policy explains what cookies are, how JiBrok ("we", "us", "our") uses them on [jibrok.com](https://jibrok.com), and how you can manage your preferences.
 

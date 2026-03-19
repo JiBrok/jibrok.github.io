@@ -6,7 +6,7 @@ permalink: /dpa-message-field-cloud/
 
 ## Data Processing Agreement (DPA) - Message Field Cloud (Atlassian Forge)
 
-**Version 1.1 | Effective date:** 2026-03-18
+**Version 1.2** - Effective date: 2026-03-19
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the **Message Field Cloud** app by Jibrok, hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (the "**App**").
 
@@ -41,7 +41,7 @@ Terms such as **Personal Data**, **Processing**, **Controller**, **Processor**, 
 
 3.2 Customer's instructions are provided via installation, configuration and use of the App.
 
-3.3 **Free-text fields.** The App includes configuration fields that may accept free text (e.g., **name**, **description**, **message**, **JQL**). Customer is responsible for ensuring that any Personal Data included in such fields is lawful and necessary.
+3.3 The App includes configuration fields that may accept free text (e.g., name, description, message, JQL). Customer is responsible for ensuring that any Personal Data included in such fields is lawful and necessary.
 
 ---
 
@@ -55,9 +55,11 @@ Jibrok ensures that any person authorized to process Personal Data is bound by c
 
 5.1 Jibrok implements appropriate technical and organizational measures described in **Annex 2**.
 
-5.2 The App has **no external data egress** and uses only Atlassian Forge runtime and storage (no external services, no Forge Remote).
+5.2 The App has **no external data egress** and uses only Atlassian Forge runtime and storage.
 
-5.3 Jibrok maintains **SOC 2 Type II** for its organizational controls (evidence may be shared under NDA where appropriate).
+5.3 Jibrok maintains **SOC 2 Type II** certification for its organizational controls (evidence may be shared under NDA where appropriate).
+
+5.4 The App implements automated PII redaction in diagnostic logging. Only error-level logs are emitted in production.
 
 ---
 
@@ -83,7 +85,7 @@ Jibrok ensures that any person authorized to process Personal Data is bound by c
 
 7.1 Jibrok will reasonably assist Customer in responding to Data Subject requests (access/erasure/rectification/restriction) to the extent applicable to data processed by the App and technically feasible.
 
-7.2 **Atlassian accountId reporting/erasure.** Jibrok confirms it has implemented the Atlassian Personal Data Reporting/erasure workflow for stored `accountId` identifiers and will process applicable "erase/refresh" actions as required for the App.
+7.2 Jibrok implements Atlassian's Personal Data Reporting and erasure workflow for stored `accountId` identifiers and will process applicable erasure actions as required.
 
 ---
 
@@ -116,37 +118,37 @@ If this DPA conflicts with the main agreement/terms, this DPA prevails only rega
 ## Annex 1 - Processing details (GDPR Art. 28(3))
 
 ### A. Service
+
 **Message Field Cloud** - Jira app on Atlassian Marketplace running on Atlassian Forge.
 
 ### B. Categories of Data Subjects
-Customer's Jira users (e.g., admins/users creating or updating App configuration).
 
-### C. Personal Data processed (minimal)
-- **Atlassian `accountId`** stored as `createdBy` / `updatedBy` (and any similar creator/updater linkage fields used by the App) solely to attribute who created/updated a configuration item.
-- App configuration may include free-text fields (**name/description/message/JQL**). These are Customer-controlled inputs; Customer determines whether any Personal Data is entered there.
+Customer's Jira users (administrators creating or updating App configuration).
 
-### D. Non-persistent access (read-only)
-- The App may read Jira data to render functionality but does **not** write back to Jira and does **not** store Jira issue content.
+### C. Personal Data processed
 
-### E. Diagnostic data (Forge logs)
-- The App uses **Forge logs only** for error diagnostics.
-- Jibrok does not intentionally log Jira content or Personal Data; however, in rare cases technical error context might include fragments of data. Jibrok applies reasonable efforts to minimize/scrub such occurrences.
+1. **Atlassian `accountId`** - stored as creator/updater attribution for configuration items.
+2. **Configuration free-text fields** - name, description, message content, JQL queries. Customer-controlled inputs; Customer determines whether any Personal Data is entered.
 
-### F. Purpose
+The App may read Jira data to render functionality but does not write back to Jira and does not persistently store Jira issue content.
+
+### D. Purpose
+
 Provide App functionality; debugging; reliability improvements using aggregated/de-identified signals; security.
 
-### G. Duration
+### E. Duration
+
 While installed/active, plus any Atlassian Forge platform retention behavior after uninstall.
 
 ---
 
 ## Annex 2 - Security measures (TOMs)
 
-- Runs entirely on Atlassian Forge; no external egress/third-party analytics for this App.
-- Minimal data: `accountId` for attribution + configuration stored in Forge storage.
-- Access controls: restricted administrative access (single operator), strong authentication, least privilege.
-- Logging: error-focused; avoidance of user content; scrubbing/minimization practices.
-- Organizational controls supported by SOC 2 Type II (sharing under NDA when needed).
+- **Platform isolation:** Runs entirely on Atlassian Forge; no external data egress, no third-party services.
+- **Data minimization:** Only `accountId` for attribution and configuration data in Forge storage. No persistent storage of Jira issue content.
+- **Automated PII redaction:** Sensitive fields automatically redacted from diagnostic logs.
+- **Access controls:** Restricted administrative access, strong authentication, least privilege.
+- **Organizational controls:** Supported by SOC 2 Type II certification.
 
 ---
 

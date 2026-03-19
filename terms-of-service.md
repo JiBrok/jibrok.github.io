@@ -4,7 +4,7 @@ title: Terms of Service
 permalink: /terms-of-service/
 ---
 
-**Version 1.0 | Last updated: March, 2026**
+**Version 1.0** - Last updated: March, 2026
 
 These Terms of Service ("Terms") govern your use of the JiBrok website at [jibrok.com](https://jibrok.com) ("Website"). By accessing or using the Website, you agree to these Terms.
 
