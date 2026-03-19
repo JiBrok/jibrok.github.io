@@ -60,7 +60,7 @@ The security pipeline validates, analyzes, and executes code with strict safety 
 
 ### Blocked by design
 
-- Common sandbox escape techniques are blocked at multiple stages
+- Scripts cannot break out of the sandbox - escape vectors are blocked at multiple stages
 - Dangerous constructors cannot be instantiated or referenced
 - Internal type metadata is inaccessible from within the sandbox
 - Security violations terminate the script immediately and cannot be caught with `try/catch`
@@ -74,7 +74,7 @@ All data in JiBrok Studio is stored within **Atlassian-managed infrastructure**:
 - **Forge SQL** - scripts, execution history, configuration, custom tables, message queues, audit logs, compliance baselines
 - **Forge KV** - key-value storage for app settings and lightweight data
 - **No external databases** - there is no Amazon RDS, S3 bucket, MongoDB, or any third-party data store
-- **Atlassian data residency** - your data is subject to the same [data residency policies](https://www.atlassian.com/trust/privacy/data-residency) as your Jira Cloud site
+- **Atlassian data residency** - your data is subject to the same [data residency policies](https://www.atlassian.com/software/data-residency) as your Jira Cloud site
 
 Scripts, their source code, execution results, and all associated metadata never leave Atlassian's infrastructure.
 
@@ -109,6 +109,7 @@ The app manifest does not declare `external:` permissions - there are no outboun
 JiBrok Studio uses a **declarative permission model**:
 
 - All permissions are declared upfront and reviewed by Atlassian before each Marketplace release
+- **45 granular scopes** across 9 categories - Atlassian requires fine-grained scopes instead of a single "full access" permission. For a complete breakdown of all 45 permissions and the features they enable, see [Security Overview](/docs/jibrok-studio-jira/security#why-does-the-app-need-these-permissions)
 - **Impersonation scopes** - scripts execute API calls with the permissions of the configured user (current user, application, or a specific user). Scripts cannot escalate beyond the actor's Jira permissions
 - **API whitelist/blacklist** - admins can restrict which Jira REST API endpoints scripts are allowed to call. Restrictions use glob-pattern matching at both global and per-script levels (see [API Restrictions](/docs/jibrok-studio-jira/admin-api-restrictions))
 - **No cross-site data sharing** - each Jira site's data is completely isolated, with no shared storage between installations
@@ -156,6 +157,7 @@ JiBrok Studio provides a comprehensive set of admin controls on top of the Forge
 
 ## Next steps
 
+- [Security Overview](/docs/jibrok-studio-jira/security) - Permissions breakdown, API restrictions, sandbox, and audit
 - [Scripting Language](/docs/jibrok-studio-jira/scripting-language) - Language syntax and sandbox details
 - [Limits](/docs/jibrok-studio-jira/limits) - Complete resource limits reference
 - [API Restrictions](/docs/jibrok-studio-jira/admin-api-restrictions) - Configure endpoint access rules

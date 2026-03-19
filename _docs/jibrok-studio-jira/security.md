@@ -1,8 +1,8 @@
 ---
-title: Security
+title: Security Overview
 key: jibrok-studio-jira
-excerpt: Security model - sandboxed execution, API access control, audit, and platform protection
-category: administration
+excerpt: Permissions, API restrictions, sandbox, execution identity, audit, and platform protection
+category: getting-started
 tags:
   - doc
   - cloud
@@ -16,13 +16,127 @@ tags:
 
 ## Overview
 
-JiBrok Studio for Jira Cloud is built on [Atlassian Forge](https://developer.atlassian.com/platform/forge/) and uses multiple layers of protection to keep your Jira data safe. Scripts run in an isolated sandbox with no access to external networks, filesystems, or browser APIs. The only way scripts interact with data is through the Jira REST API - filtered through a multi-level access control system.
+JiBrok Studio for Jira Cloud is built on [Atlassian Forge](https://developer.atlassian.com/platform/forge/) and uses multiple layers of protection to keep your Jira data safe:
 
-This page provides a high-level overview. For detailed configuration, see the linked sub-pages.
+- **Admin-only** - only Jira site administrators can access the app, write scripts, or change settings
+- **Admin-reviewed** - every script is intentionally created, configured, and reviewed by an administrator before it runs. Scripts do not appear or execute on their own
+- **Sandboxed execution** - scripts run in an isolated interpreter with no access to external networks, filesystems, or browser APIs
+- **Jira REST API only** - the only way scripts interact with data is through the Jira REST API, filtered through a multi-level access control system
+- **No external infrastructure** - no vendor servers, databases, or third-party services
+
+For Forge platform-level protections (tenant isolation, data residency, egress controls), see [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security).
 
 ---
 
-## Admin-only access
+## Why does the app need these permissions?
+
+JiBrok Studio requires **45 OAuth scopes** across 9 categories. This number reflects Atlassian's requirement for fine-grained scopes - instead of a single "full access" permission, each capability needs its own scope.
+
+These permissions allow scripts to programmatically manage issues, projects, fields, workflows, sprints, CMDB objects, and other aspects of Jira - automating, formalizing, and systematizing administration tasks that would otherwise require repetitive manual work.
+
+All scopes are declared in the app manifest and reviewed by Atlassian before each Marketplace release.
+
+| Category | Count | Features | Impersonation |
+|----------|:-----:|----------|:-------------:|
+| App Internal | 4 | Storage, UIM registration, GDPR, licensing | No |
+| Issue Data | 10 | Console scripts, triggers, scripted fields, automation | Yes |
+| Project Data | 3 | Project info, components, versions in scripts | Yes |
+| Jira Software | 4 | Boards, sprints, epics | Mixed |
+| JSM | 1 | Service desk request types for UIM config | No |
+| JSM Assets/CMDB | 7 | CMDB objects, schemas, types in scripts | Yes |
+| Field/Screen Config | 13 | Scripted custom fields module | No |
+| Rovo | 1 | Rovo AI agent integration | No |
+| Jira Administration | 2 | UIM registration, project config | No |
+
+### Why so many scopes?
+
+Atlassian enforces a granular permission model. For example:
+
+- **Issue Data** requires 10 separate scopes because reading issues, issue types, statuses, priorities, labels, and users each need their own scope
+- **Field/Screen Config** uses 13 scopes because the Scripted Custom Fields module needs to read and write field configurations, screen schemes, and screen tabs - each a separate scope
+- **JSM Assets/CMDB** needs 7 scopes for reading schemas, types, attributes, icons, and performing CRUD operations on objects
+
+### What is impersonation?
+
+Scopes marked with "Yes" in the Impersonation column support running API calls **as a specific user** rather than as the app. This means:
+
+- The script executes with that user's Jira permissions - it cannot access data the user cannot access
+- Actions are attributed to that user in Jira's audit trail
+- Permission checks happen at the Jira level, not just in the app
+
+See [Execution identity](#execution-identity) for details on how admins control this.
+
+---
+
+## What restrictions exist on REST API requests?
+
+Scripts can only call the Jira REST API - no other network access is possible. Every API call passes through a 6-level security pipeline. A request must pass **all** levels to proceed.
+
+### Security check order
+
+| Level | Check | Fail behavior |
+|:-----:|-------|---------------|
+| 1 | **Read-only mode** - scripted fields and UI modifications allow only GET requests | Block with error |
+| 2 | **Permanent blacklist** - sensitive endpoints always blocked (see below) | Block with error |
+| 3 | **App actor restrictions** - destructive/admin operations blocked for Application actor (see below) | Block with error |
+| 4 | **Hardcoded API whitelist** - only pre-approved endpoint groups are allowed (~40 groups) | Block with error |
+| 5 | **Global blacklist** - admin-configurable blocked patterns | Block with error |
+| 6 | **Global whitelist** - admin-configurable allowed patterns | Block with error |
+
+Blacklists always take priority over whitelists at the same level. See [API Restrictions](/docs/jibrok-studio-jira/admin-api-restrictions) for configuring levels 5-6.
+
+### API access model - whitelist-first
+
+Scripts operate on a **whitelist-first** model: only ~40 pre-approved endpoint groups are allowed, and everything else is blocked by default. This means scripts can only access Jira APIs that have been explicitly reviewed and approved - there is no way to "discover" an unprotected endpoint.
+
+On top of this, a **permanent blacklist** provides an additional safety layer - ensuring that sensitive endpoints remain blocked even if the whitelist is expanded in the future. Permanently blocked categories include:
+
+- **Security** - webhooks, Jira Expressions evaluation, bulk operations, JQL internal functions (prevent data exfiltration, code execution bypass, and uncontrolled mass changes)
+- **Privacy** - user email addresses, audit logs, data policy and PII redaction endpoints
+- **Platform internal** - Forge runtime, Connect APIs, app properties, UI modification registration, internal APIs, CI/CD provider integrations (not intended for user scripts)
+- **System configuration** - server info, application properties, settings, license data, announcement banner, project templates (prevent information disclosure and unauthorized configuration access)
+
+### Application actor restrictions
+
+When a script runs as **Application** (`__APP__`), additional restrictions apply on top of the permanent blacklist. The goal: destructive and administrative operations require a real user context for proper Jira permission checks and correct audit trail attribution.
+
+**Blocked for Application actor:**
+
+| Category | Blocked operations | Why user context is required |
+|----------|-------------------|------------------------------|
+| All DELETE operations | `DELETE /rest/**` (catch-all) | Jira applies permission checks per-user; audit trail must show who deleted |
+| Issue types | Create, update | Admin-only configuration, needs user attribution |
+| Priorities | Create, update | Admin-only configuration |
+| Resolutions | Create, update | Admin-only configuration |
+| Statuses | Create, update (both new and legacy endpoints) | Admin-only configuration |
+| Issue link types | Create, update | Admin-only configuration |
+| Custom fields | Create, update | Admin-only configuration |
+| Groups | Create group, add user to group | Security-sensitive group membership |
+| Workflow schemes | Create, update | Admin-only configuration |
+| Screens | Create, update | Admin-only configuration |
+| Screen schemes | Create, update | Admin-only configuration |
+| Issue type schemes | Create, update | Admin-only configuration |
+| Issue type screen schemes | Create, update | Admin-only configuration |
+| Field configurations | Create, update | Admin-only configuration |
+| Field config schemes | Create, update | Admin-only configuration |
+| Permission schemes | Create, update | Security-critical permissions |
+| Notification schemes | Create, update | Communication configuration |
+| Priority schemes | Create, update | Admin-only configuration |
+| Roles | Create, update | Security-sensitive roles |
+| Project categories | Create, update | Admin-only configuration |
+| Issue notifications | Send notification (`POST .../notify`) | Requires user identity for notification attribution |
+
+**Allowed for Application actor:**
+
+- All GET requests (reading data)
+- Creating and updating issues, comments, transitions, issue links
+- Creating and updating components, versions, filters
+
+**Error on violation:** `"API call blocked: {METHOD} {PATH} - this operation is not allowed when running as app. Run the script as the current user instead."`
+
+---
+
+## Who can access the app?
 
 JiBrok Studio is available to **Jira site administrators only**. Non-admin users cannot access the app interface, write scripts, or change any settings.
 
@@ -39,9 +153,7 @@ JiBrok Studio is available to **Jira site administrators only**. Non-admin users
 
 Regular users only see the **results** of scripts - computed field values, modified forms, or Rovo responses. They never see or modify the scripts themselves.
 
----
-
-## Rovo AI: delegated access
+### Rovo AI: delegated access
 
 When Rovo AI integration is enabled, admins can selectively expose scripts to non-admin users through the Rovo chat interface. This follows a **delegation by design** model:
 
@@ -50,9 +162,33 @@ When Rovo AI integration is enabled, admins can selectively expose scripts to no
 3. **Scripts execute with the calling user's permissions** - not the admin's. The user can only affect data they already have access to in Jira
 4. **Standard execution limits** apply to all Rovo-triggered runs
 
-This ensures admins retain full control over what scripts are exposed, while users can safely use them within their existing Jira permissions.
-
 See [Rovo AI Agent Integration](/docs/jibrok-studio-jira/rovo) for setup details.
+
+---
+
+## Execution identity
+
+Scripts can run under different identities, controlled by the admin:
+
+| Mode | Description |
+|------|-------------|
+| **Current User** (default) | Script runs with the triggering user's Jira permissions |
+| **Application** | Script runs with app-level permissions (must be explicitly enabled) |
+| **Pre-configured Users** | Admin defines a list of users that scripts can run as |
+| **Specific User** | Script runs as a specific Jira user selected by the admin |
+
+By default, only **Current User** mode is available. All other modes must be explicitly enabled by an admin in the [Administration](/docs/jibrok-studio-jira/admin-settings) panel.
+
+---
+
+## What access does the app have to the platform?
+
+- **No external network requests** - the app manifest does not declare `external:` permissions. Scripts cannot call `fetch()`, `XMLHttpRequest`, or any HTTP client
+- **Jira REST API only** - the only network access from scripts is `requestJira()`, routed through the Forge proxy to the Jira REST API of the current site
+- **Hardcoded API whitelist** - only ~40 pre-approved endpoint groups are allowed. If an endpoint is not in this list, it is blocked regardless of any configuration
+- **Data residency** - all data is stored within Atlassian-managed infrastructure and subject to the same [data residency policies](https://www.atlassian.com/software/data-residency) as your Jira Cloud site
+
+See [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security) for details on tenant isolation, egress controls, and zero external infrastructure.
 
 ---
 
@@ -77,38 +213,6 @@ Every script passes through multiple layers of security validation before and du
 | Prototype chain | Prototype manipulation blocked |
 | Timers | No `setTimeout`, `setInterval`, `requestAnimationFrame` |
 | Module system | No `require()`, `import`, `module.exports` |
-
----
-
-## API access control
-
-Scripts can only call the Jira REST API - no other network access is possible. API access is filtered through multiple validation levels:
-
-- **Path validation** - blocks path traversal attacks and encoding bypasses
-- **Read-only enforcement** - scripted fields and UI modifications are restricted to read-only operations
-- **Dangerous endpoint blocking** - sensitive endpoints are permanently blocked (webhooks, app properties, audit logs, server configuration, user emails, bulk operations, and more)
-- **Actor restrictions** - destructive operations and admin configuration require user context
-- **Hardcoded whitelist** - only pre-approved endpoint groups are allowed
-- **Admin-configurable restrictions** - whitelist/blacklist at global and per-script levels
-
-A request must pass **all** levels to proceed. Blacklists always take priority over whitelists at the same level.
-
-See [API Restrictions](/docs/jibrok-studio-jira/admin-api-restrictions) for configuration details.
-
----
-
-## Execution identity
-
-Scripts can run under different identities, controlled by the admin:
-
-| Mode | Description |
-|------|-------------|
-| **Current User** (default) | Script runs with the triggering user's Jira permissions |
-| **Application** | Script runs with app-level permissions (must be explicitly enabled) |
-| **Pre-configured Users** | Admin defines a list of users (up to 20) that scripts can run as |
-| **Specific User** | Script runs as a specific Jira user selected by the admin |
-
-By default, only **Current User** mode is available. All other modes must be explicitly enabled by an admin in the [Administration](/docs/jibrok-studio-jira/admin-settings) panel.
 
 ---
 
@@ -145,24 +249,13 @@ See [Audit Logs](/docs/jibrok-studio-jira/admin-audit) and [Compliance & Drift M
 
 ---
 
-## Forge platform security
-
-JiBrok Studio runs on Atlassian Forge, which provides additional platform-level protections:
-
-- **App isolation** - each Forge app runs in its own isolated environment, separate from other apps and from Jira itself
-- **OAuth scopes** - the app requests only the scopes it needs (Jira read/write, Software boards, JSM requests)
-- **Data residency** - data is stored in the same region as your Atlassian Cloud site
-- **Encryption** - all data at rest and in transit is encrypted by the Forge platform
-- **GDPR compliance** - personal data reporting and deletion are supported through the Forge platform
-- **No external network access** - Forge apps cannot make arbitrary outbound network calls
-
----
-
 ## Next steps
 
+- [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security) - Tenant isolation, data residency, egress controls
 - [Administration](/docs/jibrok-studio-jira/admin-settings) - Global configuration and trigger controls
 - [API Restrictions](/docs/jibrok-studio-jira/admin-api-restrictions) - Configure endpoint access rules
 - [Audit Logs](/docs/jibrok-studio-jira/admin-audit) - View execution and settings history
 - [Compliance & Drift Monitoring](/docs/jibrok-studio-jira/admin-compliance) - Baselines and integrity checks
 - [Limits](/docs/jibrok-studio-jira/limits) - Complete resource limits reference
 - [Rovo AI Agent](/docs/jibrok-studio-jira/rovo) - Delegated script access for non-admin users
+- [FAQ](/docs/jibrok-studio-jira/faq) - Common security questions answered

@@ -9,6 +9,7 @@ jibrok-studio-jira:
     - jibrok-studio-jira/overview
     - jibrok-studio-jira/getting-started
     - jibrok-studio-jira/forge-platform-security
+    - jibrok-studio-jira/security
 
   - title: Core Features
     docs:

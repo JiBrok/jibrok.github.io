@@ -26,7 +26,20 @@ A JavaScript-like language that runs in a secure sandbox. It supports most JS sy
 
 ### Is it safe to run scripts?
 
-Yes. Scripts run in a multi-layer sandbox with strict resource limits. There is no way to access the host system, other apps, or data outside Jira. See [Forge Platform & Security Architecture](/docs/jibrok-studio-jira/forge-platform-security) for a detailed explanation of the security model and tenant isolation.
+Yes. Scripts run in a multi-layer sandbox with strict resource limits. There is no way to access the host system, other apps, or data outside Jira. Sensitive endpoints (webhooks, audit logs, server info, user emails, bulk operations) are permanently blocked, and destructive operations require real user context. See [Security Overview](/docs/jibrok-studio-jira/security) for the complete security model.
+
+### Why does the app request so many permissions?
+
+JiBrok Studio requires 45 OAuth scopes across 9 categories. This number reflects Atlassian's requirement for fine-grained scopes - instead of one "full access" permission, each capability needs its own scope. For example, the Scripted Fields module alone requires 13 scopes for field and screen configuration. Most scopes are granular read permissions (e.g., separate scopes for reading issues, issue types, statuses, priorities, labels, and users). See [Security Overview](/docs/jibrok-studio-jira/security#why-does-the-app-need-these-permissions) for a complete breakdown by category.
+
+### Can scripts delete issues or change Jira configuration?
+
+It depends on the execution identity:
+
+- **As Application** - all DELETE operations are blocked. Creating or modifying admin configuration (issue types, priorities, statuses, workflow schemes, screen schemes, groups, roles, permission schemes, and more) is also blocked. You will see the error: *"API call blocked: {METHOD} {PATH} - this operation is not allowed when running as app. Run the script as the current user instead."*
+- **As Current User / Specific User** - the operation executes with that user's Jira permissions. DELETE is allowed only if the user has the corresponding Jira permission. All other restrictions (permanent blacklist, whitelist) still apply.
+
+Destructive and administrative operations require real user context for proper Jira permission checks and correct audit trail attribution. See [Security Overview](/docs/jibrok-studio-jira/security#application-actor-restrictions) for the full list of restricted operations.
 
 ### Can scripts call external APIs?
 

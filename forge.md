@@ -60,7 +60,7 @@ width: expand
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
                     <span data-uk-icon="icon: location; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin-small">Data Residency</h3>
-                    <p class="uk-text-small">Your data is subject to the same <a href="https://www.atlassian.com/trust/privacy/data-residency">data residency policies</a> as your Jira Cloud site. No additional data locations.</p>
+                    <p class="uk-text-small">Your data is subject to the same <a href="https://www.atlassian.com/software/data-residency">data residency policies</a> as your Jira Cloud site. No additional data locations.</p>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@ width: expand
             </div>
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
-                    <a class="uk-position-cover" href="https://www.atlassian.com/trust/privacy/data-residency" target="_blank" rel="noopener"></a>
+                    <a class="uk-position-cover" href="https://www.atlassian.com/software/data-residency" target="_blank" rel="noopener"></a>
                     <span data-uk-icon="icon: location; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin">Data Residency</h3>
                     <p>Atlassian's data residency policies and available regions for cloud products.</p>

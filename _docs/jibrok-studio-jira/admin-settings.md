@@ -156,11 +156,21 @@ Manage UI Modification registrations:
 
 ### App scopes
 
-JiBrok Studio for Jira Cloud requires the following Jira scopes:
+JiBrok Studio for Jira Cloud requires 45 OAuth scopes across 9 categories:
 
-- Jira read/write with impersonation
-- Jira Software boards and sprints
-- JSM service desk requests
+| Category | Count | Features | Impersonation |
+|----------|:-----:|----------|:-------------:|
+| App Internal | 4 | Storage, UIM registration, GDPR, licensing | No |
+| Issue Data | 10 | Console scripts, triggers, scripted fields, automation | Yes |
+| Project Data | 3 | Project info, components, versions in scripts | Yes |
+| Jira Software | 4 | Boards, sprints, epics | Mixed |
+| JSM | 1 | Service desk request types for UIM config | No |
+| JSM Assets/CMDB | 7 | CMDB objects, schemas, types in scripts | Yes |
+| Field/Screen Config | 13 | Scripted custom fields module | No |
+| Rovo | 1 | Rovo AI agent integration | No |
+| Jira Administration | 2 | UIM registration, project config | No |
+
+For a detailed explanation of each category and why it's needed, see [Security Overview](/docs/jibrok-studio-jira/security#why-does-the-app-need-these-permissions).
 
 ### Data and privacy
 
