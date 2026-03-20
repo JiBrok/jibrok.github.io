@@ -7,14 +7,14 @@ width: expand
 
 <div class="uk-section uk-section-muted uk-text-center">
     <div class="uk-container uk-container-small">
-        <h1 class="uk-heading-small">Trusted by 1,000+ Companies on Atlassian Marketplace</h1>
-        <p class="uk-text-lead">JiBrok has been building professional Jira extensions since 2016. EU-based, SOC 2 certified, Forge-native.</p>
+        <h1 class="uk-heading-small">Jira Extensions Built with Care Since 2016</h1>
+        <p class="uk-text-lead">JiBrok is a small EU-based company focused on one thing: making Jira work better for your team.</p>
     </div>
 </div>
 
 <div class="studio-section" style="padding:48px 0;">
     <div class="studio-container">
-        <div class="feature-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
             <a href="https://marketplace.atlassian.com/vendors/1216083/jibrok" target="_blank" class="stat-card">
                 <div class="stat-number">10+</div>
                 <p class="stat-label">Years on Marketplace</p>
@@ -27,22 +27,18 @@ width: expand
                 <div class="stat-number">23+</div>
                 <p class="stat-label">Apps Published</p>
             </a>
-            <a href="/security/" class="stat-card">
-                <div class="stat-number">SOC 2</div>
-                <p class="stat-label">Type II - Independently Audited</p>
-            </a>
         </div>
     </div>
 </div>
 
 <div class="uk-section">
     <div class="uk-container">
-        <h2 class="uk-h2 uk-text-center">Our Journey</h2>
+        <h2 class="uk-h2 uk-text-center">Our Story</h2>
         <div class="uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid>
             <div>
-                <p>JiBrok is an EU-based software vendor specializing in professional extensions for Atlassian Jira. Since our first app launch on the Atlassian Marketplace in 2016, we have grown into a trusted provider serving over 1,000 companies worldwide.</p>
-                <p>Our portfolio spans 23+ apps across Jira Cloud and Data Center/Server, covering workflow automation, custom fields, time tracking, SLA management, and scripting. As Atlassian shifted toward Cloud, we embraced the Forge platform early — building our flagship product, JiBrok Studio, as a fully Forge-native application with zero external infrastructure.</p>
-                <p>Security and compliance are central to how we operate. We achieved SOC 2 Type II certification in 2024 and publish transparent security documentation including CAIQ assessments and Data Processing Agreements for every Cloud product.</p>
+                <p>We started JiBrok in 2016 with a simple observation: Jira's built-in fields and workflows aren't enough for real-world processes. Teams need calculated fields, time tracking, SLA timers, and custom logic — without the complexity of full-scale development.</p>
+                <p>Over the years we've built 23+ apps to fill that gap, serving over 1,000 companies on the Atlassian Marketplace. Our latest product — <a href="/docs/jibrok-studio-jira/overview/">JiBrok Studio</a> — brings scripting, automation, and custom fields together in a single Forge-native app that runs entirely within Atlassian's infrastructure.</p>
+                <p>We're a small company, and that's by design. It means direct communication with the people who build the product, fast support, and focused development where each app gets the attention it deserves.</p>
             </div>
             <div>
                 <h4 class="uk-text-uppercase uk-text-muted" style="letter-spacing:0.1em; font-size:0.85rem;">Milestones</h4>
@@ -79,52 +75,27 @@ width: expand
 
 <div class="uk-section uk-section-muted">
     <div class="uk-container">
-        <h2 class="uk-h2 uk-text-center">Why Enterprise Teams Trust JiBrok</h2>
-        <p class="uk-text-lead uk-text-center">Built for the security, compliance, and reliability standards that enterprise teams require.</p>
-        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
+        <h2 class="uk-h2 uk-text-center">How We Work</h2>
+        <div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <span data-uk-icon="icon: world; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">EU-Based Vendor</h3>
-                    <p class="uk-text-small">Headquartered in the EU under GDPR jurisdiction. Your data is handled under the strictest privacy regulations.</p>
+                <div class="uk-card uk-card-default uk-card-body border-radius-large border-xlight">
+                    <span data-uk-icon="icon: commenting; ratio: 2" class="uk-text-primary"></span>
+                    <h3 class="uk-card-title uk-margin-small">Direct Support</h3>
+                    <p class="uk-text-small">You talk to the people who build the product. No ticket queues, no scripted responses.</p>
                 </div>
             </div>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
-                    <a class="uk-position-cover" href="/security/"></a>
-                    <span data-uk-icon="icon: lock; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">SOC 2 Type II Certified</h3>
-                    <p class="uk-text-small">Independently audited by a certified CPA firm. Security, availability, and confidentiality controls validated.</p>
+                <div class="uk-card uk-card-default uk-card-body border-radius-large border-xlight">
+                    <span data-uk-icon="icon: server; ratio: 2" class="uk-text-primary"></span>
+                    <h3 class="uk-card-title uk-margin-small">Forge-Native</h3>
+                    <p class="uk-text-small">Cloud apps run on Atlassian's Forge platform — no external servers, no data leaving Atlassian's infrastructure.</p>
                 </div>
             </div>
             <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
-                    <a class="uk-position-cover" href="/docs/jibrok-studio-jira/forge-platform-security/"></a>
-                    <span data-uk-icon="icon: server; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">Forge-Native Architecture</h3>
-                    <p class="uk-text-small">Runs entirely within Atlassian infrastructure. No external servers, no data egress, full tenant isolation.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <span data-uk-icon="icon: users; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">1,000+ Installations</h3>
-                    <p class="uk-text-small">Proven at scale across companies of all sizes. Each installation represents a separate company relying on JiBrok.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
-                    <span data-uk-icon="icon: history; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">10+ Years on Marketplace</h3>
-                    <p class="uk-text-small">Established track record since 2016. Consistent updates, long-term support, and proven vendor stability.</p>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight">
-                    <a class="uk-position-cover" href="/trust-center/"></a>
-                    <span data-uk-icon="icon: check; ratio: 2.5" class="uk-text-primary"></span>
-                    <h3 class="uk-card-title uk-margin-small">Continuous Compliance</h3>
-                    <p class="uk-text-small">Regular audits and published CAIQ assessments. Compliance is ongoing, not one-time.</p>
+                <div class="uk-card uk-card-default uk-card-body border-radius-large border-xlight">
+                    <span data-uk-icon="icon: lock; ratio: 2" class="uk-text-primary"></span>
+                    <h3 class="uk-card-title uk-margin-small">SOC 2 Type II</h3>
+                    <p class="uk-text-small">Independently audited. Security details and compliance docs available on our <a href="/trust-center/">Trust Center</a>.</p>
                 </div>
             </div>
         </div>
@@ -133,11 +104,11 @@ width: expand
 
 <div class="uk-section uk-text-center">
     <div class="uk-container uk-container-small">
-        <h2 class="uk-h2">Ready to learn more?</h2>
-        <p class="uk-text-lead">Explore our security documentation or get in touch with our team.</p>
+        <h2 class="uk-h2">Questions?</h2>
+        <p class="uk-text-lead">Feel free to reach out — we're happy to help.</p>
         <div class="uk-margin-medium-top">
-            <a href="/trust-center/" class="uk-button uk-button-primary uk-button-large uk-margin-small-right">Trust Center</a>
-            <a href="/contact/" class="uk-button uk-button-default uk-button-large">Contact Us</a>
+            <a href="/contact/" class="uk-button uk-button-primary uk-button-large uk-margin-small-right">Contact Us</a>
+            <a href="/trust-center/" class="uk-button uk-button-default uk-button-large">Trust Center</a>
         </div>
     </div>
 </div>
