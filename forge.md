@@ -26,14 +26,14 @@ width: expand
 <div class="uk-section uk-section-default">
     <div class="uk-container uk-container-small">
         <h2 class="uk-h2 uk-text-center">What is Atlassian Forge?</h2>
-        <p class="uk-text-lead uk-text-center">Forge is Atlassian's serverless cloud platform for building apps. Apps built on Forge run inside Atlassian's own infrastructure — not on vendor-owned servers. All data processing, storage, and execution happens within Atlassian's cloud, subject to the same security controls and data residency policies as your Jira site.</p>
+        <p class="uk-text-lead uk-text-center">Forge is Atlassian's serverless cloud platform for building apps. Apps built on Forge run inside Atlassian's own infrastructure  - not on vendor-owned servers. All data processing, storage, and execution happens within Atlassian's cloud, subject to the same security controls and data residency policies as your Jira site.</p>
     </div>
 </div>
 
 <div class="uk-section uk-section-muted">
     <div class="uk-container">
         <h2 class="uk-h2 uk-text-center">What This Means for You</h2>
-        <p class="uk-text-lead uk-text-center">Every component of JiBrok Studio — code execution, data storage, logging, and monitoring — runs within Atlassian's infrastructure</p>
+        <p class="uk-text-lead uk-text-center">Every component of JiBrok Studio  - code execution, data storage, logging, and monitoring  - runs within Atlassian's infrastructure</p>
         <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
@@ -107,7 +107,7 @@ width: expand
             <div>
                 <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-body border-radius-large border-xlight">
                     <h3 class="uk-card-title">In Simple Terms</h3>
-                    <p>When you install JiBrok Studio, it runs as a function inside Atlassian's cloud — the same way built-in Jira features do. There is no JiBrok server receiving your data. There is no external database storing your scripts. There is no third-party service watching what you do.</p>
+                    <p>When you install JiBrok Studio, it runs as a function inside Atlassian's cloud  - the same way built-in Jira features do. There is no JiBrok server receiving your data. There is no external database storing your scripts. There is no third-party service watching what you do.</p>
                     <p>Everything stays inside Atlassian. Period.</p>
                 </div>
             </div>
@@ -133,7 +133,7 @@ width: expand
                     <a class="uk-position-cover" href="https://developer.atlassian.com/platform/forge/manifest-reference/" target="_blank" rel="noopener"></a>
                     <span data-uk-icon="icon: file-text; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin">Manifest Reference</h3>
-                    <p>App permissions, modules, and security scopes — everything declared in the manifest.</p>
+                    <p>App permissions, modules, and security scopes  - everything declared in the manifest.</p>
                 </div>
             </div>
             <div>
@@ -165,7 +165,7 @@ width: expand
                     <a class="uk-position-cover" href="/docs/jibrok-studio-jira/forge-platform-security/"></a>
                     <span data-uk-icon="icon: lock; ratio: 2.5" class="uk-text-primary"></span>
                     <h3 class="uk-card-title uk-margin">Technical Deep Dive</h3>
-                    <p>Tenant isolation, custom interpreter, egress controls, and threat elimination — the full security architecture.</p>
+                    <p>Tenant isolation, custom interpreter, egress controls, and threat elimination  - the full security architecture.</p>
                 </div>
             </div>
             <div>

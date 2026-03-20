@@ -1,4 +1,4 @@
-# CLAUDE.md — JiBrok Documentation & Marketing Site
+# CLAUDE.md  - JiBrok Documentation & Marketing Site
 
 ## Project Overview
 
@@ -60,19 +60,19 @@ tags:
 
 ## Terminology
 
-- **Forge** — Atlassian's serverless app platform (JiBrok Studio is Forge-native)
-- **JSM** — Jira Service Management
-- **DC** — Data Center (Atlassian Server/DC deployment)
-- **TIS** — Time in Status
-- **JBCF** — JiBrok Calculated Fields
-- **Rovo** — Atlassian's AI agent platform
+- **Forge**  - Atlassian's serverless app platform (JiBrok Studio is Forge-native)
+- **JSM**  - Jira Service Management
+- **DC**  - Data Center (Atlassian Server/DC deployment)
+- **TIS**  - Time in Status
+- **JBCF**  - JiBrok Calculated Fields
+- **Rovo**  - Atlassian's AI agent platform
 
 ## Writing Style
 
 - Second person ("you"), present tense, active voice
-- Technical precision — use correct Jira/Atlassian terminology
-- Concise — one concept per section, no filler
-- Benefit-driven headlines — lead with what users accomplish
+- Technical precision  - use correct Jira/Atlassian terminology
+- Concise  - one concept per section, no filler
+- Benefit-driven headlines  - lead with what users accomplish
 
 ## Available Agents
 

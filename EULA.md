@@ -20,7 +20,7 @@ All JiBrok apps use the [Atlassian Standard End User Agreement](https://www.atla
 
 ## JiBrok Studio for Jira Cloud
 
-* [Provider-Specific Terms — JiBrok Studio](/provider-specific-terms-studio/)
+* [Provider-Specific Terms  - JiBrok Studio](/provider-specific-terms-studio/)
 * [Data Processing Agreement (DPA)](/dpa-jibrok-studio-jira/)
 
 ---
@@ -37,9 +37,9 @@ All JiBrok apps use the [Atlassian Standard End User Agreement](https://www.atla
 
 **Legal documents:**
 
-* [Provider-Specific Terms — JiBrok Apps](/provider-specific-terms/)
-* [Data Processing Agreement (DPA) — JiBrok Cloud Apps](/dpa-jibrok-cloud-apps/) (Time in Status, Timer field, Stopwatch field, JBCF, Display Linked Issues, Fields panel for JSM)
-* [Data Processing Agreement (DPA) — Message Field Cloud](/dpa-message-field-cloud/)
+* [Provider-Specific Terms  - JiBrok Apps](/provider-specific-terms/)
+* [Data Processing Agreement (DPA)  - JiBrok Cloud Apps](/dpa-jibrok-cloud-apps/) (Time in Status, Timer field, Stopwatch field, JBCF, Display Linked Issues, Fields panel for JSM)
+* [Data Processing Agreement (DPA)  - Message Field Cloud](/dpa-message-field-cloud/)
 
 ---
 
@@ -60,4 +60,4 @@ All JiBrok apps use the [Atlassian Standard End User Agreement](https://www.atla
 
 **Legal documents:**
 
-* [Provider-Specific Terms — JiBrok Apps](/provider-specific-terms/) (including Data Center / Server Specific Terms in Section 9)
+* [Provider-Specific Terms  - JiBrok Apps](/provider-specific-terms/) (including Data Center / Server Specific Terms in Section 9)

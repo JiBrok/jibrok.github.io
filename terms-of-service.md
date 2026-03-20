@@ -14,7 +14,7 @@ For terms governing JiBrok apps and products, see the [EULA](/EULA/).
 
 ## 1. Website Content
 
-All content on this Website — including text, documentation, images, logos, and design — is the property of JiBrok or its licensors and is protected by applicable intellectual property laws. You may view, download, and print Website content for personal, non-commercial use, provided you do not modify the content or remove any copyright or proprietary notices.
+All content on this Website  - including text, documentation, images, logos, and design  - is the property of JiBrok or its licensors and is protected by applicable intellectual property laws. You may view, download, and print Website content for personal, non-commercial use, provided you do not modify the content or remove any copyright or proprietary notices.
 
 You may not:
 

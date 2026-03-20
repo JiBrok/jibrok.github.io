@@ -4,7 +4,7 @@ title: DPA - JiBrok Cloud Apps
 permalink: /dpa-jibrok-cloud-apps/
 ---
 
-## Data Processing Agreement (DPA) — JiBrok Cloud Apps (Atlassian Forge)
+## Data Processing Agreement (DPA)  - JiBrok Cloud Apps (Atlassian Forge)
 
 **Version 1.1** - Effective date: 2026-03-18
 
@@ -124,7 +124,7 @@ If this DPA conflicts with the main agreement/terms, this DPA prevails only rega
 
 ---
 
-## Annex 1 — Processing details (GDPR Art. 28(3))
+## Annex 1  - Processing details (GDPR Art. 28(3))
 
 ### A. Services
 
@@ -144,9 +144,9 @@ The following JiBrok Cloud apps on the Atlassian Marketplace, all running on Atl
 
 ### C. Personal Data processed (minimal)
 
-1. **Atlassian `accountId`** — stored as `createdBy` / `updatedBy` (and any similar creator/updater linkage fields) solely to attribute who created or updated a configuration item. Also used for GDPR personal data reporting compliance.
-2. **App configurations** — free-text fields (names, descriptions, JQL queries, SLA definitions, timer configurations, calculated field formulas, display settings). These are Customer-controlled inputs; Customer determines whether any Personal Data is entered.
-3. **Calculated/derived values** — time-in-status metrics, SLA calculations, computed field values. May contain references to issue keys, status names, or user identifiers depending on the calculation context. These values are derived from Jira data based on Customer configurations.
+1. **Atlassian `accountId`**  - stored as `createdBy` / `updatedBy` (and any similar creator/updater linkage fields) solely to attribute who created or updated a configuration item. Also used for GDPR personal data reporting compliance.
+2. **App configurations**  - free-text fields (names, descriptions, JQL queries, SLA definitions, timer configurations, calculated field formulas, display settings). These are Customer-controlled inputs; Customer determines whether any Personal Data is entered.
+3. **Calculated/derived values**  - time-in-status metrics, SLA calculations, computed field values. May contain references to issue keys, status names, or user identifiers depending on the calculation context. These values are derived from Jira data based on Customer configurations.
 
 ### D. Jira data access
 
@@ -169,7 +169,7 @@ While installed/active, plus any Atlassian Forge platform retention behavior aft
 
 ---
 
-## Annex 2 — Security measures (TOMs)
+## Annex 2  - Security measures (TOMs)
 
 - **Platform isolation:** Runs entirely on Atlassian Forge; no external egress, no third-party analytics.
 - **Minimal data:** `accountId` for attribution + configuration + calculated values stored in Forge storage.
@@ -179,6 +179,6 @@ While installed/active, plus any Atlassian Forge platform retention behavior aft
 
 ---
 
-## Annex 3 — Sub-processors
+## Annex 3  - Sub-processors
 
-- **Atlassian (Forge platform)** — hosting/compute/storage required to run the Apps.
+- **Atlassian (Forge platform)**  - hosting/compute/storage required to run the Apps.

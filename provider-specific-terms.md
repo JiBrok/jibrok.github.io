@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Provider-Specific Terms — JiBrok Apps"
+title: "Provider-Specific Terms  - JiBrok Apps"
 permalink: /provider-specific-terms/
 ---
 
@@ -39,7 +39,7 @@ These Provider-Specific Terms apply to the following JiBrok apps on the Atlassia
 * [Cross filters matrix](https://marketplace.atlassian.com/apps/1220719/cross-filters-matrix)
 * [Project help info](https://marketplace.atlassian.com/apps/1222760/project-help-info)
 
-For JiBrok Studio for Jira Cloud, see the separate [Provider-Specific Terms — JiBrok Studio](/provider-specific-terms-studio/).
+For JiBrok Studio for Jira Cloud, see the separate [Provider-Specific Terms  - JiBrok Studio](/provider-specific-terms-studio/).
 
 ---
 
@@ -55,8 +55,8 @@ This Agreement shall be governed by and construed in accordance with the laws of
 
 The following documents are incorporated by reference into this Agreement:
 
-* **Data Processing Agreement (DPA) — JiBrok Cloud Apps:** [jibrok.com/dpa-jibrok-cloud-apps/](/dpa-jibrok-cloud-apps/) (applies to Time in Status, Timer field, Stopwatch field, JBCF, Display Linked Issues, Fields panel for JSM)
-* **Data Processing Agreement (DPA) — Message Field Cloud:** [jibrok.com/dpa-message-field-cloud/](/dpa-message-field-cloud/)
+* **Data Processing Agreement (DPA)  - JiBrok Cloud Apps:** [jibrok.com/dpa-jibrok-cloud-apps/](/dpa-jibrok-cloud-apps/) (applies to Time in Status, Timer field, Stopwatch field, JBCF, Display Linked Issues, Fields panel for JSM)
+* **Data Processing Agreement (DPA)  - Message Field Cloud:** [jibrok.com/dpa-message-field-cloud/](/dpa-message-field-cloud/)
 * **Privacy Policy:** [jibrok.com/privacy-policy/](/privacy-policy/)
 * **Cookie Policy:** [jibrok.com/cookie-policy/](/cookie-policy/)
 
@@ -150,7 +150,7 @@ For events described in subsections (a) and (b) of this section, the period refe
 
 This section supersedes Section 19.5 of the Standard Agreement with respect to amendments to these Provider-Specific Terms.
 
-The Provider may update these Provider-Specific Terms from time to time. Material changes — including changes to liability limitations, data processing obligations, or governing law — will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect.
+The Provider may update these Provider-Specific Terms from time to time. Material changes  - including changes to liability limitations, data processing obligations, or governing law  - will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect.
 
 If the Customer objects to a material change, the Customer may terminate its subscription by providing written notice to the Provider within the thirty (30) day notice period. In such case, the Customer will receive a pro-rata refund of any prepaid fees for the remainder of the subscription term. Continued use of the Product after the effective date of a material change constitutes acceptance of the updated terms.
 
