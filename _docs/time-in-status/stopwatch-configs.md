@@ -27,9 +27,6 @@ Or<br>
 * Events - issue events to which the timer responds with a specific command. General information
 * Throwable events - When a issue changes its state, the timer can generate a separate event.
 
-[comment]: <> (TODO <div class="uk-alert-note" data-uk-alert="">)
-[comment]: <> (When you fire an event, it can be caught by the Simple notification plugin. See more filters)
-[comment]: <> (</div>)
 
 
 * JQL - if no jql is specified, then the timer will start when start is triggered. Otherwise, it will only start if it matches at least one jql.

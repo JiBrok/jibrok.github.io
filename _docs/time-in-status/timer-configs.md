@@ -13,7 +13,6 @@ The configuration is responsible for the timer operation algorithm: when should 
   Or<br>
   **gg** + "**Timer configs**"
   
-[comment]: <> (TODO tutorials)
 
 * All timer configs are available in this interface. From here you can create, edit, and delete configurations.<br>
   <p style="text-align: center;"><a href="/uploads/time-in-status/timer-configs/1.webp" target="_blank">
@@ -34,7 +33,4 @@ The configuration is responsible for the timer operation algorithm: when should 
 * Throwable events - When an issue changes its state, the timer can generate a separate event.
 * Notifications - the timer will send a notification when X% of the time has passed or X minutes are left until the end.
 
-[comment]: <> (TODO <div class="uk-alert-note" data-uk-alert="">)
-[comment]: <> (When you fire an event, it can be caught by the Simple notification plugin. See more filters)
-[comment]: <> (</div>)
 

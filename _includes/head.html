@@ -34,9 +34,6 @@
 
 
   <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
-  {% if page.hero.search or site.navbar.search %}
-    {% include search-js.html %}
-  {% endif %}
   {% include hook-head.html %}
 
   <!-- Auto-generate anchor links for headings -->

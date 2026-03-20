@@ -4,7 +4,7 @@
 # === Cloud Apps ===
 
 jibrok-studio-jira:
-  - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" style="width:24px;height:24px"> JiBrok Studio for Jira Cloud
+  - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" class="nav-icon"> JiBrok Studio for Jira Cloud
     docs:
     - jibrok-studio-jira/overview
     - jibrok-studio-jira/getting-started
@@ -91,11 +91,12 @@ jibrok-studio-jira:
     docs:
     - jibrok-studio-jira/use-cases
     - jibrok-studio-jira/scripting-examples
+    - jibrok-studio-jira/triggers-comparison
     - jibrok-studio-jira/limits
     - jibrok-studio-jira/faq
 
 message-field-cloud:
-  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" style="width:24px;height:24px"> Message Field for Jira Cloud
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" class="nav-icon"> Message Field for Jira Cloud
     docs:
     - message-field-cloud/overview
     - message-field-cloud/getting-started
@@ -139,7 +140,7 @@ message-field-cloud:
     - message-field-cloud/faq
 
 tis-cloud:
-  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status for Jira Cloud
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" class="nav-icon"> Time in status for Jira Cloud
     docs:
       - tis-cloud/overview
       - tis-cloud/install
@@ -178,7 +179,7 @@ tis-cloud:
       - tis-cloud/time-formats
 
 jbcf-cloud:
-  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF) for Jira Cloud
+  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" class="nav-icon"> Calculated fields (JBCF) for Jira Cloud
     docs:
       - jbcf-cloud/overview
       - jbcf-cloud/migrationDocumentation
@@ -194,7 +195,7 @@ jbcf-cloud:
       - jbcf-cloud/status-page
 
 timer-cloud:
-  - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" style="width:24px;height:24px"> Timer field | SLA for Jira Cloud
+  - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" class="nav-icon"> Timer field | SLA for Jira Cloud
     docs:
       - timer-cloud/overview
       - timer-cloud/install
@@ -223,7 +224,7 @@ timer-cloud:
       - timer-cloud/status-page
 
 stopwatch-cloud:
-  - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" style="width:24px;height:24px"> Stopwatch for Jira Cloud
+  - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" class="nav-icon"> Stopwatch for Jira Cloud
     docs:
       - stopwatch-cloud/overview
       - stopwatch-cloud/install
@@ -251,16 +252,20 @@ stopwatch-cloud:
       - stopwatch-cloud/status-page
 
 time-between-dates-cloud:
-  - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" style="width:24px;height:24px"> Time between dates for Jira Cloud
+  - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" class="nav-icon"> Time between dates for Jira Cloud
     docs:
       - time-between-dates-cloud/overview
+
+  - title: Getting Started
+    docs:
+      - time-between-dates-cloud/get-started
 
   - title: Time between dates fields
     docs:
       - time-between-dates-cloud/time-between-dates-field-create
 
 jsm-fields-panel-cloud:
-  - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" style="width:24px;height:24px"> Fields panel for Jira Service Management (JSM)
+  - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" class="nav-icon"> Fields panel for Jira Service Management (JSM)
     docs:
       - jsm-fields-panel-cloud/overview
 
@@ -270,14 +275,14 @@ linked-issues-cloud:
       - linked-issues-cloud/overview
 
 user-helper-cloud:
-  - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" style="width:24px;height:24px"> User helper for JiBrok cloud apps
+  - title: <img src="/uploads/user-helper-cloud/user-helper-cloud.png" alt="User helper for JiBrok cloud apps" class="nav-icon"> User helper for JiBrok cloud apps
     docs:
       - user-helper-cloud/overview
 
 # === Data Center / Server Apps ===
 
 message-field:
-  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" style="width:24px;height:24px"> Message field
+  - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok message field" class="nav-icon"> Message field
     docs:
     - message-field/overview
     - message-field/install
@@ -299,7 +304,7 @@ message-field:
     - message-field/refined-for-jira
 
 time-in-status:
-  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" style="width:24px;height:24px"> Time in status | SLA | Timer | Stopwatch
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" class="nav-icon"> Time in status | SLA | Timer | Stopwatch
     docs:
       - time-in-status/overview
       - time-in-status/install
@@ -404,14 +409,14 @@ time-in-status:
       - time-in-status/available-events
 
 switch-user:
-  - title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" style="width:24px;height:24px"> Switch to User + Delegating SU (Jira)
+  - title: <img src="/uploads/su/su-144px.png" alt="JiBrok Switch to User + Delegating SU (Jira)" class="nav-icon"> Switch to User + Delegating SU (Jira)
     docs:
       - su/overview
       - su/delegating
       - su/shortcuts
 
 calculated-custom-fields:
-  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" style="width:24px;height:24px"> Calculated fields (JBCF)
+  - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" class="nav-icon"> Calculated fields (JBCF)
     docs:
       - calculated-custom-fields/overview
       - calculated-custom-fields/todolist

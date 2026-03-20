@@ -1,5 +1,5 @@
 ---
-title: report-table
+title: Table Report
 key: time-in-status
 excerpt: Configure table reports with custom fields, grouping options, mathematical functions, and velocity templates for flexible data presentation.
 category: reports-analytics
