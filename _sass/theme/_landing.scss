@@ -3,6 +3,252 @@
 // Used across: Studio landing, Trust Center, Docs
 // ========================================================================
 
+// ===== COMPANY HERO (homepage) =====
+
+.company-hero {
+  background: linear-gradient(135deg, #0052CC 0%, #2684FF 50%, #0065FF 100%);
+  padding: 72px 0 64px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  @media (min-width: 960px) {
+    padding: 96px 0 80px;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+
+    @media (min-width: 960px) {
+      font-size: 3.2rem;
+    }
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 0 auto 32px;
+    max-width: 640px;
+  }
+
+  .hero-buttons {
+    margin-bottom: 0;
+
+    a {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin: 0 8px 10px;
+    }
+  }
+
+  .btn-primary-hero {
+    background: #fff;
+    color: #0052CC;
+
+    &:hover {
+      background: #f0f6ff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .btn-secondary-hero {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// ===== STAT BAR (compact trust signals) =====
+
+.stat-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-bar-item {
+  text-align: center;
+  padding: 24px 16px;
+  background: #fff;
+  border-radius: $border-radius-medium;
+  border: 1px solid $border-light;
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .stat-bar-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $global-primary-background;
+    line-height: 1.2;
+    margin-bottom: 4px;
+
+    @media (min-width: 960px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .stat-bar-label {
+    font-size: 0.82rem;
+    color: $global-muted-color;
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+a.stat-bar-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// ===== FEATURED PRODUCT (homepage showcase) =====
+
+.featured-product {
+  padding: 64px 0;
+  background: #f7f8fa;
+}
+
+.featured-product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 56px;
+  }
+}
+
+.featured-product-text {
+  .featured-product-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: $global-primary-background;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+
+    @media (min-width: 960px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  p {
+    color: #6b6d7b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 24px;
+    max-width: 480px;
+  }
+
+  .featured-product-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .featured-product-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    background: #e6f0ff;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0052CC;
+  }
+
+  .featured-product-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    background: $global-primary-background;
+    color: #fff;
+
+    &:hover {
+      background: darken($global-primary-background, 8%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0, 82, 204, 0.3);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.featured-product-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
 // ===== HERO =====
 
 .hero-logo-row {
