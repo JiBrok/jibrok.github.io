@@ -1,5 +1,6 @@
 ---
 title: "Groovy Engine"
+seo_title: "Groovy Scripts for Jira Cloud - Migrate from DC"
 key: jibrok-studio-jira
 excerpt: Groovy-like syntax engine - supported constructs, Java/Groovy classes, GDK methods, and type extensions
 category: scripting
@@ -8,6 +9,10 @@ tags:
   - cloud
   - scripting
   - groovy
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

@@ -6,7 +6,7 @@
 cache: true
 # Site title and description
 title:              JiBrok
-description:        "JiBrok | Powerful Jira add-ons for Cloud & Data Center"
+description:        "JiBrok - Jira scripting, automation, time tracking, and custom fields for Cloud. SOC 2 Type II certified Atlassian Forge apps."
 lang:               en
 
 # Site subpath, e.g. /blog
@@ -161,3 +161,5 @@ defaults:
       type:         docs
     values:
       layout:       doc
+      seo:
+        type:       TechArticle

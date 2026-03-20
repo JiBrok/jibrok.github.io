@@ -1,5 +1,6 @@
 ---
 title: Admin Tools
+seo_title: "Jira Script Admin Tools - Usage and Diagnostics"
 key: jibrok-studio-jira
 excerpt: Script usage tracking, UIM management, import/export, health check, diagnostics
 category: administration
@@ -10,6 +11,10 @@ tags:
   - tools
   - import
   - export
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

@@ -1,5 +1,6 @@
 ---
 title: Error Monitoring
+seo_title: "Script Error Monitoring for Jira Cloud"
 key: jibrok-studio-jira
 excerpt: Automatic error tracking, aggregation, and notifications for script failures
 category: administration
@@ -9,6 +10,10 @@ tags:
   - errors
   - monitoring
   - notifications
+last_modified_at: 2026-03-16
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

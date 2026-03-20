@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Smart Value Methods"
+seo_title: "Smart Value Methods - Jira Automation Compatible"
 key: jibrok-studio-jira
 excerpt: String, Array, and Date instance methods compatible with Jira Automation
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - api
   - smart-values
   - dates
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

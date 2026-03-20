@@ -1,5 +1,6 @@
 ---
 title: Choose the Right Trigger
+seo_title: "Compare Jira Script Triggers - Choose the Right One"
 key: jibrok-studio-jira
 excerpt: Compare all 11 trigger types and pick the right one for your use case
 category: core-features
@@ -8,6 +9,10 @@ tags:
   - cloud
   - triggers
   - comparison
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 key: jibrok-studio-jira
-excerpt: Install the app, open the Console, and run your first script
+excerpt: "Install JiBrok Studio, open the Console, and run your first Jira script in under 5 minutes"
 category: getting-started
 tags:
   - doc
@@ -14,6 +14,11 @@ related:
   - jibrok-studio-jira/use-cases
   - jibrok-studio-jira/scripting-api
   - jibrok-studio-jira/scripting-language
+seo_title: Getting Started with JiBrok Studio for Jira
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

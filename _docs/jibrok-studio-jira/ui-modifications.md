@@ -1,5 +1,6 @@
 ---
 title: UI Modifications
+seo_title: "Dynamic Jira Forms - Show, Hide, Set Fields"
 key: jibrok-studio-jira
 excerpt: Dynamically customize issue create and transition forms using scripts
 category: extensions
@@ -9,6 +10,10 @@ tags:
   - ui-modifications
   - uim
   - forms
+last_modified_at: 2026-03-16
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

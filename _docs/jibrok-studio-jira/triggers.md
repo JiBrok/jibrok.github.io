@@ -1,13 +1,18 @@
 ---
 title: Triggers
 key: jibrok-studio-jira
-excerpt: Automate script execution with schedules, events, async events, and more
+excerpt: "Automate Jira workflows with 11 trigger types - scheduled scripts, event reactions, webhooks, workflow actions, and more"
 category: core-features
 tags:
   - doc
   - cloud
   - triggers
   - events
+seo_title: Jira Script Triggers - Schedules, Events, Webhooks
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

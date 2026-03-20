@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: UI Modifications"
+seo_title: "UI Modifications API - Dynamic Jira Forms"
 key: jibrok-studio-jira
 excerpt: UIM API - modify form fields on Jira issue create and transition screens
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - api
   - uim
   - forms
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

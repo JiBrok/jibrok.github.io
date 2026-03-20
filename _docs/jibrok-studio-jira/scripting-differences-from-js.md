@@ -1,5 +1,6 @@
 ---
 title: "JS: Differences from Standard JS"
+seo_title: "Differences from Standard JS - Jira Script Engine"
 key: jibrok-studio-jira
 excerpt: All known differences between the script engine and standard JavaScript
 category: scripting
@@ -9,6 +10,10 @@ tags:
   - scripting
   - javascript
   - differences
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

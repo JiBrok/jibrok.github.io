@@ -1,7 +1,7 @@
 ---
 title: FAQ & Troubleshooting
 key: jibrok-studio-jira
-excerpt: Frequently asked questions and solutions to common issues
+excerpt: "Frequently asked questions about JiBrok Studio for Jira - troubleshooting, limits, permissions, and common issues"
 category: support
 tags:
   - doc
@@ -9,6 +9,28 @@ tags:
   - faq
   - troubleshooting
   - support
+seo_title: FAQ - JiBrok Studio Scripting for Jira
+faq_schema:
+  - question: "Who can use JiBrok Studio for Jira Cloud?"
+    answer: "Only Jira site administrators. There is no role-based access - all admins have equal access to all features."
+  - question: "What language do scripts use?"
+    answer: "A JavaScript-like language that runs in a secure sandbox. Python and Groovy engines are also available."
+  - question: "Is it safe to run scripts?"
+    answer: "Yes. Scripts run in a multi-layer sandbox with strict resource limits. There is no way to access the host system, other apps, or data outside Jira."
+  - question: "Can scripts call external APIs?"
+    answer: "No. Scripts can only call the Jira REST API through requestJira() and built-in API namespaces. There is no fetch, XMLHttpRequest, or other network access."
+  - question: "Can I use npm packages?"
+    answer: "No. The sandbox has no module system. Only built-in globals and methods are available."
+  - question: "Can scripts delete issues or change Jira configuration?"
+    answer: "It depends on the execution identity. As Application - all DELETE operations are blocked. As Current User - the operation executes with that user's Jira permissions."
+  - question: "Can I run scripts from Jira Automation?"
+    answer: "Yes. JiBrok Studio provides an Automation action that can be used in Jira Automation rules. Configure it with a scriptId and optional issueKey."
+  - question: "Can external systems trigger scripts?"
+    answer: "Yes. The Webhook Trigger lets external systems call your scripts via HTTP requests with Basic Auth credentials. Supports GET, POST, PUT, and DELETE methods."
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

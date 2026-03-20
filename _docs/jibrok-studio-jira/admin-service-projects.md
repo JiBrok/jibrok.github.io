@@ -1,5 +1,6 @@
 ---
 title: Service Project Integration
+seo_title: "Service Project Integration for Jira Scripts"
 key: jibrok-studio-jira
 excerpt: Automatic issue creation in service desk projects and issue tracking sync
 category: administration
@@ -10,6 +11,10 @@ tags:
   - service-project
   - notifications
   - tracking
+last_modified_at: 2026-03-16
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

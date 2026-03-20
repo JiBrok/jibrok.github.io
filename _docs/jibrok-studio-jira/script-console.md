@@ -1,13 +1,18 @@
 ---
 title: Script Console
 key: jibrok-studio-jira
-excerpt: Interactive code editor for writing and executing scripts
+excerpt: "Interactive code editor for writing, testing, and executing Jira scripts with real-time output and auto-completion"
 category: core-features
 tags:
   - doc
   - cloud
   - console
   - editor
+seo_title: Script Console - Run Jira Scripts Interactively
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

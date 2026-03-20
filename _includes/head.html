@@ -1,7 +1,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
+  {% seo title=false %}
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Open Graph meta tags (supplementing jekyll-seo-tag) -->
   <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% elsif site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.uploads | absolute_url }}{{ site.logo }}{% endif %}"/>
@@ -21,6 +22,9 @@
     {% endif %}
   {% endif %}
 
+  <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}" />
+
   <link rel="preconnect" href="https://jsd-widget.atlassian.com" crossorigin>
   <link rel="dns-prefetch" href="//jsd-widget.atlassian.com">
   
@@ -29,7 +33,7 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
 
-  <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
   {% if page.hero.search or site.navbar.search %}
     {% include search-js.html %}
   {% endif %}
@@ -186,43 +190,28 @@
   }
   </script>
 
-  {% if page.layout == 'doc' %}
-  <!-- JSON-LD for Documentation Pages -->
+  <!-- WebSite schema with SearchAction for sitelinks search box -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "{{ page.title | escape }}",
-    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | escape }}{% else %}{{ site.description }}{% endif %}",
-    "author": {
-      "@type": "Organization",
-      "name": "JiBrok"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "JiBrok",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}{{ site.uploads }}vendor/jibrok-logo-with-white-background-144px.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ site.url }}{{ page.url }}"
-    },
-    "dateModified": "{% if page.last_modified %}{{ page.last_modified | date_to_xmlschema }}{% elsif page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}",
-    "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}"
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q=site:jibrok.com+{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
-  {% endif %}
 
-  {% if page.collection == 'docs' and page.title contains 'Overview' %}
+  {% if page.software_schema %}
   <!-- JSON-LD for Software Application -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "{{ page.title | remove: ' — Overview' | remove: ' Overview' | escape }}",
+    "name": "JiBrok Studio for Jira Cloud",
     "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | escape }}{% else %}{{ site.description }}{% endif %}",
     "operatingSystem": "Web",
     "applicationCategory": "BusinessApplication",
@@ -243,5 +232,25 @@
   </script>
   {% endif %}
 
+  {% if page.faq_schema %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for qa in page.faq_schema %}
+      {
+        "@type": "Question",
+        "name": {{ qa.question | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ qa.answer | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 
 </head>

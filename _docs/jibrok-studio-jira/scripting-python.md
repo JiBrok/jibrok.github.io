@@ -1,5 +1,6 @@
 ---
 title: "Python Engine"
+seo_title: "Python Scripts for Jira Cloud"
 key: jibrok-studio-jira
 excerpt: Python-like syntax engine - supported constructs, built-in functions, stdlib modules, and type methods
 category: scripting
@@ -8,6 +9,10 @@ tags:
   - cloud
   - scripting
   - python
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

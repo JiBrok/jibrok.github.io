@@ -1,5 +1,6 @@
 ---
 title: "JS: Type Methods"
+seo_title: "Type Methods - String, Array, Date in Jira Scripts"
 key: jibrok-studio-jira
 excerpt: Whitelisted methods for strings, arrays, numbers, dates, objects, and wrapper types
 category: scripting
@@ -11,6 +12,10 @@ tags:
   - strings
   - arrays
   - dates
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

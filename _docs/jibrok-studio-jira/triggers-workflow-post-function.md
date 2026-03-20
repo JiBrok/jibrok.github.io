@@ -1,5 +1,6 @@
 ---
 title: Workflow Post Function
+seo_title: "Jira Workflow Post-Functions - Scripted Actions"
 key: jibrok-studio-jira
 excerpt: Run scripts after workflow transitions with full transition context
 category: core-features
@@ -8,6 +9,10 @@ tags:
   - cloud
   - triggers
   - workflow
+last_modified_at: 2026-03-19
+date: 2026-03-04
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

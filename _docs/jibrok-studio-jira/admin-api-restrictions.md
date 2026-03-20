@@ -1,5 +1,6 @@
 ---
 title: API Restrictions
+seo_title: "Jira REST API Restrictions - Whitelist and Blacklist"
 key: jibrok-studio-jira
 excerpt: Global and per-script whitelist/blacklist for Jira REST API endpoints
 category: administration
@@ -9,6 +10,10 @@ tags:
   - admin
   - security
   - api
+last_modified_at: 2026-03-16
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

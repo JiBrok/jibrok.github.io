@@ -1,5 +1,6 @@
 ---
 title: Limits & Quotas
+seo_title: "Jira Script Limits - Execution, Storage, Quotas"
 key: jibrok-studio-jira
 excerpt: All system limits for script execution, storage, and configuration
 category: reference
@@ -9,6 +10,10 @@ tags:
   - limits
   - quotas
   - performance
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

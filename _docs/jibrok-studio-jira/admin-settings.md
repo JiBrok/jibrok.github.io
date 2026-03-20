@@ -1,5 +1,6 @@
 ---
 title: Administration
+seo_title: "Jira Script Administration - Settings and Security"
 key: jibrok-studio-jira
 excerpt: Global configuration, security, audit logs, and import/export
 category: administration
@@ -10,6 +11,10 @@ tags:
   - settings
   - security
   - audit
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

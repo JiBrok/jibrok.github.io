@@ -10,6 +10,11 @@ tags:
   - examples
   - recipes
   - patterns
+seo_title: Jira Scripting Examples and Recipes
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

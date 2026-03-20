@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Tables"
+seo_title: "Custom Tables API - CRUD, Filter, Sort for Jira"
 key: jibrok-studio-jira
 excerpt: Custom Tables API - CRUD operations, filtering, sorting, and context-aware methods
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - api
   - tables
   - storage
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

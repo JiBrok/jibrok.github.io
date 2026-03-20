@@ -1,5 +1,6 @@
 ---
 title: Rovo AI Agent Integration
+seo_title: "Rovo AI Agent - Run Jira Scripts with AI"
 key: jibrok-studio-jira
 excerpt: Expose JiBrok Studio scripts to Atlassian Rovo AI agent
 category: extensions
@@ -8,6 +9,10 @@ tags:
   - cloud
   - rovo
   - ai
+last_modified_at: 2026-03-16
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

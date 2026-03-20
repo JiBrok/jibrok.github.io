@@ -1,5 +1,6 @@
 ---
 title: Import & Export
+seo_title: "Import and Export Jira Scripts - Backup and Migration"
 key: jibrok-studio-jira
 excerpt: Export and import scripts as JSON for backup, migration, or sharing
 category: administration
@@ -10,6 +11,10 @@ tags:
   - export
   - backup
   - migration
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

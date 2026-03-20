@@ -7,6 +7,11 @@ tags:
   - doc
   - cloud
   - automation
+seo_title: Run Scripts from Jira Automation Rules
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

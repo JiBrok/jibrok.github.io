@@ -1,5 +1,6 @@
 ---
 title: Recipes
+seo_title: "Batch Recipes - Recalculate Jira Fields at Scale"
 key: jibrok-studio-jira
 excerpt: Built-in batch operations for recalculating fields and processing issues at scale
 category: core-features
@@ -9,6 +10,10 @@ tags:
   - recipes
   - batch
   - bulk
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

@@ -9,6 +9,11 @@ tags:
   - scripting
   - api
   - reference
+seo_title: Jira Scripting API Reference - JiBrok Studio
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

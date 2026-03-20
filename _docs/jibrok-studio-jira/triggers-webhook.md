@@ -1,5 +1,6 @@
 ---
 title: Webhook Trigger
+seo_title: "Jira Webhook API - Trigger Scripts via HTTP"
 key: jibrok-studio-jira
 category: core-features
 tags:
@@ -7,6 +8,11 @@ tags:
   - cloud
   - triggers
   - webhook
+excerpt: Trigger scripts via HTTP requests from external systems with Basic Auth and rate limiting
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

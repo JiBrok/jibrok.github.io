@@ -1,7 +1,8 @@
 ---
 title: "Scripting API: Utilities"
+seo_title: "Utility API - DateUtils, CSV, ADF, Validator"
 key: jibrok-studio-jira
-excerpt: Adf, DateUtils, Arrays, Strings, CSV, Validator
+excerpt: "Utility functions for Jira scripts - ADF document builder, date formatting, CSV parsing, string helpers, and validation"
 category: scripting
 tags:
   - doc
@@ -9,6 +10,10 @@ tags:
   - scripting
   - api
   - utilities
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

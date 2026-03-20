@@ -1,5 +1,6 @@
 ---
 title: Scenarios
+seo_title: "Jira Bulk Scenarios - Process Thousands of Issues"
 key: jibrok-studio-jira
 category: core-features
 tags:
@@ -8,6 +9,11 @@ tags:
   - scripting
   - scenarios
   - bulk
+excerpt: Split long-running scripts into managed steps for processing large datasets without timeouts
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

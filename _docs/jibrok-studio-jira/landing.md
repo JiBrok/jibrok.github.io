@@ -12,6 +12,12 @@ tags:
   - overview
   - introduction
   - landing
+seo_title: JiBrok Studio - Scripting Platform for Jira Cloud
+software_schema: true
+last_modified_at: 2026-03-19
+date: 2026-03-05
+seo:
+  date_modified: 2026-03-19
 ---
 
 

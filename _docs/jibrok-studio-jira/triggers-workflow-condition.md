@@ -1,5 +1,6 @@
 ---
 title: Workflow Condition
+seo_title: "Jira Workflow Conditions - Scripted Transitions"
 key: jibrok-studio-jira
 excerpt: Control workflow transition visibility using Jira Expressions
 category: core-features
@@ -8,6 +9,10 @@ tags:
   - cloud
   - triggers
   - workflow
+last_modified_at: 2026-03-19
+date: 2026-03-04
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

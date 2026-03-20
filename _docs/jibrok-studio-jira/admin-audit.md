@@ -1,5 +1,6 @@
 ---
 title: Audit Logs
+seo_title: "Script Audit Logs for Jira Cloud"
 key: jibrok-studio-jira
 excerpt: Settings audit, script runs audit, and version history tracking
 category: administration
@@ -9,6 +10,10 @@ tags:
   - admin
   - audit
   - logs
+last_modified_at: 2026-03-16
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-16
 ---
 
 * TOC

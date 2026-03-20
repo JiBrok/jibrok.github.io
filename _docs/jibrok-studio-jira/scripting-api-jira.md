@@ -1,7 +1,8 @@
 ---
 title: "Scripting API: Jira Entities"
+seo_title: "Jira Entities API - Users, Projects, Fields, Boards"
 key: jibrok-studio-jira
-excerpt: Users, Projects, Fields, Components, Versions, Boards, Sprints, Links
+excerpt: "Jira entity APIs for managing users, projects, custom fields, components, versions, boards, sprints, and issue links"
 category: scripting
 tags:
   - doc
@@ -9,6 +10,10 @@ tags:
   - scripting
   - api
   - jira
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

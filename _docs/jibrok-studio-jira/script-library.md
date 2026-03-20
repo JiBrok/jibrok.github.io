@@ -1,7 +1,7 @@
 ---
 title: Script Library
 key: jibrok-studio-jira
-excerpt: Central management for saved scripts with folders, labels, search, and version history
+excerpt: "Central hub for managing Jira scripts with folders, labels, search, version history, and team sharing"
 category: core-features
 tags:
   - doc
@@ -9,6 +9,11 @@ tags:
   - library
   - scripts
   - organization
+seo_title: Script Library - Save and Version Jira Scripts
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

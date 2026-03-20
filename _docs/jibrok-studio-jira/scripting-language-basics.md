@@ -1,5 +1,6 @@
 ---
 title: "JS: Language Basics"
+seo_title: "JavaScript Basics for Jira Scripting"
 key: jibrok-studio-jira
 excerpt: Variables, operators, control flow, collections, destructuring, and core syntax
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - language
   - syntax
   - basics
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

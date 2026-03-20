@@ -1,5 +1,6 @@
 ---
 title: Event Triggers
+seo_title: "Jira Event Triggers - React to Issue Changes"
 key: jibrok-studio-jira
 excerpt: Run scripts in response to 32 Jira events - issue creates, updates, comments, and more
 category: core-features
@@ -8,6 +9,10 @@ tags:
   - cloud
   - triggers
   - events
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

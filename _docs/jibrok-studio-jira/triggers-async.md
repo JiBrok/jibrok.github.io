@@ -1,5 +1,6 @@
 ---
 title: Async Events
+seo_title: "Async Event Triggers - Chain Scripts in Jira"
 key: jibrok-studio-jira
 excerpt: Trigger scripts asynchronously from other scripts with optional delay and payload
 category: core-features
@@ -8,6 +9,10 @@ tags:
   - cloud
   - triggers
   - events
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

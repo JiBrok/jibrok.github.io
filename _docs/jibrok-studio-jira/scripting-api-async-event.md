@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Async Events"
+seo_title: "Async Event API - Trigger Scripts Asynchronously"
 key: jibrok-studio-jira
 excerpt: Trigger scripts asynchronously via asyncEvent.push and asyncEvent.pushSelf
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - api
   - async
   - events
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

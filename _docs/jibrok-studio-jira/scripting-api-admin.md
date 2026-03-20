@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Configuration & Assets"
+seo_title: "Jira Admin API - Workflows, Screens, Roles, Assets"
 key: jibrok-studio-jira
 excerpt: Administration namespaces for workflows, screens, schemes, roles, and JSM Assets
 category: scripting
@@ -11,6 +12,10 @@ tags:
   - admin
   - configuration
   - assets
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

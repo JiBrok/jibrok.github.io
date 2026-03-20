@@ -1,5 +1,6 @@
 ---
 title: Forge Platform & Security Architecture
+seo_title: "Forge Platform Security - Isolation and Data Residency"
 key: jibrok-studio-jira
 excerpt: Why Forge-native matters - tenant isolation, custom interpreter, data residency, and zero external infrastructure
 category: getting-started
@@ -9,6 +10,10 @@ tags:
   - security
   - forge
   - architecture
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

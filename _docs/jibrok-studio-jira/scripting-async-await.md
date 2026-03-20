@@ -1,5 +1,6 @@
 ---
 title: "JS: Async/Await"
+seo_title: "Async/Await in Jira Scripts - Promises and Patterns"
 key: jibrok-studio-jira
 excerpt: Auto-await, async functions, Promise API, delay, and async patterns
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - async
   - await
   - promises
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

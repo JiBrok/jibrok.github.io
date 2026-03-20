@@ -1,5 +1,6 @@
 ---
 title: Version History
+seo_title: "Script Version History - Track and Rollback Changes"
 key: jibrok-studio-jira
 excerpt: Automatic version tracking, comparison, and rollback for scripts
 category: core-features
@@ -9,6 +10,10 @@ tags:
   - versions
   - history
   - rollback
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

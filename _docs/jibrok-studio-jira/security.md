@@ -9,6 +9,11 @@ tags:
   - security
   - sandbox
   - permissions
+seo_title: Security - Sandbox, Permissions, Audit
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

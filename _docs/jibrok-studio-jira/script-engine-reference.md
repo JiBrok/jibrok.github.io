@@ -1,5 +1,6 @@
 ---
 title: Script Engine Reference
+seo_title: "Script Engine Reference - Built-in API Panel"
 key: jibrok-studio-jira
 excerpt: Built-in reference panel - language features, APIs, and examples for all script engines
 category: scripting
@@ -9,6 +10,10 @@ tags:
   - reference
   - scripting
   - help
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

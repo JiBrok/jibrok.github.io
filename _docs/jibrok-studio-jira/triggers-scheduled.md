@@ -1,5 +1,6 @@
 ---
 title: Scheduled Triggers
+seo_title: "Schedule Jira Scripts - Cron Jobs for Jira Cloud"
 key: jibrok-studio-jira
 excerpt: Run scripts on a recurring schedule - every 5 minutes, hourly, daily, or weekly
 category: core-features
@@ -7,6 +8,10 @@ tags:
   - doc
   - cloud
   - triggers
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

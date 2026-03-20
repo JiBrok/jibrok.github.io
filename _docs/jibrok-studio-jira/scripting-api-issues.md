@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Issues"
+seo_title: "Jira Issues API - Search, Create, Update, Transition"
 key: jibrok-studio-jira
 excerpt: Search, create, update, and transition Jira issues
 category: scripting
@@ -9,6 +10,10 @@ tags:
   - scripting
   - api
   - issues
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

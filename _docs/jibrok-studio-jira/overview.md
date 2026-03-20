@@ -14,6 +14,12 @@ related:
   - jibrok-studio-jira/triggers
   - jibrok-studio-jira/use-cases
   - jibrok-studio-jira/scripting-api
+seo_title: JiBrok Studio Overview - Scripting for Jira Cloud
+software_schema: true
+last_modified_at: 2026-03-19
+date: 2026-02-23
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC

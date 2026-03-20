@@ -1,5 +1,6 @@
 ---
 title: "Scripting API: Queues"
+seo_title: "Message Queue API - Async Processing for Jira"
 key: jibrok-studio-jira
 excerpt: Message Queue API - push, pull, consume, acknowledge, and queue statistics
 category: scripting
@@ -10,6 +11,10 @@ tags:
   - api
   - queues
   - messaging
+last_modified_at: 2026-03-19
+date: 2026-03-16
+seo:
+  date_modified: 2026-03-19
 ---
 
 * TOC
