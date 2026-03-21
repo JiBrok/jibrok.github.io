@@ -53,7 +53,7 @@ Under the General Data Protection Regulation (GDPR), we process your data based 
 | Analytics cookies | Consent | Art. 6(1)(a) |
 | Functional cookies | Consent | Art. 6(1)(a) |
 | Support requests | Legitimate interest (customer support) | Art. 6(1)(f) |
-| License notifications | Legitimate interest (contract fulfillment) | Art. 6(1)(f) |
+| License notifications | Legitimate interest (service continuity) | Art. 6(1)(f) |
 
 ---
 
