@@ -91,11 +91,11 @@ last_modified_at: 2026-03-21
         <div class="uk-child-width-1-2@m" data-uk-grid>
             <div>
                 <h2>Security Testing & Validation</h2>
-                <p>JiBrok apps are built on Atlassian Forge  - a serverless platform that runs entirely within Atlassian's infrastructure. This architecture eliminates the traditional attack surface that penetration testing addresses: there are no JiBrok-owned servers, databases, or network endpoints to test.</p>
+                <p>JiBrok apps are built on Atlassian Forge - a serverless platform that runs entirely within Atlassian's infrastructure. This architecture eliminates the traditional attack surface that penetration testing addresses: there are no JiBrok-owned servers, databases, or network endpoints to test.</p>
                 <h3 class="uk-margin-medium-top">Atlassian Security Review</h3>
                 <p>All Marketplace apps undergo Atlassian's security review process before publication. This review evaluates app permissions, data access patterns, and compliance with Atlassian's security requirements.</p>
                 <h3 class="uk-margin-medium-top">Marketplace Bug Bounty Program</h3>
-                <p>JiBrok Studio participates in the Atlassian Marketplace Security Bug Bounty Program  - a crowdsourced vulnerability discovery program managed by Atlassian through the Bugcrowd platform. Security researchers are invited to test our apps and report vulnerabilities.</p>
+                <p>JiBrok Studio participates in the Atlassian Marketplace Security Bug Bounty Program - a crowdsourced vulnerability discovery program managed by Atlassian through the Bugcrowd platform. Security researchers are invited to test our apps and report vulnerabilities.</p>
                 <h3 class="uk-margin-medium-top">Forge Platform Security</h3>
                 <p>The Forge platform provides built-in security guarantees including tenant isolation, scoped permissions, encrypted storage, and zero external network access. These protections are managed and maintained by Atlassian.</p>
             </div>

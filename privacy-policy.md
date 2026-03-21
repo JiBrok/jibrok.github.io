@@ -53,7 +53,7 @@ Under the General Data Protection Regulation (GDPR), we process your data based 
 | Analytics cookies | Consent | Art. 6(1)(a) |
 | Functional cookies | Consent | Art. 6(1)(a) |
 | Support requests | Legitimate interest (customer support) | Art. 6(1)(f) |
-| License notifications | Legitimate interest (service continuity) | Art. 6(1)(f) |
+| Service-related communications (license expiry, security advisories, critical updates) | Legitimate interest (service continuity) | Art. 6(1)(f) |
 
 ---
 
@@ -158,3 +158,5 @@ If you have any questions about this Privacy Policy or wish to exercise your dat
 - **Data protection inquiries**: [privacy@jibrok.com](mailto:privacy@jibrok.com)
 - **General support**: [support@jibrok.com](mailto:support@jibrok.com)
 - **Service Desk**: [JiBrok Help Center](https://jibrok.atlassian.net/servicedesk/customer/portals)
+
+Full legal entity details are available upon request at [support@jibrok.com](mailto:support@jibrok.com).
