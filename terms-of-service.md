@@ -64,6 +64,18 @@ We may update these Terms from time to time. Any changes will be posted on this 
 
 ---
 
-## 8. Contact
+## 8. Severability
+
+If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.
+
+---
+
+## 9. Entire Agreement
+
+These Terms, together with the [Privacy Policy](/privacy-policy/) and [Cookie Policy](/cookie-policy/), constitute the entire agreement between you and JiBrok regarding use of this Website.
+
+---
+
+## 10. Contact
 
 If you have any questions about these Terms, please contact us at [support@jibrok.com](mailto:support@jibrok.com).

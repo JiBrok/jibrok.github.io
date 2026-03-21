@@ -28,6 +28,7 @@ last_modified_at: 2026-03-21
     </div>
 </div>
 
+<!-- Review these numbers periodically: years, installations, apps count -->
 <div class="studio-section" style="padding:48px 0;">
     <div class="studio-container">
         <div class="feature-grid" style="grid-template-columns: repeat(4, 1fr);">

@@ -70,7 +70,7 @@ If you are in the European Economic Area (EEA) or UK, you have the following rig
 - **Right to withdraw consent** (Art. 7(3)): Withdraw your consent at any time by clicking "Cookie Settings" in the website footer.
 - **Right to lodge a complaint** (Art. 77): You have the right to lodge a complaint with a supervisory authority. The relevant authority for JiBrok is the [Commissioner for Personal Data Protection](http://www.dataprotection.gov.cy/) of the Republic of Cyprus. You may also lodge a complaint with the supervisory authority in your member state of habitual residence.
 
-To exercise any of these rights, contact us at [support@jibrok.com](mailto:support@jibrok.com). We will respond within 30 days.
+To exercise any of these rights, contact us at [privacy@jibrok.com](mailto:privacy@jibrok.com). We will respond within 30 days.
 
 ---
 
@@ -85,7 +85,7 @@ If you are a California resident, the California Consumer Privacy Act (CCPA) and
 
 **Global Privacy Control (GPC)**: We honor the GPC browser signal as a valid opt-out request, as required by CCPA/CPRA. If your browser sends a GPC signal, analytics cookies will be automatically declined.
 
-To exercise your rights, contact us at [support@jibrok.com](mailto:support@jibrok.com).
+To exercise your rights, contact us at [privacy@jibrok.com](mailto:privacy@jibrok.com).
 
 ---
 
@@ -99,7 +99,7 @@ None of our on-premise add-ons (apps) collect any analytics or personal informat
 
 Our add-ons/apps are sold on Atlassian Marketplace. If you generate an evaluation license or purchase a license for any of our add-ons, Atlassian Marketplace provides us contact information of the licensee. We do not store this information on our own servers and only access it through the Atlassian Marketplace interface when required.
 
-We may use the contact email address provided by Atlassian Marketplace to send you **service-related communications** such as license expiry notices, security advisories, and critical product updates. These communications are based on our legitimate interest in fulfilling our contractual obligations (Art. 6(1)(f) GDPR). We do not send marketing emails, newsletters, or bulk promotional communications.
+We may use the contact email address provided by Atlassian Marketplace to send you **service-related communications** such as license expiry notices, security advisories, and critical product updates. These communications are based on our legitimate interest in service continuity (Art. 6(1)(f) GDPR). We do not send marketing emails, newsletters, or bulk promotional communications.
 
 To opt out of all communications, send a request to [support@jibrok.com](mailto:support@jibrok.com) and we will not contact you again.
 
@@ -130,6 +130,18 @@ To create a support request in our issue tracker you need to provide an email ad
 When you consent to analytics cookies, usage data is processed by Google LLC, which may transfer data to servers outside the European Economic Area (EEA), including the United States. Google participates in the EU-US Data Privacy Framework, which provides an adequate level of data protection as recognized by the European Commission. For more information, see [Google's privacy policy](https://policies.google.com/privacy).
 
 JiBrok does not independently transfer your personal data outside the EEA. Our support systems are provided by Atlassian (Help Center), which maintains its own data processing and transfer safeguards.
+
+---
+
+## Data Breach Notification
+
+In the event of a personal data breach that poses a high risk to your rights and freedoms, we will notify affected individuals without undue delay, in accordance with GDPR Article 34.
+
+---
+
+## Children's Privacy
+
+This website and our products are intended for business use by adults. We do not knowingly collect personal data from children under 16. If you believe we have inadvertently collected such data, please contact us at [privacy@jibrok.com](mailto:privacy@jibrok.com) and we will promptly delete it.
 
 ---
 

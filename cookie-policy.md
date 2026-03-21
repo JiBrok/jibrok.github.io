@@ -32,7 +32,7 @@ These cookies are essential for the website to function and cannot be disabled. 
 
 ### Analytics Cookies
 
-These cookies help us understand how visitors interact with our website by collecting anonymous usage data. They are only set if you click "Accept All" on the cookie banner.
+These cookies help us understand how visitors interact with our website by collecting anonymous usage data. They are only set if you click "Accept All" or enable this category in "Customize" on the cookie banner.
 
 | Cookie | Provider | Purpose | Expiry |
 |--------|----------|---------|--------|
@@ -47,7 +47,7 @@ We use Google Analytics 4 with the following privacy measures:
 
 ### Functional Cookies
 
-These cookies enable enhanced functionality such as our support widget. They are only set if you click "Accept All" on the cookie banner.
+These cookies enable enhanced functionality such as our support widget. They are only set if you click "Accept All" or enable this category in "Customize" on the cookie banner.
 
 | Cookie | Provider | Purpose | Expiry |
 |--------|----------|---------|--------|

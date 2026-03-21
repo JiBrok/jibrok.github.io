@@ -173,7 +173,7 @@ The Provider maintains the following security documentation:
 
 * **Trust Center:** [jibrok.com/trust-center/](/trust-center/)
 * **Security & SOC Reports:** [jibrok.com/security/](/security/)
-* **Forge Platform Security:** [jibrok.com/docs/jibrok-studio-jira/forge-platform-security/](/docs/jibrok-studio-jira/forge-platform-security/)
+* **Forge Platform Security:** [jibrok.com/docs/jibrok-studio-jira/forge-platform-security/](/docs/jibrok-studio-jira/forge-platform-security/) (or at such other URL as the Provider may designate)
 * **Vulnerability Disclosure Policy:** [jibrok.com/vulnerability-disclosure/](/vulnerability-disclosure/)
 
 ---
