@@ -123,6 +123,23 @@ Without limiting Section 14.2 of the Standard Agreement, neither party shall be 
 
 For any claim related to Product performance or functionality, the Customer's sole and exclusive remedy is as set forth in Section 6.2 of the Standard Agreement.
 
+#### 7.4 Overall Liability Cap
+
+Notwithstanding Sections 14.3 and 14.5 of the Standard Agreement, Provider's total aggregate liability arising out of or related to this Agreement, from all causes of action and under all theories of liability, shall not exceed two times (2x) the General Cap as calculated in Section 7.1 above.
+
+For clarity, this cap applies to all categories of claims, including Provider-Covered Claims (Section 15), Enhanced Claims (Section 14.3), and confidentiality obligations.
+
+This limitation does not apply to liability arising from Provider's fraud or intentional misconduct, or liability that cannot be limited under the laws of the Republic of Cyprus.
+
+#### 7.5 Indemnification Conditions
+
+In addition to the procedures set forth in Section 15.4 of the Standard Agreement, Provider's obligations under Section 15.1 are subject to the following conditions:
+
+* (a) Customer must notify Provider in writing within ten (10) business days of becoming aware of a potential Provider-Covered Claim.
+* (b) Customer must grant Provider sole control of the defense and settlement of any Provider-Covered Claim. Customer shall not settle or compromise any such claim without Provider's prior written consent.
+* (c) In addition to the exceptions set forth in Section 15.6 of the Standard Agreement, Provider's indemnification obligations do not extend to claims arising from Customer's use of the Product in combination with products, services, or technologies not provided or recommended by Provider or Atlassian.
+* (d) Provider's obligations under Section 15.1 shall be reduced to the extent that Customer's actions or omissions materially contributed to the claim.
+
 ---
 
 ### 8. Force Majeure Extension
