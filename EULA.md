@@ -2,9 +2,11 @@
 layout: page
 title: EULA
 permalink: /EULA/
+excerpt: "End User License Agreement for JiBrok apps. Atlassian Standard Agreement with Provider-Specific Terms."
+last_modified_at: 2026-03-21
 ---
 
-**Version 1.1** - Last updated: March, 2026
+Last updated: March 21, 2026
 
 ---
 

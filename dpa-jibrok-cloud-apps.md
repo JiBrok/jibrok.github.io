@@ -2,11 +2,13 @@
 layout: page
 title: DPA - JiBrok Cloud Apps
 permalink: /dpa-jibrok-cloud-apps/
+excerpt: "Data Processing Agreement for JiBrok Cloud Apps (Time in Status, Timer, Stopwatch, JBCF, Display Linked Issues, Fields Panel for JSM)."
+last_modified_at: 2026-03-21
 ---
 
 ## Data Processing Agreement (DPA)  - JiBrok Cloud Apps (Atlassian Forge)
 
-**Version 1.1** - Effective date: 2026-03-18
+Effective date: March 21, 2026
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the following JiBrok Cloud apps hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (each, an "**App**"):
 
@@ -22,7 +24,7 @@ For JiBrok Studio for Jira Cloud and Message Field for Jira Cloud, see the respe
 > **Parties**
 >
 > - **Customer** (Controller): [Customer legal name], [address] ("Customer")
-> - **Jibrok** (Processor): **JiBrok**, Nicosia, Republic of Cyprus, email: **support@jibrok.com** ("Jibrok")
+> - **JiBrok** (Processor): **JiBrok**, Nicosia, Republic of Cyprus, email: **support@jibrok.com** ("JiBrok")
 
 ---
 
@@ -36,13 +38,13 @@ Terms such as **Personal Data**, **Processing**, **Controller**, **Processor**, 
 
 2.1 **Customer** is the **Controller** of Personal Data processed in connection with the Apps.
 
-2.2 **Jibrok** acts as a **Processor** and processes Personal Data only on Customer's documented instructions, as described in **Annex 1**.
+2.2 **JiBrok** acts as a **Processor** and processes Personal Data only on Customer's documented instructions, as described in **Annex 1**.
 
 ---
 
 ## 3. Scope and Customer instructions
 
-3.1 Jibrok will process Personal Data solely to:
+3.1 JiBrok will process Personal Data solely to:
 
 - provide the Apps' functionality;
 - support/debug and improve reliability (using aggregated/de-identified signals where feasible);
@@ -58,31 +60,31 @@ Terms such as **Personal Data**, **Processing**, **Controller**, **Processor**, 
 
 ## 4. Confidentiality
 
-Jibrok ensures that any person authorized to process Personal Data is bound by confidentiality and accesses Personal Data only as necessary.
+JiBrok ensures that any person authorized to process Personal Data is bound by confidentiality and accesses Personal Data only as necessary.
 
 ---
 
 ## 5. Security (GDPR Art. 32)
 
-5.1 Jibrok implements appropriate technical and organizational measures described in **Annex 2**.
+5.1 JiBrok implements appropriate technical and organizational measures described in **Annex 2**.
 
 5.2 The Apps have **no external data egress** and use only Atlassian Forge runtime and storage (no external services, no Forge Remote).
 
-5.3 Jibrok maintains **SOC 2 Type II** for its organizational controls (evidence may be shared under NDA where appropriate).
+5.3 JiBrok maintains **SOC 2 Type II** for its organizational controls (evidence may be shared under NDA where appropriate).
 
 ---
 
 ## 6. Sub-processors
 
-6.1 Customer authorizes Jibrok to use **Atlassian (Forge platform)** as a sub-processor for hosting/compute/storage required to run the Apps.
+6.1 Customer authorizes JiBrok to use **Atlassian (Forge platform)** as a sub-processor for hosting/compute/storage required to run the Apps.
 
-6.2 Jibrok does not use other sub-processors for these Apps.
+6.2 JiBrok does not use other sub-processors for these Apps.
 
 ---
 
 ## 6A. International Data Transfers
 
-6A.1 Jibrok does not independently transfer Personal Data outside the European Economic Area (EEA). All App data is processed within the Atlassian Forge platform.
+6A.1 JiBrok does not independently transfer Personal Data outside the European Economic Area (EEA). All App data is processed within the Atlassian Forge platform.
 
 6A.2 Atlassian, as sub-processor, determines the geographic location of data processing based on the Customer's Atlassian cloud instance configuration. Any international transfers by Atlassian are governed by Atlassian's own Data Processing Addendum and transfer safeguards (including Standard Contractual Clauses where applicable).
 
@@ -92,29 +94,29 @@ Jibrok ensures that any person authorized to process Personal Data is bound by c
 
 ## 7. Assistance with Data Subject requests
 
-7.1 Jibrok will reasonably assist Customer in responding to Data Subject requests (access/erasure/rectification/restriction) to the extent applicable to data processed by the Apps and technically feasible.
+7.1 JiBrok will reasonably assist Customer in responding to Data Subject requests (access/erasure/rectification/restriction) to the extent applicable to data processed by the Apps and technically feasible.
 
-7.2 **Atlassian accountId reporting/erasure.** Jibrok confirms it has implemented the Atlassian Personal Data Reporting/erasure workflow for stored `accountId` identifiers across all covered Apps and will process applicable "erase/refresh" actions as required.
+7.2 **Atlassian accountId reporting/erasure.** JiBrok confirms it has implemented the Atlassian Personal Data Reporting/erasure workflow for stored `accountId` identifiers across all covered Apps and will process applicable "erase/refresh" actions as required.
 
 ---
 
 ## 8. Personal Data Breach
 
-Jibrok will notify Customer **without undue delay and in any event within 48 hours** after confirming a Personal Data Breach affecting Personal Data processed under this DPA. Jibrok will provide available information reasonably necessary for Customer's compliance obligations, including the nature of the breach, categories of data subjects affected, likely consequences, and measures taken or proposed to mitigate the breach. Jibrok will cooperate with Customer's notification obligations under GDPR Articles 33 and 34, and will document all Personal Data Breaches in accordance with GDPR Article 33(5).
+JiBrok will notify Customer **without undue delay and in any event within 48 hours** after confirming a Personal Data Breach affecting Personal Data processed under this DPA. JiBrok will provide available information reasonably necessary for Customer's compliance obligations, including the nature of the breach, categories of data subjects affected, likely consequences, and measures taken or proposed to mitigate the breach. JiBrok will cooperate with Customer's notification obligations under GDPR Articles 33 and 34, and will document all Personal Data Breaches in accordance with GDPR Article 33(5).
 
 ---
 
 ## 9. Return and deletion
 
-9.1 Jibrok stores App configuration data, calculated values, and identifiers only within Atlassian Forge storage and does not keep separate copies outside Forge.
+9.1 JiBrok stores App configuration data, calculated values, and identifiers only within Atlassian Forge storage and does not keep separate copies outside Forge.
 
-9.2 Upon uninstall/termination, deletion and retention of App-hosted data follow Atlassian Forge platform behavior. Where technically feasible, Jibrok will assist Customer with deletion requests relating to App-stored data.
+9.2 Upon uninstall/termination, deletion and retention of App-hosted data follow Atlassian Forge platform behavior. Where technically feasible, JiBrok will assist Customer with deletion requests relating to App-stored data.
 
 ---
 
 ## 10. Audit / information
 
-Upon reasonable written request (no more than once per calendar year), Jibrok will provide information necessary to demonstrate compliance with this DPA, typically via written responses, SOC 2 reports, and security documentation. If Customer requires an audit beyond documentation review, such audit shall be: (a) conducted at Customer's expense; (b) preceded by at least thirty (30) days' written notice; (c) limited to records and processes relevant to this DPA; and (d) subject to reasonable confidentiality obligations. Jibrok may satisfy audit requests by providing its most recent SOC 2 Type II report and answering supplemental written questions.
+Upon reasonable written request (no more than once per calendar year), JiBrok will provide information necessary to demonstrate compliance with this DPA, typically via written responses, SOC 2 reports, and security documentation. If Customer requires an audit beyond documentation review, such audit shall be: (a) conducted at Customer's expense; (b) preceded by at least thirty (30) days' written notice; (c) limited to records and processes relevant to this DPA; and (d) subject to reasonable confidentiality obligations. JiBrok may satisfy audit requests by providing its most recent SOC 2 Type II report and answering supplemental written questions.
 
 ---
 
@@ -157,7 +159,7 @@ The following JiBrok Cloud apps on the Atlassian Marketplace, all running on Atl
 ### E. Diagnostic data (Forge logs)
 
 - The Apps use **Forge logs only** for error diagnostics.
-- Jibrok does not intentionally log Jira content or Personal Data; however, in rare cases technical error context might include fragments of data. Jibrok applies reasonable efforts to minimize/scrub such occurrences.
+- JiBrok does not intentionally log Jira content or Personal Data; however, in rare cases technical error context might include fragments of data. JiBrok applies reasonable efforts to minimize/scrub such occurrences.
 
 ### F. Purpose
 

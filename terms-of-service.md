@@ -2,9 +2,11 @@
 layout: page
 title: Terms of Service
 permalink: /terms-of-service/
+excerpt: "Terms governing use of the jibrok.com website, documentation, and related online resources."
+last_modified_at: 2026-03-21
 ---
 
-**Version 1.0** - Last updated: March, 2026
+Last updated: March 21, 2026
 
 These Terms of Service ("Terms") govern your use of the JiBrok website at [jibrok.com](https://jibrok.com) ("Website"). By accessing or using the Website, you agree to these Terms.
 
@@ -26,7 +28,7 @@ You may not:
 
 ## 2. Documentation
 
-Product documentation published on this Website is provided for informational purposes. While we make reasonable efforts to keep documentation accurate and up to date, we do not warrant that it is error-free, complete, or current at all times. Product behavior is governed by the applicable [EULA](/EULA/) and [Provider-Specific Terms](/EULA/), not by Website documentation.
+Product documentation published on this Website is provided for informational purposes. While we make reasonable efforts to keep documentation accurate and up to date, we do not warrant that it is error-free, complete, or current at all times. Product behavior is governed by the applicable [EULA and Provider-Specific Terms](/EULA/), not by Website documentation.
 
 ---
 

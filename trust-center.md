@@ -4,6 +4,7 @@ title: Trust Center
 permalink: /trust-center/
 width: expand
 excerpt: "SOC 2 Type II certified Atlassian Forge vendor. Security reports, DPAs, privacy policies, and compliance documentation."
+last_modified_at: 2026-03-21
 ---
 
 <div class="studio-section studio-section-gray">

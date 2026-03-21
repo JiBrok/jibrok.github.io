@@ -2,9 +2,11 @@
 layout: page
 title: Support Policy
 permalink: /support-policy/
+excerpt: "Support channels, target response times, and scope of support for JiBrok Atlassian Marketplace apps."
+last_modified_at: 2026-03-21
 ---
 
-**Version 1.0** - Last updated: March, 2026
+Last updated: March 21, 2026
 
 This Support Policy describes the support services provided by JiBrok for apps available on the Atlassian Marketplace.
 

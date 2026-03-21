@@ -3,6 +3,8 @@ layout: page
 title: Security and SOC Reports
 permalink: /security/
 width: expand
+excerpt: "SOC 2 Type II audit results, security testing, and Forge platform security documentation."
+last_modified_at: 2026-03-21
 ---
 
 <div class="uk-section uk-section-muted uk-text-center">

@@ -2,9 +2,11 @@
 layout: page
 title: Cookie Policy
 permalink: /cookie-policy/
+excerpt: "Cookies we use on jibrok.com, consent management, and how to control your preferences."
+last_modified_at: 2026-03-21
 ---
 
-**Version 1.0** - Last updated: March 18, 2026
+Last updated: March 21, 2026
 
 This Cookie Policy explains what cookies are, how JiBrok ("we", "us", "our") uses them on [jibrok.com](https://jibrok.com), and how you can manage your preferences.
 
@@ -57,9 +59,9 @@ These cookies enable enhanced functionality such as our support widget. They are
 
 ### On This Website
 
-- **Cookie banner**: When you first visit, you can choose "Accept All" or "Necessary Only".
-- **Cookie Settings**: Click "Cookie Settings" in the footer at any time to change your preferences.
-- **Withdrawing consent**: Click "Cookie Settings" in the footer, then select "Necessary Only". Any previously set analytics cookies will be deleted.
+- **Cookie banner**: When you first visit, you can choose "Accept All", "Necessary Only", or "Customize" to select individual cookie categories.
+- **Cookie Settings**: Click "Cookie Settings" in the footer at any time to change your preferences. You can enable or disable individual cookie categories using toggles, then click "Save Preferences".
+- **Withdrawing consent**: Click "Cookie Settings" in the footer, disable the cookie categories you wish to opt out of, and click "Save Preferences". Any previously set analytics cookies will be deleted.
 
 ### In Your Browser
 

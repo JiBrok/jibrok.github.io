@@ -2,9 +2,11 @@
 layout: page
 title: "Provider-Specific Terms  - JiBrok Apps"
 permalink: /provider-specific-terms/
+excerpt: "Provider-Specific Terms for JiBrok Cloud and Data Center/Server apps on Atlassian Marketplace."
+last_modified_at: 2026-03-21
 ---
 
-**Version 1.1** - Last updated: March, 2026
+Last updated: March 21, 2026
 
 These Provider-Specific Terms supplement the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) ("Standard Agreement") for JiBrok apps listed below, provided by JiBrok ("Provider"). In the event of any conflict between these Provider-Specific Terms and the Standard Agreement, these Provider-Specific Terms shall prevail.
 
