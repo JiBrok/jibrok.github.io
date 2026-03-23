@@ -3,10 +3,10 @@ layout: page
 title: "Provider-Specific Terms - JiBrok Studio for Jira"
 permalink: /provider-specific-terms-studio/
 excerpt: "Provider-Specific Terms for JiBrok Studio for Jira Cloud. Scripts, custom tables, and Forge platform terms."
-last_modified_at: 2026-03-21
+last_modified_at: 2026-03-23
 ---
 
-Last updated: March 21, 2026
+Last updated: March 23, 2026
 
 These Provider-Specific Terms supplement the [Atlassian Standard End User Agreement](https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1) ("Standard Agreement") for **JiBrok Studio for Jira Cloud** provided by JiBrok ("Provider"). In the event of any conflict between these Provider-Specific Terms and the Standard Agreement, these Provider-Specific Terms shall prevail.
 
@@ -39,6 +39,10 @@ The Product runs entirely on Atlassian Forge, a serverless platform managed by A
 The Provider is not responsible for outages, performance degradation, or limitations of the Atlassian Forge platform or related Atlassian services to the extent such issues are directly caused by the Atlassian platform and could not be avoided through commercially reasonable mitigation by the Provider. However, prolonged material degradation that persists beyond the Force Majeure period entitles the Customer to the remedies otherwise available under the Agreement, including termination and pro-rata refund.
 
 Platform availability is subject to Atlassian's own service commitments. Current operational status is available at [jibrok.statuspage.io](https://jibrok.statuspage.io/).
+
+Where changes to the Atlassian Forge platform, Forge SQL, Forge Key-Value Storage, Atlassian REST APIs, or related Atlassian services require the Provider to modify, replace, or remove Product features, such modifications shall not constitute a breach of the warranty in Section 6.1 of the Standard Agreement or a decrease in overall functionality for the purposes of that section, provided that the Provider uses commercially reasonable efforts to (a) maintain equivalent functionality through alternative implementation where technically feasible, or (b) notify affected Customers through the Atlassian Marketplace listing or the Provider's website within thirty (30) days of becoming aware that a feature will be materially affected. This paragraph does not limit the Customer's right to terminate and receive a pro-rata refund under the preceding paragraph if prolonged material degradation occurs.
+
+Performance characteristics described in Product documentation - including but not limited to processing capacity, response times, throughput, script execution limits, custom table storage capacities, and supported data volumes - reflect typical behavior under normal Atlassian platform conditions and do not constitute independent performance guarantees beyond Section 6.1 of the Standard Agreement. Actual performance may vary due to factors outside the Provider's control, including Atlassian Forge platform rate limits, Forge SQL quotas, Forge function invocation limits, concurrent usage, and Customer Jira instance size and configuration.
 
 ---
 
@@ -99,6 +103,8 @@ The Provider will not use Customer Data (including Customer scripts, custom tabl
 ### 6. Backup and Data Recovery
 
 The Customer is solely responsible for maintaining independent backups of its Jira data. The Product is not a backup or disaster recovery solution. App data stored within Atlassian Forge is subject to Atlassian's standard backup and disaster recovery mechanisms; the Provider does not independently access, back up, or restore Customer data in Forge storage. The Provider shall not be liable for any failure to recover Customer data, whether caused by script execution, platform outages, Customer configuration, or any other cause, except to the extent data loss or corruption is directly caused by a defect in the Product's code. The Customer acknowledges that scripts may irreversibly modify or delete Jira data and that such modifications cannot be reversed by the Provider.
+
+Upon termination or expiration of this Agreement, the Provider will use commercially reasonable efforts to delete or de-identify Customer data stored within Atlassian Forge within sixty (60) days, in accordance with Section 17.3 of the Standard Agreement. The Customer acknowledges that the Provider's ability to delete data stored in Atlassian Forge (including Forge SQL, Forge Key-Value Storage, and Forge remote storage) is subject to the capabilities and data lifecycle policies of the Atlassian platform. To the extent that Atlassian retains data in its infrastructure beyond the Provider's deletion request, such retention is governed by Atlassian's own data processing and retention policies and shall not constitute a breach by the Provider of Section 17.3 of the Standard Agreement. This provision applies equally to data stored in custom tables, message queues, and other Product storage facilities that rely on Forge infrastructure.
 
 ---
 
