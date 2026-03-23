@@ -123,7 +123,7 @@ Without limiting Section 14.2 of the Standard Agreement, neither party shall be 
 
 #### 7.3 Sole Remedy
 
-For any claim related to Product performance or functionality, the Customer's sole and exclusive remedy is as set forth in Section 6.2 of the Standard Agreement.
+For any claim related to Product performance or functionality, the Customer's sole and exclusive remedy is as set forth in Section 6.2 of the Standard Agreement. This exclusive remedy does not apply to repeated or prolonged critical failures that render the Product materially unusable for more than fifteen (15) consecutive business days; in such case, the Customer may terminate the subscription and receive a pro-rata refund for the remainder of the subscription term.
 
 #### 7.4 Overall Liability Cap
 
