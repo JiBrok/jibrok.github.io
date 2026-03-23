@@ -117,8 +117,8 @@ Without limiting Section 14.2 of the Standard Agreement, neither party shall be 
 * (a) cost of procurement of substitute goods, technology, or services;
 * (b) lost goodwill or reputational damage;
 * (c) damages arising from the Customer's failure to implement reasonable data backup procedures;
-* (d) damages arising from the Customer's continued use of the Product after becoming aware of a defect or vulnerability;
-* (e) damages arising from use of the Product in combination with third-party products, platforms, or services not provided by the Provider;
+* (d) damages arising from the Customer's continued use of the Product after the Provider has notified the Customer in writing of a critical defect or vulnerability and provided reasonable mitigation guidance;
+* (e) damages arising from use of the Product in combination with unsupported or undocumented third-party products, platforms, or services;
 * (f) penalties, fines, or sanctions imposed by regulatory authorities on the Customer.
 
 #### 7.3 Sole Remedy
@@ -127,9 +127,9 @@ For any claim related to Product performance or functionality, the Customer's so
 
 #### 7.4 Overall Liability Cap
 
-Notwithstanding Sections 14.3 and 14.5 of the Standard Agreement, Provider's total aggregate liability arising out of or related to this Agreement, from all causes of action and under all theories of liability, shall not exceed two times (2x) the General Cap as calculated in Section 7.1 above.
+Notwithstanding Sections 14.3 and 14.5 of the Standard Agreement, Provider's total aggregate liability arising out of or related to this Agreement, from all causes of action and under all theories of liability, shall not exceed two times (2x) the General Cap as calculated in Section 7.1 above, except that liability for Enhanced Claims under Section 14.3 of the Standard Agreement (including breach of data protection obligations and security obligations) shall not exceed three times (3x) the General Cap.
 
-For clarity, this cap applies to all categories of claims, including Provider-Covered Claims (Section 15), Enhanced Claims (Section 14.3), and confidentiality obligations.
+For clarity, the 2x cap applies to all other categories of claims, including Provider-Covered Claims (Section 15) and confidentiality obligations.
 
 This limitation does not apply to liability arising from Provider's fraud or intentional misconduct, or liability that cannot be limited under the laws of the Republic of Cyprus.
 
