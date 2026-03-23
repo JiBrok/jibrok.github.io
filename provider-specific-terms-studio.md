@@ -98,7 +98,7 @@ The Provider will not use Customer Data (including Customer scripts, custom tabl
 
 ### 6. Backup and Data Recovery
 
-The Customer is solely responsible for maintaining independent backups of its Jira data. The Product is not a backup or disaster recovery solution. The Provider shall not be liable for any failure to recover Customer data, whether caused by script execution, platform outages, Customer configuration, or any other cause. The Customer acknowledges that scripts may irreversibly modify or delete Jira data and that such modifications cannot be reversed by the Provider.
+The Customer is solely responsible for maintaining independent backups of its Jira data. The Product is not a backup or disaster recovery solution. App data stored within Atlassian Forge is subject to Atlassian's standard backup and disaster recovery mechanisms; the Provider does not independently access, back up, or restore Customer data in Forge storage. The Provider shall not be liable for any failure to recover Customer data, whether caused by script execution, platform outages, Customer configuration, or any other cause, except to the extent data loss or corruption is directly caused by a defect in the Product's code. The Customer acknowledges that scripts may irreversibly modify or delete Jira data and that such modifications cannot be reversed by the Provider.
 
 ---
 
