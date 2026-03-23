@@ -36,7 +36,7 @@ The DPA governs the processing of personal data by the Provider on behalf of the
 
 The Product runs entirely on Atlassian Forge, a serverless platform managed by Atlassian. The Provider does not operate its own servers, databases, or network infrastructure for the Product. This dependency extends to all Atlassian platform services the Product interacts with, including but not limited to Atlassian Forge runtime, Forge SQL, Forge Key-Value Storage, Atlassian REST APIs, and Atlassian CDN.
 
-Outages, performance degradation, or limitations of the Atlassian Forge platform or related Atlassian services that are outside the Provider's reasonable control shall not constitute a breach of this Agreement, a failure of the Performance Warranty (Section 6.2), or grounds for termination under the Force Majeure provisions (Section 19.8).
+The Provider is not responsible for outages, performance degradation, or limitations of the Atlassian Forge platform or related Atlassian services to the extent such issues are directly caused by the Atlassian platform and could not be avoided through commercially reasonable mitigation by the Provider. However, prolonged material degradation that persists beyond the Force Majeure period entitles the Customer to the remedies otherwise available under the Agreement, including termination and pro-rata refund.
 
 Platform availability is subject to Atlassian's own service commitments. Current operational status is available at [jibrok.statuspage.io](https://jibrok.statuspage.io/).
 
@@ -137,7 +137,7 @@ This limitation does not apply to liability arising from Provider's fraud or int
 
 In addition to the procedures set forth in Section 15.4 of the Standard Agreement, Provider's obligations under Section 15.1 are subject to the following conditions:
 
-* (a) Customer must notify Provider in writing within ten (10) business days of becoming aware of a potential Provider-Covered Claim.
+* (a) Customer must provide prompt written notice to Provider upon becoming aware of a potential Provider-Covered Claim. Delayed notice reduces Provider's obligations under this section only to the extent Provider is materially prejudiced by the delay.
 * (b) Customer must grant Provider sole control of the defense and settlement of any Provider-Covered Claim. Customer shall not settle or compromise any such claim without Provider's prior written consent.
 * (c) In addition to the exceptions set forth in Section 15.6 of the Standard Agreement, Provider's indemnification obligations do not extend to claims arising from Customer's use of the Product in combination with products, services, or technologies not provided or recommended by Provider or Atlassian.
 * (d) Provider's obligations under Section 15.1 shall be reduced to the extent that Customer's actions or omissions materially contributed to the claim.
