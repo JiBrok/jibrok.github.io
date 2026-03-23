@@ -161,7 +161,7 @@ In addition to events of Force Majeure described in Section 19.8 of the Standard
 * (c) regulatory actions by government authorities affecting the Provider's ability to deliver the Product;
 * (d) supply chain disruptions affecting cloud infrastructure providers used by Atlassian.
 
-For events described in subsections (a) and (b) of this section, the period referenced in Section 19.8 of the Standard Agreement after which either party may terminate shall be extended to thirty (30) days.
+For events described in subsections (a) and (b) of this section, the period referenced in Section 19.8 of the Standard Agreement after which either party may terminate shall be fifteen (15) days.
 
 ---
 
