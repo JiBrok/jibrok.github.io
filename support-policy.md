@@ -39,6 +39,23 @@ The following are target response times, not contractual SLAs. Actual response t
 
 ---
 
+## Incident Communication
+
+For **Critical** and **High** severity issues, the Provider will:
+
+* Provide status updates at least every **4 business hours** until the issue is resolved or a workaround is provided.
+* Post incident notifications and updates on the operational status page at [jibrok.statuspage.io](https://jibrok.statuspage.io/) for issues affecting multiple customers.
+
+These are process commitments, not contractual SLAs.
+
+---
+
+## Escalation
+
+If the initial response does not resolve your issue or you are not receiving timely updates, you may escalate by emailing [support@jibrok.com](mailto:support@jibrok.com) with the subject line "Escalation: [ticket reference]".
+
+---
+
 ## Scope of Support
 
 Support covers:
