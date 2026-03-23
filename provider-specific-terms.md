@@ -171,7 +171,9 @@ This section supersedes Section 19.5 of the Standard Agreement with respect to a
 
 The Provider may update these Provider-Specific Terms from time to time. Material changes - including changes to liability limitations, data processing obligations, or governing law - will be communicated through the Atlassian Marketplace listing or via the Provider's website at least thirty (30) days before taking effect.
 
-If the Customer objects to a material change, the Customer may terminate its subscription by providing written notice to the Provider within the thirty (30) day notice period. In such case, the Customer will receive a pro-rata refund of any prepaid fees for the remainder of the subscription term. Continued use of the Product after the effective date of a material change constitutes acceptance of the updated terms.
+Material changes take effect at the start of the Customer's next renewal term, not during the current subscription period. This restriction does not apply to changes that are (a) required by applicable law or regulation, (b) necessary to address a security vulnerability or incident, or (c) do not materially reduce the Customer's rights under these terms. Such excepted changes may take effect during the current term upon thirty (30) days' notice.
+
+If the Customer objects to a material change scheduled for renewal, the Customer may choose not to renew. If the Customer has already been charged for the renewal term, the Customer may terminate within thirty (30) days of the change taking effect and receive a pro-rata refund for the remainder of the renewal term.
 
 ---
 
