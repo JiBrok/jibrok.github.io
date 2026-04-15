@@ -2,8 +2,8 @@
 layout: page
 title: DPA - JiBrok Cloud Apps
 permalink: /dpa-jibrok-cloud-apps/
-excerpt: "Data Processing Agreement for JiBrok Cloud Apps (Time in Status, Timer, Stopwatch, JBCF, Display Linked Issues, Fields Panel for JSM)."
-last_modified_at: 2026-03-21
+excerpt: "Data Processing Agreement for JiBrok Cloud Apps (Timer, Stopwatch, JBCF, Display Linked Issues, Fields Panel for JSM)."
+last_modified_at: 2026-04-16
 ---
 
 ## Data Processing Agreement (DPA) - JiBrok Cloud Apps (Atlassian Forge)
@@ -12,14 +12,13 @@ Effective date: March 21, 2026
 
 This Data Processing Agreement ("**DPA**") forms part of the agreement/terms governing a customer's use of the following JiBrok Cloud apps hosted on the Atlassian Marketplace and running entirely on **Atlassian Forge** (each, an "**App**"):
 
-* **Time in Status / SLA / Timer / Stopwatch (Cloud)**
 * **Timer field**
 * **Stopwatch field**
 * **Calculated and other custom fields (JBCF)**
 * **Display Linked Issues**
 * **Fields panel for Jira Service Management (JSM)**
 
-For JiBrok Studio for Jira Cloud and Message Field for Jira Cloud, see the respective individual DPAs at [jibrok.com/dpa-jibrok-studio-jira/](/dpa-jibrok-studio-jira/) and [jibrok.com/dpa-message-field-cloud/](/dpa-message-field-cloud/).
+For Time in Status for Jira Cloud (Forge), JiBrok Studio for Jira Cloud and Message Field for Jira Cloud, see the respective individual DPAs at [jibrok.com/dpa-time-in-status-forge/](/dpa-time-in-status-forge/), [jibrok.com/dpa-jibrok-studio-jira/](/dpa-jibrok-studio-jira/) and [jibrok.com/dpa-message-field-cloud/](/dpa-message-field-cloud/).
 
 > **Parties**
 >
@@ -54,7 +53,7 @@ Terms such as **Personal Data**, **Processing**, **Controller**, **Processor**, 
 
 3.3 **Free-text and configuration fields.** The Apps include configuration fields that may accept free text (e.g., field **names**, **descriptions**, **JQL queries**, **SLA definitions**, **timer configurations**, **calculated field formulas**, **display settings**). Customer is responsible for ensuring that any Personal Data included in such fields is lawful and necessary.
 
-3.4 **Calculated and derived data.** The Apps calculate values based on Jira data (e.g., time-in-status metrics, SLA calculations, computed field values). Results may be stored in Atlassian Forge storage and may contain references to issue keys, status names, or user identifiers depending on the calculation context.
+3.4 **Calculated and derived data.** The Apps calculate values based on Jira data (e.g., timer/stopwatch metrics, SLA calculations, computed field values). Results may be stored in Atlassian Forge storage and may contain references to issue keys, status names, or user identifiers depending on the calculation context.
 
 ---
 
@@ -134,7 +133,6 @@ If this DPA conflicts with the main agreement/terms, this DPA prevails only rega
 
 The following JiBrok Cloud apps on the Atlassian Marketplace, all running on Atlassian Forge:
 
-* [Time in Status / SLA / Timer / Stopwatch (Cloud)](https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=cloud&tab=overview)
 * [Timer field](https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud)
 * [Stopwatch field](https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud)
 * [Calculated and other custom fields (JBCF)](https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview)
@@ -150,12 +148,12 @@ The following JiBrok Cloud apps on the Atlassian Marketplace, all running on Atl
 
 1. **Atlassian `accountId`** - stored as `createdBy` / `updatedBy` (and any similar creator/updater linkage fields) solely to attribute who created or updated a configuration item. Also used for GDPR personal data reporting compliance.
 2. **App configurations** - free-text fields (names, descriptions, JQL queries, SLA definitions, timer configurations, calculated field formulas, display settings). These are Customer-controlled inputs; Customer determines whether any Personal Data is entered.
-3. **Calculated/derived values** - time-in-status metrics, SLA calculations, computed field values. May contain references to issue keys, status names, or user identifiers depending on the calculation context. These values are derived from Jira data based on Customer configurations.
+3. **Calculated/derived values** - timer/stopwatch metrics, SLA calculations, computed field values. May contain references to issue keys, status names, or user identifiers depending on the calculation context. These values are derived from Jira data based on Customer configurations.
 
 ### D. Jira data access
 
 - **Read access:** issues, statuses, transitions, custom fields, users, projects, workflows, boards, sprints (for calculations, display, and configuration).
-- **Write access:** updating custom field values with calculated results (e.g., computed time-in-status values, SLA metrics, calculated field outputs).
+- **Write access:** updating custom field values with calculated results (e.g., timer/stopwatch values, SLA metrics, calculated field outputs).
 - The Apps do **not** persistently store full Jira issue content. Jira data may be transiently accessed during calculations and rendering.
 
 ### E. Diagnostic data (Forge logs)
