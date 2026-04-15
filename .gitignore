@@ -5,5 +5,7 @@ _site
 /.sass-cache/
 .jekyll-metadata
 /.claude/
+CLAUDE.md
 /.bundle/
 /vendor/
+/uploads/time-in-status-cloud-forge/.gitkeep
