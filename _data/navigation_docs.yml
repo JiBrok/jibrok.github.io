@@ -187,7 +187,6 @@ time-in-status-cloud-forge:
       - time-in-status-cloud-forge/get-started
       - time-in-status-cloud-forge/migration-to-forge
       - time-in-status-cloud-forge/migrationDocumentation
-      - time-in-status-cloud-forge/featureDifferenceDocumentation
 
   - title: Work calendars
     docs:

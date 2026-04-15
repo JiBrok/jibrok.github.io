@@ -85,7 +85,7 @@ The Forge version is not a straight port - the platform differences matter:
 | In-field statistics (avg / min / max / percentiles) | Available | Planned as a separate app |
 | Field modules / quotas | Managed in-app | Not applicable on Forge |
 
-See the full comparison on the [feature differences page](/docs/time-in-status-cloud-forge/featureDifferenceDocumentation).
+See the full comparison on the [feature comparison page](/docs/time-in-status-cloud-forge/feature-comparison/).
 
 ---
 
