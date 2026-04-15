@@ -5,10 +5,10 @@
   icon: jibrok-studio-jira
   doc: jibrok-studio-jira
 
-- title: Time in status (Cloud)
-  desc: Calculation and search by time spent in statuses. Working calendars, reports, JQL filters and more.
+- title: Time in Status (Forge) for Jira Cloud
+  desc: Forge-native rebuild. Time in statuses, stopwatch, timer and time-between-dates fields, work calendars, and activity reports — all running inside your Jira site.
   icon: time-in-status
-  doc: tis-cloud/overview
+  doc: time-in-status-cloud-forge/overview
 
 - title: Stopwatch (Cloud)
   desc: Counts the time between issue events. Working calendars, JQL filters and more.
@@ -49,6 +49,11 @@
   desc: The app adds pages with interactive user documentation for JiBrok apps.
   icon: user-helper-cloud
   doc: user-helper-cloud/overview
+
+- title: Time in Status (Connect) for Jira Cloud — Deprecated
+  desc: Legacy Connect version. No longer recommended for new installations — please migrate to the Forge-native Time in Status app.
+  icon: time-in-status
+  doc: time-in-status-cloud-forge/migration-to-forge
 
 #- title: 📌 Cloud discount calculator
 #  desc: Calculate the discount for multiple cloud applications. More applications more discount. There is also a discount on app bundles.

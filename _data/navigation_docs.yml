@@ -145,6 +145,7 @@ tis-cloud:
       - tis-cloud/overview
       - tis-cloud/install
       - tis-cloud/get-started
+      - tis-cloud/migration-to-forge
       - tis-cloud/migrationDocumentation
       - tis-cloud/featureDifferenceDocumentation
 
@@ -177,6 +178,40 @@ tis-cloud:
   - title: Reference information
     docs:
       - tis-cloud/time-formats
+
+time-in-status-cloud-forge:
+  - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" class="nav-icon"> Time in Status (Forge) for Jira Cloud
+    docs:
+      - time-in-status-cloud-forge/overview
+      - time-in-status-cloud-forge/install
+      - time-in-status-cloud-forge/get-started
+      - time-in-status-cloud-forge/migration-to-forge
+      - time-in-status-cloud-forge/migrationDocumentation
+      - time-in-status-cloud-forge/featureDifferenceDocumentation
+
+  - title: Work calendars
+    docs:
+      - time-in-status-cloud-forge/work-calendar
+
+  - title: Time in status fields
+    docs:
+      - time-in-status-cloud-forge/time-in-status-field-create
+      - time-in-status-cloud-forge/time-in-status-field-settings
+      - time-in-status-cloud-forge/time-in-status-jql
+
+  - title: Issue panels
+    docs:
+      - time-in-status-cloud-forge/web-panel
+
+  - title: Reports and export
+    docs:
+      - time-in-status-cloud-forge/export-fields
+
+  - title: Reference information
+    docs:
+      - time-in-status-cloud-forge/time-formats
+      - time-in-status-cloud-forge/limits
+      - time-in-status-cloud-forge/feature-comparison
 
 jbcf-cloud:
   - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" class="nav-icon"> Calculated fields (JBCF) for Jira Cloud
@@ -309,6 +344,7 @@ time-in-status:
       - time-in-status/overview
       - time-in-status/install
       - time-in-status/get-started
+      - time-in-status/migration-to-forge
 
   - title: Tutorials
     docs:

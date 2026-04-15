@@ -6,6 +6,8 @@ category: getting-started
 tags: [doc, cloud, time-in-status, time-tracking, business-calendar, jql-functions, field-creation, dashboard-gadgets, export, web-panels, migration, service-status]
 ---
 
+> **Using the new Forge version?** See [Time in Status (Forge) documentation](/docs/time-in-status-cloud-forge/overview).
+
 <p style="text-align: center;"><a href="https://marketplace.atlassian.com/apps/1220908/time-in-status-sla-timer-stopwatch?hosting=datacenter&tab=overview" target="_blank">
 <img src="/uploads/time-in-status/overview/marketplace.webp" alt="Message Field plugin on Atlassian Marketplace" style="width:100%;" loading="lazy"></a></p>
 
