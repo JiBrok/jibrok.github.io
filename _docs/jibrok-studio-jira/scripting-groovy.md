@@ -341,12 +341,34 @@ Includes all LocalDate methods plus:
 
 #### Other date/time classes
 
-| Class | Methods |
+| Class | Static methods |
 |-------|---------|
 | `Duration` | `ofDays(n)`, `ofHours(n)`, `ofMinutes(n)`, `ofSeconds(n)`, `ofMillis(n)`, `between(start, end)` |
 | `Period` | `ofDays(n)`, `ofWeeks(n)`, `ofMonths(n)`, `ofYears(n)`, `between(start, end)` |
-| `Instant` | `now()`, `ofEpochMilli(ms)`, `ofEpochSecond(s)` |
-| `ChronoUnit` | `DAYS`, `HOURS`, `MINUTES`, `SECONDS`, `MILLIS` |
+| `Instant` | `now()`, `ofEpochMilli(ms)`, `ofEpochSecond(s)`, `parse(str)` |
+| `ChronoUnit` | `DAYS`, `HOURS`, `MINUTES`, `SECONDS`, `MILLIS`, `MONTHS`, `YEARS` |
+
+**Duration instance methods:** `toDays()`, `toHours()`, `toMinutes()`, `toSeconds()`, `toMillis()`, `plus(other)`, `minus(other)`, `abs()`, `isNegative()`, `isZero()`, `toString()`
+
+**Period instance methods:** `getYears()`, `getMonths()`, `getDays()`, `plus(other)`, `minus(other)`, `isNegative()`, `isZero()`, `toString()`
+
+**Instant instance methods:** `plusSeconds(n)`, `isBefore(other)`, `getEpochSecond()`, `toEpochMilli()`
+
+```groovy
+def d = Duration.ofHours(25)
+println d.toDays()     // 1
+println d.toHours()    // 25
+println d.toString()   // PT25H
+
+def p = Period.ofMonths(3).plus(Period.ofDays(10))
+println p.getMonths()  // 3
+println p.getDays()    // 10
+
+println ChronoUnit.MONTHS.between(
+    LocalDate.of(2024, 1, 1),
+    LocalDate.of(2024, 6, 15)
+)   // 5
+```
 | `ZoneId` | `of(id)`, `systemDefault()`, `getAvailableZoneIds()` |
 | `DateTimeFormatter` | `ofPattern(pattern)`, `ISO_LOCAL_DATE`, `ISO_LOCAL_DATE_TIME`, `ISO_ZONED_DATE_TIME`, `ISO_INSTANT` |
 | `SimpleDateFormat` | `create(pattern)` |
@@ -363,7 +385,6 @@ def isDigit = Character.isDigit('5' as char)
 |-------|---------|
 | `Integer` | `parseInt(str, radix)`, `valueOf(str)`, `MAX_VALUE`, `MIN_VALUE` |
 | `Long` | `parseLong(str)`, `valueOf(str)`, `MAX_VALUE`, `MIN_VALUE` |
-| `Float` | `parseFloat(str)`, `valueOf(str)`, `isNaN(v)`, `isInfinite(v)`, `isFinite(v)` |
 | `Double` | `parseDouble(str)`, `valueOf(str)`, `isNaN(v)`, `isInfinite(v)`, `isFinite(v)` |
 | `Character` | `isDigit(ch)`, `isLetter(ch)`, `isLetterOrDigit(ch)`, `isUpperCase(ch)`, `isLowerCase(ch)`, `isWhitespace(ch)`, `toUpperCase(ch)`, `toLowerCase(ch)` |
 
@@ -426,6 +447,99 @@ def encoded = URLEncoder.encode("hello world", "UTF-8")  // "hello+world"
 def decoded = URLDecoder.decode("hello+world", "UTF-8")   // "hello world"
 ```
 
+### UUID
+
+```groovy
+def id = UUID.randomUUID()
+println id.toString()   // e.g. "550e8400-e29b-41d4-a716-446655440000"
+```
+
+### Base64
+
+```groovy
+def encoded = Base64.getEncoder().encodeToString("Hello World")
+println encoded   // "SGVsbG8gV29ybGQ="
+
+def decoded = Base64.getDecoder().decode(encoded)
+println decoded   // "Hello World"
+```
+
+### StringBuilder
+
+Mutable string builder with size limits.
+
+```groovy
+def sb = StringBuilder.create("Hello")
+sb.append(" ").append("World")
+println sb.toString()   // "Hello World"
+println sb.length()     // 11
+
+sb.insert(5, ",")
+println sb.toString()   // "Hello, World"
+
+sb.reverse()
+println sb.toString()   // "dlroW ,olleH"
+```
+
+| Method | Description |
+|--------|-------------|
+| `StringBuilder.create(initial?)` | Create builder |
+| `sb.append(str)` | Append string (chainable) |
+| `sb.insert(index, str)` | Insert at position (chainable) |
+| `sb.delete(start, end)` | Delete range (chainable) |
+| `sb.reverse()` | Reverse in place (chainable) |
+| `sb.length()` | Current length |
+| `sb.toString()` | Get result string |
+
+### DecimalFormat
+
+Number formatting with patterns.
+
+```groovy
+def fmt = DecimalFormat.create("#,##0.00")
+println fmt.format(1234567.8)   // "1,234,567.80"
+
+def pct = DecimalFormat.create("0.##")
+println pct.format(3.14159)     // "3.14"
+```
+
+### Optional
+
+Java-style Optional for nullable values.
+
+```groovy
+def opt = Optional.of("hello")
+println opt.isPresent()     // true
+println opt.get()           // "hello"
+println opt.map({ it.toUpperCase() }).get()   // "HELLO"
+
+def empty = Optional.empty()
+println empty.isEmpty()     // true
+println empty.orElse("default")   // "default"
+```
+
+| Method | Description |
+|--------|-------------|
+| `Optional.of(value)` | Create with non-null value |
+| `Optional.ofNullable(value)` | Create from nullable value |
+| `Optional.empty()` | Create empty |
+| `opt.isPresent()` / `opt.isEmpty()` | Check presence |
+| `opt.get()` | Get value (throws if empty) |
+| `opt.orElse(default)` | Get value or default |
+| `opt.orElseThrow(msg?)` | Get value or throw |
+| `opt.map(fn)` | Transform value |
+| `opt.filter(fn)` | Filter by predicate |
+| `opt.flatMap(fn)` | Transform returning Optional |
+
+### Random
+
+```groovy
+def rng = new Random()
+println rng.nextInt(100)    // random 0-99
+println rng.nextDouble()    // random 0.0-1.0
+println rng.nextBoolean()   // true or false
+```
+
 ---
 
 ## GDK type methods
@@ -448,7 +562,6 @@ In addition to standard string methods, the Groovy engine adds:
 | `plus(str)` | Concatenate |
 | `matches(regex)` | Matches pattern? |
 | `toInteger()` | Parse to Integer |
-| `toFloat()` | Parse to Float |
 | `toLong()` | Parse to Long |
 | `toDouble()` | Parse to Double |
 | `take(n)` | First n characters |

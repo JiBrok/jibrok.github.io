@@ -296,6 +296,19 @@ When working in draft mode (no saved script open), the Console automatically sav
 
 ---
 
+## Issue Context Panel
+
+Administrators see a **Studio** panel on every Jira issue page that surfaces script activity for that issue - no need to open the Console and search run history manually.
+
+The panel has two tabs:
+
+- **Execution History** - recent script runs that touched this issue (trigger type, script name, status, relative time). Paginated, 10 entries per page, with a Refresh button.
+- **Linked Scripts** - scripts whose event triggers match this issue's project and type, with one-click open-in-console links.
+
+The panel is visible only to Jira administrators - the same audience that can open the Console. Use it to answer "which scripts have touched this ticket?" or "which scripts might fire on changes to this ticket?" at a glance.
+
+---
+
 ## Next steps
 
 - [Script Library](/docs/jibrok-studio-jira/script-library) - Manage saved scripts

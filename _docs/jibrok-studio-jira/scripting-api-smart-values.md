@@ -132,12 +132,13 @@ All Date objects support these instance methods for arithmetic, navigation, form
 
 | Method | Description |
 |--------|-------------|
-| `d.plusDays(n)` | Add n days |
-| `d.minusDays(n)` | Subtract n days |
-| `d.plusHours(n)` | Add n hours |
-| `d.plusWeeks(n)` | Add n weeks |
-| `d.plusMonths(n)` | Add n months |
-| `d.plusYears(n)` | Add n years |
+| `d.plusDays(n)` / `d.minusDays(n)` | Add/subtract n days |
+| `d.plusHours(n)` / `d.minusHours(n)` | Add/subtract n hours |
+| `d.plusMinutes(n)` / `d.minusMinutes(n)` | Add/subtract n minutes |
+| `d.plusSeconds(n)` / `d.minusSeconds(n)` | Add/subtract n seconds |
+| `d.plusWeeks(n)` / `d.minusWeeks(n)` | Add/subtract n weeks |
+| `d.plusMonths(n)` / `d.minusMonths(n)` | Add/subtract n months |
+| `d.plusYears(n)` / `d.minusYears(n)` | Add/subtract n years |
 
 **Withers:**
 
@@ -146,6 +147,9 @@ All Date objects support these instance methods for arithmetic, navigation, form
 | `d.withDayOfMonth(day)` | Set day of month |
 | `d.withMonth(month)` | Set month (1-12) |
 | `d.withYear(year)` | Set year |
+| `d.withHours(h)` | Set hours (0-23) |
+| `d.withMinutes(m)` | Set minutes (0-59) |
+| `d.withSeconds(s)` | Set seconds (0-59) |
 
 **Navigation:**
 
@@ -245,7 +249,7 @@ log(d.format("h:mm a"))               // "2:30 PM"
 | `d.isBefore(other)` | True if before other date |
 | `d.isEqual(other)` | True if same time |
 | `d.compareTo(other)` | Returns -1, 0, or 1 |
-| `d.diff(other)` | Difference in milliseconds |
+| `d.diff(other)` | DateDiff object with `days`, `hours`, `minutes`, `seconds`, `milliseconds` properties and `abs()`, `toString()` methods |
 
 **String-to-Date conversion:**
 
@@ -259,7 +263,7 @@ let d = Date.create("2024-06-15T14:30:00Z")
 // Arithmetic
 log(d.plusDays(7).jiraDate())           // "2024-06-22"
 log(d.plusMonths(1).jiraDate())         // "2024-07-15"
-log(d.plusBusinessDays(5).jiraDate())   // "2024-06-24"
+log(d.plusBusinessDays(5).jiraDate())   // "2024-06-21"
 
 // Navigation
 log(d.startOfMonth().jiraDate())       // "2024-06-01"
@@ -272,7 +276,13 @@ log(d.setTimeZone("America/New_York").format("HH:mm"))  // "10:30"
 
 // Comparison
 log(d.isAfter(d.minusDays(1)))         // true
-log(d.diff(d.plusDays(1)))             // -86400000
+
+// diff() returns a DateDiff object
+let diff = d.diff(d.plusDays(1).plusHours(2))
+log(diff.days)           // -1
+log(diff.hours)          // -26
+log(diff.milliseconds)   // -93600000
+log(diff.abs().days)     // 1
 ```
 
 ---

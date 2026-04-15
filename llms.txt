@@ -1,0 +1,30 @@
+ # JiBrok Studio for Jira Cloud
+
+> Admin-only Atlassian Forge app for executing scripts against Jira data. Supports JavaScript, Python, and Groovy engines in a secure sandbox.
+
+Scripts run in a sandbox - no fetch/DOM/import. Use built-in APIs only.
+
+## Documentation
+
+- [Scripting API Overview](https://jibrok.com/docs/jibrok-studio-jira/scripting-api): API router - which namespace to use for each task
+- [Issues API](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-issues): Search, create, update, transition issues. RichIssue wrapper with 40+ methods
+- [Jira Entities](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-jira): Users, Projects, Fields, Components, Versions, Boards, Sprints, Links, Epics, Groups, Filters, Labels, JQL, Permissions
+- [Configuration & Assets](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-admin): Workflows, Screens, Schemes, Roles, JSM Assets/CMDB. CRUD with listAll() auto-pagination
+- [Utilities](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-utilities): Adf builder, DateUtils, Arrays, Strings, CSV, Validator
+- [Smart Value Methods](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-smart-values): Date arithmetic, string/array instance methods (Jira Automation compatible)
+- [Tables API](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-tables): Custom data storage - CRUD, filters ($eq/$ne/$gt/$lt/$like/$in), upsert
+- [Queue API](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-queues): Message queues - push/pull/consume/ack lifecycle
+- [Async Events](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-async-event): Trigger scripts from scripts with payload/delay
+- [Scenarios](https://jibrok.com/docs/jibrok-studio-jira/scenarios): Long-running scripts with step/loop/batch - automatic pagination, progress tracking
+- [UI Modifications](https://jibrok.com/docs/jibrok-studio-jira/scripting-api-uim): Modify issue form fields (visibility, required, values)
+- [Language Basics](https://jibrok.com/docs/jibrok-studio-jira/scripting-language-basics): Variables, operators, control flow, collections
+- [Type Methods](https://jibrok.com/docs/jibrok-studio-jira/scripting-type-methods): Whitelisted methods for String, Array, Date, Number, Object, Set, Map
+- [Differences from JS](https://jibrok.com/docs/jibrok-studio-jira/scripting-differences-from-js): Key sandbox differences (division by 0, auto-await, in operator, etc.)
+- [Examples](https://jibrok.com/docs/jibrok-studio-jira/scripting-examples): Bulk operations, reporting, field sync, table/queue patterns
+- [Groovy Engine](https://jibrok.com/docs/jibrok-studio-jira/scripting-groovy): Groovy syntax, Java classes, GDK methods
+- [Python Engine](https://jibrok.com/docs/jibrok-studio-jira/scripting-python): Python syntax, stdlib modules
+- [Limits](https://jibrok.com/docs/jibrok-studio-jira/limits): Execution time, API call, loop iteration limits
+
+## Optional
+
+- [Full API Reference for AI](https://jibrok.com/llms-full.txt): Complete API reference in one file (~800 lines) - all namespaces, methods, types, and examples

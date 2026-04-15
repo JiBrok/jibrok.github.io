@@ -27,6 +27,8 @@ faq_schema:
     answer: "Yes. JiBrok Studio provides an Automation action that can be used in Jira Automation rules. Configure it with a scriptId and optional issueKey."
   - question: "Can external systems trigger scripts?"
     answer: "Yes. The Webhook Trigger lets external systems call your scripts via HTTP requests with Basic Auth credentials. Supports GET, POST, PUT, and DELETE methods."
+  - question: "What happens when my license expires?"
+    answer: "All script execution is blocked: event triggers, scheduled scripts, async events, and field context updates are silently skipped. Workflow post functions, validators, and the Automation action return a 'License required' error. The admin UI (Console, Library, Administration) remains accessible so you can manage scripts while your license is being renewed."
 last_modified_at: 2026-03-19
 date: 2026-02-23
 seo:
@@ -70,6 +72,16 @@ No. Scripts can only call the Jira REST API through `requestJira()` and built-in
 ### Can I use npm packages?
 
 No. The sandbox has no module system. Only built-in globals and methods are available. Use `eval(uuid)` to include other saved scripts.
+
+### What happens when my license expires?
+
+Script execution stops, but the admin UI remains accessible. Specifically:
+
+- **Silently skipped** (trigger returns without running the script): event triggers, scheduled scripts, async events, field context updates, UI modifications on forms.
+- **Explicit error** (visible to the user): workflow post functions and validators return a *"License required"* error, the Jira Automation action returns an error, and any action that calls the public resolver surfaces `LICENSE_REQUIRED`.
+- **Still works**: the Console, Library, Administration, Version History, and Import/Export - so you can review, edit, and back up your scripts while renewing the license.
+
+If your triggers suddenly stop firing without any errors in the Audit Log, check [Atlassian Marketplace](https://marketplace.atlassian.com/apps/2349892699) for your subscription status first - silent trigger skips are the most common symptom of an inactive license.
 
 ---
 
@@ -125,9 +137,10 @@ Some errors cannot be caught with `try/catch`: timeout errors, resource limit er
 
 ### Checklist for all triggers
 
-1. The **script** is enabled
-2. The **trigger** is enabled
-3. The trigger **type** is enabled globally in [Administration](/docs/jibrok-studio-jira/admin-settings)
+1. The **app license is active** - inactive licenses silently skip trigger execution (see [What happens when my license expires?](#what-happens-when-my-license-expires))
+2. The **script** is enabled
+3. The **trigger** is enabled
+4. The trigger **type** is enabled globally in [Administration](/docs/jibrok-studio-jira/admin-settings)
 
 ### Scheduled triggers
 
@@ -197,6 +210,34 @@ Some errors cannot be caught with `try/catch`: timeout errors, resource limit er
 - If using **Application** mode, verify it's enabled in Admin Settings
 - API whitelist/blacklist may be blocking specific endpoints - check custom profiles
 - Context restrictions may limit which projects/issue types the script can access
+
+---
+
+## Common error messages
+
+### *"Trigger type {type} cannot be combined with other triggers"*
+
+The **Workflow Condition** trigger is exclusive: it uses the Jira Expressions engine instead of the sandbox engine, so a script that has a Workflow Condition trigger cannot have any other triggers (scheduled, event, workflow post function, etc.). Remove the other triggers first, or create a separate script for the condition. See [Workflow Condition - Differences from other triggers](/docs/jibrok-studio-jira/triggers-workflow-condition#differences-from-other-triggers) for details.
+
+### *"A trigger of this type already exists for this script"*
+
+Every trigger type is a **singleton** - a single script can have at most one Scheduled trigger, one Event trigger, one Webhook trigger, etc. To react to a different schedule or event, create a second script. To react to many events of the same type, select multiple events within one Event trigger.
+
+### *"Maximum triggers per script reached"*
+
+Scripts can have at most 10 triggers total. If you need more, split the logic across multiple scripts and use [Async Events](/docs/jibrok-studio-jira/triggers-async) to chain them.
+
+### *"Running as Application is disabled by admin"* / *"Running as a specific user is disabled by admin"*
+
+The script's **Run As** setting requires a mode that the administrator has turned off globally in [Administration](/docs/jibrok-studio-jira/admin-settings). Either change the Run As setting in the script's Config tab, or ask your admin to enable the mode. Available Run As modes are controlled per-site and override any script-level configuration.
+
+### *"License required"*
+
+The app license is not active. Most triggers silently skip execution; workflow post functions, validators, and the Automation action return this error to their caller. See [What happens when my license expires?](#what-happens-when-my-license-expires) above.
+
+### *"A scenario is already running for this script"*
+
+Only one scenario per script can run at a time. Wait for the active run to finish, or cancel it from the Scenarios tab before starting a new one. See [Scenarios - Concurrency](/docs/jibrok-studio-jira/scenarios#concurrency).
 
 ---
 

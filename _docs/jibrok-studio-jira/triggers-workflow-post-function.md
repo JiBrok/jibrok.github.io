@@ -24,6 +24,8 @@ Run scripts after a workflow transition completes. One per script (singleton).
 
 A Workflow Post Function trigger executes your script every time an issue transitions through a specific workflow step. The script runs **after** the transition is complete, so the issue is already in its new status.
 
+> **Note:** Workflow Post Functions are available in **company-managed projects** only. Team-managed projects do not support custom workflow post functions.
+
 ### Setup
 
 1. Save a script in the Library

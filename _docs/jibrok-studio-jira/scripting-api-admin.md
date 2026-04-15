@@ -35,25 +35,48 @@ All configuration namespaces are injected as top-level variables - use `Workflow
 
 | Namespace | Description | Methods |
 |-----------|-------------|---------|
-| `Workflows` | Workflow definitions | `list()`, `search(opts?)` |
+| `Workflows` | Workflow definitions | `list()`, `search(opts?)`, `searchAll()` |
 | `SecuritySchemes` | Issue security schemes | `list()`, `getLevel(id)` |
 | `Events` | Jira events | `list()` |
 
 ### Full CRUD namespaces (with pagination)
 
-These namespaces support `list(opts?)`, `get(id)`, `create(data)`, `update(id, data)`, `delete(id)`:
+These namespaces support `list(opts?)`, `listAll()`, `get(id)`, `create(data)`, `update(id, data)`, `delete(id)`:
 
 | Namespace | Description |
 |-----------|-------------|
 | `WorkflowSchemes` | Workflow schemes |
-| `Screens` | Screens |
+| `Screens` | Screens (+ sub-resource methods below) |
 | `ScreenSchemes` | Screen schemes |
 | `IssueTypeSchemes` | Issue type schemes |
 | `IssueTypeScreenSchemes` | Issue type screen schemes |
-| `FieldConfigurations` | Field configurations |
-| `FieldConfigSchemes` | Field configuration schemes |
+| `FieldConfigurations` | Field configurations (+ sub-resource methods below) |
+| `FieldConfigSchemes` | Field configuration schemes (+ sub-resource methods below) |
 | `NotificationSchemes` | Notification schemes |
 | `PrioritySchemes` | Priority schemes |
+
+**Screens** - additional methods for tabs and fields:
+
+| Method | Description |
+|--------|-------------|
+| `Screens.getTabs(screenId)` | Get all tabs of a screen |
+| `Screens.getTabFields(screenId, tabId)` | Get fields of a screen tab |
+| `Screens.addField(screenId, tabId, fieldId)` | Add a field to a screen tab |
+| `Screens.removeField(screenId, tabId, fieldId)` | Remove a field from a screen tab |
+
+**FieldConfigurations** - additional methods for field items:
+
+| Method | Description |
+|--------|-------------|
+| `FieldConfigurations.getFields(configId, opts?)` | Get fields in a configuration (paginated) |
+| `FieldConfigurations.updateFields(configId, data)` | Update field items in a configuration |
+
+**FieldConfigSchemes** - additional methods for mappings and projects:
+
+| Method | Description |
+|--------|-------------|
+| `FieldConfigSchemes.getMappings(schemeId, opts?)` | Get field configuration mappings for a scheme (paginated) |
+| `FieldConfigSchemes.getProjects(projectIds)` | Get field config schemes for given project IDs |
 
 ### Full CRUD namespaces (without pagination)
 
@@ -93,12 +116,23 @@ These namespaces support `list()`, `get(id)`, `create(data)`, `update(id, data)`
 | Method | Description |
 |--------|-------------|
 | `Dashboards.list(opts?)` | List dashboards (paginated) |
+| `Dashboards.listAll()` | List all dashboards (auto-pagination) |
 | `Dashboards.get(id)` | Get dashboard by ID |
 | `Dashboards.search(opts?)` | Search dashboards (paginated) |
 
-### Pagination options
+### Pagination
 
-Methods accepting `opts?` support:
+`list(opts?)` returns a single page. Use `listAll()` to automatically fetch all pages:
+
+```js
+// Single page (default 50 items)
+const page = Screens.list({ maxResults: 10 })
+
+// All items (auto-pagination, up to 1000)
+const all = Screens.listAll()
+```
+
+`list()` options:
 
 | Option | Type | Description |
 |--------|------|-------------|
@@ -143,6 +177,38 @@ const events = Events.list()
 for (const e of events) {
   log(e.name)
 }
+
+// --- Screens sub-resources ---
+
+// Get all tabs of a screen
+const tabs = Screens.getTabs('10001')
+for (const tab of tabs) {
+  log(tab.id, tab.name)
+}
+
+// Add a field to the first tab
+Screens.addField('10001', tabs[0].id, 'customfield_10100')
+
+// List fields on a tab
+const tabFields = Screens.getTabFields('10001', tabs[0].id)
+
+// --- FieldConfigurations sub-resources ---
+
+// Get fields in a field configuration
+const items = FieldConfigurations.getFields('10001')
+
+// Update fields in a configuration
+FieldConfigurations.updateFields('10001', {
+  fieldConfigurationItems: [{ id: 'customfield_10100' }]
+})
+
+// --- FieldConfigSchemes sub-resources ---
+
+// Get mappings for a scheme
+const mappings = FieldConfigSchemes.getMappings('10001')
+
+// Get schemes for projects
+const projectSchemes = FieldConfigSchemes.getProjects(['10000', '10001'])
 ```
 
 ---

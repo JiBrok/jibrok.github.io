@@ -36,7 +36,7 @@ The `event` variable in the target script contains:
 | `event.pushedAt` | number | Timestamp in milliseconds |
 | `event.scriptId` | string | UUID of the current script |
 | `event.issueKey` | string/null | Issue key (e.g. `"PROJ-123"`) or `null` |
-| `event.depth` | number | Current chain depth (0 = initial trigger, max 2). See [Limits](/docs/jibrok-studio-jira/limits#async-events) |
+| `event.depth` | number | Current chain depth. `0` = initial trigger (can push further events), `1` = triggered script (cannot push further - chain ends here). See [Limits](/docs/jibrok-studio-jira/limits#async-events) |
 | `event.chainId` | string | UUID identifying the event chain (for tracing) |
 
 > **Automatic context:** When `issueKey` is provided via options, the runtime variables `issue` and `issueKey` are set automatically in the target script.

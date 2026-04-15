@@ -1,0 +1,618 @@
+# JiBrok Studio for Jira Cloud - Complete Scripting API Reference
+
+Admin-only Atlassian Forge app for executing scripts against Jira Cloud data.
+Three sandbox engines: JavaScript (primary), Python, Groovy. All share the same APIs and security model.
+
+IMPORTANT: This is NOT standard JavaScript. Scripts run in a secure sandbox with restrictions.
+
+---
+
+## Sandbox Constraints
+
+- No network access - only requestJira() and built-in API namespaces
+- No DOM, window, document, fetch, XMLHttpRequest
+- No import/export/require - use eval(uuid) for script inclusion
+- No generators (function*, yield), Symbols, WeakMap/WeakSet, Proxy/Reflect
+- Division by zero returns 0 (not Infinity)
+- Auto-await - promises are resolved automatically, no need to write await
+- Method whitelisting - only approved methods can be called on values
+- Resource limits - execution time, loop iterations, API calls are capped
+
+---
+
+## Language Syntax
+
+### Variables
+let x = 1 (block-scoped), const y = 2 (block-scoped, immutable binding), var z = 3 (function-scoped)
+
+### Data Types
+number (42, 3.14, 0xFF, 0b1010, 1_000_000), string ("hello", 'world', `template ${expr}`), boolean, null, undefined, object, array
+
+### Operators
+Arithmetic: + - * / % ** (exponentiation)
+Comparison: == != === !== < > <= >=
+Logical: && || ! ?? (nullish coalescing)
+Assignment: = += -= *= /= %= **= ||= &&= ??=
+Other: typeof, instanceof, ?. (optional chaining), ... (spread/rest), in (checks value in array, key in object)
+Ternary: condition ? a : b
+
+### Control Flow
+if/else if/else, for (init; cond; step), for (const x of iterable), for (const key in object)
+while (cond), do { } while (cond), switch (val) { case x: ... break; default: ... }
+try { } catch (e) { } finally { }, try { } catch (TypeError e) { } (typed catch)
+break, continue (with labels), return, throw new Error("msg")
+
+### Functions
+function name(a, b) { return a + b }
+const fn = (a, b) => a + b                 // arrow function
+function greet(name = "World") { }          // default params
+function sum(...nums) { return nums.reduce((a, b) => a + b, 0) }  // rest params
+Tagged templates: fn`text ${expr} text`
+
+### Classes
+class Animal {
+  #name                                     // private field
+  static count = 0                          // static field
+  constructor(name) { this.#name = name; Animal.count++ }
+  get name() { return this.#name }          // getter
+  set name(v) { this.#name = v }            // setter
+  speak() { return this.#name + " speaks" }
+  static getCount() { return Animal.count } // static method
+}
+class Dog extends Animal {
+  constructor(name) { super(name) }
+  speak() { return super.speak() + " (woof)" }
+}
+
+### Destructuring
+const [a, b, ...rest] = [1, 2, 3, 4]       // array: a=1, b=2, rest=[3,4]
+const {name, age = 0} = user               // object with default
+const {address: {city}} = user              // nested
+function fn({x, y}) { }                    // in parameters
+
+### Template Literals
+`Hello ${name}, you have ${count} items`
+`Multiline
+string`
+
+### Async/Await
+Auto-await: promises resolved automatically, explicit await optional.
+const data = Issues.get("PROJ-1")           // auto-awaited
+const data = await Issues.get("PROJ-1")     // explicit await (same result)
+for await (const item of asyncIterable) { } // for-await-of
+
+---
+
+## Issues API
+
+Issues.get(key, opts?) -> RichIssue
+Issues.search(jql, opts?) -> SearchResult
+Issues.count(jql) -> number
+Issues.create(project, issueType, fields?) -> RichIssue
+Issues.update(key, fields, opts?) -- opts: {notifyUsers: false}
+Issues.transition(key, status, opts?) -- opts: {fields, comment}
+Issues.addComment(key, textOrAdf)
+Issues.link(key1, linkType, key2)
+Issues.notify(key, options)
+
+### RichIssue Properties
+
+Core: key, id, summary, status, statusCategory, assignee, assigneeId, reporter, priority, issueType, project, labels[], components[], fixVersions[], created, updated, dueDate, resolution, description, parent, subtasks[], links[], self, fields
+Computed: age (days), staleDays (days), isOverdue, isAssigned, isResolved, isInProgress, isTodo
+Wrappers: assigneeUser (User|null), reporterUser (User), projectObj (Project)
+
+### RichIssue Methods (all chainable, return issue)
+
+Core: update(fields), transition(status, opts?), addComment(textOrAdf), delete(), reload(), clone(overrides?)
+Comments: getComments(), deleteComment(id), editComment(id, textOrAdf), getFirstComment(), getLastComment(), takeCommentsFromLatest(n), takeCommentsFromOldest(n)
+Assignment: assign(accountId), unassign()
+Watchers: addWatcher(accountId), getWatchers(), removeWatcher(accountId)
+Labels: addLabel(label), removeLabel(label)
+Components: addComponent(name), removeComponent(name)
+Versions: addFixVersion(name), removeFixVersion(name)
+Links: link(linkType, targetKey), removeLink(linkId), unlink(linkType, targetKey)
+Worklogs: getWorklogs(), addWorklog(timeSpent, opts?)
+History: getChangelog(opts?)
+Attachments: getAttachments(), deleteAttachment(id)
+Remote links: getRemoteLinks(), addRemoteLink(url, title, opts?), removeRemoteLink(id)
+Votes: getVotes(), addVote(), removeVote()
+Properties: listProperties(), getProperty(key), setProperty(key, value), deleteProperty(key)
+Subtasks: isSubTask(), getParentObject(), getSubTaskObjects(), createSubTask(type, fields?)
+Other: field(nameOrId), getTransitions(), getCreator(), getCustomFieldValue(nameOrId), notify(options)
+
+### SearchResult
+
+Properties: issues (RichIssue[]), keys (string[]), total (number, needs includeTotal:true), hasMore, nextPageToken
+Methods: map(fn), filter(fn), groupBy(key), countBy(key), forEach(fn), nextPage(), updateAll(fields), transitionAll(status, opts?)
+
+Search opts: {fields, maxResults (max 100), expand, includeTotal, nextPageToken}
+
+### Field Auto-Transform (in create/update)
+
+priority: "High" -> {name: "High"}
+assignee: "accountId" -> {accountId: "..."}
+description: "text" -> ADF document
+labels: "single" -> ["single"]
+components: "Backend" -> [{name: "Backend"}]
+
+### Notify Options
+
+subject (max 255), textBody (max 32KB), htmlBody (max 32KB)
+to: {reporter?, assignee?, watchers?, voters?, users?: string[], groups?: string[]}
+restrict: {groups?: string[], permissions?: string[]}
+
+### Jira Namespace (mid-level helpers)
+
+Simpler than API namespaces, throws on HTTP errors (unlike requestJira).
+
+Jira.search(jql, opts?) -> {issues, total, ...}
+Jira.getIssue(issueKey, opts?) -> raw issue object
+Jira.createIssue(fields) -> created issue
+Jira.updateIssue(issueKey, fields)
+Jira.deleteIssue(issueKey)
+Jira.addComment(issueKey, textOrAdf)
+Jira.transition(issueKey, transitionId, opts?) -- opts: {fields, comment}
+
+---
+
+## Jira Entities
+
+### Users
+Users.current() -> User
+Users.get(accountId) -> User
+Users.find(query) -> User[]
+Users.findAssignable(project, query?) -> User[]
+
+User: displayName, accountId, emailAddress, avatarUrl, active, timeZone, locale
+Methods: toString(), toJSON(), equals(other)
+
+### Projects
+Projects.get(key) -> Project
+Projects.list() -> Project[]
+Projects.validateKey(key) -> object
+
+Project: key, name, id, projectTypeKey, description, lead (User), url
+Methods: getComponents(), getVersions(), getStatuses(), getRoles(), listProperties(), getProperty(key), setProperty(key, val), deleteProperty(key), toString(), equals(other)
+
+### Fields
+Fields.list() -> object[]
+Fields.get(nameOrId) -> object
+Fields.id(name) -> string -- resolve field name to ID (e.g., "Story Points" -> "customfield_10016")
+Fields.getOption(optionId) -> object
+Fields.create(data) -> object -- create custom field (data: {name, type, description?})
+Fields.getContexts(fieldId, opts?) -> object[] -- get field contexts (opts: {startAt?, maxResults?})
+Fields.createContext(fieldId, data) -> object -- create field context (data: {name, projectIds?, issueTypeIds?})
+
+### Components
+Components.get(id), Components.create(projectKey, name, fields?), Components.update(id, fields), Components.delete(id)
+
+### Versions
+Versions.get(id), Versions.create(projectId, name, fields?), Versions.update(id, fields), Versions.delete(id, opts?), Versions.release(id)
+
+### Boards
+Boards.get(boardId), Boards.list(opts?), Boards.getSprints(boardId, state?), Boards.getIssues(boardId, opts?), Boards.moveToBacklog(issueKeys)
+
+### Sprints
+Sprints.get(sprintId), Sprints.getIssues(sprintId, opts?), Sprints.moveIssues(sprintId, issueKeys), Sprints.create(boardId, name, opts?), Sprints.update(sprintId, fields)
+
+### Links
+Links.types() -> [{id, name, inward, outward}], Links.create(typeName, inKey, outKey), Links.get(linkId), Links.delete(linkId)
+
+### Epics
+Epics.get(epicId), Epics.getIssues(epicId, opts?), Epics.moveIssues(epicId, issueKeys), Epics.removeIssues(issueKeys)
+
+### Groups
+Groups.find(query?), Groups.get(opts), Groups.getBulk(opts?), Groups.getMembers(groupName, opts?), Groups.create(name), Groups.addUser(groupName, accountId), Groups.removeUser(groupName, accountId)
+
+### Filters
+Filters.get(id), Filters.getMy(), Filters.getFavourites(), Filters.create(name, jql, opts?), Filters.update(id, fields), Filters.delete(id)
+
+### Labels
+Labels.list(opts?) -> string[]
+
+### JQL
+JQL.validate(jql) -> object, JQL.autocomplete() -> object
+
+### Permissions
+Permissions.my(opts?) -> object -- opts: {permissions: "BROWSE_PROJECTS,CREATE_ISSUES", projectKey?, issueKey?}
+
+---
+
+## Configuration & Assets
+
+### Admin CRUD Namespaces
+
+Full CRUD with pagination (list, listAll, get, create, update, delete):
+WorkflowSchemes, ScreenSchemes, IssueTypeSchemes, IssueTypeScreenSchemes, NotificationSchemes, PrioritySchemes
+
+Screens: + getTabs(screenId), getTabFields(screenId, tabId), addField(screenId, tabId, fieldId), removeField(screenId, tabId, fieldId)
+FieldConfigurations: + getFields(configId, opts?), updateFields(configId, data)
+FieldConfigSchemes: + getMappings(schemeId, opts?), getProjects(projectIds)
+
+Full CRUD without pagination (list, get, create, update, delete):
+PermissionSchemes, Roles, ProjectCategories
+
+Read-only: Workflows (list, search, searchAll), SecuritySchemes (list, getLevel), Events (list)
+
+list(opts?) returns single page. listAll() fetches all pages automatically.
+
+### Special Namespaces
+IssueTypes: list(), get(id), forProject(key), create(data), update(id, data), delete(id)
+Statuses: list(opts?), get(id), create(data), update(data), delete(id)
+Dashboards: list(opts?), listAll(), get(id), search(opts?)
+
+### Assets (JSM CMDB)
+Assets.search(aql, opts?), Assets.getObject(id), Assets.createObject(typeId, attrs), Assets.updateObject(id, attrs), Assets.deleteObject(id)
+Assets.getAttributes(objectId), Assets.getObjectHistory(id), Assets.getConnectedTickets(id), Assets.getObjectReferenceInfo(id)
+Assets.getSchemas(), Assets.getSchema(id), Assets.getObjectTypes(schemaId), Assets.getObjectType(id), Assets.getObjectTypeAttributes(id)
+
+---
+
+## Utilities
+
+### Adf (Atlassian Document Format)
+Block: doc(...blocks), paragraph(...), heading(level, ...), bulletList(...), orderedList(...), listItem(...), codeBlock(text, lang?), blockquote(...), rule(), panel(type, ...)
+Table: table(...rows), tableRow(...cells), tableHeader(...), tableCell(...)
+Inline: text(s), bold(s), italic(s), code(s), strike(s), link(text, href), mention(accountId), status(text, color), emoji(name)
+Convert: fromText(plain) -> ADF doc
+Read: toText(adf), extractLinks(adf), extractMentions(adf), contains(adf, text)
+
+### DateUtils
+diff(d1, d2) -> ms, diffDays(d1, d2), businessDays(d1, d2), addDays(date, n), addBusinessDays(date, n), isWithinRange(date, start, end), isWeekend(date), startOfDay(date), endOfDay(date), format(date, pattern), parse(value)
+Constants: DAY_MS, HOUR_MS, MINUTE_MS
+
+### Arrays
+sortBy(arr, key), keyBy(arr, key), groupBy(arr, key), unique(arr), uniqueBy(arr, key), sum(arr, key?), avg(arr, key?), min(arr, key?), max(arr, key?), pluck(arr, key), chunk(arr, size), partition(arr, pred), countBy(arr, key), flatten(arr), intersection(a, b), difference(a, b)
+
+### Strings
+capitalize(s), truncate(s, len, suffix?), isBlank(s), padStart(s, len, ch?), padEnd(s, len, ch?), words(s), camelCase(s), kebabCase(s), snakeCase(s)
+
+### CSV
+CSV.parse(text, opts?) -> object[], CSV.stringify(data, opts?) -> string -- opts: {separator}
+
+### Validator
+isEmail(v), isUrl(v), isJiraKey(v), isAccountId(v)
+
+---
+
+## Tables API
+
+tables.get(name) -> schema
+tables.rows(name, opts?) -> {rows, total} -- opts: {where, orderBy, limit, offset}
+tables.findRow(name, where) -> row|null
+tables.addRow(name, data) -> row
+tables.addRows(name, rows[]) -> row[]
+tables.updateRow(name, rowId, data)
+tables.deleteRow(name, rowId)
+tables.deleteRows(name, where) -> count
+tables.count(name, where?) -> number
+tables.upsert(name, where, data) -> {id, data, _action: "created"|"updated"}
+
+Filter operators: $eq (default), $ne, $gt, $gte, $lt, $lte, $like, $in
+Example: {Status: {$ne: "closed"}, Age: {$gt: 18}, Name: {$like: "%alice%"}}
+Sort: orderBy: "Name" (asc), orderBy: "-Age" (desc)
+
+Context-aware (*For variants): getFor, rowsFor, findRowFor, addRowFor, addRowsFor, updateRowFor, deleteRowFor, deleteRowsFor, countFor
+
+---
+
+## Message Queues
+
+queue.push(name, payload, priority?) -> {id}
+queue.pull(name, count?) -> message[] -- marks as processing
+queue.consume(name, count?) -> message[] -- auto-deletes
+queue.peek(name, count?) -> message[] -- read without change
+queue.ack(messageId) -- confirm processing done
+queue.reject(messageId) -- mark as failed
+queue.requeue(messageId) -- return to pending
+queue.size(name) -> number
+queue.stats(name) -> {pending, processing, failed, total}
+
+Lifecycle: push -> [Pending] -> pull -> [Processing] -> ack -> [Deleted] | reject -> [Failed] | requeue -> [Pending]
+
+Context-aware (*For): pushFor, pullFor, consumeFor, peekFor, sizeFor, statsFor, ackFor, rejectFor, requeueFor
+
+---
+
+## Async Events
+
+asyncEvent.push(scriptId, payload?, opts?) -> {jobId} -- trigger another script
+asyncEvent.pushSelf(payload?, opts?) -> {jobId} -- trigger current script again
+opts: {issueKey?, delayInSeconds? (0-900)}
+
+event variable in triggered script: payload, source, pushedBy, pushedAt, scriptId, issueKey, depth, chainId
+
+---
+
+## Scenarios
+
+Split long-running scripts into managed steps. Each step runs as a separate Forge event, avoiding execution timeouts.
+
+### step(name, fn)
+One-time step. Return value stored as ctx[name].
+
+step('count', (ctx) => {
+  return Issues.count('project = PROJ')
+})
+step('report', (ctx) => {
+  log('Total: ' + ctx.count)
+})
+
+### loop(name, fn, initialState)
+Repeating step. Call next(state) to continue, return value to finish.
+
+loop('paginate', (state, ctx) => {
+  var result = Issues.search('project = PROJ', {
+    maxResults: 100, nextPageToken: state.cursor
+  })
+  var keys = state.keys.concat(result.map(i => i.key))
+  if (result.hasMore) return next({ cursor: result.nextPageToken, keys })
+  return { allKeys: keys }
+}, { cursor: null, keys: [] })
+
+### batch(name, config, fn)
+Process issues with automatic pagination and progress tracking.
+
+// JQL shorthand:
+batch('cleanup', 'project = PROJ AND updated < -180d', (issue, ctx) => {
+  issue.transition('Done')
+})
+
+// Config object:
+batch('export', {
+  jql: 'project = PROJ',
+  fields: ['summary', 'status'],
+  batchSize: 50,
+  continueOnError: true,
+}, (issue, ctx) => {
+  emit({ key: issue.key, summary: issue.summary })
+})
+
+Config: jql (string), keys (string[]), source ((ctx) => keys[]), fields, expand, batchSize (1-100, default 100), maxIssues, continueOnError (default true)
+Batch result in ctx[name]: {processed, failed, errors[], totalPages}
+
+### Data Transfer
+emit(value) - save data from within step/loop/batch callback
+getStepData(stepName, {offset, limit}) -> {items, total} - read emitted data in subsequent steps
+progress(data) - report custom progress to UI
+
+### Scenario Limits
+Max steps: 100, Max iterations per step: 1,000, Max step result: 5MB, Max context: 20MB
+Each step has its own API call budget. Steps execute sequentially via Forge Queue.
+
+---
+
+## UI Modifications (UIM)
+
+uim.setValue(fieldId, value), uim.setName(fieldId, name), uim.setDescription(fieldId, desc)
+uim.setRequired(fieldId, bool), uim.setVisible(fieldId, bool), uim.setReadOnly(fieldId, bool)
+uim.setOptionsVisibility(fieldId, options, isVisible)
+Aliases: hideField(id), showField(id), setFieldName, setFieldDescription, setFieldValue
+
+uimData: callbackType ("onInit"|"onChange"), viewType, fieldValues, context, changedFieldId, changedValue
+
+---
+
+## Built-in Globals
+
+Math (abs, floor, ceil, round, min, max, random, pow, sqrt, PI, E, sign, trunc, log, log2, log10, sin, cos, tan, exp, hypot, cbrt)
+JSON (parse, stringify)
+Object (keys, values, entries, assign, freeze, fromEntries, hasOwn, is, getOwnPropertyNames)
+Array (from, isArray, of), String (fromCharCode, fromCodePoint, format), Number (isInteger, isSafeInteger, isNaN, isFinite, constants)
+Boolean, Date (create, currentDate, now, parse, UTC), RegExp (create), Set (create), Map (create)
+Error, TypeError, RangeError, SyntaxError, ReferenceError
+Promise (resolve, reject, create, all, race, allSettled, any, withResolvers)
+parseInt, parseFloat, isNaN, isFinite, encodeURI, decodeURI, encodeURIComponent, decodeURIComponent
+NaN, Infinity, structuredClone, delay(ms)
+
+### String.format()
+%s string, %d integer, %f float (%.2f for precision), %b boolean, %% literal %, %n newline
+Width: %10s, Flags: - (left-align), 0 (zero-pad)
+
+### createFile(name, content, mimeType?)
+Generate file attachments. Max 4MB/file, 10 files, 8MB total. MIME auto-detected from extension.
+
+### Logger
+logger.log/debug/info/warn/error(...) -- structured logging with levels
+Also available as top-level: log(), print(), debug(), info(), warn(), error()
+
+### Script Context Variables
+issueKey (string), issue (RichIssue), context ({issue}), event (trigger data), params (frozen trigger params)
+uim/uimData (UIM triggers), currentUser (lazy-loaded), binding ({hasVariable, getVariable})
+app: {id, version, environmentId, environmentType, installationId} - frozen, read-only app identity
+
+### requestJira(path, opts?)
+Low-level Jira REST API call. Returns {ok, status, body}. Access .body to get parsed JSON response.
+The `body` option must be a plain JS object (NOT a JSON string). It is auto-serialized internally. Do NOT use JSON.stringify() on body.
+Jira REST API reference: https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json?_v=1.8440.0
+
+requestJira("/rest/api/3/myself").body                              // GET, access response
+requestJira("/rest/api/3/myself").body.displayName                  // GET specific field
+requestJira("/rest/api/3/search", {method: "POST", body: {jql: "project = PROJ"}}).body.issues  // POST
+requestJira("/rest/api/3/issue/PROJ-1", {method: "PUT", body: {fields: {summary: "New"}}})      // PUT
+requestJira("/rest/api/3/issue/PROJ-1", {method: "DELETE"})         // DELETE
+
+### eval(uuid)
+Include another saved script by its UUID.
+
+---
+
+## Key Differences from Standard JavaScript
+
+- Division by zero: 10 / 0 => 0 (JS: Infinity)
+- `in` operator on arrays: checks VALUE exists, not index. (20 in [10,20,30]) => true
+- typeof: primary precedence. Use typeof(x.method()) not typeof x.method()
+- parseInt: always radix 10. parseInt("0xFF") => 0. Use parseInt("0xFF", 16) for hex
+- decodeURI/decodeURIComponent: return undefined on error (JS: throw URIError)
+- arguments: available in arrow functions too (JS: only regular functions)
+- C-style for loop: single scope for entire loop (JS: per-iteration scope)
+- Range operators: 1..5 creates [1,2,3,4,5], 1..<5 creates [1,2,3,4]
+- Regex operators: str =~ /pattern/ (match), str ==~ /pattern/ (full match)
+- Typed catch: catch (TypeError e) { ... }
+- Auto-await: promises resolved automatically
+
+---
+
+## Type Methods
+
+### String (30 standard)
+charAt, charCodeAt, codePointAt, concat, endsWith, includes, indexOf, lastIndexOf, localeCompare, match, matchAll, normalize, padEnd, padStart, repeat, replace, replaceAll, search, slice, split, startsWith, substring, toLowerCase, toUpperCase, trim, trimStart, trimEnd, at, toString, toDate
+
+### String Smart Values (28)
+capitalize, abbreviate(n), left(n), right(n), remove(sub), reverse
+substringBefore(sep), substringAfter(sep), substringBetween(open, close?)
+isEmpty, isNotEmpty, isBlank, isNotBlank, equalsIgnoreCase(other), isAlpha, isAlphanumeric, isNumeric
+asNumber -> number|null
+htmlEncode, jsonEncode, xmlEncode, urlEncode, quote
+camelCase, kebabCase, snakeCase, words, lines
+
+### Array (23 non-callback + 16 callback)
+Non-callback: push, pop, shift, unshift, concat, slice, splice, indexOf, lastIndexOf, includes, join, reverse, at, flat, fill, copyWithin, with, toReversed, toSpliced, keys, values, entries, toString
+Callback: map, filter, find, findIndex, findLast, findLastIndex, every, some, forEach, reduce, reduceRight, flatMap, sort, toSorted, group, collectEntries
+
+### Array Smart Values (9)
+first, last, size, isEmpty, distinct, sum, average, min, max
+
+### Date Arithmetic
+plusDays/minusDays, plusHours/minusHours, plusMinutes/minusMinutes, plusSeconds/minusSeconds, plusWeeks/minusWeeks, plusMonths/minusMonths, plusYears/minusYears
+
+### Date Withers
+withDayOfMonth(d), withMonth(m), withYear(y), withHours(h), withMinutes(m), withSeconds(s)
+
+### Date Navigation
+startOfDay, endOfDay, startOfMonth, endOfMonth, startOfYear, endOfYear
+withNextDayOfWeek(day), firstOfTheMonth(day), lastOfTheMonth(day)
+
+### Date Business Days
+isBusinessDay, toBusinessDay, toBusinessDayBackwards, plusBusinessDays(n), minusBusinessDays(n), firstBusinessDayOfMonth, lastBusinessDayOfMonth
+
+### Date Format Presets
+jiraDate ("2024-06-15"), jiraDateTime (ISO), shortDate, shortTime, shortDateTime, mediumDate, mediumTime, mediumDateTime, longDate, longDateTime, fullDate, fullDateTime
+format(pattern) with tokens: yyyy, yy, MMMM, MMM, MM, M, dd, d, EEEE, EEE, HH, H, hh, h, mm, m, ss, s, SSS, a
+
+### Date Timezone
+setTimeZone(iana) -- display only, same timestamp
+convertToTimeZone(iana) -- real conversion, shifts timestamp
+
+### Date Comparison
+isAfter(other), isBefore(other), isEqual(other), compareTo(other) -> -1|0|1
+diff(other) -> DateDiff {days, hours, minutes, seconds, milliseconds, abs(), toString()}
+
+### Number (6)
+toFixed, toPrecision, toExponential, toString, toLocaleString, valueOf
+
+### Object (4)
+hasOwnProperty, toString, valueOf, collectEntries(fn)
+
+### Set
+Set.create(arr?) -> Set. Methods: add, has, delete, clear, size, values, toArray, forEach
+
+### Map
+Map.create(entries?) -> Map. Methods: set, get, has, delete, clear, size, keys, values, entries, forEach, toObject
+
+---
+
+## Common Patterns
+
+### Search and process issues
+const result = Issues.search("project = PROJ AND status = Open")
+for (const issue of result.issues) {
+  log(issue.key + ": " + issue.summary)
+}
+
+### Bulk update
+const result = Issues.search("project = PROJ AND priority = Low")
+result.updateAll({priority: "Medium"})
+
+### Create issue with rich description
+const issue = Issues.create("PROJ", "Task", {
+  summary: "New task",
+  description: Adf.doc(
+    Adf.paragraph(Adf.bold("Important:"), Adf.text(" Please review"))
+  ),
+  labels: ["review"],
+  priority: "High"
+})
+
+### Transition with comment
+Issues.get("PROJ-1").transition("Done", {comment: "Completed"})
+
+### Count by status
+const counts = Issues.search("project = PROJ").countBy("status")
+log(JSON.stringify(counts))
+
+### Table CRUD
+tables.addRow("inventory", {name: "Widget", quantity: 100, price: 9.99})
+const row = tables.findRow("inventory", {name: "Widget"})
+tables.updateRow("inventory", row.id, {quantity: row.data.quantity - 1})
+const low = tables.rows("inventory", {where: {quantity: {$lt: 10}}, orderBy: "-quantity"})
+
+### Queue producer/consumer
+queue.push("tasks", {issueKey: "PROJ-1", action: "review"})
+const msgs = queue.pull("tasks", 5)
+for (const msg of msgs) {
+  log("Processing: " + msg.payload.issueKey)
+  queue.ack(msg.id)
+}
+
+### UIM: conditional field visibility
+if (uimData.callbackType === "onChange" && uimData.changedFieldId === "issuetype") {
+  const type = uimData.fieldValues?.issuetype?.value
+  uim.setVisible("environment", type === "Bug")
+  uim.setRequired("duedate", type === "Bug" || type === "Story")
+}
+
+### Async event chain
+asyncEvent.pushSelf({step: "notify"}, {delayInSeconds: 300})
+// In triggered execution:
+if (event.payload?.step === "notify") {
+  Issues.get(event.issueKey).addComment("Reminder: 5 minutes passed")
+}
+
+### Error handling
+try {
+  const issue = Issues.get("PROJ-999")
+  issue.transition("Done")
+} catch (e) {
+  log("Failed: " + e.message)
+}
+
+### Reporting: group and count
+const result = Issues.search("project = PROJ", {maxResults: 100})
+const byStatus = result.groupBy("status")
+for (const [status, issues] of Object.entries(byStatus)) {
+  log(status + ": " + issues.length)
+}
+
+### Field sync: parent to subtasks
+const parent = Issues.get("PROJ-1")
+for (const sub of parent.subtasks) {
+  const child = Issues.get(sub.key)
+  child.update({priority: parent.priority, labels: parent.labels})
+}
+
+### Scenario: bulk update with batch
+batch('update-old', 'project = PROJ AND updated < -90d', (issue) => {
+  issue.addLabel('stale')
+  issue.addComment('Marked as stale - no activity for 90 days')
+})
+
+### requestJira: manual pagination
+let startAt = 0
+const all = []
+while (true) {
+  const res = requestJira("/rest/api/3/search", {
+    method: "POST",
+    body: { jql: "project = PROJ", startAt, maxResults: 100 }
+  })
+  all.push(...res.body.issues)
+  if (startAt + 100 >= res.body.total) break
+  startAt += 100
+}
+log("Total fetched: " + all.length)
+
+### Create file output
+const data = Issues.search("project = PROJ").issues.map(i => ({
+  key: i.key, summary: i.summary, status: i.status
+}))
+createFile("report.csv", CSV.stringify(data), "text/csv")

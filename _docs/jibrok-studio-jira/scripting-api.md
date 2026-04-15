@@ -25,7 +25,8 @@ seo:
 |---|---|---|
 | Search, create, update, or transition issues | `Issues` | [Issues](/docs/jibrok-studio-jira/scripting-api-issues) |
 | Work with users, projects, fields, components, versions | `Users`, `Projects`, `Fields`, `Components`, `Versions` | [Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) |
-| Manage boards and sprints | `Boards`, `Sprints` | [Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) |
+| Manage boards, sprints, and epics | `Boards`, `Sprints`, `Epics` | [Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) |
+| Work with groups, filters, labels, permissions | `Groups`, `Filters`, `Labels`, `JQL`, `Permissions` | [Jira Entities](/docs/jibrok-studio-jira/scripting-api-jira) |
 | Access admin objects (workflows, screens, schemes, roles) or JSM Assets | `Admin`, `Assets` | [Configuration & Assets](/docs/jibrok-studio-jira/scripting-api-admin) |
 | Store structured data | `tables` | [Tables](/docs/jibrok-studio-jira/scripting-api-tables) |
 | Process messages asynchronously | `queue` | [Queues](/docs/jibrok-studio-jira/scripting-api-queues) |
@@ -62,6 +63,8 @@ if (!res.ok) {
 ```
 
 The `requestJira()` function returns an object with `ok` (boolean), `status` (number), and `body` (parsed JSON or text) properties.
+
+The `body` option accepts a plain JavaScript object. It is automatically serialized to JSON internally. Do not call `JSON.stringify()` on the body - doing so causes double serialization and may result in silent API errors.
 
 ---
 

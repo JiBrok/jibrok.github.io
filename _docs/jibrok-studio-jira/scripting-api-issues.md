@@ -35,7 +35,11 @@ Work with Jira issues - search, create, update, transition, and more.
 | `Issues.searchAll(jql, options?)` | Search all matching issues (auto-pagination). Returns SearchResult | 1 (count) + N (pages) |
 | `Issues.count(jql)` | Count issues matching JQL | 1 |
 | `Issues.create(project, issueType, fields?)` | Create a new issue | 1 (+1 field cache) |
+| `Issues.update(key, fields, opts?)` | Update issue fields (opts: notifyUsers) | 1 |
+| `Issues.transition(key, status, opts?)` | Transition issue (opts: fields, comment) | 2 |
+| `Issues.addComment(key, textOrAdf)` | Add comment to issue | 1 |
 | `Issues.link(key1, linkType, key2)` | Link two issues | 1 |
+| `Issues.notify(key, options)` | Send email notification about an issue | 1 |
 
 ```js
 // Get an issue
@@ -98,7 +102,10 @@ Issues.link("TEST-1", "Blocks", "TEST-2")
 | `resolutionDate` | Resolution date string (null if unresolved) |
 | `description` | Description text |
 | `parent` | Parent issue key (null if no parent) |
+| `subtasks` | Array of subtask keys |
 | `links` | Array of linked issues |
+| `resolution` | Resolution name (null if unresolved) |
+| `self` | REST API URL for this issue |
 | `fields` | Raw fields object |
 
 **Computed properties** (calculated automatically, no API call):
@@ -109,7 +116,9 @@ Issues.link("TEST-1", "Blocks", "TEST-2")
 | `staleDays` | number | Days since last update |
 | `isOverdue` | boolean | Whether past due date |
 | `isAssigned` | boolean | Whether assigned |
-| `isResolved` | boolean | Whether in resolved status category |
+| `isResolved` | boolean | Whether in 'done' status category |
+| `isInProgress` | boolean | Whether in 'indeterminate' status category |
+| `isTodo` | boolean | Whether in 'new' status category |
 
 **Typed wrapper properties:**
 
@@ -138,6 +147,42 @@ Issues.link("TEST-1", "Blocks", "TEST-2")
 | `issue.delete()` | Delete the issue | 1 |
 | `issue.reload()` | Reload issue data from Jira | 1 |
 | `issue.clone(overrides?)` | Clone the issue | 1 |
+| `issue.notify(options)` | Send email notification | 1 |
+| `issue.deleteComment(commentId)` | Delete a comment | 1 |
+| `issue.editComment(commentId, textOrAdf)` | Edit a comment | 1 |
+| `issue.getFirstComment()` | Get first (oldest) comment | 1 |
+| `issue.getLastComment()` | Get last (newest) comment | 1 |
+| `issue.takeCommentsFromLatest(n)` | Get n most recent comments | 1 |
+| `issue.takeCommentsFromOldest(n)` | Get first n comments | 1 |
+| `issue.getWatchers()` | Get all watchers (returns User[]) | 1 |
+| `issue.removeWatcher(accountId)` | Remove a watcher | 1 |
+| `issue.getWorklogs()` | Get all work logs | 1 |
+| `issue.addWorklog(timeSpent, opts?)` | Add work log (opts: started, comment) | 1 |
+| `issue.getChangelog(opts?)` | Get change history | 1 |
+| `issue.getAttachments()` | Get all attachments | 1 |
+| `issue.deleteAttachment(attachmentId)` | Delete an attachment | 1 |
+| `issue.getRemoteLinks()` | Get remote (web) links | 1 |
+| `issue.addRemoteLink(url, title, opts?)` | Add a remote link | 1 |
+| `issue.removeRemoteLink(linkId)` | Remove a remote link | 1 |
+| `issue.removeLink(linkId)` | Remove an issue link by ID | 1 |
+| `issue.unlink(linkType, targetKey)` | Remove link by type and target issue | 1 |
+| `issue.addComponent(name)` | Add component to issue | 1 |
+| `issue.removeComponent(name)` | Remove component from issue | 1 |
+| `issue.addFixVersion(name)` | Add fix version | 1 |
+| `issue.removeFixVersion(name)` | Remove fix version | 1 |
+| `issue.getVotes()` | Get vote information | 1 |
+| `issue.addVote()` | Vote for issue | 1 |
+| `issue.removeVote()` | Remove vote | 1 |
+| `issue.listProperties()` | List custom property keys | 1 |
+| `issue.getProperty(propKey)` | Get custom property value | 1 |
+| `issue.setProperty(propKey, value)` | Set custom property | 1 |
+| `issue.deleteProperty(propKey)` | Delete custom property | 1 |
+| `issue.isSubTask()` | Check if issue is a subtask | 0 |
+| `issue.getCreator()` | Get creator as User wrapper | 0 |
+| `issue.getParentObject()` | Get parent as RichIssue | 1 |
+| `issue.getSubTaskObjects()` | Get all subtasks as RichIssue[] | N |
+| `issue.createSubTask(issueType, fields?)` | Create a subtask | 1 |
+| `issue.getCustomFieldValue(nameOrId)` | Get custom field value by name or ID | 0 |
 
 ```js
 const issue = Issues.get("TEST-1")
@@ -163,7 +208,71 @@ const copy = issue.clone({ summary: "Copy of " + issue.summary })
 
 // Reload fresh data
 issue.reload()
+
+// Comments
+const last = issue.getLastComment()
+issue.editComment(last.id, "Updated comment text")
+issue.deleteComment(last.id)
+
+// Worklogs
+issue.addWorklog("2h 30m", { comment: "Code review" })
+const logs = issue.getWorklogs()
+
+// Attachments and remote links
+const attachments = issue.getAttachments()
+issue.addRemoteLink("https://example.com", "Design doc")
+const remoteLinks = issue.getRemoteLinks()
+
+// Components and versions
+issue.addComponent("Backend")
+issue.addFixVersion("v2.0")
+issue.removeComponent("Frontend")
+
+// Votes
+issue.addVote()
+const votes = issue.getVotes()
+
+// Custom properties
+issue.setProperty("custom.score", 42)
+const score = issue.getProperty("custom.score")
+
+// Subtasks
+if (!issue.isSubTask()) {
+  const sub = issue.createSubTask("Sub-task", { summary: "Implementation" })
+  const subs = issue.getSubTaskObjects()
+}
+
+// Change history
+const changelog = issue.getChangelog()
+
+// Static update/transition (without getting issue first)
+Issues.update("TEST-1", { summary: "New title" }, { notifyUsers: false })
+Issues.transition("TEST-1", "Done", { comment: "Closing" })
+Issues.addComment("TEST-1", "A comment via static method")
+
+// Send email notification
+issue.notify({
+  subject: "Action required",
+  textBody: "Please review this issue",
+  to: { assignee: true, watchers: true }
+})
 ```
+
+### Notify options
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `subject` | string | Email subject (max 255 chars) |
+| `textBody` | string | Plain text body (max 32KB) |
+| `htmlBody` | string | HTML body (max 32KB) |
+| `to.reporter` | boolean | Include reporter |
+| `to.assignee` | boolean | Include assignee |
+| `to.watchers` | boolean | Include all watchers |
+| `to.voters` | boolean | Include all voters |
+| `to.users` | string[] | Account IDs (max 50) |
+| `to.groups` | string[] | Group names (max 50) |
+| `restrict.groups` | string[] | Restrict visibility to groups |
+| `restrict.permissions` | string[] | Restrict visibility by permissions |
 
 ### SearchResult
 

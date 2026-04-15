@@ -256,6 +256,32 @@ Only one scenario run per script can be active at a time. Starting a new scenari
 
 ---
 
+## Sandbox mode
+
+Scenarios can run in **sandbox mode** - the same simulated-write mode available in the [Console](/docs/jibrok-studio-jira/script-console#sandbox-mode). When enabled:
+
+- Write operations (create, update, transition, delete) are intercepted and return simulated responses
+- No changes are made to Jira data
+- API call budgets and all other limits still apply
+- Sandbox status is recorded on the scenario run and shown in the UI
+
+Sandbox mode is useful for dry-running a bulk operation over production data before committing to real changes. Toggle it when starting a scenario run from the editor.
+
+---
+
+## Execution identity
+
+Scenarios always run with the **Application** actor, regardless of the Run As setting on the script. This is a Forge platform constraint: queue workers have no user token, so `api.asUser(accountId)` is not available in the async context where scenario steps execute.
+
+Because scenarios are admin-only and the initiating administrator is recorded on every scenario run (visible in Run History and the Audit Log), scenarios are granted an **elevated privilege** that normal Application-actor scripts do not have:
+
+- Normal Application-actor triggers cannot perform destructive or admin-only operations - DELETE endpoints, create/update of issue types, workflow schemes, permission schemes, etc. See [Security - Application actor restrictions](/docs/jibrok-studio-jira/security#application-actor-restrictions) for the full list.
+- Scenarios **bypass** these restrictions: DELETE and admin-only endpoints are allowed from scenario steps.
+
+Use scenarios when you need bulk destructive or administrative operations - cleaning up old issues, reconfiguring fields at scale, creating screens or schemes. Attribution is tracked via the scenario run record, not via per-call Jira audit entries.
+
+---
+
 ## Limits
 
 See [Limits](/docs/jibrok-studio-jira/limits) for all scenario limits including step count, result sizes, batch sizes, emit limits, and API call budgets.

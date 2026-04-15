@@ -27,7 +27,7 @@ Only whitelisted methods can be called on values. Calling a non-whitelisted meth
 
 ---
 
-## String methods (29)
+## String methods (30)
 
 | Method | Description |
 |--------|-------------|
@@ -60,6 +60,7 @@ Only whitelisted methods can be called on values. Calling a non-whitelisted meth
 | `s.trimEnd()` | Remove whitespace from end |
 | `s.at(i)` | Character at index (negative supported) |
 | `s.toString()` | Convert to string |
+| `s.toDate()` | Parse ISO date string to Date object |
 
 ```js
 let s = "Hello, World!"
@@ -266,7 +267,7 @@ log(arr.with(1, 99))   // => [3, 99, 4]
 log(arr)                 // => [3, 1, 4]  (unchanged)
 ```
 
-### Callback methods (15)
+### Callback methods (16)
 
 | Method | Description |
 |--------|-------------|
@@ -285,6 +286,7 @@ log(arr)                 // => [3, 1, 4]  (unchanged)
 | `a.sort(fn)` | Sort in place with comparator |
 | `a.toSorted(fn)` | Return sorted copy (original unchanged) |
 | `a.group(fn)` | Group elements into object by key function |
+| `a.collectEntries(fn)` | Transform to object via `[key, value]` pairs |
 
 ```js
 let nums = [1, 2, 3, 4, 5]
@@ -304,6 +306,14 @@ let nums = [1, 2, 3, 4, 5]
 let grouped = nums.group(n => n % 2 === 0 ? "even" : "odd")
 log(grouped.odd)    // => [1, 3, 5]
 log(grouped.even)   // => [2, 4]
+```
+
+**collectEntries** - build object from `[key, value]` pairs:
+
+```js
+let users = [{name: "Alice", age: 30}, {name: "Bob", age: 25}]
+let map = users.collectEntries(u => [u.name, u.age])
+log(map)   // => {Alice: 30, Bob: 25}
 ```
 
 **toSorted** - sorted copy without mutating:
@@ -354,6 +364,58 @@ log([1, "two", 3].sum())           // => 4
 // Chaining with native methods
 log([3, 1, 2, 1].distinct().toSorted((a,b) => a-b).first())   // => 1
 ```
+
+---
+
+## Date standard methods
+
+Standard JavaScript Date getters and setters are available on all Date objects.
+
+### Getters
+
+| Method | Description |
+|--------|-------------|
+| `d.getTime()` | Milliseconds since epoch |
+| `d.getFullYear()` | 4-digit year |
+| `d.getMonth()` | Month (0-11) |
+| `d.getDate()` | Day of month (1-31) |
+| `d.getDay()` | Day of week (0=Sun, 6=Sat) |
+| `d.getHours()` | Hours (0-23) |
+| `d.getMinutes()` | Minutes (0-59) |
+| `d.getSeconds()` | Seconds (0-59) |
+| `d.getMilliseconds()` | Milliseconds (0-999) |
+| `d.getTimezoneOffset()` | UTC offset in minutes |
+
+UTC variants: `getUTCFullYear()`, `getUTCMonth()`, `getUTCDate()`, `getUTCDay()`, `getUTCHours()`, `getUTCMinutes()`, `getUTCSeconds()`, `getUTCMilliseconds()`.
+
+### Setters
+
+| Method | Description |
+|--------|-------------|
+| `d.setFullYear(y, m?, d?)` | Set year (optionally month, day) |
+| `d.setMonth(m, d?)` | Set month (0-11, optionally day) |
+| `d.setDate(d)` | Set day of month |
+| `d.setHours(h, m?, s?, ms?)` | Set hours (optionally min, sec, ms) |
+| `d.setMinutes(m, s?, ms?)` | Set minutes |
+| `d.setSeconds(s, ms?)` | Set seconds |
+| `d.setMilliseconds(ms)` | Set milliseconds |
+| `d.setTime(ms)` | Set time from epoch milliseconds |
+
+UTC variants: `setUTCFullYear()`, `setUTCMonth()`, `setUTCDate()`, `setUTCHours()`, `setUTCMinutes()`, `setUTCSeconds()`, `setUTCMilliseconds()`.
+
+### Conversion
+
+| Method | Description |
+|--------|-------------|
+| `d.toISOString()` | ISO 8601 format |
+| `d.toDateString()` | Date portion as string |
+| `d.toTimeString()` | Time portion as string |
+| `d.toLocaleString(locale?, options?)` | Locale-formatted string |
+| `d.toLocaleDateString(locale?, options?)` | Locale-formatted date |
+| `d.toLocaleTimeString(locale?, options?)` | Locale-formatted time |
+| `d.toUTCString()` | UTC string |
+| `d.toJSON()` | JSON representation (ISO string) |
+| `d.valueOf()` | Milliseconds since epoch |
 
 ---
 
@@ -517,18 +579,93 @@ log((1234567).toLocaleString())   // => 1,234,567
 
 ---
 
-## Object methods (3)
+## Object methods (4)
 
 | Method | Description |
 |--------|-------------|
 | `o.hasOwnProperty(key)` | Check if object has own property |
 | `o.toString()` | String representation |
 | `o.valueOf()` | Primitive value |
+| `o.collectEntries(fn)` | Transform entries to new object via `[key, value]` pairs |
 
 ```js
 let obj = { a: 1, b: 2 }
 log(obj.hasOwnProperty("a"))   // => true
 log(obj.hasOwnProperty("c"))   // => false
+
+// collectEntries - transform object entries
+let prices = { apple: 1.5, banana: 2.0, cherry: 3.5 }
+let doubled = prices.collectEntries((k, v) => [k, v * 2])
+log(doubled)   // => {apple: 3, banana: 4, cherry: 7}
+```
+
+---
+
+## Set methods
+
+Create sets with `Set.create()`. Sets store unique values with O(1) lookup.
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `Set.create(arr?)` | Set | Create a new Set (optionally from array) |
+| `s.add(value)` | Set | Add value, returns the set (chainable) |
+| `s.has(value)` | boolean | Check if value exists |
+| `s.delete(value)` | boolean | Remove value, returns true if existed |
+| `s.clear()` | void | Remove all values |
+| `s.size` | number | Number of elements |
+| `s.values()` | array | All values as array |
+| `s.toArray()` | array | All values as array (alias for values) |
+| `s.forEach(fn)` | void | Execute fn for each value |
+
+```js
+let s = Set.create([1, 2, 3])
+s.add(4)
+log(s.has(2))        // => true
+log(s.size)          // => 4
+log(s.values())      // => [1, 2, 3, 4]
+log(s.toArray())     // => [1, 2, 3, 4]
+
+s.delete(2)
+log(s.has(2))        // => false
+
+// Deduplicate an array
+let unique = Set.create([1, 2, 2, 3, 1]).toArray()
+log(unique)          // => [1, 2, 3]
+```
+
+---
+
+## Map methods
+
+Create maps with `Map.create()`. Maps store key-value pairs with O(1) lookup.
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `Map.create(entries?)` | Map | Create a new Map (optionally from `[[key, value]]` array) |
+| `m.set(key, value)` | Map | Set key-value pair, returns the map (chainable) |
+| `m.get(key)` | any | Get value by key |
+| `m.has(key)` | boolean | Check if key exists |
+| `m.delete(key)` | boolean | Remove key, returns true if existed |
+| `m.clear()` | void | Remove all entries |
+| `m.size` | number | Number of entries |
+| `m.keys()` | array | All keys as array |
+| `m.values()` | array | All values as array |
+| `m.entries()` | array | All `[key, value]` pairs as array |
+| `m.forEach(fn)` | void | Execute fn(value, key) for each entry |
+| `m.toObject()` | object | Convert to plain object |
+
+```js
+let m = Map.create([["a", 1], ["b", 2]])
+m.set("c", 3)
+log(m.get("a"))       // => 1
+log(m.has("b"))       // => true
+log(m.size)           // => 3
+log(m.keys())         // => [a, b, c]
+log(m.entries())      // => [[a, 1], [b, 2], [c, 3]]
+
+// Convert to plain object
+let obj = m.toObject()
+log(obj)              // => {a: 1, b: 2, c: 3}
 ```
 
 ---

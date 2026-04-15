@@ -134,6 +134,8 @@ When a script runs as **Application**, additional restrictions apply on top of t
 
 **Error on violation:** `"API call blocked: {METHOD} {PATH} - this operation is not allowed when running as app. Run the script as the current user instead."`
 
+> **Exception: Scenarios.** [Scenarios](/docs/jibrok-studio-jira/scenarios) run with elevated Application-actor privileges and bypass these restrictions. This is safe because scenarios are admin-only and the initiating administrator is tracked on the scenario run record, providing attribution without relying on Jira's per-call audit trail. See [Scenarios - Execution identity](/docs/jibrok-studio-jira/scenarios#execution-identity) for details.
+
 ---
 
 ## Who can access the app?

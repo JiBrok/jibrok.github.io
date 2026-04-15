@@ -78,9 +78,15 @@ The scripting platform provides a rich set of APIs. See [Scripting API](/docs/ji
 | `Fields` | `list()`, `get()`, `id()` - field metadata and ID resolution |
 | `Components` | `get()`, `create()`, `update()`, `delete()` |
 | `Versions` | `get()`, `create()`, `update()`, `release()` |
-| `Boards` | `list()`, `get()`, `getSprints()`, `getIssues()` |
-| `Sprints` | `get()`, `getIssues()`, `moveIssues()` |
-| `Links` | `types()` - get all issue link types |
+| `Boards` | `list()`, `get()`, `getSprints()`, `getIssues()`, `moveToBacklog()` |
+| `Sprints` | `get()`, `getIssues()`, `moveIssues()`, `create()`, `update()` |
+| `Epics` | `get()`, `getIssues()`, `moveIssues()`, `removeIssues()` |
+| `Links` | `types()`, `create()`, `get()`, `delete()` |
+| `Groups` | `find()`, `get()`, `getBulk()`, `getMembers()`, `create()`, `addUser()`, `removeUser()` |
+| `Filters` | `get()`, `getMy()`, `getFavourites()`, `create()`, `update()`, `delete()` |
+| `Labels` | `list()` |
+| `JQL` | `validate()`, `autocomplete()` |
+| `Permissions` | `my()` - check current user's permissions |
 
 > **Note:** `Jira.search(jql, options?)` and `Jira.getIssue(key, options?)` are low-level convenience wrappers that return raw Jira REST API responses. For rich functionality (RichIssue, auto-transform, chainable promises), use the `Issues` namespace instead.
 
@@ -107,6 +113,49 @@ The scripting platform provides a rich set of APIs. See [Scripting API](/docs/ji
 ### Built-in globals
 
 `Math`, `JSON`, `Date`, `RegExp`, `Set`, `Map`, `String.format()`, `structuredClone`, `parseInt`, `parseFloat`, `isNaN`, `isFinite`, `encodeURIComponent`, `decodeURIComponent`, and more.
+
+### String.format()
+
+Java-style string formatting with format specifiers:
+
+| Specifier | Description | Example |
+|-----------|-------------|---------|
+| `%s` | String | `String.format("Hello %s", "World")` - "Hello World" |
+| `%d` | Integer (truncated) | `String.format("Count: %d", 42)` - "Count: 42" |
+| `%f` | Float (default 6 decimals) | `String.format("Pi: %.2f", 3.14159)` - "Pi: 3.14" |
+| `%b` | Boolean | `String.format("Active: %b", true)` - "Active: true" |
+| `%%` | Literal % | `String.format("100%%")` - "100%" |
+| `%n` | Newline | `String.format("Line1%nLine2")` |
+
+Supports width (`%10s`) and precision (`%.2f`). Flags: `-` (left-align), `0` (zero-pad for numbers).
+
+```js
+log(String.format("%-10s | %05d | %.2f", "item", 42, 3.14))
+// => "item       | 00042 | 3.14"
+```
+
+### createFile()
+
+Generate file attachments from scripts. Files are returned alongside script output.
+
+```js
+// Create a CSV file
+let csv = "Name,Email\nAlice,alice@example.com\nBob,bob@example.com"
+createFile("report.csv", csv)
+
+// Create a JSON file with explicit MIME type
+createFile("data.json", JSON.stringify(data, null, 2), "application/json")
+```
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `name` | string | Filename (max 255 chars) |
+| `content` | string | File content |
+| `mimeType` | string? | MIME type (auto-detected from extension if omitted) |
+
+**Limits:** max 4MB per file, max 10 files per execution, max 8MB total.
+
+**Auto-detected extensions:** `.txt`, `.csv`, `.json`, `.xml`, `.html`, `.md`, `.js`, `.css`, `.svg`, `.tsv`, `.log`, `.yaml`, `.yml`. Unknown extensions default to `text/plain`.
 
 ### Logger
 

@@ -25,7 +25,7 @@ These limits protect Jira performance and prevent runaway scripts. If you hit a 
 
 | Limit | Value | Globals Script | Description |
 |-------|-------|----------------|-------------|
-| Max script complexity | 15,000 | 200 | Controls the maximum complexity of a single script (measured in parsed nodes) |
+| Max script complexity | 15,000 (50,000 for most triggers) | 200 | Controls the maximum complexity of a single script (measured in parsed nodes). Default 15,000; Console, Event, Scheduled, Async Event, Automation, Rovo, and Webtrigger override to 50,000. See per-trigger table below. |
 | Max execution time | per trigger (see below) | 1,000 ms | Maximum script execution time |
 | Max loop iterations | 50,000 (100,000 for scheduled) | 1,000 | Total number of loop iterations |
 | Max call depth | 64 | 32 | Maximum nesting/recursion depth of calls |
@@ -37,7 +37,7 @@ These limits protect Jira performance and prevent runaway scripts. If you hit a 
 | Max API calls | per trigger (see below) | - | Number of Jira REST API calls per script |
 | Max eval calls | 20 | 0 | Number of eval() calls per script |
 | Max include depth | 5 | - | Nesting depth of eval-by-id calls |
-| Max input size | 100,000 chars | 100,000 chars | Maximum number of source code characters |
+| Max input size | 256,000 chars (100,000 for Groovy) | 10,240 chars | Maximum number of source code characters parsed by the engine |
 
 > **Note:** The Globals Script column shows reduced limits for the global variables script, which runs before every other script execution.
 
@@ -45,19 +45,19 @@ These limits protect Jira performance and prevent runaway scripts. If you hit a 
 
 Execution time, API calls, and promises vary by trigger type:
 
-| Trigger | Execution | API Calls | Promises | Loop Iterations |
-|---------|-----------|-----------|----------|-----------------|
-| Console | 18s | 40 | 50 | 50,000 |
-| UIM | 5s | 20 | 20 | 50,000 |
-| Scripted Fields | 5s | 20 | 20 | 50,000 |
-| Event | 25s | 60 | 50 | 50,000 |
-| Scheduled | 55s | 100 | 50 | 100,000 |
-| Async Event | 55s | 250 | 50 | 50,000 |
-| Automation | 40s | 80 | 50 | 50,000 |
-| Rovo | 40s | 80 | 50 | 50,000 |
-| Workflow Post Function | 15s | 40 | 30 | 50,000 |
-| Workflow Validator | 10s | 20 | 20 | 50,000 |
-| Webtrigger | 50s | 100 | 50 | 50,000 |
+| Trigger | Execution | API Calls | Promises | Loop Iterations | Max AST Nodes |
+|---------|-----------|-----------|----------|-----------------|---------------|
+| Console | 18s | 40 | 50 | 50,000 | 50,000 |
+| UIM | 5s | 20 | 20 | 50,000 | 15,000 |
+| Scripted Fields | 5s | 20 | 20 | 50,000 | 15,000 |
+| Event | 25s | 60 | 50 | 50,000 | 50,000 |
+| Scheduled | 55s | 100 | 50 | 100,000 | 50,000 |
+| Async Event | 55s | 250 | 50 | 50,000 | 50,000 |
+| Automation | 40s | 80 | 50 | 50,000 | 50,000 |
+| Rovo | 40s | 80 | 50 | 50,000 | 50,000 |
+| Workflow Post Function | 15s | 40 | 30 | 50,000 | 15,000 |
+| Workflow Validator | 10s | 20 | 20 | 50,000 | 15,000 |
+| Webtrigger | 50s | 100 | 50 | 50,000 | 50,000 |
 
 > **Note:** The Workflow Condition trigger uses the Jira Expressions engine, which is evaluated natively by Jira. It has no sandbox engine limits - execution is managed entirely by Jira.
 
@@ -83,7 +83,7 @@ These limits apply to scripts stored in the Library.
 | Limit | Value |
 |-------|-------|
 | Max scripts | 1,000 |
-| Max script size | 50 KB |
+| Max script size | 250 KB |
 | Max script name | 200 characters |
 | Max versions per script | 50 |
 | Max script description | 2,000 characters |
@@ -111,7 +111,7 @@ The global variables script runs before every script execution, so its limits ar
 | Limit | Value |
 |-------|-------|
 | Max triggers per script | 10 |
-| Max trigger config size | 10 KB |
+| Max trigger config size | 50 KB |
 | Singleton types | All types (Scheduled, Event, UIM, Scripted Fields, Async Event, Automation, Rovo, Workflow Post Function, Workflow Validator, Workflow Condition, Webtrigger) |
 
 ---
@@ -123,9 +123,11 @@ Folders and labels help you manage scripts at scale.
 | Limit | Value |
 |-------|-------|
 | Max folders | 200 |
+| Max folder name | 50 characters |
 | Max folder nesting depth | 10 levels |
 | Max folder description | 2,000 characters |
 | Max labels | 100 |
+| Max label name | 30 characters |
 | Max labels per script | 10 |
 | Max label description | 2,000 characters |
 
@@ -161,7 +163,7 @@ Async events let scripts trigger other scripts. Chain depth and fanout limits pr
 | Max async event calls (chained) | 3 |
 | Max payload size | 100 KB |
 | Max delay | 900 seconds (15 min) |
-| Max chain depth | 2 (allows 3 hops: depth 0, 1, 2) |
+| Max chain depth | 1 (allows 2 hops: depth 0 initial + depth 1 triggered) |
 | Deduplication window | 5 minutes |
 | Async consumer execution time | 55,000 ms |
 
@@ -176,6 +178,18 @@ Rate limits protect against request floods from external systems.
 | Rate limit | 60 requests per minute |
 | Rate limit window | 60 seconds |
 | Max tokens per script | 1 |
+
+---
+
+## File generation
+
+Scripts can generate files via `createFile()` (see [Scripting Language](/docs/jibrok-studio-jira/scripting-language#createfile)). Files are returned alongside script output and can be downloaded from the Console.
+
+| Limit | Value |
+|-------|-------|
+| Max file size per file | 4 MB |
+| Max files per execution | 10 |
+| Max total file size | 8 MB |
 
 ---
 

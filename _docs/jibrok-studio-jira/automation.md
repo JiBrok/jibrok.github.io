@@ -67,6 +67,14 @@ The script must be **enabled** and have an **enabled Automation trigger** to be 
 |-------|----------|-------------|
 | **Script** | Yes | The script to execute (selected by script ID) |
 | **Issue Key** | No | The issue key to pass to the script. Use `{% raw %}{{issue.key}}{% endraw %}` smart value to pass the triggering issue |
+| **Action Input** | No | Additional data passed to the script as `params.actionInput`. Supports smart values - use it to pass custom strings, JSON, or any value from earlier rule components |
+
+Inside the script, read the Action Input via `params.actionInput`:
+
+```js
+// Passed via Action Input: {% raw %}{{issue.summary}} - {{now}}{% endraw %}
+log("Received:", params.actionInput)
+```
 
 <a href="/uploads/jibrok-studio-jira/automation-action-config-select.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/automation-action-config-select.png" alt="Automation action script selection" style="max-height:600px;width:auto;" loading="lazy"></a>
@@ -123,6 +131,47 @@ If your script returns an object (e.g. `return { status: "done", count: 5 }`), t
 
 <a href="/uploads/jibrok-studio-jira/automation-audit-log-results.png" target="_blank">
 <img src="/uploads/jibrok-studio-jira/automation-audit-log-results.png" alt="Automation audit log results" style="width:100%;" loading="lazy"></a>
+
+---
+
+## Run Script (List) action
+
+In addition to **Run Script - JiBrok Studio**, the app also provides **Run Script (List) - JiBrok Studio** - a variant that iterates over an array returned by the script and runs subsequent rule branches once per element.
+
+Use it when a script computes a list of items and you want the rest of the automation rule (send email, add comment, create sub-task, etc.) to execute for each item.
+
+### How it works
+
+1. The script must `return` an array - each array element becomes one iteration.
+2. Inside the following rule branches, each element is exposed via the list smart values.
+3. Primitive elements (strings, numbers) are stringified; object elements are serialized to JSON.
+
+### Action inputs
+
+| Input | Required | Description |
+|-------|----------|-------------|
+| **Script** | Yes | The script to execute - must return an array |
+| **Issue Key** | No | Issue key to pass to the script. Use `{{issue.key}}` smart value |
+| **Action Input** | No | Same as for the single-script action - forwarded to `params.actionInput`. Supports smart values |
+
+### List smart values
+
+| Smart value | Type | Description |
+|-------------|------|-------------|
+| `value` | string | String representation of the list item (JSON if element is an object) |
+| `index` | integer | Zero-based index of the item in the array |
+
+### Example
+
+```js
+// Script: return a list of overdue issue keys
+return Issues.search('duedate < now() AND resolution is EMPTY')
+  .map(i => i.key)
+```
+
+Then in the automation rule:
+1. **Action:** Run Script (List) - JiBrok Studio -> the script above
+2. **Following branches** run once per returned key, with the key available as a list smart value
 
 ---
 
