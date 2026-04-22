@@ -6,8 +6,6 @@ category: getting-started
 tags: [doc, cloud, time-in-status, forge, time-tracking, business-calendar, setup, configuration]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 This guide walks you through setting up Time in Status (Forge) end to end. After following these steps you will have a Time in Status field calculating against a work calendar, visible in the issue view, and searchable via JQL.
 
 * TOC
@@ -108,7 +106,7 @@ For audit-style reports (transition history, time by assignee) enable the [Activ
 Because the Forge platform does not allow apps to register custom JQL functions, searching works through Jira's built-in **custom field property** search. Every Time in Status field exposes properties like `secondsValue`, `minutesValue`, `hoursValue`, `timeInHoursValue`, and `dateNextUpdate`:
 
 ```jql
-"Your Field[secondsValue]" > 3600 ORDER BY "Your Field[secondsValue]" DESC
+"Your Field[SecondsValue]" > 3600 ORDER BY "Your Field[SecondsValue]" DESC
 ```
 
 See [JQL search](/docs/time-in-status-cloud-forge/time-in-status-jql) for the full list of searchable properties and examples.
@@ -117,7 +115,7 @@ See [JQL search](/docs/time-in-status-cloud-forge/time-in-status-jql) for the fu
 
 ## Next steps
 
-- Add [Stopwatch](/docs/time-in-status-cloud-forge/stopwatch-field), [Timer](/docs/time-in-status-cloud-forge/timer-field), or [Time Between Dates](/docs/time-in-status-cloud-forge/time-between-dates-field) fields for more advanced metrics.
+- Add [Stopwatch](/docs/time-in-status-cloud-forge/stopwatch-field-create), [Timer](/docs/time-in-status-cloud-forge/timer-field-create), or [Time Between Dates](/docs/time-in-status-cloud-forge/time-between-dates-field) fields for more advanced metrics.
 - Set up [Custom Events](/docs/time-in-status-cloud-forge/custom-events) to trigger stopwatches and timers on business events.
 - Enable [Activity panels](/docs/time-in-status-cloud-forge/activity-panels) for inline reports on every issue.
 - Export your configuration as JSON with [Import / Export](/docs/time-in-status-cloud-forge/import-export-config) for backups or moves between environments.

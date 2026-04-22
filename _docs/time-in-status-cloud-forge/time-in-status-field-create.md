@@ -6,8 +6,6 @@ category: field-configuration
 tags: [doc, cloud, time-in-status, forge, field-creation, setup, configuration]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 * TOC
 {:toc}
 

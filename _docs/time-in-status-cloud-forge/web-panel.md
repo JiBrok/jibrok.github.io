@@ -1,73 +1,86 @@
 ---
-title: Web panel
+title: Time in Status issue panel
 key: time-in-status-cloud-forge
-excerpt: Configure and customize Time in Status web panels in Jira sidebar with status filtering, project settings, statistics, and flexible display options.
+excerpt: "Configure Time in Status web panels to display per-status time breakdown on Jira issue views."
 category: display-customization
-tags: [doc, cloud, time-in-status, forge, web-panels, status-tracking, dashboard-gadgets, field-creation]
+tags: [doc, cloud, time-in-status, forge, web-panels, issue-panel, status-tracking, configuration]
 ---
 
-> **Draft: Forge version documentation - work in progress. Content is still being adapted from the Connect version.**
+* TOC
+{:toc}
 
+---
 
-Enables the display of "Time in Status" in the sidebar.
+## Overview
 
-<table>
-<tr>
-<td><a href="/uploads/tis-cloud/web-panel-1.webp" target="_blank">
-<img src="/uploads/tis-cloud/web-panel-1.webp" alt="web-panel-1 screenshot" loading="lazy"></a></td>
-<td><a href="/uploads/tis-cloud/web-panel-2.webp" target="_blank">
-<img src="/uploads/tis-cloud/web-panel-2.webp" alt="web-panel-2 screenshot" loading="lazy"></a></td>
-</tr>
-</table>
+The Time in Status issue panel displays a **per-status time breakdown** directly on the issue view. Each panel shows how much time the issue has spent in selected statuses, calculated against a work calendar.
 
-   
+You can create multiple panels with different configurations - for example, one panel showing all statuses and another showing only "In Progress" and "In Review."
 
+<!-- [Screenshot: tis-web-panel-on-issue] -->
 
+---
 
-You can create many panels with different settings.
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-create.webp" target="_blank">
-<img src="/uploads/tis-cloud/web-panel-create.webp" alt="web-panel-create screenshot" loading="lazy"></a></p>
+## Creating a web panel
 
-### General settings ### 
+1. Open the [admin panel](/docs/time-in-status-cloud-forge/admin-panel) > **Time in Status** tab > **Web Panels**
+2. Click **Create**
+3. Configure the panel settings (see reference below)
+4. Click **Save**
+5. Enable [panel visibility](/docs/time-in-status-cloud-forge/panel-visibility) for the projects where you want the panel to appear
 
-* Web panel name - A panel with this name will be created in issues.
-* Statuses - The panel will display the time only for the indicated statuses. Empty value - all issue statuses.
-* Projects - The panel will be available for issues from the specified projects. Empty value - all projects.
-* Issue types - The panel will be available for issues of the specified types. Empty value - all issue types.
-* Calendar - The time will be calculated according to the work schedule specified in the calendar. The default is a 24x7 work calendar.
-* Time format - In the selected format, the time will be displayed in the panel.
-* Use rounding for display - The time will be rounded when displayed in the field. 21:37 → 21:30 (uses intervals)
-* Show zero value - Show status in the panel when the time spent in it is equal to zero
+<!-- [Screenshot: tis-web-panel-form] -->
 
+---
 
-### Statistic settings ###
+## Settings reference
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-settings.webp" target="_blank">
-<img src="/uploads/tis-cloud/web-panel-statistic-settings.webp" alt="Web panel statistics configuration interface" style="width:100%;" loading="lazy"></a></p>
+### Scope
 
-If you have selected in "Display mode" the display of the values of one of the functions (average time, for example), then in this section you can customize the data for calculating the value of this function in more detail.
-The function value will be displayed in a separate column. Each panel calculates and uses values independently for each of the selected statuses.
-For the calculation, issues from the specified projects and types are used. (Beta) Soon we will add the ability to count separately for each project and issue type.
-The data will be recalculated at least once a day. (Beta) Updates will occur more frequently in the future. Updating the data in the web panels will also take some time.
+| Setting | Description |
+|---------|-------------|
+| **Name** | Unique panel name (max 150 characters). Displayed as the panel header on issues. |
+| **Projects** | Which projects show this panel. Empty = all projects. |
+| **Issue Types** | Which issue types show this panel. Empty = all issue types. |
 
-* Limit
-  * Issues from context are used to calculate values. You can limit the number of issues used to calculate the values. The limit indicates how many issues from the context to use for calculating the values, taking into account sorting by creation date (ORDER BY created). The first N issues are used. If 0 is specified, then all issues are used.
-* Only resolved (resolution is not empty)
-  * If this option is enabled, then only issues with a set resolution will be used for calculating values. If the option is disabled, then all issues from the context will be used.
-* Created last days (created > startOfDay(-N))
-  * Issues from context are used to calculate values. You can limit the selection of issues by creation date. Only issues created in the last N days will be used. If 0 is specified then this filter is ignored.
-* Resolved last days (resolved > startOfDay(-N))
-  * Issues from context are used to calculate values. You can limit the selection of issues by the date the issue was resolved. Only issues resolved in the last N days will be used. If 0 is specified, then this filter is ignored.
+### Status configuration
 
+| Setting | Description |
+|---------|-------------|
+| **Status Mode** | How to select which statuses to display. Options: **Selected Statuses** (pick specific statuses), **Current Status** (only the current status), **All Statuses** (every status the issue has been in), **Selected Categories** (pick status categories). |
+| **Statuses** | When Status Mode is Selected Statuses - choose which statuses to display. |
+| **Status Categories** | When Status Mode is Selected Categories - choose categories (To Do, In Progress, Done). |
+| **Status Order** | How to sort statuses in the panel: Default (time descending), Name A-Z, Name Z-A, ID ascending, ID descending, Time ascending, Time descending. |
 
-<p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.webp" target="_blank">
-<img src="/uploads/tis-cloud/web-panel-statistic-demo.webp" alt="web-panel-statistic-demo screenshot" loading="lazy"></a></p>
+### Calendar
 
-[More about time statistic](/Time-statistic(Time-in-status-Cloud)/)  
+| Setting | Description |
+|---------|-------------|
+| **Calendar** | Work calendar for time calculation. Default is 24x7. |
+| **Calendar Field** | Optional [Calendar Select](/docs/time-in-status-cloud-forge/calendar-select-field) field for per-issue override. |
 
+### Display
 
-### New Jira issue view settings ### 
-* Location - Location in the application interface for this panel.
-* Web panel weight - Set a positive integer.
-    * Determines the order in which web panels appear. Web panels are displayed top to bottom or left to right in order of ascending weight. The "lightest" weight is displayed first, while the "heaviest" weights sink to the bottom.
-    * Due to caching in Jira cloud, weight changes can be delayed in the issue.
+| Setting | Description |
+|---------|-------------|
+| **Time Format** | How time is displayed. See [Time formats](/docs/time-in-status-cloud-forge/time-formats). |
+| **Show Type** | **Total Time** - shows the total across all selected statuses. **Time in Status** - shows time for each individual status. |
+| **Display Mode** | **TIME** - text only. **TIME_ICON** - with status category icon. |
+| **Use Rounding for Display** | Round time values when displaying (does not affect stored data). |
+| **Show Zero Value** | Show statuses with zero time. When off, statuses with no time are hidden. |
+
+### Behavior
+
+| Setting | Description |
+|---------|-------------|
+| **Weight** | Panel ordering. Lower weight = higher position. Panels are displayed in ascending weight order. |
+| **Periodic Update** | Auto-refresh the panel every 60 seconds. Useful for issues in active statuses where time is accumulating. |
+
+---
+
+## Tips
+
+- **Multiple panels**: create different panels for different views. For example, a "Development Time" panel showing only development statuses and a "Full Lifecycle" panel showing all statuses.
+- **Panel visibility**: creating a web panel defines *what* it shows. You also need to enable *where* it appears using [panel visibility settings](/docs/time-in-status-cloud-forge/panel-visibility).
+- **Weight for ordering**: if you have multiple panels on the same issue, use weight to control the display order.
+- **Calendar matters**: time displayed in panels respects the selected calendar. Business hours calendar will show less time than 24x7 for the same period.

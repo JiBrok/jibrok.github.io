@@ -6,8 +6,6 @@ category: field-configuration
 tags: [doc, cloud, time-in-status, forge, field-creation, status-tracking, business-calendar, configuration]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 A **field setting** is the collection of rules that determine how a Time in Status field calculates its value. You can create, edit, and delete settings from the admin panel's **Time in Status** tab, or directly from a field's context configuration panel in Jira.
 
 One setting can be bound to multiple contexts. See [Create a Time in Status field](/docs/time-in-status-cloud-forge/time-in-status-field-create) for the binding workflow.

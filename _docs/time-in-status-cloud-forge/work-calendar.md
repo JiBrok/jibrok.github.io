@@ -6,8 +6,6 @@ category: time-management
 tags: [doc, cloud, time-in-status, forge, business-calendar, status-tracking, configuration]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 Work calendars define which hours count as working time. Every Time in Status, Stopwatch, Timer, and Time Between Dates field can bind to a calendar, so that time outside working hours (nights, weekends, holidays, breaks) is excluded from calculations.
 
 * TOC
@@ -152,3 +150,7 @@ Stopwatch and Timer field settings additionally support **calendar overrides by 
 - [Create a Time in Status field](/docs/time-in-status-cloud-forge/time-in-status-field-create)
 - [Field setting reference](/docs/time-in-status-cloud-forge/time-in-status-field-settings)
 - [Calendar Select field](/docs/time-in-status-cloud-forge/calendar-select-field)
+- [Stopwatch field settings](/docs/time-in-status-cloud-forge/stopwatch-field-settings) - calendar overrides by JQL
+- [Timer field settings](/docs/time-in-status-cloud-forge/timer-field-settings) - calendar overrides by JQL
+- [Time Between Dates field](/docs/time-in-status-cloud-forge/time-between-dates-field)
+- [Activity panel](/docs/time-in-status-cloud-forge/activity-panels) - calendar for activity reports

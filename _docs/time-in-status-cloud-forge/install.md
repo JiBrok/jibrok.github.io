@@ -6,8 +6,6 @@ category: getting-started
 tags: [doc, cloud, time-in-status, forge, setup, installation]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 ## Requirements
 
 - A Jira Cloud site (Jira Software, Jira Service Management, or Jira Work Management)

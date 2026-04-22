@@ -47,7 +47,7 @@ The tables on this page list supported features side by side in a fixed **DC | C
 | Custom field types | **13** | 1 | **5** (plus 📊 gadgets app for helpers) |
 | JQL search | 270+ custom functions | ~8 entity properties | **~16 schema properties** covering ~90% of DC use cases |
 | Time display formats | ~46 | 29 | ~46 |
-| Event trigger types | ~4 | 2 | **39** |
+| Event trigger types | ~4 | 2 | **33** |
 | Issue panels | **7** | 1 | **4** (plus Activity panel) |
 | Admin pages | **20+** | ~6 | ~15 |
 | Charts and reports | 3 chart types | 1 dashboard gadget | Activity panel (main app) + 📊 separate gadgets app |
@@ -352,7 +352,7 @@ DC ships over 270 custom JQL functions. Connect and Forge cannot register custom
 | Custom field triggers | ❌ | ❌ | ✅ | `CUSTOM_FIELD_CHANGED` / `SET` / `REMOVED` |
 | Project / type change triggers | ❌ | ❌ | ✅ | `CHANGE_PROJECT`, `CHANGE_ISSUE_TYPE` |
 | Custom events (named rules) | ✅ (limited) | ❌ | ✅ (full CRUD and UI) | |
-| Total trigger types | ~4 | 2 | **39** | Forge expands the surface significantly |
+| Total trigger types | ~4 | 2 | **33** | Forge expands the surface significantly |
 
 ---
 
@@ -492,7 +492,7 @@ DC ships over 270 custom JQL functions. Connect and Forge cannot register custom
 
 1. **Time Between Dates** - a new field type that computes the difference between two date / datetime fields on an issue. Supports work calendars, absolute mode, and goal time. No equivalent in DC or Connect.
 2. **Calendar Select** - picks a work calendar at the individual-issue level. Equivalent to the DC Calendar Field but with a cleaner architecture (context-based configs bound to the field context), so different issues can use different calendars for the same field.
-3. **39 event trigger types** - a vastly expanded trigger surface compared to DC (~4 types) and Connect (2 types). Includes comments, priorities, labels, components, resolution, custom fields, and project / issue-type changes, and each trigger can invoke Custom Events.
+3. **33 event trigger types** - a vastly expanded trigger surface compared to DC (~4 types) and Connect (2 types). Includes comments, priorities, labels, components, resolution, custom fields, and project / issue-type changes, and each trigger can invoke Custom Events.
 4. **Custom events with full UI** - named, reusable trigger rules with full CRUD, a visual Event Trigger Builder, validation, and reuse inside stopwatch and timer configurations.
 5. **Export / import of configuration** - full export and import of every setting (10 sections: calendars, custom events, TIS / SW / Timer / TBD settings, web panels, Calendar Select). Conflict resolution (skip / overwrite) included. Used for site-to-site moves and backups.
 6. **Activity Panel** - three issue-level reports built on the fly from the Jira changelog: R1 (time per status broken down by assignee), R2 (chronological transition history), R3 (time per assignee). A single Forge module with both global and per-project configuration.

@@ -6,8 +6,6 @@ category: field-configuration
 tags: [doc, cloud, time-in-status, forge, status-tracking, field-creation, business-calendar]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
-
 Every field setting in the Forge version lets you pick one of **46 time formats**. The format decides how the stored number of seconds is rendered in the custom field, in the issue panel, and in the Issue Navigator.
 
 The same format catalogue is used across Time in Status, Stopwatch, Timer, and Time Between Dates fields.

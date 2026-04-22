@@ -6,15 +6,13 @@ category: getting-started
 tags: [doc, cloud, time-in-status, forge, time-tracking, business-calendar, field-creation, status-tracking, web-panels, activity-panels]
 ---
 
-> **Draft: Forge version documentation - work in progress.**
->
-> **Looking for the Connect version docs?** See [Time in Status (Connect)](/docs/tis-cloud/overview).
+**Looking for the Connect version docs?** See [Time in Status (Connect)](/docs/tis-cloud/overview).
 
 ## Welcome to Time in Status (Forge) for Jira Cloud
 
 Time in Status helps teams measure how long issues stay in each status, how long timers and stopwatches run, and how much time passes between key dates. This is the **Forge-native** build of the app, rebuilt from the ground up on Atlassian's Forge platform.
 
-Every field, panel, calendar, and report you configure lives directly inside your Jira Cloud site - no external services, no OAuth setup, no separate infrastructure.
+Every field, panel, calendar, and report you configure runs inside Atlassian's cloud next to your Jira instance - no external services, no OAuth setup, no separate infrastructure on your side.
 
 ---
 
@@ -83,7 +81,7 @@ The Forge version is not a straight port - the platform differences matter:
 | Custom JQL functions (`time in hours:FIELD > 1.5`) | Available | Not available - use [searchable field properties](/docs/time-in-status-cloud-forge/time-in-status-jql) |
 | Dashboard gadgets | Available | Not available |
 | In-field statistics (avg / min / max / percentiles) | Available | Planned as a separate app |
-| Field modules / quotas | Managed in-app | Not applicable on Forge |
+| Field modules / quotas | Managed in-app | [Module quotas](/docs/time-in-status-cloud-forge/limits) (max 100) |
 
 See the full comparison on the [feature comparison page](/docs/time-in-status-cloud-forge/feature-comparison/).
 
@@ -97,3 +95,36 @@ See the full comparison on the [feature comparison page](/docs/time-in-status-cl
 4. **[Add an issue panel](/docs/time-in-status-cloud-forge/web-panel)** so your team can see the data inline
 
 For a step-by-step walkthrough see the [Getting started guide](/docs/time-in-status-cloud-forge/get-started).
+
+---
+
+## All documentation pages
+
+### Fields
+- [Time in Status - create](/docs/time-in-status-cloud-forge/time-in-status-field-create) | [settings](/docs/time-in-status-cloud-forge/time-in-status-field-settings) | [JQL](/docs/time-in-status-cloud-forge/time-in-status-jql)
+- [Stopwatch - create](/docs/time-in-status-cloud-forge/stopwatch-field-create) | [settings](/docs/time-in-status-cloud-forge/stopwatch-field-settings) | [JQL](/docs/time-in-status-cloud-forge/stopwatch-jql)
+- [Timer - create](/docs/time-in-status-cloud-forge/timer-field-create) | [settings](/docs/time-in-status-cloud-forge/timer-field-settings) | [goals](/docs/time-in-status-cloud-forge/timer-goals) | [JQL](/docs/time-in-status-cloud-forge/timer-jql)
+- [Time Between Dates](/docs/time-in-status-cloud-forge/time-between-dates-field) | [JQL](/docs/time-in-status-cloud-forge/time-between-dates-jql)
+- [Calendar Select](/docs/time-in-status-cloud-forge/calendar-select-field)
+
+### Events and triggers
+- [Event triggers reference](/docs/time-in-status-cloud-forge/event-triggers)
+- [Custom Events](/docs/time-in-status-cloud-forge/custom-events)
+
+### Panels
+- [Time in Status panel](/docs/time-in-status-cloud-forge/web-panel) | [Stopwatch panel](/docs/time-in-status-cloud-forge/stopwatch-panel) | [Timer panel](/docs/time-in-status-cloud-forge/timer-panel)
+- [Activity panel](/docs/time-in-status-cloud-forge/activity-panels)
+- [Panel visibility](/docs/time-in-status-cloud-forge/panel-visibility)
+
+### Configuration
+- [Admin panel overview](/docs/time-in-status-cloud-forge/admin-panel) | [Field context configuration](/docs/time-in-status-cloud-forge/field-context-config)
+- [Work calendars](/docs/time-in-status-cloud-forge/work-calendar) | [Time formats](/docs/time-in-status-cloud-forge/time-formats)
+- [Recalculation](/docs/time-in-status-cloud-forge/recalculation) | [Import / Export](/docs/time-in-status-cloud-forge/import-export-config)
+
+### Reference
+- [Use cases and recipes](/docs/time-in-status-cloud-forge/use-cases) - practical configuration examples
+- [Feature comparison (DC / Connect / Forge)](/docs/time-in-status-cloud-forge/feature-comparison)
+- [Technical limits](/docs/time-in-status-cloud-forge/limits)
+- [Troubleshooting and FAQ](/docs/time-in-status-cloud-forge/troubleshooting)
+- [JQL export to Excel](/docs/time-in-status-cloud-forge/export-fields)
+- [Migration from Connect](/docs/time-in-status-cloud-forge/migration-to-forge) | [Migration from Data Center](/docs/time-in-status-cloud-forge/migrationDocumentation)
