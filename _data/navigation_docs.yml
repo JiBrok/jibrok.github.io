@@ -185,26 +185,63 @@ time-in-status-cloud-forge:
       - time-in-status-cloud-forge/overview
       - time-in-status-cloud-forge/install
       - time-in-status-cloud-forge/get-started
+      - time-in-status-cloud-forge/use-cases
       - time-in-status-cloud-forge/migration-to-forge
       - time-in-status-cloud-forge/migrationDocumentation
 
   - title: Work calendars
     docs:
       - time-in-status-cloud-forge/work-calendar
+      - time-in-status-cloud-forge/calendar-select-field
 
-  - title: Time in status fields
+  - title: Time in Status fields
     docs:
       - time-in-status-cloud-forge/time-in-status-field-create
       - time-in-status-cloud-forge/time-in-status-field-settings
       - time-in-status-cloud-forge/time-in-status-jql
 
+  - title: Timer fields
+    docs:
+      - time-in-status-cloud-forge/timer-field-create
+      - time-in-status-cloud-forge/timer-field-settings
+      - time-in-status-cloud-forge/timer-goals
+      - time-in-status-cloud-forge/timer-jql
+
+  - title: Stopwatch fields
+    docs:
+      - time-in-status-cloud-forge/stopwatch-field-create
+      - time-in-status-cloud-forge/stopwatch-field-settings
+      - time-in-status-cloud-forge/stopwatch-jql
+
+  - title: Time Between Dates fields
+    docs:
+      - time-in-status-cloud-forge/time-between-dates-field
+      - time-in-status-cloud-forge/time-between-dates-jql
+
+  - title: Events and field context
+    docs:
+      - time-in-status-cloud-forge/event-triggers
+      - time-in-status-cloud-forge/custom-events
+      - time-in-status-cloud-forge/field-context-config
+
   - title: Issue panels
     docs:
       - time-in-status-cloud-forge/web-panel
+      - time-in-status-cloud-forge/stopwatch-panel
+      - time-in-status-cloud-forge/timer-panel
+      - time-in-status-cloud-forge/activity-panels
+      - time-in-status-cloud-forge/panel-visibility
 
   - title: Reports and export
     docs:
       - time-in-status-cloud-forge/export-fields
+      - time-in-status-cloud-forge/import-export-config
+
+  - title: Administration
+    docs:
+      - time-in-status-cloud-forge/admin-panel
+      - time-in-status-cloud-forge/recalculation
+      - time-in-status-cloud-forge/troubleshooting
 
   - title: Reference information
     docs:
