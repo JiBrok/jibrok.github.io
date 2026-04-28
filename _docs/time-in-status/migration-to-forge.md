@@ -25,6 +25,8 @@ Each step has a **manual** and an **automatic** path. The automatic paths are fa
 
 > **Before you migrate, review what changes on the Cloud side.** Due to architectural differences between Data Center and Forge, some features are implemented differently or not at all. See the [Time in Status - DC / Connect / Forge feature comparison](/docs/time-in-status-cloud-forge/feature-comparison/) page for a feature-by-feature breakdown - it is the best way to understand what your admins and users will see after the migration.
 
+> **Companion guide on the Cloud side.** This page covers the procedure from the Data Center side. The [DC → Forge migration guide on the Cloud side](/docs/time-in-status-cloud-forge/migrationDocumentation/) describes what JCMA delivers to Cloud, the alternative manual JSON import workflow, the JQL syntax mapping, and the consolidated post-migration checklist.
+
 ---
 
 ## Before you start
@@ -94,6 +96,8 @@ The [Jira Cloud Migration Assistant](https://support.atlassian.com/migration/doc
 
 At this point your work calendars, TIS / Timer / Stopwatch configurations, panel configurations, custom events and field bindings exist in Cloud. The custom fields themselves are **not** created yet - that is Step 2.
 
+For a Cloud-side breakdown of exactly what JCMA carries automatically and what still needs manual work after this step, see [Automatic path via JCMA](/docs/time-in-status-cloud-forge/migrationDocumentation/#automatic-path-via-jcma) on the Cloud-side guide.
+
 ### Path B · Manual JSON export / import
 
 Use this path only when JCMA is not an option and you are confident that status IDs already match between DC and Cloud (or you have set them up manually to match). Status IDs are **not** remapped in this path.
@@ -106,6 +110,8 @@ Use this path only when JCMA is not an option and you are confident that status 
 <img src="/uploads/time-in-status/migration-to-forge/tis-forge-import-export-tab.png" alt="Time in Status Cloud Import / Export tab with Export Settings, Import Settings and Apply binding manifest buttons" width="100%" loading="lazy"></a></p>
 
 *Import / Export tab in Time in Status Cloud - the manual JSON import and the binding manifest both live here.*
+
+For the full Cloud-side manual workflow (import → review conversion warnings → create fields → bind → configure panels → recalculate), see [Manual path (JSON export / import)](/docs/time-in-status-cloud-forge/migrationDocumentation/#manual-path-json-export--import) on the Cloud-side guide.
 
 ---
 
