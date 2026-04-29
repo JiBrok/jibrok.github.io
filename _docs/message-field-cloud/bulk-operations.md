@@ -251,7 +251,7 @@ Remove configuration permanently:
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Basic panel settings
-- [Testing Panels](testing-panels) - Preview and debug configurations
-- [Templates](templates) - Dynamic content syntax
-- [Limits](limits) - Configuration size and count limits
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Basic panel settings
+- [Testing Panels](/docs/message-field-cloud/testing-panels/) - Preview and debug configurations
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Limits](/docs/message-field-cloud/limits/) - Configuration size and count limits

@@ -32,7 +32,7 @@ As a trigger, you can select system events, status changes, status changes from 
 
 ### Display settings
 9. Display mode - The field contains a lot of information for searching and sorting (see JQL). You can choose which data to display to the user in the field. It does not affect search or sort conditions, but it affects the value displayed in the field. This value will also be used for export.
-10. [Time format](/tis-cloud/time-formats) - format for outputting time in a field. If you need a new format, please write in support.
+10. [Time format](/docs/tis-cloud/time-formats/) - format for outputting time in a field. If you need a new format, please write in support.
    
 ### Time settings
 

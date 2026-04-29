@@ -33,3 +33,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+  # html-proofer 3.x — последняя ветка с поддержкой Ruby 2.6
+  gem 'html-proofer', '~> 3.19'
+end

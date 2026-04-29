@@ -416,7 +416,7 @@ JSON-based format for advanced Atlassian-native formatting.
 
 ### Dynamic Content
 
-All formats support [template syntax](templates):
+All formats support [template syntax](/docs/message-field-cloud/templates/):
 
 {% raw %}
 ```
@@ -439,7 +439,7 @@ Use **Preview Panel** to test your message formatting before saving.
 
 ## Next Steps
 
-- [Templates](templates) - Dynamic content syntax
-- [Template Filters](template-filters) - Transform values with filters
-- [Use Cases](use-cases) - Ready-to-use examples
-- [Configuration Basics](configuration-basics) - Panel settings
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Template Filters](/docs/message-field-cloud/template-filters/) - Transform values with filters
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Ready-to-use examples
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Panel settings

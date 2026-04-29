@@ -395,22 +395,22 @@ Display different warnings per project/issue type context using a custom field.
 ```
 {% endraw %}
 
-> **Tip:** Custom field contexts allow you to maintain a single field with different messages per project and issue type combination. See [Custom Fields](custom-fields) for setup details.
+> **Tip:** Custom field contexts allow you to maintain a single field with different messages per project and issue type combination. See [Custom Fields](/docs/message-field-cloud/custom-fields/) for setup details.
 
 ---
 
 ## More Examples
 
-- [Use Cases - Management & HR](use-cases-management) - Project managers, HR, and compliance examples
-- [Use Cases - Portal & Simplified](use-cases-portal) - JSM portal examples and section message patterns
+- [Use Cases - Management & HR](/docs/message-field-cloud/use-cases-management/) - Project managers, HR, and compliance examples
+- [Use Cases - Portal & Simplified](/docs/message-field-cloud/use-cases-portal/) - JSM portal examples and section message patterns
 
 ---
 
 ## Related Documentation
 
-- [Configuration Basics](configuration-basics) - Create panels
-- [Data Sources](data-sources) - JQL and linked issues
-- [Templates](templates) - Template syntax reference
-- [Template Filters](template-filters) - Filter reference
-- [Context Filters](context-filters) - Visibility rules
-- [Custom Fields](custom-fields) - Custom field module setup
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Create panels
+- [Data Sources](/docs/message-field-cloud/data-sources/) - JQL and linked issues
+- [Templates](/docs/message-field-cloud/templates/) - Template syntax reference
+- [Template Filters](/docs/message-field-cloud/template-filters/) - Filter reference
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Visibility rules
+- [Custom Fields](/docs/message-field-cloud/custom-fields/) - Custom field module setup

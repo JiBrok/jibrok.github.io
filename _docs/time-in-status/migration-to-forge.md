@@ -78,7 +78,7 @@ The DC Migration page flags any fields of these types in its **Migration warning
 
 ### Path A · JCMA (recommended)
 
-The [Jira Cloud Migration Assistant](https://support.atlassian.com/migration/docs/install-and-configure-the-jira-cloud-migration-assistant/) carries the Time in Status settings as part of a normal app migration and **automatically remaps status IDs** between Data Center and Cloud. Identical statuses have different IDs on each side - JCMA rewrites those IDs inside the plugin payload so calendars and field settings arrive in Cloud already referencing valid Cloud statuses.
+The [Jira Cloud Migration Assistant](https://www.atlassian.com/migration) carries the Time in Status settings as part of a normal app migration and **automatically remaps status IDs** between Data Center and Cloud. Identical statuses have different IDs on each side - JCMA rewrites those IDs inside the plugin payload so calendars and field settings arrive in Cloud already referencing valid Cloud statuses.
 
 1. In Data Center open **Jira Administration → System → Migration** (or navigate to `/secure/migration-app-action.jspa`).
 2. Create or open a migration, select **Apps**, and make sure **Time in status / SLA / Timer / Stopwatch for Jira DC/Cloud** is marked as *Needed in cloud*.

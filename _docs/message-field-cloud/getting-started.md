@@ -89,7 +89,7 @@ Click **Save Configuration**
 
 Open any Jira issue - you should see your panel in the right sidebar!
 
-You can also use Message Field as a custom field - see [Custom Fields](custom-fields) for setup instructions.
+You can also use Message Field as a custom field - see [Custom Fields](/docs/message-field-cloud/custom-fields/) for setup instructions.
 
 ## What's Next?
 
@@ -97,10 +97,10 @@ Now that you have your first panel working:
 
 | Goal | Documentation |
 |------|---------------|
-| Show linked issues in a table | [Data Sources](data-sources) |
-| Display JQL query results | [Data Sources](data-sources) |
-| Show panels only in certain projects | [Context Filters](context-filters) |
-| Use conditions and loops in messages | [Templates](templates) |
-| Display warnings in pop-up dialogs | [Modal Windows](modal-windows) |
-| Set up panels for JSM portal | [JSM Integration](jsm-integration) |
-| Let project admins manage panels | [Delegation](delegation) |
+| Show linked issues in a table | [Data Sources](/docs/message-field-cloud/data-sources/) |
+| Display JQL query results | [Data Sources](/docs/message-field-cloud/data-sources/) |
+| Show panels only in certain projects | [Context Filters](/docs/message-field-cloud/context-filters/) |
+| Use conditions and loops in messages | [Templates](/docs/message-field-cloud/templates/) |
+| Display warnings in pop-up dialogs | [Modal Windows](/docs/message-field-cloud/modal-windows/) |
+| Set up panels for JSM portal | [JSM Integration](/docs/message-field-cloud/jsm-integration/) |
+| Let project admins manage panels | [Delegation](/docs/message-field-cloud/delegation/) |

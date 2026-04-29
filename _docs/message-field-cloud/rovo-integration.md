@@ -271,10 +271,10 @@ Analyze the linked issues in this panel:
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Set up panels for Rovo analysis
-- [Templates](templates) - Create dynamic panel content
-- [Data Sources](data-sources) - Configure JQL and linked issues
-- [FAQ](faq) - Troubleshoot common Rovo issues
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Set up panels for Rovo analysis
+- [Templates](/docs/message-field-cloud/templates/) - Create dynamic panel content
+- [Data Sources](/docs/message-field-cloud/data-sources/) - Configure JQL and linked issues
+- [FAQ](/docs/message-field-cloud/faq/) - Troubleshoot common Rovo issues
 - [Atlassian Rovo Documentation](https://www.atlassian.com/software/rovo) - Learn more about Rovo
 
 ## Support
@@ -282,4 +282,4 @@ Analyze the linked issues in this panel:
 For questions about Rovo integration:
 - [Support Portal](https://jibrok.atlassian.net/servicedesk/customer/portals) - Get help
 - [Atlassian Community](https://community.atlassian.com/) - Ask the community
-- [Rovo Documentation](https://www.atlassian.com/software/rovo/resources) - Rovo resources
+- [Rovo Documentation](https://www.atlassian.com/software/rovo) - Rovo resources

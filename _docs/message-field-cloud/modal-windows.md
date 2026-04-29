@@ -239,7 +239,7 @@ Review your context filters:
 
 ## Next Steps
 
-- [Context Filters](context-filters) - Control when modals appear
-- [Templates](templates) - Dynamic modal content
-- [Modules](modules) - Other display options
-- [FAQ](faq) - Troubleshoot modal issues
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Control when modals appear
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic modal content
+- [Modules](/docs/message-field-cloud/modules/) - Other display options
+- [FAQ](/docs/message-field-cloud/faq/) - Troubleshoot modal issues

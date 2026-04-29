@@ -60,7 +60,7 @@ The data will be recalculated at least once a day. (Beta) Updates will occur mor
 <p style="text-align: center;"><a href="/uploads/tis-cloud/web-panel-statistic-demo.webp" target="_blank">
 <img src="/uploads/tis-cloud/web-panel-statistic-demo.webp" alt="web-panel-statistic-demo screenshot" loading="lazy"></a></p>
 
-[More about time statistic](/Time-statistic(Time-in-status-Cloud)/)  
+[More about time statistic](/docs/tis-cloud/dashboard-statistic-gadget/)  
 
 
 ### New Jira issue view settings ### 

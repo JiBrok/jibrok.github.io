@@ -21,7 +21,7 @@ Thank you for your recommendation! 😉
 
 1. Choose **Message type** **'Custom'**. 
 2. Additional fields **Background color**, **Text color**, **Icon**, **Icon color** will appear.
-3. Choose predefined [colors from Atlassian](https://www.atlassian.design/foundations/color).
+3. Choose predefined [colors from Atlassian](https://atlassian.design/foundations/color).
 4. If you can't find the right color, press **Select a custom color** for manual color selection.
 
 <a href="/uploads/message-field/message-type-custom.webp" target="_blank">
@@ -52,7 +52,7 @@ Or hex colors
 
 Colors: <a href="https://htmlcolorcodes.com/">htmlcolorcodes.com</a>
 
-Attlassian Design System: <a href="https://www.atlassian.design/foundations/color">atlassian.design/foundations/color</a>
+Attlassian Design System: <a href="https://atlassian.design/foundations/color">atlassian.design/foundations/color</a>
 
 ## How to add a scroll to a long message?
 

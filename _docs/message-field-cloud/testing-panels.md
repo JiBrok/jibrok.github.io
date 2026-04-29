@@ -95,7 +95,7 @@ The **Test Context** feature checks all filter conditions for a specific issue t
 
 Each condition shows a pass/fail status, making it easy to identify which filter is preventing a panel from appearing.
 
-> **Tip:** If all conditions pass but the panel still doesn't show, verify the display module is enabled in [Module Settings](modules).
+> **Tip:** If all conditions pass but the panel still doesn't show, verify the display module is enabled in [Module Settings](/docs/message-field-cloud/modules/).
 
 ---
 
@@ -103,7 +103,7 @@ Each condition shows a pass/fail status, making it easy to identify which filter
 
 Display conditions use template syntax to conditionally show or hide panels. To test them:
 
-1. Configure a **Display Condition** using template syntax (see [Display Conditions](display-conditions))
+1. Configure a **Display Condition** using template syntax (see [Display Conditions](/docs/message-field-cloud/display-conditions/))
 2. Enter a test **Issue key** in the preview
 3. Click **Preview Panel** - the preview respects display conditions
 4. If the condition evaluates to false, the preview shows that the panel would be hidden
@@ -232,8 +232,8 @@ Display conditions use the same template engine as messages. Errors in display c
 ### Panel Not Appearing
 
 1. Verify configuration is **Enabled**
-2. Check [Context Filters](context-filters) match the test issue
-3. Ensure the [Display Module](modules) is enabled globally
+2. Check [Context Filters](/docs/message-field-cloud/context-filters/) match the test issue
+3. Ensure the [Display Module](/docs/message-field-cloud/modules/) is enabled globally
 4. Test Display JQL condition separately in Issue Navigator
 5. Use **Test Context** to check all conditions at once
 
@@ -248,8 +248,8 @@ Display conditions use the same template engine as messages. Errors in display c
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Basic panel settings
-- [Bulk Operations](bulk-operations) - Export and import configurations
-- [Templates](templates) - Dynamic content syntax
-- [Context Filters](context-filters) - Control when panels appear
-- [FAQ](faq) - Common issues and troubleshooting
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Basic panel settings
+- [Bulk Operations](/docs/message-field-cloud/bulk-operations/) - Export and import configurations
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Control when panels appear
+- [FAQ](/docs/message-field-cloud/faq/) - Common issues and troubleshooting

@@ -134,6 +134,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
   - eula-analysis-report.md
 
 sass:

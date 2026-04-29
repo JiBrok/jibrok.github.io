@@ -247,16 +247,16 @@ Transform values using `|` (pipe):
 | `avatar(size)` | User avatar | `{{ assignee \| avatar(24) }}` |
 | `issueLink` | Issue link | `{{ linked \| issueLink }}` |
 
-See [Template Filters](template-filters) for the complete list.
+See [Template Filters](/docs/message-field-cloud/template-filters/) for the complete list.
 
 ---
 
 ## Next Steps
 
-- [Template Filters](template-filters) - Complete filter reference
-- [Template Advanced](template-advanced) - Functions, JQL templates, display conditions
-- [Message Formats](message-formats) - HTML, Markdown, ADF
-- [Use Cases](use-cases) - Ready-to-use examples
-- [Limits](limits) - Template engine limits and performance tips
+- [Template Filters](/docs/message-field-cloud/template-filters/) - Complete filter reference
+- [Template Advanced](/docs/message-field-cloud/template-advanced/) - Functions, JQL templates, display conditions
+- [Message Formats](/docs/message-field-cloud/message-formats/) - HTML, Markdown, ADF
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Ready-to-use examples
+- [Limits](/docs/message-field-cloud/limits/) - Template engine limits and performance tips
 
 {% endraw %}

@@ -20,19 +20,19 @@ tags:
 
 1. Go to **Apps** → **Message Field Settings**
 2. Check the **Module Settings** tab - ensure the desired modules are enabled
-3. Create at least one panel configuration with [Configuration Basics](configuration-basics)
+3. Create at least one panel configuration with [Configuration Basics](/docs/message-field-cloud/configuration-basics/)
 4. Verify the configuration is **Enabled** (toggle is on)
 5. Check that the configuration targets the correct project and issue type
 
 ### What permissions are needed to install the app?
 
-Only **Jira site administrators** can install apps from the Atlassian Marketplace. After installation, site admins can use [Delegation](delegation) to allow project admins to manage configurations for their projects.
+Only **Jira site administrators** can install apps from the Atlassian Marketplace. After installation, site admins can use [Delegation](/docs/message-field-cloud/delegation/) to allow project admins to manage configurations for their projects.
 
 ### Modules are not appearing in the expected locations
 
 1. Verify modules are enabled in **Module Settings**
 2. After enabling a module, refresh the issue page
-3. For JSM portal modules, verify UIM registrations in the [Modules](modules) page - use **Reregister All** if needed
+3. For JSM portal modules, verify UIM registrations in the [Modules](/docs/message-field-cloud/modules/) page - use **Reregister All** if needed
 4. Check that your browser is not caching old content (try hard refresh)
 
 ---
@@ -57,10 +57,10 @@ If a panel isn't appearing where you expect it, work through this checklist:
 
 4. **Does the Display JQL match?**
    - Test the Display JQL in Jira's Issue Navigator with the specific issue
-   - For parametric JQL, use [Test JQL](testing-panels) to see the resolved query
+   - For parametric JQL, use [Test JQL](/docs/message-field-cloud/testing-panels/) to see the resolved query
 
 5. **Does the Display Condition match?**
-   - Use the [Test Context](testing-panels) feature to check all conditions at once
+   - Use the [Test Context](/docs/message-field-cloud/testing-panels/) feature to check all conditions at once
 
 6. **Does the User Field filter match?**
    - If user field visibility is configured, verify the current user is in the specified field
@@ -100,7 +100,7 @@ If a panel isn't appearing where you expect it, work through this checklist:
 - Avoid heavy operations inside loops (nested loops, complex filters)
 - Use {% raw %}`| take(N)`{% endraw %} to limit loop iterations
 - Reduce the number of linked issues with a lower **Max Issues** setting
-- See [Limits](limits) for all template engine constraints
+- See [Limits](/docs/message-field-cloud/limits/) for all template engine constraints
 
 ---
 
@@ -137,7 +137,7 @@ If template variables in JQL aren't being replaced:
 
 1. Verify you're using a **JSM Portal module** (not a Jira module)
 2. Check the **Portal** filter in context settings - at least one portal must be selected
-3. Verify UIMs are registered: go to [Modules](modules) → **UIM Management** → **Reregister All** if needed
+3. Verify UIMs are registered: go to [Modules](/docs/message-field-cloud/modules/) → **UIM Management** → **Reregister All** if needed
 4. Check that the request type matches (if request type filter is set)
 5. Clear browser cache and reload the portal page
 
@@ -188,7 +188,7 @@ If template variables in JQL aren't being replaced:
 - Use indexed fields in JQL: `project`, `status`, `assignee`, `priority`
 - Reduce the number of **table fields** - each field adds to rendering time
 - Simplify template logic - avoid nested loops and complex calculations
-- See [Limits](limits) for performance recommendations
+- See [Limits](/docs/message-field-cloud/limits/) for performance recommendations
 
 ### Too many API calls
 
@@ -231,13 +231,13 @@ If template variables in JQL aren't being replaced:
 - Add link type filters to narrow dependency trees
 - Use project filters to limit the search scope
 - Break large analyses into multiple smaller queries
-- See [Rovo Integration](rovo-integration) for optimization tips
+- See [Rovo Integration](/docs/message-field-cloud/rovo-integration/) for optimization tips
 
 ---
 
 ## Related Documentation
 
-- [Testing Panels](testing-panels) - Preview and debug tools
-- [Configuration Basics](configuration-basics) - Panel setup
-- [Limits](limits) - System limits and performance
-- [Permissions & Security](permissions-security) - Access control details
+- [Testing Panels](/docs/message-field-cloud/testing-panels/) - Preview and debug tools
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Panel setup
+- [Limits](/docs/message-field-cloud/limits/) - System limits and performance
+- [Permissions & Security](/docs/message-field-cloud/permissions-security/) - Access control details

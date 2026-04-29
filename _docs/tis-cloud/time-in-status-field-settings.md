@@ -16,7 +16,7 @@ All settings:<br>
 2. JQL(context) - This is analogous to the context for custom fields. Using JQL, issues are set for which you need to track the time spent in the following statuses.
 3. Statuses - If the issue was or is in the indicated status, then the field will calculate the time spent in this status.
 4. Work calendar - If you need to calculate only working hours, you can connect a work calendar.
-5. [Time format](/tis-cloud/time-formats) - Format for outputting time in a field. If you need a new format, please contact support.
+5. [Time format](/docs/tis-cloud/time-formats/) - Format for outputting time in a field. If you need a new format, please contact support.
 6. Display setting - Select an option to display in the field. Below you can customize the calculation of statistical values. 
     <p style="text-align: center;"><a href="/uploads/tis-cloud/display-settings.webp" target="_blank">
 <img src="/uploads/tis-cloud/display-settings.webp" alt="Field display configuration options" style="width:100%;" loading="lazy"></a></p>
@@ -56,7 +56,7 @@ On the start page, we have added examples of JQL queries for working with statis
 <p style="text-align: center;"><a href="/uploads/tis-cloud/jql-statistic-examples.webp" target="_blank">
 <img src="/uploads/tis-cloud/jql-statistic-examples.webp" alt="jql-statistic-examples screenshot" style="width:100%;" loading="lazy"></a></p>
 
-[More about time statistic](/Time-statistic(Time-in-status-Cloud)/)
+[More about time statistic](/docs/tis-cloud/dashboard-statistic-gadget/)
 
 ### Modules settings ### 
 You can disable redundant modules to free the module quota. Free quotas can be used to create other fields and panels.

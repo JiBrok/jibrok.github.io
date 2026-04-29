@@ -192,7 +192,7 @@ Alert when high priority is selected.
 ![Priority Warning Example](/uploads/message-field-cloud/configuration/example%20jsm%20create%20priority.png)
 
 **Module**: Portal Subheader (Create)
-**Display Condition**: `{{ fields.priority.name == 'High' or fields.priority.name == 'Highest' }}`
+**Display Condition**: {% raw %}`{{ fields.priority.name == 'High' or fields.priority.name == 'Highest' }}`{% endraw %}
 
 {% raw %}
 ```html
@@ -229,8 +229,8 @@ Display terms at the bottom of the form.
 
 ## Next Steps
 
-- [JSM Integration](jsm-integration) - Main JSM documentation
-- [Context Filters](context-filters) - Filter by request types and portals
-- [Display Conditions](display-conditions) - Dynamic visibility conditions
-- [Templates](templates) - Template syntax reference
-- [Use Cases - Portal](use-cases-portal) - More JSM portal examples
+- [JSM Integration](/docs/message-field-cloud/jsm-integration/) - Main JSM documentation
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Filter by request types and portals
+- [Display Conditions](/docs/message-field-cloud/display-conditions/) - Dynamic visibility conditions
+- [Templates](/docs/message-field-cloud/templates/) - Template syntax reference
+- [Use Cases - Portal](/docs/message-field-cloud/use-cases-portal/) - More JSM portal examples

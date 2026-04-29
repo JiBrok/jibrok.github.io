@@ -156,9 +156,9 @@ Project admins can create JQL queries that return issues from any project, but:
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Create panel configurations
-- [Permissions & Security](permissions-security) - Detailed permissions and security model
-- [Modules](modules) - Display locations
-- [Templates](templates) - Dynamic content
-- [FAQ](faq) - Common delegation questions
-- [Use Cases](use-cases) - Examples and best practices
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Create panel configurations
+- [Permissions & Security](/docs/message-field-cloud/permissions-security/) - Detailed permissions and security model
+- [Modules](/docs/message-field-cloud/modules/) - Display locations
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content
+- [FAQ](/docs/message-field-cloud/faq/) - Common delegation questions
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Examples and best practices

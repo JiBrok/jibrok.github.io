@@ -37,10 +37,22 @@
           {% when 'calculated-custom-fields' %}{% assign section_name = 'Calculated Fields (DC)' %}
           {% else %}{% assign section_name = section | replace: '-', ' ' | capitalize %}
         {% endcase %}
+        {% assign landing_url = '/docs/' | append: section | append: '/' %}
+        {% assign has_landing = false %}
+        {% for d in site.docs %}
+          {% if d.url == landing_url %}
+            {% assign has_landing = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
         <li property="itemListElement" typeof="ListItem">
-          <a property="item" typeof="WebPage" href="{{ site.baseurl }}/docs/{{ section }}/">
+          {% if has_landing %}
+            <a property="item" typeof="WebPage" href="{{ site.baseurl }}{{ landing_url }}">
+              <span property="name">{{ section_name }}</span>
+            </a>
+          {% else %}
             <span property="name">{{ section_name }}</span>
-          </a>
+          {% endif %}
           <meta property="position" content="3">
         </li>
 

@@ -56,7 +56,7 @@ Scripts run in a secure sandbox with no access to external networks or filesyste
 | **[Message Queues](/docs/jibrok-studio-jira/data-storage)** | Async message processing with priority-based ordering |
 | **[Webhook Trigger](/docs/jibrok-studio-jira/triggers-webhook)** | Trigger scripts via HTTP requests with Basic Auth and rate limiting |
 | **[Scenarios](/docs/jibrok-studio-jira/scenarios)** | Split long-running scripts into managed steps for bulk operations |
-| **[Script Usage Tracking](/docs/jibrok-studio-jira/admin-tools#script-usage)** | See where scripts are used across workflows and custom fields |
+| **[Script Usage Tracking](/docs/jibrok-studio-jira/admin-tools/#track-script-usage)** | See where scripts are used across workflows and custom fields |
 
 ---
 

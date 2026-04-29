@@ -26,7 +26,7 @@ All settings:<br>
 
 ### Display settings ###
 8. Display mode
-9. [Time format](/tis-cloud/time-formats) - format for outputting time in a field. If you need a new format, please contact support.
+9. [Time format](/docs/tis-cloud/time-formats/) - format for outputting time in a field. If you need a new format, please contact support.
    
 ### Stopwatch configs ###
 

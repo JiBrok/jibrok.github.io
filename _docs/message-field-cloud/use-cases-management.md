@@ -274,9 +274,9 @@ Show GDPR/privacy notice for issues containing personal data.
 
 ## Related Documentation
 
-- [Use Cases](use-cases) - Development and support team examples
-- [Use Cases - Portal](use-cases-portal) - JSM portal and simplified examples
-- [Templates](templates) - Template syntax reference
-- [Template Filters](template-filters) - Filter reference
-- [Context Filters](context-filters) - Visibility rules
-- [Configuration Basics](configuration-basics) - Panel setup
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Development and support team examples
+- [Use Cases - Portal](/docs/message-field-cloud/use-cases-portal/) - JSM portal and simplified examples
+- [Templates](/docs/message-field-cloud/templates/) - Template syntax reference
+- [Template Filters](/docs/message-field-cloud/template-filters/) - Filter reference
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Visibility rules
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Panel setup

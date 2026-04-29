@@ -46,7 +46,7 @@ Each panel configuration controls:
 ### Description
 
 - **Optional** field
-- Supports [dynamic templates](templates) with issue data
+- Supports [dynamic templates](/docs/message-field-cloud/templates/) with issue data
 - Displayed below the panel title (if "Show Description" is enabled)
 - Useful for admin notes or dynamic context
 
@@ -92,7 +92,7 @@ Choose where the panel appears:
 
 Each configuration targets **one** module. Create multiple configurations for multiple locations.
 
-See [Modules](modules) for detailed information about each module type.
+See [Modules](/docs/message-field-cloud/modules/) for detailed information about each module type.
 
 ### Display Limits
 
@@ -179,16 +179,16 @@ For Issue Panel module, you can display the panel content in a modal dialog inst
 | **Modal Appearance** | Visual style: default, warning, danger |
 | **Close Button Text** | Custom text for close button |
 
-See [Modal Windows](modal-windows) for detailed usage and examples.
+See [Modal Windows](/docs/message-field-cloud/modal-windows/) for detailed usage and examples.
 
 ---
 
 ## Next Steps
 
-- [Testing Panels](testing-panels) - Preview and debug your configurations
-- [Bulk Operations](bulk-operations) - Export, import, and manage configurations
-- [Data Sources](data-sources) - JQL, Linked Issues, or Message only
-- [Context Filters](context-filters) - Control when panels appear
-- [Templates](templates) - Dynamic content syntax
-- [Message Formats](message-formats) - Text, HTML, Markdown, ADF
-- [Modal Windows](modal-windows) - Pop-up dialog configuration
+- [Testing Panels](/docs/message-field-cloud/testing-panels/) - Preview and debug your configurations
+- [Bulk Operations](/docs/message-field-cloud/bulk-operations/) - Export, import, and manage configurations
+- [Data Sources](/docs/message-field-cloud/data-sources/) - JQL, Linked Issues, or Message only
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Control when panels appear
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Message Formats](/docs/message-field-cloud/message-formats/) - Text, HTML, Markdown, ADF
+- [Modal Windows](/docs/message-field-cloud/modal-windows/) - Pop-up dialog configuration

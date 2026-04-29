@@ -342,7 +342,7 @@ Reminder: {{ assigneeName }} should review these.
 
 Deeply nested conditions are harder to debug and slower to execute. Consider using `switch` for multiple conditions on the same value.
 
-See [Limits](limits) for all template engine constraints.
+See [Limits](/docs/message-field-cloud/limits/) for all template engine constraints.
 
 ---
 
@@ -415,9 +415,9 @@ When templates don't work as expected:
 
 ## Next Steps
 
-- [Templates](templates) - Basic syntax and variables
-- [Template Filters](template-filters) - All available filters
-- [Message Formats](message-formats) - HTML, Markdown, ADF
-- [Limits](limits) - Template engine constraints and performance tips
+- [Templates](/docs/message-field-cloud/templates/) - Basic syntax and variables
+- [Template Filters](/docs/message-field-cloud/template-filters/) - All available filters
+- [Message Formats](/docs/message-field-cloud/message-formats/) - HTML, Markdown, ADF
+- [Limits](/docs/message-field-cloud/limits/) - Template engine constraints and performance tips
 
 {% endraw %}

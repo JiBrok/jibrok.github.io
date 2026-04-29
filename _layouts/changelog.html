@@ -11,7 +11,8 @@ layout: default
             {{ content }}
         </div>
 
-        {% assign changelogs = (site.changelogs | sort: 'date') | reverse %}
+        {% assign sorted_changelogs = site.changelogs | sort: 'date' %}
+        {% assign changelogs = sorted_changelogs | reverse %}
         {% for changelog in changelogs %}
             <article class="uk-article uk-margin-medium-top">
                 <hr class="uk-margin-medium-bottom">

@@ -17,7 +17,7 @@ This guide covers migrating your Time in Status configuration from **Jira Data C
 
 The migration involves transferring your calendar, field setting, and event configurations. There are two paths:
 
-- **Automatic path via JCMA** (recommended) — the [Jira Cloud Migration Assistant](https://support.atlassian.com/migration/docs/install-and-configure-the-jira-cloud-migration-assistant/) carries Time in Status settings as part of a normal app migration and automatically remaps status, project, issue-type, and custom-field IDs between Data Center and Cloud.
+- **Automatic path via JCMA** (recommended) — the [Jira Cloud Migration Assistant](https://www.atlassian.com/migration) carries Time in Status settings as part of a normal app migration and automatically remaps status, project, issue-type, and custom-field IDs between Data Center and Cloud.
 - **Manual path via JSON export / import** — export configuration from the Data Center app as a JSON file, then import it into the Forge app on Cloud using [Import / Export](/docs/time-in-status-cloud-forge/import-export-config). The Forge app automatically detects and converts the Data Center format.
 
 Pick the automatic path unless you have a reason to do it by hand — it is faster and avoids ID-remapping errors.

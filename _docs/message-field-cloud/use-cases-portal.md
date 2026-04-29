@@ -274,9 +274,9 @@ Use these colors for consistent styling:
 
 ## Related Documentation
 
-- [Use Cases](use-cases) - Development and support team examples
-- [Use Cases - Management](use-cases-management) - PM, HR, and compliance examples
-- [JSM Integration](jsm-integration) - JSM portal setup
-- [JSM Create Modules](jsm-create-modules) - Panels on request creation forms
-- [Configuration Basics](configuration-basics) - Create panels
-- [Templates](templates) - Template syntax reference
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Development and support team examples
+- [Use Cases - Management](/docs/message-field-cloud/use-cases-management/) - PM, HR, and compliance examples
+- [JSM Integration](/docs/message-field-cloud/jsm-integration/) - JSM portal setup
+- [JSM Create Modules](/docs/message-field-cloud/jsm-create-modules/) - Panels on request creation forms
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Create panels
+- [Templates](/docs/message-field-cloud/templates/) - Template syntax reference

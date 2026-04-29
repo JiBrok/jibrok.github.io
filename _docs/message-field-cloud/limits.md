@@ -127,8 +127,8 @@ Higher Max Issues values mean more API calls and longer rendering times. Start l
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Panel setup
-- [Data Sources](data-sources) - Configure queries and limits
-- [Templates](templates) - Template syntax and optimization
-- [FAQ](faq) - Performance troubleshooting
-- [Permissions & Security](permissions-security) - Security constraints
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Panel setup
+- [Data Sources](/docs/message-field-cloud/data-sources/) - Configure queries and limits
+- [Templates](/docs/message-field-cloud/templates/) - Template syntax and optimization
+- [FAQ](/docs/message-field-cloud/faq/) - Performance troubleshooting
+- [Permissions & Security](/docs/message-field-cloud/permissions-security/) - Security constraints

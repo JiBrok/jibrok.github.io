@@ -28,7 +28,7 @@ Message Field supports five JSM portal locations:
 | **Portal Subheader (Create)** | Request creation form, below title | Users creating requests |
 | **Portal Footer (Create)** | Request creation form, bottom | Users creating requests |
 
-For Create modules, see [JSM Create Modules](jsm-create-modules).
+For Create modules, see [JSM Create Modules](/docs/message-field-cloud/jsm-create-modules/).
 
 ---
 
@@ -357,9 +357,9 @@ When configuring panels that show JQL results or linked issue data on the portal
 
 ## Next Steps
 
-- [JSM Create Modules](jsm-create-modules) - Panels on request creation forms
-- [Context Filters](context-filters) - Filter by request types
-- [Message Formats](message-formats) - HTML formatting for portal
-- [Templates](templates) - Dynamic content syntax
-- [FAQ](faq) - JSM portal troubleshooting
-- [Permissions & Security](permissions-security) - Portal access and permissions
+- [JSM Create Modules](/docs/message-field-cloud/jsm-create-modules/) - Panels on request creation forms
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Filter by request types
+- [Message Formats](/docs/message-field-cloud/message-formats/) - HTML formatting for portal
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [FAQ](/docs/message-field-cloud/faq/) - JSM portal troubleshooting
+- [Permissions & Security](/docs/message-field-cloud/permissions-security/) - Portal access and permissions

@@ -22,7 +22,7 @@ tags:
 | **Install app** | Jira site administrator |
 | **Uninstall app** | Jira site administrator |
 | **Configure modules** | Jira site administrator |
-| **Manage configurations** | Site admin, or project admin (with [delegation](delegation)) |
+| **Manage configurations** | Site admin, or project admin (with [delegation](/docs/message-field-cloud/delegation/)) |
 | **Configure delegation** | Jira site administrator |
 
 ---
@@ -59,7 +59,7 @@ Site administrators have full access to:
 
 ### Project Administrators (with Delegation)
 
-When [delegation](delegation) is enabled, project administrators can:
+When [delegation](/docs/message-field-cloud/delegation/) is enabled, project administrators can:
 - Create, edit, and delete configurations **for their own projects**
 - Manage custom field configurations for their projects
 - Preview, duplicate, and export/import configurations
@@ -227,7 +227,7 @@ The app never elevates a user's permissions. If a user cannot see an issue in Ji
 
 ## Next Steps
 
-- [Delegation](delegation) - Project admin access control
-- [Limits](limits) - System limits and constraints
-- [Configuration Basics](configuration-basics) - Panel setup
-- [FAQ](faq) - Security-related troubleshooting
+- [Delegation](/docs/message-field-cloud/delegation/) - Project admin access control
+- [Limits](/docs/message-field-cloud/limits/) - System limits and constraints
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Panel setup
+- [FAQ](/docs/message-field-cloud/faq/) - Security-related troubleshooting

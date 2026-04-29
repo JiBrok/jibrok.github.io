@@ -229,7 +229,7 @@ Priority: {{ fields.priority.name }}
 
 **Use for**: Embedded contextual information, form guidance, field-level messages and warnings
 
-> For full setup instructions, see [Custom Fields](custom-fields).
+> For full setup instructions, see [Custom Fields](/docs/message-field-cloud/custom-fields/).
 
 ---
 
@@ -336,8 +336,8 @@ Panels with the same weight are sorted alphabetically by name.
 
 ## Next Steps
 
-- [Configuration Basics](configuration-basics) - Create panel configurations
-- [Custom Fields](custom-fields) - Use Message Field as a custom field
-- [Context Filters](context-filters) - Control when panels appear
-- [Modal Windows](modal-windows) - Pop-up dialogs (Issue Panel only)
-- [JSM Integration](jsm-integration) - Detailed JSM setup
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Create panel configurations
+- [Custom Fields](/docs/message-field-cloud/custom-fields/) - Use Message Field as a custom field
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Control when panels appear
+- [Modal Windows](/docs/message-field-cloud/modal-windows/) - Pop-up dialogs (Issue Panel only)
+- [JSM Integration](/docs/message-field-cloud/jsm-integration/) - Detailed JSM setup

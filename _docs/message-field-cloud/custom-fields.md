@@ -153,7 +153,7 @@ Message Field uses **UI Modifications (UIM)** to display custom field content on
 
 When enabled, the custom field content appears in the create form alongside other fields, providing guidance and context before the issue is created.
 
-> **Note:** UIM registrations are managed through the [Modules](modules) page. If the custom field doesn't appear on create screens, check the UIM status and use **Reregister All** if needed.
+> **Note:** UIM registrations are managed through the [Modules](/docs/message-field-cloud/modules/) page. If the custom field doesn't appear on create screens, check the UIM status and use **Reregister All** if needed.
 
 ---
 
@@ -190,8 +190,8 @@ This prevents stale configurations from accumulating and ensures the system stay
 
 ## Next Steps
 
-- [Modules](modules) - Overview of all display modules
-- [Configuration Basics](configuration-basics) - Create and manage configurations
-- [Templates](templates) - Dynamic content with template syntax
-- [FAQ](faq) - Custom field troubleshooting
-- [Getting Started](getting-started) - Quick start guide
+- [Modules](/docs/message-field-cloud/modules/) - Overview of all display modules
+- [Configuration Basics](/docs/message-field-cloud/configuration-basics/) - Create and manage configurations
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content with template syntax
+- [FAQ](/docs/message-field-cloud/faq/) - Custom field troubleshooting
+- [Getting Started](/docs/message-field-cloud/getting-started/) - Quick start guide

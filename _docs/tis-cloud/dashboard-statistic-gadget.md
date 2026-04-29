@@ -20,5 +20,3 @@ Settings:
 * You can add an unlimited number of lines.
 * For each line, queries are specified based on which the function value needs to be calculated, along with the function itself. You can specify arbitrary statuses and JQL, or select one of the contexts from existing "time in status" fields.
 * The gadget is still in Beta version and does not support "personal context" - queries like assignee = currentUser() do not work, but you can specify a specific user.
-
-[More about time statistic](/Time-statistic(Time-in-status-Cloud)/)

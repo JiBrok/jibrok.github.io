@@ -79,12 +79,12 @@ Use it to:
 
 ## Next Steps
 
-- [Getting Started](getting-started) - Create your first panel in 5 minutes
-- [Modules](modules) - Learn about display locations
-- [Templates](templates) - Master dynamic content
-- [Use Cases](use-cases) - Examples and best practices
-- [FAQ](faq) - Common questions and troubleshooting
-- [Permissions & Security](permissions-security) - Access control and security model
+- [Getting Started](/docs/message-field-cloud/getting-started/) - Create your first panel in 5 minutes
+- [Modules](/docs/message-field-cloud/modules/) - Learn about display locations
+- [Templates](/docs/message-field-cloud/templates/) - Master dynamic content
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Examples and best practices
+- [FAQ](/docs/message-field-cloud/faq/) - Common questions and troubleshooting
+- [Permissions & Security](/docs/message-field-cloud/permissions-security/) - Access control and security model
 
 ## Support
 

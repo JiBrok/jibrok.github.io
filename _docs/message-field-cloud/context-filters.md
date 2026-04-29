@@ -228,7 +228,7 @@ Result: Panel shows only when the person who reported the issue is viewing it.
 
 ## Troubleshooting
 
-> **Tip:** Use the **Test Context** button in the configuration editor to check all filter conditions for a specific issue at once. See [Testing Panels](testing-panels) for details.
+> **Tip:** Use the **Test Context** button in the configuration editor to check all filter conditions for a specific issue at once. See [Testing Panels](/docs/message-field-cloud/testing-panels/) for details.
 
 ### Panel Not Showing
 
@@ -253,7 +253,7 @@ Check User Field filter - it uses OR logic between selected fields. If you want 
 
 ## Next Steps
 
-- [Display Conditions](display-conditions) - JQL and template-based conditions
-- [Data Sources](data-sources) - Configure what data the panel shows
-- [Templates](templates) - Dynamic content syntax
-- [Modules](modules) - Display locations
+- [Display Conditions](/docs/message-field-cloud/display-conditions/) - JQL and template-based conditions
+- [Data Sources](/docs/message-field-cloud/data-sources/) - Configure what data the panel shows
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Modules](/docs/message-field-cloud/modules/) - Display locations

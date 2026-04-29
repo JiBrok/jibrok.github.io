@@ -176,7 +176,7 @@ The **Where Used** action opens a dialog showing all locations where the script 
 
 Each entry shows the usage type, location, and version status (whether the deployed version matches the latest saved version).
 
-> **Tip:** For a site-wide view of all script usage, see [Script Usage](/docs/jibrok-studio-jira/admin-tools#script-usage) in the Admin tab.
+> **Tip:** For a site-wide view of all script usage, see [Script Usage](/docs/jibrok-studio-jira/admin-tools/#track-script-usage) in the Admin tab.
 
 > **Note:** Import/Export for bulk operations is available in the Admin tab. See [Administration](/docs/jibrok-studio-jira/admin-settings).
 

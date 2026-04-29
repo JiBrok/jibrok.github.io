@@ -151,7 +151,7 @@ When configuring a JQL query, Message Field provides inline validation:
 - **Issue count preview** - shows how many issues match the query
 - **Error messages** - displays Jira's JQL error messages for invalid queries
 
-For parametric JQL (using template variables), use the **Test JQL** feature in the [Testing Panels](testing-panels) page to verify the query resolves correctly with a real issue key.
+For parametric JQL (using template variables), use the **Test JQL** feature in the [Testing Panels](/docs/message-field-cloud/testing-panels/) page to verify the query resolves correctly with a real issue key.
 
 ---
 
@@ -178,7 +178,7 @@ When using Empty data source, select the **Message Render Type**:
 | **Markdown** | GitHub-flavored markdown |
 | **ADF** | Atlassian Document Format (structured) |
 
-See [Message Formats](message-formats) for detailed syntax and examples.
+See [Message Formats](/docs/message-field-cloud/message-formats/) for detailed syntax and examples.
 
 ### Example: Missing Description Warning
 
@@ -373,7 +373,7 @@ When creating messages or descriptions, you have access to these variables:
 | `{{ loop.length }}` | Total items in loop |
 {% endraw %}
 
-See [Templates](templates) for complete syntax reference.
+See [Templates](/docs/message-field-cloud/templates/) for complete syntax reference.
 
 ---
 
@@ -409,9 +409,9 @@ Access custom fields by ID or name:
 
 ## Next Steps
 
-- [Context Filters](context-filters) - Control when panels appear
-- [Templates](templates) - Dynamic content syntax
-- [Use Cases](use-cases) - Ready-to-use examples
-- [Message Formats](message-formats) - HTML, Markdown, ADF syntax
-- [Limits](limits) - Data limits and performance tips
+- [Context Filters](/docs/message-field-cloud/context-filters/) - Control when panels appear
+- [Templates](/docs/message-field-cloud/templates/) - Dynamic content syntax
+- [Use Cases](/docs/message-field-cloud/use-cases/) - Ready-to-use examples
+- [Message Formats](/docs/message-field-cloud/message-formats/) - HTML, Markdown, ADF syntax
+- [Limits](/docs/message-field-cloud/limits/) - Data limits and performance tips
 

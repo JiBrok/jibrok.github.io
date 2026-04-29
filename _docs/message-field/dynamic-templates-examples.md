@@ -11,7 +11,7 @@ Examples of using variables that are available for use in dynamic templates.
 * TOC
 {:toc}
 
-📑[Java doc for Message field](/jira/plugins/message-field/java/doc/).
+📑Java doc for Message field.
 
 You can see the official user guide for velocity [here](http://velocity.apache.org/engine/1.7/user-guide.html).
 
@@ -104,7 +104,7 @@ Priority: #default($formIssue.priority.name "No priority set")
     $form.customfield_10400
     
 #### How to use $formIssue? Get valid data from the issue screen
-[see Java doc $formIssue](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FormIssue.html) 
+see Java doc $formIssue 
     
     $formIssue.summary <br>
     $formIssue.priority.name <br>
@@ -116,7 +116,7 @@ Priority: #default($formIssue.priority.name "No priority set")
 
 ### Custom Field Values ($cfValues)
 
-[see Java doc $cfValues](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/CFValues.html) 
+see Java doc $cfValues 
 
 The CFValues utility provides comprehensive methods for accessing custom field values from issues and forms.
 
@@ -236,7 +236,7 @@ or
 ## Message Display Configuration
 
 ### How to use $fieldDisplayConfig? How to change the display of a message?
-[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html) 
+see Java doc $fieldDisplayConfig 
 
     $fieldDisplayConfig.setAsFlag(true) ## true, false
     $fieldDisplayConfig.setMessageType("info") ## "info", "error", "success", "warning", "change", "SIMPLE_VIEW"
@@ -246,7 +246,7 @@ or
     $fieldDisplayConfig.setHidden(true)
     
 ### How to hide a message?
-[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
+see Java doc $fieldDisplayConfig
     
     #set ($optionCustomFieldValue = $cfValues.getFromForm("Option custom field name"))
     #if($optionCustomFieldValue.value == "option 1" )
@@ -262,7 +262,7 @@ or
 
 
 ### How to change message colour?
-[see Java doc $fieldDisplayConfig](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/config/dto/FieldDisplayConfigDto.html)
+see Java doc $fieldDisplayConfig
 
 
 <a href="/uploads/message-field/message-field-random-colors.gif" target="_blank"><img src="/uploads/message-field/message-field-random-colors.gif" alt="Jira search results showing Message Field banners with dynamically changing random colors" width="100%" loading="lazy"></a>
@@ -310,7 +310,7 @@ or
       #end
 
 ### How to use and check linked issues?
-[see Java doc $links](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Links.html)
+see Java doc $links
 
 The Links utility provides comprehensive methods for working with issue links. All methods can be called with or without parameters to filter by link type.
 
@@ -430,8 +430,7 @@ The Links utility provides comprehensive methods for working with issue links. A
 ## Utility Services
 
 ### JQL Service ($jqlService)
-* [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
-* linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+* see Java doc $jqlService<br/>
 
 #### Available methods:
 
@@ -470,8 +469,7 @@ You can use current issue in jql for conditions:
 ```
 
 #### How to show fields for issues by JQL in message?
-* [see Java doc $jqlService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/JqlService.html)<br/>
-* linked Post: [How to use linked issues and JQL results in Dynamic templates?](/How-to-use-linked-issues-and-JQL-results-in-Dynamic-templates/)
+* see Java doc $jqlService<br/>
 
 
 ```velocity 
@@ -483,7 +481,7 @@ $issueFieldRender.getAsTableHtml(
 
 ### Issue Field Renderer ($issueFieldRender)
 
-[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+see Java doc $issueFieldRender
 
 The Issue Field Renderer provides methods for rendering issue fields and formatting data.
 
@@ -525,7 +523,7 @@ This example uses a different our plugin: [Display linked issues](https://market
 
 
 #### How to display the date in the correct format?
-[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+see Java doc $issueFieldRender
 
 ```velocity 
 $issueFieldRender.dateFormat($formIssue.created, "dd-MMM-yyy HH:mm")
@@ -538,7 +536,7 @@ Result:
 <img src="/uploads/message-field/dynamic-templates-examples/dateformat.webp" alt="Message field banner showing formatted dates: 12-Jan-2023 00:10 and 12-01-2023" width="50%" loading="lazy"></a>
 
 #### How to show the multiline value of a text field?
-[see Java doc $issueFieldRender](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/IssueFieldRender.html)
+see Java doc $issueFieldRender
 
 ```velocity 
 <b>original value of issueForm field "description":</b><br/>
@@ -831,7 +829,7 @@ When working with cascade select fields through the `$form` object, you access t
 
 ### Insight Service ($insightService)
 
-[see Java doc $insightService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/InsightService.html)
+see Java doc $insightService
 
       $insightService.findObjects("key = TEST-1", 1) ##find (1) object by IQL
       <br>
@@ -854,7 +852,7 @@ When working with cascade select fields through the `$form` object, you access t
 
 ### User Group Service ($userGroupService)
 
-[see Java doc $userGroupService](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/UserGroupService.html)
+see Java doc $userGroupService
 
 **Get user by username:**
 ```velocity
@@ -1018,7 +1016,7 @@ Current user is not a developer
 
 ### Cast Utility ($cast)
 
-[see Java doc $cast](/jira/plugins/message-field/java/doc/com/jibrok/jira/plugins/messagefield/utils/Cast.html)
+see Java doc $cast
 
 The Cast utility provides methods for safe type conversion in Velocity templates.
 
