@@ -1,49 +1,36 @@
 # Boxes include navigation
-
-- title: JiBrok Studio for Jira Cloud
-  desc: Forge-based scripting platform - automate, extend, and customize Jira workflows with scripts, triggers, computed fields, and more.
-  icon: jibrok-studio-jira
-  doc: jibrok-studio-jira
-
-- title: Time in Status (Forge) for Jira Cloud
-  desc: Forge-native rebuild. Time in statuses, stopwatch, timer and time-between-dates fields, work calendars, and activity reports — all running inside your Jira site.
-  icon: time-in-status
-  doc: time-in-status-cloud-forge/overview
+# Forge-native apps (Studio, TIS Forge, Message Field) live in navigation_forge_apps.yml
+# and render in their own grid on /docs/.
 
 - title: Stopwatch (Cloud)
   desc: Counts the time between issue events. Working calendars, JQL filters and more.
   icon: stopwatch
-  doc: stopwatch-cloud/overview
+  doc: stopwatch-cloud
 
 - title: Timer (Cloud)
   desc: Counts the remaining time. The initial time (according to JQL) and the conditions for starting and stopping the timer are provided. Working calendars, JQL filters and more.
   icon: timer
-  doc: timer-cloud/overview
+  doc: timer-cloud
 
 - title: Time between dates (Cloud)
   desc: Tracks the time between two dates from the issue fields. These can be as system fields - the date of creation, updates, and the solution of the request. So are any datetime custom fields.
   icon: time-between-dates
-  doc: time-between-dates-cloud/overview
-
-- title: Message Field (Cloud)
-  desc: Display contextual messages and linked issue panels on Jira screens. Features dynamic templates, JQL queries, and module-based targeting.
-  icon: message-field-cloud
-  doc: message-field-cloud/overview
+  doc: time-between-dates-cloud
 
 - title: Calculated custom fields (JBCF Cloud)
   desc: Pack of fields for Jira Cloud
   icon: jbcf
-  doc: jbcf-cloud/overview
+  doc: jbcf-cloud
 
 - title: Fields panel for Jira Service Management (JSM) (Cloud)
   desc: The application allows you to display any issue fields(system and custom fields) on the customer portal in Jira Service Management
   icon: jsm-fields-panel-cloud
-  doc: jsm-fields-panel-cloud/overview
+  doc: jsm-fields-panel-cloud
 
 - title: Display Linked Issues (Cloud)
   desc: Displays issues linked by a specific type of links or by JQL. You can configure which fields to display and their order.
   icon: linked-issues-cloud
-  doc: linked-issues-cloud/overview
+  doc: linked-issues-cloud
 
 - title: User helper for JiBrok cloud apps
   desc: The app adds pages with interactive user documentation for JiBrok apps.

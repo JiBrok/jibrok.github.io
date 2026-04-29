@@ -1,0 +1,79 @@
+name: Timer field for Jira Cloud
+logo_label: Timer
+logo: /uploads/timer-cloud/timer.png
+hero_screenshot: /uploads/timer-cloud/timer.webp
+headline: Time tracking and SLA fields for Jira Cloud
+subtitle: >-
+  Track time between issue events with countdown fields, SLA goals, and business calendars.
+  Search by elapsed time in JQL, display timers in panels, and report from the issue navigator.
+marketplace_url: https://marketplace.atlassian.com/apps/1225684/timer-field?tab=overview&hosting=cloud
+getting_started_url: /docs/timer-cloud/get-started/
+
+badges:
+  - icon: clock
+    label: Countdown &amp; SLA
+  - icon: calendar
+    label: Business calendars
+  - icon: search
+    label: JQL functions
+
+features_heading: Everything you need to track time on issues
+features_subtitle: Configurable timer fields, business-hour calendars, JQL search functions, and panels - all in one app.
+features:
+  - title: Timer Fields
+    description: Track time between any pair of issue events - created, commented, resolved, priority changed, custom field updated.
+    icon: clock
+    icon_color: blue
+    link: /docs/timer-cloud/timer-field-create/
+  - title: Field Settings
+    description: Choose between elapsed and countdown modes, set SLA goals, and pick from a wide range of time formats.
+    icon: sliders
+    icon_color: purple
+    link: /docs/timer-cloud/timer-field-settings/
+  - title: Business Calendars
+    description: Calculate time only during working hours. Create unlimited calendars for any project or context.
+    icon: calendar
+    icon_color: green
+    link: /docs/timer-cloud/work-calendar/
+  - title: JQL Search
+    description: Find issues by timer value, range, or threshold. Custom JQL functions for every timer field.
+    icon: search
+    icon_color: orange
+    link: /docs/timer-cloud/timer-jql/
+  - title: Issue Panels
+    description: Display timers in dedicated web panels - track multiple metrics at a glance on every issue.
+    icon: grid
+    icon_color: teal
+    link: /docs/timer-cloud/web-panel/
+  - title: History &amp; Migration
+    description: Calculate values for existing issues from history. Migrate seamlessly between versions.
+    icon: layers
+    icon_color: red
+    link: /docs/timer-cloud/migrationDocumentation/
+
+docs_subtitle: Quick setup, deep configuration, and reference for every feature.
+docs:
+  - title: Getting Started
+    description: Install the app and create your first timer in minutes.
+    emoji: "&#9889;"
+    url: /docs/timer-cloud/get-started/
+  - title: Step-by-Step Guide
+    description: Complete walkthrough for setting up SLA tracking.
+    emoji: "&#128214;"
+    url: /docs/timer-cloud/step-by-step-timer/
+  - title: Work Calendar
+    description: Configure business hours and holidays.
+    emoji: "&#128197;"
+    url: /docs/timer-cloud/work-calendar/
+  - title: JQL Functions
+    description: Search and filter issues by timer values.
+    emoji: "&#128269;"
+    url: /docs/timer-cloud/timer-jql/
+  - title: Service Info
+    description: System status and migration reference.
+    emoji: "&#128295;"
+    url: /docs/timer-cloud/service-info/
+
+cta:
+  heading: Start tracking time on every issue
+  subtitle: Install Timer field for Jira Cloud and configure your first SLA in minutes.

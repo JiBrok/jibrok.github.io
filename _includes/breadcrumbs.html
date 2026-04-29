@@ -22,7 +22,8 @@
         {% comment %} Map product keys to display names {% endcomment %}
         {% case section %}
           {% when 'jibrok-studio-jira' %}{% assign section_name = 'JiBrok Studio' %}
-          {% when 'tis-cloud' %}{% assign section_name = 'Time in Status' %}
+          {% when 'tis-cloud' %}{% assign section_name = 'Time in Status (Connect)' %}
+          {% when 'time-in-status-cloud-forge' %}{% assign section_name = 'Time in Status' %}
           {% when 'timer-cloud' %}{% assign section_name = 'Timer / SLA' %}
           {% when 'stopwatch-cloud' %}{% assign section_name = 'Stopwatch' %}
           {% when 'jbcf-cloud' %}{% assign section_name = 'Calculated Fields' %}

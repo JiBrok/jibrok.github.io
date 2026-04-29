@@ -6,6 +6,7 @@
 jibrok-studio-jira:
   - title: <img src="/uploads/jibrok-studio-jira/jibrok-studio.svg" alt="JiBrok Studio for Jira Cloud" class="nav-icon"> JiBrok Studio for Jira Cloud
     docs:
+    - jibrok-studio-jira/landing
     - jibrok-studio-jira/overview
     - jibrok-studio-jira/getting-started
     - jibrok-studio-jira/forge-platform-security
@@ -98,6 +99,7 @@ jibrok-studio-jira:
 message-field-cloud:
   - title: <img src="/uploads/message-field/messge-144px.png" alt="JiBrok Message Field for Jira Cloud" class="nav-icon"> Message Field for Jira Cloud
     docs:
+    - message-field-cloud/landing
     - message-field-cloud/overview
     - message-field-cloud/getting-started
 
@@ -182,6 +184,7 @@ tis-cloud:
 time-in-status-cloud-forge:
   - title: <img src="/uploads/time-in-status/time-in-status-field-144px.png" alt="JiBrok time in status" class="nav-icon"> Time in Status (Forge) for Jira Cloud
     docs:
+      - time-in-status-cloud-forge/landing
       - time-in-status-cloud-forge/overview
       - time-in-status-cloud-forge/install
       - time-in-status-cloud-forge/get-started
@@ -252,6 +255,7 @@ time-in-status-cloud-forge:
 jbcf-cloud:
   - title: <img src="/uploads/jbcf/calculated-fields-144px.png" alt="JiBrok Calculated fields" class="nav-icon"> Calculated fields (JBCF) for Jira Cloud
     docs:
+      - jbcf-cloud/landing
       - jbcf-cloud/overview
       - jbcf-cloud/migrationDocumentation
       - jbcf-cloud/featureDifferenceDocumentation
@@ -268,6 +272,7 @@ jbcf-cloud:
 timer-cloud:
   - title: <img src="/uploads/timer-cloud/timer.png" alt="JiBrok Timer" class="nav-icon"> Timer field | SLA for Jira Cloud
     docs:
+      - timer-cloud/landing
       - timer-cloud/overview
       - timer-cloud/install
       - timer-cloud/get-started
@@ -297,6 +302,7 @@ timer-cloud:
 stopwatch-cloud:
   - title: <img src="/uploads/stopwatch-cloud/stopwatch.png" alt="JiBrok Stopwatch" class="nav-icon"> Stopwatch for Jira Cloud
     docs:
+      - stopwatch-cloud/landing
       - stopwatch-cloud/overview
       - stopwatch-cloud/install
       - stopwatch-cloud/get-started
@@ -325,6 +331,7 @@ stopwatch-cloud:
 time-between-dates-cloud:
   - title: <img src="/uploads/time-between-dates-cloud/time-between-dates.png" alt="JiBrok Time between dates" class="nav-icon"> Time between dates for Jira Cloud
     docs:
+      - time-between-dates-cloud/landing
       - time-between-dates-cloud/overview
 
   - title: Getting Started
@@ -338,11 +345,13 @@ time-between-dates-cloud:
 jsm-fields-panel-cloud:
   - title: <img src="/uploads/jsm-fields-panel-cloud/jsm-fields-panel.png" alt="JiBrok Fields panel for Jira Service Management (JSM)" class="nav-icon"> Fields panel for Jira Service Management (JSM)
     docs:
+      - jsm-fields-panel-cloud/landing
       - jsm-fields-panel-cloud/overview
 
 linked-issues-cloud:
   - title: <img src="/uploads/linked-issues-cloud/linked-issues.png" alt="JiBrok Display Linked Issues" style="width:43px;height:24px"> Display Linked Issues
     docs:
+      - linked-issues-cloud/landing
       - linked-issues-cloud/overview
 
 user-helper-cloud:

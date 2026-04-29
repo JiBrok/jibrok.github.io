@@ -21,13 +21,22 @@
 
         {% if include.subtitle %}<p class="uk-text-lead uk-text-center">{{ include.subtitle | escape }}</p>{% endif %}
 
+        {% if include.data %}
+            {% assign items = site.data[include.data] %}
+        {% else %}
+            {% assign items = site.data.navigation_boxes_cloud %}
+        {% endif %}
+
         <div class="uk-child-width-1-{{ columns }}@m uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid>
-            {% for item in site.data.navigation_boxes_cloud %}
+            {% for item in items %}
                 {% if item.title %}
                 {% assign doc_url = item.doc | prepend:"/docs/" | append:"/" %}
                 {% assign doc = site.docs | where:"url", doc_url | first %}
                 <div>
                     <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline border-radius-large border-xlight product-card-hover">
+                        {% if include.forge_badge %}
+                        <span class="uk-label" style="position:absolute;top:12px;right:12px;background:#1f883d;color:#fff;font-weight:600;letter-spacing:0.02em;z-index:2;">Forge-native</span>
+                        {% endif %}
                         {% if item.href %}
                         <a class="uk-position-cover" href="{{ item.href }}"></a>
                         {% else %}

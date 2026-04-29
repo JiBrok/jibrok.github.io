@@ -1,0 +1,108 @@
+{% comment %}
+  Reusable product landing block.
+  Reads data from `site.data.products[page.key]` (one YAML file per product in _data/products/).
+  Expected fields: name, logo_label, logo, hero_screenshot, headline, subtitle,
+  marketplace_url, getting_started_url, badges (array), features (array), docs (array), cta.
+{% endcomment %}
+{% assign p = site.data.products[page.key] %}
+
+<!-- ==================== HERO ==================== -->
+<div class="studio-hero">
+  <div class="studio-container">
+    <div class="studio-hero-grid">
+      <div>
+        <div class="hero-logo-row">
+          <img src="{{ p.logo }}" alt="{{ p.name }}" class="hero-logo-icon">
+          <span class="hero-logo-label">{{ p.logo_label | default: p.name }}</span>
+        </div>
+        <h1>{{ p.headline }}</h1>
+        <p class="hero-subtitle">{{ p.subtitle }}</p>
+        <div class="hero-buttons">
+          <a href="{{ p.marketplace_url }}" class="btn-primary-hero" target="_blank">Get it on Marketplace</a>
+          <a href="{{ p.getting_started_url }}" class="btn-secondary-hero">Getting Started</a>
+        </div>
+        {% if p.badges %}
+          <div class="studio-badges">
+            {% for badge in p.badges %}
+              <span class="studio-badge">
+                {% include landing-icon.html name=badge.icon %}
+                {{ badge.label }}
+              </span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      <div>
+        {% if p.hero_screenshot %}
+          <a href="{{ p.hero_screenshot }}" target="_blank">
+            <img src="{{ p.hero_screenshot }}" alt="{{ p.name }} screenshot" class="studio-hero-screenshot" loading="lazy">
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== CORE FEATURES ==================== -->
+<div class="studio-section studio-section-gray">
+  <div class="studio-container">
+    <div class="section-header">
+      <h2>{{ p.features_heading | default: 'Everything you need' }}</h2>
+      {% if p.features_subtitle %}<p class="section-subtitle">{{ p.features_subtitle }}</p>{% endif %}
+    </div>
+    <div class="feature-grid">
+      {% for feature in p.features %}
+        {% if feature.link %}
+          <a href="{{ feature.link }}" class="feature-card">
+        {% else %}
+          <div class="feature-card">
+        {% endif %}
+            <div class="feature-card-icon icon-{{ feature.icon_color | default: 'blue' }}">
+              {% include landing-icon.html name=feature.icon %}
+            </div>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+        {% if feature.link %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<!-- ==================== DOCUMENTATION ==================== -->
+{% if p.docs %}
+<div class="studio-section studio-section-dark">
+  <div class="studio-container">
+    <div class="section-header">
+      <h2>Documentation</h2>
+      {% if p.docs_subtitle %}<p class="section-subtitle">{{ p.docs_subtitle }}</p>{% endif %}
+    </div>
+    <div class="docs-grid">
+      {% for doc in p.docs %}
+        <a href="{{ doc.url }}" class="docs-card">
+          <span class="docs-card-icon">{{ doc.emoji }}</span>
+          <h3>{{ doc.title }}</h3>
+          <p>{{ doc.description }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+<!-- ==================== CTA ==================== -->
+<div class="studio-cta">
+  <div class="studio-container">
+    <h2>{{ p.cta.heading | default: 'Ready to get started?' }}</h2>
+    <p>{{ p.cta.subtitle }}</p>
+    <div class="hero-buttons">
+      <a href="{{ p.marketplace_url }}" class="btn-primary-hero" target="_blank">Get it on Marketplace</a>
+      <a href="{{ p.cta.secondary_url | default: 'https://jibrok.atlassian.net/servicedesk/customer/portals' }}" class="btn-secondary-hero" target="_blank">{{ p.cta.secondary_label | default: 'Contact Us' }}</a>
+    </div>
+    <p style="color:rgba(255,255,255,0.55); font-size:0.9rem; margin-top:24px;">
+      EU-based vendor &middot; Building for Jira since 2016
+    </p>
+  </div>
+</div>

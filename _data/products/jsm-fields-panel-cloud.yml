@@ -1,0 +1,64 @@
+name: Fields Panel for Jira Service Management
+logo_label: Fields Panel for JSM
+logo: /uploads/jsm-fields-panel-cloud/jsm-fields-panel.png
+hero_screenshot: /uploads/jsm-fields-panel-cloud/two-panels-example.webp
+headline: Show any issue fields to customers on the JSM portal
+subtitle: >-
+  Display fields, panel descriptions, and HTML messages on the customer portal request view.
+  Two placement zones, per-request-type configuration, and project-admin friendly setup.
+marketplace_url: https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm?tab=overview
+getting_started_url: /docs/jsm-fields-panel-cloud/overview/
+
+badges:
+  - icon: grid
+    label: Two panels per request
+  - icon: code
+    label: HTML descriptions
+  - icon: settings
+    label: Per-request-type mapping
+
+features_heading: Customer-facing fields without custom development
+features_subtitle: Project admins configure panels - no global Jira admin needed, no code, no extra portals.
+features:
+  - title: Two Panel Placements
+    description: One panel at the top of the request, another on the side - put the most important fields where customers look.
+    icon: grid
+    icon_color: blue
+  - title: Any Fields
+    description: System and custom fields. Third-party app fields supported - and new ones added on request.
+    icon: list
+    icon_color: purple
+  - title: HTML Descriptions
+    description: Show plain text, formatted instructions, or full HTML messages on each panel.
+    icon: code
+    icon_color: green
+  - title: Request-Type Mapping
+    description: Pick which panels appear for each request type - and where they appear.
+    icon: target
+    icon_color: orange
+  - title: Project-Admin Friendly
+    description: Project administrators configure panels themselves - no global Jira admin involvement.
+    icon: users
+    icon_color: teal
+  - title: Live Preview
+    description: Preview HTML descriptions before saving - know exactly how customers will see the panel.
+    icon: eye
+    icon_color: red
+
+docs:
+  - title: Overview &amp; Setup
+    description: Configure your first panel step by step.
+    emoji: "&#128214;"
+    url: /docs/jsm-fields-panel-cloud/overview/
+  - title: Marketplace
+    description: Install from the Atlassian Marketplace.
+    emoji: "&#128230;"
+    url: https://marketplace.atlassian.com/apps/1226586/fields-panel-for-jira-service-management-jsm?tab=overview
+  - title: Support Portal
+    description: Ask questions and request new field types.
+    emoji: "&#128172;"
+    url: https://jibrok.atlassian.net/servicedesk/customer/portals
+
+cta:
+  heading: Make your JSM portal more informative
+  subtitle: Install Fields Panel for JSM and put the right fields in front of every customer.

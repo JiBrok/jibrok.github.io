@@ -1,0 +1,64 @@
+name: Display Linked Issues for Jira Cloud
+logo_label: Linked Issues
+logo: /uploads/linked-issues-cloud/linked-issues.png
+hero_screenshot: /uploads/linked-issues-cloud/result-1.webp
+headline: Show any related issues, exactly the way you need
+subtitle: >-
+  Display issues linked through issue links or matching a JQL query, with parameters from the host issue.
+  Pick which fields to show, where to display the panel, and which projects it applies to.
+marketplace_url: https://marketplace.atlassian.com/apps/1223203
+getting_started_url: /docs/linked-issues-cloud/overview/
+
+badges:
+  - icon: link
+    label: Issue links &amp; JQL
+  - icon: grid
+    label: Custom field columns
+  - icon: settings
+    label: Per-project config
+
+features_heading: Linked issues, your way
+features_subtitle: Configure exactly what to display, in which fields, and where on the issue view.
+features:
+  - title: Configurable Sources
+    description: Pull issues via standard links or any JQL query - including dynamic parameters from the host issue.
+    icon: link
+    icon_color: blue
+  - title: Field Selection
+    description: Choose which fields appear as columns - system fields and custom fields, in any order.
+    icon: grid
+    icon_color: purple
+  - title: Web Panels
+    description: Display the configuration as an issue web panel - in browser and Jira mobile app.
+    icon: layers
+    icon_color: green
+  - title: Project Mapping
+    description: Apply each configuration to specific projects and issue types - no global side effects.
+    icon: target
+    icon_color: orange
+  - title: Dynamic Parameters
+    description: Use issue fields as JQL parameters (e.g. <code>priority=${priority.id}</code>) for context-aware queries.
+    icon: code
+    icon_color: teal
+  - title: Multiple Configurations
+    description: Run several panels per issue - different sources, different fields, different audiences.
+    icon: list
+    icon_color: red
+
+docs:
+  - title: Overview
+    description: How configurations and web panels work.
+    emoji: "&#128214;"
+    url: /docs/linked-issues-cloud/overview/
+  - title: Marketplace
+    description: Install the app from the Atlassian Marketplace.
+    emoji: "&#128230;"
+    url: https://marketplace.atlassian.com/apps/1223203
+  - title: Support Portal
+    description: Ask questions and report issues.
+    emoji: "&#128172;"
+    url: https://jibrok.atlassian.net/servicedesk/customer/portals
+
+cta:
+  heading: Show the right issues, in the right place
+  subtitle: Install Display Linked Issues and configure your first panel in minutes.

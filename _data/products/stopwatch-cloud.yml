@@ -1,0 +1,78 @@
+name: Stopwatch for Jira Cloud
+logo_label: Stopwatch
+logo: /uploads/stopwatch-cloud/stopwatch.png
+hero_screenshot: /uploads/stopwatch-cloud/stopwatch.webp
+headline: Flexible event-based stopwatches for Jira Cloud
+subtitle: >-
+  Track time between any pair of issue events with start/stop/pause logic. Configure custom triggers,
+  search by elapsed time in JQL, and respect business calendars.
+marketplace_url: https://marketplace.atlassian.com/apps/1225685/stopwatch-field?tab=overview&hosting=cloud
+getting_started_url: /docs/stopwatch-cloud/get-started/
+
+badges:
+  - icon: clock
+    label: Event-based
+  - icon: calendar
+    label: Business calendars
+  - icon: search
+    label: JQL functions
+
+features_heading: Time tracking with full event control
+features_subtitle: Define exactly when timers start, stop, and pause - based on any combination of issue events.
+features:
+  - title: Stopwatch Fields
+    description: Track time between any pair of issue events with custom start, stop, and pause triggers.
+    icon: clock
+    icon_color: blue
+    link: /docs/stopwatch-cloud/stopwatch-field-create/
+  - title: Field Settings
+    description: Time formats, calendar selection, history-based calculations for old issues.
+    icon: sliders
+    icon_color: purple
+    link: /docs/stopwatch-cloud/stopwatch-field-settings/
+  - title: Business Calendars
+    description: Calculate time only during working hours. Unlimited calendars across projects and contexts.
+    icon: calendar
+    icon_color: green
+    link: /docs/stopwatch-cloud/work-calendar/
+  - title: JQL Search
+    description: Filter issues by stopwatch values, ranges, and thresholds. Custom JQL functions per field.
+    icon: search
+    icon_color: orange
+    link: /docs/stopwatch-cloud/stopwatch-jql/
+  - title: Issue Panels
+    description: Show stopwatch data on every issue in dedicated web panels.
+    icon: grid
+    icon_color: teal
+    link: /docs/stopwatch-cloud/web-panel/
+  - title: Migration &amp; History
+    description: Recalculate values from issue history. Migrate cleanly between versions.
+    icon: layers
+    icon_color: red
+    link: /docs/stopwatch-cloud/migrationDocumentation/
+
+docs:
+  - title: Getting Started
+    description: Install the app and create your first stopwatch.
+    emoji: "&#9889;"
+    url: /docs/stopwatch-cloud/get-started/
+  - title: Field Setup
+    description: Configure triggers, formats, and calendars.
+    emoji: "&#9881;"
+    url: /docs/stopwatch-cloud/stopwatch-field-create/
+  - title: Work Calendar
+    description: Define business hours and holidays.
+    emoji: "&#128197;"
+    url: /docs/stopwatch-cloud/work-calendar/
+  - title: JQL Functions
+    description: Search and filter by stopwatch values.
+    emoji: "&#128269;"
+    url: /docs/stopwatch-cloud/stopwatch-jql/
+  - title: Service Info
+    description: System status and migration reference.
+    emoji: "&#128295;"
+    url: /docs/stopwatch-cloud/service-info/
+
+cta:
+  heading: Start tracking event-based time on every issue
+  subtitle: Install Stopwatch for Jira Cloud and configure your first field in minutes.

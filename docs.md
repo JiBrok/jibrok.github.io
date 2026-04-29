@@ -42,6 +42,8 @@ width: expand
     </div>
 </div>
 
+{% include boxes_cloud.html data="navigation_forge_apps" columns="3" title="Forge-native apps" subtitle="Apps running 100% on Atlassian Forge — no external servers, tenant isolation, zero external dependencies." %}
+
 {% include boxes_cloud.html columns="3" title="All Cloud Products" %}
 
 {% include boxes.html columns="3" title="Data Center / Server Products" %}

@@ -1,0 +1,65 @@
+name: Time Between Dates for Jira Cloud
+logo_label: Time Between Dates
+logo: /uploads/time-between-dates-cloud/time-between-dates.png
+hero_screenshot: /uploads/time-between-dates-cloud/demo-field.webp
+headline: Calculate time between any two date fields
+subtitle: >-
+  Pick any two datetime fields - system or custom - and the app calculates time between them, with goal time,
+  time spent, and time left. Working calendar support, automatic updates, and full JQL search.
+marketplace_url: https://marketplace.atlassian.com/apps/1226143
+getting_started_url: /docs/time-between-dates-cloud/get-started/
+
+badges:
+  - icon: calendar
+    label: Any date pair
+  - icon: clock
+    label: Goal &amp; remaining
+  - icon: search
+    label: JQL searchable
+
+features_heading: Three time metrics from a single field
+features_subtitle: Goal time, time spent, time left - calculated automatically from any pair of issue dates.
+features:
+  - title: Any Date Fields
+    description: Combine system fields (created, updated, due) and custom datetime fields. Mix and match freely.
+    icon: calendar
+    icon_color: blue
+    link: /docs/time-between-dates-cloud/time-between-dates-field-create/
+  - title: Three-in-One Metrics
+    description: Each field calculates goal time (start to end), time spent (start to now), and time left (now to end).
+    icon: target
+    icon_color: purple
+  - title: Auto-Updating Values
+    description: Values refresh dynamically. Update frequency adapts to remaining time - more often as the deadline approaches.
+    icon: zap
+    icon_color: green
+  - title: Business Calendars
+    description: Respect working hours and holidays. Unlimited calendars across projects and contexts.
+    icon: calendar
+    icon_color: orange
+  - title: JQL Search
+    description: Filter by state (active/inactive), by hours/minutes spent or remaining, by goal time, with sorting.
+    icon: search
+    icon_color: teal
+  - title: Export Anywhere
+    description: Use fields in Excel exports, REST API, dashboards - integrate with your reporting stack.
+    icon: chart
+    icon_color: red
+
+docs:
+  - title: Getting Started
+    description: Install and configure your first field.
+    emoji: "&#9889;"
+    url: /docs/time-between-dates-cloud/get-started/
+  - title: Create Field
+    description: Set up date comparison fields step by step.
+    emoji: "&#9881;"
+    url: /docs/time-between-dates-cloud/time-between-dates-field-create/
+  - title: Marketplace
+    description: Install from the Atlassian Marketplace.
+    emoji: "&#128230;"
+    url: https://marketplace.atlassian.com/apps/1226143
+
+cta:
+  heading: Turn any two dates into actionable time metrics
+  subtitle: Install Time Between Dates and start tracking deadlines that matter.

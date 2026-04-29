@@ -1,0 +1,65 @@
+name: Calculated Fields (JBCF) for Jira Cloud
+logo_label: Calculated Fields
+logo: /uploads/jbcf/calculated-fields-144px.png
+hero_screenshot: /uploads/jbcf/marketplace.webp
+headline: 30+ calculated custom fields for Jira Cloud
+subtitle: >-
+  Add fields that surface comment metadata, link counts, status history, sorting helpers, and user information -
+  all updated automatically as issues evolve.
+marketplace_url: https://marketplace.atlassian.com/apps/1221055/calculated-and-other-custom-fields-jbcf?hosting=cloud&tab=overview
+getting_started_url: /docs/jbcf-cloud/jbcf-field-create/
+
+badges:
+  - icon: list
+    label: 30+ fields
+  - icon: search
+    label: JQL searchable
+  - icon: zap
+    label: Auto-updated
+
+features_heading: Fields you wish Jira had
+features_subtitle: Surface the data already in your issues - comments, links, status history, and project structure - without scripting.
+features:
+  - title: Comment Insights
+    description: Last comment, first comment, comment authors, dates, and whether the author is the assignee or reporter.
+    icon: message
+    icon_color: blue
+  - title: Link Counts
+    description: Number of total, inward, outward links and subtasks - perfect for filtering and sorting.
+    icon: link
+    icon_color: purple
+  - title: Status History
+    description: Previous status, previous assignee, last status change author - history surfaced as fields.
+    icon: layers
+    icon_color: green
+  - title: User Resolvers
+    description: Project lead, component leads, last updater, resolution author - the people behind the work.
+    icon: users
+    icon_color: orange
+  - title: Sorting Helpers
+    description: Sort by parent key, epic key, or epic rank - in ascending or descending order.
+    icon: sliders
+    icon_color: teal
+  - title: Configurable Fields
+    description: Pick exactly which calculated fields to enable - keep your custom field list lean.
+    icon: settings
+    icon_color: red
+    link: /docs/jbcf-cloud/jbcf-field-create/
+
+docs:
+  - title: Create Field
+    description: Set up calculated custom fields step by step.
+    emoji: "&#9881;"
+    url: /docs/jbcf-cloud/jbcf-field-create/
+  - title: Service Info
+    description: System status and field reference.
+    emoji: "&#128295;"
+    url: /docs/jbcf-cloud/service-info/
+  - title: Migration
+    description: Migrate cleanly between versions.
+    emoji: "&#128260;"
+    url: /docs/jbcf-cloud/migrationDocumentation/
+
+cta:
+  heading: Add the fields Jira is missing
+  subtitle: Install Calculated Fields (JBCF) and pick from 30+ ready-to-use custom fields.
