@@ -133,6 +133,16 @@ If template variables in JQL aren't being replaced:
 
 ## JSM Portal Issues
 
+### Why are radio button values empty in my message template on the JSM Customer Portal Create form?
+
+This is a platform limitation of Forge UI Modifications. On the JSM Customer Portal Request Create form, the Forge platform does not expose radio button custom fields to apps at all - the field is missing from the platform's field registry, so no Forge app (including Message Field) can read its value while the customer is filling the form.
+
+Other field types on the same form (Select, Summary, Description, etc.) work correctly. You can verify this is platform-wide by checking with any other Forge app that uses UI Modifications on the JSM Customer Portal.
+
+**Solution:** change the field type from **Radio buttons** to **Select List (single choice)** in your Jira custom field administration. The behavior and data format are identical, and your {% raw %}`{{ fields.customfield_XXXXX.value }}`{% endraw %} template references will start working immediately without any other changes.
+
+See [JSM Create Modules - Platform Limitations](/docs/message-field-cloud/jsm-create-modules/#platform-limitations) for technical details.
+
 ### Panel not showing on portal
 
 1. Verify you're using a **JSM Portal module** (not a Jira module)

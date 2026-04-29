@@ -118,6 +118,24 @@ JSM Create modules have specific limitations:
 
 ---
 
+## Platform Limitations
+
+The following limitations come from the Forge UI Modifications platform itself and apply to all Forge apps that use UIM on the JSM Customer Portal, not just Message Field.
+
+### Radio button custom fields are not supported
+
+Custom fields of type **Radio buttons** are not exposed by the Forge UI Modifications platform on the JSM Customer Portal Request Create view. The platform's field registry does not include radio buttons, and no events are fired when customers select a radio option.
+
+Other field types on the same form (Select, Summary, Description, etc.) work correctly. You can verify this is platform-wide by checking with any other Forge app that uses UI Modifications on the JSM Customer Portal.
+
+**Workaround:** change the field type from **Radio buttons** to **Select List (single choice)** in your Jira custom field administration. The data shape is identical (`{id, value}`), and your existing message templates referencing the field (e.g. `{% raw %}{{ fields.customfield_XXXXX.value }}{% endraw %}`) will start populating correctly with no other changes needed.
+
+### Forge custom fields are not supported
+
+UI Modifications does not currently support custom fields created by other Forge apps. This is a platform limitation by Atlassian, not specific to Message Field.
+
+---
+
 ## Using Form Data in Templates
 
 Access form field values as the user fills them:
